@@ -1,0 +1,22 @@
+{
+  "experiment": "R290",
+  "dataset": "G:\\gutou\\RAM-W600",
+  "device": "cuda",
+  "baseline_checkpoint": "outputs\\ram_w600\\r285_nnunet_overlap_prior\\baseline_best.pth",
+  "best_epoch": 0,
+  "baseline_test": {
+    "macro_dice": 0.9783331442949337,
+    "overlap_dice": 0.8678561782894708,
+    "overlap_nsd_2px": 0.8779420800807353
+  },
+  "improved_test": {
+    "macro_dice": 0.9782432721812606,
+    "overlap_dice": 0.868329545819465,
+    "overlap_nsd_2px": 0.8762745239159957
+  },
+  "delta_test": {
+    "macro_dice": -8.98721136730618e-05,
+    "overlap_dice": 0.000473367529994162,
+    "overlap_nsd_2px": -0.0016675561647395698
+  }
+}

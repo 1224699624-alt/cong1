@@ -1,0 +1,38 @@
+{
+  "dice": {
+    "improved": 61,
+    "worse": 35,
+    "unchanged": 0,
+    "mean_delta": 0.00024312349229495384
+  },
+  "iou": {
+    "improved": 61,
+    "worse": 35,
+    "unchanged": 0,
+    "mean_delta": 0.00040305256986009524
+  },
+  "gap_region_fp_rate": {
+    "improved": 0,
+    "worse": 96,
+    "unchanged": 0,
+    "mean_delta": 0.008545500859836595
+  },
+  "component_merge_rate": {
+    "improved": 0,
+    "worse": 1,
+    "unchanged": 95,
+    "mean_delta": 0.010416666666666666
+  },
+  "hd95_px": {
+    "improved": 17,
+    "worse": 24,
+    "unchanged": 55,
+    "mean_delta": 0.017187455975828103
+  },
+  "assd_px": {
+    "improved": 35,
+    "worse": 61,
+    "unchanged": 0,
+    "mean_delta": 0.03884025410915787
+  }
+}

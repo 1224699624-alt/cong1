@@ -1,0 +1,28 @@
+{
+  "selected_cases": [
+    "EXT_0125_0001_L",
+    "EXT_0119_0001_R",
+    "EXT_0021_0001_L",
+    "0121_0001_R",
+    "0172_0003_L",
+    "EXT_0059_0001_L",
+    "EXT_0115_0001_R",
+    "0172_0002_R"
+  ],
+  "labels": [
+    "0",
+    "0.001",
+    "0.002",
+    "0.004",
+    "0.006",
+    "0.010"
+  ],
+  "display_labels": [
+    "0",
+    "0.002",
+    "0.006",
+    "0.010"
+  ],
+  "selection": "top 4 0.002 improvements and top 4 0.010 degradations vs plain",
+  "test_used": false
+}

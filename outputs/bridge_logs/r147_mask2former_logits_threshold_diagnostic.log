@@ -1,0 +1,36 @@
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/.tmp/r144_hf_deps/transformers/models/mask2former/modeling_mask2former.py:895: UserWarning: You'd better set embed_dim (d_model) in DeformableDetrMultiscaleDeformableAttention to make the dimension of each attention head a power of 2 which is more efficient in the authors' CUDA implementation.
+  warnings.warn(
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/r147_mask2former_logits_threshold_diagnostic.py:190: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location=args.device)
+{
+  "output_json": "outputs/analysis/r147_mask2former_logits_threshold_diagnostic.json",
+  "summary": {
+    "train": {
+      "probability_summary": {
+        "mean_union_max": 1.2981428369585046e-05,
+        "max_union_max": 5.195870471652597e-05,
+        "mean_foreground_score_max": 0.922574944794178,
+        "mean_kept_queries_class_gated_005": 48.0
+      },
+      "best_mask_only_dice": 0.0
+    },
+    "val": {
+      "probability_summary": {
+        "mean_union_max": 9.65314870882139e-06,
+        "max_union_max": 1.3145699085725937e-05,
+        "mean_foreground_score_max": 0.9225685447454453,
+        "mean_kept_queries_class_gated_005": 48.0
+      },
+      "best_mask_only_dice": 0.0
+    },
+    "clean_test_v2": {
+      "probability_summary": {
+        "mean_union_max": 1.025731694426213e-05,
+        "max_union_max": 1.1146104043291416e-05,
+        "mean_foreground_score_max": 0.9225752800703049,
+        "mean_kept_queries_class_gated_005": 48.0
+      },
+      "best_mask_only_dice": 0.0
+    }
+  }
+}

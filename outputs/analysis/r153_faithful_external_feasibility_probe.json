@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-07-02T01:48:02",
+  "host": "10.1.115.157",
+  "policy": "non-mutating probe only; no package installation and no yolo-sam-gpu mutation",
+  "results": {
+    "whoami": {
+      "command": "whoami",
+      "stdout": "shenzeyu\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "pwd": {
+      "command": "cd /home/shenzeyu/workspace/YOLO_SAM_generic_src && pwd",
+      "stdout": "/home/shenzeyu/workspace/YOLO_SAM_generic_src\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "python_version": {
+      "command": "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python -V",
+      "stdout": "Python 3.11.15\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "torch_cuda": {
+      "command": "cd /home/shenzeyu/workspace/YOLO_SAM_generic_src && /home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python - <<'PY'\nimport json, torch\nprint(json.dumps({\n  \"torch\": torch.__version__,\n  \"cuda\": torch.version.cuda,\n  \"cuda_available\": torch.cuda.is_available(),\n  \"device_count\": torch.cuda.device_count(),\n  \"device_name_0\": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,\n  \"capability_0\": torch.cuda.get_device_capability(0) if torch.cuda.is_available() else None,\n}, ensure_ascii=False))\nPY",
+      "stdout": "{\"torch\": \"2.5.1+cu118\", \"cuda\": \"11.8\", \"cuda_available\": true, \"device_count\": 2, \"device_name_0\": \"NVIDIA GeForce RTX 4090\", \"capability_0\": [8, 9]}\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "module_presence": {
+      "command": "cd /home/shenzeyu/workspace/YOLO_SAM_generic_src && /home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python - <<'PY'\nimport importlib.util, json\nmods = [\"torch\",\"torchvision\",\"detectron2\",\"fvcore\",\"iopath\",\"pycocotools\",\"timm\",\"transformers\",\"mmcv\",\"mmengine\",\"mmdet\",\"monai\",\"nnunetv2\",\"ninja\"]\nprint(json.dumps({m: bool(importlib.util.find_spec(m)) for m in mods}, ensure_ascii=False, indent=2))\nPY",
+      "stdout": "{\n  \"torch\": true,\n  \"torchvision\": true,\n  \"detectron2\": false,\n  \"fvcore\": false,\n  \"iopath\": false,\n  \"pycocotools\": false,\n  \"timm\": true,\n  \"transformers\": false,\n  \"mmcv\": false,\n  \"mmengine\": false,\n  \"mmdet\": false,\n  \"monai\": false,\n  \"nnunetv2\": false,\n  \"ninja\": false\n}\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "nvidia_smi": {
+      "command": "nvidia-smi --query-gpu=index,name,memory.total,memory.used,driver_version,compute_cap --format=csv,noheader,nounits",
+      "stdout": "0, NVIDIA GeForce RTX 4090, 24564, 15, 595.71.05, 8.9\n1, NVIDIA GeForce RTX 4090, 24564, 15, 595.71.05, 8.9\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "nvcc": {
+      "command": "which nvcc && nvcc --version || true",
+      "stdout": "",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "gcc": {
+      "command": "which gcc && gcc --version | head -1 || true",
+      "stdout": "/usr/bin/gcc\ngcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "gxx": {
+      "command": "which g++ && g++ --version | head -1 || true",
+      "stdout": "/usr/bin/g++\ng++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "conda_info": {
+      "command": "which conda || true; conda --version || true",
+      "stdout": "",
+      "stderr": "sh: 1: conda: not found\n",
+      "exit_status": 0
+    },
+    "disk": {
+      "command": "df -h /home/shenzeyu /home/shenzeyu/workspace 2>/dev/null || df -h /home/shenzeyu",
+      "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p2  1.9T  1.6T  167G  91% /\n/dev/nvme0n1p2  1.9T  1.6T  167G  91% /\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "git": {
+      "command": "git --version || true",
+      "stdout": "git version 2.43.0\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    "network_github": {
+      "command": "python3 - <<'PY'\nimport urllib.request\nfor url in ['https://github.com/facebookresearch/Mask2Former', 'https://github.com/IDEA-Research/MaskDINO']:\n    try:\n        with urllib.request.urlopen(url, timeout=10) as r:\n            print(url, r.status)\n    except Exception as exc:\n        print(url, type(exc).__name__, str(exc)[:160])\nPY",
+      "stdout": "https://github.com/facebookresearch/Mask2Former 200\nhttps://github.com/IDEA-Research/MaskDINO 200\n",
+      "stderr": "",
+      "exit_status": 0
+    }
+  },
+  "decision": {
+    "status": "blocked_or_high_risk",
+    "missing_core_modules": [
+      "detectron2",
+      "fvcore",
+      "iopath",
+      "pycocotools"
+    ],
+    "nvcc_available": false,
+    "gcc_available": true,
+    "github_reachable": true,
+    "recommendation": "Do not install yet; resolve compiler/CUDA/network gaps or pivot architecture."
+  }
+}

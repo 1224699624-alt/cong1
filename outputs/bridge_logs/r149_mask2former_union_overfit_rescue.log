@@ -1,0 +1,47 @@
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/.tmp/r144_hf_deps/transformers/models/mask2former/modeling_mask2former.py:895: UserWarning: You'd better set embed_dim (d_model) in DeformableDetrMultiscaleDeformableAttention to make the dimension of each attention head a power of 2 which is more efficient in the authors' CUDA implementation.
+  warnings.warn(
+{"step": 1, "loss": 29.522621154785156, "train_best_threshold_dice": 0.029806258096083265, "train_union_max_mean": 0.4995407462120056}
+{"step": 50, "loss": 15.687990188598633, "train_best_threshold_dice": 0.48566096259495833, "train_union_max_mean": 0.7104966640472412}
+{"step": 100, "loss": 10.115321159362793, "train_best_threshold_dice": 0.6095422527718074, "train_union_max_mean": 0.9948689937591553}
+{"step": 150, "loss": 6.0124831199646, "train_best_threshold_dice": 0.7289726759273394, "train_union_max_mean": 0.9999371767044067}
+{"step": 200, "loss": 5.391289234161377, "train_best_threshold_dice": 0.7683590208522212, "train_union_max_mean": 0.9999985694885254}
+{"step": 250, "loss": 4.2703118324279785, "train_best_threshold_dice": 0.7988001304206065, "train_union_max_mean": 0.9999998807907104}
+{"step": 300, "loss": 3.7095561027526855, "train_best_threshold_dice": 0.7901201849815152, "train_union_max_mean": 1.0}
+{"step": 350, "loss": 3.7912607192993164, "train_best_threshold_dice": 0.7970985926597548, "train_union_max_mean": 1.0}
+{"step": 400, "loss": 3.478076219558716, "train_best_threshold_dice": 0.8059213537511933, "train_union_max_mean": 1.0}
+{"step": 450, "loss": 3.7549312114715576, "train_best_threshold_dice": 0.8118554378194647, "train_union_max_mean": 1.0}
+{"step": 500, "loss": 3.435336112976074, "train_best_threshold_dice": 0.8086673719681831, "train_union_max_mean": 1.0}
+{
+  "output_json": "outputs/analysis/r149_mask2former_union_overfit_rescue_metrics.json",
+  "status": "overfit_failed",
+  "train": {
+    "dice": 0.8118554378194647,
+    "iou": 0.6832968509568497,
+    "precision": 0.7650570249939335,
+    "recall": 0.8647521873885735,
+    "specificity": 0.9959207594246594,
+    "boundary_iou": 0.12159279450106661,
+    "threshold": 0.5,
+    "selected_fraction": 0.01710001078865034
+  },
+  "val": {
+    "dice": 0.017860288160073273,
+    "iou": 0.009092539454806313,
+    "precision": 0.1795325779036827,
+    "recall": 0.009397590361445784,
+    "specificity": 0.9990547103256204,
+    "boundary_iou": 0.003923004498378491,
+    "threshold": 0.05,
+    "selected_fraction": 0.001158718500868232
+  },
+  "clean": {
+    "dice": 0.30356156618010477,
+    "iou": 0.17901564638056716,
+    "precision": 0.2582582233898516,
+    "recall": 0.3948887549363893,
+    "specificity": 0.9771071693844183,
+    "boundary_iou": 0.024171830388125166,
+    "threshold": 0.19999999999999998,
+    "selected_fraction": 0.029841774691204
+  }
+}

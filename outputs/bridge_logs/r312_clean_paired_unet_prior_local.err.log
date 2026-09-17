@@ -1,0 +1,33 @@
+G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py:126: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=a.device.startswith("cuda"))
+G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py:135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=a.device.startswith("cuda")):
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py", line 182, in <module>
+    if __name__=="__main__": main()
+  File "G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py", line 177, in main
+    results.append(train_arm(a,stems,arm,copy.deepcopy(init),use_prior)); infer_arm(a,stems,arm,use_prior)
+  File "G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py", line 143, in train_arm
+    dice=validate(model,vl,a.device); row={"epoch":epoch,"train_loss":float(np.mean(losses)),"prior_loss":float(np.mean(prior_losses)),"val_dice":dice}
+  File "E:\360Downloads\anaconda3\envs\YOLOSAM\lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py", line 114, in validate
+    for b in loader:
+  File "E:\360Downloads\anaconda3\envs\YOLOSAM\lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "E:\360Downloads\anaconda3\envs\YOLOSAM\lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "E:\360Downloads\anaconda3\envs\YOLOSAM\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\360Downloads\anaconda3\envs\YOLOSAM\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py", line 70, in __getitem__
+    if xray is None: raise ValueError(stem)
+ValueError: 10520
+R312 training failed with exit code 1
+ËùÔÚÎ»ÖÃ G:\gutou\YOLO+SAM\run_r312_clean_paired_unet_prior_local.ps1:10 ×Ö·û: 28
++ ... DE -ne 0) { throw "R312 training failed with exit code $LASTEXITCODE" ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (R312 training failed with exit code 1:String) [], RuntimeException
+    + FullyQualifiedErrorId : R312 training failed with exit code 1
+ 

@@ -1,0 +1,31 @@
+{
+  "status": "dry_run_ok",
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\tmp_decision_apply_gatepass_manifest.json",
+  "source_dataset": "TSRS_RSNA-Epiphysis",
+  "target_dataset": "TSRS_RSNA-Epiphysis_label_protocol_reviewed_v1",
+  "source_raw_root": "data\\raw",
+  "target_raw_root": "data\\raw_variants",
+  "correction_dir": null,
+  "gate": {
+    "gate_pass": true,
+    "errors": [],
+    "reviewed_train": 20,
+    "confirmed_train": 20,
+    "correction_rows": 0
+  },
+  "split_summary": {
+    "train": {
+      "copied": 875,
+      "label_replacements": 0
+    },
+    "val": {
+      "copied": 96,
+      "label_replacements": 0
+    },
+    "test": {
+      "copied": 97,
+      "label_replacements": 0
+    }
+  },
+  "clean_test_policy": "clean-test-v2 rows were diagnostic-only and were not used to build this variant"
+}

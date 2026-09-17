@@ -1,0 +1,9 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r285_nnunet_overlap_prior",
+    "started":  "2026-07-22T17:12:10.3330368+08:00",
+    "architecture":  "nnUNet v2 PlainConvUNet 2D multilabel",
+    "pid":  34440,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r285_ramw600_nnunet_overlap_prior_local.stderr.log",
+    "experiment":  "R285",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r285_ramw600_nnunet_overlap_prior_local.stdout.log"
+}

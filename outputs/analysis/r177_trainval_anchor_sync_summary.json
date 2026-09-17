@@ -1,0 +1,47 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "splits": [
+    "train",
+    "val"
+  ],
+  "remote_root": "/home/shenzeyu/workspace/YOLO_SAM_generic_src",
+  "local_root": "outputs/ablations_variants",
+  "label_sync": [
+    {
+      "split": "train",
+      "remote_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis/train_labels",
+      "local_dir": "data\\raw\\TSRS_RSNA-Epiphysis\\train_labels",
+      "remote_png_count": 875,
+      "copied": 0,
+      "local_png_count": 875
+    },
+    {
+      "split": "val",
+      "remote_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis/val_labels",
+      "local_dir": "data\\raw\\TSRS_RSNA-Epiphysis\\val_labels",
+      "remote_png_count": 96,
+      "copied": 0,
+      "local_png_count": 96
+    }
+  ],
+  "experiments": [
+    {
+      "experiment": "r100_like_r025b_r097_patch_basic_trainval",
+      "split": "train",
+      "remote_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/ablations_variants/r100_like_r025b_r097_patch_basic_trainval/TSRS_RSNA-Epiphysis/train/masks",
+      "local_dir": "outputs\\ablations_variants\\r100_like_r025b_r097_patch_basic_trainval\\TSRS_RSNA-Epiphysis\\train\\masks",
+      "remote_png_count": 875,
+      "copied": 875,
+      "local_png_count": 875
+    },
+    {
+      "experiment": "r100_like_r025b_r097_patch_basic_trainval",
+      "split": "val",
+      "remote_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/ablations_variants/r100_like_r025b_r097_patch_basic_trainval/TSRS_RSNA-Epiphysis/val/masks",
+      "local_dir": "outputs\\ablations_variants\\r100_like_r025b_r097_patch_basic_trainval\\TSRS_RSNA-Epiphysis\\val\\masks",
+      "remote_png_count": 96,
+      "copied": 96,
+      "local_png_count": 96
+    }
+  ]
+}

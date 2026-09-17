@@ -1,0 +1,43 @@
+{
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "worklist_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\r134_train_val_review_worklist.csv",
+  "reference_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\r134_clean_test_reference_only.csv",
+  "readme_md": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\R134_HUMAN_REVIEW_WORK_PACKAGE.md",
+  "review_html": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\R134_HUMAN_REVIEW_WORK_PACKAGE.html",
+  "browser_export_csv_name": "r134_train_val_review_worklist_reviewed.csv",
+  "counts": {
+    "train_review_queue": 64,
+    "val_audit_queue": 6,
+    "clean_test_reference": 24,
+    "reviewed_train": 0,
+    "confirmed_train_for_variant": 0,
+    "train_priority_counts": {
+      "P0": 25,
+      "P1": 38,
+      "P2": 1
+    },
+    "train_tag_counts": {
+      "under_separated_bridge": 16,
+      "severe_boundary_shift": 5,
+      "mixed_boundary_bridge": 4,
+      "candidate_shared_failure": 9,
+      "underreach_high_precision": 18,
+      "overmask_low_precision": 7,
+      "all_hard": 4,
+      "candidate_fixable": 1
+    },
+    "val_tag_counts": {
+      "under_separated_bridge": 1,
+      "underreach_high_precision": 3,
+      "candidate_shared_failure": 1,
+      "all_hard": 1
+    }
+  },
+  "gate": {
+    "min_reviewed_train": 20,
+    "min_confirmed_train": 8,
+    "ready": false,
+    "next_action": "human_review_train_val_worklist"
+  },
+  "clean_test_policy": "reference_only_do_not_train_or_tune"
+}

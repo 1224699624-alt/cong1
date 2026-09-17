@@ -1,0 +1,40 @@
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_set_instance_segmenter.py:290: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=device.startswith("cuda"))
+train/epoch1:   0%|          | 0/2 [00:00<?, ?it/s]/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_set_instance_segmenter.py:308: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=device.startswith("cuda")):
+train/epoch1:  50%|█████     | 1/2 [00:00<00:00,  1.42it/s]train/epoch1: 100%|██████████| 2/2 [00:00<00:00,  2.74it/s]train/epoch1: 100%|██████████| 2/2 [00:00<00:00,  2.40it/s]
+{"epoch": 1, "train_loss": 3.694158911705017, "val_dice": 0.0, "val_precision": 1.0, "val_recall": 0.0, "val_boundary_iou": 0.0, "val_false_bridge_flag": 0.0, "threshold": 0.5, "slot_blend": 0.7, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true}
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_set_instance_segmenter.py:343: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(ckpt, map_location=device)
+infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:   0%|          | 0/2 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  50%|█████     | 1/2 [00:00<00:00,  3.47it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 2/2 [00:00<00:00,  3.29it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 2/2 [00:00<00:00,  3.31it/s]
+infer/TSRS_RSNA-Epiphysis/test:   0%|          | 0/2 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis/test:  50%|█████     | 1/2 [00:00<00:00,  3.88it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 2/2 [00:00<00:00,  3.49it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 2/2 [00:00<00:00,  3.54it/s]
+{
+  "best_epoch": 1,
+  "threshold": 0.5,
+  "slot_blend": 0.7,
+  "clean_test_v2": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 1.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "boundary_iou": 0.0,
+    "pred_component_count": 0.0,
+    "gt_component_count": 26.5,
+    "component_count_error": 26.5,
+    "false_bridge_flag": 0.0
+  },
+  "original_test": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 1.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "boundary_iou": 0.0,
+    "pred_component_count": 0.0,
+    "gt_component_count": 26.5,
+    "component_count_error": 26.5,
+    "false_bridge_flag": 0.0
+  },
+  "checkpoint": "outputs/timm_set_instance/r132_smoke_dinov3_query_noobject/best.pt"
+}

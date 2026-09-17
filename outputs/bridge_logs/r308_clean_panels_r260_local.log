@@ -1,0 +1,1187 @@
+[R308] start 2026-07-24T19:55:41.1700645+08:00
+0, NVIDIA GeForce RTX 3060 Laptop GPU, 679 MiB, 6144 MiB
+[R308] resume from completed preprocessing with single-threaded augmentation
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-24 19:55:54.080931: R306 initialization {"checkpoint": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\nnunet\\r260_mature_prior\\nnUNet_results\\Dataset204_TSRS_RSNAEpiphysisMaturePrior2D\\nnUNetTrainerR260MaturePrior__nnUNetPlans__2d\\fold_0\\checkpoint_best.pth", "sha256": "7d1d8d2916115c2e29696b2a76881da2a7a78f3db91a5f6a9491297369052a6e", "strict_all_network_keys_loaded": true, "prior_channel_nonzero": 288, "expanded_single_channel_aliases": 0, "binary_output_channels": 2, "prior_alpha": 0.05, "instance_alpha": 0.0, "instance_aux": false, "seed": 260}
+2026-07-24 19:55:54.090986: do_dummy_2d_data_aug: False
+2026-07-24 19:55:54.090986: Using splits from existing split file: G:\gutou\YOLO+SAM\outputs\nnunet\r308_clean_panels_r260\data\nnUNet_preprocessed\Dataset309_TSRSR260CleanPanels2D\splits_final.json
+2026-07-24 19:55:54.090986: The split file contains 1 splits.
+2026-07-24 19:55:54.090986: Desired fold for training: 0
+2026-07-24 19:55:54.090986: This split has 814 training and 94 validation cases.
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset309_TSRSR260CleanPanels2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}, '1': {'max': 252.0, 'mean': 4.276753902435303, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 180.0, 'std': 22.17328643798828}}} 
+
+2026-07-24 19:55:55.681414: Unable to plot network architecture:
+2026-07-24 19:55:55.681414: No module named 'hiddenlayer'
+2026-07-24 19:55:56.075206: 
+2026-07-24 19:55:56.075206: Epoch 0
+2026-07-24 19:55:56.075206: Current learning rate: 0.0001
+2026-07-24 19:58:28.481955: train_loss -0.8856
+2026-07-24 19:58:28.481955: val_loss -0.8646
+2026-07-24 19:58:28.481955: Pseudo dice [0.9127]
+2026-07-24 19:58:28.481955: Epoch time: 152.42 s
+2026-07-24 19:58:28.481955: Yayy! New best EMA pseudo Dice: 0.9127
+2026-07-24 19:58:29.699961: R306 early stop {"completed_epochs": 1, "ema_dice": 0.9127050173122758, "early_best": 0.9127050173122758, "bad_epochs": 0, "stop": false}
+2026-07-24 19:58:29.705268: 
+2026-07-24 19:58:29.705268: Epoch 1
+2026-07-24 19:58:29.706263: Current learning rate: 0.0001
+2026-07-24 20:00:58.040510: train_loss -0.8877
+2026-07-24 20:00:58.043510: val_loss -0.8785
+2026-07-24 20:00:58.044473: Pseudo dice [0.922]
+2026-07-24 20:00:58.044473: Epoch time: 148.34 s
+2026-07-24 20:00:58.044473: Yayy! New best EMA pseudo Dice: 0.9136
+2026-07-24 20:00:59.274784: R306 early stop {"completed_epochs": 2, "ema_dice": 0.9136327668964557, "early_best": 0.9136327668964557, "bad_epochs": 0, "stop": false}
+2026-07-24 20:00:59.276442: 
+2026-07-24 20:00:59.276442: Epoch 2
+2026-07-24 20:00:59.276442: Current learning rate: 0.0001
+2026-07-24 20:03:20.332418: train_loss -0.8803
+2026-07-24 20:03:20.332418: val_loss -0.8662
+2026-07-24 20:03:20.332418: Pseudo dice [0.9169]
+2026-07-24 20:03:20.336223: Epoch time: 141.06 s
+2026-07-24 20:03:20.336223: Yayy! New best EMA pseudo Dice: 0.914
+2026-07-24 20:03:21.648114: R306 early stop {"completed_epochs": 3, "ema_dice": 0.9139555413115037, "early_best": 0.9139555413115037, "bad_epochs": 0, "stop": false}
+2026-07-24 20:03:21.652367: 
+2026-07-24 20:03:21.652367: Epoch 3
+2026-07-24 20:03:21.652367: Current learning rate: 0.0001
+2026-07-24 20:05:51.087860: train_loss -0.8881
+2026-07-24 20:05:51.087860: val_loss -0.8724
+2026-07-24 20:05:51.087860: Pseudo dice [0.9126]
+2026-07-24 20:05:51.087860: Epoch time: 149.44 s
+2026-07-24 20:05:51.797871: R306 early stop {"completed_epochs": 4, "ema_dice": 0.9138208105102563, "early_best": 0.9139555413115037, "bad_epochs": 1, "stop": false}
+2026-07-24 20:05:51.797871: 
+2026-07-24 20:05:51.797871: Epoch 4
+2026-07-24 20:05:51.797871: Current learning rate: 9e-05
+2026-07-24 20:08:09.289208: train_loss -0.8792
+2026-07-24 20:08:09.290204: val_loss -0.8782
+2026-07-24 20:08:09.290930: Pseudo dice [0.9218]
+2026-07-24 20:08:09.290930: Epoch time: 137.49 s
+2026-07-24 20:08:09.290930: Yayy! New best EMA pseudo Dice: 0.9146
+2026-07-24 20:08:10.629162: R306 early stop {"completed_epochs": 5, "ema_dice": 0.914616576295824, "early_best": 0.914616576295824, "bad_epochs": 0, "stop": false}
+2026-07-24 20:08:10.629162: 
+2026-07-24 20:08:10.629162: Epoch 5
+2026-07-24 20:08:10.629162: Current learning rate: 9e-05
+2026-07-24 20:10:29.225947: train_loss -0.8847
+2026-07-24 20:10:29.225947: val_loss -0.8672
+2026-07-24 20:10:29.233989: Pseudo dice [0.9146]
+2026-07-24 20:10:29.234404: Epoch time: 138.6 s
+2026-07-24 20:10:29.779232: R306 early stop {"completed_epochs": 6, "ema_dice": 0.9146150960873685, "early_best": 0.914616576295824, "bad_epochs": 1, "stop": false}
+2026-07-24 20:10:29.789458: 
+2026-07-24 20:10:29.789458: Epoch 6
+2026-07-24 20:10:29.789458: Current learning rate: 9e-05
+2026-07-24 20:12:39.773514: train_loss -0.8837
+2026-07-24 20:12:39.773514: val_loss -0.8498
+2026-07-24 20:12:39.773514: Pseudo dice [0.911]
+2026-07-24 20:12:39.778999: Epoch time: 129.99 s
+2026-07-24 20:12:40.486303: R306 early stop {"completed_epochs": 7, "ema_dice": 0.9142545218189951, "early_best": 0.914616576295824, "bad_epochs": 2, "stop": false}
+2026-07-24 20:12:40.486303: 
+2026-07-24 20:12:40.486303: Epoch 7
+2026-07-24 20:12:40.486303: Current learning rate: 9e-05
+2026-07-24 20:14:51.122350: train_loss -0.8827
+2026-07-24 20:14:51.122350: val_loss -0.88
+2026-07-24 20:14:51.122350: Pseudo dice [0.9161]
+2026-07-24 20:14:51.122350: Epoch time: 130.64 s
+2026-07-24 20:14:51.733025: R306 early stop {"completed_epochs": 8, "ema_dice": 0.9144427595553661, "early_best": 0.914616576295824, "bad_epochs": 3, "stop": false}
+2026-07-24 20:14:51.733025: 
+2026-07-24 20:14:51.733025: Epoch 8
+2026-07-24 20:14:51.733025: Current learning rate: 9e-05
+2026-07-24 20:17:05.501767: train_loss -0.8842
+2026-07-24 20:17:05.502949: val_loss -0.8582
+2026-07-24 20:17:05.502949: Pseudo dice [0.9162]
+2026-07-24 20:17:05.502949: Epoch time: 133.77 s
+2026-07-24 20:17:05.503961: Yayy! New best EMA pseudo Dice: 0.9146
+2026-07-24 20:17:06.753412: R306 early stop {"completed_epochs": 9, "ema_dice": 0.9146224326680028, "early_best": 0.914616576295824, "bad_epochs": 4, "stop": false}
+2026-07-24 20:17:06.755427: 
+2026-07-24 20:17:06.756426: Epoch 9
+2026-07-24 20:17:06.756426: Current learning rate: 9e-05
+2026-07-24 20:19:13.923465: train_loss -0.8907
+2026-07-24 20:19:13.924465: val_loss -0.8769
+2026-07-24 20:19:13.924465: Pseudo dice [0.9243]
+2026-07-24 20:19:13.925539: Epoch time: 127.17 s
+2026-07-24 20:19:13.925795: Yayy! New best EMA pseudo Dice: 0.9156
+2026-07-24 20:19:14.983607: R306 early stop {"completed_epochs": 10, "ema_dice": 0.9155929082348339, "early_best": 0.9155929082348339, "bad_epochs": 0, "stop": false}
+2026-07-24 20:19:14.985359: 
+2026-07-24 20:19:14.985359: Epoch 10
+2026-07-24 20:19:14.985359: Current learning rate: 8e-05
+2026-07-24 20:21:29.023070: train_loss -0.8854
+2026-07-24 20:21:29.024072: val_loss -0.8668
+2026-07-24 20:21:29.025081: Pseudo dice [0.9225]
+2026-07-24 20:21:29.025081: Epoch time: 134.04 s
+2026-07-24 20:21:29.025081: Yayy! New best EMA pseudo Dice: 0.9163
+2026-07-24 20:21:30.436368: R306 early stop {"completed_epochs": 11, "ema_dice": 0.9162836911680539, "early_best": 0.9162836911680539, "bad_epochs": 0, "stop": false}
+2026-07-24 20:21:30.436368: 
+2026-07-24 20:21:30.436368: Epoch 11
+2026-07-24 20:21:30.436368: Current learning rate: 8e-05
+2026-07-24 20:23:41.319536: train_loss -0.8856
+2026-07-24 20:23:41.320547: val_loss -0.8733
+2026-07-24 20:23:41.320547: Pseudo dice [0.9124]
+2026-07-24 20:23:41.321554: Epoch time: 130.88 s
+2026-07-24 20:23:42.060878: R306 early stop {"completed_epochs": 12, "ema_dice": 0.9158914854559272, "early_best": 0.9162836911680539, "bad_epochs": 1, "stop": false}
+2026-07-24 20:23:42.064857: 
+2026-07-24 20:23:42.064857: Epoch 12
+2026-07-24 20:23:42.064857: Current learning rate: 8e-05
+2026-07-24 20:26:00.201124: train_loss -0.8849
+2026-07-24 20:26:00.201124: val_loss -0.8637
+2026-07-24 20:26:00.201124: Pseudo dice [0.9191]
+2026-07-24 20:26:00.205088: Epoch time: 138.14 s
+2026-07-24 20:26:01.146254: R306 early stop {"completed_epochs": 13, "ema_dice": 0.9162088004728273, "early_best": 0.9162836911680539, "bad_epochs": 2, "stop": false}
+2026-07-24 20:26:01.146254: 
+2026-07-24 20:26:01.146254: Epoch 13
+2026-07-24 20:26:01.146254: Current learning rate: 8e-05
+2026-07-24 20:28:32.220249: train_loss -0.8877
+2026-07-24 20:28:32.230948: val_loss -0.855
+2026-07-24 20:28:32.230948: Pseudo dice [0.9097]
+2026-07-24 20:28:32.230948: Epoch time: 151.07 s
+2026-07-24 20:28:33.151759: R306 early stop {"completed_epochs": 14, "ema_dice": 0.9155555054281451, "early_best": 0.9162836911680539, "bad_epochs": 3, "stop": false}
+2026-07-24 20:28:33.151759: 
+2026-07-24 20:28:33.151759: Epoch 14
+2026-07-24 20:28:33.151759: Current learning rate: 8e-05
+2026-07-24 20:30:59.172744: train_loss -0.8858
+2026-07-24 20:30:59.176863: val_loss -0.8499
+2026-07-24 20:30:59.176863: Pseudo dice [0.9113]
+2026-07-24 20:30:59.176863: Epoch time: 146.02 s
+2026-07-24 20:30:59.998371: R306 early stop {"completed_epochs": 15, "ema_dice": 0.9151250749459903, "early_best": 0.9162836911680539, "bad_epochs": 4, "stop": false}
+2026-07-24 20:31:00.014355: 
+2026-07-24 20:31:00.014355: Epoch 15
+2026-07-24 20:31:00.016360: Current learning rate: 8e-05
+2026-07-24 20:33:19.994658: train_loss -0.8909
+2026-07-24 20:33:19.995651: val_loss -0.8801
+2026-07-24 20:33:19.995651: Pseudo dice [0.9205]
+2026-07-24 20:33:19.996654: Epoch time: 140.0 s
+2026-07-24 20:33:20.603591: R306 early stop {"completed_epochs": 16, "ema_dice": 0.9156641971065737, "early_best": 0.9162836911680539, "bad_epochs": 5, "stop": false}
+2026-07-24 20:33:20.605595: 
+2026-07-24 20:33:20.605595: Epoch 16
+2026-07-24 20:33:20.606347: Current learning rate: 8e-05
+2026-07-24 20:35:40.296794: train_loss -0.8797
+2026-07-24 20:35:40.297842: val_loss -0.8813
+2026-07-24 20:35:40.297842: Pseudo dice [0.9216]
+2026-07-24 20:35:40.298795: Epoch time: 139.69 s
+2026-07-24 20:35:41.130579: R306 early stop {"completed_epochs": 17, "ema_dice": 0.9162532590184019, "early_best": 0.9162836911680539, "bad_epochs": 6, "stop": false}
+2026-07-24 20:35:41.132561: 
+2026-07-24 20:35:41.132561: Epoch 17
+2026-07-24 20:35:41.133575: Current learning rate: 7e-05
+2026-07-24 20:38:01.506518: train_loss -0.8891
+2026-07-24 20:38:01.507507: val_loss -0.8671
+2026-07-24 20:38:01.507507: Pseudo dice [0.9209]
+2026-07-24 20:38:01.508507: Epoch time: 140.38 s
+2026-07-24 20:38:01.508507: Yayy! New best EMA pseudo Dice: 0.9167
+2026-07-24 20:38:02.609954: R306 early stop {"completed_epochs": 18, "ema_dice": 0.9167129585802702, "early_best": 0.9167129585802702, "bad_epochs": 0, "stop": false}
+2026-07-24 20:38:02.611954: 
+2026-07-24 20:38:02.611954: Epoch 18
+2026-07-24 20:38:02.611954: Current learning rate: 7e-05
+2026-07-24 20:40:25.401171: train_loss -0.8837
+2026-07-24 20:40:25.402171: val_loss -0.842
+2026-07-24 20:40:25.403180: Pseudo dice [0.916]
+2026-07-24 20:40:25.403180: Epoch time: 142.79 s
+2026-07-24 20:40:26.185970: R306 early stop {"completed_epochs": 19, "ema_dice": 0.916641921777007, "early_best": 0.9167129585802702, "bad_epochs": 1, "stop": false}
+2026-07-24 20:40:26.187750: 
+2026-07-24 20:40:26.188715: Epoch 19
+2026-07-24 20:40:26.189124: Current learning rate: 7e-05
+2026-07-24 20:42:46.851472: train_loss -0.8777
+2026-07-24 20:42:46.851472: val_loss -0.8795
+2026-07-24 20:42:46.852471: Pseudo dice [0.9169]
+2026-07-24 20:42:46.852631: Epoch time: 140.66 s
+2026-07-24 20:42:47.460844: R306 early stop {"completed_epochs": 20, "ema_dice": 0.9166645783700452, "early_best": 0.9167129585802702, "bad_epochs": 2, "stop": false}
+2026-07-24 20:42:47.462385: 
+2026-07-24 20:42:47.463394: Epoch 20
+2026-07-24 20:42:47.463670: Current learning rate: 7e-05
+2026-07-24 20:45:10.292352: train_loss -0.8884
+2026-07-24 20:45:10.293350: val_loss -0.8767
+2026-07-24 20:45:10.293350: Pseudo dice [0.9178]
+2026-07-24 20:45:10.294341: Epoch time: 142.83 s
+2026-07-24 20:45:10.294341: Yayy! New best EMA pseudo Dice: 0.9168
+2026-07-24 20:45:11.382670: R306 early stop {"completed_epochs": 21, "ema_dice": 0.916782392810505, "early_best": 0.9167129585802702, "bad_epochs": 3, "stop": false}
+2026-07-24 20:45:11.384672: 
+2026-07-24 20:45:11.384672: Epoch 21
+2026-07-24 20:45:11.384672: Current learning rate: 7e-05
+2026-07-24 20:47:31.767977: train_loss -0.8858
+2026-07-24 20:47:31.768993: val_loss -0.8645
+2026-07-24 20:47:31.768993: Pseudo dice [0.9207]
+2026-07-24 20:47:31.770072: Epoch time: 140.39 s
+2026-07-24 20:47:31.770072: Yayy! New best EMA pseudo Dice: 0.9172
+2026-07-24 20:47:32.831487: R306 early stop {"completed_epochs": 22, "ema_dice": 0.9171777273314013, "early_best": 0.9171777273314013, "bad_epochs": 0, "stop": false}
+2026-07-24 20:47:32.833492: 
+2026-07-24 20:47:32.834489: Epoch 22
+2026-07-24 20:47:32.834489: Current learning rate: 7e-05
+2026-07-24 20:49:52.534056: train_loss -0.8838
+2026-07-24 20:49:52.535043: val_loss -0.8779
+2026-07-24 20:49:52.536056: Pseudo dice [0.9205]
+2026-07-24 20:49:52.536056: Epoch time: 139.7 s
+2026-07-24 20:49:52.536056: Yayy! New best EMA pseudo Dice: 0.9175
+2026-07-24 20:49:53.641251: R306 early stop {"completed_epochs": 23, "ema_dice": 0.9175141890718082, "early_best": 0.9175141890718082, "bad_epochs": 0, "stop": false}
+2026-07-24 20:49:53.645244: 
+2026-07-24 20:49:53.645244: Epoch 23
+2026-07-24 20:49:53.645244: Current learning rate: 6e-05
+2026-07-24 20:52:15.437753: train_loss -0.8845
+2026-07-24 20:52:15.438761: val_loss -0.878
+2026-07-24 20:52:15.439752: Pseudo dice [0.9146]
+2026-07-24 20:52:15.439752: Epoch time: 141.79 s
+2026-07-24 20:52:16.201629: R306 early stop {"completed_epochs": 24, "ema_dice": 0.9172259968204874, "early_best": 0.9175141890718082, "bad_epochs": 1, "stop": false}
+2026-07-24 20:52:16.203629: 
+2026-07-24 20:52:16.204612: Epoch 24
+2026-07-24 20:52:16.205003: Current learning rate: 6e-05
+2026-07-24 20:54:36.266792: train_loss -0.8917
+2026-07-24 20:54:36.267801: val_loss -0.8739
+2026-07-24 20:54:36.268800: Pseudo dice [0.9185]
+2026-07-24 20:54:36.268800: Epoch time: 140.06 s
+2026-07-24 20:54:36.861739: R306 early stop {"completed_epochs": 25, "ema_dice": 0.917349528558608, "early_best": 0.9175141890718082, "bad_epochs": 2, "stop": false}
+2026-07-24 20:54:36.863731: 
+2026-07-24 20:54:36.864729: Epoch 25
+2026-07-24 20:54:36.864729: Current learning rate: 6e-05
+2026-07-24 20:57:06.554237: train_loss -0.8809
+2026-07-24 20:57:06.555235: val_loss -0.8831
+2026-07-24 20:57:06.555235: Pseudo dice [0.9214]
+2026-07-24 20:57:06.556236: Epoch time: 149.69 s
+2026-07-24 20:57:06.556236: Yayy! New best EMA pseudo Dice: 0.9178
+2026-07-24 20:57:07.829809: R306 early stop {"completed_epochs": 26, "ema_dice": 0.9177515670327939, "early_best": 0.9177515670327939, "bad_epochs": 0, "stop": false}
+2026-07-24 20:57:07.831815: 
+2026-07-24 20:57:07.832816: Epoch 26
+2026-07-24 20:57:07.832816: Current learning rate: 6e-05
+2026-07-24 20:59:40.660306: train_loss -0.8859
+2026-07-24 20:59:40.661203: val_loss -0.8553
+2026-07-24 20:59:40.661203: Pseudo dice [0.9145]
+2026-07-24 20:59:40.662267: Epoch time: 152.83 s
+2026-07-24 20:59:41.500721: R306 early stop {"completed_epochs": 27, "ema_dice": 0.9174261185440049, "early_best": 0.9177515670327939, "bad_epochs": 1, "stop": false}
+2026-07-24 20:59:41.503294: 
+2026-07-24 20:59:41.503698: Epoch 27
+2026-07-24 20:59:41.503698: Current learning rate: 6e-05
+2026-07-24 21:02:15.547270: train_loss -0.8865
+2026-07-24 21:02:15.547270: val_loss -0.8809
+2026-07-24 21:02:15.548279: Pseudo dice [0.9217]
+2026-07-24 21:02:15.548678: Epoch time: 154.05 s
+2026-07-24 21:02:15.548678: Yayy! New best EMA pseudo Dice: 0.9179
+2026-07-24 21:02:16.628344: R306 early stop {"completed_epochs": 28, "ema_dice": 0.917857578846862, "early_best": 0.917857578846862, "bad_epochs": 0, "stop": false}
+2026-07-24 21:02:16.630341: 
+2026-07-24 21:02:16.631236: Epoch 28
+2026-07-24 21:02:16.631933: Current learning rate: 6e-05
+2026-07-24 21:04:43.395533: train_loss -0.8829
+2026-07-24 21:04:43.395533: val_loss -0.8603
+2026-07-24 21:04:43.407262: Pseudo dice [0.9189]
+2026-07-24 21:04:43.407262: Epoch time: 146.77 s
+2026-07-24 21:04:43.407262: Yayy! New best EMA pseudo Dice: 0.918
+2026-07-24 21:04:44.901723: R306 early stop {"completed_epochs": 29, "ema_dice": 0.9179612035044523, "early_best": 0.9179612035044523, "bad_epochs": 0, "stop": false}
+2026-07-24 21:04:44.902267: 
+2026-07-24 21:04:44.902267: Epoch 29
+2026-07-24 21:04:44.902267: Current learning rate: 6e-05
+2026-07-24 21:07:17.032243: train_loss -0.889
+2026-07-24 21:07:17.033244: val_loss -0.8887
+2026-07-24 21:07:17.033244: Pseudo dice [0.9204]
+2026-07-24 21:07:17.034356: Epoch time: 152.13 s
+2026-07-24 21:07:17.035321: Yayy! New best EMA pseudo Dice: 0.9182
+2026-07-24 21:07:18.364216: R306 early stop {"completed_epochs": 30, "ema_dice": 0.9182076924153437, "early_best": 0.9182076924153437, "bad_epochs": 0, "stop": false}
+2026-07-24 21:07:18.366222: 
+2026-07-24 21:07:18.367216: Epoch 30
+2026-07-24 21:07:18.367216: Current learning rate: 5e-05
+2026-07-24 21:09:53.667153: train_loss -0.8861
+2026-07-24 21:09:53.667153: val_loss -0.8499
+2026-07-24 21:09:53.668657: Pseudo dice [0.9145]
+2026-07-24 21:09:53.668657: Epoch time: 155.3 s
+2026-07-24 21:09:54.468817: R306 early stop {"completed_epochs": 31, "ema_dice": 0.9178326056378862, "early_best": 0.9182076924153437, "bad_epochs": 1, "stop": false}
+2026-07-24 21:09:54.470533: 
+2026-07-24 21:09:54.471478: Epoch 31
+2026-07-24 21:09:54.471478: Current learning rate: 5e-05
+2026-07-24 21:12:28.445080: train_loss -0.8902
+2026-07-24 21:12:28.446073: val_loss -0.8649
+2026-07-24 21:12:28.446073: Pseudo dice [0.9146]
+2026-07-24 21:12:28.446073: Epoch time: 153.98 s
+2026-07-24 21:12:29.237565: R306 early stop {"completed_epochs": 32, "ema_dice": 0.917513921292225, "early_best": 0.9182076924153437, "bad_epochs": 2, "stop": false}
+2026-07-24 21:12:29.242108: 
+2026-07-24 21:12:29.242108: Epoch 32
+2026-07-24 21:12:29.243102: Current learning rate: 5e-05
+2026-07-24 21:15:04.365614: train_loss -0.8844
+2026-07-24 21:15:04.366603: val_loss -0.8549
+2026-07-24 21:15:04.366603: Pseudo dice [0.9133]
+2026-07-24 21:15:04.366603: Epoch time: 155.13 s
+2026-07-24 21:15:04.973040: R306 early stop {"completed_epochs": 33, "ema_dice": 0.9170923466586774, "early_best": 0.9182076924153437, "bad_epochs": 3, "stop": false}
+2026-07-24 21:15:04.975039: 
+2026-07-24 21:15:04.975039: Epoch 33
+2026-07-24 21:15:04.976037: Current learning rate: 5e-05
+2026-07-24 21:17:36.348671: train_loss -0.8879
+2026-07-24 21:17:36.348671: val_loss -0.885
+2026-07-24 21:17:36.349669: Pseudo dice [0.922]
+2026-07-24 21:17:36.349669: Epoch time: 151.38 s
+2026-07-24 21:17:37.328730: R306 early stop {"completed_epochs": 34, "ema_dice": 0.9175844853756555, "early_best": 0.9182076924153437, "bad_epochs": 4, "stop": false}
+2026-07-24 21:17:37.331785: 
+2026-07-24 21:17:37.331785: Epoch 34
+2026-07-24 21:17:37.332773: Current learning rate: 5e-05
+2026-07-24 21:20:08.814814: train_loss -0.8817
+2026-07-24 21:20:08.815815: val_loss -0.891
+2026-07-24 21:20:08.816817: Pseudo dice [0.9216]
+2026-07-24 21:20:08.816817: Epoch time: 151.49 s
+2026-07-24 21:20:09.654988: R306 early stop {"completed_epochs": 35, "ema_dice": 0.9179868256408905, "early_best": 0.9182076924153437, "bad_epochs": 5, "stop": false}
+2026-07-24 21:20:09.657051: 
+2026-07-24 21:20:09.657990: Epoch 35
+2026-07-24 21:20:09.657990: Current learning rate: 5e-05
+2026-07-24 21:22:42.949346: train_loss -0.8865
+2026-07-24 21:22:42.950340: val_loss -0.8787
+2026-07-24 21:22:42.951351: Pseudo dice [0.9193]
+2026-07-24 21:22:42.951351: Epoch time: 153.29 s
+2026-07-24 21:22:43.732412: R306 early stop {"completed_epochs": 36, "ema_dice": 0.918117227210455, "early_best": 0.9182076924153437, "bad_epochs": 6, "stop": false}
+2026-07-24 21:22:43.734539: 
+2026-07-24 21:22:43.735375: Epoch 36
+2026-07-24 21:22:43.735375: Current learning rate: 4e-05
+2026-07-24 21:25:16.243792: train_loss -0.8903
+2026-07-24 21:25:16.244799: val_loss -0.8638
+2026-07-24 21:25:16.245802: Pseudo dice [0.9201]
+2026-07-24 21:25:16.246791: Epoch time: 152.51 s
+2026-07-24 21:25:16.246791: Yayy! New best EMA pseudo Dice: 0.9183
+2026-07-24 21:25:17.655651: R306 early stop {"completed_epochs": 37, "ema_dice": 0.9183204612780196, "early_best": 0.9183204612780196, "bad_epochs": 0, "stop": false}
+2026-07-24 21:25:17.657651: 
+2026-07-24 21:25:17.657651: Epoch 37
+2026-07-24 21:25:17.657651: Current learning rate: 4e-05
+2026-07-24 21:27:51.533760: train_loss -0.8894
+2026-07-24 21:27:51.534753: val_loss -0.8821
+2026-07-24 21:27:51.535751: Pseudo dice [0.9188]
+2026-07-24 21:27:51.535751: Epoch time: 153.88 s
+2026-07-24 21:27:51.536744: Yayy! New best EMA pseudo Dice: 0.9184
+2026-07-24 21:27:52.825796: R306 early stop {"completed_epochs": 38, "ema_dice": 0.9183668598408331, "early_best": 0.9183204612780196, "bad_epochs": 1, "stop": false}
+2026-07-24 21:27:52.827384: 
+2026-07-24 21:27:52.828383: Epoch 38
+2026-07-24 21:27:52.828383: Current learning rate: 4e-05
+2026-07-24 21:30:24.575315: train_loss -0.8858
+2026-07-24 21:30:24.576313: val_loss -0.8871
+2026-07-24 21:30:24.577313: Pseudo dice [0.9246]
+2026-07-24 21:30:24.577313: Epoch time: 151.75 s
+2026-07-24 21:30:24.577313: Yayy! New best EMA pseudo Dice: 0.919
+2026-07-24 21:30:26.264241: R306 early stop {"completed_epochs": 39, "ema_dice": 0.9189895362943893, "early_best": 0.9189895362943893, "bad_epochs": 0, "stop": false}
+2026-07-24 21:30:26.265869: 
+2026-07-24 21:30:26.266910: Epoch 39
+2026-07-24 21:30:26.266910: Current learning rate: 4e-05
+2026-07-24 21:33:00.225764: train_loss -0.8919
+2026-07-24 21:33:00.226785: val_loss -0.883
+2026-07-24 21:33:00.226995: Pseudo dice [0.9215]
+2026-07-24 21:33:00.227391: Epoch time: 153.96 s
+2026-07-24 21:33:00.227786: Yayy! New best EMA pseudo Dice: 0.9192
+2026-07-24 21:33:01.583318: R306 early stop {"completed_epochs": 40, "ema_dice": 0.9192431307107702, "early_best": 0.9192431307107702, "bad_epochs": 0, "stop": false}
+2026-07-24 21:33:01.586306: 
+2026-07-24 21:33:01.586306: Epoch 40
+2026-07-24 21:33:01.587311: Current learning rate: 4e-05
+2026-07-24 21:35:35.074841: train_loss -0.8886
+2026-07-24 21:35:35.076435: val_loss -0.8873
+2026-07-24 21:35:35.077438: Pseudo dice [0.9256]
+2026-07-24 21:35:35.077438: Epoch time: 153.49 s
+2026-07-24 21:35:35.077438: Yayy! New best EMA pseudo Dice: 0.9199
+2026-07-24 21:35:36.442774: R306 early stop {"completed_epochs": 41, "ema_dice": 0.9198768948271747, "early_best": 0.9198768948271747, "bad_epochs": 0, "stop": false}
+2026-07-24 21:35:36.445773: 
+2026-07-24 21:35:36.445773: Epoch 41
+2026-07-24 21:35:36.446844: Current learning rate: 4e-05
+2026-07-24 21:38:05.577461: train_loss -0.8897
+2026-07-24 21:38:05.578462: val_loss -0.8735
+2026-07-24 21:38:05.579252: Pseudo dice [0.919]
+2026-07-24 21:38:05.579252: Epoch time: 149.13 s
+2026-07-24 21:38:06.445801: R306 early stop {"completed_epochs": 42, "ema_dice": 0.9197904545054983, "early_best": 0.9198768948271747, "bad_epochs": 1, "stop": false}
+2026-07-24 21:38:06.447768: 
+2026-07-24 21:38:06.447768: Epoch 42
+2026-07-24 21:38:06.447768: Current learning rate: 3e-05
+2026-07-24 21:40:35.851327: train_loss -0.8925
+2026-07-24 21:40:35.852319: val_loss -0.8774
+2026-07-24 21:40:35.853319: Pseudo dice [0.9172]
+2026-07-24 21:40:35.853319: Epoch time: 149.41 s
+2026-07-24 21:40:36.619784: R306 early stop {"completed_epochs": 43, "ema_dice": 0.9195294665449658, "early_best": 0.9198768948271747, "bad_epochs": 2, "stop": false}
+2026-07-24 21:40:36.621777: 
+2026-07-24 21:40:36.621777: Epoch 43
+2026-07-24 21:40:36.622715: Current learning rate: 3e-05
+2026-07-24 21:43:12.845482: train_loss -0.8839
+2026-07-24 21:43:12.845482: val_loss -0.8749
+2026-07-24 21:43:12.846482: Pseudo dice [0.9194]
+2026-07-24 21:43:12.846482: Epoch time: 156.23 s
+2026-07-24 21:43:13.786412: R306 early stop {"completed_epochs": 44, "ema_dice": 0.91951871353173, "early_best": 0.9198768948271747, "bad_epochs": 3, "stop": false}
+2026-07-24 21:43:13.789402: 
+2026-07-24 21:43:13.789402: Epoch 44
+2026-07-24 21:43:13.790402: Current learning rate: 3e-05
+2026-07-24 21:45:47.057026: train_loss -0.8862
+2026-07-24 21:45:47.058028: val_loss -0.8783
+2026-07-24 21:45:47.059024: Pseudo dice [0.9134]
+2026-07-24 21:45:47.059024: Epoch time: 153.27 s
+2026-07-24 21:45:47.827251: R306 early stop {"completed_epochs": 45, "ema_dice": 0.9189079438761806, "early_best": 0.9198768948271747, "bad_epochs": 4, "stop": false}
+2026-07-24 21:45:47.828253: 
+2026-07-24 21:45:47.829251: Epoch 45
+2026-07-24 21:45:47.829251: Current learning rate: 3e-05
+2026-07-24 21:48:19.117729: train_loss -0.8903
+2026-07-24 21:48:19.118718: val_loss -0.8869
+2026-07-24 21:48:19.119712: Pseudo dice [0.9163]
+2026-07-24 21:48:19.119712: Epoch time: 151.29 s
+2026-07-24 21:48:19.959102: R306 early stop {"completed_epochs": 46, "ema_dice": 0.91864352327602, "early_best": 0.9198768948271747, "bad_epochs": 5, "stop": false}
+2026-07-24 21:48:19.963101: 
+2026-07-24 21:48:19.964112: Epoch 46
+2026-07-24 21:48:19.965177: Current learning rate: 3e-05
+2026-07-24 21:50:52.768049: train_loss -0.8863
+2026-07-24 21:50:52.768049: val_loss -0.8819
+2026-07-24 21:50:52.769068: Pseudo dice [0.9221]
+2026-07-24 21:50:52.769068: Epoch time: 152.81 s
+2026-07-24 21:50:53.627316: R306 early stop {"completed_epochs": 47, "ema_dice": 0.9189887848382817, "early_best": 0.9198768948271747, "bad_epochs": 6, "stop": false}
+2026-07-24 21:50:53.630318: 
+2026-07-24 21:50:53.630318: Epoch 47
+2026-07-24 21:50:53.631317: Current learning rate: 3e-05
+2026-07-24 21:53:28.803313: train_loss -0.8854
+2026-07-24 21:53:28.804303: val_loss -0.8521
+2026-07-24 21:53:28.804303: Pseudo dice [0.9186]
+2026-07-24 21:53:28.805807: Epoch time: 155.18 s
+2026-07-24 21:53:29.614820: R306 early stop {"completed_epochs": 48, "ema_dice": 0.9189457697440778, "early_best": 0.9198768948271747, "bad_epochs": 7, "stop": false}
+2026-07-24 21:53:29.616809: 
+2026-07-24 21:53:29.617823: Epoch 48
+2026-07-24 21:53:29.617823: Current learning rate: 2e-05
+2026-07-24 21:56:03.586211: train_loss -0.8853
+2026-07-24 21:56:03.587211: val_loss -0.8801
+2026-07-24 21:56:03.587211: Pseudo dice [0.9218]
+2026-07-24 21:56:03.588205: Epoch time: 153.97 s
+2026-07-24 21:56:04.595044: R306 early stop {"completed_epochs": 49, "ema_dice": 0.9192299447010887, "early_best": 0.9198768948271747, "bad_epochs": 8, "stop": false}
+2026-07-24 21:56:04.597049: 
+2026-07-24 21:56:04.597049: Epoch 49
+2026-07-24 21:56:04.598052: Current learning rate: 2e-05
+2026-07-24 21:58:40.884216: train_loss -0.8875
+2026-07-24 21:58:40.885217: val_loss -0.8383
+2026-07-24 21:58:40.885217: Pseudo dice [0.9129]
+2026-07-24 21:58:40.886231: Epoch time: 156.29 s
+2026-07-24 21:58:42.279507: R306 early stop {"completed_epochs": 50, "ema_dice": 0.9185921089799645, "early_best": 0.9198768948271747, "bad_epochs": 9, "stop": false}
+2026-07-24 21:58:42.282507: 
+2026-07-24 21:58:42.283703: Epoch 50
+2026-07-24 21:58:42.284110: Current learning rate: 2e-05
+2026-07-24 22:01:15.271255: train_loss -0.8839
+2026-07-24 22:01:15.271255: val_loss -0.8746
+2026-07-24 22:01:15.272307: Pseudo dice [0.9138]
+2026-07-24 22:01:15.272776: Epoch time: 152.99 s
+2026-07-24 22:01:16.101454: R306 early stop {"completed_epochs": 51, "ema_dice": 0.918112419757484, "early_best": 0.9198768948271747, "bad_epochs": 10, "stop": true}
+2026-07-24 22:01:16.669421: Training done.
+2026-07-24 22:01:16.725957: Using splits from existing split file: G:\gutou\YOLO+SAM\outputs\nnunet\r308_clean_panels_r260\data\nnUNet_preprocessed\Dataset309_TSRSR260CleanPanels2D\splits_final.json
+2026-07-24 22:01:16.726957: The split file contains 1 splits.
+2026-07-24 22:01:16.727960: Desired fold for training: 0
+2026-07-24 22:01:16.727960: This split has 814 training and 94 validation cases.
+2026-07-24 22:01:16.728958: predicting val_10375
+2026-07-24 22:01:16.741995: val_10375, shape torch.Size([2, 1, 1136, 959]), rank 0
+2026-07-24 22:01:19.359384: predicting val_10520
+2026-07-24 22:01:19.371387: val_10520, shape torch.Size([2, 1, 1515, 1067]), rank 0
+2026-07-24 22:01:20.205109: predicting val_10618
+2026-07-24 22:01:20.224192: val_10618, shape torch.Size([2, 1, 1533, 1608]), rank 0
+2026-07-24 22:01:21.486455: predicting val_10624
+2026-07-24 22:01:21.497510: val_10624, shape torch.Size([2, 1, 1257, 1224]), rank 0
+2026-07-24 22:01:22.364216: predicting val_11852
+2026-07-24 22:01:22.377215: val_11852, shape torch.Size([2, 1, 1419, 1075]), rank 0
+2026-07-24 22:01:23.251794: predicting val_11945
+2026-07-24 22:01:23.273794: val_11945, shape torch.Size([2, 1, 1436, 1111]), rank 0
+2026-07-24 22:01:24.210654: predicting val_12498
+2026-07-24 22:01:24.228655: val_12498, shape torch.Size([2, 1, 1536, 1257]), rank 0
+2026-07-24 22:01:25.135869: predicting val_12627
+2026-07-24 22:01:25.152874: val_12627, shape torch.Size([2, 1, 1216, 1006]), rank 0
+2026-07-24 22:01:25.618851: predicting val_12827
+2026-07-24 22:01:25.646850: val_12827, shape torch.Size([2, 1, 2000, 1398]), rank 0
+2026-07-24 22:01:27.467144: predicting val_13220
+2026-07-24 22:01:27.486674: val_13220, shape torch.Size([2, 1, 1328, 1286]), rank 0
+2026-07-24 22:01:28.394158: predicting val_13436
+2026-07-24 22:01:28.419678: val_13436, shape torch.Size([2, 1, 1508, 1470]), rank 0
+2026-07-24 22:01:29.344928: predicting val_13441
+2026-07-24 22:01:29.353930: val_13441, shape torch.Size([2, 1, 1078, 912]), rank 0
+2026-07-24 22:01:29.822176: predicting val_13454
+2026-07-24 22:01:29.832217: val_13454, shape torch.Size([2, 1, 1258, 943]), rank 0
+2026-07-24 22:01:30.287589: predicting val_13480
+2026-07-24 22:01:30.298593: val_13480, shape torch.Size([2, 1, 1412, 1148]), rank 0
+2026-07-24 22:01:31.150962: predicting val_13517
+2026-07-24 22:01:31.161964: val_13517, shape torch.Size([2, 1, 1518, 1220]), rank 0
+2026-07-24 22:01:32.004458: predicting val_13840
+2026-07-24 22:01:32.018028: val_13840, shape torch.Size([2, 1, 1519, 1082]), rank 0
+2026-07-24 22:01:32.860753: predicting val_13867
+2026-07-24 22:01:32.874750: val_13867, shape torch.Size([2, 1, 1547, 1248]), rank 0
+2026-07-24 22:01:34.522823: predicting val_1399
+2026-07-24 22:01:34.544681: val_1399, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:01:36.207798: predicting val_14041
+2026-07-24 22:01:36.226260: val_14041, shape torch.Size([2, 1, 1852, 1472]), rank 0
+2026-07-24 22:01:37.882505: predicting val_1418
+2026-07-24 22:01:37.897505: val_1418, shape torch.Size([2, 1, 1514, 2044]), rank 0
+2026-07-24 22:01:39.165311: predicting val_1452
+2026-07-24 22:01:39.184323: val_1452, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:01:40.843400: predicting val_15040
+2026-07-24 22:01:40.860401: val_15040, shape torch.Size([2, 1, 2087, 1208]), rank 0
+2026-07-24 22:01:42.517095: predicting val_15067
+2026-07-24 22:01:42.530612: val_15067, shape torch.Size([2, 1, 1874, 1384]), rank 0
+2026-07-24 22:01:44.191172: predicting val_1518
+2026-07-24 22:01:44.208174: val_1518, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:01:45.863384: predicting val_1522
+2026-07-24 22:01:45.880395: val_1522, shape torch.Size([2, 1, 1514, 2044]), rank 0
+2026-07-24 22:01:47.146667: predicting val_15274
+2026-07-24 22:01:47.159848: val_15274, shape torch.Size([2, 1, 1678, 1258]), rank 0
+2026-07-24 22:01:48.817709: predicting val_15369
+2026-07-24 22:01:48.836248: val_15369, shape torch.Size([2, 1, 1615, 1656]), rank 0
+2026-07-24 22:01:51.317607: predicting val_15446
+2026-07-24 22:01:51.328614: val_15446, shape torch.Size([2, 1, 1752, 1000]), rank 0
+2026-07-24 22:01:52.170632: predicting val_1560
+2026-07-24 22:01:52.197615: val_1560, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:01:55.898479: predicting val_1572
+2026-07-24 22:01:55.927479: val_1572, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:01:59.645771: predicting val_1585
+2026-07-24 22:01:59.679302: val_1585, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:03.391558: predicting val_1590
+2026-07-24 22:02:03.408566: val_1590, shape torch.Size([2, 1, 1824, 992]), rank 0
+2026-07-24 22:02:04.252413: predicting val_1620
+2026-07-24 22:02:04.271940: val_1620, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:05.941125: predicting val_1660
+2026-07-24 22:02:05.961658: val_1660, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:09.664447: predicting val_1666
+2026-07-24 22:02:09.692452: val_1666, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:13.402564: predicting val_1674
+2026-07-24 22:02:13.430565: val_1674, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:17.142294: predicting val_1678
+2026-07-24 22:02:17.169343: val_1678, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:20.884348: predicting val_1694
+2026-07-24 22:02:20.908413: val_1694, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:24.621339: predicting val_1736
+2026-07-24 22:02:24.642394: val_1736, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:26.318574: predicting val_1742
+2026-07-24 22:02:26.342779: val_1742, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:30.059747: predicting val_1807
+2026-07-24 22:02:30.074773: val_1807, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:31.741284: predicting val_1812
+2026-07-24 22:02:31.768048: val_1812, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:35.471614: predicting val_1827
+2026-07-24 22:02:35.497180: val_1827, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:39.217625: predicting val_1828
+2026-07-24 22:02:39.244132: val_1828, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:42.963670: predicting val_1846
+2026-07-24 22:02:42.994762: val_1846, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:46.714247: predicting val_1855
+2026-07-24 22:02:46.741251: val_1855, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:50.459117: predicting val_1880
+2026-07-24 22:02:50.477117: val_1880, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:52.133797: predicting val_1884
+2026-07-24 22:02:52.149796: val_1884, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:53.805432: predicting val_1886
+2026-07-24 22:02:53.839946: val_1886, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:02:57.558978: predicting val_1901
+2026-07-24 22:02:57.576061: val_1901, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-24 22:02:59.252819: predicting val_1931
+2026-07-24 22:02:59.276826: val_1931, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:03:02.993783: predicting val_1934
+2026-07-24 22:03:03.018790: val_1934, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:03:06.737952: predicting val_2024
+2026-07-24 22:03:06.747945: val_2024, shape torch.Size([2, 1, 1167, 819]), rank 0
+2026-07-24 22:03:07.184275: predicting val_2044
+2026-07-24 22:03:07.196275: val_2044, shape torch.Size([2, 1, 1462, 1203]), rank 0
+2026-07-24 22:03:08.037585: predicting val_2248
+2026-07-24 22:03:08.046588: val_2248, shape torch.Size([2, 1, 1348, 949]), rank 0
+2026-07-24 22:03:08.482520: predicting val_2709
+2026-07-24 22:03:08.490519: val_2709, shape torch.Size([2, 1, 827, 608]), rank 0
+2026-07-24 22:03:08.912344: predicting val_2853
+2026-07-24 22:03:08.920339: val_2853, shape torch.Size([2, 1, 1136, 935]), rank 0
+2026-07-24 22:03:09.351947: predicting val_3058
+2026-07-24 22:03:09.361954: val_3058, shape torch.Size([2, 1, 1416, 995]), rank 0
+2026-07-24 22:03:09.793900: predicting val_3249
+2026-07-24 22:03:09.833861: val_3249, shape torch.Size([2, 1, 2920, 2320]), rank 0
+2026-07-24 22:03:14.785014: predicting val_3269
+2026-07-24 22:03:14.799014: val_3269, shape torch.Size([2, 1, 1190, 994]), rank 0
+2026-07-24 22:03:15.242378: predicting val_3352
+2026-07-24 22:03:15.250380: val_3352, shape torch.Size([2, 1, 966, 742]), rank 0
+2026-07-24 22:03:15.682626: predicting val_3353
+2026-07-24 22:03:15.689632: val_3353, shape torch.Size([2, 1, 1195, 923]), rank 0
+2026-07-24 22:03:16.147775: predicting val_3354
+2026-07-24 22:03:16.159775: val_3354, shape torch.Size([2, 1, 1246, 1253]), rank 0
+2026-07-24 22:03:17.044210: predicting val_3366
+2026-07-24 22:03:17.057207: val_3366, shape torch.Size([2, 1, 961, 837]), rank 0
+2026-07-24 22:03:17.514827: predicting val_3392
+2026-07-24 22:03:17.522837: val_3392, shape torch.Size([2, 1, 1439, 878]), rank 0
+2026-07-24 22:03:17.980781: predicting val_3460
+2026-07-24 22:03:18.007782: val_3460, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:03:21.830157: predicting val_3468
+2026-07-24 22:03:21.837687: val_3468, shape torch.Size([2, 1, 976, 904]), rank 0
+2026-07-24 22:03:22.269052: predicting val_3493
+2026-07-24 22:03:22.297080: val_3493, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-24 22:03:26.017299: predicting val_3567
+2026-07-24 22:03:26.027307: val_3567, shape torch.Size([2, 1, 984, 800]), rank 0
+2026-07-24 22:03:26.462801: predicting val_3595
+2026-07-24 22:03:26.468801: val_3595, shape torch.Size([2, 1, 832, 816]), rank 0
+2026-07-24 22:03:26.898247: predicting val_3596
+2026-07-24 22:03:26.925615: val_3596, shape torch.Size([2, 1, 2614, 2164]), rank 0
+2026-07-24 22:03:31.859572: predicting val_3602
+2026-07-24 22:03:31.870577: val_3602, shape torch.Size([2, 1, 1048, 808]), rank 0
+2026-07-24 22:03:32.302897: predicting val_3678
+2026-07-24 22:03:32.311898: val_3678, shape torch.Size([2, 1, 1224, 968]), rank 0
+2026-07-24 22:03:32.751197: predicting val_3700
+2026-07-24 22:03:32.758205: val_3700, shape torch.Size([2, 1, 1376, 624]), rank 0
+2026-07-24 22:03:33.188004: predicting val_3725
+2026-07-24 22:03:33.200014: val_3725, shape torch.Size([2, 1, 1229, 781]), rank 0
+2026-07-24 22:03:33.626832: predicting val_3732
+2026-07-24 22:03:33.632837: val_3732, shape torch.Size([2, 1, 736, 608]), rank 0
+2026-07-24 22:03:34.067338: predicting val_3777
+2026-07-24 22:03:34.077354: val_3777, shape torch.Size([2, 1, 1568, 992]), rank 0
+2026-07-24 22:03:34.915721: predicting val_3840
+2026-07-24 22:03:34.923721: val_3840, shape torch.Size([2, 1, 1249, 889]), rank 0
+2026-07-24 22:03:35.355727: predicting val_4047
+2026-07-24 22:03:35.380163: val_4047, shape torch.Size([2, 1, 2460, 1950]), rank 0
+2026-07-24 22:03:39.099892: predicting val_4193
+2026-07-24 22:03:39.141903: val_4193, shape torch.Size([2, 1, 2920, 2320]), rank 0
+2026-07-24 22:03:44.110478: predicting val_5355
+2026-07-24 22:03:44.128479: val_5355, shape torch.Size([2, 1, 1650, 1380]), rank 0
+2026-07-24 22:03:45.785901: predicting val_5825
+2026-07-24 22:03:45.794446: val_5825, shape torch.Size([2, 1, 1193, 991]), rank 0
+2026-07-24 22:03:46.232380: predicting val_6503
+2026-07-24 22:03:46.243386: val_6503, shape torch.Size([2, 1, 1177, 1172]), rank 0
+2026-07-24 22:03:47.082825: predicting val_6605
+2026-07-24 22:03:47.096826: val_6605, shape torch.Size([2, 1, 1762, 1328]), rank 0
+2026-07-24 22:03:48.756531: predicting val_6606
+2026-07-24 22:03:48.769062: val_6606, shape torch.Size([2, 1, 1580, 1312]), rank 0
+2026-07-24 22:03:50.428172: predicting val_6698
+2026-07-24 22:03:50.440238: val_6698, shape torch.Size([2, 1, 1517, 1122]), rank 0
+2026-07-24 22:03:51.290202: predicting val_6918
+2026-07-24 22:03:51.305193: val_6918, shape torch.Size([2, 1, 1636, 1272]), rank 0
+2026-07-24 22:03:52.963670: predicting val_6947
+2026-07-24 22:03:52.976365: val_6947, shape torch.Size([2, 1, 1376, 1108]), rank 0
+2026-07-24 22:03:53.822690: predicting val_7253
+2026-07-24 22:03:53.840690: val_7253, shape torch.Size([2, 1, 1386, 1249]), rank 0
+2026-07-24 22:03:54.705667: predicting val_7259
+2026-07-24 22:03:54.718673: val_7259, shape torch.Size([2, 1, 1695, 1555]), rank 0
+2026-07-24 22:03:57.204774: predicting val_7269
+2026-07-24 22:03:57.214773: val_7269, shape torch.Size([2, 1, 1366, 1137]), rank 0
+2026-07-24 22:03:58.054208: predicting val_7312
+2026-07-24 22:03:58.064215: val_7312, shape torch.Size([2, 1, 1188, 1104]), rank 0
+2026-07-24 22:03:58.912908: predicting val_7654
+2026-07-24 22:03:58.924901: val_7654, shape torch.Size([2, 1, 1288, 1096]), rank 0
+2026-07-24 22:03:59.774919: predicting val_8253
+2026-07-24 22:03:59.793423: val_8253, shape torch.Size([2, 1, 1437, 1263]), rank 0
+2026-07-24 22:04:07.309063: Validation complete
+2026-07-24 22:04:07.310066: Mean Validation Dice:  0.9062319536474667
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+There are 94 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 94 cases that I would like to predict
+
+Predicting val_10375:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10375
+
+Predicting val_10520:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10520
+
+Predicting val_10618:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10618
+
+Predicting val_10624:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10624
+
+Predicting val_11852:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11852
+
+Predicting val_11945:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11945
+
+Predicting val_12498:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12498
+
+Predicting val_12627:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12627
+
+Predicting val_12827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12827
+
+Predicting val_13220:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13220
+
+Predicting val_13436:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13436
+
+Predicting val_13441:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13441
+
+Predicting val_13454:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13454
+
+Predicting val_13480:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13480
+
+Predicting val_13517:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13517
+
+Predicting val_13840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13840
+
+Predicting val_13867:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13867
+
+Predicting val_1399:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1399
+
+Predicting val_14041:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_14041
+
+Predicting val_1418:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1418
+
+Predicting val_1452:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1452
+
+Predicting val_15040:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15040
+
+Predicting val_15067:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15067
+
+Predicting val_1518:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1518
+
+Predicting val_1522:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1522
+
+Predicting val_15274:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15274
+
+Predicting val_15369:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15369
+
+Predicting val_15446:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15446
+
+Predicting val_1560:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1560
+
+Predicting val_1572:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1572
+
+Predicting val_1585:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1585
+
+Predicting val_1590:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1590
+
+Predicting val_1620:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1620
+
+Predicting val_1660:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1660
+
+Predicting val_1666:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1666
+
+Predicting val_1674:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1674
+
+Predicting val_1678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1678
+
+Predicting val_1694:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1694
+
+Predicting val_1736:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1736
+
+Predicting val_1742:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1742
+
+Predicting val_1807:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1807
+
+Predicting val_1812:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1812
+
+Predicting val_1827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1827
+
+Predicting val_1828:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1828
+
+Predicting val_1846:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1846
+
+Predicting val_1855:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1855
+
+Predicting val_1880:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1880
+
+Predicting val_1884:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1884
+
+Predicting val_1886:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1886
+
+Predicting val_1901:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1901
+
+Predicting val_1931:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1931
+
+Predicting val_1934:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1934
+
+Predicting val_2024:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2024
+
+Predicting val_2044:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2044
+
+Predicting val_2248:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2248
+
+Predicting val_2709:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2709
+
+Predicting val_2853:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2853
+
+Predicting val_3058:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3058
+
+Predicting val_3249:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3249
+
+Predicting val_3269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3269
+
+Predicting val_3352:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3352
+
+Predicting val_3353:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3353
+
+Predicting val_3354:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3354
+
+Predicting val_3366:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3366
+
+Predicting val_3392:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3392
+
+Predicting val_3460:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3460
+
+Predicting val_3468:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3468
+
+Predicting val_3493:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3493
+
+Predicting val_3567:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3567
+
+Predicting val_3595:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3595
+
+Predicting val_3596:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3596
+
+Predicting val_3602:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3602
+
+Predicting val_3678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3678
+
+Predicting val_3700:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3700
+
+Predicting val_3725:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3725
+
+Predicting val_3732:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3732
+
+Predicting val_3777:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3777
+
+Predicting val_3840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3840
+
+Predicting val_4047:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4047
+
+Predicting val_4193:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4193
+
+Predicting val_5355:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5355
+
+Predicting val_5825:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5825
+
+Predicting val_6503:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6503
+
+Predicting val_6605:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6605
+
+Predicting val_6606:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6606
+
+Predicting val_6698:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6698
+
+Predicting val_6918:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6918
+
+Predicting val_6947:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6947
+
+Predicting val_7253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7253
+
+Predicting val_7259:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7259
+
+Predicting val_7269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7269
+
+Predicting val_7312:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7312
+
+Predicting val_7654:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7654
+
+Predicting val_8253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_8253
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Segmentation export complete.
+converted 94 predictions to G:\gutou\YOLO+SAM\outputs\nnunet\r308_clean_panels_r260\masks_clean
+{
+  "dice": 0.90647601661736,
+  "iou": 0.8315106899663598,
+  "precision": 0.917813176746339,
+  "recall": 0.8989857354295765,
+  "specificity": 0.9978747066914965,
+  "boundary_iou": 0.24664479968572015,
+  "boundary_f1": 0.3886067768121732,
+  "gap_region_fp_rate": 0.17322928056724662,
+  "gap_region_precision": 0.8267707194327534,
+  "component_merge_rate": 0.5106382978723404,
+  "component_count_mae": 1.7340425531914894,
+  "component_delta_mean": -1.053191489361702,
+  "surface_dice_2px": 0.6712118876714519,
+  "surface_dice_5px": 0.9166387653852919,
+  "hd95_px": 10.052913584016245,
+  "assd_px": 2.697872860677321,
+  "dsc": 0.90647601661736,
+  "nsd_2px": 0.6712118876714519,
+  "voe": 0.1684893100336401,
+  "msd_px": 2.697872860677321,
+  "ravd": 0.056671010439208115
+}
+{
+  "dice": 0.906857727219467,
+  "iou": 0.8320504013302721,
+  "precision": 0.9178792869837398,
+  "recall": 0.8993607395825257,
+  "specificity": 0.9978746894242136,
+  "boundary_iou": 0.24687582825868445,
+  "boundary_f1": 0.38882556575777155,
+  "gap_region_fp_rate": 0.17304355642724725,
+  "gap_region_precision": 0.8269564435727528,
+  "component_merge_rate": 0.5212765957446809,
+  "component_count_mae": 1.7340425531914894,
+  "component_delta_mean": -1.2234042553191489,
+  "surface_dice_2px": 0.6713006029617423,
+  "surface_dice_5px": 0.9172555469840773,
+  "hd95_px": 7.827458025044961,
+  "assd_px": 2.571234025652075,
+  "dsc": 0.906857727219467,
+  "nsd_2px": 0.6713006029617423,
+  "voe": 0.167949598669728,
+  "msd_px": 2.571234025652075,
+  "ravd": 0.0549172479405411
+}
+{
+  "rendered": 12,
+  "output": "G:\\gutou\\YOLO+SAM\\outputs\\visualizations\\r308_frozen_vs_clean_finetune_val94"
+}
+[R308] complete 2026-07-24T22:10:21.7176186+08:00

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\prepare_r260_mature_prior_dataset.py", line 23, in <module>
+    if __name__=='__main__': main()
+  File "G:\gutou\YOLO+SAM\scripts\prepare_r260_mature_prior_dataset.py", line 21, in main
+    if (len(train),len(val))!=(875,96): raise RuntimeError((len(train),len(val)))
+RuntimeError: (874, 96)
+Command failed: E:\360Downloads\anaconda3\envs\unet\python.exe scripts/prepare_r260_mature_prior_dataset.py --prior-roo
+t G:\gutou\YOLO+SAM\outputs\priors\r319_r316b_gated_relation --nnunet-root G:\gutou\YOLO+SAM\outputs\nnunet\r319_r316b_
+gated_prior\data --allow-zero-prior --overwrite
+ËùÔÚÎ»ÖÃ G:\gutou\YOLO+SAM\run_r319_r316b_nnunet_local.ps1:31 ×Ö·û: 32
++ ... DE -ne 0) { throw "Command failed: $Command $($Arguments -join ' ')"  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Command failed:...ior --overwrite:String) [], RuntimeException
+    + FullyQualifiedErrorId : Command failed: E:\360Downloads\anaconda3\envs\unet\python.exe scripts/prepare_r260_matu 
+   re_prior_dataset.py --prior-root G:\gutou\YOLO+SAM\outputs\priors\r319_r316b_gated_relation --nnunet-root G:\gutou  
+  \YOLO+SAM\outputs\nnunet\r319_r316b_gated_prior\data --allow-zero-prior --overwrite
+ 

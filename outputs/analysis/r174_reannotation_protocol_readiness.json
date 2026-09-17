@@ -1,0 +1,43 @@
+{
+  "status": "not_ready_for_training",
+  "next_action": "human_review_r168_html_and_export_reviewed_csv",
+  "r168": {
+    "worklist_exists": true,
+    "reviewed_csv_exists": false,
+    "worklist": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+    "reviewed_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_reviewed.csv"
+  },
+  "r172": {
+    "summary_exists": true,
+    "status": "preview_gate_failed",
+    "created_variant": false,
+    "preview_gate": false
+  },
+  "r170": {
+    "status_exists": true,
+    "status": "dry_run_blocked",
+    "errors": [
+      "R168 preview gate did not pass; refusing to build variant."
+    ],
+    "target_path": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1",
+    "target_exists": false,
+    "variant_counts": null
+  },
+  "r171": {
+    "launcher_check_exists": true,
+    "launcher_ok": true,
+    "errors": []
+  },
+  "r173": {
+    "summary_exists": true,
+    "status": "waiting_for_metrics",
+    "target_met": null,
+    "new_best": null,
+    "clean_test_v2": null
+  },
+  "policy": {
+    "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test",
+    "do_not_use_reannotated_test": true,
+    "do_not_train_on_clean_test_v2": true
+  }
+}

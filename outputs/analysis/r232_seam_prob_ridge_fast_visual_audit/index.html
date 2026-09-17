@@ -1,0 +1,119 @@
+<!doctype html><html><head><meta charset='utf-8'><title>R232 ridge fast seam visual audit</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f7f7f7;color:#222}.case{background:white;border:1px solid #ddd;margin:16px 0;padding:12px}img{max-width:100%;height:auto;border:1px solid #ccc}pre{font-size:12px;white-space:pre-wrap}</style>
+</head><body><h1>R232 ridge fast Seam-Probability Visual Audit</h1>
+<p>Legend: GT boundary green, prediction boundary magenta, TP blue tint, FP red, FN yellow. Accepted cuts: orange if true gap/background, red if GT foreground.</p>
+<div class='case'>
+<h2>11852.png</h2>
+<p>cut=17.0 px, Dice +0.000139, Recall +0.000000, BIoU +0.000792, gapFP -0.000738</p>
+<img src='panels/01_11852_r232_ridge_fast_seam_panel.jpg' alt='11852.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4076344385622736&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.25599300087489063&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8741845467526529&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1957871878393051&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7764900936748735&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8566516068848201&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8924501695948779&quot;,
+  &quot;cut_pixels&quot;: &quot;17.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.001003589149853934&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007920893988426214&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00013871800484255292&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.000738327904451691&quot;,
+  &quot;delta_iou&quot;: &quot;0.00021891823265240973&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002664594964145728&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;11852.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r232_boundary_f1&quot;: &quot;0.40863802771212754&quot;,
+  &quot;r232_boundary_iou&quot;: &quot;0.25678509027373325&quot;,
+  &quot;r232_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r232_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r232_dice&quot;: &quot;0.8743232647574954&quot;,
+  &quot;r232_gap_region_fp_rate&quot;: &quot;0.1950488599348534&quot;,
+  &quot;r232_iou&quot;: &quot;0.776709011907526&quot;,
+  &quot;r232_precision&quot;: &quot;0.8569180663812347&quot;,
+  &quot;r232_recall&quot;: &quot;0.8924501695948779&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13480.png</h2>
+<p>cut=15.0 px, Dice +0.000141, Recall +0.000000, BIoU +0.000210, gapFP -0.000644</p>
+<img src='panels/02_13480_r232_ridge_fast_seam_panel.jpg' alt='13480.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.456278079924332&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2955701243796336&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9247154768425537&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1056701030927835&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8599728322390763&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9487355604121136&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9018816406481867&quot;,
+  &quot;cut_pixels&quot;: &quot;15.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00024981585590022615&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00020969213412785903&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00014071818438121664&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006443298969072142&quot;,
+  &quot;delta_iou&quot;: &quot;0.00024343906251467207&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002962946784548226&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13480.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r232_boundary_f1&quot;: &quot;0.45652789578023223&quot;,
+  &quot;r232_boundary_iou&quot;: &quot;0.29577981651376145&quot;,
+  &quot;r232_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r232_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r232_dice&quot;: &quot;0.924856195026935&quot;,
+  &quot;r232_gap_region_fp_rate&quot;: &quot;0.10502577319587629&quot;,
+  &quot;r232_iou&quot;: &quot;0.860216271301591&quot;,
+  &quot;r232_precision&quot;: &quot;0.9490318550905684&quot;,
+  &quot;r232_recall&quot;: &quot;0.9018816406481867&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15067.png</h2>
+<p>cut=21.0 px, Dice +0.000154, Recall +0.000000, BIoU +0.000709, gapFP -0.000791</p>
+<img src='panels/03_15067_r232_ridge_fast_seam_panel.jpg' alt='15067.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.44864&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2891914191419142&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.937545553578846&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19222218035196142&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8824336485549474&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9203286558345642&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9554188962542928&quot;,
+  &quot;cut_pixels&quot;: &quot;21.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.000852121890746238&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007085086410219543&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00015432727648734268&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0007913479293062686&quot;,
+  &quot;delta_iou&quot;: &quot;0.0002734734308262876&quot;,
+  &quot;delta_precision&quot;: &quot;0.000297469667582817&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15067.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r232_boundary_f1&quot;: &quot;0.4494921218907462&quot;,
+  &quot;r232_boundary_iou&quot;: &quot;0.28989992778293616&quot;,
+  &quot;r232_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r232_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r232_dice&quot;: &quot;0.9376998808553333&quot;,
+  &quot;r232_gap_region_fp_rate&quot;: &quot;0.19143083242265516&quot;,
+  &quot;r232_iou&quot;: &quot;0.8827071219857737&quot;,
+  &quot;r232_precision&quot;: &quot;0.9206261255021471&quot;,
+  &quot;r232_recall&quot;: &quot;0.9554188962542928&quot;
+}</pre>
+</div>
+</body></html>

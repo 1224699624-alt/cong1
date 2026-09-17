@@ -1,0 +1,43 @@
+[R209-F0] val: 1/96 10375.png
+[R209-F0] val: 10/96 13220.png
+[R209-F0] val: 20/96 1418.png
+[R209-F0] val: 30/96 1572.png
+[R209-F0] val: 40/96 1742.png
+[R209-F0] val: 50/96 1901.png
+[R209-F0] val: 60/96 3249.png
+[R209-F0] val: 70/96 3567.png
+[R209-F0] val: 80/96 4047.png
+[R209-F0] val: 90/96 6947.png
+[R209-F0] val: 96/96 8253.png
+{
+  "decision": "go_component_preserving_model_feasible",
+  "val_summary": {
+    "anchor_dice": 0.895722598735221,
+    "anchor_iou": 0.8147833270122922,
+    "anchor_recall": 0.8926191772136659,
+    "anchor_boundary_iou": 0.22294454594576676,
+    "anchor_gap_region_fp_rate": 0.1881988752755006,
+    "anchor_component_merge_rate": 0.34375,
+    "anchor_component_count_mae": 3.0208333333333335,
+    "oracle_dice": 1.0,
+    "oracle_iou": 1.0,
+    "oracle_recall": 1.0,
+    "oracle_boundary_iou": 1.0,
+    "oracle_gap_region_fp_rate": 0.0,
+    "oracle_component_merge_rate": 0.0,
+    "oracle_component_count_mae": 0.0,
+    "delta_dice": 0.1042774012647792,
+    "delta_recall": 0.10738082278633414,
+    "delta_boundary_iou": 0.7770554540542332,
+    "delta_gap_region_fp_rate": -0.1881988752755006,
+    "delta_component_merge_rate": -0.34375,
+    "delta_component_count_mae": -3.0208333333333335,
+    "merged_pred_components": 1.15625,
+    "pred_component_count": 22.78125,
+    "gt_instance_count": 25.5625,
+    "gt_instances_covered": 25.385416666666668,
+    "num_images": 96,
+    "images_with_pred_merge": 72,
+    "pred_merge_image_rate": 0.75
+  }
+}

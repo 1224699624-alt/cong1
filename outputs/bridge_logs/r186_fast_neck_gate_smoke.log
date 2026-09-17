@@ -1,0 +1,73 @@
+{"stage": "val_grid", "idx": 1, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 2.0, "min_area": 1.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 2, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 2.0, "min_area": 1.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 3, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 2.0, "min_area": 4.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 4, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 2.0, "min_area": 4.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 5, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 5.0, "min_area": 1.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 6, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 5.0, "min_area": 1.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 7, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 5.0, "min_area": 4.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 8, "total": 16, "cfg": {"neck_width": 1.0, "band_radius": 5.0, "min_area": 4.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 9, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 2.0, "min_area": 1.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 10, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 2.0, "min_area": 1.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 11, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 2.0, "min_area": 4.0, "max_remove_frac": 0.0005}}
+{"stage": "new_best", "idx": 11, "mean": {"dice": 0.9026537543196047, "iou": 0.8239233620399381, "precision": 0.8938129262943935, "recall": 0.9127664220064727, "specificity": 0.9969644939860718, "boundary_iou": 0.2587442943189513, "pred_component_count": 25.625, "gt_component_count": 25.875, "component_count_error": 1.0, "false_bridge_flag": 0.375, "sep_fp_rate": 0.23182775551249138, "edited_frac": 2.0258252199033275e-07}, "score": [4.6277269444283675e-06, 1.4424259206946566e-05, -0.0, -0.0, 2.0258252199033275e-07]}
+{"stage": "val_grid", "idx": 12, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 2.0, "min_area": 4.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 13, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 5.0, "min_area": 1.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 14, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 5.0, "min_area": 1.0, "max_remove_frac": 0.001}}
+{"stage": "val_grid", "idx": 15, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 5.0, "min_area": 4.0, "max_remove_frac": 0.0005}}
+{"stage": "val_grid", "idx": 16, "total": 16, "cfg": {"neck_width": 2.0, "band_radius": 5.0, "min_area": 4.0, "max_remove_frac": 0.001}}
+{
+  "run_id": "R186",
+  "status": "below_best",
+  "val_summary_path": "outputs/analysis/r186_fast_neck_gate_smoke_val_summary.json",
+  "metrics_path": "outputs/analysis/r186_fast_neck_gate_smoke_clean_test_v2_metrics.json",
+  "target_dice": 0.9317660066557425,
+  "r110_clean_dice": 0.9177231563529792,
+  "r110_clean_boundary_iou": 0.25189601044085763,
+  "mean": {
+    "dice": 0.9177202069995851,
+    "iou": 0.8485649246392478,
+    "precision": 0.9133425398563875,
+    "recall": 0.9235744710197616,
+    "specificity": 0.9970747481135067,
+    "boundary_iou": 0.25189431179029953,
+    "pred_component_count": 21.80246913580247,
+    "gt_component_count": 23.666666666666668,
+    "component_count_error": 2.037037037037037,
+    "false_bridge_flag": 0.7037037037037037,
+    "sep_fp_rate": 0.24784517062895237,
+    "edited_frac": 7.656068868176926e-08
+  },
+  "target_margin": -0.014045799656157376,
+  "dice_delta_vs_r110": -2.949353394066101e-06,
+  "boundary_iou_delta_vs_r110": -1.6986505581018108e-06,
+  "val_best": {
+    "cfg": {
+      "neck_width": 2.0,
+      "band_radius": 2.0,
+      "min_area": 4.0,
+      "max_remove_frac": 0.0005
+    },
+    "mean": {
+      "dice": 0.9026537543196047,
+      "iou": 0.8239233620399381,
+      "precision": 0.8938129262943935,
+      "recall": 0.9127664220064727,
+      "specificity": 0.9969644939860718,
+      "boundary_iou": 0.2587442943189513,
+      "pred_component_count": 25.625,
+      "gt_component_count": 25.875,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 0.375,
+      "sep_fp_rate": 0.23182775551249138,
+      "edited_frac": 2.0258252199033275e-07
+    },
+    "passes_gate": true,
+    "score": [
+      4.6277269444283675e-06,
+      1.4424259206946566e-05,
+      -0.0,
+      -0.0,
+      2.0258252199033275e-07
+    ]
+  }
+}

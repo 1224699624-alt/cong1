@@ -1,0 +1,176 @@
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/.tmp/r144_hf_deps/transformers/models/mask2former/modeling_mask2former.py:895: UserWarning: You'd better set embed_dim (d_model) in DeformableDetrMultiscaleDeformableAttention to make the dimension of each attention head a power of 2 which is more efficient in the authors' CUDA implementation.
+  warnings.warn(
+{"step": 1, "image": "10003.png", "loss": 28.99058723449707}
+{"step": 2, "image": "10004.png", "loss": 27.97248649597168}
+{"step": 3, "image": "10015.png", "loss": 27.762460708618164}
+{"step": 4, "image": "10043.png", "loss": 27.569700241088867}
+{"step": 5, "image": "10055.png", "loss": 27.41281509399414}
+{"step": 6, "image": "10066.png", "loss": 27.350994110107422}
+{"step": 7, "image": "10144.png", "loss": 27.33281707763672}
+{"step": 8, "image": "10390.png", "loss": 27.679750442504883}
+{"step": 9, "image": "10474.png", "loss": 27.076093673706055}
+{"step": 10, "image": "10526.png", "loss": 27.060476303100586}
+{"step": 11, "image": "10542.png", "loss": 27.192949295043945}
+{"step": 12, "image": "10621.png", "loss": 26.93518829345703}
+{"step": 13, "image": "10685.png", "loss": 26.809621810913086}
+{"step": 14, "image": "10693.png", "loss": 26.7282657623291}
+{"step": 15, "image": "10727.png", "loss": 26.761152267456055}
+{"step": 16, "image": "10779.png", "loss": 26.46805763244629}
+{"step": 17, "image": "10003.png", "loss": 26.30135726928711}
+{"step": 18, "image": "10004.png", "loss": 26.192272186279297}
+{"step": 19, "image": "10015.png", "loss": 26.178098678588867}
+{"step": 20, "image": "10043.png", "loss": 25.8978328704834}
+{"step": 21, "image": "10055.png", "loss": 25.719148635864258}
+{"step": 22, "image": "10066.png", "loss": 25.54620933532715}
+{"step": 23, "image": "10144.png", "loss": 25.429447174072266}
+{"step": 24, "image": "10390.png", "loss": 25.65044593811035}
+{"step": 25, "image": "10474.png", "loss": 24.933469772338867}
+{"step": 26, "image": "10526.png", "loss": 24.787837982177734}
+{"step": 27, "image": "10542.png", "loss": 24.751495361328125}
+{"step": 28, "image": "10621.png", "loss": 24.37531280517578}
+{"step": 29, "image": "10685.png", "loss": 24.111934661865234}
+{"step": 30, "image": "10693.png", "loss": 23.855592727661133}
+{"step": 31, "image": "10727.png", "loss": 23.683818817138672}
+{"step": 32, "image": "10779.png", "loss": 23.244312286376953}
+{"step": 33, "image": "10003.png", "loss": 22.90917205810547}
+{"step": 34, "image": "10004.png", "loss": 22.627073287963867}
+{"step": 35, "image": "10015.png", "loss": 22.438812255859375}
+{"step": 36, "image": "10043.png", "loss": 21.979251861572266}
+{"step": 37, "image": "10055.png", "loss": 21.653770446777344}
+{"step": 38, "image": "10066.png", "loss": 21.322925567626953}
+{"step": 39, "image": "10144.png", "loss": 21.101947784423828}
+{"step": 40, "image": "10390.png", "loss": 21.14168930053711}
+{"step": 41, "image": "10474.png", "loss": 20.352680206298828}
+{"step": 42, "image": "10526.png", "loss": 20.0900821685791}
+{"step": 43, "image": "10542.png", "loss": 19.990171432495117}
+{"step": 44, "image": "10621.png", "loss": 19.568603515625}
+{"step": 45, "image": "10685.png", "loss": 19.301076889038086}
+{"step": 46, "image": "10693.png", "loss": 19.05440902709961}
+{"step": 47, "image": "10727.png", "loss": 18.817184448242188}
+{"step": 48, "image": "10779.png", "loss": 18.56081199645996}
+{"step": 49, "image": "10003.png", "loss": 18.338884353637695}
+{"step": 50, "image": "10004.png", "loss": 18.171064376831055}
+{"step": 51, "image": "10015.png", "loss": 18.13079833984375}
+{"step": 52, "image": "10043.png", "loss": 17.82769012451172}
+{"step": 53, "image": "10055.png", "loss": 17.6865291595459}
+{"step": 54, "image": "10066.png", "loss": 17.54412269592285}
+{"step": 55, "image": "10144.png", "loss": 17.43815040588379}
+{"step": 56, "image": "10390.png", "loss": 17.813491821289062}
+{"step": 57, "image": "10474.png", "loss": 17.23263931274414}
+{"step": 58, "image": "10526.png", "loss": 17.05470085144043}
+{"step": 59, "image": "10542.png", "loss": 17.14610481262207}
+{"step": 60, "image": "10621.png", "loss": 16.844980239868164}
+{"step": 61, "image": "10685.png", "loss": 16.9338436126709}
+{"step": 62, "image": "10693.png", "loss": 16.57645606994629}
+{"step": 63, "image": "10727.png", "loss": 16.318246841430664}
+{"step": 64, "image": "10779.png", "loss": 16.32625961303711}
+{"step": 65, "image": "10003.png", "loss": 16.206111907958984}
+{"step": 66, "image": "10004.png", "loss": 16.343395233154297}
+{"step": 67, "image": "10015.png", "loss": 15.907130241394043}
+{"step": 68, "image": "10043.png", "loss": 15.086461067199707}
+{"step": 69, "image": "10055.png", "loss": 16.091575622558594}
+{"step": 70, "image": "10066.png", "loss": 15.56379222869873}
+{"step": 71, "image": "10144.png", "loss": 16.434040069580078}
+{"step": 72, "image": "10390.png", "loss": 16.117183685302734}
+{"step": 73, "image": "10474.png", "loss": 16.190507888793945}
+{"step": 74, "image": "10526.png", "loss": 16.331317901611328}
+{"step": 75, "image": "10542.png", "loss": 15.24422836303711}
+{"step": 76, "image": "10621.png", "loss": 15.961562156677246}
+{"step": 77, "image": "10685.png", "loss": 14.283607482910156}
+{"step": 78, "image": "10693.png", "loss": 15.832707405090332}
+{"step": 79, "image": "10727.png", "loss": 16.062196731567383}
+{"step": 80, "image": "10779.png", "loss": 16.149593353271484}
+{"step": 81, "image": "10003.png", "loss": 15.567381858825684}
+{"step": 82, "image": "10004.png", "loss": 14.890595436096191}
+{"step": 83, "image": "10015.png", "loss": 14.334213256835938}
+{"step": 84, "image": "10043.png", "loss": 13.397343635559082}
+{"step": 85, "image": "10055.png", "loss": 15.765610694885254}
+{"step": 86, "image": "10066.png", "loss": 14.597360610961914}
+{"step": 87, "image": "10144.png", "loss": 16.36650848388672}
+{"step": 88, "image": "10390.png", "loss": 15.49294376373291}
+{"step": 89, "image": "10474.png", "loss": 16.57819366455078}
+{"step": 90, "image": "10526.png", "loss": 16.381406784057617}
+{"step": 91, "image": "10542.png", "loss": 14.800193786621094}
+{"step": 92, "image": "10621.png", "loss": 15.634532928466797}
+{"step": 93, "image": "10685.png", "loss": 13.548914909362793}
+{"step": 94, "image": "10693.png", "loss": 15.20024299621582}
+{"step": 95, "image": "10727.png", "loss": 15.87260627746582}
+{"step": 96, "image": "10779.png", "loss": 15.990168571472168}
+{"step": 97, "image": "10003.png", "loss": 15.161872863769531}
+{"step": 98, "image": "10004.png", "loss": 15.400933265686035}
+{"step": 99, "image": "10015.png", "loss": 15.087754249572754}
+{"step": 100, "image": "10043.png", "loss": 13.0255708694458}
+{"step": 101, "image": "10055.png", "loss": 16.122207641601562}
+{"step": 102, "image": "10066.png", "loss": 14.566904067993164}
+{"step": 103, "image": "10144.png", "loss": 16.245595932006836}
+{"step": 104, "image": "10390.png", "loss": 15.401476860046387}
+{"step": 105, "image": "10474.png", "loss": 15.943878173828125}
+{"step": 106, "image": "10526.png", "loss": 16.2132511138916}
+{"step": 107, "image": "10542.png", "loss": 15.216512680053711}
+{"step": 108, "image": "10621.png", "loss": 15.887899398803711}
+{"step": 109, "image": "10685.png", "loss": 14.246081352233887}
+{"step": 110, "image": "10693.png", "loss": 14.714749336242676}
+{"step": 111, "image": "10727.png", "loss": 15.78997802734375}
+{"step": 112, "image": "10779.png", "loss": 15.83523941040039}
+{"step": 113, "image": "10003.png", "loss": 15.22981071472168}
+{"step": 114, "image": "10004.png", "loss": 15.008007049560547}
+{"step": 115, "image": "10015.png", "loss": 14.787668228149414}
+{"step": 116, "image": "10043.png", "loss": 12.48260498046875}
+{"step": 117, "image": "10055.png", "loss": 15.834064483642578}
+{"step": 118, "image": "10066.png", "loss": 13.161388397216797}
+{"step": 119, "image": "10144.png", "loss": 16.127336502075195}
+{"step": 120, "image": "10390.png", "loss": 15.713858604431152}
+{
+  "metrics": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 1.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "boundary_iou": 0.0
+  },
+  "manifest": {
+    "status": "ok",
+    "hf_deps": ".tmp/r144_hf_deps",
+    "model_class": "Mask2FormerForUniversalSegmentation",
+    "config": {
+      "num_queries": 48,
+      "hidden_dim": 96,
+      "encoder_layers": 2,
+      "decoder_layers": 3
+    },
+    "metrics_json": "outputs/analysis/r146_mask2former_hf_maskonly_readout_clean_test_v2_metrics.json",
+    "prediction_dir": "outputs/r146_mask2former_hf_maskonly_readout/TSRS_RSNA-Epiphysis_clean_test_v2/test/masks",
+    "checkpoint": "outputs/r146_mask2former_hf_maskonly_readout/model.pt",
+    "train_images": [
+      "10003.png",
+      "10004.png",
+      "10015.png",
+      "10043.png",
+      "10055.png",
+      "10066.png",
+      "10144.png",
+      "10390.png",
+      "10474.png",
+      "10526.png",
+      "10542.png",
+      "10621.png",
+      "10685.png",
+      "10693.png",
+      "10727.png",
+      "10779.png"
+    ],
+    "val_images": [
+      "10375.png",
+      "10520.png",
+      "10618.png",
+      "10624.png"
+    ],
+    "eval_images": [
+      "10793.png",
+      "11099.png",
+      "12046.png",
+      "12133.png"
+    ]
+  }
+}

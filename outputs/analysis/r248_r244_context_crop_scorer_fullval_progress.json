@@ -1,0 +1,10 @@
+{
+  "run_id": "R248-F0-progress",
+  "processed_images": 90,
+  "total_images": 96,
+  "num_candidate_rows": 8366,
+  "num_candidate_images": 90,
+  "num_safe_useful": 941,
+  "num_risk": 7417,
+  "skipped": []
+}

@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "original_dataset": "data/raw/TSRS_RSNA-Epiphysis",
+  "reannotated_dataset": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1",
+  "reviewed_variant": "data/raw_variants/TSRS_RSNA-Epiphysis_label_protocol_reviewed_v1",
+  "split_counts": {
+    "original": {
+      "train": {
+        "images": 875,
+        "labels": 875,
+        "paired": 875,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "val": {
+        "images": 96,
+        "labels": 96,
+        "paired": 96,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "test": {
+        "images": 97,
+        "labels": 97,
+        "paired": 97,
+        "image_without_label": 0,
+        "label_without_image": 0
+      }
+    },
+    "reannotated": {
+      "train": {
+        "images": 1256,
+        "labels": 1256,
+        "paired": 1256,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "val": {
+        "images": 96,
+        "labels": 96,
+        "paired": 96,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "test": {
+        "images": 122,
+        "labels": 122,
+        "paired": 122,
+        "image_without_label": 0,
+        "label_without_image": 0
+      }
+    },
+    "reviewed_variant": {
+      "train": {
+        "images": 875,
+        "labels": 875,
+        "paired": 875,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "val": {
+        "images": 96,
+        "labels": 96,
+        "paired": 96,
+        "image_without_label": 0,
+        "label_without_image": 0
+      },
+      "test": {
+        "images": 97,
+        "labels": 97,
+        "paired": 97,
+        "image_without_label": 0,
+        "label_without_image": 0
+      }
+    }
+  },
+  "overlaps": {
+    "train": {
+      "train": 875,
+      "val": 0,
+      "test": 0
+    },
+    "val": {
+      "train": 0,
+      "val": 96,
+      "test": 0
+    },
+    "test": {
+      "train": 0,
+      "val": 0,
+      "test": 97
+    }
+  },
+  "extras_vs_original": {
+    "train": 381,
+    "val": 0,
+    "test": 25
+  },
+  "unsafe_for_success_eval": {
+    "reannotated_test_exists": true,
+    "reannotated_test_count": 122,
+    "reason": "User policy forbids using new/reannotated test for success evaluation; success must remain clean-test-v2/test."
+  },
+  "safe_training_candidate": {
+    "can_use_reannotated_train": true,
+    "can_use_reannotated_val": true,
+    "must_exclude_reannotated_test_from_training_and_claims": true,
+    "recommended_variant_name": "TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1",
+    "recommended_policy": "Build an isolated variant with reannotated train/val only, omit or copy original test only as control, and evaluate success exclusively on TSRS_RSNA-Epiphysis_clean_test_v2/test."
+  },
+  "gate_before_gpu": {
+    "require_manifest": true,
+    "require_no_reannotated_test_in_launcher": true,
+    "require_clean_test_v2_eval_only_for_success": true,
+    "require_train_val_pair_counts_match": true
+  }
+}

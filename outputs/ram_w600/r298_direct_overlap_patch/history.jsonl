@@ -1,0 +1,3 @@
+{"epoch": 0, "seconds": 30.041600942611694, "train_loss": 1.906401623582616, "val_macro_dice": 0.9778652605019219, "val_overlap_dice": 0.87156613357011, "val_overlap_nsd_2px": 0.8779261141656638}
+{"epoch": 1, "seconds": 30.892754316329956, "train_loss": 1.4750035519890943, "val_macro_dice": 0.9778092773711146, "val_overlap_dice": 0.8714416166535194, "val_overlap_nsd_2px": 0.8774666510040302}
+{"epoch": 2, "seconds": 30.763103008270264, "train_loss": 1.3201903048815302, "val_macro_dice": 0.9777863831760987, "val_overlap_dice": 0.8713613422336958, "val_overlap_nsd_2px": 0.8770911359618991}

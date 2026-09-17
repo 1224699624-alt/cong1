@@ -1,0 +1,42 @@
+{"epoch": 1, "train_loss": 9.090769529342651, "num_images": 16.0, "num_gt_centers": 414.0, "num_proposals": 0.0, "num_matched": 0.0, "center_recall": 0.0, "center_precision": 0.0, "mean_normalized_localization_error": null, "median_abs_log_scale_error": null, "proposal_count_mae": 25.875, "false_proposals_per_image": 0.0, "close_pair_count": 82.0, "close_pair_coverage": 0.0, "close_matched_endpoint_count": 0.0, "close_endpoint_mean_localization_error": null, "close_endpoint_median_abs_log_scale_error": null, "contact_pair_count": 16.0, "contact_pair_coverage": 0.0, "contact_matched_endpoint_count": 0.0, "contact_endpoint_mean_localization_error": null, "contact_endpoint_median_abs_log_scale_error": null}
+{
+  "decision": "sanity_only",
+  "final": {
+    "num_images": 16.0,
+    "num_gt_centers": 414.0,
+    "num_proposals": 0.0,
+    "num_matched": 0.0,
+    "center_recall": 0.0,
+    "center_precision": 0.0,
+    "mean_normalized_localization_error": null,
+    "median_abs_log_scale_error": null,
+    "proposal_count_mae": 25.875,
+    "false_proposals_per_image": 0.0,
+    "close_pair_count": 82.0,
+    "close_pair_coverage": 0.0,
+    "close_matched_endpoint_count": 0.0,
+    "close_endpoint_mean_localization_error": null,
+    "close_endpoint_median_abs_log_scale_error": null,
+    "contact_pair_count": 16.0,
+    "contact_pair_coverage": 0.0,
+    "contact_matched_endpoint_count": 0.0,
+    "contact_endpoint_mean_localization_error": null,
+    "contact_endpoint_median_abs_log_scale_error": null
+  },
+  "gate_checks": {
+    "metrics_finite": false,
+    "all_val_images": true,
+    "center_recall_ge_085": false,
+    "center_precision_ge_075": false,
+    "close_pair_coverage_ge_080": false,
+    "contact_pair_coverage_ge_075": false,
+    "localization_error_le_050": false,
+    "scale_error_le_050": false,
+    "close_endpoint_localization_le_060": false,
+    "contact_endpoint_localization_le_065": false,
+    "close_endpoint_scale_error_le_060": false,
+    "contact_endpoint_scale_error_le_060": false,
+    "count_mae_le_3": false,
+    "false_proposals_le_3": true
+  }
+}

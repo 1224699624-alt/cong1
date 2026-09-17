@@ -1,0 +1,625 @@
+[R202-BEST] start 2026-07-06T19:30:18+08:00
+
+EnvironmentNameNotFound: Could not find conda environment: aris-nnunet-r202-fast
+You can list all discoverable environments with `conda info --envs`.
+
+
+[R202-BEST] restart absolute-env 2026-07-06T19:34:55+08:00
+[R202-BEST] torch 2.5.1+cu118 cuda True
+[R202-BEST] nnunet /home/shenzeyu/miniconda3/envs/aris-nnunet-r202-fast/lib/python3.11/site-packages/nnunetv2/__init__.py
+[R202-BEST] lock=/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/nnunet/r202/locked_best_epoch285_20260706_1928
+65b81565ea77d48b1c91017188533e49f1d0d0d4ec557540b73f6779764397a7  /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/nnunet/r202/locked_best_epoch285_20260706_1928/checkpoint_best_locked.pth
+[R202-BEST] predict checkpoint_best.pth -> /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/nnunet/r202/predictions/Dataset202_TSRS_RSNAEpiphysis2D_best_locked
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+There are 81 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 81 cases that I would like to predict
+
+Predicting 10793:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:01<00:01,  1.92s/it]100%|██████████| 2/2 [00:01<00:00,  1.03it/s]
+sending off prediction to background worker for resampling and export
+done with 10793
+
+Predicting 11099:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 16.43it/s]100%|██████████| 4/4 [00:00<00:00, 12.08it/s]100%|██████████| 4/4 [00:00<00:00, 12.57it/s]
+sending off prediction to background worker for resampling and export
+done with 11099
+
+Predicting 12046:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 21.76it/s]
+sending off prediction to background worker for resampling and export
+done with 12046
+
+Predicting 12133:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 17.14it/s]100%|██████████| 2/2 [00:00<00:00, 17.10it/s]
+sending off prediction to background worker for resampling and export
+done with 12133
+
+Predicting 12213:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 17.76it/s]100%|██████████| 2/2 [00:00<00:00, 17.73it/s]
+sending off prediction to background worker for resampling and export
+done with 12213
+
+Predicting 12517:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 28.31it/s]
+sending off prediction to background worker for resampling and export
+done with 12517
+
+Predicting 12622:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 16.41it/s]100%|██████████| 2/2 [00:00<00:00, 16.38it/s]
+sending off prediction to background worker for resampling and export
+done with 12622
+
+Predicting 12936:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 29.54it/s]
+sending off prediction to background worker for resampling and export
+done with 12936
+
+Predicting 13954:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.20it/s]
+sending off prediction to background worker for resampling and export
+done with 13954
+
+Predicting 14018:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 19.77it/s]100%|██████████| 2/2 [00:00<00:00, 19.72it/s]
+sending off prediction to background worker for resampling and export
+done with 14018
+
+Predicting 14123:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 29.67it/s]
+sending off prediction to background worker for resampling and export
+done with 14123
+
+Predicting 14169:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 16.15it/s]100%|██████████| 2/2 [00:00<00:00, 16.12it/s]
+sending off prediction to background worker for resampling and export
+done with 14169
+
+Predicting 14224:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.95it/s]
+sending off prediction to background worker for resampling and export
+done with 14224
+
+Predicting 14235:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.79it/s]
+sending off prediction to background worker for resampling and export
+done with 14235
+
+Predicting 14289:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 13.25it/s]100%|██████████| 4/4 [00:00<00:00, 12.51it/s]100%|██████████| 4/4 [00:00<00:00, 12.60it/s]
+sending off prediction to background worker for resampling and export
+done with 14289
+
+Predicting 14543:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 13.17it/s]100%|██████████| 4/4 [00:00<00:00, 12.48it/s]
+sending off prediction to background worker for resampling and export
+done with 14543
+
+Predicting 1468:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 13.61it/s]100%|██████████| 4/4 [00:00<00:00, 12.58it/s]
+sending off prediction to background worker for resampling and export
+done with 1468
+
+Predicting 14724:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 21.75it/s]
+sending off prediction to background worker for resampling and export
+done with 14724
+
+Predicting 15071:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 21.82it/s]
+sending off prediction to background worker for resampling and export
+done with 15071
+
+Predicting 15130:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 15.05it/s]100%|██████████| 2/2 [00:00<00:00, 15.02it/s]
+sending off prediction to background worker for resampling and export
+done with 15130
+
+Predicting 15299:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 11.35it/s]100%|██████████| 2/2 [00:00<00:00, 11.34it/s]
+sending off prediction to background worker for resampling and export
+done with 15299
+
+Predicting 15386:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 12.53it/s]100%|██████████| 2/2 [00:00<00:00, 12.51it/s]
+sending off prediction to background worker for resampling and export
+done with 15386
+
+Predicting 15464:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 19.33it/s]100%|██████████| 4/4 [00:00<00:00, 12.48it/s]100%|██████████| 4/4 [00:00<00:00, 13.17it/s]
+sending off prediction to background worker for resampling and export
+done with 15464
+
+Predicting 15475:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 12.28it/s]100%|██████████| 2/2 [00:00<00:00, 12.27it/s]
+sending off prediction to background worker for resampling and export
+done with 15475
+
+Predicting 15567:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 11.15it/s]100%|██████████| 4/4 [00:00<00:00, 12.96it/s]100%|██████████| 4/4 [00:00<00:00, 12.65it/s]
+sending off prediction to background worker for resampling and export
+done with 15567
+
+Predicting 15578:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.83it/s]
+sending off prediction to background worker for resampling and export
+done with 15578
+
+Predicting 1667:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 17.30it/s] 44%|████▍     | 4/9 [00:00<00:00, 11.98it/s] 67%|██████▋   | 6/9 [00:00<00:00, 10.43it/s] 89%|████████▉ | 8/9 [00:00<00:00, 11.62it/s]100%|██████████| 9/9 [00:00<00:00, 11.31it/s]
+sending off prediction to background worker for resampling and export
+done with 1667
+
+Predicting 1695:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 12.32it/s]100%|██████████| 4/4 [00:00<00:00, 13.57it/s]100%|██████████| 4/4 [00:00<00:00, 13.36it/s]
+sending off prediction to background worker for resampling and export
+done with 1695
+
+Predicting 1703:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 12.77it/s] 56%|█████▌    | 5/9 [00:00<00:00, 12.95it/s] 78%|███████▊  | 7/9 [00:00<00:00, 11.84it/s]100%|██████████| 9/9 [00:00<00:00, 11.74it/s]100%|██████████| 9/9 [00:00<00:00, 12.00it/s]
+sending off prediction to background worker for resampling and export
+done with 1703
+
+Predicting 1716:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 12.30it/s] 56%|█████▌    | 5/9 [00:00<00:00, 13.10it/s] 78%|███████▊  | 7/9 [00:00<00:00, 10.94it/s]100%|██████████| 9/9 [00:00<00:00, 11.82it/s]100%|██████████| 9/9 [00:00<00:00, 11.87it/s]
+sending off prediction to background worker for resampling and export
+done with 1716
+
+Predicting 1744:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 11.46it/s] 44%|████▍     | 4/9 [00:00<00:00, 12.84it/s] 67%|██████▋   | 6/9 [00:00<00:00, 10.80it/s] 89%|████████▉ | 8/9 [00:00<00:00, 10.80it/s]100%|██████████| 9/9 [00:00<00:00, 10.83it/s]
+sending off prediction to background worker for resampling and export
+done with 1744
+
+Predicting 1784:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.64it/s]100%|██████████| 4/4 [00:00<00:00, 12.54it/s]
+sending off prediction to background worker for resampling and export
+done with 1784
+
+Predicting 1789:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 15.89it/s]100%|██████████| 4/4 [00:00<00:00, 12.46it/s]
+sending off prediction to background worker for resampling and export
+done with 1789
+
+Predicting 1801:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 18.35it/s]100%|██████████| 4/4 [00:00<00:00, 14.00it/s]
+sending off prediction to background worker for resampling and export
+done with 1801
+
+Predicting 1821:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 11.06it/s] 44%|████▍     | 4/9 [00:00<00:00, 12.89it/s] 67%|██████▋   | 6/9 [00:00<00:00, 10.68it/s] 89%|████████▉ | 8/9 [00:00<00:00, 10.80it/s]100%|██████████| 9/9 [00:00<00:00, 10.73it/s]
+sending off prediction to background worker for resampling and export
+done with 1821
+
+Predicting 1830:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 16.48it/s]100%|██████████| 4/4 [00:00<00:00, 12.54it/s]
+sending off prediction to background worker for resampling and export
+done with 1830
+
+Predicting 1858:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 19.96it/s] 44%|████▍     | 4/9 [00:00<00:00, 12.61it/s] 67%|██████▋   | 6/9 [00:00<00:00, 12.35it/s] 89%|████████▉ | 8/9 [00:00<00:00, 10.69it/s]100%|██████████| 9/9 [00:00<00:00, 11.85it/s]
+sending off prediction to background worker for resampling and export
+done with 1858
+
+Predicting 1873:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 19.84it/s]100%|██████████| 4/4 [00:00<00:00, 11.72it/s]100%|██████████| 4/4 [00:00<00:00, 12.48it/s]
+sending off prediction to background worker for resampling and export
+done with 1873
+
+Predicting 1891:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 13.02it/s] 56%|█████▌    | 5/9 [00:00<00:00, 12.91it/s] 78%|███████▊  | 7/9 [00:00<00:00, 10.80it/s]100%|██████████| 9/9 [00:00<00:00, 11.80it/s]100%|██████████| 9/9 [00:00<00:00, 11.87it/s]
+sending off prediction to background worker for resampling and export
+done with 1891
+
+Predicting 1897:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 13.72it/s]100%|██████████| 4/4 [00:00<00:00, 12.36it/s]100%|██████████| 4/4 [00:00<00:00, 12.54it/s]
+sending off prediction to background worker for resampling and export
+done with 1897
+
+Predicting 1898:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 16.69it/s] 56%|█████▌    | 5/9 [00:00<00:00, 12.29it/s] 78%|███████▊  | 7/9 [00:00<00:00, 11.49it/s]100%|██████████| 9/9 [00:00<00:00, 11.58it/s]100%|██████████| 9/9 [00:00<00:00, 12.03it/s]
+sending off prediction to background worker for resampling and export
+done with 1898
+
+Predicting 1910:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 12.81it/s]100%|██████████| 4/4 [00:00<00:00, 12.54it/s]
+sending off prediction to background worker for resampling and export
+done with 1910
+
+Predicting 1944:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 14.78it/s]100%|██████████| 4/4 [00:00<00:00, 12.51it/s]
+sending off prediction to background worker for resampling and export
+done with 1944
+
+Predicting 1954:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 16.41it/s] 44%|████▍     | 4/9 [00:00<00:00, 12.79it/s] 67%|██████▋   | 6/9 [00:00<00:00, 11.82it/s] 89%|████████▉ | 8/9 [00:00<00:00, 12.13it/s]100%|██████████| 9/9 [00:00<00:00, 11.51it/s]
+sending off prediction to background worker for resampling and export
+done with 1954
+
+Predicting 1964:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 19.02it/s]100%|██████████| 4/4 [00:00<00:00, 11.36it/s]100%|██████████| 4/4 [00:00<00:00, 12.08it/s]
+sending off prediction to background worker for resampling and export
+done with 1964
+
+Predicting 2017:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 22%|██▏       | 2/9 [00:00<00:00, 19.83it/s] 44%|████▍     | 4/9 [00:00<00:00, 11.43it/s] 67%|██████▋   | 6/9 [00:00<00:00, 12.68it/s] 89%|████████▉ | 8/9 [00:00<00:00, 11.16it/s]100%|██████████| 9/9 [00:00<00:00, 12.07it/s]
+sending off prediction to background worker for resampling and export
+done with 2017
+
+Predicting 2050:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.69it/s]
+sending off prediction to background worker for resampling and export
+done with 2050
+
+Predicting 2075:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.31it/s]
+sending off prediction to background worker for resampling and export
+done with 2075
+
+Predicting 2136:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 29.69it/s]
+sending off prediction to background worker for resampling and export
+done with 2136
+
+Predicting 2168:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.19it/s]
+sending off prediction to background worker for resampling and export
+done with 2168
+
+Predicting 2495:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 12.74it/s]100%|██████████| 4/4 [00:00<00:00, 12.42it/s]
+sending off prediction to background worker for resampling and export
+done with 2495
+
+Predicting 2498:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 21.70it/s]
+sending off prediction to background worker for resampling and export
+done with 2498
+
+Predicting 2982:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 18.41it/s]100%|██████████| 2/2 [00:00<00:00, 18.37it/s]
+sending off prediction to background worker for resampling and export
+done with 2982
+
+Predicting 3407:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 11.04it/s]100%|██████████| 2/2 [00:00<00:00, 11.02it/s]
+sending off prediction to background worker for resampling and export
+done with 3407
+
+Predicting 3503:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 17.59it/s]100%|██████████| 4/4 [00:00<00:00, 13.01it/s]100%|██████████| 4/4 [00:00<00:00, 13.52it/s]
+sending off prediction to background worker for resampling and export
+done with 3503
+
+Predicting 3591:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 33%|███▎      | 2/6 [00:00<00:00, 11.75it/s] 67%|██████▋   | 4/6 [00:00<00:00, 12.79it/s]100%|██████████| 6/6 [00:00<00:00, 10.84it/s]100%|██████████| 6/6 [00:00<00:00, 11.21it/s]
+sending off prediction to background worker for resampling and export
+done with 3591
+
+Predicting 3660:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.16it/s]
+sending off prediction to background worker for resampling and export
+done with 3660
+
+Predicting 3665:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.31it/s]
+sending off prediction to background worker for resampling and export
+done with 3665
+
+Predicting 3736:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 27.10it/s]
+sending off prediction to background worker for resampling and export
+done with 3736
+
+Predicting 3830:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 26.75it/s]
+sending off prediction to background worker for resampling and export
+done with 3830
+
+Predicting 3858:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.00it/s]100%|██████████| 2/2 [00:00<00:00, 19.96it/s]
+sending off prediction to background worker for resampling and export
+done with 3858
+
+Predicting 3900:
+perform_everything_on_device: True
+  0%|          | 0/12 [00:00<?, ?it/s] 17%|█▋        | 2/12 [00:00<00:00, 11.58it/s] 33%|███▎      | 4/12 [00:00<00:00, 12.37it/s] 50%|█████     | 6/12 [00:00<00:00, 10.45it/s] 67%|██████▋   | 8/12 [00:00<00:00, 11.11it/s] 83%|████████▎ | 10/12 [00:00<00:00, 10.68it/s]100%|██████████| 12/12 [00:01<00:00, 10.27it/s]100%|██████████| 12/12 [00:01<00:00, 10.66it/s]
+sending off prediction to background worker for resampling and export
+done with 3900
+
+Predicting 3912:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 50%|█████     | 3/6 [00:00<00:00, 18.40it/s] 83%|████████▎ | 5/6 [00:00<00:00, 12.04it/s]100%|██████████| 6/6 [00:00<00:00, 13.10it/s]
+sending off prediction to background worker for resampling and export
+done with 3912
+
+Predicting 4078:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 13.10it/s] 56%|█████▌    | 5/9 [00:00<00:00, 12.87it/s] 78%|███████▊  | 7/9 [00:00<00:00, 10.83it/s]100%|██████████| 9/9 [00:00<00:00, 11.35it/s]100%|██████████| 9/9 [00:00<00:00, 11.60it/s]
+sending off prediction to background worker for resampling and export
+done with 4078
+
+Predicting 4099:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 27.47it/s]
+sending off prediction to background worker for resampling and export
+done with 4099
+
+Predicting 4319:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 19.49it/s]100%|██████████| 2/2 [00:00<00:00, 19.45it/s]
+sending off prediction to background worker for resampling and export
+done with 4319
+
+Predicting 4332:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.34it/s]
+sending off prediction to background worker for resampling and export
+done with 4332
+
+Predicting 4818:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.41it/s]
+sending off prediction to background worker for resampling and export
+done with 4818
+
+Predicting 6666:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 50%|█████     | 3/6 [00:00<00:00, 14.02it/s] 83%|████████▎ | 5/6 [00:00<00:00, 12.67it/s]100%|██████████| 6/6 [00:00<00:00, 12.89it/s]
+sending off prediction to background worker for resampling and export
+done with 6666
+
+Predicting 6671:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 50%|█████     | 2/4 [00:00<00:00, 16.19it/s]100%|██████████| 4/4 [00:00<00:00, 12.07it/s]100%|██████████| 4/4 [00:00<00:00, 12.54it/s]
+sending off prediction to background worker for resampling and export
+done with 6671
+
+Predicting 7022:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 27.98it/s]
+sending off prediction to background worker for resampling and export
+done with 7022
+
+Predicting 7035:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.92it/s]
+sending off prediction to background worker for resampling and export
+done with 7035
+
+Predicting 7252:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 14.41it/s]100%|██████████| 4/4 [00:00<00:00, 12.49it/s]
+sending off prediction to background worker for resampling and export
+done with 7252
+
+Predicting 7397:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 32.28it/s]
+sending off prediction to background worker for resampling and export
+done with 7397
+
+Predicting 7416:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 33%|███▎      | 2/6 [00:00<00:00, 11.42it/s] 67%|██████▋   | 4/6 [00:00<00:00, 12.84it/s]100%|██████████| 6/6 [00:00<00:00, 10.78it/s]100%|██████████| 6/6 [00:00<00:00, 11.14it/s]
+sending off prediction to background worker for resampling and export
+done with 7416
+
+Predicting 7484:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 19.81it/s]100%|██████████| 2/2 [00:00<00:00, 19.77it/s]
+sending off prediction to background worker for resampling and export
+done with 7484
+
+Predicting 7625:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 29.17it/s]
+sending off prediction to background worker for resampling and export
+done with 7625
+
+Predicting 8435:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.07it/s]
+sending off prediction to background worker for resampling and export
+done with 8435
+
+Predicting 8579:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 21.63it/s]
+sending off prediction to background worker for resampling and export
+done with 8579
+
+Predicting 9072:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 11.65it/s]100%|██████████| 2/2 [00:00<00:00, 11.64it/s]
+sending off prediction to background worker for resampling and export
+done with 9072
+
+Predicting 9194:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 31.57it/s]
+sending off prediction to background worker for resampling and export
+done with 9194
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Collecting results:   0%|          | 0/81 [00:00<?, ?it/s]Collecting results: 100%|██████████| 81/81 [00:00<00:00, 4743.89it/s]
+Segmentation export complete.
+[R202-BEST] convert predictions
+{
+  "run_id": "R202",
+  "pred_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/nnunet/r202/predictions/Dataset202_TSRS_RSNAEpiphysis2D_best_locked",
+  "mask_dir": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/ablations_variants/r202_nnunet2d/TSRS_RSNA-Epiphysis_clean_test_v2/test/masks",
+  "num_converted": 81,
+  "expected_count": 81,
+  "count_matches_expected": true,
+  "converted": [
+    "10793.png",
+    "11099.png",
+    "12046.png",
+    "12133.png",
+    "12213.png",
+    "12517.png",
+    "12622.png",
+    "12936.png",
+    "13954.png",
+    "14018.png",
+    "14123.png",
+    "14169.png",
+    "14224.png",
+    "14235.png",
+    "14289.png",
+    "14543.png",
+    "1468.png",
+    "14724.png",
+    "15071.png",
+    "15130.png",
+    "15299.png",
+    "15386.png",
+    "15464.png",
+    "15475.png",
+    "15567.png",
+    "15578.png",
+    "1667.png",
+    "1695.png",
+    "1703.png",
+    "1716.png",
+    "1744.png",
+    "1784.png",
+    "1789.png",
+    "1801.png",
+    "1821.png",
+    "1830.png",
+    "1858.png",
+    "1873.png",
+    "1891.png",
+    "1897.png",
+    "1898.png",
+    "1910.png",
+    "1944.png",
+    "1954.png",
+    "1964.png",
+    "2017.png",
+    "2050.png",
+    "2075.png",
+    "2136.png",
+    "2168.png",
+    "2495.png",
+    "2498.png",
+    "2982.png",
+    "3407.png",
+    "3503.png",
+    "3591.png",
+    "3660.png",
+    "3665.png",
+    "3736.png",
+    "3830.png",
+    "3858.png",
+    "3900.png",
+    "3912.png",
+    "4078.png",
+    "4099.png",
+    "4319.png",
+    "4332.png",
+    "4818.png",
+    "6666.png",
+    "6671.png",
+    "7022.png",
+    "7035.png",
+    "7252.png",
+    "7397.png",
+    "7416.png",
+    "7484.png",
+    "7625.png",
+    "8435.png",
+    "8579.png",
+    "9072.png",
+    "9194.png"
+  ]
+}
+[R202-BEST] evaluate base metrics
+eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   0%|          | 0/81 [00:00<?, ?it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   1%|          | 1/81 [00:00<00:24,  3.24it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   2%|▏         | 2/81 [00:00<00:26,  2.94it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   4%|▎         | 3/81 [00:00<00:24,  3.18it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   5%|▍         | 4/81 [00:01<00:22,  3.37it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   6%|▌         | 5/81 [00:01<00:19,  3.90it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   7%|▋         | 6/81 [00:01<00:17,  4.30it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:   9%|▊         | 7/81 [00:01<00:17,  4.22it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  10%|▉         | 8/81 [00:01<00:15,  4.74it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  11%|█         | 9/81 [00:02<00:15,  4.74it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  12%|█▏        | 10/81 [00:02<00:15,  4.44it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  14%|█▎        | 11/81 [00:02<00:15,  4.43it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  15%|█▍        | 12/81 [00:02<00:16,  4.30it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  16%|█▌        | 13/81 [00:03<00:14,  4.63it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  17%|█▋        | 14/81 [00:03<00:13,  4.95it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  19%|█▊        | 15/81 [00:03<00:14,  4.41it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  20%|█▉        | 16/81 [00:03<00:16,  3.83it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  21%|██        | 17/81 [00:04<00:21,  2.94it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  22%|██▏       | 18/81 [00:04<00:21,  2.91it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  23%|██▎       | 19/81 [00:05<00:18,  3.28it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  25%|██▍       | 20/81 [00:05<00:19,  3.07it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  26%|██▌       | 21/81 [00:05<00:17,  3.36it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  27%|██▋       | 22/81 [00:05<00:17,  3.30it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  28%|██▊       | 23/81 [00:06<00:19,  3.02it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  30%|██▉       | 24/81 [00:06<00:18,  3.08it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  31%|███       | 25/81 [00:07<00:19,  2.84it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  32%|███▏      | 26/81 [00:07<00:17,  3.22it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  33%|███▎      | 27/81 [00:08<00:25,  2.08it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  35%|███▍      | 28/81 [00:08<00:25,  2.09it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  36%|███▌      | 29/81 [00:09<00:31,  1.67it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  37%|███▋      | 30/81 [00:10<00:35,  1.43it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  38%|███▊      | 31/81 [00:11<00:38,  1.30it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  40%|███▉      | 32/81 [00:11<00:31,  1.54it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  41%|████      | 33/81 [00:12<00:26,  1.79it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  42%|████▏     | 34/81 [00:12<00:24,  1.94it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  43%|████▎     | 35/81 [00:13<00:26,  1.74it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  44%|████▍     | 36/81 [00:13<00:22,  1.96it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  46%|████▌     | 37/81 [00:14<00:24,  1.82it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  47%|████▋     | 38/81 [00:14<00:21,  2.03it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  48%|████▊     | 39/81 [00:15<00:22,  1.88it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  49%|████▉     | 40/81 [00:15<00:20,  2.04it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  51%|█████     | 41/81 [00:16<00:21,  1.89it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  52%|█████▏    | 42/81 [00:16<00:18,  2.07it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  53%|█████▎    | 43/81 [00:16<00:17,  2.22it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  54%|█████▍    | 44/81 [00:17<00:18,  1.98it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  56%|█████▌    | 45/81 [00:17<00:16,  2.16it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  57%|█████▋    | 46/81 [00:18<00:18,  1.94it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  58%|█████▊    | 47/81 [00:18<00:13,  2.46it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  59%|█████▉    | 48/81 [00:18<00:10,  3.17it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  60%|██████    | 49/81 [00:18<00:08,  3.72it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  62%|██████▏   | 50/81 [00:19<00:07,  4.37it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  63%|██████▎   | 51/81 [00:19<00:07,  4.27it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  64%|██████▍   | 52/81 [00:19<00:06,  4.42it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  65%|██████▌   | 53/81 [00:19<00:05,  4.71it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  67%|██████▋   | 54/81 [00:20<00:06,  4.08it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  68%|██████▊   | 55/81 [00:20<00:08,  3.21it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  69%|██████▉   | 56/81 [00:21<00:09,  2.53it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  70%|███████   | 57/81 [00:21<00:08,  2.91it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  72%|███████▏  | 58/81 [00:21<00:06,  3.30it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  73%|███████▎  | 59/81 [00:21<00:05,  3.83it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  74%|███████▍  | 60/81 [00:21<00:04,  4.31it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  75%|███████▌  | 61/81 [00:22<00:04,  4.13it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  77%|███████▋  | 62/81 [00:23<00:08,  2.20it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  78%|███████▊  | 63/81 [00:23<00:08,  2.02it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  79%|███████▉  | 64/81 [00:24<00:09,  1.73it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  80%|████████  | 65/81 [00:24<00:07,  2.11it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  81%|████████▏ | 66/81 [00:24<00:06,  2.41it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  84%|████████▍ | 68/81 [00:25<00:03,  3.53it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  85%|████████▌ | 69/81 [00:25<00:04,  2.77it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  86%|████████▋ | 70/81 [00:26<00:03,  2.85it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  88%|████████▊ | 71/81 [00:26<00:03,  3.13it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  89%|████████▉ | 72/81 [00:26<00:02,  3.41it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  90%|█████████ | 73/81 [00:26<00:02,  3.19it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  91%|█████████▏| 74/81 [00:27<00:02,  3.38it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  93%|█████████▎| 75/81 [00:27<00:02,  2.96it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  94%|█████████▍| 76/81 [00:27<00:01,  3.06it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  95%|█████████▌| 77/81 [00:28<00:01,  3.51it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  96%|█████████▋| 78/81 [00:28<00:00,  3.78it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  98%|█████████▊| 79/81 [00:28<00:00,  4.32it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test:  99%|█████████▉| 80/81 [00:28<00:00,  3.79it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 81/81 [00:29<00:00,  4.39it/s]eval/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 81/81 [00:29<00:00,  2.79it/s]
+{
+  "dice": 0.9235726615895181,
+  "iou": 0.8585081175842507,
+  "precision": 0.9079839147292559,
+  "recall": 0.941006687687206,
+  "specificity": 0.9969564401688965,
+  "boundary_iou": 0.2704313015298772
+}
+Saved metrics: outputs/analysis/r202_nnunet2d_clean_test_v2_metrics.json
+[R202-BEST] evaluate R201 unified
+{
+  "regression_passed": false,
+  "outputs": {
+    "comparison_json": "outputs/analysis/r201_unified_eval/r201_unified_comparison_table.json",
+    "comparison_csv": "outputs/analysis/r201_unified_eval/r201_unified_comparison_table.csv",
+    "regression_json": "outputs/analysis/r201_unified_eval/r201_r200_regression_check.json",
+    "hard_cases_csv": "outputs/analysis/r201_unified_eval/r201_r110_vs_araa_hard_case_queue.csv",
+    "hard_cases_json": "outputs/analysis/r201_unified_eval/r201_r110_vs_araa_hard_case_queue.json"
+  }
+}
+R201 regression check failed; do not trust comparison tables until fixed.

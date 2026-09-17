@@ -1,0 +1,22 @@
+{
+  "status": "below_best",
+  "metrics_json": "outputs\\analysis\\r140_reviewed_variant_dinov3_instance_sep_clean_test_v2_metrics.json",
+  "control_metrics_json": "outputs\\analysis\\r140_reviewed_variant_dinov3_instance_sep_original_test_metrics.json",
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "num_evaluated": 81,
+  "clean_test_v2": {
+    "dice": 0.8855000712919942,
+    "precision": 0.8541566700055747,
+    "recall": 0.9208527446305403,
+    "boundary_iou": 0.17443862969724094
+  },
+  "original_test_control": {},
+  "target_dice": 0.9317660066557425,
+  "best_valid_dice": 0.9177231563529792,
+  "delta_vs_best_valid": -0.032223085060985035,
+  "gap_to_target": 0.046265935363748345,
+  "target_met": false,
+  "new_best": false,
+  "next_action": "do_not_continue_without_new_evidence"
+}

@@ -1,0 +1,80 @@
+{
+  "run_id": "R242-candidate-crop-scorer",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "evidence_level": "original_val_candidate_crop_grouped_cv_diagnostic",
+  "idea": "score local background-channel cuts from image/cut crops to separate true bone gaps from foreground erosion",
+  "num_candidate_rows": 8190,
+  "num_candidate_images": 96,
+  "num_crops": 8190,
+  "num_safe_useful": 765,
+  "num_risk": 7339,
+  "device": "cuda",
+  "crop_size": 56,
+  "epochs": 8,
+  "candidate_generation": "R239 GT-free bg components/seeds + seam probability map; GT only labels/audits candidate effects",
+  "labels": {
+    "safe_useful": "non-worse Dice/IoU/Recall/Boundary, gap-FP gain, component-count non-worse, cut_gt_fg_frac<=0.25, cut_gt_gap_frac>=0.75",
+    "risk": "foreground-heavy cut, recall loss, overlap drop, or boundary drop"
+  },
+  "seam_probability_model": {
+    "images": 24,
+    "positive_pixels": 2043,
+    "sampled_positive": 7248,
+    "sampled_negative": 17328,
+    "skipped_training_images": [],
+    "num_samples": 24576,
+    "positive_sample_rate": 0.294921875
+  },
+  "skipped_images": [],
+  "grouped_cv": {
+    "skipped": false,
+    "folds": 5,
+    "fold_summaries": [
+      {
+        "fold": 1,
+        "train_images": 76,
+        "val_images": 20,
+        "train_rows": 6410,
+        "val_rows": 1780
+      },
+      {
+        "fold": 2,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6468,
+        "val_rows": 1722
+      },
+      {
+        "fold": 3,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6549,
+        "val_rows": 1641
+      },
+      {
+        "fold": 4,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6682,
+        "val_rows": 1508
+      },
+      {
+        "fold": 5,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6651,
+        "val_rows": 1539
+      }
+    ],
+    "best": null
+  },
+  "promotion_gate": {
+    "candidate_level": "selected risk far below selected safe, Recall delta zero, positive Boundary IoU/F1, negative gap FP",
+    "next_step": "only if candidate-level gate passes, write an isolated original-val mask editor; clean-test-v2 remains locked"
+  },
+  "warning": "Original-val development only; not clean-test-v2 or R201 final evidence."
+}

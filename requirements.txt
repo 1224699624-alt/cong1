@@ -1,0 +1,20 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# PyTorch stack for RTX 4090 on the server
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# Detection and segmentation
+ultralytics>=8.2.0,<9
+segment-anything==1.0
+
+# Image and array processing
+opencv-python-headless>=4.8.0
+numpy>=1.24,<2.0
+Pillow>=10.0
+
+# Utilities
+tqdm>=4.66
+PyYAML>=6.0
+matplotlib>=3.8

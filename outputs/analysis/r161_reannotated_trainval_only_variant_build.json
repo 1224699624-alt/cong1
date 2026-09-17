@@ -1,0 +1,31 @@
+{
+  "status": "created",
+  "source_reannotated": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1",
+  "original": "data/raw/TSRS_RSNA-Epiphysis",
+  "target": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1",
+  "policy": "train and val are copied from the reannotated variant; test is copied only from the original dataset as a control. The reannotated test split is excluded from this variant and must not be used for success evaluation. Success evaluation remains TSRS_RSNA-Epiphysis_clean_test_v2/test.",
+  "splits": {
+    "train": {
+      "source": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1",
+      "images": 1256,
+      "labels": 1256,
+      "paired": 1256
+    },
+    "val": {
+      "source": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1",
+      "images": 96,
+      "labels": 96,
+      "paired": 96
+    },
+    "test": {
+      "source": "data/raw/TSRS_RSNA-Epiphysis",
+      "images": 97,
+      "labels": 97,
+      "paired": 97
+    }
+  },
+  "excluded": {
+    "reannotated_test": "data/raw_variants/TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1/test",
+    "reannotated_test_count": 122
+  }
+}

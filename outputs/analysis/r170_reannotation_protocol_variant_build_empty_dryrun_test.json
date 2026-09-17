@@ -1,0 +1,72 @@
+{
+  "status": "dry_run_blocked",
+  "dry_run": true,
+  "errors": [
+    "R168 preview gate did not pass; refusing to build variant."
+  ],
+  "target_dataset": "TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1",
+  "target_path": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1",
+  "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "original_root": "data\\raw\\TSRS_RSNA-Epiphysis",
+  "reannotated_root": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1",
+  "correction_dir": null,
+  "preview": {
+    "gate_pass_if_applied": false,
+    "counts": {
+      "rows": 96,
+      "train_rows": 80,
+      "val_rows": 16,
+      "reviewed_train": 0,
+      "usable_train": 0,
+      "reviewed_val": 0,
+      "selected_original": 0,
+      "selected_reannotated": 0,
+      "corrections_needed": 0,
+      "excluded": 0,
+      "uncertain": 0
+    },
+    "decision_counts": {
+      "blank": 96
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "selected_counts": {
+    "default_original": 971,
+    "original": 0,
+    "reannotated": 0,
+    "corrected": 0,
+    "excluded": 0,
+    "uncertain": 0
+  },
+  "split_summary": {
+    "train": {
+      "copied": 875,
+      "skipped": 0,
+      "label_sources": {
+        "default_original": 875
+      }
+    },
+    "val": {
+      "copied": 96,
+      "skipped": 0,
+      "label_sources": {
+        "default_original": 96
+      }
+    },
+    "test": {
+      "copied": 97,
+      "skipped": 0,
+      "label_sources": {
+        "original_control_only": 97
+      }
+    }
+  },
+  "policy": {
+    "source_test": "original TSRS_RSNA-Epiphysis/test only as control",
+    "does_not_use_clean_test_v2_for_training": true,
+    "does_not_use_reannotated_test": true,
+    "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+  }
+}

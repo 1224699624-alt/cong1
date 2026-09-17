@@ -1,0 +1,10 @@
+{
+  "status": "eval_completed",
+  "result": "OrderedDict([('bbox', {'AP': 0.0, 'AP50': 0.0, 'AP75': 0.0, 'APs': 0.0, 'APm': nan, 'APl': nan}), ('segm', {'AP': 0.0, 'AP50': 0.0, 'AP75': 0.0, 'APs': 0.0, 'APm': nan, 'APl': nan})])",
+  "constraints": {
+    "eval_source": "R193 train subset, original TSRS_RSNA-Epiphysis/train first 24",
+    "clean_test_v2_used": false,
+    "new_or_reannotated_test_used": false,
+    "success_claim_allowed": false
+  }
+}

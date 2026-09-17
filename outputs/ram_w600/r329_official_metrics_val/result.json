@@ -1,0 +1,162 @@
+{
+  "experiment": "R329_RAM_OFFICIAL_METRICS_VALIDATION",
+  "split": "validation",
+  "n_images": 69,
+  "test_used": false,
+  "threshold": 0.5,
+  "threshold_search": false,
+  "spatial_preprocessing": "native pixels; right/bottom padding only",
+  "metrics": [
+    "DSC",
+    "NSD@2px",
+    "VOE",
+    "symmetric MSD (pixels)",
+    "MSD Fail Rate",
+    "RAVD"
+  ],
+  "pair_definition": "top 15 train overlap pairs; empty GT pair/cases excluded",
+  "results": {
+    "baseline": {
+      "overall_instance_metrics": {
+        "n": 966,
+        "dsc": 0.9788577444266571,
+        "nsd_2px": 0.8872615864685836,
+        "voe": 0.040899481692983526,
+        "msd_px": 1.1692853896336834,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.02026307045041241
+      },
+      "overlap_region_metrics": {
+        "n": 69,
+        "dsc": 0.8737309196313807,
+        "nsd_2px": 0.7803977023041856,
+        "voe": 0.22265545149197036,
+        "msd_px": 1.9463779703847481,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.05105809505782287
+      },
+      "overlap_pair_intersection_metrics": {
+        "n": 1004,
+        "dsc": 0.8336301534661839,
+        "nsd_2px": 0.7828341446395287,
+        "voe": 0.2611753464853781,
+        "msd_px": 1.7424218935936666,
+        "msd_fail_rate": 0.00199203187250996,
+        "ravd": 0.6661879887701326
+      },
+      "overlap_pair_count": 1004
+    },
+    "generic_adapter": {
+      "overall_instance_metrics": {
+        "n": 966,
+        "dsc": 0.9788470883917912,
+        "nsd_2px": 0.886157645381581,
+        "voe": 0.040924907101361124,
+        "msd_px": 1.170206755458816,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.020209120834759075
+      },
+      "overlap_region_metrics": {
+        "n": 69,
+        "dsc": 0.8742110525012958,
+        "nsd_2px": 0.7791062145038398,
+        "voe": 0.22191908066211904,
+        "msd_px": 1.9474783553268638,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.050196382671837486
+      },
+      "overlap_pair_intersection_metrics": {
+        "n": 1004,
+        "dsc": 0.8341466872565056,
+        "nsd_2px": 0.781776014058587,
+        "voe": 0.2605234910928061,
+        "msd_px": 1.7371334767502664,
+        "msd_fail_rate": 0.00199203187250996,
+        "ravd": 0.6716787572684179
+      },
+      "overlap_pair_count": 1004,
+      "delta_vs_baseline": {
+        "overall_instance_metrics": {
+          "dsc": -1.0656034865830222e-05,
+          "nsd_2px": -0.0011039410870025135,
+          "voe": 2.5425408377598158e-05,
+          "msd_px": 0.0009213658251325807,
+          "msd_fail_rate": 0.0,
+          "ravd": -5.394961565333492e-05
+        },
+        "overlap_region_metrics": {
+          "dsc": 0.0004801328699151064,
+          "nsd_2px": -0.0012914878003458252,
+          "voe": -0.0007363708298513127,
+          "msd_px": 0.0011003849421156175,
+          "msd_fail_rate": 0.0,
+          "ravd": -0.0008617123859853831
+        },
+        "overlap_pair_intersection_metrics": {
+          "dsc": 0.0005165337903217937,
+          "nsd_2px": -0.0010581305809417296,
+          "voe": -0.0006518553925720094,
+          "msd_px": -0.005288416843400201,
+          "msd_fail_rate": 0.0,
+          "ravd": 0.005490768498285226
+        }
+      }
+    },
+    "instance_prior": {
+      "overall_instance_metrics": {
+        "n": 966,
+        "dsc": 0.9789472594215087,
+        "nsd_2px": 0.887174792439635,
+        "voe": 0.04073192681157517,
+        "msd_px": 1.1350314737182645,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.020588036508616764
+      },
+      "overlap_region_metrics": {
+        "n": 69,
+        "dsc": 0.8762440115302094,
+        "nsd_2px": 0.7808080992023201,
+        "voe": 0.21885106132215532,
+        "msd_px": 1.9113075283940322,
+        "msd_fail_rate": 0.0,
+        "ravd": 0.053971343424229434
+      },
+      "overlap_pair_intersection_metrics": {
+        "n": 1004,
+        "dsc": 0.8367886557251895,
+        "nsd_2px": 0.7827904176756914,
+        "voe": 0.25697294040425667,
+        "msd_px": 1.6960621193723004,
+        "msd_fail_rate": 0.00199203187250996,
+        "ravd": 0.7122327920640436
+      },
+      "overlap_pair_count": 1004,
+      "delta_vs_baseline": {
+        "overall_instance_metrics": {
+          "dsc": 8.951499485165826e-05,
+          "nsd_2px": -8.67940289485114e-05,
+          "voe": -0.00016755488140835634,
+          "msd_px": -0.03425391591541893,
+          "msd_fail_rate": 0.0,
+          "ravd": 0.000324966058204354
+        },
+        "overlap_region_metrics": {
+          "dsc": 0.0025130918988286455,
+          "nsd_2px": 0.00041039689813449076,
+          "voe": -0.0038043901698150417,
+          "msd_px": -0.03507044199071596,
+          "msd_fail_rate": 0.0,
+          "ravd": 0.002913248366406565
+        },
+        "overlap_pair_intersection_metrics": {
+          "dsc": 0.0031585022590056022,
+          "nsd_2px": -4.372696383736496e-05,
+          "voe": -0.004202406081121435,
+          "msd_px": -0.04635977422136617,
+          "msd_fail_rate": 0.0,
+          "ravd": 0.04604480329391092
+        }
+      }
+    }
+  }
+}

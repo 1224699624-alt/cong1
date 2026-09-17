@@ -1,0 +1,6 @@
+path: data/yolo/TSRS_RSNA-Epiphysis
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: bone_region

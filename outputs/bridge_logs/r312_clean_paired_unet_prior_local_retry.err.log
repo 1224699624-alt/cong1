@@ -1,0 +1,4 @@
+G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py:132: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=a.device.startswith("cuda"))
+G:\gutou\YOLO+SAM\scripts\run_r312_clean_paired_unet_prior.py:141: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=a.device.startswith("cuda")):

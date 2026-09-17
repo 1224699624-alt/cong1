@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\tmp_r170_needs_correction.csv",
+  "gate_pass_if_applied": true,
+  "errors": [],
+  "warnings": [],
+  "thresholds": {
+    "min_reviewed_train": 40,
+    "min_usable_train": 20,
+    "min_reviewed_val": 8
+  },
+  "counts": {
+    "rows": 96,
+    "train_rows": 80,
+    "val_rows": 16,
+    "reviewed_train": 48,
+    "usable_train": 45,
+    "reviewed_val": 8,
+    "selected_original": 37,
+    "selected_reannotated": 15,
+    "corrections_needed": 1,
+    "excluded": 3,
+    "uncertain": 0
+  },
+  "decision_counts": {
+    "both_wrong_needs_correction": 1,
+    "original_label_correct": 37,
+    "reannotated_label_correct": 15,
+    "exclude_from_training_variant": 3,
+    "blank": 40
+  },
+  "train_decision_counts": {
+    "both_wrong_needs_correction": 1,
+    "original_label_correct": 29,
+    "reannotated_label_correct": 15,
+    "exclude_from_training_variant": 3,
+    "blank": 32
+  },
+  "val_decision_counts": {
+    "original_label_correct": 8,
+    "blank": 8
+  },
+  "correction_rows": [
+    {
+      "split": "train",
+      "image": "15057.png",
+      "panel": "panels/train/001_15057_r168.jpg"
+    }
+  ],
+  "policy": {
+    "mutates_dataset": false,
+    "uses_clean_test_v2": false,
+    "uses_reannotated_test": false,
+    "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+  },
+  "next_action": "collect_corrected_pngs_then_build_isolated_variant"
+}

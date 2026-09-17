@@ -1,0 +1,40 @@
+[R320 queue] waiting for exact U-Net pair
+{
+  "dice": 0.866623678118224,
+  "iou": 0.7691146318124552,
+  "precision": 0.7993796219748104,
+  "recall": 0.9536995951722065,
+  "specificity": 0.993731390720867,
+  "boundary_iou": 0.1501940017777289,
+  "boundary_f1": 0.2549897956540122,
+  "gap_region_fp_rate": 0.44823409145358467,
+  "gap_region_precision": 0.5517659085464154,
+  "component_merge_rate": 0.8333333333333334,
+  "component_count_mae": 4.270833333333333,
+  "component_delta_mean": -3.8125,
+  "surface_dice_2px": 0.4687586737355653,
+  "surface_dice_5px": 0.7894531098570999,
+  "hd95_px": 26.62810877847519,
+  "assd_px": 7.3666204454139566
+}
+{
+  "dice": 0.8735371402912326,
+  "iou": 0.7796561364952229,
+  "precision": 0.821295383225381,
+  "recall": 0.9389553374769163,
+  "specificity": 0.9946421753067876,
+  "boundary_iou": 0.16992742022004537,
+  "boundary_f1": 0.28498770901791587,
+  "gap_region_fp_rate": 0.3835585562228063,
+  "gap_region_precision": 0.6164414437771937,
+  "component_merge_rate": 0.6666666666666666,
+  "component_count_mae": 2.71875,
+  "component_delta_mean": -2.0104166666666665,
+  "surface_dice_2px": 0.516591291557694,
+  "surface_dice_5px": 0.8315184669639901,
+  "hd95_px": 21.861408648778582,
+  "assd_px": 5.810070680628075
+}
+[R320 queue] waiting for TransUNet weights
+waiting asset: /root/autodl-tmp/external/checkpoints/R50_ViT-B_16.npz 82973578/461217452
+[R320 queue] waiting for exact U-Net pair

@@ -1,0 +1,5 @@
+rank,image,panel,summary
+1,13867.png,panels/01_13867_r233_merged_seam_panel.jpg,"cut=12.0 px, Dice +0.000110, Recall +0.000000, BIoU +0.000046, gapFP -0.000511"
+2,15040.png,panels/02_15040_r233_merged_seam_panel.jpg,"cut=5.0 px, Dice +0.000035, Recall +0.000000, BIoU +0.000206, gapFP -0.000189"
+3,15067.png,panels/03_15067_r233_merged_seam_panel.jpg,"cut=87.0 px, Dice +0.000640, Recall +0.000000, BIoU +0.003829, gapFP -0.003278"
+4,1620.png,panels/04_1620_r233_merged_seam_panel.jpg,"cut=21.0 px, Dice +0.000110, Recall +0.000000, BIoU +0.000482, gapFP -0.000654"

@@ -1,0 +1,20 @@
+{
+  "experiment": "R298",
+  "device": "cuda",
+  "best_epoch": 0,
+  "baseline_test": {
+    "macro_dice": 0.9783331442949337,
+    "overlap_dice": 0.8678561782894708,
+    "overlap_nsd_2px": 0.8779420800807353
+  },
+  "improved_test": {
+    "macro_dice": 0.9782046158103763,
+    "overlap_dice": 0.8678073533802022,
+    "overlap_nsd_2px": 0.8763212232795229
+  },
+  "delta_test": {
+    "macro_dice": -0.00012852848455735533,
+    "overlap_dice": -4.882490926860772e-05,
+    "overlap_nsd_2px": -0.001620856801212378
+  }
+}

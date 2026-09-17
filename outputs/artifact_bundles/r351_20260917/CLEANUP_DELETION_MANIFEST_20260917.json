@@ -1,0 +1,373 @@
+{
+  "date": "2026-09-17",
+  "root": "G:\\gutou\\YOLO+SAM",
+  "reason": "reclaim only duplicate extracted archives and rebuildable Python cache",
+  "verification_before_delete": [
+    {
+      "path": "data/remote_variants/RAM-W600/BoneSegmentation/images",
+      "expected_files": 618,
+      "actual_files": 618,
+      "expected_bytes": 392779020,
+      "actual_bytes": 392779020,
+      "passed": true
+    },
+    {
+      "path": "data/remote_variants/RAM-W600/BoneSegmentation/masks/train",
+      "expected_files": 425,
+      "actual_files": 425,
+      "expected_bytes": 2379749200,
+      "actual_bytes": 2379749200,
+      "passed": true
+    },
+    {
+      "path": "data/remote_variants/RAM-W600/BoneSegmentation/masks/val",
+      "expected_files": 69,
+      "actual_files": 69,
+      "expected_bytes": 376009632,
+      "actual_bytes": 376009632,
+      "passed": true
+    },
+    {
+      "path": "data/remote_variants/RAM-W600/BoneSegmentation/masks/test",
+      "expected_files": 124,
+      "actual_files": 124,
+      "expected_bytes": 676087072,
+      "actual_bytes": 676087072,
+      "passed": true
+    },
+    {
+      "path": "outputs/priors/r323_ram_native_r317_single_seed",
+      "expected_files": 989,
+      "actual_files": 989,
+      "expected_bytes": 293662368,
+      "actual_bytes": 293662368,
+      "passed": true
+    }
+  ],
+  "deleted": [
+    {
+      "path": "outputs\\artifact_bundles\\r351_20260917\\remote_archives\\r351_ram_images.tar",
+      "kind": "duplicate_tar_archive",
+      "bytes": 393277440,
+      "sha256": "2bae311e0e0372a2935079f33e9f6ac63ad87cc827abfbdd004dd84a1105f630"
+    },
+    {
+      "path": "outputs\\artifact_bundles\\r351_20260917\\remote_archives\\r351_ram_masks_test.tar",
+      "kind": "duplicate_tar_archive",
+      "bytes": 676157440,
+      "sha256": "944220b879a003af535a3023d1b27fcaeead58edfa95c499ea588da644a58fee"
+    },
+    {
+      "path": "outputs\\artifact_bundles\\r351_20260917\\remote_archives\\r351_ram_masks_train.tar",
+      "kind": "duplicate_tar_archive",
+      "bytes": 2379991040,
+      "sha256": "b6720ed8388ac4f40637f727e50a98030aa60bfdccd96d7ee116f817ede10251"
+    },
+    {
+      "path": "outputs\\artifact_bundles\\r351_20260917\\remote_archives\\r351_ram_masks_val.tar",
+      "kind": "duplicate_tar_archive",
+      "bytes": 376053760,
+      "sha256": "91a036106b72dfcfa56091fc24e0511d630fb9d68b9d799da79b06349406e681"
+    },
+    {
+      "path": "outputs\\artifact_bundles\\r351_20260917\\remote_archives\\r351_ram_priors.tar",
+      "kind": "duplicate_tar_archive",
+      "bytes": 294492160,
+      "sha256": "27f59fc354802bfff0763277cba1b41ca90dad06dcdb2f70ef85eaac7fdc655f"
+    },
+    {
+      "path": "scripts\\__pycache__",
+      "kind": "python_cache",
+      "files": 318,
+      "bytes": 5012230
+    },
+    {
+      "path": "tmp\\pgr_net_code\\model\\__pycache__",
+      "kind": "python_cache",
+      "files": 3,
+      "bytes": 88690
+    },
+    {
+      "path": "tmp\\pgr_net_code\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 26,
+      "bytes": 49213
+    },
+    {
+      "path": "third_party\\prior_references\\Universal-Topology-Refinement\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 26693
+    },
+    {
+      "path": "scripts\\nnunet_trainers\\__pycache__",
+      "kind": "python_cache",
+      "files": 42,
+      "bytes": 564056
+    },
+    {
+      "path": "outputs\\nnunet\\r275_mature_seam\\ext_trainer\\__pycache__",
+      "kind": "python_cache",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": "outputs\\nnunet\\r275_mature_control\\ext_trainer\\__pycache__",
+      "kind": "python_cache",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 105223
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\conf\\__pycache__",
+      "kind": "python_cache",
+      "files": 4,
+      "bytes": 2704
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\dataset\\__pycache__",
+      "kind": "python_cache",
+      "files": 13,
+      "bytes": 31658
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\__pycache__",
+      "kind": "python_cache",
+      "files": 2,
+      "bytes": 3231
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\pytorch_ssim\\__pycache__",
+      "kind": "python_cache",
+      "files": 2,
+      "bytes": 5227
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\common\\__pycache__",
+      "kind": "python_cache",
+      "files": 9,
+      "bytes": 14207
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\efficient_sam\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 41326
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\ImageEncoder\\__pycache__",
+      "kind": "python_cache",
+      "files": 3,
+      "bytes": 10682
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\sam\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 50454
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\sam\\modeling\\__pycache__",
+      "kind": "python_cache",
+      "files": 12,
+      "bytes": 58375
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\sam\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 32652
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\__pycache__",
+      "kind": "python_cache",
+      "files": 2,
+      "bytes": 334
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\mobilesamv2\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 59850
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\mobilesamv2\\modeling\\__pycache__",
+      "kind": "python_cache",
+      "files": 14,
+      "bytes": 67005
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\mobilesamv2\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 32854
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\__pycache__",
+      "kind": "python_cache",
+      "files": 2,
+      "bytes": 344
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\models\\__pycache__",
+      "kind": "python_cache",
+      "files": 2,
+      "bytes": 348
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\models\\efficientvit\\__pycache__",
+      "kind": "python_cache",
+      "files": 10,
+      "bytes": 45616
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\models\\nn\\__pycache__",
+      "kind": "python_cache",
+      "files": 10,
+      "bytes": 43870
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\models\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 13930
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\data_provider\\__pycache__",
+      "kind": "python_cache",
+      "files": 4,
+      "bytes": 13261
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\trainer\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 24601
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 18,
+      "bytes": 27004
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\data_provider\\augment\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 8395
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\MobileSAMv2\\efficientvit\\apps\\data_provider\\random_resolution\\__pycache__",
+      "kind": "python_cache",
+      "files": 4,
+      "bytes": 7665
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\ImageEncoder\\tinyvit\\__pycache__",
+      "kind": "python_cache",
+      "files": 12,
+      "bytes": 85335
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\ImageEncoder\\vit\\__pycache__",
+      "kind": "python_cache",
+      "files": 10,
+      "bytes": 77132
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\common\\loralib\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 43957
+    },
+    {
+      "path": ".tmp\\Medical-SAM-Adapter\\models\\common\\MaskDecoder\\__pycache__",
+      "kind": "python_cache",
+      "files": 4,
+      "bytes": 15058
+    },
+    {
+      "path": ".tmp\\FoB_SAM\\dataloaders\\__pycache__",
+      "kind": "python_cache",
+      "files": 6,
+      "bytes": 117237
+    },
+    {
+      "path": ".tmp\\FoB_SAM\\data\\isic\\__pycache__",
+      "kind": "python_cache",
+      "files": 1,
+      "bytes": 2187
+    },
+    {
+      "path": ".tmp\\external\\LSN\\model\\__pycache__",
+      "kind": "python_cache",
+      "files": 18,
+      "bytes": 210433
+    },
+    {
+      "path": ".tmp\\external\\LSN\\model\\backbones\\__pycache__",
+      "kind": "python_cache",
+      "files": 27,
+      "bytes": 231938
+    },
+    {
+      "path": ".tmp\\external\\BLS-GAN\\backbones\\__pycache__",
+      "kind": "python_cache",
+      "files": 25,
+      "bytes": 277259
+    },
+    {
+      "path": ".tmp\\external\\BLS-GAN\\model\\__pycache__",
+      "kind": "python_cache",
+      "files": 16,
+      "bytes": 70281
+    },
+    {
+      "path": ".tmp\\external\\BLS-GAN\\predict\\__pycache__",
+      "kind": "python_cache",
+      "files": 1,
+      "bytes": 7629
+    },
+    {
+      "path": ".tmp\\external\\BLS-GAN\\train\\__pycache__",
+      "kind": "python_cache",
+      "files": 8,
+      "bytes": 94857
+    },
+    {
+      "path": ".tmp\\external\\BLS-GAN\\utils\\__pycache__",
+      "kind": "python_cache",
+      "files": 4,
+      "bytes": 62942
+    },
+    {
+      "path": ".tmp\\Ceb_r1\\Ceb\\__pycache__",
+      "kind": "python_cache",
+      "files": 9,
+      "bytes": 46863
+    },
+    {
+      "path": ".tmp\\Ceb_r1\\Ceb_temporal\\__pycache__",
+      "kind": "python_cache",
+      "files": 3,
+      "bytes": 14582
+    },
+    {
+      "path": ".tmp\\aris_repo\\tools\\__pycache__",
+      "kind": "python_cache",
+      "files": 1,
+      "bytes": 11330
+    },
+    {
+      "path": ".tmp\\aris_repo\\tools\\__pycache__",
+      "kind": "python_cache",
+      "files": 1,
+      "bytes": 11330
+    }
+  ]
+}

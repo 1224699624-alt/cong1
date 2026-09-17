@@ -1,0 +1,7 @@
+{
+  "experiment": "R290",
+  "architecture": "frozen R285 nnU-Net + local image/probability residual adapter",
+  "overlap_loss": "0.5 BCE + 0.5 Dice on multi-label overlap pixels",
+  "test_used_for_selection": false,
+  "threshold": 0.5
+}

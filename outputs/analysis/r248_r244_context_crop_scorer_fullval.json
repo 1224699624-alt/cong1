@@ -1,0 +1,63 @@
+{
+  "run_id": "R248-F0-r244-context-crop-scorer",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "evidence_level": "original_val_r244_candidate_context_crop_grouped_cv",
+  "num_candidate_rows": 8568,
+  "num_candidate_images": 96,
+  "num_crops": 8568,
+  "num_safe_useful": 971,
+  "num_risk": 7590,
+  "device": "cuda",
+  "crop_size": 56,
+  "epochs": 8,
+  "grouped_cv": {
+    "skipped": false,
+    "folds": 5,
+    "fold_summaries": [
+      {
+        "fold": 1,
+        "train_images": 76,
+        "val_images": 20,
+        "train_rows": 6439,
+        "val_rows": 2129
+      },
+      {
+        "fold": 2,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 7104,
+        "val_rows": 1464
+      },
+      {
+        "fold": 3,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 7069,
+        "val_rows": 1499
+      },
+      {
+        "fold": 4,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6998,
+        "val_rows": 1570
+      },
+      {
+        "fold": 5,
+        "train_images": 77,
+        "val_images": 19,
+        "train_rows": 6662,
+        "val_rows": 1906
+      }
+    ],
+    "best": null,
+    "num_passing_configs": 0
+  },
+  "skipped": [],
+  "promotion_gate": "Only if grouped-CV best passes on full original-val, build isolated original-val mask editor; no clean-test-v2 tuning.",
+  "warning": "Candidate generation is GT-free; GT labels/metrics are original-val audit only."
+}

@@ -1,0 +1,162 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "train",
+  "num_evaluated": 16,
+  "threshold": 0.35,
+  "readout_mode": "mask_only",
+  "mean": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 1.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "boundary_iou": 0.0
+  },
+  "per_image": [
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10003.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10004.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10015.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10043.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10055.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10066.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10144.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10390.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10474.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10526.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10542.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10621.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10685.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10693.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10727.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10779.png"
+    }
+  ],
+  "prediction_dir": "outputs/r146_mask2former_hf_maskonly_readout/TSRS_RSNA-Epiphysis/train/masks"
+}

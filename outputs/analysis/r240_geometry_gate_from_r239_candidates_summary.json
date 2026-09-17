@@ -1,0 +1,50 @@
+{
+  "run_id": "R240-geometry-gate-from-candidates",
+  "candidate_csv": "outputs\\analysis\\r239_gtfree_bg_channel_light_fullval_candidates.csv",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "selection_uses_gt": false,
+  "audit_uses_gt": true,
+  "selected_candidate_summary": {
+    "num_rows": 54,
+    "num_images": 54,
+    "num_safe_gain": 12,
+    "num_risk": 42,
+    "mean_delta_dice": -3.9463180549991493e-05,
+    "mean_delta_iou": -5.478318441908969e-05,
+    "mean_delta_recall": -0.0001848968905031992,
+    "mean_delta_boundary_iou": 0.00010664354870731404,
+    "mean_delta_boundary_f1": 0.00011550125188491709,
+    "mean_delta_gap_region_fp_rate": -0.00023017836377800757,
+    "mean_delta_component_count_mae": -0.018518518518518517,
+    "mean_cut_gt_fg_frac": 0.538601290684624,
+    "mean_cut_gt_gap_frac": 0.42550395017715276
+  },
+  "all_candidate_summary": {
+    "num_rows": 280,
+    "num_images": 77,
+    "num_safe_gain": 43,
+    "num_risk": 237,
+    "mean_delta_dice": -7.08255884968066e-05,
+    "mean_delta_iou": -0.00011051644121888343,
+    "mean_delta_recall": -0.0002506285890033675,
+    "mean_delta_boundary_iou": 9.618394158854318e-05,
+    "mean_delta_boundary_f1": 0.00012603459717337728,
+    "mean_delta_gap_region_fp_rate": -0.00027894484593185255,
+    "mean_delta_component_count_mae": -0.014285714285714285,
+    "mean_cut_gt_fg_frac": 0.5839569473010486,
+    "mean_cut_gt_gap_frac": 0.37139498410149646
+  },
+  "gate": {
+    "min_bg_channel_frac": 0.2,
+    "min_ring_bg_frac": 0.2,
+    "max_ring_bg_frac": 0.6,
+    "max_cut_mean_dist_in": 1.75,
+    "max_cut_max_dist_in": 3.0,
+    "max_cut_area": 24.0,
+    "max_bridge_score_p90": 3.0,
+    "max_per_image": 1
+  },
+  "decision": "no_go_geometry_gate_too_risky",
+  "warning": "Candidate rows come from original-val R239; this is gate audit only, not clean-test-v2 evidence."
+}

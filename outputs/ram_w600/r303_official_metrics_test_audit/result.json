@@ -1,0 +1,107 @@
+{
+  "experiment": "R303",
+  "device": "cuda",
+  "test_audit_only": true,
+  "test_used_for_selection": false,
+  "checkpoint": "outputs\\ram_w600\\r285_nnunet_overlap_prior\\baseline_best.pth",
+  "threshold": 0.5,
+  "pair_definition": "top 15 train overlap pairs; empty GT pair/cases excluded",
+  "ram_official_metrics": [
+    "DSC",
+    "NSD@2px",
+    "VOE",
+    "symmetric MSD (pixels)",
+    "MSD Fail Rate",
+    "RAVD"
+  ],
+  "baseline_test": {
+    "overall_instance_metrics": {
+      "n": 1736,
+      "dsc": 0.9783304250494179,
+      "nsd_2px": 0.9418836004431465,
+      "voe": 0.04199631393975586,
+      "msd_px": 0.7748523043266811,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.019901095561593352
+    },
+    "overlap_region_metrics": {
+      "n": 124,
+      "dsc": 0.8678499372675704,
+      "nsd_2px": 0.8779348405412546,
+      "voe": 0.2323773855011564,
+      "msd_px": 1.1557581283974008,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.05958337866785894
+    },
+    "overlap_pair_intersection_metrics": {
+      "n": 1816,
+      "dsc": 0.8262021465624814,
+      "nsd_2px": 0.8761610158568366,
+      "voe": 0.2714677778856797,
+      "msd_px": 1.1171290001669234,
+      "msd_fail_rate": 0.003303964757709251,
+      "ravd": 0.3509304018300241
+    },
+    "overlap_pair_count": 1816
+  },
+  "hard_gate_test": {
+    "overall_instance_metrics": {
+      "n": 1736,
+      "dsc": 0.9771884375279206,
+      "nsd_2px": 0.93419652590198,
+      "voe": 0.04412176778239434,
+      "msd_px": 0.7925296825999706,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.021061574040123605
+    },
+    "overlap_region_metrics": {
+      "n": 124,
+      "dsc": 0.85822943350481,
+      "nsd_2px": 0.831789456321867,
+      "voe": 0.2469999440472316,
+      "msd_px": 1.6963636512330051,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.0738595252865372
+    },
+    "overlap_pair_intersection_metrics": {
+      "n": 1816,
+      "dsc": 0.7886902909596868,
+      "nsd_2px": 0.8221673097005467,
+      "voe": 0.3002674718962193,
+      "msd_px": 1.3175944373443653,
+      "msd_fail_rate": 0.037995594713656385,
+      "ravd": 0.30937579056558306
+    },
+    "overlap_pair_count": 1816
+  },
+  "delta_test": {
+    "overall_instance_metrics": {
+      "dsc": -0.0011419875214973008,
+      "nsd_2px": -0.007687074541166461,
+      "voe": 0.002125453842638486,
+      "msd_px": 0.017677378273289523,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.0011604784785302531
+    },
+    "overlap_region_metrics": {
+      "dsc": -0.009620503762760468,
+      "nsd_2px": -0.04614538421938763,
+      "voe": 0.014622558546075193,
+      "msd_px": 0.5406055228356044,
+      "msd_fail_rate": 0.0,
+      "ravd": 0.014276146618678265
+    },
+    "overlap_pair_intersection_metrics": {
+      "dsc": -0.037511855602794575,
+      "nsd_2px": -0.053993706156289845,
+      "voe": 0.028799694010539556,
+      "msd_px": 0.20046543717744192,
+      "msd_fail_rate": 0.034691629955947136,
+      "ravd": -0.041554611264441044
+    }
+  },
+  "classifier_test_diagnostic": {
+    "candidates": 2874
+  },
+  "warning": "R302 hard gate is an audit-only postprocessor; no promotion or tuning is based on test results."
+}

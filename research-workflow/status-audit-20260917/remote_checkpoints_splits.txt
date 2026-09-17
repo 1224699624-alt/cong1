@@ -1,0 +1,32 @@
+data/remote_variants/RAM-W600
+data/remote_variants/RAM-W600/BoneSegmentation
+data/remote_variants/RAM-W600/BoneSegmentation/images
+data/remote_variants/RAM-W600/BoneSegmentation/masks
+data/remote_variants/RAM-W600/BoneSegmentation/masks/test
+data/remote_variants/RAM-W600/BoneSegmentation/masks/train
+data/remote_variants/RAM-W600/BoneSegmentation/masks/val
+data/raw/TSRS_RSNA-Epiphysis/test
+97
+data/raw/TSRS_RSNA-Epiphysis/test_labels
+97
+data/raw/TSRS_RSNA-Epiphysis/train
+875
+data/raw/TSRS_RSNA-Epiphysis/train_labels
+875
+data/raw/TSRS_RSNA-Epiphysis/val
+162
+data/raw/TSRS_RSNA-Epiphysis/val_labels
+96
+data/remote_variants/RAM-W600/BoneSegmentation/images
+618
+data/remote_variants/RAM-W600/BoneSegmentation/masks
+618
+473606182 outputs/nnunet/r350_unified_interaction_pcgrad/nnUNet_results/Dataset204_TSRS_RSNAEpiphysisMaturePrior2D/nnUNetTrainerR350UnifiedInteractionPCGrad__nnUNetPlans__2d/fold_0/checkpoint_best.pth
+449306 outputs/ram_w600/r350_unified_interaction_pcgrad/full/best.pth
+43415485 outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth
+43424058 outputs/ram_w600/r332_joint_iterative_refinement/steps_2/epoch_010.pth
+43424058 outputs/ram_w600/r332_joint_iterative_refinement/steps_2/epoch_020.pth
+43424058 outputs/ram_w600/r332_joint_iterative_refinement/steps_2/epoch_030.pth
+45775451 outputs/ram_w600/r332_joint_iterative_refinement/steps_2/last.pth
+{"epoch": 29, "seconds": 580.0961670875549, "ramp": 1.0, "gate": true, "checks": {"overall_dsc_not_below_r325": true, "overall_iou_not_below_r325": true, "overlap_ravd_within_0.003": true, "pair_fail_rate_within_0.001": true, "overlap_dsc_not_below_r332": true, "overlap_nsd_not_below_r332": true, "overlap_msd_not_above_r332": true, "seam_fp_not_above_r332": true}, "losses": {"base": 0.021493014051195452, "separation": 0.011266729785129428, "overlap": 0.03429709568619728, "preserve": 3.1005956075472674e-06}, "state_mass": {"separation_mass": 0.006659748308490688, "overlap_mass": 0.040583942677168285, "preserve_mass": 0.9527563012347502}, "effective_weights": {"separation": 0.02264305579969114, "overlap": 0.035000000000000114, "preserve": 0.10000000000000078}, "conflict_rate": {"separation": 0.4776470588235294, "overlap": 0.508235294117647, "preserve": 0.4211764705882353}, "baseline": {"overall_dsc": 0.9793887278762697, "overall_iou": 0.9601000060271913, "overall_nsd_2px": 0.8926001862903746, "overall_msd_px": 1.083031717685968, "overall_ravd": 0.020048841741321183, "overlap_dsc": 0.8770053422932838, "overlap_iou": 0.7823914252083409, "overlap_nsd_2px": 0.7876488477653405, "overlap_msd_px": 1.8189993198975911, "overlap_ravd": 0.05386668727019946, "pair_dsc": 0.8355764266398339, "pair_iou": 0.7433706468513726, "pair_nsd_2px": 0.7875246466373967, "pair_msd_px": 1.6631362433668286, "pair_ravd": 0.6408184433996473, "pair_msd_fail_rate": 0.00199203187250996}, "adapted": {"overall_dsc": 0.9794093217837375, "overall_iou": 0.9601360861101293, "overall_nsd_2px": 0.892634741427718, "overall_msd_px": 1.0793616970601896, "overall_ravd": 0.020029111127607566, "overlap_dsc": 0.877764717434274, "overlap_iou": 0.783591186377279, "overlap_nsd_2px": 0.7884740257906417, "overlap_msd_px": 1.8089606625611279, "overlap_ravd": 0.05095113592808928, "pair_dsc": 0.8369592013823759, "pair_iou": 0.7448368327870316, "pair_nsd_2px": 0.7891073927813813, "pair_msd_px": 1.654357885556156, "pair_ravd": 0.6524432309476044, "pair_msd_fail_rate": 0.00199203187250996}, "seam_fp": {"baseline": 0.010971004689581341, "adapted": 0.010108231861680828}}
+{"epoch": 30, "seconds": 573.9773278236389, "ramp": 1.0, "gate": true, "checks": {"overall_dsc_not_below_r325": true, "overall_iou_not_below_r325": true, "overlap_ravd_within_0.003": true, "pair_fail_rate_within_0.001": true, "overlap_dsc_not_below_r332": true, "overlap_nsd_not_below_r332": true, "overlap_msd_not_above_r332": true, "seam_fp_not_above_r332": true}, "losses": {"base": 0.021377081989365467, "separation": 0.011447344251956726, "overlap": 0.0343403367018875, "preserve": 3.289174356883878e-06}, "state_mass": {"separation_mass": 0.00655185792088399, "overlap_mass": 0.040188276991248134, "preserve_mass": 0.953259857822867}, "effective_weights": {"separation": 0.02237383445448738, "overlap": 0.035000000000000114, "preserve": 0.10000000000000078}, "conflict_rate": {"separation": 0.4776470588235294, "overlap": 0.4894117647058824, "preserve": 0.4423529411764706}, "baseline": {"overall_dsc": 0.9793887278762697, "overall_iou": 0.9601000060271913, "overall_nsd_2px": 0.8926001862903746, "overall_msd_px": 1.083031717685968, "overall_ravd": 0.020048841741321183, "overlap_dsc": 0.8770053422932838, "overlap_iou": 0.7823914252083409, "overlap_nsd_2px": 0.7876488477653405, "overlap_msd_px": 1.8189993198975911, "overlap_ravd": 0.05386668727019946, "pair_dsc": 0.8355764266398339, "pair_iou": 0.7433706468513726, "pair_nsd_2px": 0.7875246466373967, "pair_msd_px": 1.6631362433668286, "pair_ravd": 0.6408184433996473, "pair_msd_fail_rate": 0.00199203187250996}, "adapted": {"overall_dsc": 0.9794086988035516, "overall_iou": 0.960134515427524, "overall_nsd_2px": 0.8925892698136809, "overall_msd_px": 1.0797393393156733, "overall_ravd": 0.020030094140374807, "overlap_dsc": 0.8778335881416053, "overlap_iou": 0.783697093901996, "overlap_nsd_2px": 0.7885016595617692, "overlap_msd_px": 1.8088007981330838, "overlap_ravd": 0.05054618036489279, "pair_dsc": 0.8371339514014026, "pair_iou": 0.745046042644048, "pair_nsd_2px": 0.7890583647333461, "pair_msd_px": 1.6538039605895294, "pair_ravd": 0.6572339930810976, "pair_msd_fail_rate": 0.00199203187250996}, "seam_fp": {"baseline": 0.010971004689581341, "adapted": 0.010187516379949597}}

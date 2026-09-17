@@ -1,0 +1,22 @@
+{
+  "status": "target_met",
+  "metrics_json": "outputs\\analysis\\tmp_r140_target_met_metrics.json",
+  "control_metrics_json": null,
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "num_evaluated": 81,
+  "clean_test_v2": {
+    "dice": 0.932,
+    "precision": 0.93,
+    "recall": 0.934,
+    "boundary_iou": 0.3
+  },
+  "original_test_control": null,
+  "target_dice": 0.9317660066557425,
+  "best_valid_dice": 0.9177231563529792,
+  "delta_vs_best_valid": 0.014276843647020865,
+  "gap_to_target": -0.0002339933442575548,
+  "target_met": true,
+  "new_best": true,
+  "next_action": "run_result_to_claim_and_experiment_audit"
+}

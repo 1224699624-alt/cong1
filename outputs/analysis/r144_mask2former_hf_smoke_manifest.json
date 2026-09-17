@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "hf_deps": ".tmp/r144_hf_deps",
+  "model_class": "Mask2FormerForUniversalSegmentation",
+  "config": {
+    "num_queries": 32,
+    "hidden_dim": 64,
+    "encoder_layers": 1,
+    "decoder_layers": 2
+  },
+  "metrics_json": "outputs/analysis/r144_mask2former_hf_smoke_clean_test_v2_metrics.json",
+  "prediction_dir": "outputs/r144_mask2former_hf_smoke/TSRS_RSNA-Epiphysis_clean_test_v2/test/masks",
+  "train_images": [
+    "10003.png",
+    "10004.png"
+  ],
+  "eval_images": [
+    "10793.png",
+    "11099.png"
+  ]
+}

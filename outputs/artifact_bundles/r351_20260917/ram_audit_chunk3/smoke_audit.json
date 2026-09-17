@@ -1,0 +1,237 @@
+{
+  "experiment": "R351_RAM_DUAL_PRIOR",
+  "identity": {
+    "cases": 2,
+    "per_case": [
+      {
+        "case": "0019_0001_L",
+        "max_abs_logit_difference": 0.0,
+        "max_abs_input_adapter_difference": 0.0,
+        "valid_pixels": 360000,
+        "target_pixels": 172792
+      },
+      {
+        "case": "0019_0001_R",
+        "max_abs_logit_difference": 0.0,
+        "max_abs_input_adapter_difference": 0.0,
+        "valid_pixels": 360000,
+        "target_pixels": 177838
+      }
+    ],
+    "max_abs_logit_difference": 0.0,
+    "max_abs_input_adapter_difference": 0.0,
+    "seventh_input_channel_nonzero": 0,
+    "seventh_input_channel_abs_sum": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "backward": {
+    "cases": 2,
+    "per_case": [
+      {
+        "cases": [
+          "0001_0001_L"
+        ],
+        "finite": true,
+        "channels": 14,
+        "adapted_image_max_abs_delta": 0.0,
+        "losses": {
+          "base": 0.009222337044775486,
+          "separation": 0.0024137028958648443,
+          "overlap": 0.1274849772453308,
+          "preserve": 0.0
+        },
+        "states": {
+          "separation_mass": 0.013344444334506989,
+          "overlap_observed_mass": 0.023172222077846527,
+          "overlap_labels_observed": true,
+          "overlap_prior_mean": 0.030968405306339264
+        },
+        "adapter_gradient_sum": 0.0003283242567704292,
+        "refiner_gradient_sum": 3.6627900594030507,
+        "gradient_routing": [
+          {
+            "name": "separation",
+            "base_norm": 0.04095204919576645,
+            "raw_norm": 0.07883273810148239,
+            "projected_norm": 0.05945265293121338,
+            "applied_norm": 0.0020808428525924683,
+            "cosine_before": -0.6566883325576782,
+            "cosine_after": 6.275705999314596e-08,
+            "conflicted": true,
+            "scale": 0.03500000014901161
+          },
+          {
+            "name": "overlap",
+            "base_norm": 0.04095204919576645,
+            "raw_norm": 3.7156879901885986,
+            "projected_norm": 3.7156879901885986,
+            "applied_norm": 0.00614280765876174,
+            "cosine_before": 0.7245550751686096,
+            "cosine_after": 0.7245550751686096,
+            "conflicted": false,
+            "scale": 0.0016532086301594973
+          },
+          {
+            "name": "preserve",
+            "base_norm": 0.04095204919576645,
+            "raw_norm": 0.0,
+            "projected_norm": 0.0,
+            "applied_norm": 0.0,
+            "cosine_before": 0.0,
+            "cosine_after": 0.0,
+            "conflicted": false,
+            "scale": 0.10000000149011612
+          }
+        ]
+      },
+      {
+        "cases": [
+          "0001_0001_R"
+        ],
+        "finite": true,
+        "channels": 14,
+        "adapted_image_max_abs_delta": 0.0,
+        "losses": {
+          "base": 0.009892577305436134,
+          "separation": 0.00301665673032403,
+          "overlap": 0.13828837871551514,
+          "preserve": 0.0
+        },
+        "states": {
+          "separation_mass": 0.012305555865168571,
+          "overlap_observed_mass": 0.027380555868148804,
+          "overlap_labels_observed": true,
+          "overlap_prior_mean": 0.03379414230585098
+        },
+        "adapter_gradient_sum": 0.0013260582782095298,
+        "refiner_gradient_sum": 3.981334092968609,
+        "gradient_routing": [
+          {
+            "name": "separation",
+            "base_norm": 0.04119447246193886,
+            "raw_norm": 0.07212371379137039,
+            "projected_norm": 0.05568177253007889,
+            "applied_norm": 0.0019488621037453413,
+            "cosine_before": -0.6355843544006348,
+            "cosine_after": -2.5376293066869948e-08,
+            "conflicted": true,
+            "scale": 0.03500000014901161
+          },
+          {
+            "name": "overlap",
+            "base_norm": 0.04119447246193886,
+            "raw_norm": 3.3353400230407715,
+            "projected_norm": 3.3353400230407715,
+            "applied_norm": 0.006179171148687601,
+            "cosine_before": 0.86472088098526,
+            "cosine_after": 0.86472088098526,
+            "conflicted": false,
+            "scale": 0.0018526359926909208
+          },
+          {
+            "name": "preserve",
+            "base_norm": 0.04119447246193886,
+            "raw_norm": 0.0,
+            "projected_norm": 0.0,
+            "applied_norm": 0.0,
+            "cosine_before": 0.0,
+            "cosine_after": 0.0,
+            "conflicted": false,
+            "scale": 0.10000000149011612
+          }
+        ]
+      }
+    ],
+    "gradient_routing": [
+      {
+        "name": "separation",
+        "base_norm": 0.04095204919576645,
+        "raw_norm": 0.07883273810148239,
+        "projected_norm": 0.05945265293121338,
+        "applied_norm": 0.0020808428525924683,
+        "cosine_before": -0.6566883325576782,
+        "cosine_after": 6.275705999314596e-08,
+        "conflicted": true,
+        "scale": 0.03500000014901161
+      },
+      {
+        "name": "overlap",
+        "base_norm": 0.04095204919576645,
+        "raw_norm": 3.7156879901885986,
+        "projected_norm": 3.7156879901885986,
+        "applied_norm": 0.00614280765876174,
+        "cosine_before": 0.7245550751686096,
+        "cosine_after": 0.7245550751686096,
+        "conflicted": false,
+        "scale": 0.0016532086301594973
+      },
+      {
+        "name": "preserve",
+        "base_norm": 0.04095204919576645,
+        "raw_norm": 0.0,
+        "projected_norm": 0.0,
+        "applied_norm": 0.0,
+        "cosine_before": 0.0,
+        "cosine_after": 0.0,
+        "conflicted": false,
+        "scale": 0.10000000149011612
+      },
+      {
+        "name": "separation",
+        "base_norm": 0.04119447246193886,
+        "raw_norm": 0.07212371379137039,
+        "projected_norm": 0.05568177253007889,
+        "applied_norm": 0.0019488621037453413,
+        "cosine_before": -0.6355843544006348,
+        "cosine_after": -2.5376293066869948e-08,
+        "conflicted": true,
+        "scale": 0.03500000014901161
+      },
+      {
+        "name": "overlap",
+        "base_norm": 0.04119447246193886,
+        "raw_norm": 3.3353400230407715,
+        "projected_norm": 3.3353400230407715,
+        "applied_norm": 0.006179171148687601,
+        "cosine_before": 0.86472088098526,
+        "cosine_after": 0.86472088098526,
+        "conflicted": false,
+        "scale": 0.0018526359926909208
+      },
+      {
+        "name": "preserve",
+        "base_norm": 0.04119447246193886,
+        "raw_norm": 0.0,
+        "projected_norm": 0.0,
+        "applied_norm": 0.0,
+        "cosine_before": 0.0,
+        "cosine_after": 0.0,
+        "conflicted": false,
+        "scale": 0.10000000149011612
+      }
+    ],
+    "passed": true,
+    "max_aux_ratio": 0.15
+  },
+  "passed": true,
+  "config": {
+    "dataset_root": "data/remote_variants/RAM-W600",
+    "prior_root": "outputs/priors/r323_ram_native_r317_single_seed",
+    "r332_checkpoint": "outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+    "overlap_checkpoint": "/root/r351_workspace/overlap/full/best.pth",
+    "native_checkpoint": "outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/plain_native_best.pth",
+    "output": "/root/r351_workspace/ram_audit_chunk3",
+    "epochs": 2,
+    "steps": 2,
+    "lr": 2e-05,
+    "aux_ramp_epochs": 5,
+    "max_aux_ratio": 0.15,
+    "max_grad_norm": 8.0,
+    "seam_threshold": 0.25,
+    "max_pairs": 15,
+    "num_workers": 2,
+    "seed": 3511,
+    "audit": true
+  }
+}

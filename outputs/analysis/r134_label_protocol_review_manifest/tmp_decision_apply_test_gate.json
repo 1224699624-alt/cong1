@@ -1,0 +1,25 @@
+{
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\tmp_decision_apply_test_manifest.json",
+  "gate_pass": false,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "clean_test_reference": 24,
+    "train_review_queue": 64,
+    "val_audit_queue": 6,
+    "reviewed_train": 2,
+    "confirmed_train_for_variant": 2,
+    "confirmed_train_p0": 2,
+    "reviewed_val": 1
+  },
+  "train_decision_counts": {
+    "label_ok_protocol_clear": 1,
+    "label_needs_correction": 1,
+    "blank": 62
+  },
+  "val_decision_counts": {
+    "needs_second_review": 1,
+    "blank": 5
+  },
+  "next_action": "continue_human_review_before_gpu_or_dataset_variant"
+}

@@ -1,0 +1,70 @@
+{
+  "run_id": "R269_wrist_internal_merge_roi_pilot",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "original-val",
+  "clean_test_used": false,
+  "writes_masks": false,
+  "images": 4,
+  "candidate_rows": 5,
+  "images_with_candidates": 1,
+  "mean_candidates_per_image": 1.25,
+  "mean_union_gt_gap_coverage": 0.0,
+  "top1_mean_gt_fg_fraction": 1.0,
+  "top1_mean_gt_gap_fraction": 0.0,
+  "top1_mean_gt_interinstance_fraction": 0.0,
+  "top1_mean_destructive_fg_fraction": 1.0,
+  "cases": [
+    {
+      "image": "10003.png",
+      "num_candidates": 0,
+      "components_inspected": 0,
+      "anchor_components": 27,
+      "gt_gap_pixels": 88,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 0.0
+    },
+    {
+      "image": "10004.png",
+      "num_candidates": 5,
+      "components_inspected": 1,
+      "anchor_components": 22,
+      "gt_gap_pixels": 502,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 1.0,
+      "top1_seam_gt_fg_fraction": 1.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 1.0
+    },
+    {
+      "image": "10015.png",
+      "num_candidates": 0,
+      "components_inspected": 0,
+      "anchor_components": 24,
+      "gt_gap_pixels": 5,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 0.0
+    },
+    {
+      "image": "10043.png",
+      "num_candidates": 0,
+      "components_inspected": 0,
+      "anchor_components": 26,
+      "gt_gap_pixels": 26,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 0.0
+    }
+  ]
+}

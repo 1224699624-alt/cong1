@@ -1,0 +1,10 @@
+{
+  "status": "waiting_for_metrics",
+  "metrics_json": "outputs\\analysis\\r140_reviewed_variant_dinov3_instance_sep_clean_test_v2_metrics.json",
+  "history_json": "outputs\\timm_instance_sep\\r140_reviewed_variant_dinov3_instance_sep\\history.json",
+  "history_epochs": 0,
+  "best_val_dice_so_far": null,
+  "target_dice": 0.9317660066557425,
+  "best_valid_dice": 0.9177231563529792,
+  "next_action": "wait_for_r140_final_clean_test_v2_metrics"
+}

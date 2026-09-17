@@ -1,0 +1,6 @@
+{
+  "source": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+  "sha256": "3e42fbeb763f6e1fafc80e550c1c630b7fd599ff8cb85f7462ff8b5926475d01",
+  "strict_load": true,
+  "same_state_for_both_arms": true
+}

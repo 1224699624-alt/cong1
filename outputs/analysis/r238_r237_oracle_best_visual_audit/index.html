@@ -1,0 +1,2323 @@
+<!doctype html><html><head><meta charset='utf-8'><title>R238-A visual audit</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f7f7f7;color:#222}.case{background:white;border:1px solid #ddd;margin:16px 0;padding:12px}img{max-width:100%;height:auto;border:1px solid #ccc}pre{font-size:12px;white-space:pre-wrap}</style>
+</head><body><h1>R238-A Original-Val Visual Audit</h1>
+<p>Oracle upper-bound only. Legend: GT boundary green, prediction boundary magenta, TP blue tint, FP red, FN yellow. Replayed deletions are orange if background/gap and red if GT foreground.</p>
+<div class='case'>
+<h2>3468.png</h2>
+<p>cut=60.0 px, Dice +0.000819, Recall +0.000000, BIoU +0.004854, Gap -0.003198, Cnt +0.000000</p>
+<img src='panels/01_3468_r238_oracle_panel.jpg' alt='3468.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.49548557586434705&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.32933255269320844&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9203531956502415&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.12222814498933902&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8524576666575184&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9301928605654048&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9107195214918197&quot;,
+  &quot;cut_pixels&quot;: &quot;60.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.005474011787130695&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00485429345501015&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0008188438527093611&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0031982942430703737&quot;,
+  &quot;delta_iou&quot;: &quot;0.0014060384308616225&quot;,
+  &quot;delta_precision&quot;: &quot;0.0016744141255827794&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3468.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.5009595876514777&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3341868461482186&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9211720395029509&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.11902985074626865&quot;,
+  &quot;r238_iou&quot;: &quot;0.85386370508838&quot;,
+  &quot;r238_precision&quot;: &quot;0.9318672746909876&quot;,
+  &quot;r238_recall&quot;: &quot;0.9107195214918197&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6606.png</h2>
+<p>cut=89.0 px, Dice +0.000455, Recall +0.000000, BIoU +0.004823, Gap -0.002995, Cnt +0.000000</p>
+<img src='panels/02_6606_r238_oracle_panel.jpg' alt='6606.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.40271462036654265&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.25212440150109994&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9354451250805298&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19699111470113084&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8787194978100992&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9343126990359029&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9365802995517656&quot;,
+  &quot;cut_pixels&quot;: &quot;89.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.006128567294125753&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00482273563215585&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00045476184982040646&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0029954227248249754&quot;,
+  &quot;delta_iou&quot;: &quot;0.0008029037339852829&quot;,
+  &quot;delta_precision&quot;: &quot;0.0009077631760334715&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6606.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4088431876606684&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2569471371332558&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9358998869303502&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.19399569197630587&quot;,
+  &quot;r238_iou&quot;: &quot;0.8795224015440845&quot;,
+  &quot;r238_precision&quot;: &quot;0.9352204622119363&quot;,
+  &quot;r238_recall&quot;: &quot;0.9365802995517656&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3840.png</h2>
+<p>cut=59.0 px, Dice +0.000474, Recall +0.000000, BIoU +0.004438, Gap -0.002513, Cnt +0.000000</p>
+<img src='panels/03_3840_r238_oracle_panel.jpg' alt='3840.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.36129258560968125&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2204741263980307&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9099072081289913&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.21582488714760242&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8347061964947486&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9087689624187325&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9110483087520975&quot;,
+  &quot;cut_pixels&quot;: &quot;59.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.005936834623272547&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.004437704316942043&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0004737719880296698&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0025125628140703626&quot;,
+  &quot;delta_iou&quot;: &quot;0.0007977397478404757&quot;,
+  &quot;delta_precision&quot;: &quot;0.0009456659632209874&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3840.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3672294202329538&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.22491183071497275&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.910380980117021&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.21331232433353206&quot;,
+  &quot;r238_iou&quot;: &quot;0.8355039362425891&quot;,
+  &quot;r238_precision&quot;: &quot;0.9097146283819535&quot;,
+  &quot;r238_recall&quot;: &quot;0.9110483087520975&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1620.png</h2>
+<p>cut=75.0 px, Dice +0.000393, Recall +0.000000, BIoU +0.003522, Gap -0.002337, Cnt +0.000000</p>
+<img src='panels/04_1620_r238_oracle_panel.jpg' alt='1620.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4165490993799009&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2630641084082715&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9322967245782929&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19494562338350316&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8731796052700757&quot;,
+  &quot;anchor_precision&quot;: &quot;0.926983914358751&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9376707843092974&quot;,
+  &quot;cut_pixels&quot;: &quot;75.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.004403717544534225&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.003522489786046412&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0003926672339157333&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.002337103860895584&quot;,
+  &quot;delta_iou&quot;: &quot;0.0006891492022903511&quot;,
+  &quot;delta_precision&quot;: &quot;0.0007767327342462771&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1620.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.42095281692443515&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2665865981943179&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9326893918122087&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.19260851952260757&quot;,
+  &quot;r238_iou&quot;: &quot;0.873868754472366&quot;,
+  &quot;r238_precision&quot;: &quot;0.9277606470929973&quot;,
+  &quot;r238_recall&quot;: &quot;0.9376707843092974&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3602.png</h2>
+<p>cut=63.0 px, Dice +0.000581, Recall +0.000000, BIoU +0.003480, Gap -0.002826, Cnt +0.000000</p>
+<img src='panels/05_3602_r238_oracle_panel.jpg' alt='3602.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.45877446262431826&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.29766860949208995&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9288746924847234&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.15706853247219232&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8671951693863564&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9284142061115628&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9293356358800294&quot;,
+  &quot;cut_pixels&quot;: &quot;63.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.004122417236602227&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.003480268417309418&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0005808636222793817&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.002825618945102276&quot;,
+  &quot;delta_iou&quot;: &quot;0.00101311604182297&quot;,
+  &quot;delta_precision&quot;: &quot;0.0011613011750988278&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3602.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4628968798609205&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.30114887790939937&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9294555561070028&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.15424291352709005&quot;,
+  &quot;r238_iou&quot;: &quot;0.8682082854281794&quot;,
+  &quot;r238_precision&quot;: &quot;0.9295755072866616&quot;,
+  &quot;r238_recall&quot;: &quot;0.9293356358800294&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>7312.png</h2>
+<p>cut=33.0 px, Dice +0.000450, Recall +0.000000, BIoU +0.003169, Gap -0.001795, Cnt +0.000000</p>
+<img src='panels/06_7312_r238_oracle_panel.jpg' alt='7312.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3789387850195119&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.233759701063524&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9049671469045754&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.13922880295861206&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8264292202251521&quot;,
+  &quot;anchor_precision&quot;: &quot;0.921379691287937&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8891290828866713&quot;,
+  &quot;cut_pixels&quot;: &quot;33.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.004153591453808669&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.003169342314815554&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00045027993076074413&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0017947462881383602&quot;,
+  &quot;delta_iou&quot;: &quot;0.0007513406872948769&quot;,
+  &quot;delta_precision&quot;: &quot;0.0009340028817503843&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;7312.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.38309237647332056&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.23692904337833956&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9054174268353361&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1374340566704737&quot;,
+  &quot;r238_iou&quot;: &quot;0.827180560912447&quot;,
+  &quot;r238_precision&quot;: &quot;0.9223136941696873&quot;,
+  &quot;r238_recall&quot;: &quot;0.8891290828866713&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1674.png</h2>
+<p>cut=137.0 px, Dice +0.000416, Recall +0.000000, BIoU +0.003092, Gap -0.003563, Cnt +0.000000</p>
+<img src='panels/07_1674_r238_oracle_panel.jpg' alt='1674.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.27455435635261977&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.15912083777513011&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9264087978018595&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.18890102460082175&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8629064730644866&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9434298292422625&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9099910570099531&quot;,
+  &quot;cut_pixels&quot;: &quot;137.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.004590546991303568&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.003092066661943532&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00041583556773283625&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.003562698288864602&quot;,
+  &quot;delta_iou&quot;: &quot;0.0007218417370984387&quot;,
+  &quot;delta_precision&quot;: &quot;0.0008629142600041773&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1674.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.27914490334392333&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.16221290443707365&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9268246333695923&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.18533832631195715&quot;,
+  &quot;r238_iou&quot;: &quot;0.8636283148015851&quot;,
+  &quot;r238_precision&quot;: &quot;0.9442927435022667&quot;,
+  &quot;r238_recall&quot;: &quot;0.9099910570099531&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3392.png</h2>
+<p>cut=84.0 px, Dice +0.000726, Recall +0.000000, BIoU +0.002832, Gap -0.003654, Cnt +0.000000</p>
+<img src='panels/08_3392_r238_oracle_panel.jpg' alt='3392.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4301708898055392&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.27402402402402404&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9191734977814545&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.20281028407360682&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8504357506914607&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9054859979256186&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9332811545510079&quot;,
+  &quot;cut_pixels&quot;: &quot;84.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0034813940002019206&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002831669844117979&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0007264006116513011&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.003654239352677613&quot;,
+  &quot;delta_iou&quot;: &quot;0.0012444750807114602&quot;,
+  &quot;delta_precision&quot;: &quot;0.0014109375941558921&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3392.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4336522838057411&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.276855693868142&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9198998983931058&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1991560447209292&quot;,
+  &quot;r238_iou&quot;: &quot;0.8516802257721722&quot;,
+  &quot;r238_precision&quot;: &quot;0.9068969355197745&quot;,
+  &quot;r238_recall&quot;: &quot;0.9332811545510079&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>14041.png</h2>
+<p>cut=55.0 px, Dice +0.000379, Recall +0.000000, BIoU +0.002741, Gap -0.002161, Cnt +0.000000</p>
+<img src='panels/09_14041_r238_oracle_panel.jpg' alt='14041.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4545976069496804&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.29416131940393486&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9403342687778893&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.210977095037913&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8873876365647905&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9201020949540429&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9614762204441248&quot;,
+  &quot;cut_pixels&quot;: &quot;55.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.003266185309016345&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0027409840114742123&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0003791058977495876&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0021608454799041388&quot;,
+  &quot;delta_iou&quot;: &quot;0.0006754732545991571&quot;,
+  &quot;delta_precision&quot;: &quot;0.000726215705505906&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;14041.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4578637922586967&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2969023034154091&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9407133746756389&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.20881624955800887&quot;,
+  &quot;r238_iou&quot;: &quot;0.8880631098193896&quot;,
+  &quot;r238_precision&quot;: &quot;0.9208283106595488&quot;,
+  &quot;r238_recall&quot;: &quot;0.9614762204441248&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>11945.png</h2>
+<p>cut=39.0 px, Dice +0.000353, Recall +0.000000, BIoU +0.002618, Gap -0.001657, Cnt +0.000000</p>
+<img src='panels/10_11945_r238_oracle_panel.jpg' alt='11945.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.474025974025974&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.31063829787234043&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9386339329588484&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1479247206763244&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8843639928828207&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9331583585577992&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9441741456512047&quot;,
+  &quot;cut_pixels&quot;: &quot;39.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0030424328557856484&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002618324445770537&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00035284268983870604&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.001656824843876109&quot;,
+  &quot;delta_iou&quot;: &quot;0.0006266501157802251&quot;,
+  &quot;delta_precision&quot;: &quot;0.0006977353090310556&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;11945.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.47706840688175967&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.31325662231811097&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9389867756486872&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.14626789583244829&quot;,
+  &quot;r238_iou&quot;: &quot;0.884990642998601&quot;,
+  &quot;r238_precision&quot;: &quot;0.9338560938668302&quot;,
+  &quot;r238_recall&quot;: &quot;0.9441741456512047&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3777.png</h2>
+<p>cut=41.0 px, Dice +0.000278, Recall +0.000000, BIoU +0.002504, Gap -0.001715, Cnt +0.000000</p>
+<img src='panels/11_3777_r238_oracle_panel.jpg' alt='3777.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3363746467501009&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.20219374878664337&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9110243378988628&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2343593174974908&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8365883367320405&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9061087146647693&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9159935863815504&quot;,
+  &quot;cut_pixels&quot;: &quot;41.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0034577734883779465&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0025039120888298017&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00027842834564906216&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0017146202743392458&quot;,
+  &quot;delta_iou&quot;: &quot;0.00046969739279179024&quot;,
+  &quot;delta_precision&quot;: &quot;0.0005510302180548043&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3777.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.33983242023847887&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.20469766087547317&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9113027662445119&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.23264469722315156&quot;,
+  &quot;r238_iou&quot;: &quot;0.8370580341248323&quot;,
+  &quot;r238_precision&quot;: &quot;0.9066597448828241&quot;,
+  &quot;r238_recall&quot;: &quot;0.9159935863815504&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13480.png</h2>
+<p>cut=14.0 px, Dice +0.000131, Recall +0.000000, BIoU +0.002378, Gap -0.000601, Cnt +0.000000</p>
+<img src='panels/12_13480_r238_oracle_panel.jpg' alt='13480.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.456278079924332&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2955701243796336&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9247154768425537&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1056701030927835&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8599728322390763&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9487355604121136&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9018816406481867&quot;,
+  &quot;cut_pixels&quot;: &quot;14.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0028280600539586365&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002377808239049428&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0001313356396926979&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006013745704467333&quot;,
+  &quot;delta_iou&quot;: &quot;0.0002272055038941012&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002765359423241298&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13480.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.45910613997829064&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.297947932618683&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9248468124822464&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.10506872852233677&quot;,
+  &quot;r238_iou&quot;: &quot;0.8602000377429704&quot;,
+  &quot;r238_precision&quot;: &quot;0.9490120963544377&quot;,
+  &quot;r238_recall&quot;: &quot;0.9018816406481867&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1931.png</h2>
+<p>cut=58.0 px, Dice +0.000145, Recall +0.000000, BIoU +0.002301, Gap -0.001596, Cnt +0.000000</p>
+<img src='panels/13_1931_r238_oracle_panel.jpg' alt='1931.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2328752530094812&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.13178201109235593&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9172126168287946&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3141119154441111&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8470846918649116&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9167006986076852&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9177251071159905&quot;,
+  &quot;cut_pixels&quot;: &quot;58.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0035855451188255005&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0023010860553254187&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00014493918023983365&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.001596432798436631&quot;,
+  &quot;delta_iou&quot;: &quot;0.00024727918488554046&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002896005867285556&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1931.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2364607981283067&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.13408309714768135&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9173575560090345&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.31251548264567447&quot;,
+  &quot;r238_iou&quot;: &quot;0.8473319710497972&quot;,
+  &quot;r238_precision&quot;: &quot;0.9169902991944138&quot;,
+  &quot;r238_recall&quot;: &quot;0.9177251071159905&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>12498.png</h2>
+<p>cut=40.0 px, Dice +0.000230, Recall +0.000000, BIoU +0.002184, Gap -0.001411, Cnt +0.000000</p>
+<img src='panels/14_12498_r238_oracle_panel.jpg' alt='12498.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4627277747101049&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3010057471264368&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9495969934624726&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.11915764224487636&quot;,
+  &quot;anchor_iou&quot;: &quot;0.9040311076342552&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9587379825289152&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9406286658207847&quot;,
+  &quot;cut_pixels&quot;: &quot;40.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0025765475480544753&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00218421359777049&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00022955700711024818&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.001410984514444949&quot;,
+  &quot;delta_iou&quot;: &quot;0.00041620142149734196&quot;,
+  &quot;delta_precision&quot;: &quot;0.0004681109235529224&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;12498.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4653043222581594&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3031899607242073&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9498265504695829&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.11774665773043141&quot;,
+  &quot;r238_iou&quot;: &quot;0.9044473090557525&quot;,
+  &quot;r238_precision&quot;: &quot;0.9592060934524681&quot;,
+  &quot;r238_recall&quot;: &quot;0.9406286658207847&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1572.png</h2>
+<p>cut=26.0 px, Dice +0.000104, Recall +0.000000, BIoU +0.002158, Gap -0.000791, Cnt +0.000000</p>
+<img src='panels/15_1572_r238_oracle_panel.jpg' alt='1572.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.22975102426725497&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.12978458251735803&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8976236455315953&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3229448823690538&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8142624267049463&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8847773978638654&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9108484232681351&quot;,
+  &quot;cut_pixels&quot;: &quot;26.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0033747227290336357&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0021578840163930524&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00010433844537149906&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0007913077882947261&quot;,
+  &quot;delta_iou&quot;: &quot;0.00017173376294310483&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002027696107930188&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1572.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2331257469962886&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.13194246653375108&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8977279839769668&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.32215357458075905&quot;,
+  &quot;r238_iou&quot;: &quot;0.8144341604678894&quot;,
+  &quot;r238_precision&quot;: &quot;0.8849801674746585&quot;,
+  &quot;r238_recall&quot;: &quot;0.9108484232681351&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>10624.png</h2>
+<p>cut=23.0 px, Dice +0.000229, Recall +0.000000, BIoU +0.002146, Gap -0.001063, Cnt +0.000000</p>
+<img src='panels/16_10624_r238_oracle_panel.jpg' alt='10624.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2542683228584154&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.14565143440299352&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8543689320388349&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3637540453074434&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7457627118644068&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8009068515248621&quot;,
+  &quot;anchor_recall&quot;: &quot;0.915478919565434&quot;,
+  &quot;cut_pixels&quot;: &quot;23.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.003264029211129227&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0021460597860194497&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00022854185104903557&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0010633379565418433&quot;,
+  &quot;delta_iou&quot;: &quot;0.00034833155381341907&quot;,
+  &quot;delta_precision&quot;: &quot;0.00040176352421095185&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;10624.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2575323520695446&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.14779749418901297&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8545974738898839&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.36269070735090153&quot;,
+  &quot;r238_iou&quot;: &quot;0.7461110434182202&quot;,
+  &quot;r238_precision&quot;: &quot;0.801308615049073&quot;,
+  &quot;r238_recall&quot;: &quot;0.915478919565434&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3269.png</h2>
+<p>cut=21.0 px, Dice +0.000292, Recall +0.000000, BIoU +0.002103, Gap -0.001165, Cnt -1.000000</p>
+<img src='panels/17_3269_r238_oracle_panel.jpg' alt='3269.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.48129193676788357&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3169087913733713&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9189728096676737&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.11349642203361625&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8500922251411324&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9364859456297527&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9021026720839883&quot;,
+  &quot;cut_pixels&quot;: &quot;21.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.002421603125431604&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0021031846745329097&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;-1.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00029160955896923024&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0011649192877350723&quot;,
+  &quot;delta_iou&quot;: &quot;0.0004992012731177553&quot;,
+  &quot;delta_precision&quot;: &quot;0.0006058596690765583&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3269.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.48371353989331517&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3190119760479042&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9192644192266429&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.11233150274588118&quot;,
+  &quot;r238_iou&quot;: &quot;0.8505914264142501&quot;,
+  &quot;r238_precision&quot;: &quot;0.9370918052988293&quot;,
+  &quot;r238_recall&quot;: &quot;0.9021026720839883&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1880.png</h2>
+<p>cut=39.0 px, Dice +0.000283, Recall +0.000000, BIoU +0.002097, Gap -0.001510, Cnt +0.000000</p>
+<img src='panels/18_1880_r238_oracle_panel.jpg' alt='1880.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3314314695067833&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1986322188449848&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9121444149063181&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1559633027522936&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8384793233632825&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9319952505652153&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8931215611702542&quot;,
+  &quot;cut_pixels&quot;: &quot;39.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0029140095755378903&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002096968920864889&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0002832318106142928&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0015096968993148496&quot;,
+  &quot;delta_iou&quot;: &quot;0.00047878729719574853&quot;,
+  &quot;delta_precision&quot;: &quot;0.0005915792905837325&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1880.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3343454790823212&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2007291877658497&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9124276467169324&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.15445360585297874&quot;,
+  &quot;r238_iou&quot;: &quot;0.8389581106604782&quot;,
+  &quot;r238_precision&quot;: &quot;0.932586829855799&quot;,
+  &quot;r238_recall&quot;: &quot;0.8931215611702542&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>10375.png</h2>
+<p>cut=10.0 px, Dice +0.000168, Recall +0.000000, BIoU +0.002024, Gap -0.000548, Cnt +0.000000</p>
+<img src='panels/19_10375_r238_oracle_panel.jpg' alt='10375.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4363768379016155&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2790805665196192&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9025088273555101&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.13884777722962233&quot;,
+  &quot;anchor_iou&quot;: &quot;0.822338119750745&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9048630519843488&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9001668211306766&quot;,
+  &quot;cut_pixels&quot;: &quot;10.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0024707794203631117&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002024354557446706&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00016775257014045586&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005481554568875779&quot;,
+  &quot;delta_iou&quot;: &quot;0.00027858869833696787&quot;,
+  &quot;delta_precision&quot;: &quot;0.00033732080223092265&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;10375.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.43884761732197863&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2811049210770659&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9026765799256505&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.13829962177273475&quot;,
+  &quot;r238_iou&quot;: &quot;0.822616708449082&quot;,
+  &quot;r238_precision&quot;: &quot;0.9052003727865797&quot;,
+  &quot;r238_recall&quot;: &quot;0.9001668211306766&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3460.png</h2>
+<p>cut=23.0 px, Dice +0.000094, Recall +0.000000, BIoU +0.001829, Gap -0.000718, Cnt +0.000000</p>
+<img src='panels/20_3460_r238_oracle_panel.jpg' alt='3460.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3433874709976798&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.20728291316526612&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.933847512614007&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.23871088626569234&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8759042666622923&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9241499865867061&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9437507180289333&quot;,
+  &quot;cut_pixels&quot;: &quot;23.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00250525399347179&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.001828509181450333&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;9.391927443636039e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0007182561988632874&quot;,
+  &quot;delta_iou&quot;: &quot;0.00016526631172719686&quot;,
+  &quot;delta_precision&quot;: &quot;0.0001839757101069761&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3460.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3458927249911516&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.20911142234671645&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9339414318884434&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.23799263006682905&quot;,
+  &quot;r238_iou&quot;: &quot;0.8760695329740195&quot;,
+  &quot;r238_precision&quot;: &quot;0.9243339622968131&quot;,
+  &quot;r238_recall&quot;: &quot;0.9437507180289333&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1901.png</h2>
+<p>cut=57.0 px, Dice +0.000161, Recall +0.000000, BIoU +0.001569, Gap -0.001540, Cnt +0.000000</p>
+<img src='panels/21_1901_r238_oracle_panel.jpg' alt='1901.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.23907398198795513&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.13576605691694643&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9155442446854182&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.30255121344792174&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8442430594319955&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9130541917440291&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9180479163569695&quot;,
+  &quot;cut_pixels&quot;: &quot;57.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.002429835437143424&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.001569366280545742&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00016120628794791259&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0015404572725798427&quot;,
+  &quot;delta_iou&quot;: &quot;0.00027419078879586944&quot;,
+  &quot;delta_precision&quot;: &quot;0.00032071736032524&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1901.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.24150381742509855&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.13733542319749217&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9157054509733661&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.3010107561753419&quot;,
+  &quot;r238_iou&quot;: &quot;0.8445172502207914&quot;,
+  &quot;r238_precision&quot;: &quot;0.9133749091043544&quot;,
+  &quot;r238_recall&quot;: &quot;0.9180479163569695&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6947.png</h2>
+<p>cut=24.0 px, Dice +0.000227, Recall +0.000000, BIoU +0.001504, Gap -0.001055, Cnt -1.000000</p>
+<img src='panels/22_6947_r238_oracle_panel.jpg' alt='6947.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4818888678171819&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3174266083697689&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9376082490836589&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.10738608901972846&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8825447376402791&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9499092040562322&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9256218064695707&quot;,
+  &quot;cut_pixels&quot;: &quot;24.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0017316585982697363&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0015044605613000472&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;-1.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00022664878508127373&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0010545278790808077&quot;,
+  &quot;delta_iou&quot;: &quot;0.0004017044777606671&quot;,
+  &quot;delta_precision&quot;: &quot;0.0004653851204881043&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6947.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4836205264154516&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.31893106893106893&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9378348978687402&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.10633156114064765&quot;,
+  &quot;r238_iou&quot;: &quot;0.8829464421180397&quot;,
+  &quot;r238_precision&quot;: &quot;0.9503745891767204&quot;,
+  &quot;r238_recall&quot;: &quot;0.9256218064695707&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3354.png</h2>
+<p>cut=19.0 px, Dice +0.000223, Recall +0.000000, BIoU +0.001502, Gap -0.000935, Cnt +0.000000</p>
+<img src='panels/23_3354_r238_oracle_panel.jpg' alt='3354.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.48741455142811724&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3222393497757848&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9282843347910715&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1255415517920441&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8661666194924049&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9326459084675166&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9239633655394525&quot;,
+  &quot;cut_pixels&quot;: &quot;19.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0017164582508376602&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0015021611112837618&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00022297882856969764&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0009354076408034512&quot;,
+  &quot;delta_iou&quot;: &quot;0.00038835136442783025&quot;,
+  &quot;delta_precision&quot;: &quot;0.00045026736782838306&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3354.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4891310096789549&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.32374151088706854&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9285073136196412&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.12460614415124065&quot;,
+  &quot;r238_iou&quot;: &quot;0.8665549708568328&quot;,
+  &quot;r238_precision&quot;: &quot;0.933096175835345&quot;,
+  &quot;r238_recall&quot;: &quot;0.9239633655394525&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>8253.png</h2>
+<p>cut=58.0 px, Dice +0.000554, Recall +0.000000, BIoU +0.001485, Gap -0.002544, Cnt +0.000000</p>
+<img src='panels/24_8253_r238_oracle_panel.jpg' alt='8253.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3557485801555863&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2163589922210612&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9079994533163721&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1456825856246985&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8315009146047945&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9269936674895353&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8897679976923394&quot;,
+  &quot;cut_pixels&quot;: &quot;58.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0020051256596930744&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0014851320629172826&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0005540018334790897&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.002543524974783995&quot;,
+  &quot;delta_iou&quot;: &quot;0.0009296422893975143&quot;,
+  &quot;delta_precision&quot;: &quot;0.0011555791844389818&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;8253.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3577537058152794&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.21784412428397848&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9085534551498512&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1431390606499145&quot;,
+  &quot;r238_iou&quot;: &quot;0.832430556894192&quot;,
+  &quot;r238_precision&quot;: &quot;0.9281492466739742&quot;,
+  &quot;r238_recall&quot;: &quot;0.8897679976923394&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>2248.png</h2>
+<p>cut=19.0 px, Dice +0.000195, Recall +0.000000, BIoU +0.001218, Gap -0.000977, Cnt +0.000000</p>
+<img src='panels/25_2248_r238_oracle_panel.jpg' alt='2248.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3851315927440495&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2384910070774625&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9038387236073547&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2981273793600165&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8245490358697906&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8570689655172414&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9560075003605942&quot;,
+  &quot;cut_pixels&quot;: &quot;19.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.001586748096004953&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0012181216071238954&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00019519357742803223&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0009774668175738244&quot;,
+  &quot;delta_iou&quot;: &quot;0.00032495554295752793&quot;,
+  &quot;delta_precision&quot;: &quot;0.00035109873320593454&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;2248.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.38671834084005446&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2397091286845864&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9040339171847828&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.29714991254244266&quot;,
+  &quot;r238_iou&quot;: &quot;0.8248739914127481&quot;,
+  &quot;r238_precision&quot;: &quot;0.8574200642504474&quot;,
+  &quot;r238_recall&quot;: &quot;0.9560075003605942&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6605.png</h2>
+<p>cut=29.0 px, Dice +0.000161, Recall +0.000000, BIoU +0.001139, Gap -0.001069, Cnt +0.000000</p>
+<img src='panels/26_6605_r238_oracle_panel.jpg' alt='6605.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.42781883646010993&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.27211802709608984&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9436642909227766&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.16541353383458646&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8933374899795137&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9449534801554588&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9423786145498109&quot;,
+  &quot;cut_pixels&quot;: &quot;29.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0014069822035281399&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0011394683247141768&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00016095624966483424&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0010688485920684054&quot;,
+  &quot;delta_iou&quot;: &quot;0.0002885360598906539&quot;,
+  &quot;delta_precision&quot;: &quot;0.00032284788026182287&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6605.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.42922581866363807&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.273257495420804&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9438252471724414&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.16434468524251805&quot;,
+  &quot;r238_iou&quot;: &quot;0.8936260260394043&quot;,
+  &quot;r238_precision&quot;: &quot;0.9452763280357206&quot;,
+  &quot;r238_recall&quot;: &quot;0.9423786145498109&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1418.png</h2>
+<p>cut=28.0 px, Dice +0.000694, Recall +0.000000, BIoU +0.001091, Gap -0.002562, Cnt +0.000000</p>
+<img src='panels/27_1418_r238_oracle_panel.jpg' alt='1418.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.16310257339615802&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.08879242304656669&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.6380715782936107&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.05993229023698417&quot;,
+  &quot;anchor_iou&quot;: &quot;0.4685059567918828&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9059744268077602&quot;,
+  &quot;anchor_recall&quot;: &quot;0.49245056920311564&quot;,
+  &quot;cut_pixels&quot;: &quot;28.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0018384331051663205&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0010907943789680158&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.000694256788381975&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0025619910330313828&quot;,
+  &quot;delta_iou&quot;: &quot;0.0007489675586738742&quot;,
+  &quot;delta_precision&quot;: &quot;0.0028048743864016457&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1418.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.16494100650132434&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.0898832174255347&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.6387658350819927&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.057370299203952785&quot;,
+  &quot;r238_iou&quot;: &quot;0.46925492435055666&quot;,
+  &quot;r238_precision&quot;: &quot;0.9087793011941618&quot;,
+  &quot;r238_recall&quot;: &quot;0.49245056920311564&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1452.png</h2>
+<p>cut=58.0 px, Dice +0.000230, Recall +0.000000, BIoU +0.001088, Gap -0.001808, Cnt +0.000000</p>
+<img src='panels/28_1452_r238_oracle_panel.jpg' alt='1452.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2926949806949807&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.17143684191482433&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.921664816297023&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3112669471715755&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8547108823177302&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9064293331979076&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9374212184873949&quot;,
+  &quot;cut_pixels&quot;: &quot;58.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0015839558095326889&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0010878122050326233&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0002300909031422993&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0018076983013869397&quot;,
+  &quot;delta_iou&quot;: &quot;0.0003958353455801866&quot;,
+  &quot;delta_precision&quot;: &quot;0.00044520104773970726&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1452.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.29427893650451337&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.17252465411985696&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9218949072001653&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.30945924887018855&quot;,
+  &quot;r238_iou&quot;: &quot;0.8551067176633104&quot;,
+  &quot;r238_precision&quot;: &quot;0.9068745342456473&quot;,
+  &quot;r238_recall&quot;: &quot;0.9374212184873949&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>2044.png</h2>
+<p>cut=19.0 px, Dice +0.000156, Recall +0.000000, BIoU +0.001070, Gap -0.000867, Cnt +0.000000</p>
+<img src='panels/29_2044_r238_oracle_panel.jpg' alt='2044.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.35925601144597774&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2189592123769339&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9140226005941856&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.22216645373243293&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8416589526580269&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9078055912138069&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9203253502033438&quot;,
+  &quot;cut_pixels&quot;: &quot;19.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0014390155162751217&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0010700273891479928&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00015590094090600637&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0008669465230881634&quot;,
+  &quot;delta_iou&quot;: &quot;0.000264423170800554&quot;,
+  &quot;delta_precision&quot;: &quot;0.0003076264287407149&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;2044.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.36069502696225286&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.22002923976608188&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9141785015350916&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.22129950720934477&quot;,
+  &quot;r238_iou&quot;: &quot;0.8419233758288275&quot;,
+  &quot;r238_precision&quot;: &quot;0.9081132176425476&quot;,
+  &quot;r238_recall&quot;: &quot;0.9203253502033438&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1585.png</h2>
+<p>cut=38.0 px, Dice +0.000119, Recall +0.000000, BIoU +0.001066, Gap -0.000985, Cnt +0.000000</p>
+<img src='panels/30_1585_r238_oracle_panel.jpg' alt='1585.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.1962603992202301&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.10880750144609858&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8883331926507414&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3855643384735001&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7991002220970773&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8636798840119818&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9144352888361114&quot;,
+  &quot;cut_pixels&quot;: &quot;38.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0017322514680823131&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0010658854543153518&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00011874023469249373&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0009848386678761312&quot;,
+  &quot;delta_iou&quot;: &quot;0.0001921874446344507&quot;,
+  &quot;delta_precision&quot;: &quot;0.00022451044979243662&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1585.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.1979926506883124&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.10987338690041393&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8884519328854339&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.38457949980562395&quot;,
+  &quot;r238_iou&quot;: &quot;0.7992924095417118&quot;,
+  &quot;r238_precision&quot;: &quot;0.8639043944617742&quot;,
+  &quot;r238_recall&quot;: &quot;0.9144352888361114&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1694.png</h2>
+<p>cut=32.0 px, Dice +0.000094, Recall +0.000000, BIoU +0.001030, Gap -0.000789, Cnt +0.000000</p>
+<img src='panels/31_1694_r238_oracle_panel.jpg' alt='1694.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.22288934534154947&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1254223223282556&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.903463445404243&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2719449649866851&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8239246029853593&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9076968542720169&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8992693416267071&quot;,
+  &quot;cut_pixels&quot;: &quot;32.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0016251538953327982&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0010301320231790867&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;9.449991093835042e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.000789032448959448&quot;,
+  &quot;delta_iou&quot;: &quot;0.00015720001964902863&quot;,
+  &quot;delta_precision&quot;: &quot;0.00019079532926535858&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1694.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.22451449923688227&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.12645245435143468&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9035579453151813&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.27115593253772563&quot;,
+  &quot;r238_iou&quot;: &quot;0.8240818030050083&quot;,
+  &quot;r238_precision&quot;: &quot;0.9078876496012822&quot;,
+  &quot;r238_recall&quot;: &quot;0.8992693416267071&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>4193.png</h2>
+<p>cut=17.0 px, Dice +0.000108, Recall +0.000000, BIoU +0.000959, Gap -0.000629, Cnt +0.000000</p>
+<img src='panels/32_4193_r238_oracle_panel.jpg' alt='4193.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2801654986067719&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.16290259230164963&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8649994491572105&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.23409998520928857&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7621136822487964&quot;,
+  &quot;anchor_precision&quot;: &quot;0.891686856450636&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8398630820794409&quot;,
+  &quot;cut_pixels&quot;: &quot;17.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0014165557025551112&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0009586237752998716&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00010801532735660313&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006286052359118499&quot;,
+  &quot;delta_iou&quot;: &quot;0.00016771216680988577&quot;,
+  &quot;delta_precision&quot;: &quot;0.00022959690652746279&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;4193.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.28158205430932703&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.1638612160769495&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8651074644845671&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.23347137997337672&quot;,
+  &quot;r238_iou&quot;: &quot;0.7622813944156063&quot;,
+  &quot;r238_precision&quot;: &quot;0.8919164533571634&quot;,
+  &quot;r238_recall&quot;: &quot;0.8398630820794409&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3678.png</h2>
+<p>cut=9.0 px, Dice +0.000128, Recall +0.000000, BIoU +0.000864, Gap -0.000504, Cnt +0.000000</p>
+<img src='panels/33_3678_r238_oracle_panel.jpg' alt='3678.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.47867191896454697&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.31464082266775173&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9127124700910475&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.09625189086223318&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8394398399542726&quot;,
+  &quot;anchor_precision&quot;: &quot;0.94174228093238&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8854188647393965&quot;,
+  &quot;cut_pixels&quot;: &quot;9.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0009996775039903816&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0008644295884991937&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00012764614284987985&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005042299288475632&quot;,
+  &quot;delta_iou&quot;: &quot;0.00021597320144051135&quot;,
+  &quot;delta_precision&quot;: &quot;0.00027183067762637236&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3678.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.47967159646853735&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3155052522562509&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9128401162338974&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.09574766093338562&quot;,
+  &quot;r238_iou&quot;: &quot;0.8396558131557131&quot;,
+  &quot;r238_precision&quot;: &quot;0.9420141116100064&quot;,
+  &quot;r238_recall&quot;: &quot;0.8854188647393965&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>5355.png</h2>
+<p>cut=8.0 px, Dice +0.000034, Recall +0.000000, BIoU +0.000838, Gap -0.000284, Cnt +0.000000</p>
+<img src='panels/34_5355_r238_oracle_panel.jpg' alt='5355.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.18030297680002824&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.0990840642707444&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8803002812736994&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.40428175814812184&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7861931788953858&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8563530752133879&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9056253456585289&quot;,
+  &quot;cut_pixels&quot;: &quot;8.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0013869155972199565&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.000838326105662271&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.380407166608812e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0002840303912518549&quot;,
+  &quot;delta_iou&quot;: &quot;5.3927338001913405e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.398214881020436e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;5355.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.1816898923972482&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.09992239037640667&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8803340853453655&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.40399772775687&quot;,
+  &quot;r238_iou&quot;: &quot;0.7862471062333877&quot;,
+  &quot;r238_precision&quot;: &quot;0.8564170573621981&quot;,
+  &quot;r238_recall&quot;: &quot;0.9056253456585289&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3493.png</h2>
+<p>cut=39.0 px, Dice +0.000113, Recall +0.000000, BIoU +0.000822, Gap -0.000957, Cnt +0.000000</p>
+<img src='panels/35_3493_r238_oracle_panel.jpg' alt='3493.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.28828642917945674&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.168419783598059&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9199350663623034&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2914469327184871&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8517405182889604&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9089780899608462&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9311594202898551&quot;,
+  &quot;cut_pixels&quot;: &quot;39.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0012028437491753974&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0008216414026938346&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00011266633459394715&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0009566091883538852&quot;,
+  &quot;delta_iou&quot;: &quot;0.0001931833684981621&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002200232467010066&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3493.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.28948927292863214&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.16924142500075284&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9200477326968973&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.2904903235301332&quot;,
+  &quot;r238_iou&quot;: &quot;0.8519337016574585&quot;,
+  &quot;r238_precision&quot;: &quot;0.9091981132075472&quot;,
+  &quot;r238_recall&quot;: &quot;0.9311594202898551&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15369.png</h2>
+<p>cut=10.0 px, Dice +0.000104, Recall +0.000000, BIoU +0.000793, Gap -0.000430, Cnt +0.000000</p>
+<img src='panels/36_15369_r238_oracle_panel.jpg' alt='15369.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4933157597439277&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.32741814546363407&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9313014460511679&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.11311750290210242&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8714351138681877&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9398109691758525&quot;,
+  &quot;anchor_recall&quot;: &quot;0.922944639195714&quot;,
+  &quot;cut_pixels&quot;: &quot;10.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0008992717676892248&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007927490890895506&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0001036045662533569&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0004299410980695695&quot;,
+  &quot;delta_iou&quot;: &quot;0.00018144314022405794&quot;,
+  &quot;delta_precision&quot;: &quot;0.00021103697688817924&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15369.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.49421503151161694&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3282108945527236&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9314050506174213&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.11268756180403285&quot;,
+  &quot;r238_iou&quot;: &quot;0.8716165570084118&quot;,
+  &quot;r238_precision&quot;: &quot;0.9400220061527407&quot;,
+  &quot;r238_recall&quot;: &quot;0.922944639195714&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6918.png</h2>
+<p>cut=4.0 px, Dice +0.000043, Recall +0.000000, BIoU +0.000781, Gap -0.000179, Cnt +0.000000</p>
+<img src='panels/37_6918_r238_oracle_panel.jpg' alt='6918.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4635222933095274&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.30167850225952225&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.909277112688491&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.14733360153770506&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8336463122450302&quot;,
+  &quot;anchor_precision&quot;: &quot;0.920711356918089&quot;,
+  &quot;anchor_recall&quot;: &quot;0.89812338674046&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0009209397545491549&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007806728518183759&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;4.28162083505601e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00017880291448749142&quot;,
+  &quot;delta_iou&quot;: &quot;7.198241228234536e-05&quot;,
+  &quot;delta_precision&quot;: &quot;8.78038677206705e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6918.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.46444323306407653&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.30245917511134063&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9093199288968415&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.14715479862321756&quot;,
+  &quot;r238_iou&quot;: &quot;0.8337182946573125&quot;,
+  &quot;r238_precision&quot;: &quot;0.9207991607858097&quot;,
+  &quot;r238_recall&quot;: &quot;0.89812338674046&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>4047.png</h2>
+<p>cut=16.0 px, Dice +0.000104, Recall +0.000000, BIoU +0.000704, Gap -0.000587, Cnt +0.000000</p>
+<img src='panels/38_4047_r238_oracle_panel.jpg' alt='4047.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.25642067620286085&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.14706567845988905&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8991215703285977&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.08288711215433141&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8167310268736702&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9641063011659637&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8423441119494981&quot;,
+  &quot;cut_pixels&quot;: &quot;16.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0010701885961647006&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007044879038743956&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00010402060119929502&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005868114134819913&quot;,
+  &quot;delta_iou&quot;: &quot;0.00017167682322150046&quot;,
+  &quot;delta_precision&quot;: &quot;0.000239232332795547&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;4047.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.25749086479902555&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.14777016636376344&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.899225590929797&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.08230030074084942&quot;,
+  &quot;r238_iou&quot;: &quot;0.8169027036968917&quot;,
+  &quot;r238_precision&quot;: &quot;0.9643455334987593&quot;,
+  &quot;r238_recall&quot;: &quot;0.8423441119494981&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3567.png</h2>
+<p>cut=2.0 px, Dice +0.000028, Recall +0.000000, BIoU +0.000665, Gap -0.000104, Cnt +0.000000</p>
+<img src='panels/39_3567_r238_oracle_panel.jpg' alt='3567.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4931293463143255&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.32725393192054936&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9218408477667737&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.06664932362122789&quot;,
+  &quot;anchor_iou&quot;: &quot;0.855013701694536&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9597903195429719&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8867782256895101&quot;,
+  &quot;cut_pixels&quot;: &quot;2.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0007541056429699045&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0006645499520047116&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.779266013741566e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00010405827263267053&quot;,
+  &quot;delta_iou&quot;: &quot;4.781955826038686e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.025805622444924e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3567.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4938834519572954&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.32791848187255407&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9218686404269111&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.06654526534859521&quot;,
+  &quot;r238_iou&quot;: &quot;0.8550615212527964&quot;,
+  &quot;r238_precision&quot;: &quot;0.9598505775991963&quot;,
+  &quot;r238_recall&quot;: &quot;0.8867782256895101&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>11852.png</h2>
+<p>cut=3.0 px, Dice +0.000024, Recall +0.000000, BIoU +0.000655, Gap -0.000130, Cnt +0.000000</p>
+<img src='panels/40_11852_r238_oracle_panel.jpg' alt='11852.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4076344385622736&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.25599300087489063&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8741845467526529&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1957871878393051&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7764900936748735&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8566516068848201&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8924501695948779&quot;,
+  &quot;cut_pixels&quot;: &quot;3.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0008299913416662807&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0006550047234298861&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.4476449333232786e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00013029315960910726&quot;,
+  &quot;delta_iou&quot;: &quot;3.862366164320008e-05&quot;,
+  &quot;delta_precision&quot;: &quot;4.701022207975747e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;11852.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4084644299039399&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2566480055983205&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8742090232019861&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.195656894679696&quot;,
+  &quot;r238_iou&quot;: &quot;0.7765287173365167&quot;,
+  &quot;r238_precision&quot;: &quot;0.8566986171068999&quot;,
+  &quot;r238_recall&quot;: &quot;0.8924501695948779&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3249.png</h2>
+<p>cut=56.0 px, Dice +0.000194, Recall +0.000000, BIoU +0.000653, Gap -0.001571, Cnt +0.000000</p>
+<img src='panels/41_3249_r238_oracle_panel.jpg' alt='3249.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2629297721548644&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.15136392757190545&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9196481734110146&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.11997531487559258&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8512487791265523&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9636778631621347&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8794660554558494&quot;,
+  &quot;cut_pixels&quot;: &quot;56.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0009842616009027028&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0006527575964599963&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00019411952307568647&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0015708715531992518&quot;,
+  &quot;delta_iou&quot;: &quot;0.00033269542748026737&quot;,
+  &quot;delta_precision&quot;: &quot;0.0004264027649676372&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3249.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2639140337557671&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.15201668516836545&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9198422929340903&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.11840444332239333&quot;,
+  &quot;r238_iou&quot;: &quot;0.8515814745540325&quot;,
+  &quot;r238_precision&quot;: &quot;0.9641042659271023&quot;,
+  &quot;r238_recall&quot;: &quot;0.8794660554558494&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1399.png</h2>
+<p>cut=4.0 px, Dice +0.000072, Recall +0.000000, BIoU +0.000549, Gap -0.000279, Cnt +0.000000</p>
+<img src='panels/42_1399_r238_oracle_panel.jpg' alt='1399.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.22177136168552478&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.12471476215552045&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8097185683019035&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.07493558047217773&quot;,
+  &quot;anchor_iou&quot;: &quot;0.6802748885586924&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8854131412270947&quot;,
+  &quot;anchor_recall&quot;: &quot;0.7459470468431771&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0008669096304905199&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0005485805411087757&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;7.16105656373145e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.000278570931123337&quot;,
+  &quot;delta_iou&quot;: &quot;0.00010109598581642398&quot;,
+  &quot;delta_precision&quot;: &quot;0.00017126807703027325&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1399.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2226382713160153&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.12526334269662923&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8097901788675408&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.07465700954105439&quot;,
+  &quot;r238_iou&quot;: &quot;0.6803759845445089&quot;,
+  &quot;r238_precision&quot;: &quot;0.885584409304125&quot;,
+  &quot;r238_recall&quot;: &quot;0.7459470468431771&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15446.png</h2>
+<p>cut=5.0 px, Dice +0.000055, Recall +0.000000, BIoU +0.000535, Gap -0.000235, Cnt +0.000000</p>
+<img src='panels/43_15446_r238_oracle_panel.jpg' alt='15446.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.35788797945755096&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2179437060203284&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9018459986963634&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.05983830027263326&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8212381848317878&quot;,
+  &quot;anchor_precision&quot;: &quot;0.966445252780853&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8453415719456805&quot;,
+  &quot;cut_pixels&quot;: &quot;5.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.000721646210898208&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0005354755786811938&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;5.545999057232631e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0002350286734981652&quot;,
+  &quot;delta_iou&quot;: &quot;9.198250317332679e-05&quot;,
+  &quot;delta_precision&quot;: &quot;0.00012738845501025775&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15446.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3586096256684492&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2184791815990096&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9019014586869357&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.059603271599135095&quot;,
+  &quot;r238_iou&quot;: &quot;0.8213301673349611&quot;,
+  &quot;r238_precision&quot;: &quot;0.9665726412358633&quot;,
+  &quot;r238_recall&quot;: &quot;0.8453415719456805&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1736.png</h2>
+<p>cut=4.0 px, Dice +0.000014, Recall +0.000000, BIoU +0.000511, Gap -0.000109, Cnt +0.000000</p>
+<img src='panels/44_1736_r238_oracle_panel.jpg' alt='1736.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.21280542592968318&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.11907233214401557&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9040244280075417&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19723747892761978&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8248581912861853&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9315077345611696&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8781163856779519&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0008160578908214533&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0005112174148842741&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;1.417449409479854e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0001087606721409673&quot;,
+  &quot;delta_iou&quot;: &quot;2.3601599212774715e-05&quot;,
+  &quot;delta_precision&quot;: &quot;3.009936859910134e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1736.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.21362148382050464&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.11958354955889984&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9040386025016365&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1971287182554788&quot;,
+  &quot;r238_iou&quot;: &quot;0.8248817928853981&quot;,
+  &quot;r238_precision&quot;: &quot;0.9315378339297687&quot;,
+  &quot;r238_recall&quot;: &quot;0.8781163856779519&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>12627.png</h2>
+<p>cut=4.0 px, Dice +0.000055, Recall +0.000000, BIoU +0.000430, Gap -0.000206, Cnt +0.000000</p>
+<img src='panels/45_12627_r238_oracle_panel.jpg' alt='12627.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.49643203744933495&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3301693370795049&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9165367550065955&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.12797357964807266&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8459324847814056&quot;,
+  &quot;anchor_precision&quot;: &quot;0.92432350718065&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9088801022683355&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00048577076984313017&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0004298882565625384&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;5.495813125899751e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00020640899943236146&quot;,
+  &quot;delta_iou&quot;: &quot;9.363875191292781e-05&quot;,
+  &quot;delta_precision&quot;: &quot;0.00011179867644528496&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;12627.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4969178082191781&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.33059922533606745&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9165917131378545&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1277671706486403&quot;,
+  &quot;r238_iou&quot;: &quot;0.8460261235333185&quot;,
+  &quot;r238_precision&quot;: &quot;0.9244353058570953&quot;,
+  &quot;r238_recall&quot;: &quot;0.9088801022683355&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15067.png</h2>
+<p>cut=5.0 px, Dice +0.000037, Recall +0.000000, BIoU +0.000421, Gap -0.000188, Cnt +0.000000</p>
+<img src='panels/46_15067_r238_oracle_panel.jpg' alt='15067.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.44864&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2891914191419142&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.937545553578846&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19222218035196142&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8824336485549474&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9203286558345642&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9554188962542928&quot;,
+  &quot;cut_pixels&quot;: &quot;5.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005061024677038839&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00042071207327043503&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.6739981878808337e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0001884161736443457&quot;,
+  &quot;delta_iou&quot;: &quot;6.509735080373336e-05&quot;,
+  &quot;delta_precision&quot;: &quot;7.080867372200039e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15067.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.44914610246770387&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.28961213121518464&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9375822935607248&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.19203376417831708&quot;,
+  &quot;r238_iou&quot;: &quot;0.8824987459057512&quot;,
+  &quot;r238_precision&quot;: &quot;0.9203994645082862&quot;,
+  &quot;r238_recall&quot;: &quot;0.9554188962542928&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1886.png</h2>
+<p>cut=11.0 px, Dice +0.000023, Recall +0.000000, BIoU +0.000406, Gap -0.000253, Cnt +0.000000</p>
+<img src='panels/47_1886_r238_oracle_panel.jpg' alt='1886.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2104460365149064&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.11759692124906372&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9032246324064638&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2618191871716892&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8235274597643936&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9315472140762463&quot;,
+  &quot;anchor_recall&quot;: &quot;0.876573462080171&quot;,
+  &quot;cut_pixels&quot;: &quot;11.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.000649164187204565&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00040555757762497646&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.26009052592957e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0002534328633305716&quot;,
+  &quot;delta_iou&quot;: &quot;3.757763153866556e-05&quot;,
+  &quot;delta_precision&quot;: &quot;4.808233787945149e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1886.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.21109520070211096&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.1180024788266887&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;4.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9032472333117231&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.26156575430835866&quot;,
+  &quot;r238_iou&quot;: &quot;0.8235650373959322&quot;,
+  &quot;r238_precision&quot;: &quot;0.9315952964141258&quot;,
+  &quot;r238_recall&quot;: &quot;0.876573462080171&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13867.png</h2>
+<p>cut=16.0 px, Dice +0.000146, Recall +0.000000, BIoU +0.000390, Gap -0.000681, Cnt -1.000000</p>
+<img src='panels/48_13867_r238_oracle_panel.jpg' alt='13867.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.27669350802966197&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1605596620908131&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8648620047409414&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2727621156630611&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7619003225626014&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8488719930200673&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8814659821390052&quot;,
+  &quot;cut_pixels&quot;: &quot;16.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005792192430653098&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00039020598306552245&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;-1.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0001464626595666374&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006813729665275381&quot;,
+  &quot;delta_iou&quot;: &quot;0.00022736082139995784&quot;,
+  &quot;delta_precision&quot;: &quot;0.00028223997108012266&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13867.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2772727272727273&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.16094986807387862&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.8650084674005081&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.27208074269653354&quot;,
+  &quot;r238_iou&quot;: &quot;0.7621276833840014&quot;,
+  &quot;r238_precision&quot;: &quot;0.8491542329911475&quot;,
+  &quot;r238_recall&quot;: &quot;0.8814659821390052&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15040.png</h2>
+<p>cut=5.0 px, Dice +0.000035, Recall +0.000000, BIoU +0.000366, Gap -0.000189, Cnt +0.000000</p>
+<img src='panels/49_15040_r238_oracle_panel.jpg' alt='15040.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4406073474620408&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.28255061144794985&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9396147686702027&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19084602624038607&quot;,
+  &quot;anchor_iou&quot;: &quot;0.88610699291979&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9265328001854427&quot;,
+  &quot;anchor_recall&quot;: &quot;0.953071443474114&quot;,
+  &quot;cut_pixels&quot;: &quot;5.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00044541061992053876&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0003664406642919227&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.4513953345527426e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00018850852058513445&quot;,
+  &quot;delta_iou&quot;: &quot;6.13919599350421e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.712157523192097e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15040.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.4410527580819613&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2829170521122418&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9396492826235482&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.19065751771980094&quot;,
+  &quot;r238_iou&quot;: &quot;0.886168384879725&quot;,
+  &quot;r238_precision&quot;: &quot;0.9265999217606746&quot;,
+  &quot;r238_recall&quot;: &quot;0.953071443474114&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1934.png</h2>
+<p>cut=6.0 px, Dice +0.000019, Recall +0.000000, BIoU +0.000351, Gap -0.000163, Cnt +0.000000</p>
+<img src='panels/50_1934_r238_oracle_panel.jpg' alt='1934.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.29161933785842914&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.17069927348209651&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9247887247520992&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.29880467264330346&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8600995414030418&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9105899009596826&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9394373669379009&quot;,
+  &quot;cut_pixels&quot;: &quot;6.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005123817527266095&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00035122436112342004&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;1.881755468013946e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00016299918500406463&quot;,
+  &quot;delta_iou&quot;: &quot;3.255465994045359e-05&quot;,
+  &quot;delta_precision&quot;: &quot;3.6489033037656604e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1934.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.29213171961115575&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.17105049784321993&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9248075423067793&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.2986416734582994&quot;,
+  &quot;r238_iou&quot;: &quot;0.8601320960629822&quot;,
+  &quot;r238_precision&quot;: &quot;0.9106263899927203&quot;,
+  &quot;r238_recall&quot;: &quot;0.9394373669379009&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1812.png</h2>
+<p>cut=11.0 px, Dice +0.000028, Recall +0.000000, BIoU +0.000350, Gap -0.000282, Cnt +0.000000</p>
+<img src='panels/51_1812_r238_oracle_panel.jpg' alt='1812.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2584201821857034&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.14838262337584035&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9326549486223343&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.317086906437988&quot;,
+  &quot;anchor_iou&quot;: &quot;0.87380828478899&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9196590467986451&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9460234110053605&quot;,
+  &quot;cut_pixels&quot;: &quot;11.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005299490478923863&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00034955017015417256&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.7662535214134643e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00028158197875338686&quot;,
+  &quot;delta_iou&quot;: &quot;4.856501749550546e-05&quot;,
+  &quot;delta_precision&quot;: &quot;5.379553052264896e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1812.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.2589501312335958&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.14873217354599452&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9326826111575485&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.3168053244592346&quot;,
+  &quot;r238_iou&quot;: &quot;0.8738568498064855&quot;,
+  &quot;r238_precision&quot;: &quot;0.9197128423291677&quot;,
+  &quot;r238_recall&quot;: &quot;0.9460234110053605&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13436.png</h2>
+<p>cut=11.0 px, Dice +0.000081, Recall +0.000000, BIoU +0.000327, Gap -0.000412, Cnt +0.000000</p>
+<img src='panels/52_13436_r238_oracle_panel.jpg' alt='13436.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3631018008085263&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.22182308037718904&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9164516103259003&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.16284825077805692&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8457874323467386&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9284615758203688&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9047483830257138&quot;,
+  &quot;cut_pixels&quot;: &quot;11.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0004380799980701622&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0003270817580067753&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;8.055108041216119e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00041246390940793964&quot;,
+  &quot;delta_iou&quot;: &quot;0.00013722619776124212&quot;,
+  &quot;delta_precision&quot;: &quot;0.000165367184812526&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13436.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.36353988080659644&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2221501621351958&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9165321614063124&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.16243578686864898&quot;,
+  &quot;r238_iou&quot;: &quot;0.8459246585444998&quot;,
+  &quot;r238_precision&quot;: &quot;0.9286269430051813&quot;,
+  &quot;r238_recall&quot;: &quot;0.9047483830257138&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3725.png</h2>
+<p>cut=2.0 px, Dice +0.000028, Recall +0.000000, BIoU +0.000309, Gap -0.000111, Cnt +0.000000</p>
+<img src='panels/53_3725_r238_oracle_panel.jpg' alt='3725.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.5083284799068142&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.3407777604248009&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9275397909536015&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.07839229363893041&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8648710536107851&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9552050074289508&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9014319809069212&quot;,
+  &quot;cut_pixels&quot;: &quot;2.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00034338599936667435&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00030872099886442017&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.847353965262922e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00011072357858606108&quot;,
+  &quot;delta_iou&quot;: &quot;4.9513156067604314e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.03967631392921e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3725.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.5086718659061809&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.3410864814236653&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9275682644932541&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.07828157006034435&quot;,
+  &quot;r238_iou&quot;: &quot;0.8649205667668527&quot;,
+  &quot;r238_precision&quot;: &quot;0.95526540419209&quot;,
+  &quot;r238_recall&quot;: &quot;0.9014319809069212&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>12827.png</h2>
+<p>cut=5.0 px, Dice +0.000031, Recall +0.000000, BIoU +0.000295, Gap -0.000183, Cnt +0.000000</p>
+<img src='panels/54_12827_r238_oracle_panel.jpg' alt='12827.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3760599262329366&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.23157253910274422&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.925741399762752&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2176649226153452&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8617491166077739&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9180576432912881&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9335548614341729&quot;,
+  &quot;cut_pixels&quot;: &quot;5.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0003891976410228537&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00029523258803632046&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.050520314240579e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00018294244630637224&quot;,
+  &quot;delta_iou&quot;: &quot;5.2868692659302496e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.0003767535343755e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;12827.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.37644912387395946&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.23186777169078054&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9257719049658945&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.21748198016903883&quot;,
+  &quot;r238_iou&quot;: &quot;0.8618019853004332&quot;,
+  &quot;r238_precision&quot;: &quot;0.9181176470588235&quot;,
+  &quot;r238_recall&quot;: &quot;0.9335548614341729&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1846.png</h2>
+<p>cut=3.0 px, Dice +0.000007, Recall +0.000000, BIoU +0.000267, Gap -0.000070, Cnt +0.000000</p>
+<img src='panels/55_1846_r238_oracle_panel.jpg' alt='1846.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3021677352685596&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1779726664084546&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9354862083392742&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19487024883467452&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8787920040752516&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9561338964910939&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9157114421030956&quot;,
+  &quot;cut_pixels&quot;: &quot;3.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0003844471173904962&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0002667935893322648&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;6.5597824943086636e-06&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-6.95716704157967e-05&quot;,
+  &quot;delta_iou&quot;: &quot;1.1577626276237929e-05&quot;,
+  &quot;delta_precision&quot;: &quot;1.3705196492352911e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1846.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.3025521823859501&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.17823945999778687&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9354927681217685&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.19480067716425872&quot;,
+  &quot;r238_iou&quot;: &quot;0.8788035817015278&quot;,
+  &quot;r238_precision&quot;: &quot;0.9561476016875863&quot;,
+  &quot;r238_recall&quot;: &quot;0.9157114421030956&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>7259.png</h2>
+<p>cut=4.0 px, Dice +0.000033, Recall +0.000000, BIoU +0.000261, Gap -0.000163, Cnt +0.000000</p>
+<img src='panels/56_7259_r238_oracle_panel.jpg' alt='7259.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.35778080865854195&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2178642233295826&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9099027385102431&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1703413359464315&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8346986738291086&quot;,
+  &quot;anchor_precision&quot;: &quot;0.920063653017042&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8999638009049774&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00035197325003299973&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00026107813351830544&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.3302628389408895e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0001633186346562121&quot;,
+  &quot;delta_iou&quot;: &quot;5.6052021208730096e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.810367719733978e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;7259.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.35813278190857495&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.2181253014631009&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9099360411386325&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.1701780173117753&quot;,
+  &quot;r238_iou&quot;: &quot;0.8347547258503173&quot;,
+  &quot;r238_precision&quot;: &quot;0.9201317566942393&quot;,
+  &quot;r238_recall&quot;: &quot;0.8999638009049774&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1828.png</h2>
+<p>cut=4.0 px, Dice +0.000017, Recall +0.000000, BIoU +0.000243, Gap -0.000112, Cnt +0.000000</p>
+<img src='panels/57_1828_r238_oracle_panel.jpg' alt='1828.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3189582177581827&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1897384235939834&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9234991761587507&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.23163952835485682&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8578713138959364&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9238466362089044&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9231519773707861&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0003435104062264327&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00024316531767809568&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;1.653979002702588e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0001122964626614209&quot;,
+  &quot;delta_iou&quot;: &quot;2.8545517927525133e-05&quot;,
+  &quot;delta_precision&quot;: &quot;3.3105070009087356e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1828.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.31930172816440916&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.1899815889116615&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;3.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9235157159487777&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.2315272318921954&quot;,
+  &quot;r238_iou&quot;: &quot;0.8578998594138639&quot;,
+  &quot;r238_precision&quot;: &quot;0.9238797412789135&quot;,
+  &quot;r238_recall&quot;: &quot;0.9231519773707861&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1660.png</h2>
+<p>cut=11.0 px, Dice +0.000029, Recall +0.000000, BIoU +0.000001, Gap -0.000255, Cnt +0.000000</p>
+<img src='panels/58_1660_r238_oracle_panel.jpg' alt='1660.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2388905457798986&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.13564775613886537&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9149379681143169&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2724452470250498&quot;,
+  &quot;anchor_iou&quot;: &quot;0.843212591748589&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9063617927860187&quot;,
+  &quot;anchor_recall&quot;: &quot;0.923677992766622&quot;,
+  &quot;cut_pixels&quot;: &quot;11.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;2.2084194851723637e-06&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;1.4240964818779123e-06&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.893758273359026e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00025466499976850576&quot;,
+  &quot;delta_iou&quot;: &quot;4.915805531591211e-05&quot;,
+  &quot;delta_precision&quot;: &quot;5.679702695515765e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1660.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.23889275419938377&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.13564918023534725&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;5.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-5.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9149669056970505&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.2721905820252813&quot;,
+  &quot;r238_iou&quot;: &quot;0.8432617498039049&quot;,
+  &quot;r238_precision&quot;: &quot;0.9064185898129739&quot;,
+  &quot;r238_recall&quot;: &quot;0.923677992766622&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1590.png</h2>
+<p>cut=2.0 px, Dice +0.000051, Recall +0.000000, BIoU +0.000000, Gap -0.000163, Cnt +0.000000</p>
+<img src='panels/59_1590_r238_oracle_panel.jpg' alt='1590.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.5301007899754835&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.36063750926612304&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9199832191301915&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.18038928251486278&quot;,
+  &quot;anchor_iou&quot;: &quot;0.851823078516677&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8809791633188708&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9626009598501697&quot;,
+  &quot;cut_pixels&quot;: &quot;2.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;5.1463274082230726e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00016287971333170392&quot;,
+  &quot;delta_iou&quot;: &quot;8.824438811938506e-05&quot;,
+  &quot;delta_precision&quot;: &quot;9.438893912461221e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1590.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.5301007899754835&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.36063750926612304&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9200346824042738&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.18022640280153107&quot;,
+  &quot;r238_iou&quot;: &quot;0.8519113229047964&quot;,
+  &quot;r238_precision&quot;: &quot;0.8810735522579954&quot;,
+  &quot;r238_recall&quot;: &quot;0.9626009598501697&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1742.png</h2>
+<p>cut=24.0 px, Dice +0.000055, Recall +0.000000, BIoU -0.000047, Gap -0.000599, Cnt -1.000000</p>
+<img src='panels/60_1742_r238_oracle_panel.jpg' alt='1742.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.1911836524868269&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.10569544705280509&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9004612665430874&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3186103351955307&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8189445620638282&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9027022904644483&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8982313420754412&quot;,
+  &quot;cut_pixels&quot;: &quot;24.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;-7.630872478636697e-05&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;-4.6644121902819635e-05&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;-1.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;delta_dice&quot;: &quot;5.480522512402164e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005985634477254642&quot;,
+  &quot;delta_iou&quot;: &quot;9.066768840571005e-05&quot;,
+  &quot;delta_precision&quot;: &quot;0.00011016345371550607&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1742.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.19110734376204053&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.10564880293090227&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9005160717682115&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.31801177174780526&quot;,
+  &quot;r238_iou&quot;: &quot;0.8190352297522339&quot;,
+  &quot;r238_precision&quot;: &quot;0.9028124539181638&quot;,
+  &quot;r238_recall&quot;: &quot;0.8982313420754412&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>2024.png</h2>
+<p>cut=2.0 px, Dice +0.000027, Recall +0.000000, BIoU -0.000102, Gap -0.000108, Cnt +0.000000</p>
+<img src='panels/61_2024_r238_oracle_panel.jpg' alt='2024.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4363927305977826&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.279093567251462&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9100414962623403&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.21968794018853613&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8349322411281234&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8807121317559731&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9413916008058267&quot;,
+  &quot;cut_pixels&quot;: &quot;2.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;-0.00012466226663937485&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;-0.00010197061280653452&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;2.726675244602017e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00010835410120271782&quot;,
+  &quot;delta_iou&quot;: &quot;4.590440339380386e-05&quot;,
+  &quot;delta_precision&quot;: &quot;5.10765024506199e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;2024.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r238_boundary_f1&quot;: &quot;0.43626806833114323&quot;,
+  &quot;r238_boundary_iou&quot;: &quot;0.27899159663865547&quot;,
+  &quot;r238_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r238_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r238_dice&quot;: &quot;0.9100687630147863&quot;,
+  &quot;r238_gap_region_fp_rate&quot;: &quot;0.2195795860873334&quot;,
+  &quot;r238_iou&quot;: &quot;0.8349781455315172&quot;,
+  &quot;r238_precision&quot;: &quot;0.8807632082584237&quot;,
+  &quot;r238_recall&quot;: &quot;0.9413916008058267&quot;
+}</pre>
+</div>
+</body></html>

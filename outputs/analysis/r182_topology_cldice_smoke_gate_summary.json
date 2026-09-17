@@ -1,0 +1,40 @@
+{
+  "run_id": "r182_topology_cldice_smoke",
+  "status": "gate_failed",
+  "reason": "val_dice_too_low",
+  "history_path": "outputs/timm_instance_sep/r182_topology_cldice_smoke/history.json",
+  "metrics_path": "outputs/analysis/r182_topology_cldice_smoke_clean_test_v2_metrics.json",
+  "best_val": {
+    "epoch": 7,
+    "train_loss": 3.6472062468528748,
+    "val_dice": 0.36412566087347054,
+    "val_precision": 0.3283567807092655,
+    "val_recall": 0.4480500391191031,
+    "val_boundary_iou": 0.019220938599706933,
+    "val_false_bridge_flag": 1.0,
+    "threshold": 0.55,
+    "sep_suppress_weight": 0.45,
+    "encoder": "convnext_tiny.dinov3_lvd1689m",
+    "pretrained": true,
+    "hard_case_matched_train_names": 0,
+    "hard_case_weight": 1.0,
+    "hard_case_epoch_multiplier": 1.0,
+    "bridge_gap_loss_weight": 0.18,
+    "background_loss_weight": 0.04,
+    "cldice_loss_weight": 0.08,
+    "skeleton_iters": 8
+  },
+  "clean_test_v2_diagnostic_mean": {
+    "dice": 0.2840474368775423,
+    "iou": 0.16649466358842044,
+    "precision": 0.21634373353730946,
+    "recall": 0.45547003530312763,
+    "specificity": 0.9644927449002296,
+    "boundary_iou": 0.005653489418823824,
+    "pred_component_count": 4.0,
+    "gt_component_count": 26.0,
+    "component_count_error": 22.0,
+    "false_bridge_flag": 1.0
+  },
+  "note": "Smoke gate only. clean-test-v2 is diagnostic here and not used for tuning or success claim."
+}

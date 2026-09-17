@@ -1,0 +1,23 @@
+{
+  "launcher": "outputs\\bridge_logs\\run_r165_filtered_reannotated_instance_sep.sh",
+  "ok": true,
+  "errors": [],
+  "required_checked": [
+    "clean_test_eval",
+    "control_dataset_original",
+    "control_root_raw",
+    "eval_root_variants",
+    "exclude_policy_guard",
+    "expected_test_count",
+    "expected_train_count",
+    "expected_val_count",
+    "filtered_variant",
+    "metadata_guard",
+    "original_test_equality_guard"
+  ],
+  "forbidden_checked": [
+    "new_test_eval_dataset",
+    "r162_unfiltered_variant",
+    "reannotated_train_dataset"
+  ]
+}

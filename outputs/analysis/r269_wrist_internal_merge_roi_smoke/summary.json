@@ -1,0 +1,70 @@
+{
+  "run_id": "R269_wrist_internal_merge_roi_pilot",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "original-val",
+  "clean_test_used": false,
+  "writes_masks": false,
+  "images": 4,
+  "candidate_rows": 3,
+  "images_with_candidates": 2,
+  "mean_candidates_per_image": 0.75,
+  "mean_union_gt_gap_coverage": 0.046532846715328466,
+  "top1_mean_gt_fg_fraction": 0.9671862182116489,
+  "top1_mean_gt_gap_fraction": 0.01066447908121411,
+  "top1_mean_gt_interinstance_fraction": 0.01394585726004922,
+  "top1_mean_destructive_fg_fraction": 0.9589827727645611,
+  "cases": [
+    {
+      "image": "10375.png",
+      "num_candidates": 1,
+      "components_inspected": 1,
+      "anchor_components": 27,
+      "gt_gap_pixels": 301,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 1.0,
+      "top1_seam_gt_fg_fraction": 1.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 1.0
+    },
+    {
+      "image": "10520.png",
+      "num_candidates": 0,
+      "components_inspected": 0,
+      "anchor_components": 26,
+      "gt_gap_pixels": 76,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 0.0
+    },
+    {
+      "image": "10618.png",
+      "num_candidates": 0,
+      "components_inspected": 0,
+      "anchor_components": 27,
+      "gt_gap_pixels": 76,
+      "union_gt_gap_coverage": 0.0,
+      "best_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_fg_fraction": 0.0,
+      "top1_seam_gt_gap_fraction": 0.0,
+      "top1_seam_gt_interinstance_fraction": 0.0,
+      "top1_seam_destructive_fg_fraction": 0.0
+    },
+    {
+      "image": "10624.png",
+      "num_candidates": 2,
+      "components_inspected": 2,
+      "anchor_components": 26,
+      "gt_gap_pixels": 274,
+      "union_gt_gap_coverage": 0.18613138686131386,
+      "best_seam_gt_fg_fraction": 0.8904593639575972,
+      "top1_seam_gt_fg_fraction": 0.9343724364232978,
+      "top1_seam_gt_gap_fraction": 0.02132895816242822,
+      "top1_seam_gt_interinstance_fraction": 0.02789171452009844,
+      "top1_seam_destructive_fg_fraction": 0.9179655455291222
+    }
+  ]
+}

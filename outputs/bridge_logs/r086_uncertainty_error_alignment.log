@@ -1,0 +1,38 @@
+uncertainty/error:   0%|          | 0/81 [00:00<?, ?it/s]uncertainty/error:   1%|          | 1/81 [00:01<01:30,  1.13s/it]uncertainty/error:   2%|▏         | 2/81 [00:02<01:38,  1.25s/it]uncertainty/error:   4%|▎         | 3/81 [00:03<01:29,  1.15s/it]uncertainty/error:   5%|▍         | 4/81 [00:04<01:17,  1.01s/it]uncertainty/error:   6%|▌         | 5/81 [00:04<01:05,  1.15it/s]uncertainty/error:   7%|▋         | 6/81 [00:05<00:55,  1.34it/s]uncertainty/error:   9%|▊         | 7/81 [00:06<00:51,  1.42it/s]uncertainty/error:  10%|▉         | 8/81 [00:06<00:48,  1.51it/s]uncertainty/error:  11%|█         | 9/81 [00:07<00:45,  1.57it/s]uncertainty/error:  12%|█▏        | 10/81 [00:07<00:47,  1.51it/s]uncertainty/error:  14%|█▎        | 11/81 [00:08<00:43,  1.61it/s]uncertainty/error:  15%|█▍        | 12/81 [00:09<00:43,  1.59it/s]uncertainty/error:  16%|█▌        | 13/81 [00:09<00:41,  1.64it/s]uncertainty/error:  17%|█▋        | 14/81 [00:10<00:37,  1.79it/s]uncertainty/error:  19%|█▊        | 15/81 [00:10<00:41,  1.60it/s]uncertainty/error:  20%|█▉        | 16/81 [00:11<00:45,  1.42it/s]uncertainty/error:  21%|██        | 17/81 [00:13<00:57,  1.11it/s]uncertainty/error:  22%|██▏       | 18/81 [00:14<00:57,  1.10it/s]uncertainty/error:  23%|██▎       | 19/81 [00:14<00:50,  1.23it/s]uncertainty/error:  25%|██▍       | 20/81 [00:15<00:52,  1.16it/s]uncertainty/error:  26%|██▌       | 21/81 [00:16<00:46,  1.28it/s]uncertainty/error:  27%|██▋       | 22/81 [00:17<00:47,  1.25it/s]uncertainty/error:  28%|██▊       | 23/81 [00:17<00:49,  1.18it/s]uncertainty/error:  30%|██▉       | 24/81 [00:18<00:47,  1.20it/s]uncertainty/error:  31%|███       | 25/81 [00:20<00:54,  1.02it/s]uncertainty/error:  32%|███▏      | 26/81 [00:20<00:46,  1.19it/s]uncertainty/error:  33%|███▎      | 27/81 [00:23<01:20,  1.49s/it]uncertainty/error:  35%|███▍      | 28/81 [00:24<01:16,  1.45s/it]uncertainty/error:  36%|███▌      | 29/81 [00:27<01:28,  1.69s/it]uncertainty/error:  37%|███▋      | 30/81 [00:29<01:36,  1.89s/it]uncertainty/error:  38%|███▊      | 31/81 [00:32<01:42,  2.06s/it]uncertainty/error:  40%|███▉      | 32/81 [00:33<01:30,  1.84s/it]uncertainty/error:  41%|████      | 33/81 [00:34<01:23,  1.74s/it]uncertainty/error:  42%|████▏     | 34/81 [00:36<01:16,  1.62s/it]uncertainty/error:  43%|████▎     | 35/81 [00:38<01:23,  1.82s/it]uncertainty/error:  44%|████▍     | 36/81 [00:40<01:19,  1.78s/it]uncertainty/error:  46%|████▌     | 37/81 [00:42<01:25,  1.95s/it]uncertainty/error:  47%|████▋     | 38/81 [00:43<01:15,  1.77s/it]uncertainty/error:  48%|████▊     | 39/81 [00:46<01:23,  1.98s/it]uncertainty/error:  49%|████▉     | 40/81 [00:48<01:18,  1.92s/it]uncertainty/error:  51%|█████     | 41/81 [00:50<01:21,  2.03s/it]uncertainty/error:  52%|█████▏    | 42/81 [00:51<01:11,  1.83s/it]uncertainty/error:  53%|█████▎    | 43/81 [00:53<01:04,  1.69s/it]uncertainty/error:  54%|█████▍    | 44/81 [00:55<01:12,  1.96s/it]uncertainty/error:  56%|█████▌    | 45/81 [00:57<01:09,  1.94s/it]uncertainty/error:  57%|█████▋    | 46/81 [00:59<01:11,  2.05s/it]uncertainty/error:  58%|█████▊    | 47/81 [01:00<00:52,  1.56s/it]uncertainty/error:  59%|█████▉    | 48/81 [01:00<00:40,  1.24s/it]uncertainty/error:  60%|██████    | 49/81 [01:01<00:33,  1.04s/it]uncertainty/error:  62%|██████▏   | 50/81 [01:02<00:28,  1.07it/s]uncertainty/error:  63%|██████▎   | 51/81 [01:02<00:27,  1.11it/s]uncertainty/error:  64%|██████▍   | 52/81 [01:03<00:23,  1.21it/s]uncertainty/error:  65%|██████▌   | 53/81 [01:04<00:21,  1.29it/s]uncertainty/error:  67%|██████▋   | 54/81 [01:05<00:21,  1.24it/s]uncertainty/error:  68%|██████▊   | 55/81 [01:06<00:28,  1.09s/it]uncertainty/error:  69%|██████▉   | 56/81 [01:08<00:31,  1.25s/it]uncertainty/error:  70%|███████   | 57/81 [01:09<00:25,  1.06s/it]uncertainty/error:  72%|███████▏  | 58/81 [01:09<00:20,  1.12it/s]uncertainty/error:  73%|███████▎  | 59/81 [01:10<00:16,  1.32it/s]uncertainty/error:  74%|███████▍  | 60/81 [01:10<00:14,  1.47it/s]uncertainty/error:  75%|███████▌  | 61/81 [01:11<00:13,  1.46it/s]uncertainty/error:  77%|███████▋  | 62/81 [01:14<00:27,  1.47s/it]uncertainty/error:  78%|███████▊  | 63/81 [01:16<00:27,  1.51s/it]uncertainty/error:  79%|███████▉  | 64/81 [01:18<00:28,  1.68s/it]uncertainty/error:  80%|████████  | 65/81 [01:18<00:21,  1.34s/it]uncertainty/error:  81%|████████▏ | 66/81 [01:19<00:17,  1.16s/it]uncertainty/error:  83%|████████▎ | 67/81 [01:19<00:12,  1.12it/s]uncertainty/error:  84%|████████▍ | 68/81 [01:20<00:09,  1.35it/s]uncertainty/error:  85%|████████▌ | 69/81 [01:21<00:11,  1.00it/s]uncertainty/error:  86%|████████▋ | 70/81 [01:22<00:10,  1.04it/s]uncertainty/error:  88%|████████▊ | 71/81 [01:23<00:08,  1.18it/s]uncertainty/error:  89%|████████▉ | 72/81 [01:23<00:07,  1.26it/s]uncertainty/error:  90%|█████████ | 73/81 [01:24<00:06,  1.16it/s]uncertainty/error:  91%|█████████▏| 74/81 [01:25<00:05,  1.25it/s]uncertainty/error:  93%|█████████▎| 75/81 [01:26<00:05,  1.08it/s]uncertainty/error:  94%|█████████▍| 76/81 [01:27<00:04,  1.11it/s]uncertainty/error:  95%|█████████▌| 77/81 [01:28<00:03,  1.15it/s]uncertainty/error:  96%|█████████▋| 78/81 [01:28<00:02,  1.32it/s]uncertainty/error:  98%|█████████▊| 79/81 [01:29<00:01,  1.51it/s]uncertainty/error:  99%|█████████▉| 80/81 [01:30<00:00,  1.37it/s]uncertainty/error: 100%|██████████| 81/81 [01:30<00:00,  1.52it/s]uncertainty/error: 100%|██████████| 81/81 [01:30<00:00,  1.12s/it]
+{
+  "output": "outputs/analysis/r086_uncertainty_error_alignment_clean_test_v2.json",
+  "compact": {
+    "anchor_dice": 0.9143565184864518,
+    "disagreement_frac": 0.003683861256800989,
+    "error_in_disagreement_share": 0.27526891749412724,
+    "disagreement_precision_for_error": 0.3967503229332653,
+    "candidate_can_fix_error_share": 0.27526891749412724,
+    "disagreement_pixel_oracle_dice": 0.9380344309510805
+  },
+  "candidate_dice": {
+    "r038_aggr_r1_t045_m000": {
+      "mean": 0.9143565184864518,
+      "median": 0.9171847385383096,
+      "min": 0.8490871531461113,
+      "max": 0.9421153800797188
+    },
+    "r025b_anchor_local_pixel_residual_sam_hqsam": {
+      "mean": 0.9142982677601447,
+      "median": 0.9171152474220118,
+      "min": 0.8491108567600011,
+      "max": 0.9413015095758445
+    },
+    "r068_instance_separation_segmenter": {
+      "mean": 0.9030303856326354,
+      "median": 0.906326945723156,
+      "min": 0.8458049886621315,
+      "max": 0.9377455073516064
+    },
+    "r085_gradient_boundary_rule": {
+      "mean": 0.9143565184864518,
+      "median": 0.9171847385383096,
+      "min": 0.8490871531461113,
+      "max": 0.9421153800797188
+    }
+  }
+}

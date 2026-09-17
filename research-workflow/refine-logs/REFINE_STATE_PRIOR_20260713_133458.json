@@ -1,0 +1,10 @@
+{
+  "phase": "done",
+  "round": 3,
+  "agent_id": "/root/prior_lit_review",
+  "last_score": 9.25,
+  "last_verdict": "READY",
+  "status": "completed",
+  "timestamp": "2026-07-13T13:54:28+08:00",
+  "scope": "local-prior-literature refinement"
+}

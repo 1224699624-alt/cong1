@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "decisions_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\r134_train_val_review_worklist.csv",
+  "gate_pass_if_applied": false,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "csv_rows": 70,
+    "applied_decision_rows_preview": 0,
+    "notes_rows_preview": 0,
+    "skipped_blank": 70,
+    "skipped_clean_test_decisions": 0,
+    "reviewed_train_if_applied": 0,
+    "confirmed_train_if_applied": 0,
+    "reviewed_val_if_applied": 0
+  },
+  "train_decision_counts_if_applied": {
+    "blank": 64
+  },
+  "val_decision_counts_if_applied": {
+    "blank": 6
+  },
+  "next_action": "continue_review_or_fix_csv_before_apply"
+}

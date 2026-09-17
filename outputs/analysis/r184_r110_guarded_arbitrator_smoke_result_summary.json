@@ -1,0 +1,52 @@
+{
+  "run_id": "R184",
+  "status": "below_best",
+  "val_summary_path": "outputs/analysis/r184_r110_guarded_arbitrator_smoke_val_summary.json",
+  "metrics_path": "outputs/analysis/r184_r110_guarded_arbitrator_smoke_clean_test_v2_metrics.json",
+  "target_dice": 0.9317660066557425,
+  "r110_clean_dice": 0.9177231563529792,
+  "r110_clean_boundary_iou": 0.25189601044085763,
+  "mean": {
+    "dice": 0.9177231563529792,
+    "iou": 0.8485699269403064,
+    "precision": 0.9133430396452401,
+    "recall": 0.9235799440017021,
+    "specificity": 0.9970747481135067,
+    "boundary_iou": 0.25189601044085763,
+    "pred_component_count": 22.012345679012345,
+    "gt_component_count": 24.320987654320987,
+    "component_count_error": 2.506172839506173,
+    "false_bridge_flag": 0.7901234567901234,
+    "sep_fp_rate": 0.40929105699002843,
+    "edited_frac": 0.0
+  },
+  "target_margin": -0.01404285030276331,
+  "dice_delta_vs_r110": 0.0,
+  "boundary_iou_delta_vs_r110": 0.0,
+  "val_best": {
+    "zone_radius": 2,
+    "threshold": 0.55,
+    "margin": 0.25,
+    "mean": {
+      "dice": 0.8858696409083694,
+      "iou": 0.8007751191882834,
+      "precision": 0.8901503836388333,
+      "recall": 0.8904805619650954,
+      "specificity": 0.9976362234687243,
+      "boundary_iou": 0.2371042440549848,
+      "pred_component_count": 25.166666666666668,
+      "gt_component_count": 24.541666666666668,
+      "component_count_error": 2.625,
+      "false_bridge_flag": 0.375,
+      "sep_fp_rate": 0.35973605093023053,
+      "edited_frac": 0.0
+    },
+    "passes_gate": true,
+    "score": [
+      0.0,
+      0.0,
+      -0.0,
+      -0.0
+    ]
+  }
+}

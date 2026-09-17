@@ -1,0 +1,22 @@
+{
+  "train": {
+    "images": 875,
+    "annotations": 22707,
+    "skipped_small_instances": 20,
+    "json": "outputs/analysis/r191_maskdino_full_trainval_gate/coco/train.json",
+    "image_root": "outputs/analysis/r191_maskdino_full_trainval_gate/coco/train"
+  },
+  "val": {
+    "images": 96,
+    "annotations": 2449,
+    "skipped_small_instances": 5,
+    "json": "outputs/analysis/r191_maskdino_full_trainval_gate/coco/val.json",
+    "image_root": "outputs/analysis/r191_maskdino_full_trainval_gate/coco/val"
+  },
+  "constraints": {
+    "source": "data/raw/TSRS_RSNA-Epiphysis",
+    "clean_test_v2_used": false,
+    "new_or_reannotated_test_used": false,
+    "max_size": 384
+  }
+}

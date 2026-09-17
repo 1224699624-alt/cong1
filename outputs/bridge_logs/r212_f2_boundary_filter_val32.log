@@ -1,0 +1,200 @@
+r211_f1/candidates/train:   0%|          | 0/64 [00:00<?, ?it/s][R211-F1] candidates/train: 10003.png
+r211_f1/candidates/train:   2%|▏         | 1/64 [00:16<17:32, 16.71s/it][R211-F1] candidates/train: 10004.png
+r211_f1/candidates/train:   3%|▎         | 2/64 [00:33<17:29, 16.92s/it][R211-F1] candidates/train: 10015.png
+r211_f1/candidates/train:   5%|▍         | 3/64 [00:42<13:14, 13.03s/it][R211-F1] candidates/train: 10043.png
+r211_f1/candidates/train:   6%|▋         | 4/64 [00:49<10:58, 10.97s/it][R211-F1] candidates/train: 10055.png
+r211_f1/candidates/train:   8%|▊         | 5/64 [01:18<17:01, 17.31s/it][R211-F1] candidates/train: 10066.png
+r211_f1/candidates/train:   9%|▉         | 6/64 [01:30<14:54, 15.43s/it][R211-F1] candidates/train: 10144.png
+r211_f1/candidates/train:  11%|█         | 7/64 [01:48<15:35, 16.41s/it][R211-F1] candidates/train: 10390.png
+r211_f1/candidates/train:  12%|█▎        | 8/64 [01:50<10:57, 11.74s/it][R211-F1] candidates/train: 10474.png
+r211_f1/candidates/train:  14%|█▍        | 9/64 [02:21<16:09, 17.63s/it][R211-F1] candidates/train: 10526.png
+r211_f1/candidates/train:  16%|█▌        | 10/64 [02:34<14:43, 16.35s/it][R211-F1] candidates/train: 10542.png
+r211_f1/candidates/train:  17%|█▋        | 11/64 [02:43<12:33, 14.21s/it][R211-F1] candidates/train: 10621.png
+r211_f1/candidates/train:  19%|█▉        | 12/64 [02:56<11:55, 13.76s/it][R211-F1] candidates/train: 10685.png
+r211_f1/candidates/train:  20%|██        | 13/64 [03:04<10:16, 12.09s/it][R211-F1] candidates/train: 10693.png
+r211_f1/candidates/train:  22%|██▏       | 14/64 [03:13<09:07, 10.96s/it][R211-F1] candidates/train: 10727.png
+r211_f1/candidates/train:  23%|██▎       | 15/64 [03:27<09:49, 12.03s/it][R211-F1] candidates/train: 10779.png
+r211_f1/candidates/train:  25%|██▌       | 16/64 [03:37<08:58, 11.22s/it][R211-F1] candidates/train: 10833.png
+r211_f1/candidates/train:  27%|██▋       | 17/64 [03:49<09:10, 11.71s/it][R211-F1] candidates/train: 10852.png
+r211_f1/candidates/train:  28%|██▊       | 18/64 [05:22<27:38, 36.06s/it][R211-F1] candidates/train: 10910.png
+r211_f1/candidates/train:  30%|██▉       | 19/64 [05:31<20:48, 27.74s/it][R211-F1] candidates/train: 11013.png
+r211_f1/candidates/train:  31%|███▏      | 20/64 [05:47<17:51, 24.35s/it][R211-F1] candidates/train: 11023.png
+r211_f1/candidates/train:  33%|███▎      | 21/64 [05:51<13:00, 18.15s/it][R211-F1] candidates/train: 11112.png
+r211_f1/candidates/train:  34%|███▍      | 22/64 [06:05<11:57, 17.09s/it][R211-F1] candidates/train: 11115.png
+r211_f1/candidates/train:  36%|███▌      | 23/64 [06:21<11:24, 16.68s/it][R211-F1] candidates/train: 11142.png
+r211_f1/candidates/train:  38%|███▊      | 24/64 [06:27<08:59, 13.49s/it][R211-F1] candidates/train: 11152.png
+r211_f1/candidates/train:  39%|███▉      | 25/64 [06:43<09:12, 14.18s/it][R211-F1] candidates/train: 11201.png
+r211_f1/candidates/train:  41%|████      | 26/64 [06:52<08:06, 12.81s/it][R211-F1] candidates/train: 11237.png
+r211_f1/candidates/train:  42%|████▏     | 27/64 [07:03<07:33, 12.26s/it][R211-F1] candidates/train: 11283.png
+r211_f1/candidates/train:  44%|████▍     | 28/64 [07:19<07:52, 13.12s/it][R211-F1] candidates/train: 11285.png
+r211_f1/candidates/train:  45%|████▌     | 29/64 [07:26<06:41, 11.48s/it][R211-F1] candidates/train: 11336.png
+r211_f1/candidates/train:  47%|████▋     | 30/64 [07:30<05:14,  9.24s/it][R211-F1] candidates/train: 11355.png
+r211_f1/candidates/train:  48%|████▊     | 31/64 [07:41<05:21,  9.74s/it][R211-F1] candidates/train: 11382.png
+r211_f1/candidates/train:  50%|█████     | 32/64 [07:55<05:55, 11.12s/it][R211-F1] candidates/train: 11383.png
+r211_f1/candidates/train:  52%|█████▏    | 33/64 [08:04<05:16, 10.21s/it][R211-F1] candidates/train: 11488.png
+r211_f1/candidates/train:  53%|█████▎    | 34/64 [08:18<05:41, 11.37s/it][R211-F1] candidates/train: 11612.png
+r211_f1/candidates/train:  55%|█████▍    | 35/64 [08:29<05:30, 11.40s/it][R211-F1] candidates/train: 11630.png
+r211_f1/candidates/train:  56%|█████▋    | 36/64 [08:35<04:29,  9.62s/it][R211-F1] candidates/train: 11662.png
+r211_f1/candidates/train:  58%|█████▊    | 37/64 [08:42<04:03,  9.02s/it][R211-F1] candidates/train: 11666.png
+r211_f1/candidates/train:  59%|█████▉    | 38/64 [08:47<03:18,  7.65s/it][R211-F1] candidates/train: 11779.png
+r211_f1/candidates/train:  61%|██████    | 39/64 [08:56<03:26,  8.26s/it][R211-F1] candidates/train: 11784.png
+r211_f1/candidates/train:  62%|██████▎   | 40/64 [09:12<04:11, 10.46s/it][R211-F1] candidates/train: 11795.png
+r211_f1/candidates/train:  64%|██████▍   | 41/64 [09:27<04:33, 11.88s/it][R211-F1] candidates/train: 11830.png
+r211_f1/candidates/train:  66%|██████▌   | 42/64 [09:44<04:52, 13.31s/it][R211-F1] candidates/train: 11917.png
+r211_f1/candidates/train:  67%|██████▋   | 43/64 [09:53<04:14, 12.11s/it][R211-F1] candidates/train: 12074.png
+r211_f1/candidates/train:  69%|██████▉   | 44/64 [09:58<03:19,  9.99s/it][R211-F1] candidates/train: 12220.png
+r211_f1/candidates/train:  70%|███████   | 45/64 [10:08<03:08,  9.92s/it][R211-F1] candidates/train: 12257.png
+r211_f1/candidates/train:  72%|███████▏  | 46/64 [10:25<03:36, 12.01s/it][R211-F1] candidates/train: 12277.png
+r211_f1/candidates/train:  73%|███████▎  | 47/64 [10:37<03:25, 12.07s/it][R211-F1] candidates/train: 12278.png
+r211_f1/candidates/train:  75%|███████▌  | 48/64 [10:56<03:48, 14.29s/it][R211-F1] candidates/train: 12316.png
+r211_f1/candidates/train:  77%|███████▋  | 49/64 [11:10<03:32, 14.16s/it][R211-F1] candidates/train: 12329.png
+r211_f1/candidates/train:  78%|███████▊  | 50/64 [11:19<02:56, 12.64s/it][R211-F1] candidates/train: 12434.png
+r211_f1/candidates/train:  80%|███████▉  | 51/64 [11:28<02:28, 11.43s/it][R211-F1] candidates/train: 12445.png
+r211_f1/candidates/train:  81%|████████▏ | 52/64 [11:40<02:17, 11.49s/it][R211-F1] candidates/train: 12446.png
+r211_f1/candidates/train:  83%|████████▎ | 53/64 [11:54<02:15, 12.32s/it][R211-F1] candidates/train: 12449.png
+r211_f1/candidates/train:  84%|████████▍ | 54/64 [12:15<02:28, 14.83s/it][R211-F1] candidates/train: 12481.png
+r211_f1/candidates/train:  86%|████████▌ | 55/64 [12:33<02:24, 16.03s/it][R211-F1] candidates/train: 12482.png
+r211_f1/candidates/train:  88%|████████▊ | 56/64 [12:46<02:00, 15.04s/it][R211-F1] candidates/train: 12486.png
+r211_f1/candidates/train:  89%|████████▉ | 57/64 [12:51<01:24, 12.13s/it][R211-F1] candidates/train: 12522.png
+r211_f1/candidates/train:  91%|█████████ | 58/64 [13:01<01:07, 11.27s/it][R211-F1] candidates/train: 12566.png
+r211_f1/candidates/train:  92%|█████████▏| 59/64 [13:24<01:14, 14.88s/it][R211-F1] candidates/train: 12584.png
+r211_f1/candidates/train:  94%|█████████▍| 60/64 [13:36<00:56, 14.01s/it][R211-F1] candidates/train: 12585.png
+r211_f1/candidates/train:  95%|█████████▌| 61/64 [13:49<00:41, 13.80s/it][R211-F1] candidates/train: 12603.png
+r211_f1/candidates/train:  97%|█████████▋| 62/64 [13:54<00:21, 10.94s/it][R211-F1] candidates/train: 12611.png
+r211_f1/candidates/train:  98%|█████████▊| 63/64 [14:01<00:09,  9.95s/it][R211-F1] candidates/train: 12619.png
+r211_f1/candidates/train: 100%|██████████| 64/64 [14:23<00:00, 13.55s/it]r211_f1/candidates/train: 100%|██████████| 64/64 [14:23<00:00, 13.50s/it]
+r211_f1/candidates/val:   0%|          | 0/32 [00:00<?, ?it/s][R211-F1] candidates/val: 10375.png
+r211_f1/candidates/val:   3%|▎         | 1/32 [00:03<01:45,  3.39s/it][R211-F1] candidates/val: 10520.png
+r211_f1/candidates/val:   6%|▋         | 2/32 [00:10<02:48,  5.63s/it][R211-F1] candidates/val: 10618.png
+r211_f1/candidates/val:   9%|▉         | 3/32 [00:25<04:46,  9.89s/it][R211-F1] candidates/val: 10624.png
+r211_f1/candidates/val:  12%|█▎        | 4/32 [00:33<04:18,  9.21s/it][R211-F1] candidates/val: 11852.png
+r211_f1/candidates/val:  16%|█▌        | 5/32 [00:42<03:59,  8.88s/it][R211-F1] candidates/val: 11945.png
+r211_f1/candidates/val:  19%|█▉        | 6/32 [00:51<03:52,  8.93s/it][R211-F1] candidates/val: 12498.png
+r211_f1/candidates/val:  22%|██▏       | 7/32 [01:06<04:35, 11.01s/it][R211-F1] candidates/val: 12627.png
+r211_f1/candidates/val:  25%|██▌       | 8/32 [01:13<03:55,  9.80s/it][R211-F1] candidates/val: 12827.png
+r211_f1/candidates/val:  28%|██▊       | 9/32 [01:40<05:47, 15.10s/it][R211-F1] candidates/val: 13220.png
+r211_f1/candidates/val:  31%|███▏      | 10/32 [01:45<04:24, 12.01s/it][R211-F1] candidates/val: 13436.png
+r211_f1/candidates/val:  34%|███▍      | 11/32 [02:01<04:35, 13.14s/it][R211-F1] candidates/val: 13441.png
+r211_f1/candidates/val:  38%|███▊      | 12/32 [02:05<03:32, 10.61s/it][R211-F1] candidates/val: 13454.png
+r211_f1/candidates/val:  41%|████      | 13/32 [02:12<02:55,  9.26s/it][R211-F1] candidates/val: 13480.png
+r211_f1/candidates/val:  44%|████▍     | 14/32 [02:23<02:57,  9.86s/it][R211-F1] candidates/val: 13517.png
+r211_f1/candidates/val:  47%|████▋     | 15/32 [02:32<02:43,  9.61s/it][R211-F1] candidates/val: 13840.png
+r211_f1/candidates/val:  50%|█████     | 16/32 [02:44<02:43, 10.24s/it][R211-F1] candidates/val: 13867.png
+r211_f1/candidates/val:  53%|█████▎    | 17/32 [03:01<03:07, 12.50s/it][R211-F1] candidates/val: 1399.png
+r211_f1/candidates/val:  56%|█████▋    | 18/32 [03:16<03:05, 13.22s/it][R211-F1] candidates/val: 14041.png
+r211_f1/candidates/val:  59%|█████▉    | 19/32 [03:37<03:23, 15.62s/it][R211-F1] candidates/val: 1418.png
+r211_f1/candidates/val:  62%|██████▎   | 20/32 [03:50<02:57, 14.77s/it][R211-F1] candidates/val: 1452.png
+r211_f1/candidates/val:  66%|██████▌   | 21/32 [04:19<03:27, 18.88s/it][R211-F1] candidates/val: 15040.png
+r211_f1/candidates/val:  69%|██████▉   | 22/32 [04:43<03:24, 20.48s/it][R211-F1] candidates/val: 15067.png
+r211_f1/candidates/val:  72%|███████▏  | 23/32 [05:04<03:06, 20.67s/it][R211-F1] candidates/val: 1518.png
+r211_f1/candidates/val:  75%|███████▌  | 24/32 [05:07<02:01, 15.23s/it][R211-F1] candidates/val: 1522.png
+r211_f1/candidates/val:  78%|███████▊  | 25/32 [05:14<01:29, 12.77s/it][R211-F1] candidates/val: 15274.png
+r211_f1/candidates/val:  81%|████████▏ | 26/32 [05:25<01:13, 12.25s/it][R211-F1] candidates/val: 15369.png
+r211_f1/candidates/val:  84%|████████▍ | 27/32 [05:40<01:06, 13.21s/it][R211-F1] candidates/val: 15446.png
+r211_f1/candidates/val:  88%|████████▊ | 28/32 [05:50<00:48, 12.11s/it][R211-F1] candidates/val: 1560.png
+r211_f1/candidates/val:  91%|█████████ | 29/32 [06:41<01:11, 23.91s/it][R211-F1] candidates/val: 1572.png
+r211_f1/candidates/val:  94%|█████████▍| 30/32 [07:22<00:57, 28.91s/it][R211-F1] candidates/val: 1585.png
+r211_f1/candidates/val:  97%|█████████▋| 31/32 [08:23<00:38, 38.56s/it][R211-F1] candidates/val: 1590.png
+r211_f1/candidates/val: 100%|██████████| 32/32 [08:33<00:00, 30.18s/it]r211_f1/candidates/val: 100%|██████████| 32/32 [08:33<00:00, 16.06s/it]
+r211_f1/eval/val/cached:   0%|          | 0/32 [00:00<?, ?it/s][R211-F1] eval/val/cached: 10375.png
+r211_f1/eval/val/cached:   3%|▎         | 1/32 [00:05<03:02,  5.88s/it][R211-F1] eval/val/cached: 10520.png
+r211_f1/eval/val/cached:   6%|▋         | 2/32 [00:16<04:16,  8.55s/it][R211-F1] eval/val/cached: 10618.png
+r211_f1/eval/val/cached:   9%|▉         | 3/32 [00:33<06:04, 12.58s/it][R211-F1] eval/val/cached: 10624.png
+r211_f1/eval/val/cached:  12%|█▎        | 4/32 [00:45<05:43, 12.28s/it][R211-F1] eval/val/cached: 11852.png
+r211_f1/eval/val/cached:  16%|█▌        | 5/32 [00:57<05:33, 12.36s/it][R211-F1] eval/val/cached: 11945.png
+r211_f1/eval/val/cached:  19%|█▉        | 6/32 [01:12<05:43, 13.20s/it][R211-F1] eval/val/cached: 12498.png
+r211_f1/eval/val/cached:  22%|██▏       | 7/32 [01:28<05:52, 14.10s/it][R211-F1] eval/val/cached: 12627.png
+r211_f1/eval/val/cached:  25%|██▌       | 8/32 [01:36<04:47, 11.99s/it][R211-F1] eval/val/cached: 12827.png
+r211_f1/eval/val/cached:  28%|██▊       | 9/32 [02:00<06:04, 15.84s/it][R211-F1] eval/val/cached: 13220.png
+r211_f1/eval/val/cached:  31%|███▏      | 10/32 [02:07<04:48, 13.12s/it][R211-F1] eval/val/cached: 13436.png
+r211_f1/eval/val/cached:  34%|███▍      | 11/32 [02:26<05:13, 14.94s/it][R211-F1] eval/val/cached: 13441.png
+r211_f1/eval/val/cached:  38%|███▊      | 12/32 [02:33<04:07, 12.37s/it][R211-F1] eval/val/cached: 13454.png
+r211_f1/eval/val/cached:  41%|████      | 13/32 [02:39<03:21, 10.59s/it][R211-F1] eval/val/cached: 13480.png
+r211_f1/eval/val/cached:  44%|████▍     | 14/32 [02:53<03:28, 11.58s/it][R211-F1] eval/val/cached: 13517.png
+r211_f1/eval/val/cached:  47%|████▋     | 15/32 [03:02<03:03, 10.78s/it][R211-F1] eval/val/cached: 13840.png
+r211_f1/eval/val/cached:  50%|█████     | 16/32 [03:15<03:05, 11.57s/it][R211-F1] eval/val/cached: 13867.png
+r211_f1/eval/val/cached:  53%|█████▎    | 17/32 [03:30<03:07, 12.53s/it][R211-F1] eval/val/cached: 1399.png
+r211_f1/eval/val/cached:  56%|█████▋    | 18/32 [03:45<03:06, 13.32s/it][R211-F1] eval/val/cached: 14041.png
+r211_f1/eval/val/cached:  59%|█████▉    | 19/32 [04:10<03:38, 16.78s/it][R211-F1] eval/val/cached: 1418.png
+r211_f1/eval/val/cached:  62%|██████▎   | 20/32 [04:26<03:16, 16.37s/it][R211-F1] eval/val/cached: 1452.png
+r211_f1/eval/val/cached:  66%|██████▌   | 21/32 [04:58<03:52, 21.12s/it][R211-F1] eval/val/cached: 15040.png
+r211_f1/eval/val/cached:  69%|██████▉   | 22/32 [05:20<03:33, 21.38s/it][R211-F1] eval/val/cached: 15067.png
+r211_f1/eval/val/cached:  72%|███████▏  | 23/32 [05:38<03:03, 20.39s/it][R211-F1] eval/val/cached: 1518.png
+r211_f1/eval/val/cached:  75%|███████▌  | 24/32 [05:46<02:12, 16.60s/it][R211-F1] eval/val/cached: 1522.png
+r211_f1/eval/val/cached:  78%|███████▊  | 25/32 [05:55<01:42, 14.59s/it][R211-F1] eval/val/cached: 15274.png
+r211_f1/eval/val/cached:  81%|████████▏ | 26/32 [06:11<01:28, 14.81s/it][R211-F1] eval/val/cached: 15369.png
+r211_f1/eval/val/cached:  84%|████████▍ | 27/32 [06:27<01:15, 15.15s/it][R211-F1] eval/val/cached: 15446.png
+r211_f1/eval/val/cached:  88%|████████▊ | 28/32 [06:38<00:56, 14.05s/it][R211-F1] eval/val/cached: 1560.png
+r211_f1/eval/val/cached:  91%|█████████ | 29/32 [07:35<01:20, 26.98s/it][R211-F1] eval/val/cached: 1572.png
+r211_f1/eval/val/cached:  94%|█████████▍| 30/32 [08:28<01:09, 34.64s/it][R211-F1] eval/val/cached: 1585.png
+r211_f1/eval/val/cached:  97%|█████████▋| 31/32 [09:37<00:44, 44.95s/it][R211-F1] eval/val/cached: 1590.png
+r211_f1/eval/val/cached: 100%|██████████| 32/32 [09:50<00:00, 35.50s/it]                                                                        {
+  "val_gate_pass": true,
+  "best": {
+    "threshold": 0.75,
+    "mean": {
+      "accepted": 0.03125,
+      "accepted_candidate_summary": null,
+      "accepted_components": 0.03125,
+      "accepted_cut_pixels": 0.875,
+      "accepted_mean_prob": 0.8850155695094577,
+      "anchor_assd_px": 4.566438464395483,
+      "anchor_boundary_f1": 0.37079268971943224,
+      "anchor_boundary_iou": 0.23244686753264543,
+      "anchor_component_count_mae": 2.3125,
+      "anchor_component_delta_mean": 0.4375,
+      "anchor_component_merge_rate": 0.375,
+      "anchor_dice": 0.8872183813876848,
+      "anchor_gap_region_fp_rate": 0.18888729780309815,
+      "anchor_gap_region_precision": 0.8111127021969018,
+      "anchor_hd95_px": 17.316634183133875,
+      "anchor_instance_merge_count": 0.875,
+      "anchor_iou": 0.8020232707488486,
+      "anchor_precision": 0.8911476050767573,
+      "anchor_pred_component_count": 23.28125,
+      "anchor_recall": 0.8908007699078622,
+      "anchor_specificity": 0.9978195243422787,
+      "anchor_surface_dice_2px": 0.6506224389091165,
+      "anchor_surface_dice_5px": 0.9039568510951925,
+      "delta_assd_px": -1.7447897465577844e-05,
+      "delta_boundary_f1": 1.0030492697800375e-05,
+      "delta_boundary_iou": 7.441005046555579e-06,
+      "delta_component_count_mae": 0.0,
+      "delta_component_delta_mean": 0.0,
+      "delta_component_merge_rate": 0.0,
+      "delta_dice": -2.876954731112491e-07,
+      "delta_gap_region_fp_rate": -2.2033938140453204e-05,
+      "delta_gap_region_precision": 2.2033938140451903e-05,
+      "delta_hd95_px": 0.0,
+      "delta_instance_merge_count": 0.0,
+      "delta_iou": -4.771257838716292e-07,
+      "delta_precision": 1.1590334903274074e-05,
+      "delta_pred_component_count": 0.0,
+      "delta_recall": -9.366426117631e-06,
+      "delta_specificity": 2.743430836602001e-07,
+      "delta_surface_dice_2px": 1.9398696319675862e-05,
+      "delta_surface_dice_5px": -6.998361540222486e-06,
+      "num_candidates": 11.375,
+      "num_candidates_scored": 4.28125,
+      "r211_f1_assd_px": 4.566421016498017,
+      "r211_f1_boundary_f1": 0.37080272021213007,
+      "r211_f1_boundary_iou": 0.232454308537692,
+      "r211_f1_component_count_mae": 2.3125,
+      "r211_f1_component_delta_mean": 0.4375,
+      "r211_f1_component_merge_rate": 0.375,
+      "r211_f1_dice": 0.8872180936922118,
+      "r211_f1_gap_region_fp_rate": 0.1888652638649577,
+      "r211_f1_gap_region_precision": 0.8111347361350423,
+      "r211_f1_hd95_px": 17.316634183133875,
+      "r211_f1_instance_merge_count": 0.875,
+      "r211_f1_iou": 0.8020227936230648,
+      "r211_f1_precision": 0.8911591954116607,
+      "r211_f1_pred_component_count": 23.28125,
+      "r211_f1_recall": 0.8907914034817446,
+      "r211_f1_specificity": 0.9978197986853625,
+      "r211_f1_surface_dice_2px": 0.6506418376054361,
+      "r211_f1_surface_dice_5px": 0.9039498527336522
+    },
+    "gate_pass": true
+  }
+}

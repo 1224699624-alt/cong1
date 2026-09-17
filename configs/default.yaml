@@ -1,0 +1,5 @@
+raw_data_dir: data/raw
+yolo_data_dir: data/yolo
+outputs_dir: outputs
+class_names:
+  - bone_region

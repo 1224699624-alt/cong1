@@ -1,0 +1,22 @@
+{
+  "output_json": "outputs/analysis/r251_reverse_background_channel_smoke.json",
+  "timestamped_output_json": "outputs/analysis/r251_reverse_background_channel_smoke_20260710_152156.json",
+  "model_path": "outputs/models/r251_reverse_background_channel_smoke.pkl",
+  "sanity_gate": {
+    "same_split_overfit": true,
+    "exact_case_identity": true,
+    "complete_case_set": true,
+    "min_roc_auc": 0.75,
+    "min_average_precision": 0.75,
+    "min_probability_range": 0.25,
+    "passed": true
+  },
+  "eval": {
+    "used_images": 8,
+    "num_samples": 65536,
+    "roc_auc": 0.9366137301549315,
+    "average_precision": 0.9188819605201484,
+    "prob_min": 0.0007435271982103586,
+    "prob_max": 0.9983167052268982
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "R168",
+  "audit_json": "outputs\\analysis\\r163_reannotated_pair_shift.json",
+  "original_root": "data\\raw\\TSRS_RSNA-Epiphysis",
+  "reannotated_root": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1",
+  "output_dir": "outputs\\analysis\\r168_reannotation_protocol_review_package",
+  "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "review_html": "outputs\\analysis\\r168_reannotation_protocol_review_package\\R168_REANNOTATION_PROTOCOL_REVIEW.html",
+  "readme": "outputs\\analysis\\r168_reannotation_protocol_review_package\\R168_REANNOTATION_PROTOCOL_REVIEW.md",
+  "reviewed_export_name": "r168_reannotation_protocol_review_reviewed.csv",
+  "counts": {
+    "train": 80,
+    "val": 16
+  },
+  "priority_reason_counts": {
+    "新标注为空": 5,
+    "新标注面积明显膨胀": 19,
+    "新标注面积明显缩小": 5,
+    "原标签和新标注重合度低": 36,
+    "连通域数量变化很大": 7,
+    "协议差异候选": 24
+  },
+  "policy": {
+    "uses_clean_test_v2": false,
+    "uses_reannotated_test": false,
+    "mutates_dataset": false,
+    "next_gate": "human_decisions_or_corrected_pngs_required_before_training"
+  }
+}

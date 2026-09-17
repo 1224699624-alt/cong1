@@ -1,0 +1,697 @@
+[R265] prepare dataset 2026-07-16T16:23:10+08:00
+{"dataset": "outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_raw/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D", "train": 875, "val": 96, "channels": 13}
+Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Extracting dataset fingerprint:   0%|          | 0/971 [00:00<?, ?it/s]Extracting dataset fingerprint:   0%|          | 1/971 [00:03<50:21,  3.11s/it]Extracting dataset fingerprint:   0%|          | 2/971 [00:03<21:40,  1.34s/it]Extracting dataset fingerprint:   0%|          | 4/971 [00:03<08:35,  1.88it/s]Extracting dataset fingerprint:   1%|          | 7/971 [00:03<03:58,  4.05it/s]Extracting dataset fingerprint:   1%|          | 9/971 [00:03<02:51,  5.62it/s]Extracting dataset fingerprint:   1%|          | 11/971 [00:03<02:10,  7.36it/s]Extracting dataset fingerprint:   1%|▏         | 14/971 [00:03<01:29, 10.67it/s]Extracting dataset fingerprint:   2%|▏         | 17/971 [00:03<01:08, 14.01it/s]Extracting dataset fingerprint:   2%|▏         | 20/971 [00:03<00:55, 17.13it/s]Extracting dataset fingerprint:   2%|▏         | 23/971 [00:04<00:58, 16.20it/s]Extracting dataset fingerprint:   3%|▎         | 26/971 [00:04<00:49, 18.93it/s]Extracting dataset fingerprint:   3%|▎         | 29/971 [00:04<00:44, 21.03it/s]Extracting dataset fingerprint:   3%|▎         | 32/971 [00:04<00:50, 18.53it/s]Extracting dataset fingerprint:   4%|▎         | 35/971 [00:04<00:44, 20.88it/s]Extracting dataset fingerprint:   4%|▍         | 38/971 [00:04<00:40, 22.94it/s]Extracting dataset fingerprint:   4%|▍         | 41/971 [00:04<00:47, 19.62it/s]Extracting dataset fingerprint:   5%|▍         | 44/971 [00:05<00:42, 21.86it/s]Extracting dataset fingerprint:   5%|▍         | 47/971 [00:05<00:48, 19.12it/s]Extracting dataset fingerprint:   5%|▌         | 50/971 [00:05<00:43, 21.41it/s]Extracting dataset fingerprint:   6%|▌         | 54/971 [00:05<00:44, 20.74it/s]Extracting dataset fingerprint:   6%|▌         | 57/971 [00:05<00:40, 22.63it/s]Extracting dataset fingerprint:   6%|▌         | 60/971 [00:05<00:37, 24.18it/s]Extracting dataset fingerprint:   6%|▋         | 63/971 [00:05<00:35, 25.28it/s]Extracting dataset fingerprint:   7%|▋         | 66/971 [00:06<00:43, 20.88it/s]Extracting dataset fingerprint:   7%|▋         | 69/971 [00:06<00:39, 22.88it/s]Extracting dataset fingerprint:   8%|▊         | 73/971 [00:06<00:33, 26.55it/s]Extracting dataset fingerprint:   8%|▊         | 76/971 [00:06<00:41, 21.70it/s]Extracting dataset fingerprint:   8%|▊         | 79/971 [00:06<00:38, 23.45it/s]Extracting dataset fingerprint:   8%|▊         | 82/971 [00:06<00:35, 24.87it/s]Extracting dataset fingerprint:   9%|▉         | 85/971 [00:06<00:34, 26.03it/s]Extracting dataset fingerprint:   9%|▉         | 88/971 [00:07<00:41, 21.08it/s]Extracting dataset fingerprint:   9%|▉         | 91/971 [00:07<00:38, 22.78it/s]Extracting dataset fingerprint:  10%|▉         | 94/971 [00:07<00:35, 24.43it/s]Extracting dataset fingerprint:  10%|▉         | 97/971 [00:07<00:43, 20.31it/s]Extracting dataset fingerprint:  10%|█         | 100/971 [00:07<00:38, 22.40it/s]Extracting dataset fingerprint:  11%|█         | 103/971 [00:07<00:44, 19.45it/s]Extracting dataset fingerprint:  11%|█         | 106/971 [00:07<00:48, 17.71it/s]Extracting dataset fingerprint:  11%|█         | 108/971 [00:08<00:57, 15.07it/s]Extracting dataset fingerprint:  11%|█▏        | 110/971 [00:08<00:53, 15.97it/s]Extracting dataset fingerprint:  12%|█▏        | 112/971 [00:08<00:51, 16.75it/s]Extracting dataset fingerprint:  12%|█▏        | 114/971 [00:08<01:00, 14.14it/s]Extracting dataset fingerprint:  12%|█▏        | 116/971 [00:08<00:55, 15.35it/s]Extracting dataset fingerprint:  12%|█▏        | 118/971 [00:08<00:52, 16.35it/s]Extracting dataset fingerprint:  12%|█▏        | 120/971 [00:08<00:49, 17.19it/s]Extracting dataset fingerprint:  13%|█▎        | 122/971 [00:08<00:47, 17.87it/s]Extracting dataset fingerprint:  13%|█▎        | 124/971 [00:09<00:58, 14.38it/s]Extracting dataset fingerprint:  13%|█▎        | 126/971 [00:09<00:54, 15.59it/s]Extracting dataset fingerprint:  13%|█▎        | 128/971 [00:09<00:50, 16.61it/s]Extracting dataset fingerprint:  13%|█▎        | 130/971 [00:09<00:48, 17.44it/s]Extracting dataset fingerprint:  14%|█▎        | 132/971 [00:09<00:46, 18.08it/s]Extracting dataset fingerprint:  14%|█▍        | 134/971 [00:09<00:57, 14.48it/s]Extracting dataset fingerprint:  14%|█▍        | 137/971 [00:09<00:46, 18.09it/s]Extracting dataset fingerprint:  14%|█▍        | 140/971 [00:10<00:59, 13.95it/s]Extracting dataset fingerprint:  15%|█▍        | 142/971 [00:10<00:54, 15.09it/s]Extracting dataset fingerprint:  15%|█▍        | 144/971 [00:10<00:51, 16.08it/s]Extracting dataset fingerprint:  15%|█▌        | 146/971 [00:10<00:48, 16.93it/s]Extracting dataset fingerprint:  15%|█▌        | 148/971 [00:10<00:58, 14.10it/s]Extracting dataset fingerprint:  15%|█▌        | 150/971 [00:10<01:05, 12.55it/s]Extracting dataset fingerprint:  16%|█▌        | 152/971 [00:10<00:58, 13.98it/s]Extracting dataset fingerprint:  16%|█▌        | 154/971 [00:11<00:53, 15.29it/s]Extracting dataset fingerprint:  16%|█▌        | 157/971 [00:11<00:43, 18.82it/s]Extracting dataset fingerprint:  16%|█▋        | 160/971 [00:11<00:47, 17.18it/s]Extracting dataset fingerprint:  17%|█▋        | 162/971 [00:11<00:45, 17.76it/s]Extracting dataset fingerprint:  17%|█▋        | 165/971 [00:11<00:48, 16.48it/s]Extracting dataset fingerprint:  17%|█▋        | 168/971 [00:11<00:41, 19.36it/s]Extracting dataset fingerprint:  18%|█▊        | 171/971 [00:12<00:54, 14.80it/s]Extracting dataset fingerprint:  18%|█▊        | 173/971 [00:12<00:50, 15.67it/s]Extracting dataset fingerprint:  18%|█▊        | 176/971 [00:12<01:00, 13.09it/s]Extracting dataset fingerprint:  18%|█▊        | 179/971 [00:12<00:49, 15.97it/s]Extracting dataset fingerprint:  19%|█▊        | 182/971 [00:12<00:42, 18.70it/s]Extracting dataset fingerprint:  19%|█▉        | 185/971 [00:12<00:45, 17.29it/s]Extracting dataset fingerprint:  19%|█▉        | 188/971 [00:13<00:47, 16.45it/s]Extracting dataset fingerprint:  20%|█▉        | 190/971 [00:13<00:45, 17.09it/s]Extracting dataset fingerprint:  20%|█▉        | 192/971 [00:13<00:44, 17.67it/s]Extracting dataset fingerprint:  20%|██        | 195/971 [00:13<00:46, 16.59it/s]Extracting dataset fingerprint:  20%|██        | 197/971 [00:13<00:54, 14.20it/s]Extracting dataset fingerprint:  20%|██        | 199/971 [00:13<00:50, 15.31it/s]Extracting dataset fingerprint:  21%|██        | 202/971 [00:13<00:41, 18.44it/s]Extracting dataset fingerprint:  21%|██        | 205/971 [00:14<00:45, 17.01it/s]Extracting dataset fingerprint:  21%|██▏       | 207/971 [00:14<00:43, 17.60it/s]Extracting dataset fingerprint:  22%|██▏       | 209/971 [00:14<00:42, 18.07it/s]Extracting dataset fingerprint:  22%|██▏       | 212/971 [00:14<00:36, 20.99it/s]Extracting dataset fingerprint:  22%|██▏       | 215/971 [00:14<00:41, 18.40it/s]Extracting dataset fingerprint:  22%|██▏       | 218/971 [00:14<00:44, 17.05it/s]Extracting dataset fingerprint:  23%|██▎       | 221/971 [00:14<00:38, 19.71it/s]Extracting dataset fingerprint:  23%|██▎       | 224/971 [00:15<00:41, 17.89it/s]Extracting dataset fingerprint:  23%|██▎       | 226/971 [00:15<00:40, 18.28it/s]Extracting dataset fingerprint:  23%|██▎       | 228/971 [00:15<00:40, 18.56it/s]Extracting dataset fingerprint:  24%|██▎       | 230/971 [00:15<00:39, 18.85it/s]Extracting dataset fingerprint:  24%|██▍       | 232/971 [00:15<00:48, 15.12it/s]Extracting dataset fingerprint:  24%|██▍       | 234/971 [00:15<00:45, 16.17it/s]Extracting dataset fingerprint:  24%|██▍       | 236/971 [00:15<00:43, 16.87it/s]Extracting dataset fingerprint:  25%|██▍       | 238/971 [00:15<00:41, 17.62it/s]Extracting dataset fingerprint:  25%|██▍       | 240/971 [00:16<00:51, 14.31it/s]Extracting dataset fingerprint:  25%|██▍       | 242/971 [00:16<00:46, 15.55it/s]Extracting dataset fingerprint:  25%|██▌       | 245/971 [00:16<00:47, 15.25it/s]Extracting dataset fingerprint:  25%|██▌       | 247/971 [00:16<00:44, 16.22it/s]Extracting dataset fingerprint:  26%|██▌       | 249/971 [00:16<00:42, 17.08it/s]Extracting dataset fingerprint:  26%|██▌       | 251/971 [00:16<00:40, 17.77it/s]Extracting dataset fingerprint:  26%|██▌       | 253/971 [00:16<00:39, 18.31it/s]Extracting dataset fingerprint:  26%|██▋       | 255/971 [00:16<00:38, 18.65it/s]Extracting dataset fingerprint:  26%|██▋       | 257/971 [00:17<00:37, 18.93it/s]Extracting dataset fingerprint:  27%|██▋       | 259/971 [00:17<00:37, 19.14it/s]Extracting dataset fingerprint:  27%|██▋       | 261/971 [00:17<00:36, 19.30it/s]Extracting dataset fingerprint:  27%|██▋       | 263/971 [00:17<00:47, 15.01it/s]Extracting dataset fingerprint:  27%|██▋       | 265/971 [00:17<00:43, 16.16it/s]Extracting dataset fingerprint:  28%|██▊       | 269/971 [00:17<00:47, 14.65it/s]Extracting dataset fingerprint:  28%|██▊       | 271/971 [00:17<00:44, 15.64it/s]Extracting dataset fingerprint:  28%|██▊       | 273/971 [00:18<00:42, 16.53it/s]Extracting dataset fingerprint:  28%|██▊       | 275/971 [00:18<00:40, 17.28it/s]Extracting dataset fingerprint:  29%|██▊       | 278/971 [00:18<00:33, 20.39it/s]Extracting dataset fingerprint:  29%|██▉       | 281/971 [00:18<00:30, 22.86it/s]Extracting dataset fingerprint:  29%|██▉       | 284/971 [00:18<00:35, 19.33it/s]Extracting dataset fingerprint:  30%|██▉       | 287/971 [00:18<00:31, 21.65it/s]Extracting dataset fingerprint:  30%|██▉       | 290/971 [00:19<00:43, 15.73it/s]Extracting dataset fingerprint:  30%|███       | 292/971 [00:19<00:41, 16.38it/s]Extracting dataset fingerprint:  30%|███       | 296/971 [00:19<00:31, 21.31it/s]Extracting dataset fingerprint:  31%|███       | 299/971 [00:19<00:35, 18.84it/s]Extracting dataset fingerprint:  31%|███       | 302/971 [00:19<00:31, 21.14it/s]Extracting dataset fingerprint:  31%|███▏      | 305/971 [00:19<00:28, 23.13it/s]Extracting dataset fingerprint:  32%|███▏      | 308/971 [00:19<00:26, 24.77it/s]Extracting dataset fingerprint:  32%|███▏      | 311/971 [00:19<00:32, 20.62it/s]Extracting dataset fingerprint:  32%|███▏      | 314/971 [00:20<00:35, 18.46it/s]Extracting dataset fingerprint:  33%|███▎      | 317/971 [00:20<00:31, 20.81it/s]Extracting dataset fingerprint:  33%|███▎      | 320/971 [00:20<00:41, 15.54it/s]Extracting dataset fingerprint:  33%|███▎      | 322/971 [00:20<00:39, 16.32it/s]Extracting dataset fingerprint:  34%|███▎      | 326/971 [00:20<00:30, 21.09it/s]Extracting dataset fingerprint:  34%|███▍      | 329/971 [00:20<00:34, 18.79it/s]Extracting dataset fingerprint:  34%|███▍      | 332/971 [00:21<00:30, 21.08it/s]Extracting dataset fingerprint:  35%|███▍      | 335/971 [00:21<00:33, 18.73it/s]Extracting dataset fingerprint:  35%|███▍      | 338/971 [00:21<00:36, 17.28it/s]Extracting dataset fingerprint:  35%|███▌      | 343/971 [00:21<00:26, 23.65it/s]Extracting dataset fingerprint:  36%|███▌      | 346/971 [00:21<00:25, 24.99it/s]Extracting dataset fingerprint:  36%|███▌      | 349/971 [00:21<00:23, 26.11it/s]Extracting dataset fingerprint:  36%|███▋      | 352/971 [00:22<00:34, 17.80it/s]Extracting dataset fingerprint:  37%|███▋      | 355/971 [00:22<00:30, 20.05it/s]Extracting dataset fingerprint:  37%|███▋      | 358/971 [00:22<00:27, 22.05it/s]Extracting dataset fingerprint:  37%|███▋      | 361/971 [00:22<00:31, 19.21it/s]Extracting dataset fingerprint:  37%|███▋      | 364/971 [00:22<00:34, 17.61it/s]Extracting dataset fingerprint:  38%|███▊      | 367/971 [00:22<00:30, 19.94it/s]Extracting dataset fingerprint:  38%|███▊      | 370/971 [00:22<00:33, 17.96it/s]Extracting dataset fingerprint:  38%|███▊      | 373/971 [00:23<00:29, 20.34it/s]Extracting dataset fingerprint:  39%|███▊      | 376/971 [00:23<00:26, 22.22it/s]Extracting dataset fingerprint:  39%|███▉      | 379/971 [00:23<00:30, 19.30it/s]Extracting dataset fingerprint:  39%|███▉      | 382/971 [00:23<00:27, 21.51it/s]Extracting dataset fingerprint:  40%|███▉      | 385/971 [00:23<00:36, 15.91it/s]Extracting dataset fingerprint:  40%|███▉      | 387/971 [00:23<00:35, 16.61it/s]Extracting dataset fingerprint:  40%|████      | 389/971 [00:23<00:33, 17.26it/s]Extracting dataset fingerprint:  40%|████      | 391/971 [00:24<00:47, 12.19it/s]Extracting dataset fingerprint:  40%|████      | 393/971 [00:24<00:50, 11.47it/s]Extracting dataset fingerprint:  41%|████      | 395/971 [00:24<00:44, 12.96it/s]Extracting dataset fingerprint:  41%|████      | 398/971 [00:24<00:42, 13.60it/s]Extracting dataset fingerprint:  41%|████      | 400/971 [00:25<00:53, 10.63it/s]Extracting dataset fingerprint:  42%|████▏     | 403/971 [00:25<00:41, 13.80it/s]Extracting dataset fingerprint:  42%|████▏     | 405/971 [00:25<00:37, 14.93it/s]Extracting dataset fingerprint:  42%|████▏     | 407/971 [00:25<00:50, 11.15it/s]Extracting dataset fingerprint:  42%|████▏     | 409/971 [00:25<00:44, 12.65it/s]Extracting dataset fingerprint:  42%|████▏     | 411/971 [00:25<00:39, 14.07it/s]Extracting dataset fingerprint:  43%|████▎     | 413/971 [00:25<00:36, 15.33it/s]Extracting dataset fingerprint:  43%|████▎     | 415/971 [00:26<00:42, 13.21it/s]Extracting dataset fingerprint:  43%|████▎     | 417/971 [00:26<00:37, 14.62it/s]Extracting dataset fingerprint:  43%|████▎     | 419/971 [00:26<00:43, 12.79it/s]Extracting dataset fingerprint:  43%|████▎     | 421/971 [00:26<00:46, 11.76it/s]Extracting dataset fingerprint:  44%|████▎     | 423/971 [00:26<00:49, 11.13it/s]Extracting dataset fingerprint:  44%|████▍     | 425/971 [00:26<00:42, 12.77it/s]Extracting dataset fingerprint:  44%|████▍     | 428/971 [00:27<00:40, 13.50it/s]Extracting dataset fingerprint:  44%|████▍     | 430/971 [00:27<00:36, 14.76it/s]Extracting dataset fingerprint:  44%|████▍     | 432/971 [00:27<00:41, 12.96it/s]Extracting dataset fingerprint:  45%|████▍     | 434/971 [00:27<00:37, 14.36it/s]Extracting dataset fingerprint:  45%|████▍     | 436/971 [00:27<00:34, 15.59it/s]Extracting dataset fingerprint:  45%|████▌     | 438/971 [00:27<00:39, 13.33it/s]Extracting dataset fingerprint:  45%|████▌     | 440/971 [00:28<00:51, 10.24it/s]Extracting dataset fingerprint:  46%|████▌     | 442/971 [00:28<01:00,  8.78it/s]Extracting dataset fingerprint:  46%|████▌     | 445/971 [00:28<00:43, 12.08it/s]Extracting dataset fingerprint:  46%|████▌     | 447/971 [00:28<00:46, 11.39it/s]Extracting dataset fingerprint:  46%|████▌     | 449/971 [00:28<00:47, 10.88it/s]Extracting dataset fingerprint:  47%|████▋     | 452/971 [00:29<00:36, 14.22it/s]Extracting dataset fingerprint:  47%|████▋     | 454/971 [00:29<00:54,  9.53it/s]Extracting dataset fingerprint:  47%|████▋     | 456/971 [00:29<00:46, 11.08it/s]Extracting dataset fingerprint:  47%|████▋     | 458/971 [00:29<00:40, 12.62it/s]Extracting dataset fingerprint:  47%|████▋     | 460/971 [00:29<00:44, 11.61it/s]Extracting dataset fingerprint:  48%|████▊     | 462/971 [00:30<01:00,  8.35it/s]Extracting dataset fingerprint:  48%|████▊     | 464/971 [00:30<00:50, 10.04it/s]Extracting dataset fingerprint:  48%|████▊     | 466/971 [00:30<00:43, 11.74it/s]Extracting dataset fingerprint:  48%|████▊     | 468/971 [00:30<00:45, 11.12it/s]Extracting dataset fingerprint:  48%|████▊     | 470/971 [00:31<00:54,  9.23it/s]Extracting dataset fingerprint:  49%|████▊     | 472/971 [00:31<00:45, 10.96it/s]Extracting dataset fingerprint:  49%|████▉     | 474/971 [00:31<00:39, 12.59it/s]Extracting dataset fingerprint:  49%|████▉     | 476/971 [00:31<00:50,  9.89it/s]Extracting dataset fingerprint:  49%|████▉     | 478/971 [00:31<00:42, 11.63it/s]Extracting dataset fingerprint:  49%|████▉     | 480/971 [00:31<00:37, 13.26it/s]Extracting dataset fingerprint:  50%|████▉     | 482/971 [00:31<00:33, 14.70it/s]Extracting dataset fingerprint:  50%|████▉     | 484/971 [00:32<00:45, 10.64it/s]Extracting dataset fingerprint:  50%|█████     | 486/971 [00:32<00:39, 12.33it/s]Extracting dataset fingerprint:  50%|█████     | 488/971 [00:32<00:42, 11.48it/s]Extracting dataset fingerprint:  50%|█████     | 490/971 [00:32<00:44, 10.89it/s]Extracting dataset fingerprint:  51%|█████     | 492/971 [00:32<00:38, 12.55it/s]Extracting dataset fingerprint:  51%|█████     | 494/971 [00:32<00:41, 11.54it/s]Extracting dataset fingerprint:  51%|█████     | 496/971 [00:33<00:36, 13.17it/s]Extracting dataset fingerprint:  51%|█████▏    | 498/971 [00:33<00:39, 11.95it/s]Extracting dataset fingerprint:  51%|█████▏    | 500/971 [00:33<00:42, 11.19it/s]Extracting dataset fingerprint:  52%|█████▏    | 502/971 [00:33<00:36, 12.85it/s]Extracting dataset fingerprint:  52%|█████▏    | 504/971 [00:33<00:39, 11.79it/s]Extracting dataset fingerprint:  52%|█████▏    | 506/971 [00:33<00:41, 11.14it/s]Extracting dataset fingerprint:  52%|█████▏    | 508/971 [00:34<00:36, 12.74it/s]Extracting dataset fingerprint:  53%|█████▎    | 510/971 [00:34<00:32, 14.24it/s]Extracting dataset fingerprint:  53%|█████▎    | 512/971 [00:34<00:43, 10.56it/s]Extracting dataset fingerprint:  53%|█████▎    | 514/971 [00:34<00:37, 12.25it/s]Extracting dataset fingerprint:  53%|█████▎    | 516/971 [00:34<00:32, 13.82it/s]Extracting dataset fingerprint:  53%|█████▎    | 518/971 [00:35<00:50,  8.99it/s]Extracting dataset fingerprint:  54%|█████▎    | 520/971 [00:35<00:48,  9.24it/s]Extracting dataset fingerprint:  54%|█████▍    | 522/971 [00:35<00:40, 10.99it/s]Extracting dataset fingerprint:  54%|█████▍    | 524/971 [00:35<00:35, 12.67it/s]Extracting dataset fingerprint:  54%|█████▍    | 526/971 [00:35<00:31, 14.09it/s]Extracting dataset fingerprint:  54%|█████▍    | 528/971 [00:35<00:28, 15.40it/s]Extracting dataset fingerprint:  55%|█████▍    | 530/971 [00:35<00:26, 16.45it/s]Extracting dataset fingerprint:  55%|█████▍    | 532/971 [00:35<00:25, 17.29it/s]Extracting dataset fingerprint:  55%|█████▌    | 535/971 [00:35<00:21, 20.65it/s]Extracting dataset fingerprint:  55%|█████▌    | 538/971 [00:36<00:24, 17.95it/s]Extracting dataset fingerprint:  56%|█████▌    | 541/971 [00:36<00:20, 20.72it/s]Extracting dataset fingerprint:  56%|█████▌    | 544/971 [00:36<00:18, 22.95it/s]Extracting dataset fingerprint:  56%|█████▋    | 547/971 [00:36<00:17, 24.61it/s]Extracting dataset fingerprint:  57%|█████▋    | 550/971 [00:36<00:20, 20.40it/s]Extracting dataset fingerprint:  57%|█████▋    | 553/971 [00:36<00:18, 22.56it/s]Extracting dataset fingerprint:  57%|█████▋    | 556/971 [00:36<00:17, 24.30it/s]Extracting dataset fingerprint:  58%|█████▊    | 559/971 [00:37<00:16, 25.68it/s]Extracting dataset fingerprint:  58%|█████▊    | 562/971 [00:37<00:15, 26.75it/s]Extracting dataset fingerprint:  58%|█████▊    | 565/971 [00:37<00:14, 27.50it/s]Extracting dataset fingerprint:  58%|█████▊    | 568/971 [00:37<00:18, 21.74it/s]Extracting dataset fingerprint:  59%|█████▉    | 572/971 [00:37<00:15, 25.99it/s]Extracting dataset fingerprint:  59%|█████▉    | 575/971 [00:37<00:14, 26.88it/s]Extracting dataset fingerprint:  60%|█████▉    | 578/971 [00:37<00:14, 27.65it/s]Extracting dataset fingerprint:  60%|█████▉    | 581/971 [00:37<00:13, 28.16it/s]Extracting dataset fingerprint:  60%|██████    | 584/971 [00:37<00:13, 28.60it/s]Extracting dataset fingerprint:  60%|██████    | 587/971 [00:38<00:17, 22.38it/s]Extracting dataset fingerprint:  61%|██████    | 591/971 [00:38<00:14, 26.48it/s]Extracting dataset fingerprint:  61%|██████    | 594/971 [00:38<00:13, 27.15it/s]Extracting dataset fingerprint:  61%|██████▏   | 597/971 [00:38<00:13, 27.67it/s]Extracting dataset fingerprint:  62%|██████▏   | 600/971 [00:38<00:16, 22.02it/s]Extracting dataset fingerprint:  62%|██████▏   | 603/971 [00:38<00:15, 23.56it/s]Extracting dataset fingerprint:  62%|██████▏   | 606/971 [00:38<00:18, 20.10it/s]Extracting dataset fingerprint:  63%|██████▎   | 609/971 [00:39<00:16, 22.22it/s]Extracting dataset fingerprint:  63%|██████▎   | 612/971 [00:39<00:18, 19.28it/s]Extracting dataset fingerprint:  63%|██████▎   | 615/971 [00:39<00:16, 21.49it/s]Extracting dataset fingerprint:  64%|██████▎   | 618/971 [00:39<00:15, 22.65it/s]Extracting dataset fingerprint:  64%|██████▍   | 621/971 [00:39<00:14, 24.36it/s]Extracting dataset fingerprint:  64%|██████▍   | 624/971 [00:39<00:13, 25.71it/s]Extracting dataset fingerprint:  65%|██████▍   | 627/971 [00:39<00:12, 26.75it/s]Extracting dataset fingerprint:  65%|██████▍   | 630/971 [00:39<00:12, 27.07it/s]Extracting dataset fingerprint:  65%|██████▌   | 633/971 [00:39<00:12, 27.77it/s]Extracting dataset fingerprint:  65%|██████▌   | 636/971 [00:40<00:15, 22.01it/s]Extracting dataset fingerprint:  66%|██████▌   | 640/971 [00:40<00:12, 26.18it/s]Extracting dataset fingerprint:  66%|██████▌   | 643/971 [00:40<00:12, 26.84it/s]Extracting dataset fingerprint:  67%|██████▋   | 646/971 [00:40<00:14, 21.79it/s]Extracting dataset fingerprint:  67%|██████▋   | 650/971 [00:40<00:12, 25.91it/s]Extracting dataset fingerprint:  67%|██████▋   | 653/971 [00:40<00:11, 26.86it/s]Extracting dataset fingerprint:  68%|██████▊   | 656/971 [00:41<00:14, 21.79it/s]Extracting dataset fingerprint:  68%|██████▊   | 660/971 [00:41<00:12, 25.81it/s]Extracting dataset fingerprint:  68%|██████▊   | 663/971 [00:41<00:11, 26.74it/s]Extracting dataset fingerprint:  69%|██████▊   | 666/971 [00:41<00:11, 27.51it/s]Extracting dataset fingerprint:  69%|██████▉   | 670/971 [00:41<00:09, 30.79it/s]Extracting dataset fingerprint:  69%|██████▉   | 674/971 [00:41<00:08, 33.21it/s]Extracting dataset fingerprint:  70%|██████▉   | 678/971 [00:41<00:08, 34.98it/s]Extracting dataset fingerprint:  70%|███████   | 682/971 [00:41<00:07, 36.22it/s]Extracting dataset fingerprint:  71%|███████   | 686/971 [00:41<00:09, 28.80it/s]Extracting dataset fingerprint:  71%|███████   | 690/971 [00:42<00:13, 21.15it/s]Extracting dataset fingerprint:  71%|███████▏  | 693/971 [00:42<00:12, 22.79it/s]Extracting dataset fingerprint:  72%|███████▏  | 696/971 [00:42<00:13, 19.76it/s]Extracting dataset fingerprint:  72%|███████▏  | 700/971 [00:42<00:11, 23.53it/s]Extracting dataset fingerprint:  72%|███████▏  | 703/971 [00:42<00:10, 24.47it/s]Extracting dataset fingerprint:  73%|███████▎  | 706/971 [00:42<00:12, 20.73it/s]Extracting dataset fingerprint:  73%|███████▎  | 709/971 [00:43<00:14, 18.58it/s]Extracting dataset fingerprint:  73%|███████▎  | 712/971 [00:43<00:12, 20.81it/s]Extracting dataset fingerprint:  74%|███████▎  | 715/971 [00:43<00:13, 18.62it/s]Extracting dataset fingerprint:  74%|███████▍  | 718/971 [00:43<00:12, 20.83it/s]Extracting dataset fingerprint:  74%|███████▍  | 721/971 [00:43<00:13, 18.58it/s]Extracting dataset fingerprint:  75%|███████▍  | 724/971 [00:43<00:11, 20.83it/s]Extracting dataset fingerprint:  75%|███████▍  | 727/971 [00:44<00:13, 18.61it/s]Extracting dataset fingerprint:  75%|███████▌  | 730/971 [00:44<00:14, 17.20it/s]Extracting dataset fingerprint:  75%|███████▌  | 732/971 [00:44<00:13, 17.65it/s]Extracting dataset fingerprint:  76%|███████▌  | 734/971 [00:44<00:13, 18.12it/s]Extracting dataset fingerprint:  76%|███████▌  | 736/971 [00:44<00:15, 14.95it/s]Extracting dataset fingerprint:  76%|███████▌  | 738/971 [00:44<00:14, 15.93it/s]Extracting dataset fingerprint:  76%|███████▌  | 740/971 [00:44<00:13, 16.81it/s]Extracting dataset fingerprint:  76%|███████▋  | 742/971 [00:45<00:16, 14.03it/s]Extracting dataset fingerprint:  77%|███████▋  | 746/971 [00:45<00:11, 19.73it/s]Extracting dataset fingerprint:  77%|███████▋  | 749/971 [00:45<00:10, 22.15it/s]Extracting dataset fingerprint:  77%|███████▋  | 752/971 [00:45<00:09, 23.99it/s]Extracting dataset fingerprint:  78%|███████▊  | 755/971 [00:45<00:12, 16.63it/s]Extracting dataset fingerprint:  78%|███████▊  | 758/971 [00:45<00:11, 19.24it/s]Extracting dataset fingerprint:  78%|███████▊  | 761/971 [00:45<00:11, 17.66it/s]Extracting dataset fingerprint:  79%|███████▊  | 764/971 [00:46<00:10, 20.06it/s]Extracting dataset fingerprint:  79%|███████▉  | 767/971 [00:46<00:11, 18.07it/s]Extracting dataset fingerprint:  79%|███████▉  | 770/971 [00:46<00:09, 20.43it/s]Extracting dataset fingerprint:  80%|███████▉  | 773/971 [00:46<00:08, 22.49it/s]Extracting dataset fingerprint:  80%|███████▉  | 776/971 [00:46<00:10, 19.34it/s]Extracting dataset fingerprint:  80%|████████  | 780/971 [00:46<00:08, 23.76it/s]Extracting dataset fingerprint:  81%|████████  | 783/971 [00:47<00:09, 20.32it/s]Extracting dataset fingerprint:  81%|████████  | 786/971 [00:47<00:08, 22.32it/s]Extracting dataset fingerprint:  81%|████████▏ | 789/971 [00:47<00:07, 23.95it/s]Extracting dataset fingerprint:  82%|████████▏ | 792/971 [00:47<00:07, 25.26it/s]Extracting dataset fingerprint:  82%|████████▏ | 795/971 [00:47<00:06, 26.40it/s]Extracting dataset fingerprint:  82%|████████▏ | 798/971 [00:47<00:08, 21.41it/s]Extracting dataset fingerprint:  82%|████████▏ | 801/971 [00:47<00:09, 18.84it/s]Extracting dataset fingerprint:  83%|████████▎ | 804/971 [00:47<00:07, 21.11it/s]Extracting dataset fingerprint:  83%|████████▎ | 807/971 [00:48<00:07, 23.12it/s]Extracting dataset fingerprint:  83%|████████▎ | 810/971 [00:48<00:08, 19.72it/s]Extracting dataset fingerprint:  84%|████████▎ | 813/971 [00:48<00:07, 21.63it/s]Extracting dataset fingerprint:  84%|████████▍ | 816/971 [00:48<00:06, 23.37it/s]Extracting dataset fingerprint:  84%|████████▍ | 819/971 [00:48<00:06, 24.97it/s]Extracting dataset fingerprint:  85%|████████▍ | 822/971 [00:48<00:05, 26.19it/s]Extracting dataset fingerprint:  85%|████████▍ | 825/971 [00:48<00:05, 27.05it/s]Extracting dataset fingerprint:  85%|████████▌ | 828/971 [00:48<00:06, 21.62it/s]Extracting dataset fingerprint:  86%|████████▌ | 831/971 [00:49<00:05, 23.45it/s]Extracting dataset fingerprint:  86%|████████▌ | 834/971 [00:49<00:05, 25.02it/s]Extracting dataset fingerprint:  86%|████████▌ | 837/971 [00:49<00:06, 20.79it/s]Extracting dataset fingerprint:  87%|████████▋ | 840/971 [00:49<00:05, 22.72it/s]Extracting dataset fingerprint:  87%|████████▋ | 843/971 [00:49<00:05, 24.43it/s]Extracting dataset fingerprint:  87%|████████▋ | 846/971 [00:49<00:06, 20.47it/s]Extracting dataset fingerprint:  87%|████████▋ | 849/971 [00:49<00:05, 22.40it/s]Extracting dataset fingerprint:  88%|████████▊ | 852/971 [00:49<00:04, 24.09it/s]Extracting dataset fingerprint:  88%|████████▊ | 855/971 [00:50<00:04, 25.53it/s]Extracting dataset fingerprint:  88%|████████▊ | 858/971 [00:50<00:05, 21.00it/s]Extracting dataset fingerprint:  89%|████████▊ | 861/971 [00:50<00:04, 23.00it/s]Extracting dataset fingerprint:  89%|████████▉ | 864/971 [00:50<00:04, 24.64it/s]Extracting dataset fingerprint:  89%|████████▉ | 867/971 [00:50<00:04, 25.97it/s]Extracting dataset fingerprint:  90%|████████▉ | 870/971 [00:50<00:04, 21.23it/s]Extracting dataset fingerprint:  90%|████████▉ | 873/971 [00:50<00:04, 23.07it/s]Extracting dataset fingerprint:  90%|█████████ | 876/971 [00:50<00:03, 24.75it/s]Extracting dataset fingerprint:  91%|█████████ | 879/971 [00:51<00:04, 20.63it/s]Extracting dataset fingerprint:  91%|█████████ | 883/971 [00:51<00:03, 24.93it/s]Extracting dataset fingerprint:  91%|█████████ | 886/971 [00:51<00:03, 26.12it/s]Extracting dataset fingerprint:  92%|█████████▏| 889/971 [00:51<00:03, 27.08it/s]Extracting dataset fingerprint:  92%|█████████▏| 892/971 [00:51<00:03, 21.91it/s]Extracting dataset fingerprint:  92%|█████████▏| 895/971 [00:52<00:04, 16.16it/s]Extracting dataset fingerprint:  93%|█████████▎| 899/971 [00:52<00:03, 20.51it/s]Extracting dataset fingerprint:  93%|█████████▎| 902/971 [00:52<00:03, 18.57it/s]Extracting dataset fingerprint:  93%|█████████▎| 905/971 [00:52<00:05, 13.06it/s]Extracting dataset fingerprint:  93%|█████████▎| 907/971 [00:52<00:05, 12.24it/s]Extracting dataset fingerprint:  94%|█████████▎| 909/971 [00:53<00:04, 13.44it/s]Extracting dataset fingerprint:  94%|█████████▍| 911/971 [00:53<00:04, 12.36it/s]Extracting dataset fingerprint:  94%|█████████▍| 913/971 [00:53<00:05, 10.07it/s]Extracting dataset fingerprint:  94%|█████████▍| 915/971 [00:53<00:04, 11.64it/s]Extracting dataset fingerprint:  94%|█████████▍| 917/971 [00:53<00:05,  9.61it/s]Extracting dataset fingerprint:  95%|█████████▍| 919/971 [00:54<00:04, 11.25it/s]Extracting dataset fingerprint:  95%|█████████▍| 921/971 [00:54<00:03, 12.87it/s]Extracting dataset fingerprint:  95%|█████████▌| 923/971 [00:54<00:04, 11.85it/s]Extracting dataset fingerprint:  95%|█████████▌| 925/971 [00:54<00:03, 13.45it/s]Extracting dataset fingerprint:  95%|█████████▌| 927/971 [00:54<00:02, 14.85it/s]Extracting dataset fingerprint:  96%|█████████▌| 929/971 [00:54<00:02, 16.05it/s]Extracting dataset fingerprint:  96%|█████████▌| 932/971 [00:54<00:01, 19.57it/s]Extracting dataset fingerprint:  96%|█████████▋| 935/971 [00:54<00:02, 17.58it/s]Extracting dataset fingerprint:  97%|█████████▋| 939/971 [00:55<00:01, 22.70it/s]Extracting dataset fingerprint:  97%|█████████▋| 942/971 [00:55<00:01, 24.43it/s]Extracting dataset fingerprint:  97%|█████████▋| 945/971 [00:55<00:01, 16.97it/s]Extracting dataset fingerprint:  98%|█████████▊| 948/971 [00:55<00:01, 19.46it/s]Extracting dataset fingerprint:  98%|█████████▊| 951/971 [00:55<00:00, 21.72it/s]Extracting dataset fingerprint:  98%|█████████▊| 954/971 [00:55<00:00, 18.98it/s]Extracting dataset fingerprint:  99%|█████████▊| 957/971 [00:56<00:00, 17.53it/s]Extracting dataset fingerprint:  99%|█████████▉| 960/971 [00:56<00:00, 16.60it/s]Extracting dataset fingerprint:  99%|█████████▉| 962/971 [00:56<00:00, 17.22it/s]Extracting dataset fingerprint:  99%|█████████▉| 966/971 [00:56<00:00, 18.15it/s]Extracting dataset fingerprint: 100%|█████████▉| 968/971 [00:56<00:00, 18.49it/s]Extracting dataset fingerprint: 100%|██████████| 971/971 [00:56<00:00, 17.11it/s]
+
+############################
+INFO: You are using the old nnU-Net default planner. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': (1536, 1024), 'median_image_size_in_voxels': array([1556., 1259.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False, False, False, False, False, False, False, False, False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Plans were saved to /root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/nnUNetPlans.json
+{"plans": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/nnUNetPlans.json", "xray": "ZScoreNormalization", "prior_channels": 12, "prior_normalization": "NoNormalization"}
+Preprocessing dataset Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization'], 'use_mask_for_norm': [False, False, False, False, False, False, False, False, False, False, False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}
+Preprocessing cases:   0%|          | 0/971 [00:00<?, ?it/s]Preprocessing cases:   0%|          | 1/971 [00:03<57:11,  3.54s/it]Preprocessing cases:   0%|          | 2/971 [00:03<24:29,  1.52s/it]Preprocessing cases:   0%|          | 4/971 [00:03<10:08,  1.59it/s]Preprocessing cases:   1%|          | 5/971 [00:04<08:00,  2.01it/s]Preprocessing cases:   1%|          | 9/971 [00:04<03:08,  5.10it/s]Preprocessing cases:   1%|          | 11/971 [00:04<02:54,  5.49it/s]Preprocessing cases:   1%|▏         | 13/971 [00:04<02:15,  7.07it/s]Preprocessing cases:   2%|▏         | 15/971 [00:04<01:48,  8.80it/s]Preprocessing cases:   2%|▏         | 17/971 [00:04<01:59,  7.98it/s]Preprocessing cases:   2%|▏         | 20/971 [00:05<01:24, 11.22it/s]Preprocessing cases:   2%|▏         | 22/971 [00:05<01:40,  9.41it/s]Preprocessing cases:   2%|▏         | 24/971 [00:05<01:25, 11.03it/s]Preprocessing cases:   3%|▎         | 26/971 [00:05<01:42,  9.22it/s]Preprocessing cases:   3%|▎         | 30/971 [00:05<01:06, 14.05it/s]Preprocessing cases:   3%|▎         | 33/971 [00:06<01:15, 12.35it/s]Preprocessing cases:   4%|▎         | 35/971 [00:06<01:20, 11.65it/s]Preprocessing cases:   4%|▍         | 37/971 [00:06<01:35,  9.73it/s]Preprocessing cases:   4%|▍         | 39/971 [00:06<01:35,  9.76it/s]Preprocessing cases:   4%|▍         | 41/971 [00:07<01:34,  9.79it/s]Preprocessing cases:   4%|▍         | 43/971 [00:07<01:21, 11.41it/s]Preprocessing cases:   5%|▍         | 45/971 [00:07<01:11, 12.98it/s]Preprocessing cases:   5%|▍         | 47/971 [00:07<01:31, 10.13it/s]Preprocessing cases:   5%|▌         | 49/971 [00:07<01:18, 11.82it/s]Preprocessing cases:   5%|▌         | 51/971 [00:07<01:08, 13.41it/s]Preprocessing cases:   5%|▌         | 53/971 [00:08<01:15, 12.13it/s]Preprocessing cases:   6%|▌         | 55/971 [00:08<01:06, 13.69it/s]Preprocessing cases:   6%|▌         | 57/971 [00:08<01:14, 12.25it/s]Preprocessing cases:   6%|▌         | 59/971 [00:08<01:19, 11.41it/s]Preprocessing cases:   6%|▋         | 61/971 [00:08<01:09, 13.04it/s]Preprocessing cases:   6%|▋         | 63/971 [00:08<01:16, 11.87it/s]Preprocessing cases:   7%|▋         | 65/971 [00:09<01:20, 11.19it/s]Preprocessing cases:   7%|▋         | 67/971 [00:09<01:24, 10.76it/s]Preprocessing cases:   7%|▋         | 70/971 [00:09<01:03, 14.27it/s]Preprocessing cases:   7%|▋         | 72/971 [00:09<00:58, 15.38it/s]Preprocessing cases:   8%|▊         | 74/971 [00:09<01:07, 13.29it/s]Preprocessing cases:   8%|▊         | 76/971 [00:09<01:14, 12.08it/s]Preprocessing cases:   8%|▊         | 78/971 [00:10<01:18, 11.34it/s]Preprocessing cases:   8%|▊         | 81/971 [00:10<01:00, 14.83it/s]Preprocessing cases:   9%|▊         | 84/971 [00:10<00:59, 14.81it/s]Preprocessing cases:   9%|▉         | 86/971 [00:10<01:18, 11.28it/s]Preprocessing cases:   9%|▉         | 90/971 [00:10<01:13, 12.01it/s]Preprocessing cases:   9%|▉         | 92/971 [00:11<01:16, 11.44it/s]Preprocessing cases:  10%|▉         | 94/971 [00:11<01:19, 11.02it/s]Preprocessing cases:  10%|▉         | 96/971 [00:11<01:10, 12.46it/s]Preprocessing cases:  10%|█         | 98/971 [00:11<01:03, 13.85it/s]Preprocessing cases:  10%|█         | 100/971 [00:11<01:22, 10.60it/s]Preprocessing cases:  11%|█         | 102/971 [00:11<01:11, 12.22it/s]Preprocessing cases:  11%|█         | 104/971 [00:12<01:28,  9.81it/s]Preprocessing cases:  11%|█         | 106/971 [00:12<01:40,  8.59it/s]Preprocessing cases:  11%|█         | 108/971 [00:12<01:49,  7.88it/s]Preprocessing cases:  11%|█         | 109/971 [00:12<01:45,  8.16it/s]Preprocessing cases:  11%|█▏        | 111/971 [00:13<01:24, 10.14it/s]Preprocessing cases:  12%|█▏        | 113/971 [00:13<01:25, 10.06it/s]Preprocessing cases:  12%|█▏        | 115/971 [00:13<01:39,  8.64it/s]Preprocessing cases:  12%|█▏        | 117/971 [00:13<01:48,  7.88it/s]Preprocessing cases:  12%|█▏        | 118/971 [00:13<01:44,  8.18it/s]Preprocessing cases:  12%|█▏        | 120/971 [00:14<01:23, 10.22it/s]Preprocessing cases:  13%|█▎        | 122/971 [00:14<01:52,  7.58it/s]Preprocessing cases:  13%|█▎        | 124/971 [00:14<02:10,  6.47it/s]Preprocessing cases:  13%|█▎        | 125/971 [00:14<02:02,  6.91it/s]Preprocessing cases:  13%|█▎        | 128/971 [00:15<01:20, 10.47it/s]Preprocessing cases:  13%|█▎        | 130/971 [00:15<01:21, 10.29it/s]Preprocessing cases:  14%|█▎        | 132/971 [00:15<01:22, 10.18it/s]Preprocessing cases:  14%|█▍        | 134/971 [00:15<01:23, 10.08it/s]Preprocessing cases:  14%|█▍        | 136/971 [00:16<01:35,  8.70it/s]Preprocessing cases:  14%|█▍        | 138/971 [00:16<01:44,  7.94it/s]Preprocessing cases:  14%|█▍        | 139/971 [00:16<01:56,  7.17it/s]Preprocessing cases:  15%|█▍        | 141/971 [00:16<01:31,  9.10it/s]Preprocessing cases:  15%|█▍        | 143/971 [00:17<01:55,  7.14it/s]Preprocessing cases:  15%|█▍        | 145/971 [00:17<01:32,  8.94it/s]Preprocessing cases:  15%|█▌        | 148/971 [00:17<01:28,  9.28it/s]Preprocessing cases:  15%|█▌        | 150/971 [00:17<02:01,  6.75it/s]Preprocessing cases:  16%|█▌        | 151/971 [00:18<01:55,  7.12it/s]Preprocessing cases:  16%|█▌        | 152/971 [00:18<01:49,  7.51it/s]Preprocessing cases:  16%|█▌        | 155/971 [00:18<01:12, 11.30it/s]Preprocessing cases:  16%|█▌        | 157/971 [00:18<01:15, 10.81it/s]Preprocessing cases:  16%|█▋        | 159/971 [00:18<01:42,  7.95it/s]Preprocessing cases:  17%|█▋        | 161/971 [00:18<01:23,  9.68it/s]Preprocessing cases:  17%|█▋        | 163/971 [00:19<01:23,  9.73it/s]Preprocessing cases:  17%|█▋        | 165/971 [00:19<01:10, 11.47it/s]Preprocessing cases:  17%|█▋        | 167/971 [00:19<01:01, 13.09it/s]Preprocessing cases:  17%|█▋        | 169/971 [00:19<01:07, 11.93it/s]Preprocessing cases:  18%|█▊        | 171/971 [00:19<01:35,  8.38it/s]Preprocessing cases:  18%|█▊        | 173/971 [00:20<01:30,  8.79it/s]Preprocessing cases:  18%|█▊        | 175/971 [00:20<01:51,  7.13it/s]Preprocessing cases:  18%|█▊        | 176/971 [00:20<02:14,  5.92it/s]Preprocessing cases:  19%|█▊        | 180/971 [00:21<01:26,  9.13it/s]Preprocessing cases:  19%|█▊        | 182/971 [00:21<01:14, 10.63it/s]Preprocessing cases:  19%|█▉        | 184/971 [00:21<01:15, 10.41it/s]Preprocessing cases:  19%|█▉        | 186/971 [00:21<01:27,  8.96it/s]Preprocessing cases:  19%|█▉        | 188/971 [00:21<01:36,  8.12it/s]Preprocessing cases:  19%|█▉        | 189/971 [00:22<01:46,  7.32it/s]Preprocessing cases:  20%|█▉        | 191/971 [00:22<01:24,  9.22it/s]Preprocessing cases:  20%|█▉        | 194/971 [00:22<01:11, 10.91it/s]Preprocessing cases:  20%|██        | 196/971 [00:22<01:46,  7.29it/s]Preprocessing cases:  20%|██        | 197/971 [00:23<01:41,  7.62it/s]Preprocessing cases:  20%|██        | 198/971 [00:23<01:37,  7.96it/s]Preprocessing cases:  20%|██        | 199/971 [00:23<01:32,  8.30it/s]Preprocessing cases:  21%|██        | 200/971 [00:23<01:29,  8.62it/s]Preprocessing cases:  21%|██        | 203/971 [00:23<00:57, 13.39it/s]Preprocessing cases:  21%|██        | 205/971 [00:23<01:16, 10.03it/s]Preprocessing cases:  21%|██▏       | 207/971 [00:23<01:04, 11.87it/s]Preprocessing cases:  22%|██▏       | 209/971 [00:24<01:20,  9.50it/s]Preprocessing cases:  22%|██▏       | 211/971 [00:24<01:07, 11.29it/s]Preprocessing cases:  22%|██▏       | 213/971 [00:24<01:33,  8.11it/s]Preprocessing cases:  22%|██▏       | 215/971 [00:24<01:16,  9.87it/s]Preprocessing cases:  22%|██▏       | 217/971 [00:25<01:16,  9.87it/s]Preprocessing cases:  23%|██▎       | 219/971 [00:25<01:04, 11.63it/s]Preprocessing cases:  23%|██▎       | 221/971 [00:25<01:07, 11.03it/s]Preprocessing cases:  23%|██▎       | 223/971 [00:25<01:21,  9.17it/s]Preprocessing cases:  23%|██▎       | 225/971 [00:25<01:30,  8.20it/s]Preprocessing cases:  23%|██▎       | 226/971 [00:26<01:41,  7.34it/s]Preprocessing cases:  23%|██▎       | 228/971 [00:26<01:19,  9.29it/s]Preprocessing cases:  24%|██▎       | 230/971 [00:26<01:30,  8.19it/s]Preprocessing cases:  24%|██▍       | 232/971 [00:26<01:13, 10.03it/s]Preprocessing cases:  24%|██▍       | 234/971 [00:26<01:25,  8.61it/s]Preprocessing cases:  24%|██▍       | 236/971 [00:27<01:22,  8.96it/s]Preprocessing cases:  25%|██▍       | 238/971 [00:27<01:19,  9.21it/s]Preprocessing cases:  25%|██▍       | 240/971 [00:27<01:29,  8.21it/s]Preprocessing cases:  25%|██▍       | 241/971 [00:27<01:26,  8.46it/s]Preprocessing cases:  25%|██▌       | 244/971 [00:27<00:59, 12.24it/s]Preprocessing cases:  25%|██▌       | 246/971 [00:28<01:24,  8.55it/s]Preprocessing cases:  26%|██▌       | 248/971 [00:28<01:21,  8.90it/s]Preprocessing cases:  26%|██▌       | 250/971 [00:28<01:29,  8.06it/s]Preprocessing cases:  26%|██▌       | 253/971 [00:28<01:03, 11.22it/s]Preprocessing cases:  26%|██▋       | 255/971 [00:29<01:15,  9.43it/s]Preprocessing cases:  26%|██▋       | 257/971 [00:29<01:34,  7.52it/s]Preprocessing cases:  27%|██▋       | 260/971 [00:29<01:08, 10.42it/s]Preprocessing cases:  27%|██▋       | 262/971 [00:29<01:09, 10.26it/s]Preprocessing cases:  27%|██▋       | 264/971 [00:30<01:09, 10.16it/s]Preprocessing cases:  27%|██▋       | 266/971 [00:30<01:09, 10.08it/s]Preprocessing cases:  28%|██▊       | 268/971 [00:30<01:10, 10.01it/s]Preprocessing cases:  28%|██▊       | 270/971 [00:30<01:20,  8.69it/s]Preprocessing cases:  28%|██▊       | 271/971 [00:31<01:31,  7.68it/s]Preprocessing cases:  28%|██▊       | 272/971 [00:31<01:41,  6.92it/s]Preprocessing cases:  28%|██▊       | 274/971 [00:31<01:17,  9.02it/s]Preprocessing cases:  28%|██▊       | 276/971 [00:31<01:02, 11.05it/s]Preprocessing cases:  29%|██▊       | 278/971 [00:31<01:05, 10.63it/s]Preprocessing cases:  29%|██▉       | 281/971 [00:31<00:47, 14.43it/s]Preprocessing cases:  29%|██▉       | 283/971 [00:32<01:13,  9.36it/s]Preprocessing cases:  29%|██▉       | 285/971 [00:32<01:12,  9.50it/s]Preprocessing cases:  30%|██▉       | 287/971 [00:32<01:11,  9.60it/s]Preprocessing cases:  30%|██▉       | 289/971 [00:32<01:10,  9.68it/s]Preprocessing cases:  30%|██▉       | 291/971 [00:32<01:09,  9.73it/s]Preprocessing cases:  30%|███       | 293/971 [00:33<00:59, 11.45it/s]Preprocessing cases:  30%|███       | 295/971 [00:33<00:51, 13.07it/s]Preprocessing cases:  31%|███       | 297/971 [00:33<00:56, 11.91it/s]Preprocessing cases:  31%|███       | 299/971 [00:33<01:20,  8.37it/s]Preprocessing cases:  31%|███       | 302/971 [00:33<00:57, 11.62it/s]Preprocessing cases:  31%|███▏      | 304/971 [00:34<01:09,  9.62it/s]Preprocessing cases:  32%|███▏      | 309/971 [00:34<00:41, 15.92it/s]Preprocessing cases:  32%|███▏      | 312/971 [00:34<01:08,  9.59it/s]Preprocessing cases:  32%|███▏      | 314/971 [00:34<01:00, 10.81it/s]Preprocessing cases:  33%|███▎      | 316/971 [00:35<01:09,  9.37it/s]Preprocessing cases:  33%|███▎      | 319/971 [00:35<00:53, 12.19it/s]Preprocessing cases:  33%|███▎      | 321/971 [00:35<01:20,  8.08it/s]Preprocessing cases:  33%|███▎      | 324/971 [00:35<01:00, 10.77it/s]Preprocessing cases:  34%|███▎      | 326/971 [00:36<01:09,  9.31it/s]Preprocessing cases:  34%|███▍      | 328/971 [00:36<00:59, 10.79it/s]Preprocessing cases:  34%|███▍      | 330/971 [00:36<00:52, 12.29it/s]Preprocessing cases:  34%|███▍      | 332/971 [00:36<01:04,  9.90it/s]Preprocessing cases:  34%|███▍      | 334/971 [00:36<00:55, 11.55it/s]Preprocessing cases:  35%|███▍      | 336/971 [00:37<01:06,  9.49it/s]Preprocessing cases:  35%|███▍      | 338/971 [00:37<00:56, 11.19it/s]Preprocessing cases:  35%|███▌      | 340/971 [00:37<00:58, 10.78it/s]Preprocessing cases:  35%|███▌      | 342/971 [00:37<00:50, 12.46it/s]Preprocessing cases:  35%|███▌      | 344/971 [00:37<00:54, 11.57it/s]Preprocessing cases:  36%|███▌      | 346/971 [00:38<00:56, 11.02it/s]Preprocessing cases:  36%|███▌      | 348/971 [00:38<00:49, 12.69it/s]Preprocessing cases:  36%|███▌      | 350/971 [00:38<00:43, 14.21it/s]Preprocessing cases:  36%|███▋      | 352/971 [00:38<01:07,  9.12it/s]Preprocessing cases:  36%|███▋      | 354/971 [00:39<01:24,  7.29it/s]Preprocessing cases:  37%|███▋      | 356/971 [00:39<01:08,  8.99it/s]Preprocessing cases:  37%|███▋      | 358/971 [00:39<00:57, 10.75it/s]Preprocessing cases:  37%|███▋      | 360/971 [00:39<01:07,  9.04it/s]Preprocessing cases:  37%|███▋      | 362/971 [00:39<01:14,  8.13it/s]Preprocessing cases:  37%|███▋      | 364/971 [00:40<01:10,  8.57it/s]Preprocessing cases:  38%|███▊      | 366/971 [00:40<00:58, 10.32it/s]Preprocessing cases:  38%|███▊      | 368/971 [00:40<01:17,  7.78it/s]Preprocessing cases:  38%|███▊      | 371/971 [00:40<00:54, 10.93it/s]Preprocessing cases:  38%|███▊      | 373/971 [00:40<01:04,  9.27it/s]Preprocessing cases:  39%|███▊      | 376/971 [00:41<00:47, 12.40it/s]Preprocessing cases:  39%|███▉      | 378/971 [00:41<00:58, 10.10it/s]Preprocessing cases:  39%|███▉      | 380/971 [00:41<00:50, 11.65it/s]Preprocessing cases:  39%|███▉      | 382/971 [00:41<00:53, 11.11it/s]Preprocessing cases:  40%|███▉      | 384/971 [00:42<01:28,  6.64it/s]Preprocessing cases:  40%|███▉      | 386/971 [00:42<01:28,  6.63it/s]Preprocessing cases:  40%|███▉      | 387/971 [00:42<01:23,  7.03it/s]Preprocessing cases:  40%|████      | 390/971 [00:42<00:55, 10.38it/s]Preprocessing cases:  40%|████      | 392/971 [00:43<01:46,  5.42it/s]Preprocessing cases:  41%|████      | 394/971 [00:43<01:32,  6.24it/s]Preprocessing cases:  41%|████      | 396/971 [00:43<01:22,  6.99it/s]Preprocessing cases:  41%|████      | 398/971 [00:44<01:31,  6.23it/s]Preprocessing cases:  41%|████      | 399/971 [00:44<01:25,  6.66it/s]Preprocessing cases:  41%|████      | 400/971 [00:44<01:31,  6.23it/s]Preprocessing cases:  41%|████▏     | 401/971 [00:44<01:36,  5.88it/s]Preprocessing cases:  41%|████▏     | 402/971 [00:44<01:27,  6.52it/s]Preprocessing cases:  42%|████▏     | 403/971 [00:45<01:19,  7.13it/s]Preprocessing cases:  42%|████▏     | 405/971 [00:45<01:10,  8.08it/s]Preprocessing cases:  42%|████▏     | 406/971 [00:45<01:20,  7.04it/s]Preprocessing cases:  42%|████▏     | 407/971 [00:45<01:42,  5.49it/s]Preprocessing cases:  42%|████▏     | 408/971 [00:45<01:30,  6.20it/s]Preprocessing cases:  42%|████▏     | 409/971 [00:45<01:21,  6.89it/s]Preprocessing cases:  42%|████▏     | 411/971 [00:46<00:58,  9.63it/s]Preprocessing cases:  43%|████▎     | 413/971 [00:46<00:57,  9.72it/s]Preprocessing cases:  43%|████▎     | 415/971 [00:46<01:26,  6.41it/s]Preprocessing cases:  43%|████▎     | 416/971 [00:46<01:20,  6.90it/s]Preprocessing cases:  43%|████▎     | 418/971 [00:47<01:11,  7.75it/s]Preprocessing cases:  43%|████▎     | 419/971 [00:47<01:08,  8.11it/s]Preprocessing cases:  43%|████▎     | 421/971 [00:47<01:23,  6.55it/s]Preprocessing cases:  43%|████▎     | 422/971 [00:48<01:52,  4.87it/s]Preprocessing cases:  44%|████▎     | 424/971 [00:48<01:20,  6.79it/s]Preprocessing cases:  44%|████▍     | 427/971 [00:48<01:00,  8.96it/s]Preprocessing cases:  44%|████▍     | 429/971 [00:48<01:23,  6.52it/s]Preprocessing cases:  44%|████▍     | 430/971 [00:48<01:17,  6.94it/s]Preprocessing cases:  44%|████▍     | 431/971 [00:49<01:13,  7.38it/s]Preprocessing cases:  45%|████▍     | 433/971 [00:49<00:56,  9.57it/s]Preprocessing cases:  45%|████▍     | 435/971 [00:49<01:13,  7.26it/s]Preprocessing cases:  45%|████▌     | 437/971 [00:49<01:15,  7.04it/s]Preprocessing cases:  45%|████▌     | 438/971 [00:50<01:21,  6.51it/s]Preprocessing cases:  45%|████▌     | 440/971 [00:50<01:39,  5.31it/s]Preprocessing cases:  46%|████▌     | 442/971 [00:50<01:41,  5.19it/s]Preprocessing cases:  46%|████▌     | 443/971 [00:51<01:32,  5.72it/s]Preprocessing cases:  46%|████▌     | 444/971 [00:51<01:23,  6.29it/s]Preprocessing cases:  46%|████▌     | 446/971 [00:51<01:11,  7.31it/s]Preprocessing cases:  46%|████▌     | 448/971 [00:51<01:04,  8.06it/s]Preprocessing cases:  46%|████▌     | 449/971 [00:51<01:34,  5.55it/s]Preprocessing cases:  46%|████▋     | 451/971 [00:52<01:18,  6.61it/s]Preprocessing cases:  47%|████▋     | 452/971 [00:52<01:13,  7.10it/s]Preprocessing cases:  47%|████▋     | 453/971 [00:52<01:55,  4.47it/s]Preprocessing cases:  47%|████▋     | 454/971 [00:52<01:40,  5.17it/s]Preprocessing cases:  47%|████▋     | 456/971 [00:53<01:19,  6.44it/s]Preprocessing cases:  47%|████▋     | 458/971 [00:53<00:59,  8.59it/s]Preprocessing cases:  47%|████▋     | 460/971 [00:53<01:50,  4.64it/s]Preprocessing cases:  47%|████▋     | 461/971 [00:54<02:18,  3.67it/s]Preprocessing cases:  48%|████▊     | 464/971 [00:54<01:22,  6.14it/s]Preprocessing cases:  48%|████▊     | 466/971 [00:54<01:04,  7.77it/s]Preprocessing cases:  48%|████▊     | 468/971 [00:54<01:08,  7.37it/s]Preprocessing cases:  48%|████▊     | 470/971 [00:55<01:33,  5.37it/s]Preprocessing cases:  49%|████▊     | 471/971 [00:55<01:43,  4.83it/s]Preprocessing cases:  49%|████▊     | 473/971 [00:56<01:25,  5.83it/s]Preprocessing cases:  49%|████▉     | 476/971 [00:56<01:24,  5.88it/s]Preprocessing cases:  49%|████▉     | 477/971 [00:56<01:34,  5.20it/s]Preprocessing cases:  49%|████▉     | 478/971 [00:56<01:26,  5.72it/s]Preprocessing cases:  49%|████▉     | 479/971 [00:57<01:18,  6.29it/s]Preprocessing cases:  50%|████▉     | 482/971 [00:57<00:48, 10.11it/s]Preprocessing cases:  50%|████▉     | 484/971 [00:57<01:27,  5.59it/s]Preprocessing cases:  50%|█████     | 486/971 [00:58<01:15,  6.46it/s]Preprocessing cases:  50%|█████     | 488/971 [00:58<01:21,  5.91it/s]Preprocessing cases:  50%|█████     | 489/971 [00:58<01:15,  6.36it/s]Preprocessing cases:  50%|█████     | 490/971 [00:58<01:10,  6.86it/s]Preprocessing cases:  51%|█████     | 491/971 [00:58<01:05,  7.37it/s]Preprocessing cases:  51%|█████     | 492/971 [00:58<01:01,  7.85it/s]Preprocessing cases:  51%|█████     | 493/971 [00:59<01:10,  6.81it/s]Preprocessing cases:  51%|█████     | 494/971 [00:59<01:04,  7.43it/s]Preprocessing cases:  51%|█████     | 495/971 [00:59<01:13,  6.52it/s]Preprocessing cases:  51%|█████     | 496/971 [00:59<01:05,  7.21it/s]Preprocessing cases:  51%|█████     | 497/971 [00:59<01:14,  6.37it/s]Preprocessing cases:  51%|█████▏    | 498/971 [00:59<01:06,  7.11it/s]Preprocessing cases:  51%|█████▏    | 499/971 [01:00<01:28,  5.30it/s]Preprocessing cases:  51%|█████▏    | 500/971 [01:00<01:44,  4.50it/s]Preprocessing cases:  52%|█████▏    | 501/971 [01:00<01:27,  5.37it/s]Preprocessing cases:  52%|█████▏    | 504/971 [01:00<00:55,  8.36it/s]Preprocessing cases:  52%|█████▏    | 505/971 [01:00<00:53,  8.64it/s]Preprocessing cases:  52%|█████▏    | 506/971 [01:01<01:24,  5.49it/s]Preprocessing cases:  52%|█████▏    | 507/971 [01:01<01:26,  5.35it/s]Preprocessing cases:  52%|█████▏    | 508/971 [01:01<01:16,  6.09it/s]Preprocessing cases:  53%|█████▎    | 510/971 [01:01<00:53,  8.65it/s]Preprocessing cases:  53%|█████▎    | 512/971 [01:02<01:34,  4.86it/s]Preprocessing cases:  53%|█████▎    | 514/971 [01:02<01:17,  5.92it/s]Preprocessing cases:  53%|█████▎    | 516/971 [01:02<01:06,  6.84it/s]Preprocessing cases:  53%|█████▎    | 518/971 [01:03<01:21,  5.54it/s]Preprocessing cases:  53%|█████▎    | 519/971 [01:03<01:14,  6.03it/s]Preprocessing cases:  54%|█████▎    | 520/971 [01:03<01:37,  4.63it/s]Preprocessing cases:  54%|█████▎    | 521/971 [01:03<01:35,  4.70it/s]Preprocessing cases:  54%|█████▍    | 522/971 [01:04<01:23,  5.40it/s]Preprocessing cases:  54%|█████▍    | 523/971 [01:04<01:24,  5.28it/s]Preprocessing cases:  54%|█████▍    | 526/971 [01:04<00:47,  9.34it/s]Preprocessing cases:  54%|█████▍    | 528/971 [01:04<00:54,  8.20it/s]Preprocessing cases:  55%|█████▍    | 530/971 [01:04<00:43, 10.12it/s]Preprocessing cases:  55%|█████▍    | 533/971 [01:04<00:31, 13.86it/s]Preprocessing cases:  55%|█████▌    | 535/971 [01:05<00:41, 10.59it/s]Preprocessing cases:  55%|█████▌    | 537/971 [01:05<00:35, 12.21it/s]Preprocessing cases:  56%|█████▌    | 539/971 [01:05<00:31, 13.73it/s]Preprocessing cases:  56%|█████▌    | 541/971 [01:05<00:34, 12.32it/s]Preprocessing cases:  56%|█████▌    | 543/971 [01:05<00:37, 11.49it/s]Preprocessing cases:  56%|█████▌    | 545/971 [01:05<00:38, 10.96it/s]Preprocessing cases:  56%|█████▋    | 547/971 [01:06<00:33, 12.63it/s]Preprocessing cases:  57%|█████▋    | 549/971 [01:06<00:36, 11.67it/s]Preprocessing cases:  57%|█████▋    | 551/971 [01:06<00:37, 11.09it/s]Preprocessing cases:  57%|█████▋    | 553/971 [01:06<00:32, 12.76it/s]Preprocessing cases:  57%|█████▋    | 555/971 [01:06<00:29, 14.26it/s]Preprocessing cases:  57%|█████▋    | 557/971 [01:06<00:26, 15.55it/s]Preprocessing cases:  58%|█████▊    | 559/971 [01:06<00:24, 16.61it/s]Preprocessing cases:  58%|█████▊    | 561/971 [01:07<00:23, 17.44it/s]Preprocessing cases:  58%|█████▊    | 563/971 [01:07<00:28, 14.19it/s]Preprocessing cases:  58%|█████▊    | 565/971 [01:07<00:26, 15.50it/s]Preprocessing cases:  58%|█████▊    | 567/971 [01:07<00:30, 13.25it/s]Preprocessing cases:  59%|█████▊    | 569/971 [01:07<00:27, 14.70it/s]Preprocessing cases:  59%|█████▉    | 571/971 [01:07<00:25, 15.92it/s]Preprocessing cases:  59%|█████▉    | 573/971 [01:07<00:23, 16.90it/s]Preprocessing cases:  59%|█████▉    | 575/971 [01:07<00:22, 17.68it/s]Preprocessing cases:  59%|█████▉    | 577/971 [01:08<00:21, 18.26it/s]Preprocessing cases:  60%|█████▉    | 579/971 [01:08<00:20, 18.68it/s]Preprocessing cases:  60%|█████▉    | 581/971 [01:08<00:26, 14.73it/s]Preprocessing cases:  60%|██████    | 583/971 [01:08<00:24, 15.91it/s]Preprocessing cases:  60%|██████    | 585/971 [01:08<00:28, 13.46it/s]Preprocessing cases:  60%|██████    | 587/971 [01:08<00:31, 12.14it/s]Preprocessing cases:  61%|██████    | 590/971 [01:08<00:24, 15.79it/s]Preprocessing cases:  61%|██████    | 592/971 [01:09<00:22, 16.70it/s]Preprocessing cases:  61%|██████    | 594/971 [01:09<00:26, 14.01it/s]Preprocessing cases:  61%|██████▏   | 596/971 [01:09<00:24, 15.27it/s]Preprocessing cases:  62%|██████▏   | 598/971 [01:09<00:22, 16.35it/s]Preprocessing cases:  62%|██████▏   | 600/971 [01:09<00:32, 11.41it/s]Preprocessing cases:  62%|██████▏   | 602/971 [01:09<00:28, 13.04it/s]Preprocessing cases:  62%|██████▏   | 605/971 [01:10<00:26, 13.68it/s]Preprocessing cases:  63%|██████▎   | 607/971 [01:10<00:24, 14.92it/s]Preprocessing cases:  63%|██████▎   | 609/971 [01:10<00:32, 11.05it/s]Preprocessing cases:  63%|██████▎   | 611/971 [01:10<00:33, 10.69it/s]Preprocessing cases:  63%|██████▎   | 614/971 [01:10<00:29, 11.96it/s]Preprocessing cases:  63%|██████▎   | 616/971 [01:11<00:31, 11.32it/s]Preprocessing cases:  64%|██████▍   | 620/971 [01:11<00:21, 16.34it/s]Preprocessing cases:  64%|██████▍   | 623/971 [01:11<00:25, 13.56it/s]Preprocessing cases:  64%|██████▍   | 626/971 [01:11<00:21, 16.31it/s]Preprocessing cases:  65%|██████▍   | 629/971 [01:11<00:25, 13.60it/s]Preprocessing cases:  65%|██████▌   | 633/971 [01:12<00:21, 15.38it/s]Preprocessing cases:  65%|██████▌   | 635/971 [01:12<00:20, 16.13it/s]Preprocessing cases:  66%|██████▌   | 637/971 [01:12<00:19, 16.84it/s]Preprocessing cases:  66%|██████▌   | 639/971 [01:12<00:18, 17.48it/s]Preprocessing cases:  66%|██████▌   | 641/971 [01:12<00:18, 18.02it/s]Preprocessing cases:  66%|██████▌   | 643/971 [01:12<00:22, 14.74it/s]Preprocessing cases:  66%|██████▋   | 645/971 [01:12<00:20, 15.88it/s]Preprocessing cases:  67%|██████▋   | 647/971 [01:12<00:23, 13.55it/s]Preprocessing cases:  67%|██████▋   | 649/971 [01:13<00:26, 12.24it/s]Preprocessing cases:  67%|██████▋   | 651/971 [01:13<00:27, 11.45it/s]Preprocessing cases:  67%|██████▋   | 654/971 [01:13<00:25, 12.56it/s]Preprocessing cases:  68%|██████▊   | 656/971 [01:13<00:22, 13.93it/s]Preprocessing cases:  68%|██████▊   | 658/971 [01:13<00:20, 15.17it/s]Preprocessing cases:  68%|██████▊   | 660/971 [01:13<00:19, 16.24it/s]Preprocessing cases:  68%|██████▊   | 662/971 [01:13<00:18, 17.09it/s]Preprocessing cases:  68%|██████▊   | 664/971 [01:14<00:17, 17.77it/s]Preprocessing cases:  69%|██████▊   | 666/971 [01:14<00:16, 18.31it/s]Preprocessing cases:  69%|██████▉   | 668/971 [01:14<00:16, 18.72it/s]Preprocessing cases:  69%|██████▉   | 670/971 [01:14<00:15, 19.02it/s]Preprocessing cases:  69%|██████▉   | 672/971 [01:14<00:20, 14.93it/s]Preprocessing cases:  70%|██████▉   | 677/971 [01:14<00:12, 23.32it/s]Preprocessing cases:  70%|███████   | 680/971 [01:14<00:14, 19.84it/s]Preprocessing cases:  70%|███████   | 683/971 [01:14<00:13, 22.06it/s]Preprocessing cases:  71%|███████   | 686/971 [01:15<00:14, 19.23it/s]Preprocessing cases:  71%|███████   | 689/971 [01:15<00:18, 15.00it/s]Preprocessing cases:  71%|███████   | 691/971 [01:15<00:20, 13.46it/s]Preprocessing cases:  71%|███████▏  | 693/971 [01:15<00:19, 14.59it/s]Preprocessing cases:  72%|███████▏  | 695/971 [01:16<00:24, 11.14it/s]Preprocessing cases:  72%|███████▏  | 697/971 [01:16<00:21, 12.62it/s]Preprocessing cases:  72%|███████▏  | 699/971 [01:16<00:26, 10.08it/s]Preprocessing cases:  72%|███████▏  | 701/971 [01:16<00:23, 11.71it/s]Preprocessing cases:  73%|███████▎  | 704/971 [01:16<00:17, 15.18it/s]Preprocessing cases:  73%|███████▎  | 706/971 [01:16<00:19, 13.31it/s]Preprocessing cases:  73%|███████▎  | 708/971 [01:17<00:25, 10.41it/s]Preprocessing cases:  73%|███████▎  | 710/971 [01:17<00:25, 10.27it/s]Preprocessing cases:  73%|███████▎  | 712/971 [01:17<00:25, 10.16it/s]Preprocessing cases:  74%|███████▎  | 714/971 [01:17<00:21, 11.84it/s]Preprocessing cases:  74%|███████▎  | 716/971 [01:17<00:22, 11.21it/s]Preprocessing cases:  74%|███████▍  | 718/971 [01:18<00:30,  8.17it/s]Preprocessing cases:  74%|███████▍  | 720/971 [01:18<00:29,  8.62it/s]Preprocessing cases:  74%|███████▍  | 722/971 [01:18<00:24, 10.36it/s]Preprocessing cases:  75%|███████▍  | 724/971 [01:18<00:24, 10.22it/s]Preprocessing cases:  75%|███████▍  | 726/971 [01:19<00:27,  8.78it/s]Preprocessing cases:  75%|███████▌  | 729/971 [01:19<00:23, 10.45it/s]Preprocessing cases:  75%|███████▌  | 731/971 [01:19<00:23, 10.30it/s]Preprocessing cases:  75%|███████▌  | 733/971 [01:19<00:26,  8.91it/s]Preprocessing cases:  76%|███████▌  | 735/971 [01:20<00:32,  7.27it/s]Preprocessing cases:  76%|███████▌  | 737/971 [01:20<00:29,  7.88it/s]Preprocessing cases:  76%|███████▌  | 738/971 [01:20<00:28,  8.17it/s]Preprocessing cases:  76%|███████▌  | 739/971 [01:20<00:27,  8.46it/s]Preprocessing cases:  76%|███████▌  | 740/971 [01:20<00:26,  8.73it/s]Preprocessing cases:  76%|███████▋  | 741/971 [01:20<00:25,  8.98it/s]Preprocessing cases:  77%|███████▋  | 743/971 [01:21<00:24,  9.34it/s]Preprocessing cases:  77%|███████▋  | 745/971 [01:21<00:19, 11.58it/s]Preprocessing cases:  77%|███████▋  | 747/971 [01:21<00:20, 10.96it/s]Preprocessing cases:  77%|███████▋  | 749/971 [01:21<00:20, 10.59it/s]Preprocessing cases:  77%|███████▋  | 751/971 [01:21<00:17, 12.44it/s]Preprocessing cases:  78%|███████▊  | 753/971 [01:21<00:18, 11.52it/s]Preprocessing cases:  78%|███████▊  | 755/971 [01:22<00:23,  9.37it/s]Preprocessing cases:  78%|███████▊  | 757/971 [01:22<00:19, 11.17it/s]Preprocessing cases:  78%|███████▊  | 759/971 [01:22<00:29,  7.20it/s]Preprocessing cases:  78%|███████▊  | 761/971 [01:22<00:23,  8.92it/s]Preprocessing cases:  79%|███████▊  | 763/971 [01:22<00:19, 10.70it/s]Preprocessing cases:  79%|███████▉  | 765/971 [01:23<00:25,  7.94it/s]Preprocessing cases:  79%|███████▉  | 768/971 [01:23<00:18, 11.14it/s]Preprocessing cases:  79%|███████▉  | 770/971 [01:23<00:15, 12.64it/s]Preprocessing cases:  80%|███████▉  | 772/971 [01:23<00:19, 10.08it/s]Preprocessing cases:  80%|███████▉  | 774/971 [01:23<00:16, 11.73it/s]Preprocessing cases:  80%|████████  | 777/971 [01:24<00:12, 15.23it/s]Preprocessing cases:  80%|████████  | 780/971 [01:24<00:14, 12.82it/s]Preprocessing cases:  81%|████████  | 782/971 [01:24<00:13, 14.07it/s]Preprocessing cases:  81%|████████  | 784/971 [01:24<00:17, 10.85it/s]Preprocessing cases:  81%|████████  | 786/971 [01:25<00:20,  9.23it/s]Preprocessing cases:  81%|████████  | 788/971 [01:25<00:19,  9.42it/s]Preprocessing cases:  82%|████████▏ | 792/971 [01:25<00:14, 12.29it/s]Preprocessing cases:  82%|████████▏ | 794/971 [01:25<00:15, 11.62it/s]Preprocessing cases:  82%|████████▏ | 796/971 [01:25<00:15, 11.13it/s]Preprocessing cases:  82%|████████▏ | 798/971 [01:26<00:18,  9.41it/s]Preprocessing cases:  82%|████████▏ | 800/971 [01:26<00:15, 11.01it/s]Preprocessing cases:  83%|████████▎ | 802/971 [01:26<00:25,  6.64it/s]Preprocessing cases:  83%|████████▎ | 805/971 [01:26<00:17,  9.40it/s]Preprocessing cases:  83%|████████▎ | 807/971 [01:27<00:17,  9.53it/s]Preprocessing cases:  83%|████████▎ | 809/971 [01:27<00:16,  9.64it/s]Preprocessing cases:  84%|████████▎ | 811/971 [01:27<00:16,  9.72it/s]Preprocessing cases:  84%|████████▎ | 813/971 [01:27<00:16,  9.78it/s]Preprocessing cases:  84%|████████▍ | 815/971 [01:27<00:13, 11.46it/s]Preprocessing cases:  84%|████████▍ | 817/971 [01:27<00:11, 13.09it/s]Preprocessing cases:  84%|████████▍ | 819/971 [01:28<00:14, 10.16it/s]Preprocessing cases:  85%|████████▍ | 821/971 [01:28<00:14, 10.09it/s]Preprocessing cases:  85%|████████▍ | 823/971 [01:28<00:12, 11.81it/s]Preprocessing cases:  85%|████████▍ | 825/971 [01:28<00:10, 13.43it/s]Preprocessing cases:  85%|████████▌ | 827/971 [01:28<00:11, 12.16it/s]Preprocessing cases:  85%|████████▌ | 829/971 [01:29<00:12, 11.39it/s]Preprocessing cases:  86%|████████▌ | 831/971 [01:29<00:12, 10.91it/s]Preprocessing cases:  86%|████████▌ | 833/971 [01:29<00:10, 12.61it/s]Preprocessing cases:  86%|████████▌ | 835/971 [01:29<00:15,  8.63it/s]Preprocessing cases:  86%|████████▌ | 837/971 [01:29<00:12, 10.39it/s]Preprocessing cases:  86%|████████▋ | 839/971 [01:30<00:14,  8.88it/s]Preprocessing cases:  87%|████████▋ | 841/971 [01:30<00:12, 10.64it/s]Preprocessing cases:  87%|████████▋ | 845/971 [01:30<00:07, 16.06it/s]Preprocessing cases:  87%|████████▋ | 848/971 [01:30<00:09, 13.34it/s]Preprocessing cases:  88%|████████▊ | 850/971 [01:30<00:08, 14.47it/s]Preprocessing cases:  88%|████████▊ | 852/971 [01:31<00:09, 12.96it/s]Preprocessing cases:  88%|████████▊ | 854/971 [01:31<00:11, 10.33it/s]Preprocessing cases:  88%|████████▊ | 856/971 [01:31<00:11, 10.21it/s]Preprocessing cases:  88%|████████▊ | 858/971 [01:31<00:09, 11.84it/s]Preprocessing cases:  89%|████████▊ | 860/971 [01:31<00:09, 11.22it/s]Preprocessing cases:  89%|████████▉ | 864/971 [01:32<00:07, 13.96it/s]Preprocessing cases:  89%|████████▉ | 866/971 [01:32<00:06, 15.05it/s]Preprocessing cases:  89%|████████▉ | 868/971 [01:32<00:06, 16.02it/s]Preprocessing cases:  90%|████████▉ | 870/971 [01:32<00:10, 10.02it/s]Preprocessing cases:  90%|████████▉ | 872/971 [01:32<00:08, 11.61it/s]Preprocessing cases:  90%|█████████ | 874/971 [01:32<00:07, 13.16it/s]Preprocessing cases:  90%|█████████ | 876/971 [01:32<00:06, 14.58it/s]Preprocessing cases:  90%|█████████ | 878/971 [01:33<00:08, 10.80it/s]Preprocessing cases:  91%|█████████ | 880/971 [01:33<00:07, 12.47it/s]Preprocessing cases:  91%|█████████ | 882/971 [01:33<00:07, 11.60it/s]Preprocessing cases:  91%|█████████ | 884/971 [01:33<00:06, 13.21it/s]Preprocessing cases:  91%|█████████ | 886/971 [01:33<00:05, 14.68it/s]Preprocessing cases:  91%|█████████▏| 888/971 [01:34<00:07, 10.77it/s]Preprocessing cases:  92%|█████████▏| 890/971 [01:34<00:06, 12.48it/s]Preprocessing cases:  92%|█████████▏| 892/971 [01:34<00:06, 11.59it/s]Preprocessing cases:  92%|█████████▏| 894/971 [01:34<00:10,  7.37it/s]Preprocessing cases:  92%|█████████▏| 896/971 [01:35<00:10,  7.13it/s]Preprocessing cases:  92%|█████████▏| 898/971 [01:35<00:08,  8.82it/s]Preprocessing cases:  93%|█████████▎| 900/971 [01:35<00:07,  9.13it/s]Preprocessing cases:  93%|█████████▎| 902/971 [01:35<00:07,  9.36it/s]Preprocessing cases:  93%|█████████▎| 904/971 [01:36<00:10,  6.66it/s]Preprocessing cases:  93%|█████████▎| 905/971 [01:36<00:12,  5.14it/s]Preprocessing cases:  93%|█████████▎| 906/971 [01:36<00:11,  5.69it/s]Preprocessing cases:  93%|█████████▎| 907/971 [01:36<00:11,  5.52it/s]Preprocessing cases:  94%|█████████▎| 908/971 [01:36<00:10,  6.18it/s]Preprocessing cases:  94%|█████████▎| 909/971 [01:37<00:12,  5.06it/s]Preprocessing cases:  94%|█████████▎| 910/971 [01:37<00:10,  5.83it/s]Preprocessing cases:  94%|█████████▍| 911/971 [01:37<00:09,  6.58it/s]Preprocessing cases:  94%|█████████▍| 912/971 [01:37<00:11,  5.15it/s]Preprocessing cases:  94%|█████████▍| 913/971 [01:37<00:09,  5.98it/s]Preprocessing cases:  94%|█████████▍| 914/971 [01:38<00:10,  5.65it/s]Preprocessing cases:  94%|█████████▍| 916/971 [01:38<00:10,  5.32it/s]Preprocessing cases:  94%|█████████▍| 917/971 [01:38<00:11,  4.64it/s]Preprocessing cases:  95%|█████████▍| 918/971 [01:38<00:09,  5.38it/s]Preprocessing cases:  95%|█████████▍| 919/971 [01:39<00:09,  5.27it/s]Preprocessing cases:  95%|█████████▍| 921/971 [01:39<00:06,  7.75it/s]Preprocessing cases:  95%|█████████▌| 923/971 [01:39<00:05,  8.47it/s]Preprocessing cases:  95%|█████████▌| 925/971 [01:39<00:05,  7.71it/s]Preprocessing cases:  95%|█████████▌| 927/971 [01:39<00:04,  9.71it/s]Preprocessing cases:  96%|█████████▌| 929/971 [01:39<00:04,  9.79it/s]Preprocessing cases:  96%|█████████▌| 931/971 [01:40<00:04,  9.84it/s]Preprocessing cases:  96%|█████████▌| 933/971 [01:40<00:03, 11.68it/s]Preprocessing cases:  96%|█████████▋| 935/971 [01:40<00:03, 11.08it/s]Preprocessing cases:  96%|█████████▋| 937/971 [01:40<00:02, 12.81it/s]Preprocessing cases:  97%|█████████▋| 940/971 [01:40<00:01, 16.54it/s]Preprocessing cases:  97%|█████████▋| 942/971 [01:40<00:02, 14.00it/s]Preprocessing cases:  97%|█████████▋| 944/971 [01:40<00:01, 15.27it/s]Preprocessing cases:  97%|█████████▋| 946/971 [01:41<00:02, 11.13it/s]Preprocessing cases:  98%|█████████▊| 948/971 [01:41<00:02,  9.30it/s]Preprocessing cases:  98%|█████████▊| 950/971 [01:41<00:02,  9.49it/s]Preprocessing cases:  98%|█████████▊| 952/971 [01:42<00:02,  8.42it/s]Preprocessing cases:  98%|█████████▊| 953/971 [01:42<00:02,  8.65it/s]Preprocessing cases:  98%|█████████▊| 955/971 [01:42<00:01, 10.65it/s]Preprocessing cases:  99%|█████████▊| 957/971 [01:42<00:01,  8.92it/s]Preprocessing cases:  99%|█████████▉| 959/971 [01:42<00:01,  8.05it/s]Preprocessing cases:  99%|█████████▉| 960/971 [01:42<00:01,  8.34it/s]Preprocessing cases:  99%|█████████▉| 961/971 [01:43<00:01,  8.63it/s]Preprocessing cases:  99%|█████████▉| 963/971 [01:43<00:00, 10.93it/s]Preprocessing cases:  99%|█████████▉| 965/971 [01:43<00:00,  8.93it/s]Preprocessing cases: 100%|█████████▉| 967/971 [01:43<00:00, 10.93it/s]Preprocessing cases: 100%|█████████▉| 969/971 [01:43<00:00, 10.59it/s]Preprocessing cases: 100%|██████████| 971/971 [01:43<00:00, 12.42it/s]Preprocessing cases: 100%|██████████| 971/971 [01:43<00:00,  9.34it/s]
+{
+  "input_sha256": "65b81565ea77d48b1c91017188533e49f1d0d0d4ec557540b73f6779764397a7",
+  "output_sha256": "1f12ec69a68404c556dfcf8346d005a38e50399e1de70e04ff8da4c46ebb501a",
+  "changed": [
+    "decoder.encoder.stages.0.0.convs.0.all_modules.0.weight",
+    "decoder.encoder.stages.0.0.convs.0.conv.weight",
+    "encoder.stages.0.0.convs.0.all_modules.0.weight",
+    "encoder.stages.0.0.convs.0.conv.weight"
+  ],
+  "unchanged_tensors": 444,
+  "xray_exact": true,
+  "new_channels_nonzero": 0,
+  "segmentation_head_tensors": 16
+}
+[R265] two-epoch GPU sanity 2026-07-16T16:36:20+08:00
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-16 16:36:28.925656: R265 initialization {"checkpoint": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/r202_thirteen_channel_zero_prior.pth", "sha256": "1f12ec69a68404c556dfcf8346d005a38e50399e1de70e04ff8da4c46ebb501a", "strict_all_network_keys_loaded": true, "input_channels": 13, "new_channel_nonzero": 0, "segmentation_head_tensors_loaded": 16}
+2026-07-16 16:36:28.926523: do_dummy_2d_data_aug: False
+2026-07-16 16:36:28.928170: Using splits from existing split file: /root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/splits_final.json
+2026-07-16 16:36:28.928353: The split file contains 1 splits.
+2026-07-16 16:36:28.928390: Desired fold for training: 0
+2026-07-16 16:36:28.928419: This split has 875 training and 96 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization'], 'use_mask_for_norm': [False, False, False, False, False, False, False, False, False, False, False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}, '1': {'max': 220.0, 'mean': 0.9118614792823792, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 68.0, 'std': 9.04042911529541}, '2': {'max': 223.0, 'mean': 3.9513323307037354, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 150.0, 'std': 19.369722366333008}, '3': {'max': 219.0, 'mean': 0.6715521216392517, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 48.0, 'std': 7.586360931396484}, '4': {'max': 220.0, 'mean': 2.935701847076416, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 134.0, 'std': 16.47779655456543}, '5': {'max': 213.0, 'mean': 0.6464866995811462, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 47.0, 'std': 7.360476016998291}, '6': {'max': 217.0, 'mean': 2.5655410289764404, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 127.0, 'std': 15.271452903747559}, '7': {'max': 210.0, 'mean': 0.5021106004714966, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 33.0, 'std': 6.351498126983643}, '8': {'max': 211.0, 'mean': 2.182131767272949, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 116.0, 'std': 13.782843589782715}, '9': {'max': 160.0, 'mean': 0.0016332396771758795, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 0.3112616539001465}, '10': {'max': 190.0, 'mean': 0.09572646766901016, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 2.5119166374206543}, '11': {'max': 209.0, 'mean': 0.0851428359746933, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 2.5576581954956055}, '12': {'max': 212.0, 'mean': 0.6746050715446472, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 51.0, 'std': 8.049346923828125}}} 
+
+2026-07-16 16:36:36.422838: Unable to plot network architecture:
+2026-07-16 16:36:36.422985: No module named 'hiddenlayer'
+2026-07-16 16:36:36.435507: 
+2026-07-16 16:36:36.435696: Epoch 0
+2026-07-16 16:36:36.435932: Current learning rate: 0.0001
+2026-07-16 16:36:44.121675: R265 dynamics {"base_loss": -0.8679317831993103, "relation_loss": 0.0, "alpha": 0.0, "g_base": 0.0, "g_relation": 0.0, "gradient_cosine": 0.0, "core_probability": 0.9586936831474304, "clip_norm": 0.8103281438350678, "valid_slots": 3.6, "abstention_rate": 0.0, "gap_probability": 0.12711168117821217, "support_probability": 0.9776869595050812, "slot_confidence": 0.5317156225442886, "epoch": 0, "lr": 0.0001}
+2026-07-16 16:36:44.383578: train_loss -0.8679
+2026-07-16 16:36:44.383871: val_loss -0.8483
+2026-07-16 16:36:44.383962: Pseudo dice [0.8965]
+2026-07-16 16:36:44.384051: Epoch time: 7.95 s
+2026-07-16 16:36:44.384117: Yayy! New best EMA pseudo Dice: 0.8965
+2026-07-16 16:36:47.062361: R265 early stop {"completed_epochs": 1, "ema_dice": 0.8965176847581251, "early_best": 0.8965176847581251, "bad_epochs": 0, "stop": false}
+2026-07-16 16:36:47.065320: 
+2026-07-16 16:36:47.065881: Epoch 1
+2026-07-16 16:36:47.066005: Current learning rate: 5e-05
+2026-07-16 16:36:48.689159: R265 dynamics {"base_loss": -0.8788684785366059, "relation_loss": 0.0002223680028691888, "alpha": 0.0009469985030591488, "g_base": 8.337092003785073e-06, "g_relation": 1.4084922440815717e-05, "gradient_cosine": 0.004428276047110558, "core_probability": 0.9638020694255829, "clip_norm": 1.0843058556318284, "valid_slots": 3.15, "abstention_rate": 0.15, "gap_probability": 0.14310738588683308, "support_probability": 0.9761622846126556, "slot_confidence": 0.5751108646392822, "epoch": 1, "lr": 5.358867312681466e-05}
+2026-07-16 16:36:48.948892: train_loss -0.8789
+2026-07-16 16:36:48.949173: val_loss -0.8725
+2026-07-16 16:36:48.949286: Pseudo dice [0.9056]
+2026-07-16 16:36:48.949375: Epoch time: 1.89 s
+2026-07-16 16:36:48.949446: Yayy! New best EMA pseudo Dice: 0.8974
+2026-07-16 16:36:52.334530: R265 early stop {"completed_epochs": 2, "ema_dice": 0.8974278524240052, "early_best": 0.8974278524240052, "bad_epochs": 0, "stop": false}
+2026-07-16 16:36:53.412405: Training done.
+2026-07-16 16:36:53.428693: Using splits from existing split file: /root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/splits_final.json
+2026-07-16 16:36:53.429002: The split file contains 1 splits.
+2026-07-16 16:36:53.429055: Desired fold for training: 0
+2026-07-16 16:36:53.429099: This split has 875 training and 96 validation cases.
+2026-07-16 16:36:53.430266: predicting val_10375
+2026-07-16 16:36:53.482832: val_10375, shape torch.Size([13, 1, 1136, 959]), rank 0
+2026-07-16 16:36:58.556581: predicting val_10520
+2026-07-16 16:36:58.636098: val_10520, shape torch.Size([13, 1, 1515, 1067]), rank 0
+2026-07-16 16:36:58.880213: predicting val_10618
+2026-07-16 16:36:58.991626: val_10618, shape torch.Size([13, 1, 1533, 1608]), rank 0
+2026-07-16 16:36:59.339681: predicting val_10624
+2026-07-16 16:36:59.418589: val_10624, shape torch.Size([13, 1, 1257, 1224]), rank 0
+2026-07-16 16:36:59.663195: predicting val_11852
+2026-07-16 16:36:59.736954: val_11852, shape torch.Size([13, 1, 1419, 1075]), rank 0
+2026-07-16 16:36:59.974745: predicting val_11945
+2026-07-16 16:37:00.052208: val_11945, shape torch.Size([13, 1, 1436, 1111]), rank 0
+2026-07-16 16:37:00.288435: predicting val_12498
+2026-07-16 16:37:00.356515: val_12498, shape torch.Size([13, 1, 1536, 1257]), rank 0
+2026-07-16 16:37:00.528136: predicting val_12627
+2026-07-16 16:37:00.574154: val_12627, shape torch.Size([13, 1, 1216, 1006]), rank 0
+2026-07-16 16:37:00.717789: predicting val_12827
+2026-07-16 16:37:00.807919: val_12827, shape torch.Size([13, 1, 2000, 1398]), rank 0
+2026-07-16 16:37:01.137577: predicting val_13220
+2026-07-16 16:37:01.201730: val_13220, shape torch.Size([13, 1, 1328, 1286]), rank 0
+2026-07-16 16:37:01.441033: predicting val_13436
+2026-07-16 16:37:01.520595: val_13436, shape torch.Size([13, 1, 1508, 1470]), rank 0
+2026-07-16 16:37:01.782268: predicting val_13441
+2026-07-16 16:37:01.844977: val_13441, shape torch.Size([13, 1, 1078, 912]), rank 0
+2026-07-16 16:37:02.001138: predicting val_13454
+2026-07-16 16:37:02.054841: val_13454, shape torch.Size([13, 1, 1258, 943]), rank 0
+2026-07-16 16:37:02.208909: predicting val_13480
+2026-07-16 16:37:02.283806: val_13480, shape torch.Size([13, 1, 1412, 1148]), rank 0
+2026-07-16 16:37:02.523147: predicting val_13517
+2026-07-16 16:37:02.602515: val_13517, shape torch.Size([13, 1, 1518, 1220]), rank 0
+2026-07-16 16:37:02.851372: predicting val_13840
+2026-07-16 16:37:02.930155: val_13840, shape torch.Size([13, 1, 1519, 1082]), rank 0
+2026-07-16 16:37:03.163473: predicting val_13867
+2026-07-16 16:37:03.251060: val_13867, shape torch.Size([13, 1, 1547, 1248]), rank 0
+2026-07-16 16:37:03.579544: predicting val_1399
+2026-07-16 16:37:03.712153: val_1399, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:04.051966: predicting val_14041
+2026-07-16 16:37:04.179041: val_14041, shape torch.Size([13, 1, 1852, 1472]), rank 0
+2026-07-16 16:37:04.514116: predicting val_1418
+2026-07-16 16:37:04.646580: val_1418, shape torch.Size([13, 1, 1514, 2044]), rank 0
+2026-07-16 16:37:05.023343: predicting val_1452
+2026-07-16 16:37:05.164384: val_1452, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:05.502081: predicting val_15040
+2026-07-16 16:37:05.591619: val_15040, shape torch.Size([13, 1, 2087, 1208]), rank 0
+2026-07-16 16:37:05.919176: predicting val_15067
+2026-07-16 16:37:06.009706: val_15067, shape torch.Size([13, 1, 1874, 1384]), rank 0
+2026-07-16 16:37:06.338065: predicting val_1518
+2026-07-16 16:37:06.440289: val_1518, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:06.771273: predicting val_1522
+2026-07-16 16:37:06.873698: val_1522, shape torch.Size([13, 1, 1514, 2044]), rank 0
+2026-07-16 16:37:07.228769: predicting val_15274
+2026-07-16 16:37:07.307417: val_15274, shape torch.Size([13, 1, 1678, 1258]), rank 0
+2026-07-16 16:37:07.634436: predicting val_15369
+2026-07-16 16:37:07.729739: val_15369, shape torch.Size([13, 1, 1615, 1656]), rank 0
+2026-07-16 16:37:08.207537: predicting val_15446
+2026-07-16 16:37:08.274969: val_15446, shape torch.Size([13, 1, 1752, 1000]), rank 0
+2026-07-16 16:37:08.506901: predicting val_1560
+2026-07-16 16:37:08.675956: val_1560, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:09.400537: predicting val_1572
+2026-07-16 16:37:09.589890: val_1572, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:10.308466: predicting val_1585
+2026-07-16 16:37:10.498405: val_1585, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:11.214501: predicting val_1590
+2026-07-16 16:37:11.306268: val_1590, shape torch.Size([13, 1, 1824, 992]), rank 0
+2026-07-16 16:37:11.537882: predicting val_1620
+2026-07-16 16:37:11.643455: val_1620, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:11.974862: predicting val_1660
+2026-07-16 16:37:12.154772: val_1660, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:12.872118: predicting val_1666
+2026-07-16 16:37:13.054057: val_1666, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:13.775806: predicting val_1674
+2026-07-16 16:37:13.970065: val_1674, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:14.688778: predicting val_1678
+2026-07-16 16:37:14.880856: val_1678, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:15.596844: predicting val_1694
+2026-07-16 16:37:15.842378: val_1694, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:16.605376: predicting val_1736
+2026-07-16 16:37:16.783563: val_1736, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:17.145584: predicting val_1742
+2026-07-16 16:37:17.328060: val_1742, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:18.045316: predicting val_1807
+2026-07-16 16:37:18.237463: val_1807, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:18.604802: predicting val_1812
+2026-07-16 16:37:18.917460: val_1812, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:19.657495: predicting val_1827
+2026-07-16 16:37:19.876047: val_1827, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:20.602035: predicting val_1828
+2026-07-16 16:37:20.790091: val_1828, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:21.514068: predicting val_1846
+2026-07-16 16:37:21.888790: val_1846, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:22.666805: predicting val_1855
+2026-07-16 16:37:23.004675: val_1855, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:23.784495: predicting val_1880
+2026-07-16 16:37:23.906207: val_1880, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:24.239419: predicting val_1884
+2026-07-16 16:37:24.352109: val_1884, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:24.684873: predicting val_1886
+2026-07-16 16:37:24.872922: val_1886, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:25.588032: predicting val_1901
+2026-07-16 16:37:25.715913: val_1901, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:37:26.050944: predicting val_1931
+2026-07-16 16:37:26.243141: val_1931, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:26.959696: predicting val_1934
+2026-07-16 16:37:27.153456: val_1934, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:27.871911: predicting val_2024
+2026-07-16 16:37:27.923425: val_2024, shape torch.Size([13, 1, 1167, 819]), rank 0
+2026-07-16 16:37:28.070401: predicting val_2044
+2026-07-16 16:37:28.134861: val_2044, shape torch.Size([13, 1, 1462, 1203]), rank 0
+2026-07-16 16:37:28.369769: predicting val_2246
+2026-07-16 16:37:28.449767: val_2246, shape torch.Size([13, 1, 1526, 1324]), rank 0
+2026-07-16 16:37:28.694903: predicting val_2248
+2026-07-16 16:37:28.746615: val_2248, shape torch.Size([13, 1, 1348, 949]), rank 0
+2026-07-16 16:37:28.895510: predicting val_2709
+2026-07-16 16:37:28.909724: val_2709, shape torch.Size([13, 1, 827, 608]), rank 0
+2026-07-16 16:37:29.048636: predicting val_2853
+2026-07-16 16:37:29.084016: val_2853, shape torch.Size([13, 1, 1136, 935]), rank 0
+2026-07-16 16:37:29.231908: predicting val_3058
+2026-07-16 16:37:29.281759: val_3058, shape torch.Size([13, 1, 1416, 995]), rank 0
+2026-07-16 16:37:29.429644: predicting val_3249
+2026-07-16 16:37:29.661994: val_3249, shape torch.Size([13, 1, 2920, 2320]), rank 0
+2026-07-16 16:37:30.611628: predicting val_3269
+2026-07-16 16:37:30.676834: val_3269, shape torch.Size([13, 1, 1190, 994]), rank 0
+2026-07-16 16:37:30.823204: predicting val_3352
+2026-07-16 16:37:30.853590: val_3352, shape torch.Size([13, 1, 966, 742]), rank 0
+2026-07-16 16:37:30.996647: predicting val_3353
+2026-07-16 16:37:31.034004: val_3353, shape torch.Size([13, 1, 1195, 923]), rank 0
+2026-07-16 16:37:31.177934: predicting val_3354
+2026-07-16 16:37:31.232311: val_3354, shape torch.Size([13, 1, 1246, 1253]), rank 0
+2026-07-16 16:37:31.469485: predicting val_3366
+2026-07-16 16:37:31.503241: val_3366, shape torch.Size([13, 1, 961, 837]), rank 0
+2026-07-16 16:37:31.646093: predicting val_3392
+2026-07-16 16:37:31.691753: val_3392, shape torch.Size([13, 1, 1439, 878]), rank 0
+2026-07-16 16:37:31.842307: predicting val_3460
+2026-07-16 16:37:32.023815: val_3460, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:32.741940: predicting val_3468
+2026-07-16 16:37:32.794550: val_3468, shape torch.Size([13, 1, 976, 904]), rank 0
+2026-07-16 16:37:32.940919: predicting val_3493
+2026-07-16 16:37:33.135519: val_3493, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:37:33.852219: predicting val_3567
+2026-07-16 16:37:33.904612: val_3567, shape torch.Size([13, 1, 984, 800]), rank 0
+2026-07-16 16:37:34.046699: predicting val_3595
+2026-07-16 16:37:34.072527: val_3595, shape torch.Size([13, 1, 832, 816]), rank 0
+2026-07-16 16:37:34.211145: predicting val_3596
+2026-07-16 16:37:34.405137: val_3596, shape torch.Size([13, 1, 2614, 2164]), rank 0
+2026-07-16 16:37:35.342196: predicting val_3602
+2026-07-16 16:37:35.387411: val_3602, shape torch.Size([13, 1, 1048, 808]), rank 0
+2026-07-16 16:37:35.528619: predicting val_3678
+2026-07-16 16:37:35.571384: val_3678, shape torch.Size([13, 1, 1224, 968]), rank 0
+2026-07-16 16:37:35.722559: predicting val_3700
+2026-07-16 16:37:35.753814: val_3700, shape torch.Size([13, 1, 1376, 624]), rank 0
+2026-07-16 16:37:35.894238: predicting val_3725
+2026-07-16 16:37:35.927095: val_3725, shape torch.Size([13, 1, 1229, 781]), rank 0
+2026-07-16 16:37:36.069318: predicting val_3732
+2026-07-16 16:37:36.082418: val_3732, shape torch.Size([13, 1, 736, 608]), rank 0
+2026-07-16 16:37:36.216698: predicting val_3777
+2026-07-16 16:37:36.266707: val_3777, shape torch.Size([13, 1, 1568, 992]), rank 0
+2026-07-16 16:37:36.481857: predicting val_3840
+2026-07-16 16:37:36.527423: val_3840, shape torch.Size([13, 1, 1249, 889]), rank 0
+2026-07-16 16:37:36.670992: predicting val_4047
+2026-07-16 16:37:36.823442: val_4047, shape torch.Size([13, 1, 2460, 1950]), rank 0
+2026-07-16 16:37:37.535210: predicting val_4193
+2026-07-16 16:37:37.760850: val_4193, shape torch.Size([13, 1, 2920, 2320]), rank 0
+2026-07-16 16:37:38.717226: predicting val_5355
+2026-07-16 16:37:38.809464: val_5355, shape torch.Size([13, 1, 1650, 1380]), rank 0
+2026-07-16 16:37:39.138410: predicting val_5825
+2026-07-16 16:37:39.185989: val_5825, shape torch.Size([13, 1, 1193, 991]), rank 0
+2026-07-16 16:37:39.327948: predicting val_5882
+2026-07-16 16:37:39.363145: val_5882, shape torch.Size([13, 1, 1254, 776]), rank 0
+2026-07-16 16:37:39.508164: predicting val_6503
+2026-07-16 16:37:39.561185: val_6503, shape torch.Size([13, 1, 1177, 1172]), rank 0
+2026-07-16 16:37:39.787216: predicting val_6605
+2026-07-16 16:37:39.865490: val_6605, shape torch.Size([13, 1, 1762, 1328]), rank 0
+2026-07-16 16:37:40.193697: predicting val_6606
+2026-07-16 16:37:40.267598: val_6606, shape torch.Size([13, 1, 1580, 1312]), rank 0
+2026-07-16 16:37:40.594951: predicting val_6698
+2026-07-16 16:37:40.656414: val_6698, shape torch.Size([13, 1, 1517, 1122]), rank 0
+2026-07-16 16:37:40.883350: predicting val_6918
+2026-07-16 16:37:40.956648: val_6918, shape torch.Size([13, 1, 1636, 1272]), rank 0
+2026-07-16 16:37:41.282513: predicting val_6947
+2026-07-16 16:37:41.340307: val_6947, shape torch.Size([13, 1, 1376, 1108]), rank 0
+2026-07-16 16:37:41.559890: predicting val_7253
+2026-07-16 16:37:41.621630: val_7253, shape torch.Size([13, 1, 1386, 1249]), rank 0
+2026-07-16 16:37:41.862404: predicting val_7259
+2026-07-16 16:37:41.951248: val_7259, shape torch.Size([13, 1, 1695, 1555]), rank 0
+2026-07-16 16:37:42.427684: predicting val_7269
+2026-07-16 16:37:42.489357: val_7269, shape torch.Size([13, 1, 1366, 1137]), rank 0
+2026-07-16 16:37:42.723068: predicting val_7312
+2026-07-16 16:37:42.772730: val_7312, shape torch.Size([13, 1, 1188, 1104]), rank 0
+2026-07-16 16:37:42.991236: predicting val_7654
+2026-07-16 16:37:43.044071: val_7654, shape torch.Size([13, 1, 1288, 1096]), rank 0
+2026-07-16 16:37:43.262897: predicting val_8253
+2026-07-16 16:37:43.325280: val_8253, shape torch.Size([13, 1, 1437, 1263]), rank 0
+2026-07-16 16:37:49.784750: Validation complete
+2026-07-16 16:37:49.784946: Mean Validation Dice:  0.90346876269482
+{
+  "sanity_passed": true,
+  "rows": [
+    {
+      "base_loss": -0.8679317831993103,
+      "relation_loss": 0.0,
+      "alpha": 0.0,
+      "g_base": 0.0,
+      "g_relation": 0.0,
+      "gradient_cosine": 0.0,
+      "core_probability": 0.9586936831474304,
+      "clip_norm": 0.8103281438350678,
+      "valid_slots": 3.6,
+      "abstention_rate": 0.0,
+      "gap_probability": 0.12711168117821217,
+      "support_probability": 0.9776869595050812,
+      "slot_confidence": 0.5317156225442886,
+      "epoch": 0,
+      "lr": 0.0001
+    },
+    {
+      "base_loss": -0.8788684785366059,
+      "relation_loss": 0.0002223680028691888,
+      "alpha": 0.0009469985030591488,
+      "g_base": 8.337092003785073e-06,
+      "g_relation": 1.4084922440815717e-05,
+      "gradient_cosine": 0.004428276047110558,
+      "core_probability": 0.9638020694255829,
+      "clip_norm": 1.0843058556318284,
+      "valid_slots": 3.15,
+      "abstention_rate": 0.15,
+      "gap_probability": 0.14310738588683308,
+      "support_probability": 0.9761622846126556,
+      "slot_confidence": 0.5751108646392822,
+      "epoch": 1,
+      "lr": 5.358867312681466e-05
+    }
+  ]
+}
+[R265] mature training 2026-07-16T16:37:51+08:00
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-16 16:37:59.962660: R265 initialization {"checkpoint": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/r202_thirteen_channel_zero_prior.pth", "sha256": "1f12ec69a68404c556dfcf8346d005a38e50399e1de70e04ff8da4c46ebb501a", "strict_all_network_keys_loaded": true, "input_channels": 13, "new_channel_nonzero": 0, "segmentation_head_tensors_loaded": 16}
+2026-07-16 16:37:59.963630: do_dummy_2d_data_aug: False
+2026-07-16 16:37:59.965496: Using splits from existing split file: /root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/splits_final.json
+2026-07-16 16:37:59.965687: The split file contains 1 splits.
+2026-07-16 16:37:59.965725: Desired fold for training: 0
+2026-07-16 16:37:59.965756: This split has 875 training and 96 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization', 'NoNormalization'], 'use_mask_for_norm': [False, False, False, False, False, False, False, False, False, False, False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}, '1': {'max': 220.0, 'mean': 0.9118614792823792, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 68.0, 'std': 9.04042911529541}, '2': {'max': 223.0, 'mean': 3.9513323307037354, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 150.0, 'std': 19.369722366333008}, '3': {'max': 219.0, 'mean': 0.6715521216392517, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 48.0, 'std': 7.586360931396484}, '4': {'max': 220.0, 'mean': 2.935701847076416, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 134.0, 'std': 16.47779655456543}, '5': {'max': 213.0, 'mean': 0.6464866995811462, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 47.0, 'std': 7.360476016998291}, '6': {'max': 217.0, 'mean': 2.5655410289764404, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 127.0, 'std': 15.271452903747559}, '7': {'max': 210.0, 'mean': 0.5021106004714966, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 33.0, 'std': 6.351498126983643}, '8': {'max': 211.0, 'mean': 2.182131767272949, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 116.0, 'std': 13.782843589782715}, '9': {'max': 160.0, 'mean': 0.0016332396771758795, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 0.3112616539001465}, '10': {'max': 190.0, 'mean': 0.09572646766901016, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 2.5119166374206543}, '11': {'max': 209.0, 'mean': 0.0851428359746933, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 0.0, 'std': 2.5576581954956055}, '12': {'max': 212.0, 'mean': 0.6746050715446472, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 51.0, 'std': 8.049346923828125}}} 
+
+2026-07-16 16:38:07.510511: Unable to plot network architecture:
+2026-07-16 16:38:07.510900: No module named 'hiddenlayer'
+2026-07-16 16:38:07.526533: 
+2026-07-16 16:38:07.526780: Epoch 0
+2026-07-16 16:38:07.527357: Current learning rate: 0.0001
+2026-07-16 16:38:56.247194: R265 dynamics {"base_loss": -0.8824252097606659, "relation_loss": 0.0033463496345284512, "alpha": 0.001333995170891285, "g_base": 3.155473686638288e-05, "g_relation": 0.00013566166921373223, "gradient_cosine": 0.019419878397136926, "core_probability": 0.9679872889518738, "clip_norm": Infinity, "valid_slots": 3.652, "abstention_rate": 0.048, "gap_probability": 0.29161888070724673, "support_probability": 0.9690189533233643, "slot_confidence": 0.5835409213900566, "epoch": 0, "lr": 0.0001}
+2026-07-16 16:39:02.154233: train_loss -0.8824
+2026-07-16 16:39:02.154722: val_loss -0.8742
+2026-07-16 16:39:02.154817: Pseudo dice [0.9134]
+2026-07-16 16:39:02.154907: Epoch time: 54.63 s
+2026-07-16 16:39:02.154984: Yayy! New best EMA pseudo Dice: 0.9134
+2026-07-16 16:39:04.607878: R265 early stop {"completed_epochs": 1, "ema_dice": 0.9134359897186816, "early_best": 0.9134359897186816, "bad_epochs": 0, "stop": false}
+2026-07-16 16:39:04.610983: 
+2026-07-16 16:39:04.611390: Epoch 1
+2026-07-16 16:39:04.611609: Current learning rate: 0.0001
+2026-07-16 16:39:47.912638: R265 dynamics {"base_loss": -0.8729392502307892, "relation_loss": 0.010041533085750416, "alpha": 0.0043819309803657235, "g_base": 5.50734453718178e-05, "g_relation": 0.00024751736703728966, "gradient_cosine": 0.0455687805605121, "core_probability": 0.9614147377014161, "clip_norm": 1.3245529451072215, "valid_slots": 3.62, "abstention_rate": 0.056, "gap_probability": 0.39876044365164126, "support_probability": 0.9528970220088959, "slot_confidence": 0.5845966716408729, "epoch": 1, "lr": 9.84987422935722e-05}
+2026-07-16 16:39:53.416053: train_loss -0.8729
+2026-07-16 16:39:53.416728: val_loss -0.8753
+2026-07-16 16:39:53.416853: Pseudo dice [0.9109]
+2026-07-16 16:39:53.416962: Epoch time: 48.81 s
+2026-07-16 16:39:55.690815: R265 early stop {"completed_epochs": 2, "ema_dice": 0.9131864071153539, "early_best": 0.9134359897186816, "bad_epochs": 1, "stop": false}
+2026-07-16 16:39:55.693573: 
+2026-07-16 16:39:55.693972: Epoch 2
+2026-07-16 16:39:55.694258: Current learning rate: 0.0001
+2026-07-16 16:40:39.203689: R265 dynamics {"base_loss": -0.8779586873054505, "relation_loss": 0.006931972149475768, "alpha": 0.005333843033062294, "g_base": 4.701285299961455e-05, "g_relation": 0.00023047654142374085, "gradient_cosine": 0.038401069761253896, "core_probability": 0.9637093303203583, "clip_norm": 1.112020375519991, "valid_slots": 3.548, "abstention_rate": 0.064, "gap_probability": 0.35653974092256974, "support_probability": 0.9597582426071167, "slot_confidence": 0.5881354334354401, "epoch": 2, "lr": 9.699493779682662e-05}
+2026-07-16 16:40:44.651153: train_loss -0.8779
+2026-07-16 16:40:44.651769: val_loss -0.8674
+2026-07-16 16:40:44.651863: Pseudo dice [0.908]
+2026-07-16 16:40:44.651957: Epoch time: 48.96 s
+2026-07-16 16:40:46.945562: R265 early stop {"completed_epochs": 3, "ema_dice": 0.9126717013119554, "early_best": 0.9134359897186816, "bad_epochs": 2, "stop": false}
+2026-07-16 16:40:46.948597: 
+2026-07-16 16:40:46.948688: Epoch 3
+2026-07-16 16:40:46.948832: Current learning rate: 0.0001
+2026-07-16 16:41:30.886640: R265 dynamics {"base_loss": -0.8789408628940583, "relation_loss": 0.005893390833749436, "alpha": 0.00751139196427539, "g_base": 4.4241981668164955e-05, "g_relation": 0.00018915363315409194, "gradient_cosine": 0.03227016557729803, "core_probability": 0.9628485009670258, "clip_norm": 1.0243967341780662, "valid_slots": 3.606, "abstention_rate": 0.056, "gap_probability": 0.33954735807311953, "support_probability": 0.9672920799255371, "slot_confidence": 0.5879023277163505, "epoch": 3, "lr": 9.548853816214998e-05}
+2026-07-16 16:41:36.148565: train_loss -0.8789
+2026-07-16 16:41:36.149946: val_loss -0.8756
+2026-07-16 16:41:36.150192: Pseudo dice [0.9146]
+2026-07-16 16:41:36.150288: Epoch time: 49.2 s
+2026-07-16 16:41:40.272258: R265 early stop {"completed_epochs": 4, "ema_dice": 0.9128617412762825, "early_best": 0.9134359897186816, "bad_epochs": 3, "stop": false}
+2026-07-16 16:41:40.294574: 
+2026-07-16 16:41:40.296228: Epoch 4
+2026-07-16 16:41:40.298203: Current learning rate: 9e-05
+2026-07-16 16:42:24.076614: R265 dynamics {"base_loss": -0.8794924628734588, "relation_loss": 0.006135901054309215, "alpha": 0.007757008521817625, "g_base": 4.565299133537337e-05, "g_relation": 0.00022791595963462895, "gradient_cosine": 0.03447743524890393, "core_probability": 0.9633386332988739, "clip_norm": 1.0159373980760575, "valid_slots": 3.584, "abstention_rate": 0.056, "gap_probability": 0.34505746330041437, "support_probability": 0.9741804344654084, "slot_confidence": 0.5951702486276627, "epoch": 4, "lr": 9.397949325887223e-05}
+2026-07-16 16:42:32.085513: train_loss -0.8794
+2026-07-16 16:42:32.087072: val_loss -0.8734
+2026-07-16 16:42:32.087575: Pseudo dice [0.909]
+2026-07-16 16:42:32.087792: Epoch time: 51.81 s
+2026-07-16 16:42:35.557306: R265 early stop {"completed_epochs": 5, "ema_dice": 0.9124779708547637, "early_best": 0.9134359897186816, "bad_epochs": 4, "stop": false}
+2026-07-16 16:42:35.560334: 
+2026-07-16 16:42:35.560683: Epoch 5
+2026-07-16 16:42:35.560836: Current learning rate: 9e-05
+2026-07-16 16:43:18.497409: R265 dynamics {"base_loss": -0.8835650560855866, "relation_loss": 0.004939023259677924, "alpha": 0.007700459921266884, "g_base": 3.8305407186271625e-05, "g_relation": 0.0001761247047870711, "gradient_cosine": 0.027920303067192436, "core_probability": 0.9656351766586304, "clip_norm": 1.0559523219168185, "valid_slots": 3.706, "abstention_rate": 0.052, "gap_probability": 0.31624327310547234, "support_probability": 0.9690494952201844, "slot_confidence": 0.5876561403274536, "epoch": 5, "lr": 9.246775107445347e-05}
+2026-07-16 16:43:25.063863: train_loss -0.8835
+2026-07-16 16:43:25.064598: val_loss -0.8759
+2026-07-16 16:43:25.064704: Pseudo dice [0.9155]
+2026-07-16 16:43:25.064800: Epoch time: 49.51 s
+2026-07-16 16:43:27.308751: R265 early stop {"completed_epochs": 6, "ema_dice": 0.9127842239884395, "early_best": 0.9134359897186816, "bad_epochs": 5, "stop": false}
+2026-07-16 16:43:27.311816: 
+2026-07-16 16:43:27.312430: Epoch 6
+2026-07-16 16:43:27.312765: Current learning rate: 9e-05
+2026-07-16 16:44:10.714275: R265 dynamics {"base_loss": -0.8784150128364563, "relation_loss": 0.004370304150019365, "alpha": 0.007053196487948298, "g_base": 4.070122714620084e-05, "g_relation": 0.00018123333730181912, "gradient_cosine": 0.03018446229957044, "core_probability": 0.9620485606193543, "clip_norm": 0.9200828195810318, "valid_slots": 3.726, "abstention_rate": 0.058, "gap_probability": 0.3185427123233676, "support_probability": 0.963949892282486, "slot_confidence": 0.5934232513904572, "epoch": 6, "lr": 9.095325760829622e-05}
+2026-07-16 16:44:15.231683: train_loss -0.8783
+2026-07-16 16:44:15.232408: val_loss -0.8724
+2026-07-16 16:44:15.232504: Pseudo dice [0.9072]
+2026-07-16 16:44:15.232598: Epoch time: 47.92 s
+2026-07-16 16:44:17.473127: R265 early stop {"completed_epochs": 7, "ema_dice": 0.9122261434158716, "early_best": 0.9134359897186816, "bad_epochs": 6, "stop": false}
+2026-07-16 16:44:17.476192: 
+2026-07-16 16:44:17.476782: Epoch 7
+2026-07-16 16:44:17.477043: Current learning rate: 9e-05
+2026-07-16 16:45:01.223698: R265 dynamics {"base_loss": -0.8813494641780854, "relation_loss": 0.003796092949458398, "alpha": 0.007747242728946731, "g_base": 3.687351496773772e-05, "g_relation": 0.00017737643699820182, "gradient_cosine": 0.025843435204355045, "core_probability": 0.9655283999443054, "clip_norm": 0.903696658283472, "valid_slots": 3.662, "abstention_rate": 0.048, "gap_probability": 0.31698506834357976, "support_probability": 0.9753311393260956, "slot_confidence": 0.5910706427097321, "epoch": 7, "lr": 8.943595675748564e-05}
+2026-07-16 16:45:06.170522: train_loss -0.8813
+2026-07-16 16:45:06.171444: val_loss -0.8665
+2026-07-16 16:45:06.171565: Pseudo dice [0.9083]
+2026-07-16 16:45:06.171684: Epoch time: 48.7 s
+2026-07-16 16:45:08.416496: R265 early stop {"completed_epochs": 8, "ema_dice": 0.9118293530591642, "early_best": 0.9134359897186816, "bad_epochs": 7, "stop": false}
+2026-07-16 16:45:08.419754: 
+2026-07-16 16:45:08.419841: Epoch 8
+2026-07-16 16:45:08.419974: Current learning rate: 9e-05
+2026-07-16 16:45:51.670429: R265 dynamics {"base_loss": -0.8813539056777954, "relation_loss": 0.003914803095976822, "alpha": 0.0060628329385072, "g_base": 3.4607521549332885e-05, "g_relation": 0.0001663059795228037, "gradient_cosine": 0.024870189506560565, "core_probability": 0.965458076953888, "clip_norm": 0.9335417490005493, "valid_slots": 3.642, "abstention_rate": 0.048, "gap_probability": 0.2946803724039346, "support_probability": 0.9684134504795074, "slot_confidence": 0.5903385331630707, "epoch": 8, "lr": 8.791579019367991e-05}
+2026-07-16 16:45:56.859474: train_loss -0.8813
+2026-07-16 16:45:56.860150: val_loss -0.8745
+2026-07-16 16:45:56.860228: Pseudo dice [0.9149]
+2026-07-16 16:45:56.860308: Epoch time: 48.44 s
+2026-07-16 16:45:59.022418: R265 early stop {"completed_epochs": 9, "ema_dice": 0.91213204411853, "early_best": 0.9134359897186816, "bad_epochs": 8, "stop": false}
+2026-07-16 16:45:59.025146: 
+2026-07-16 16:45:59.025454: Epoch 9
+2026-07-16 16:45:59.025575: Current learning rate: 9e-05
+2026-07-16 16:46:42.357767: R265 dynamics {"base_loss": -0.8830175034999848, "relation_loss": 0.0034292863393202426, "alpha": 0.008001918305642904, "g_base": 3.3063268463592975e-05, "g_relation": 0.0001500634072936009, "gradient_cosine": 0.021031211064080707, "core_probability": 0.9665885486602783, "clip_norm": 0.908266874819994, "valid_slots": 3.698, "abstention_rate": 0.048, "gap_probability": 0.27669597035599874, "support_probability": 0.9724508683681488, "slot_confidence": 0.5953222404718399, "epoch": 9, "lr": 8.639269723028191e-05}
+2026-07-16 16:46:47.408661: train_loss -0.883
+2026-07-16 16:46:47.410193: val_loss -0.8818
+2026-07-16 16:46:47.410561: Pseudo dice [0.9153]
+2026-07-16 16:46:47.410750: Epoch time: 48.39 s
+2026-07-16 16:46:51.488187: R265 early stop {"completed_epochs": 10, "ema_dice": 0.9124440677632233, "early_best": 0.9134359897186816, "bad_epochs": 9, "stop": false}
+2026-07-16 16:46:51.497196: 
+2026-07-16 16:46:51.497597: Epoch 10
+2026-07-16 16:46:51.498405: Current learning rate: 8e-05
+2026-07-16 16:47:35.143858: R265 dynamics {"base_loss": -0.886149365901947, "relation_loss": 0.003031018855603179, "alpha": 0.007263568525202572, "g_base": 3.307835172745399e-05, "g_relation": 0.00016799319944516355, "gradient_cosine": 0.02300369630413479, "core_probability": 0.9653518445491791, "clip_norm": 0.9595172433555126, "valid_slots": 3.536, "abstention_rate": 0.066, "gap_probability": 0.28729990615695716, "support_probability": 0.9623217051029205, "slot_confidence": 0.5787755336761474, "epoch": 10, "lr": 8.486661467891868e-05}
+2026-07-16 16:47:40.934234: train_loss -0.8861
+2026-07-16 16:47:40.935107: val_loss -0.8639
+2026-07-16 16:47:40.935207: Pseudo dice [0.9035]
+2026-07-16 16:47:40.935298: Epoch time: 49.44 s
+2026-07-16 16:47:43.173501: R265 early stop {"completed_epochs": 11, "ema_dice": 0.9115490355980149, "early_best": 0.9134359897186816, "bad_epochs": 10, "stop": false}
+2026-07-16 16:47:43.176598: 
+2026-07-16 16:47:43.176931: Epoch 11
+2026-07-16 16:47:43.177149: Current learning rate: 8e-05
+2026-07-16 16:48:26.352780: R265 dynamics {"base_loss": -0.8835955808162689, "relation_loss": 0.0030124380852794273, "alpha": 0.00649876411864534, "g_base": 2.8123735304689036e-05, "g_relation": 0.00013942020983631663, "gradient_cosine": 0.01739846748765558, "core_probability": 0.9643290104866028, "clip_norm": 0.9364362123608589, "valid_slots": 3.702, "abstention_rate": 0.042, "gap_probability": 0.28521355747943744, "support_probability": 0.9701367251873017, "slot_confidence": 0.5856550126075745, "epoch": 11, "lr": 8.333747669413689e-05}
+2026-07-16 16:48:31.652297: train_loss -0.8835
+2026-07-16 16:48:31.653031: val_loss -0.8791
+2026-07-16 16:48:31.653133: Pseudo dice [0.9165]
+2026-07-16 16:48:31.653228: Epoch time: 48.48 s
+2026-07-16 16:48:33.831729: R265 early stop {"completed_epochs": 12, "ema_dice": 0.9120447544856156, "early_best": 0.9134359897186816, "bad_epochs": 11, "stop": false}
+2026-07-16 16:48:33.834688: 
+2026-07-16 16:48:33.835030: Epoch 12
+2026-07-16 16:48:33.835151: Current learning rate: 8e-05
+2026-07-16 16:49:16.864491: R265 dynamics {"base_loss": -0.8832061558961868, "relation_loss": 0.0025357074299245143, "alpha": 0.005799937378615141, "g_base": 2.4444850685540587e-05, "g_relation": 0.00011174694462351908, "gradient_cosine": 0.01671690200921148, "core_probability": 0.9654824371337891, "clip_norm": 1.0185781019330025, "valid_slots": 3.726, "abstention_rate": 0.054, "gap_probability": 0.2592424255991209, "support_probability": 0.9721931858062745, "slot_confidence": 0.579213652908802, "epoch": 12, "lr": 8.180521460508584e-05}
+2026-07-16 16:49:21.526920: train_loss -0.8831
+2026-07-16 16:49:21.527500: val_loss -0.8813
+2026-07-16 16:49:21.527589: Pseudo dice [0.9143]
+2026-07-16 16:49:21.527683: Epoch time: 47.69 s
+2026-07-16 16:49:23.734713: R265 early stop {"completed_epochs": 13, "ema_dice": 0.9122673776603, "early_best": 0.9134359897186816, "bad_epochs": 12, "stop": false}
+2026-07-16 16:49:23.737749: 
+2026-07-16 16:49:23.738175: Epoch 13
+2026-07-16 16:49:23.738291: Current learning rate: 8e-05
+2026-07-16 16:50:06.724145: R265 dynamics {"base_loss": -0.8824768719673157, "relation_loss": 0.0025350417254740025, "alpha": 0.005369438539724797, "g_base": 2.5111670518526808e-05, "g_relation": 0.00013698272804322186, "gradient_cosine": 0.015413284165784717, "core_probability": 0.9657473645210266, "clip_norm": 0.8940974050164223, "valid_slots": 3.588, "abstention_rate": 0.04, "gap_probability": 0.2543372782841325, "support_probability": 0.9711724309921265, "slot_confidence": 0.5794466269016266, "epoch": 13, "lr": 8.026975673280368e-05}
+2026-07-16 16:50:11.618468: train_loss -0.8824
+2026-07-16 16:50:11.619101: val_loss -0.8768
+2026-07-16 16:50:11.619405: Pseudo dice [0.9206]
+2026-07-16 16:50:11.619502: Epoch time: 47.88 s
+2026-07-16 16:50:14.072933: R265 early stop {"completed_epochs": 14, "ema_dice": 0.9130987354656214, "early_best": 0.9134359897186816, "bad_epochs": 13, "stop": false}
+2026-07-16 16:50:14.075658: 
+2026-07-16 16:50:14.075733: Epoch 14
+2026-07-16 16:50:14.075853: Current learning rate: 8e-05
+2026-07-16 16:50:57.222785: R265 dynamics {"base_loss": -0.8850673613548279, "relation_loss": 0.0018109086601180025, "alpha": 0.0045613901955075566, "g_base": 2.2310126456432045e-05, "g_relation": 0.00011477804553578608, "gradient_cosine": 0.013567918445914984, "core_probability": 0.9666268827915192, "clip_norm": 0.9850392026901245, "valid_slots": 3.598, "abstention_rate": 0.06, "gap_probability": 0.2640644696652889, "support_probability": 0.9775729713439941, "slot_confidence": 0.5826789875030518, "epoch": 14, "lr": 7.873102819154207e-05}
+2026-07-16 16:51:02.200718: train_loss -0.885
+2026-07-16 16:51:02.201339: val_loss -0.8825
+2026-07-16 16:51:02.201432: Pseudo dice [0.9149]
+2026-07-16 16:51:02.201711: Epoch time: 48.13 s
+2026-07-16 16:51:05.367666: R265 early stop {"completed_epochs": 15, "ema_dice": 0.9132811925846189, "early_best": 0.9134359897186816, "bad_epochs": 14, "stop": true}
+2026-07-16 16:51:06.713712: Training done.
+2026-07-16 16:51:06.796523: Using splits from existing split file: /root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r265_hierarchical_carpal/data/nnUNet_preprocessed/Dataset206_TSRS_RSNAEpiphysisHierarchicalCarpal2D/splits_final.json
+2026-07-16 16:51:06.798597: The split file contains 1 splits.
+2026-07-16 16:51:06.799052: Desired fold for training: 0
+2026-07-16 16:51:06.799443: This split has 875 training and 96 validation cases.
+2026-07-16 16:51:06.803603: predicting val_10375
+2026-07-16 16:51:06.913079: val_10375, shape torch.Size([13, 1, 1136, 959]), rank 0
+2026-07-16 16:51:13.051301: predicting val_10520
+2026-07-16 16:51:13.131763: val_10520, shape torch.Size([13, 1, 1515, 1067]), rank 0
+2026-07-16 16:51:13.376005: predicting val_10618
+2026-07-16 16:51:13.491370: val_10618, shape torch.Size([13, 1, 1533, 1608]), rank 0
+2026-07-16 16:51:13.880843: predicting val_10624
+2026-07-16 16:51:13.962723: val_10624, shape torch.Size([13, 1, 1257, 1224]), rank 0
+2026-07-16 16:51:14.216254: predicting val_11852
+2026-07-16 16:51:14.291911: val_11852, shape torch.Size([13, 1, 1419, 1075]), rank 0
+2026-07-16 16:51:14.534936: predicting val_11945
+2026-07-16 16:51:14.616700: val_11945, shape torch.Size([13, 1, 1436, 1111]), rank 0
+2026-07-16 16:51:14.865831: predicting val_12498
+2026-07-16 16:51:14.960663: val_12498, shape torch.Size([13, 1, 1536, 1257]), rank 0
+2026-07-16 16:51:15.139998: predicting val_12627
+2026-07-16 16:51:15.203303: val_12627, shape torch.Size([13, 1, 1216, 1006]), rank 0
+2026-07-16 16:51:15.365252: predicting val_12827
+2026-07-16 16:51:15.494819: val_12827, shape torch.Size([13, 1, 2000, 1398]), rank 0
+2026-07-16 16:51:15.838698: predicting val_13220
+2026-07-16 16:51:15.922789: val_13220, shape torch.Size([13, 1, 1328, 1286]), rank 0
+2026-07-16 16:51:16.163937: predicting val_13436
+2026-07-16 16:51:16.249057: val_13436, shape torch.Size([13, 1, 1508, 1470]), rank 0
+2026-07-16 16:51:16.508298: predicting val_13441
+2026-07-16 16:51:16.550884: val_13441, shape torch.Size([13, 1, 1078, 912]), rank 0
+2026-07-16 16:51:16.702214: predicting val_13454
+2026-07-16 16:51:16.745786: val_13454, shape torch.Size([13, 1, 1258, 943]), rank 0
+2026-07-16 16:51:16.897655: predicting val_13480
+2026-07-16 16:51:16.961752: val_13480, shape torch.Size([13, 1, 1412, 1148]), rank 0
+2026-07-16 16:51:17.199211: predicting val_13517
+2026-07-16 16:51:17.268603: val_13517, shape torch.Size([13, 1, 1518, 1220]), rank 0
+2026-07-16 16:51:17.508732: predicting val_13840
+2026-07-16 16:51:17.573143: val_13840, shape torch.Size([13, 1, 1519, 1082]), rank 0
+2026-07-16 16:51:17.800239: predicting val_13867
+2026-07-16 16:51:17.876727: val_13867, shape torch.Size([13, 1, 1547, 1248]), rank 0
+2026-07-16 16:51:18.201885: predicting val_1399
+2026-07-16 16:51:18.317588: val_1399, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:18.651619: predicting val_14041
+2026-07-16 16:51:18.760404: val_14041, shape torch.Size([13, 1, 1852, 1472]), rank 0
+2026-07-16 16:51:19.089801: predicting val_1418
+2026-07-16 16:51:19.197604: val_1418, shape torch.Size([13, 1, 1514, 2044]), rank 0
+2026-07-16 16:51:19.558934: predicting val_1452
+2026-07-16 16:51:19.675451: val_1452, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:20.006154: predicting val_15040
+2026-07-16 16:51:20.106914: val_15040, shape torch.Size([13, 1, 2087, 1208]), rank 0
+2026-07-16 16:51:20.435328: predicting val_15067
+2026-07-16 16:51:20.529014: val_15067, shape torch.Size([13, 1, 1874, 1384]), rank 0
+2026-07-16 16:51:20.859699: predicting val_1518
+2026-07-16 16:51:20.970474: val_1518, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:21.301651: predicting val_1522
+2026-07-16 16:51:21.415426: val_1522, shape torch.Size([13, 1, 1514, 2044]), rank 0
+2026-07-16 16:51:21.776515: predicting val_15274
+2026-07-16 16:51:21.859555: val_15274, shape torch.Size([13, 1, 1678, 1258]), rank 0
+2026-07-16 16:51:22.185803: predicting val_15369
+2026-07-16 16:51:22.280004: val_15369, shape torch.Size([13, 1, 1615, 1656]), rank 0
+2026-07-16 16:51:22.759597: predicting val_15446
+2026-07-16 16:51:22.827681: val_15446, shape torch.Size([13, 1, 1752, 1000]), rank 0
+2026-07-16 16:51:23.062429: predicting val_1560
+2026-07-16 16:51:23.250387: val_1560, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:23.972739: predicting val_1572
+2026-07-16 16:51:24.174893: val_1572, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:24.891346: predicting val_1585
+2026-07-16 16:51:25.097456: val_1585, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:25.816131: predicting val_1590
+2026-07-16 16:51:25.894464: val_1590, shape torch.Size([13, 1, 1824, 992]), rank 0
+2026-07-16 16:51:26.128998: predicting val_1620
+2026-07-16 16:51:26.248064: val_1620, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:26.578048: predicting val_1660
+2026-07-16 16:51:26.770842: val_1660, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:27.484601: predicting val_1666
+2026-07-16 16:51:27.683668: val_1666, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:28.399625: predicting val_1674
+2026-07-16 16:51:28.605992: val_1674, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:29.321968: predicting val_1678
+2026-07-16 16:51:29.516188: val_1678, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:30.232957: predicting val_1694
+2026-07-16 16:51:30.430765: val_1694, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:31.148307: predicting val_1736
+2026-07-16 16:51:31.276183: val_1736, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:31.610564: predicting val_1742
+2026-07-16 16:51:31.804030: val_1742, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:32.519866: predicting val_1807
+2026-07-16 16:51:32.652741: val_1807, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:32.985156: predicting val_1812
+2026-07-16 16:51:33.164536: val_1812, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:33.878509: predicting val_1827
+2026-07-16 16:51:34.067206: val_1827, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:34.781947: predicting val_1828
+2026-07-16 16:51:34.970334: val_1828, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:35.683728: predicting val_1846
+2026-07-16 16:51:35.878666: val_1846, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:36.594407: predicting val_1855
+2026-07-16 16:51:36.781013: val_1855, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:37.496946: predicting val_1880
+2026-07-16 16:51:37.617458: val_1880, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:37.949795: predicting val_1884
+2026-07-16 16:51:38.055655: val_1884, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:38.387041: predicting val_1886
+2026-07-16 16:51:38.579578: val_1886, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:39.297386: predicting val_1901
+2026-07-16 16:51:39.419188: val_1901, shape torch.Size([13, 1, 2044, 1514]), rank 0
+2026-07-16 16:51:39.752629: predicting val_1931
+2026-07-16 16:51:39.933046: val_1931, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:40.646457: predicting val_1934
+2026-07-16 16:51:40.846739: val_1934, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:41.562991: predicting val_2024
+2026-07-16 16:51:41.618613: val_2024, shape torch.Size([13, 1, 1167, 819]), rank 0
+2026-07-16 16:51:41.787350: predicting val_2044
+2026-07-16 16:51:41.854386: val_2044, shape torch.Size([13, 1, 1462, 1203]), rank 0
+2026-07-16 16:51:42.095392: predicting val_2246
+2026-07-16 16:51:42.221339: val_2246, shape torch.Size([13, 1, 1526, 1324]), rank 0
+2026-07-16 16:51:42.547299: predicting val_2248
+2026-07-16 16:51:42.630845: val_2248, shape torch.Size([13, 1, 1348, 949]), rank 0
+2026-07-16 16:51:42.845888: predicting val_2709
+2026-07-16 16:51:42.867455: val_2709, shape torch.Size([13, 1, 827, 608]), rank 0
+2026-07-16 16:51:43.066999: predicting val_2853
+2026-07-16 16:51:43.130232: val_2853, shape torch.Size([13, 1, 1136, 935]), rank 0
+2026-07-16 16:51:43.338686: predicting val_3058
+2026-07-16 16:51:43.435748: val_3058, shape torch.Size([13, 1, 1416, 995]), rank 0
+2026-07-16 16:51:43.651712: predicting val_3249
+2026-07-16 16:51:44.050986: val_3249, shape torch.Size([13, 1, 2920, 2320]), rank 0
+2026-07-16 16:51:45.048853: predicting val_3269
+2026-07-16 16:51:45.159619: val_3269, shape torch.Size([13, 1, 1190, 994]), rank 0
+2026-07-16 16:51:45.380441: predicting val_3352
+2026-07-16 16:51:45.433928: val_3352, shape torch.Size([13, 1, 966, 742]), rank 0
+2026-07-16 16:51:45.646192: predicting val_3353
+2026-07-16 16:51:45.717783: val_3353, shape torch.Size([13, 1, 1195, 923]), rank 0
+2026-07-16 16:51:45.932338: predicting val_3354
+2026-07-16 16:51:46.035576: val_3354, shape torch.Size([13, 1, 1246, 1253]), rank 0
+2026-07-16 16:51:46.331605: predicting val_3366
+2026-07-16 16:51:46.386171: val_3366, shape torch.Size([13, 1, 961, 837]), rank 0
+2026-07-16 16:51:46.589988: predicting val_3392
+2026-07-16 16:51:46.674036: val_3392, shape torch.Size([13, 1, 1439, 878]), rank 0
+2026-07-16 16:51:46.888169: predicting val_3460
+2026-07-16 16:51:47.219475: val_3460, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:47.981623: predicting val_3468
+2026-07-16 16:51:48.061980: val_3468, shape torch.Size([13, 1, 976, 904]), rank 0
+2026-07-16 16:51:48.280504: predicting val_3493
+2026-07-16 16:51:48.685948: val_3493, shape torch.Size([13, 1, 2570, 2040]), rank 0
+2026-07-16 16:51:49.441349: predicting val_3567
+2026-07-16 16:51:49.497327: val_3567, shape torch.Size([13, 1, 984, 800]), rank 0
+2026-07-16 16:51:49.647733: predicting val_3595
+2026-07-16 16:51:49.682944: val_3595, shape torch.Size([13, 1, 832, 816]), rank 0
+2026-07-16 16:51:49.833130: predicting val_3596
+2026-07-16 16:51:50.057012: val_3596, shape torch.Size([13, 1, 2614, 2164]), rank 0
+2026-07-16 16:51:51.001108: predicting val_3602
+2026-07-16 16:51:51.062615: val_3602, shape torch.Size([13, 1, 1048, 808]), rank 0
+2026-07-16 16:51:51.221970: predicting val_3678
+2026-07-16 16:51:51.293425: val_3678, shape torch.Size([13, 1, 1224, 968]), rank 0
+2026-07-16 16:51:51.453846: predicting val_3700
+2026-07-16 16:51:51.499510: val_3700, shape torch.Size([13, 1, 1376, 624]), rank 0
+2026-07-16 16:51:51.653441: predicting val_3725
+2026-07-16 16:51:51.700410: val_3725, shape torch.Size([13, 1, 1229, 781]), rank 0
+2026-07-16 16:51:51.859126: predicting val_3732
+2026-07-16 16:51:51.874498: val_3732, shape torch.Size([13, 1, 736, 608]), rank 0
+2026-07-16 16:51:52.026145: predicting val_3777
+2026-07-16 16:51:52.096325: val_3777, shape torch.Size([13, 1, 1568, 992]), rank 0
+2026-07-16 16:51:52.329504: predicting val_3840
+2026-07-16 16:51:52.388842: val_3840, shape torch.Size([13, 1, 1249, 889]), rank 0
+2026-07-16 16:51:52.550297: predicting val_4047
+2026-07-16 16:51:52.762708: val_4047, shape torch.Size([13, 1, 2460, 1950]), rank 0
+2026-07-16 16:51:53.482467: predicting val_4193
+2026-07-16 16:51:53.796306: val_4193, shape torch.Size([13, 1, 2920, 2320]), rank 0
+2026-07-16 16:51:54.752850: predicting val_5355
+2026-07-16 16:51:54.882131: val_5355, shape torch.Size([13, 1, 1650, 1380]), rank 0
+2026-07-16 16:51:55.219532: predicting val_5825
+2026-07-16 16:51:55.282109: val_5825, shape torch.Size([13, 1, 1193, 991]), rank 0
+2026-07-16 16:51:55.440501: predicting val_5882
+2026-07-16 16:51:55.489784: val_5882, shape torch.Size([13, 1, 1254, 776]), rank 0
+2026-07-16 16:51:55.648675: predicting val_6503
+2026-07-16 16:51:55.707246: val_6503, shape torch.Size([13, 1, 1177, 1172]), rank 0
+2026-07-16 16:51:55.935962: predicting val_6605
+2026-07-16 16:51:56.019672: val_6605, shape torch.Size([13, 1, 1762, 1328]), rank 0
+2026-07-16 16:51:56.349230: predicting val_6606
+2026-07-16 16:51:56.431110: val_6606, shape torch.Size([13, 1, 1580, 1312]), rank 0
+2026-07-16 16:51:56.758922: predicting val_6698
+2026-07-16 16:51:56.824092: val_6698, shape torch.Size([13, 1, 1517, 1122]), rank 0
+2026-07-16 16:51:57.054403: predicting val_6918
+2026-07-16 16:51:57.132106: val_6918, shape torch.Size([13, 1, 1636, 1272]), rank 0
+2026-07-16 16:51:57.458680: predicting val_6947
+2026-07-16 16:51:57.520687: val_6947, shape torch.Size([13, 1, 1376, 1108]), rank 0
+2026-07-16 16:51:57.744971: predicting val_7253
+2026-07-16 16:51:57.810075: val_7253, shape torch.Size([13, 1, 1386, 1249]), rank 0
+2026-07-16 16:51:58.046794: predicting val_7259
+2026-07-16 16:51:58.139293: val_7259, shape torch.Size([13, 1, 1695, 1555]), rank 0
+2026-07-16 16:51:58.616280: predicting val_7269
+2026-07-16 16:51:58.677723: val_7269, shape torch.Size([13, 1, 1366, 1137]), rank 0
+2026-07-16 16:51:58.905129: predicting val_7312
+2026-07-16 16:51:58.956128: val_7312, shape torch.Size([13, 1, 1188, 1104]), rank 0
+2026-07-16 16:51:59.176905: predicting val_7654
+2026-07-16 16:51:59.233678: val_7654, shape torch.Size([13, 1, 1288, 1096]), rank 0
+2026-07-16 16:51:59.454279: predicting val_8253
+2026-07-16 16:51:59.517447: val_8253, shape torch.Size([13, 1, 1437, 1263]), rank 0
+2026-07-16 16:52:05.629233: Validation complete
+2026-07-16 16:52:05.629389: Mean Validation Dice:  0.9011614707084674
+[R265] training complete 2026-07-16T16:52:07+08:00

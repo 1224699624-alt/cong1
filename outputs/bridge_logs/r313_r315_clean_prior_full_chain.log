@@ -1,0 +1,280 @@
+{"arm": "plain", "epoch": 1, "train_loss": 1.525148878202719, "prior_loss": 0.0, "val_dice": 0.44258940484802745}
+{"arm": "plain", "epoch": 2, "train_loss": 1.1794448494911194, "prior_loss": 0.0, "val_dice": 0.6831135773611207}
+{"arm": "plain", "epoch": 3, "train_loss": 0.9103280919439652, "prior_loss": 0.0, "val_dice": 0.7369361602823928}
+{"arm": "plain", "epoch": 4, "train_loss": 0.6636687841485528, "prior_loss": 0.0, "val_dice": 0.828828176616492}
+{"arm": "plain", "epoch": 5, "train_loss": 0.4727032966911793, "prior_loss": 0.0, "val_dice": 0.8066684896591488}
+{"arm": "plain", "epoch": 6, "train_loss": 0.3672072791001376, "prior_loss": 0.0, "val_dice": 0.8231254854649721}
+{"arm": "plain", "epoch": 7, "train_loss": 0.3300932440906763, "prior_loss": 0.0, "val_dice": 0.841043099224518}
+{"arm": "plain", "epoch": 8, "train_loss": 0.28955110765117054, "prior_loss": 0.0, "val_dice": 0.8626949979392159}
+{"arm": "plain", "epoch": 9, "train_loss": 0.2671655019854798, "prior_loss": 0.0, "val_dice": 0.8659365431395086}
+{"arm": "plain", "epoch": 10, "train_loss": 0.2724111911785953, "prior_loss": 0.0, "val_dice": 0.851540765820999}
+{"arm": "plain", "epoch": 11, "train_loss": 0.257431956117644, "prior_loss": 0.0, "val_dice": 0.8592257459446316}
+{"arm": "plain", "epoch": 12, "train_loss": 0.2441755134393187, "prior_loss": 0.0, "val_dice": 0.8777972860983192}
+{"arm": "plain", "epoch": 13, "train_loss": 0.2415386718862197, "prior_loss": 0.0, "val_dice": 0.8709038030866512}
+{"arm": "plain", "epoch": 14, "train_loss": 0.2323477583772996, "prior_loss": 0.0, "val_dice": 0.8671673891857378}
+{"arm": "plain", "epoch": 15, "train_loss": 0.2286817079738659, "prior_loss": 0.0, "val_dice": 0.8581826760455743}
+{"arm": "plain", "epoch": 16, "train_loss": 0.22543793040163376, "prior_loss": 0.0, "val_dice": 0.8754213503243043}
+{"arm": "plain", "epoch": 17, "train_loss": 0.22506940310053966, "prior_loss": 0.0, "val_dice": 0.86623254802085}
+{"arm": "plain", "epoch": 18, "train_loss": 0.2225246659534819, "prior_loss": 0.0, "val_dice": 0.8874882657794022}
+{"arm": "plain", "epoch": 19, "train_loss": 0.21569805110202117, "prior_loss": 0.0, "val_dice": 0.877145149886926}
+{"arm": "plain", "epoch": 20, "train_loss": 0.2389848908299909, "prior_loss": 0.0, "val_dice": 0.8454845933679029}
+{"arm": "plain", "epoch": 21, "train_loss": 0.2297765071339467, "prior_loss": 0.0, "val_dice": 0.8712251604878994}
+{"arm": "plain", "epoch": 22, "train_loss": 0.2215378707384362, "prior_loss": 0.0, "val_dice": 0.8829848472954978}
+{"arm": "plain", "epoch": 23, "train_loss": 0.2136306987308404, "prior_loss": 0.0, "val_dice": 0.8836229547375156}
+{"arm": "plain", "epoch": 24, "train_loss": 0.21097010450766368, "prior_loss": 0.0, "val_dice": 0.8945961540642615}
+{"arm": "plain", "epoch": 25, "train_loss": 0.21034972884637468, "prior_loss": 0.0, "val_dice": 0.869748602710721}
+{"arm": "plain", "epoch": 26, "train_loss": 0.20935682470307632, "prior_loss": 0.0, "val_dice": 0.8714146992777811}
+{"arm": "plain", "epoch": 27, "train_loss": 0.2052415378172608, "prior_loss": 0.0, "val_dice": 0.8810028221948651}
+{"arm": "plain", "epoch": 28, "train_loss": 0.20402271300554276, "prior_loss": 0.0, "val_dice": 0.8810093564635614}
+{"arm": "plain", "epoch": 29, "train_loss": 0.20201300479033413, "prior_loss": 0.0, "val_dice": 0.8749542479931931}
+{"arm": "plain", "epoch": 30, "train_loss": 0.20318366137935834, "prior_loss": 0.0, "val_dice": 0.8866391409541632}
+{"arm": "plain", "epoch": 31, "train_loss": 0.2010359975564129, "prior_loss": 0.0, "val_dice": 0.8882652681873994}
+{"arm": "plain", "epoch": 32, "train_loss": 0.20548558870659156, "prior_loss": 0.0, "val_dice": 0.8945323864968462}
+{"arm": "plain", "epoch": 33, "train_loss": 0.2027126990039559, "prior_loss": 0.0, "val_dice": 0.8766896906739152}
+{"arm": "plain", "epoch": 34, "train_loss": 0.20004351820577593, "prior_loss": 0.0, "val_dice": 0.8735860729970979}
+{"arm": "prior", "epoch": 1, "train_loss": 1.5317112566793667, "prior_loss": 0.6190818066106123, "val_dice": 0.5022332565156447}
+{"arm": "prior", "epoch": 2, "train_loss": 1.1829481598208933, "prior_loss": 0.38593717960312085, "val_dice": 0.7217128475728837}
+{"arm": "prior", "epoch": 3, "train_loss": 0.9195510140236687, "prior_loss": 0.3259344643310589, "val_dice": 0.7806647509393035}
+{"arm": "prior", "epoch": 4, "train_loss": 0.671554282965029, "prior_loss": 0.2805966086247388, "val_dice": 0.8277289544087134}
+{"arm": "prior", "epoch": 5, "train_loss": 0.4943261161884841, "prior_loss": 0.2455001173212248, "val_dice": 0.827540241658532}
+{"arm": "prior", "epoch": 6, "train_loss": 0.37276851583053083, "prior_loss": 0.21356598260428974, "val_dice": 0.8403276206334813}
+{"arm": "prior", "epoch": 7, "train_loss": 0.33098489889765487, "prior_loss": 0.19899115607361584, "val_dice": 0.8477903255075124}
+{"arm": "prior", "epoch": 8, "train_loss": 0.2969052214175463, "prior_loss": 0.19174326923401916, "val_dice": 0.8627738966611681}
+{"arm": "prior", "epoch": 9, "train_loss": 0.28051389118327813, "prior_loss": 0.1880969003062038, "val_dice": 0.8725957332949131}
+{"arm": "prior", "epoch": 10, "train_loss": 0.2749346365385196, "prior_loss": 0.18690040537758784, "val_dice": 0.8619852991742887}
+{"arm": "prior", "epoch": 11, "train_loss": 0.25607811560963883, "prior_loss": 0.18037923611700535, "val_dice": 0.8795770852487081}
+{"arm": "prior", "epoch": 12, "train_loss": 0.2614761083660757, "prior_loss": 0.18170949882444212, "val_dice": 0.8630933425227495}
+{"arm": "prior", "epoch": 13, "train_loss": 0.25250688633498025, "prior_loss": 0.1782353698988171, "val_dice": 0.87415103644124}
+{"arm": "prior", "epoch": 14, "train_loss": 0.23887576195685303, "prior_loss": 0.1741095924311701, "val_dice": 0.8714604794219597}
+{"arm": "prior", "epoch": 15, "train_loss": 0.23412665286484888, "prior_loss": 0.17238308029139743, "val_dice": 0.869504004369017}
+{"arm": "prior", "epoch": 16, "train_loss": 0.23092629650936408, "prior_loss": 0.16917021117885322, "val_dice": 0.8775651468023812}
+{"arm": "prior", "epoch": 17, "train_loss": 0.22960495510522058, "prior_loss": 0.1721822609577109, "val_dice": 0.8789386230384194}
+{"arm": "prior", "epoch": 18, "train_loss": 0.22670572689350912, "prior_loss": 0.1707700785687741, "val_dice": 0.8898282493886984}
+{"arm": "prior", "epoch": 19, "train_loss": 0.23058859390370987, "prior_loss": 0.17086099866120255, "val_dice": 0.8801831810264411}
+{"arm": "prior", "epoch": 20, "train_loss": 0.2286149563596529, "prior_loss": 0.17069995863472714, "val_dice": 0.8903287597222855}
+{"arm": "prior", "epoch": 21, "train_loss": 0.22261611361275702, "prior_loss": 0.168631727259387, "val_dice": 0.8809309725669353}
+{"arm": "prior", "epoch": 22, "train_loss": 0.2217200325034997, "prior_loss": 0.1693563684273292, "val_dice": 0.8880744748678677}
+{"arm": "prior", "epoch": 23, "train_loss": 0.21780561162706683, "prior_loss": 0.1664340579882264, "val_dice": 0.888768694373711}
+{"arm": "prior", "epoch": 24, "train_loss": 0.2149919343783575, "prior_loss": 0.16370506770908833, "val_dice": 0.8936410912827916}
+{"arm": "prior", "epoch": 25, "train_loss": 0.21468841536518404, "prior_loss": 0.1636239841909093, "val_dice": 0.8396305364869658}
+{"arm": "prior", "epoch": 26, "train_loss": 0.24396830085007584, "prior_loss": 0.18138585291693315, "val_dice": 0.8729913327063472}
+{"arm": "prior", "epoch": 27, "train_loss": 0.21895210094311657, "prior_loss": 0.1662747922956067, "val_dice": 0.8841134786992934}
+{"arm": "prior", "epoch": 28, "train_loss": 0.2172381256652229, "prior_loss": 0.164699706084588, "val_dice": 0.8792082720138825}
+{"arm": "prior", "epoch": 29, "train_loss": 0.2112753964303171, "prior_loss": 0.16163289766101277, "val_dice": 0.8788841419365333}
+{"arm": "prior", "epoch": 30, "train_loss": 0.20847521305960767, "prior_loss": 0.16123630966552915, "val_dice": 0.8872399010190926}
+{"arm": "prior", "epoch": 31, "train_loss": 0.20737228816484704, "prior_loss": 0.16081268036299767, "val_dice": 0.8924315181269041}
+{"arm": "prior", "epoch": 32, "train_loss": 0.20660999647396452, "prior_loss": 0.16023131465429769, "val_dice": 0.8926372671329847}
+{"arm": "prior", "epoch": 33, "train_loss": 0.20619571296607747, "prior_loss": 0.1604732776827672, "val_dice": 0.8823123760701626}
+{"arm": "prior", "epoch": 34, "train_loss": 0.20710229303906946, "prior_loss": 0.1624658690108096, "val_dice": 0.8853032079440913}
+{
+  "experiment": "R314",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "train": 814,
+  "val": 94,
+  "shared_initialization": true,
+  "prior": "outputs\\priors\\r313_clean_relation",
+  "prior_retrained_on_clean": true,
+  "prior_alpha": 0.05,
+  "clean_test_used": false,
+  "arms": [
+    {
+      "arm": "plain",
+      "best_epoch": 24,
+      "best_val_dice": 0.8945961540642615,
+      "completed_epochs": 34
+    },
+    {
+      "arm": "prior",
+      "best_epoch": 24,
+      "best_val_dice": 0.8936410912827916,
+      "completed_epochs": 34
+    }
+  ]
+}
+{
+  "dice": 0.8739875536885054,
+  "iou": 0.7796894023862289,
+  "precision": 0.8306592994752346,
+  "recall": 0.9268612845879131,
+  "specificity": 0.9947715918067167,
+  "boundary_iou": 0.16319116297188202,
+  "boundary_f1": 0.2749454721406459,
+  "gap_region_fp_rate": 0.3823891479779704,
+  "gap_region_precision": 0.6176108520220296,
+  "component_merge_rate": 0.7872340425531915,
+  "component_count_mae": 3.606382978723404,
+  "component_delta_mean": -3.3297872340425534,
+  "surface_dice_2px": 0.5009628005541052,
+  "surface_dice_5px": 0.8162539903579713,
+  "hd95_px": 14.96076699320487,
+  "assd_px": 4.14665620903554,
+  "dsc": 0.8739875536885054,
+  "nsd_2px": 0.5009628005541052,
+  "voe": 0.22031059761377128,
+  "msd_px": 4.14665620903554,
+  "ravd": 0.1430588106405162
+}
+{
+  "dice": 0.8722082220608673,
+  "iou": 0.7783107053371376,
+  "precision": 0.8207283779272814,
+  "recall": 0.9346108215435357,
+  "specificity": 0.9945845630476889,
+  "boundary_iou": 0.1638269036780218,
+  "boundary_f1": 0.2758127658627832,
+  "gap_region_fp_rate": 0.3906919460886298,
+  "gap_region_precision": 0.6093080539113702,
+  "component_merge_rate": 0.7872340425531915,
+  "component_count_mae": 3.202127659574468,
+  "component_delta_mean": -2.904255319148936,
+  "surface_dice_2px": 0.5029036871795115,
+  "surface_dice_5px": 0.8203665325351654,
+  "hd95_px": 14.998250204007288,
+  "assd_px": 4.269104249742904,
+  "dsc": 0.8722082220608673,
+  "nsd_2px": 0.5029036871795115,
+  "voe": 0.22168929466286214,
+  "msd_px": 4.269104249742904,
+  "ravd": 0.1563638960112574
+}
+{
+  "rendered": 12,
+  "output": "outputs\\visualizations\\r314_clean_plain_vs_refit_prior_unet_val94"
+}
+{
+  "input_sha256": "65b81565ea77d48b1c91017188533e49f1d0d0d4ec557540b73f6779764397a7",
+  "output_sha256": "7d2da65684e6c7bf20162938d8bcf1855ee483b607c138f82383a28b6e3a4218",
+  "changed": [
+    "decoder.encoder.stages.0.0.convs.0.all_modules.0.weight",
+    "decoder.encoder.stages.0.0.convs.0.conv.weight",
+    "encoder.stages.0.0.convs.0.all_modules.0.weight",
+    "encoder.stages.0.0.convs.0.conv.weight"
+  ],
+  "network_key_count": 448,
+  "unchanged_tensor_count": 444,
+  "xray_channel_exact": true,
+  "prior_channel_nonzero": 0,
+  "segmentation_head_tensor_count": 16
+}
+{
+  "experiment": "R315",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "selection_source": "configs\\r308_tsrs_clean_panel_selection.json",
+  "train_kept": 814,
+  "val_kept": 94,
+  "train_excluded": 61,
+  "val_excluded": 2,
+  "panel_jpegs_used_as_model_input": false,
+  "working_label_pixel_edits_detected": 0,
+  "source_unchanged": true,
+  "clean_test_used": false,
+  "source_plan": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\nnunet\\r260_mature_prior\\data\\nnUNet_preprocessed\\Dataset204_TSRS_RSNAEpiphysisMaturePrior2D\\nnUNetPlans.json",
+  "training_batch_size": 1
+}
+Dataset315_TSRSCleanRefitPrior2D
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Preprocessing dataset Dataset315_TSRSCleanRefitPrior2D
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-27 18:52:59.950525: R260 mature initialization {"checkpoint": "G:\\gutou\\YOLO+SAM\\outputs\\nnunet\\r315_clean_refit_prior\\r202_two_channel_zero_prior.pth", "sha256": "7d2da65684e6c7bf20162938d8bcf1855ee483b607c138f82383a28b6e3a4218", "strict_all_network_keys_loaded": true, "prior_channel_nonzero": 0, "segmentation_head_tensors_loaded": 16}
+2026-07-27 18:52:59.963093: do_dummy_2d_data_aug: False
+2026-07-27 18:52:59.965093: Using splits from existing split file: G:\gutou\YOLO+SAM\outputs\nnunet\r315_clean_refit_prior\data\nnUNet_preprocessed\Dataset315_TSRSCleanRefitPrior2D\splits_final.json
+2026-07-27 18:52:59.965093: The split file contains 1 splits.
+2026-07-27 18:52:59.966093: Desired fold for training: 0
+2026-07-27 18:52:59.966093: This split has 814 training and 94 validation cases.
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset315_TSRSCleanRefitPrior2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}, '1': {'max': 252.0, 'mean': 4.276753902435303, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 180.0, 'std': 22.17328643798828}}} 
+
+2026-07-27 18:53:01.519981: Unable to plot network architecture:
+2026-07-27 18:53:01.520982: No module named 'hiddenlayer'
+2026-07-27 18:53:01.559179: 
+2026-07-27 18:53:01.559179: Epoch 0
+2026-07-27 18:53:01.560178: Current learning rate: 0.0001
+2026-07-27 18:55:24.985994: train_loss -0.8809
+2026-07-27 18:55:24.988008: val_loss -0.8624
+2026-07-27 18:55:24.988008: Pseudo dice [0.9108]
+2026-07-27 18:55:24.988008: Epoch time: 143.43 s
+2026-07-27 18:55:24.989007: Yayy! New best EMA pseudo Dice: 0.9108
+2026-07-27 18:55:26.240016: R260 early stop {"completed_epochs": 1, "ema_dice": 0.9108222569715924, "early_best": 0.9108222569715924, "bad_epochs": 0, "stop": false}
+2026-07-27 18:55:26.242017: 
+2026-07-27 18:55:26.243015: Epoch 1
+2026-07-27 18:55:26.243015: Current learning rate: 0.0001
+2026-07-27 18:57:41.813756: train_loss -0.8854
+2026-07-27 18:57:41.814749: val_loss -0.8771
+2026-07-27 18:57:41.815170: Pseudo dice [0.9215]
+2026-07-27 18:57:41.815573: Epoch time: 135.57 s
+2026-07-27 18:57:41.816016: Yayy! New best EMA pseudo Dice: 0.9119
+2026-07-27 18:57:43.266147: R260 early stop {"completed_epochs": 2, "ema_dice": 0.9118853834964398, "early_best": 0.9118853834964398, "bad_epochs": 0, "stop": false}
+2026-07-27 18:57:43.268223: 
+2026-07-27 18:57:43.268223: Epoch 2
+2026-07-27 18:57:43.268223: Current learning rate: 0.0001
+2026-07-27 18:59:55.806111: train_loss -0.8783
+2026-07-27 18:59:55.807125: val_loss -0.8664
+2026-07-27 18:59:55.808115: Pseudo dice [0.9187]
+2026-07-27 18:59:55.808320: Epoch time: 132.54 s
+2026-07-27 18:59:55.808713: Yayy! New best EMA pseudo Dice: 0.9126
+2026-07-27 18:59:57.149523: R260 early stop {"completed_epochs": 3, "ema_dice": 0.9125701066441696, "early_best": 0.9125701066441696, "bad_epochs": 0, "stop": false}
+2026-07-27 18:59:57.151744: 
+2026-07-27 18:59:57.152257: Epoch 3
+2026-07-27 18:59:57.152573: Current learning rate: 0.0001
+2026-07-27 19:02:16.335110: train_loss -0.8867
+2026-07-27 19:02:16.335110: val_loss -0.8715
+2026-07-27 19:02:16.336979: Pseudo dice [0.9118]
+2026-07-27 19:02:16.337466: Epoch time: 139.18 s
+2026-07-27 19:02:17.152394: R260 early stop {"completed_epochs": 4, "ema_dice": 0.9124952644345313, "early_best": 0.9125701066441696, "bad_epochs": 1, "stop": false}
+2026-07-27 19:02:17.154388: 
+2026-07-27 19:02:17.154388: Epoch 4
+2026-07-27 19:02:17.155388: Current learning rate: 9e-05
+2026-07-27 19:04:33.502100: train_loss -0.8779
+2026-07-27 19:04:33.503018: val_loss -0.8808
+2026-07-27 19:04:33.503018: Pseudo dice [0.9211]
+2026-07-27 19:04:33.504096: Epoch time: 136.35 s
+2026-07-27 19:04:33.504096: Yayy! New best EMA pseudo Dice: 0.9134
+2026-07-27 19:04:34.848688: R260 early stop {"completed_epochs": 5, "ema_dice": 0.9133586545533771, "early_best": 0.9133586545533771, "bad_epochs": 0, "stop": false}
+2026-07-27 19:04:34.850684: 
+2026-07-27 19:04:34.850684: Epoch 5
+2026-07-27 19:04:34.851635: Current learning rate: 9e-05
+2026-07-27 19:06:53.806101: train_loss -0.8833
+2026-07-27 19:06:53.806101: val_loss -0.8641
+2026-07-27 19:06:53.807094: Pseudo dice [0.9118]
+2026-07-27 19:06:53.807094: Epoch time: 138.96 s
+2026-07-27 19:06:54.623762: R260 early stop {"completed_epochs": 6, "ema_dice": 0.9132020330407863, "early_best": 0.9133586545533771, "bad_epochs": 1, "stop": false}
+2026-07-27 19:06:54.625540: 
+2026-07-27 19:06:54.626751: Epoch 6
+2026-07-27 19:06:54.626751: Current learning rate: 9e-05
+2026-07-27 19:09:07.120871: train_loss -0.8829
+2026-07-27 19:09:07.121861: val_loss -0.8482
+2026-07-27 19:09:07.121861: Pseudo dice [0.911]
+2026-07-27 19:09:07.122860: Epoch time: 132.5 s
+2026-07-27 19:09:07.896834: R260 early stop {"completed_epochs": 7, "ema_dice": 0.9129816278539361, "early_best": 0.9133586545533771, "bad_epochs": 2, "stop": false}
+2026-07-27 19:09:07.898827: 
+2026-07-27 19:09:07.898827: Epoch 7
+2026-07-27 19:09:07.900933: Current learning rate: 9e-05
+2026-07-27 19:11:21.803608: train_loss -0.8824
+2026-07-27 19:11:21.803608: val_loss -0.8776
+2026-07-27 19:11:21.804714: Pseudo dice [0.9168]
+2026-07-27 19:11:21.804714: Epoch time: 133.91 s

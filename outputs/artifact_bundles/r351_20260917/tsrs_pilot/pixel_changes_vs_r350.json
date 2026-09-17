@@ -1,0 +1,684 @@
+{
+  "compared": "R351 pilot vs R350",
+  "n": 96,
+  "totals": {
+    "added_true_foreground": 25825,
+    "added_false_foreground": 26080,
+    "removed_true_foreground": 0,
+    "removed_false_foreground": 0
+  },
+  "per_case": [
+    {
+      "case": "10375",
+      "added_true_foreground": 84,
+      "added_false_foreground": 141,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "10520",
+      "added_true_foreground": 79,
+      "added_false_foreground": 162,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "10618",
+      "added_true_foreground": 106,
+      "added_false_foreground": 184,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "10624",
+      "added_true_foreground": 86,
+      "added_false_foreground": 229,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "11852",
+      "added_true_foreground": 145,
+      "added_false_foreground": 189,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "11945",
+      "added_true_foreground": 140,
+      "added_false_foreground": 204,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "12498",
+      "added_true_foreground": 249,
+      "added_false_foreground": 232,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "12627",
+      "added_true_foreground": 105,
+      "added_false_foreground": 115,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "12827",
+      "added_true_foreground": 231,
+      "added_false_foreground": 258,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13220",
+      "added_true_foreground": 60,
+      "added_false_foreground": 62,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13436",
+      "added_true_foreground": 205,
+      "added_false_foreground": 194,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13441",
+      "added_true_foreground": 117,
+      "added_false_foreground": 77,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13454",
+      "added_true_foreground": 102,
+      "added_false_foreground": 95,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13480",
+      "added_true_foreground": 190,
+      "added_false_foreground": 146,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13517",
+      "added_true_foreground": 32,
+      "added_false_foreground": 122,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13840",
+      "added_true_foreground": 142,
+      "added_false_foreground": 242,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "13867",
+      "added_true_foreground": 115,
+      "added_false_foreground": 184,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1399",
+      "added_true_foreground": 190,
+      "added_false_foreground": 111,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "14041",
+      "added_true_foreground": 167,
+      "added_false_foreground": 265,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1418",
+      "added_true_foreground": 108,
+      "added_false_foreground": 75,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1452",
+      "added_true_foreground": 410,
+      "added_false_foreground": 703,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "15040",
+      "added_true_foreground": 170,
+      "added_false_foreground": 264,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "15067",
+      "added_true_foreground": 174,
+      "added_false_foreground": 287,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1518",
+      "added_true_foreground": 10,
+      "added_false_foreground": 59,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1522",
+      "added_true_foreground": 91,
+      "added_false_foreground": 135,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "15274",
+      "added_true_foreground": 187,
+      "added_false_foreground": 72,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "15369",
+      "added_true_foreground": 142,
+      "added_false_foreground": 172,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "15446",
+      "added_true_foreground": 191,
+      "added_false_foreground": 71,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1560",
+      "added_true_foreground": 212,
+      "added_false_foreground": 483,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1572",
+      "added_true_foreground": 351,
+      "added_false_foreground": 433,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1585",
+      "added_true_foreground": 514,
+      "added_false_foreground": 619,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1590",
+      "added_true_foreground": 26,
+      "added_false_foreground": 156,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1620",
+      "added_true_foreground": 256,
+      "added_false_foreground": 396,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1660",
+      "added_true_foreground": 526,
+      "added_false_foreground": 583,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1666",
+      "added_true_foreground": 979,
+      "added_false_foreground": 958,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1674",
+      "added_true_foreground": 556,
+      "added_false_foreground": 432,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1678",
+      "added_true_foreground": 454,
+      "added_false_foreground": 337,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1694",
+      "added_true_foreground": 557,
+      "added_false_foreground": 562,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1736",
+      "added_true_foreground": 418,
+      "added_false_foreground": 354,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1742",
+      "added_true_foreground": 874,
+      "added_false_foreground": 727,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1807",
+      "added_true_foreground": 672,
+      "added_false_foreground": 542,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1812",
+      "added_true_foreground": 686,
+      "added_false_foreground": 688,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1827",
+      "added_true_foreground": 439,
+      "added_false_foreground": 541,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1828",
+      "added_true_foreground": 346,
+      "added_false_foreground": 534,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1846",
+      "added_true_foreground": 964,
+      "added_false_foreground": 636,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1855",
+      "added_true_foreground": 999,
+      "added_false_foreground": 607,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1880",
+      "added_true_foreground": 205,
+      "added_false_foreground": 212,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1884",
+      "added_true_foreground": 190,
+      "added_false_foreground": 87,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1886",
+      "added_true_foreground": 1064,
+      "added_false_foreground": 536,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1901",
+      "added_true_foreground": 776,
+      "added_false_foreground": 552,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1931",
+      "added_true_foreground": 922,
+      "added_false_foreground": 778,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "1934",
+      "added_true_foreground": 437,
+      "added_false_foreground": 634,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2024",
+      "added_true_foreground": 97,
+      "added_false_foreground": 210,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2044",
+      "added_true_foreground": 236,
+      "added_false_foreground": 272,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2246",
+      "added_true_foreground": 101,
+      "added_false_foreground": 593,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2248",
+      "added_true_foreground": 135,
+      "added_false_foreground": 232,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2709",
+      "added_true_foreground": 67,
+      "added_false_foreground": 72,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "2853",
+      "added_true_foreground": 81,
+      "added_false_foreground": 42,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3058",
+      "added_true_foreground": 296,
+      "added_false_foreground": 263,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3249",
+      "added_true_foreground": 562,
+      "added_false_foreground": 318,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3269",
+      "added_true_foreground": 139,
+      "added_false_foreground": 130,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3352",
+      "added_true_foreground": 71,
+      "added_false_foreground": 54,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3353",
+      "added_true_foreground": 123,
+      "added_false_foreground": 83,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3354",
+      "added_true_foreground": 146,
+      "added_false_foreground": 158,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3366",
+      "added_true_foreground": 128,
+      "added_false_foreground": 74,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3392",
+      "added_true_foreground": 180,
+      "added_false_foreground": 207,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3460",
+      "added_true_foreground": 404,
+      "added_false_foreground": 409,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3468",
+      "added_true_foreground": 149,
+      "added_false_foreground": 142,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3493",
+      "added_true_foreground": 532,
+      "added_false_foreground": 661,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3567",
+      "added_true_foreground": 144,
+      "added_false_foreground": 117,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3595",
+      "added_true_foreground": 101,
+      "added_false_foreground": 69,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3596",
+      "added_true_foreground": 285,
+      "added_false_foreground": 104,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3602",
+      "added_true_foreground": 205,
+      "added_false_foreground": 161,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3678",
+      "added_true_foreground": 169,
+      "added_false_foreground": 99,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3700",
+      "added_true_foreground": 419,
+      "added_false_foreground": 396,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3725",
+      "added_true_foreground": 177,
+      "added_false_foreground": 87,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3732",
+      "added_true_foreground": 82,
+      "added_false_foreground": 17,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3777",
+      "added_true_foreground": 287,
+      "added_false_foreground": 392,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "3840",
+      "added_true_foreground": 229,
+      "added_false_foreground": 243,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "4047",
+      "added_true_foreground": 302,
+      "added_false_foreground": 197,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "4193",
+      "added_true_foreground": 292,
+      "added_false_foreground": 372,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "5355",
+      "added_true_foreground": 377,
+      "added_false_foreground": 357,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "5825",
+      "added_true_foreground": 85,
+      "added_false_foreground": 101,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "5882",
+      "added_true_foreground": 13,
+      "added_false_foreground": 100,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6503",
+      "added_true_foreground": 60,
+      "added_false_foreground": 96,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6605",
+      "added_true_foreground": 238,
+      "added_false_foreground": 269,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6606",
+      "added_true_foreground": 328,
+      "added_false_foreground": 236,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6698",
+      "added_true_foreground": 61,
+      "added_false_foreground": 134,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6918",
+      "added_true_foreground": 133,
+      "added_false_foreground": 159,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "6947",
+      "added_true_foreground": 171,
+      "added_false_foreground": 173,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "7253",
+      "added_true_foreground": 111,
+      "added_false_foreground": 115,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "7259",
+      "added_true_foreground": 158,
+      "added_false_foreground": 171,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "7269",
+      "added_true_foreground": 116,
+      "added_false_foreground": 132,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "7312",
+      "added_true_foreground": 109,
+      "added_false_foreground": 100,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "7654",
+      "added_true_foreground": 105,
+      "added_false_foreground": 174,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    },
+    {
+      "case": "8253",
+      "added_true_foreground": 170,
+      "added_false_foreground": 152,
+      "removed_true_foreground": 0,
+      "removed_false_foreground": 0
+    }
+  ]
+}

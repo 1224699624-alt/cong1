@@ -1,0 +1,44 @@
+{
+  "decision": "go_r238_mask_editor",
+  "cv_auc": 0.1108843537414966,
+  "best_low_risk_row": {
+    "prob_threshold": 0.1,
+    "risk_max": 0,
+    "num_selected": 730,
+    "num_images": 61,
+    "num_safe_nonmerge_gain": 718,
+    "num_overerosion_proxy": 0,
+    "mean_delta_dice": 8.422598293328669e-05,
+    "mean_delta_iou": 0.00014273217819084287,
+    "mean_delta_recall": 0.0,
+    "mean_delta_boundary_iou": 0.00062883802043356,
+    "mean_delta_boundary_f1": 0.0008241687473033758,
+    "mean_delta_gap_region_fp_rate": -0.00045031603126438597,
+    "mean_delta_component_count_mae": 0.009589041095890411,
+    "mean_delta_merged_pred_components": -0.00821917808219178,
+    "mean_background_connected_by_cut": 0.5753424657534246,
+    "mean_cut_gt_fg_frac": 0.0,
+    "mean_cut_gt_gap_frac": 1.0
+  },
+  "output_json": "outputs/analysis/r238_r237_candidate_gate_groupedcv.json"
+}
+{
+  "summary_json": "outputs/analysis/r238_r237_oracle_best_mask_editor_summary.json",
+  "per_image_csv": "outputs/analysis/r238_r237_oracle_best_mask_editor_per_image.csv",
+  "selected_csv": "outputs/analysis/r238_r237_oracle_best_mask_editor_selected.csv",
+  "summary": {
+    "num_rows": 96,
+    "num_images": 96,
+    "num_edited": 61,
+    "mean_delta_dice": 0.000120144466487711,
+    "mean_delta_iou": 0.00020067370438835915,
+    "mean_delta_recall": 0.0,
+    "mean_delta_precision": 0.00025640113511575524,
+    "mean_delta_boundary_iou": 0.0008818145704021268,
+    "mean_delta_boundary_f1": 0.0011637795449734388,
+    "mean_delta_gap_region_fp_rate": -0.0006571176648115521,
+    "mean_delta_component_count_mae": -0.041666666666666664,
+    "mean_delta_component_delta_mean": 0.041666666666666664,
+    "mean_cut_pixels": 17.427083333333332
+  }
+}

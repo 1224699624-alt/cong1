@@ -1,0 +1,8 @@
+{"stage": "samples", "split": "train", "done": 8, "total": 8, "pairs": 160}
+{"stage": "samples", "split": "val", "done": 4, "total": 4, "pairs": 82}
+{"epoch": 1, "train_loss": 1.0971689783036709, "auroc": 0.5913146936347412, "average_precision": 0.5701499212926879, "accuracy": 0.5121951219512195, "positive_recall": 0.5365853658536586, "close_pair_recall": 0.45161290322580644, "contact_pair_recall": 0.5555555555555556, "negative_specificity": 0.4878048780487805, "positive_heatmap_soft_dice": 0.004565611481666565, "valid_positive_heat_count": 40}
+{
+  "complete": true,
+  "selected_epoch": 1,
+  "checkpoint": "outputs\\smoke\\r323_ram_native_prior\\ram_image_centers_seed3231_selected.pt"
+}

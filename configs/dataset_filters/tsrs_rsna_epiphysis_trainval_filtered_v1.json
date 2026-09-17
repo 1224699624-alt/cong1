@@ -1,0 +1,46 @@
+{
+  "source_dataset": "TSRS_RSNA-Epiphysis",
+  "target_dataset": "TSRS_RSNA-Epiphysis_trainval_filtered_v1",
+  "notes": "Conservative train/val-only filtered variant based on high-consensus-low-GT candidate agreement analysis. Test remains untouched for fair evaluation. Articular-Surface is untouched.",
+  "excludes": {
+    "train": {
+      "6079": "High-consensus-low-GT train sample.",
+      "12905": "High-consensus-low-GT train sample.",
+      "6413": "High-consensus-low-GT train sample.",
+      "13971": "High-consensus-low-GT train sample.",
+      "5851": "High-consensus-low-GT train sample.",
+      "5452": "High-consensus-low-GT train sample.",
+      "5091": "High-consensus-low-GT train sample.",
+      "6141": "High-consensus-low-GT train sample.",
+      "5374": "High-consensus-low-GT train sample.",
+      "13798": "High-consensus-low-GT train sample.",
+      "13763": "High-consensus-low-GT train sample.",
+      "6417": "High-consensus-low-GT train sample.",
+      "5909": "High-consensus-low-GT train sample.",
+      "5117": "High-consensus-low-GT train sample.",
+      "5254": "High-consensus-low-GT train sample.",
+      "4969": "High-consensus-low-GT train sample.",
+      "13630": "High-consensus-low-GT train sample.",
+      "6207": "High-consensus-low-GT train sample.",
+      "13698": "High-consensus-low-GT train sample.",
+      "5485": "High-consensus-low-GT train sample."
+    },
+    "val": {
+      "5882": "High-consensus-low-GT val sample.",
+      "13517": "High-consensus-low-GT val sample.",
+      "5825": "High-consensus-low-GT val sample.",
+      "10624": "High-consensus-low-GT val sample.",
+      "6503": "High-consensus-low-GT val sample.",
+      "13867": "High-consensus-low-GT val sample.",
+      "13840": "High-consensus-low-GT val sample.",
+      "1560": "High-consensus-low-GT val sample.",
+      "4193": "High-consensus-low-GT val sample.",
+      "1399": "High-consensus-low-GT val sample.",
+      "5355": "High-consensus-low-GT val sample.",
+      "1886": "High-consensus-low-GT val sample.",
+      "1452": "High-consensus-low-GT val sample.",
+      "1585": "High-consensus-low-GT val sample."
+    },
+    "test": {}
+  }
+}

@@ -1,0 +1,101 @@
+[R308] start 2026-07-24T19:31:15.9914743+08:00
+0, NVIDIA GeForce RTX 3060 Laptop GPU, 684 MiB, 6144 MiB
+[R308] rebuilding frozen R259 prior maps (found 0/971)
+{"split": "train", "done": 50, "total": 875, "pairs": 1757}
+{"split": "train", "done": 100, "total": 875, "pairs": 3441}
+{"split": "train", "done": 150, "total": 875, "pairs": 5340}
+{"split": "train", "done": 200, "total": 875, "pairs": 7099}
+{"split": "train", "done": 250, "total": 875, "pairs": 8992}
+{"split": "train", "done": 300, "total": 875, "pairs": 10725}
+{"split": "train", "done": 350, "total": 875, "pairs": 12537}
+{"split": "train", "done": 400, "total": 875, "pairs": 14369}
+{"split": "train", "done": 450, "total": 875, "pairs": 16351}
+{"split": "train", "done": 500, "total": 875, "pairs": 18151}
+{"split": "train", "done": 550, "total": 875, "pairs": 20106}
+{"split": "train", "done": 600, "total": 875, "pairs": 22045}
+{"split": "train", "done": 650, "total": 875, "pairs": 24041}
+{"split": "train", "done": 700, "total": 875, "pairs": 25947}
+{"split": "train", "done": 750, "total": 875, "pairs": 27837}
+{"split": "train", "done": 800, "total": 875, "pairs": 29611}
+{"split": "train", "done": 850, "total": 875, "pairs": 31499}
+{"split": "train", "done": 875, "total": 875, "pairs": 32325}
+{"split": "val", "done": 50, "total": 96, "pairs": 2034}
+{"split": "val", "done": 96, "total": 96, "pairs": 3813}
+{
+  "checkpoints": [
+    {
+      "path": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\pair_prior\\r258b_prediction_relation_prior_full_20260715_133745\\image_centers_age_sex_seed2581_final.pt",
+      "seed": 2581,
+      "sha256": "930572b55e00eac1561de989a5e00cb1a09d1ef4a8bef7495b81d9c7a69608b5",
+      "epoch": 4
+    },
+    {
+      "path": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\pair_prior\\r258b_prediction_relation_prior_full_20260715_133745\\image_centers_age_sex_seed2582_final.pt",
+      "seed": 2582,
+      "sha256": "dd60efd64b19e5608d8259448622923ab5900e077839d34875ede7ff6c510a80",
+      "epoch": 4
+    },
+    {
+      "path": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\pair_prior\\r258b_prediction_relation_prior_full_20260715_133745\\image_centers_age_sex_seed2583_final.pt",
+      "seed": 2583,
+      "sha256": "f5d419650cce2a251fbe10182ef64ec84506828e7d6b745ac50c98b019d77f95",
+      "epoch": 4
+    }
+  ],
+  "input_provenance": {
+    "hashes": {
+      "train_proposals": "23ba7f570e86b6a5807c50ca5097e0a8b0040fdf7f72f0748a794ec0f98c056e",
+      "val_proposals": "5f17a815078ab7d275f01565cb82f84f6bd346b09b3d8e8e22e1f140c008b634",
+      "fold_manifest": "7d2984059411c5a4e8a03c7445596a5d7be6693eacf9c868eb89cdee47559065",
+      "inference_manifest": "c451833f0d783398dbb77a0cd9d234f0cc47c09ed46c9d067ad4b0b6fc596d17",
+      "train_metadata": "bfb40b05d22a6b2151af3982b9de2e0dd2534b21c661df79037f33247d599857",
+      "val_metadata": "d52cb2e32f055c315e47fe3e010ac7e55fbfc2018fe9419ff0da42848d706128"
+    },
+    "phase_a_decision": "allow_r258_phase_b_relation_prior",
+    "val_proposal_decision": "allow_r258_with_both_scale_methods",
+    "train_exact_once": 875,
+    "val_unique_images": 96,
+    "folds": 5
+  },
+  "r258b_result": "outputs\\analysis\\r258b_prediction_relation_prior_full.json",
+  "r258b_result_sha256": "d55f773515407513f08d64166721dc4c80ea92e0ae286501343919c26b6456db",
+  "splits": {
+    "train": {
+      "images": 875,
+      "pairs": 32325,
+      "nonzero_maps": 875
+    },
+    "val": {
+      "images": 96,
+      "pairs": 3813,
+      "nonzero_maps": 96
+    }
+  }
+}
+{
+  "experiment": "R308",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "selection_source": "configs\\r308_tsrs_clean_panel_selection.json",
+  "train_kept": 814,
+  "val_kept": 94,
+  "train_excluded": 61,
+  "val_excluded": 2,
+  "panel_jpegs_used_as_model_input": false,
+  "working_label_pixel_edits_detected": 0,
+  "source_unchanged": true,
+  "clean_test_used": false,
+  "source_plan": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\nnunet\\r260_mature_prior\\data\\nnUNet_preprocessed\\Dataset204_TSRS_RSNAEpiphysisMaturePrior2D\\nnUNetPlans.json",
+  "training_batch_size": 1
+}
+Dataset309_TSRSR260CleanPanels2D
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Preprocessing dataset Dataset309_TSRSR260CleanPanels2D
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}

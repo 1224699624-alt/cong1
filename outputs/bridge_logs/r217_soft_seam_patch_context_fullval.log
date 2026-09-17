@@ -1,0 +1,48 @@
+r217/enrich/val:   0%|          | 0/92 [00:00<?, ?it/s]r217/enrich/val:   1%|          | 1/92 [00:08<12:37,  8.32s/it]r217/enrich/val:   2%|▏         | 2/92 [00:26<21:05, 14.06s/it]r217/enrich/val:   3%|▎         | 3/92 [00:54<30:19, 20.44s/it]r217/enrich/val:   4%|▍         | 4/92 [01:10<27:31, 18.77s/it]r217/enrich/val:   5%|▌         | 5/92 [01:27<25:58, 17.92s/it]r217/enrich/val:   7%|▋         | 6/92 [01:46<26:30, 18.49s/it]r217/enrich/val:   8%|▊         | 7/92 [02:10<28:36, 20.20s/it]r217/enrich/val:   9%|▊         | 8/92 [02:22<24:45, 17.69s/it]r217/enrich/val:  10%|▉         | 9/92 [02:53<29:57, 21.65s/it]r217/enrich/val:  11%|█         | 10/92 [02:59<23:11, 16.97s/it]r217/enrich/val:  12%|█▏        | 11/92 [03:25<26:48, 19.86s/it]r217/enrich/val:  13%|█▎        | 12/92 [03:34<22:05, 16.57s/it]r217/enrich/val:  14%|█▍        | 13/92 [03:47<20:00, 15.20s/it]r217/enrich/val:  15%|█▌        | 14/92 [04:05<21:03, 16.19s/it]r217/enrich/val:  16%|█▋        | 15/92 [04:22<21:10, 16.51s/it]r217/enrich/val:  17%|█▋        | 16/92 [04:38<20:39, 16.31s/it]r217/enrich/val:  18%|█▊        | 17/92 [04:57<21:25, 17.14s/it]r217/enrich/val:  20%|█▉        | 18/92 [05:18<22:40, 18.38s/it]r217/enrich/val:  21%|██        | 19/92 [05:50<27:11, 22.35s/it]r217/enrich/val:  22%|██▏       | 20/92 [06:17<28:26, 23.70s/it]r217/enrich/val:  23%|██▎       | 21/92 [06:54<32:51, 27.77s/it]r217/enrich/val:  24%|██▍       | 22/92 [07:24<33:01, 28.30s/it]r217/enrich/val:  25%|██▌       | 23/92 [07:54<33:19, 28.98s/it]r217/enrich/val:  26%|██▌       | 24/92 [08:13<29:26, 25.98s/it]r217/enrich/val:  27%|██▋       | 25/92 [08:42<29:52, 26.75s/it]r217/enrich/val:  28%|██▊       | 26/92 [08:59<26:10, 23.80s/it]r217/enrich/val:  29%|██▉       | 27/92 [10:14<42:30, 39.24s/it]r217/enrich/val:  30%|███       | 28/92 [11:22<51:04, 47.89s/it]r217/enrich/val:  32%|███▏      | 29/92 [12:39<59:33, 56.72s/it]r217/enrich/val:  33%|███▎      | 30/92 [13:01<47:52, 46.34s/it]r217/enrich/val:  34%|███▎      | 31/92 [13:34<42:56, 42.23s/it]r217/enrich/val:  35%|███▍      | 32/92 [14:52<52:49, 52.83s/it]r217/enrich/val:  36%|███▌      | 33/92 [16:24<1:03:30, 64.59s/it]r217/enrich/val:  37%|███▋      | 34/92 [17:37<1:04:57, 67.20s/it]r217/enrich/val:  38%|███▊      | 35/92 [18:41<1:02:59, 66.30s/it]r217/enrich/val:  39%|███▉      | 36/92 [20:10<1:08:04, 72.93s/it]r217/enrich/val:  40%|████      | 37/92 [20:53<58:52, 64.22s/it]  r217/enrich/val:  41%|████▏     | 38/92 [22:19<1:03:39, 70.73s/it]r217/enrich/val:  42%|████▏     | 39/92 [23:03<55:21, 62.67s/it]  r217/enrich/val:  43%|████▎     | 40/92 [24:28<1:00:08, 69.40s/it]r217/enrich/val:  45%|████▍     | 41/92 [25:41<59:54, 70.49s/it]  r217/enrich/val:  46%|████▌     | 42/92 [26:51<58:24, 70.08s/it]r217/enrich/val:  47%|████▋     | 43/92 [28:15<1:00:39, 74.28s/it]r217/enrich/val:  48%|████▊     | 44/92 [29:33<1:00:23, 75.48s/it]r217/enrich/val:  49%|████▉     | 45/92 [30:05<49:00, 62.56s/it]  r217/enrich/val:  50%|█████     | 46/92 [30:28<38:46, 50.58s/it]r217/enrich/val:  51%|█████     | 47/92 [31:56<46:25, 61.91s/it]r217/enrich/val:  52%|█████▏    | 48/92 [32:43<42:01, 57.31s/it]r217/enrich/val:  53%|█████▎    | 49/92 [33:58<44:58, 62.76s/it]r217/enrich/val:  54%|█████▍    | 50/92 [35:14<46:43, 66.75s/it]r217/enrich/val:  55%|█████▌    | 51/92 [35:23<33:40, 49.28s/it]r217/enrich/val:  57%|█████▋    | 52/92 [35:44<27:09, 40.73s/it]r217/enrich/val:  58%|█████▊    | 53/92 [36:09<23:25, 36.03s/it]r217/enrich/val:  59%|█████▊    | 54/92 [36:20<18:09, 28.66s/it]r217/enrich/val:  60%|█████▉    | 55/92 [36:24<13:02, 21.15s/it]r217/enrich/val:  61%|██████    | 56/92 [36:37<11:12, 18.67s/it]r217/enrich/val:  62%|██████▏   | 57/92 [38:09<23:44, 40.69s/it]r217/enrich/val:  63%|██████▎   | 58/92 [38:22<18:18, 32.32s/it]r217/enrich/val:  64%|██████▍   | 59/92 [38:25<13:02, 23.72s/it]r217/enrich/val:  65%|██████▌   | 60/92 [38:34<10:13, 19.16s/it]r217/enrich/val:  66%|██████▋   | 61/92 [38:48<09:11, 17.78s/it]r217/enrich/val:  67%|██████▋   | 62/92 [38:54<07:07, 14.26s/it]r217/enrich/val:  68%|██████▊   | 63/92 [39:06<06:32, 13.53s/it]r217/enrich/val:  70%|██████▉   | 64/92 [40:17<14:17, 30.61s/it]r217/enrich/val:  71%|███████   | 65/92 [40:26<10:55, 24.28s/it]r217/enrich/val:  72%|███████▏  | 66/92 [41:55<18:51, 43.54s/it]r217/enrich/val:  73%|███████▎  | 67/92 [42:03<13:47, 33.12s/it]r217/enrich/val:  74%|███████▍  | 68/92 [42:12<10:18, 25.76s/it]r217/enrich/val:  75%|███████▌  | 69/92 [43:17<14:26, 37.66s/it]r217/enrich/val:  76%|███████▌  | 70/92 [43:26<10:39, 29.08s/it]r217/enrich/val:  77%|███████▋  | 71/92 [43:46<09:12, 26.31s/it]r217/enrich/val:  78%|███████▊  | 72/92 [44:01<07:34, 22.74s/it]r217/enrich/val:  79%|███████▉  | 73/92 [44:09<05:47, 18.31s/it]r217/enrich/val:  80%|████████  | 74/92 [44:29<05:38, 18.83s/it]r217/enrich/val:  82%|████████▏ | 75/92 [44:38<04:33, 16.07s/it]r217/enrich/val:  83%|████████▎ | 76/92 [45:34<07:27, 27.97s/it]r217/enrich/val:  84%|████████▎ | 77/92 [46:53<10:47, 43.18s/it]r217/enrich/val:  85%|████████▍ | 78/92 [47:20<08:56, 38.34s/it]r217/enrich/val:  86%|████████▌ | 79/92 [47:29<06:25, 29.63s/it]r217/enrich/val:  87%|████████▋ | 80/92 [47:33<04:22, 21.87s/it]r217/enrich/val:  88%|████████▊ | 81/92 [47:43<03:20, 18.27s/it]r217/enrich/val:  89%|████████▉ | 82/92 [48:08<03:22, 20.20s/it]r217/enrich/val:  90%|█████████ | 83/92 [48:32<03:13, 21.53s/it]r217/enrich/val:  91%|█████████▏| 84/92 [48:47<02:35, 19.48s/it]r217/enrich/val:  92%|█████████▏| 85/92 [49:05<02:14, 19.20s/it]r217/enrich/val:  93%|█████████▎| 86/92 [49:21<01:49, 18.19s/it]r217/enrich/val:  95%|█████████▍| 87/92 [49:37<01:26, 17.34s/it]r217/enrich/val:  96%|█████████▌| 88/92 [50:03<01:20, 20.16s/it]r217/enrich/val:  97%|█████████▋| 89/92 [50:16<00:54, 18.06s/it]r217/enrich/val:  98%|█████████▊| 90/92 [50:29<00:32, 16.26s/it]r217/enrich/val:  99%|█████████▉| 91/92 [50:41<00:15, 15.27s/it]r217/enrich/val: 100%|██████████| 92/92 [50:58<00:00, 15.61s/it]r217/enrich/val: 100%|██████████| 92/92 [50:58<00:00, 33.24s/it]
+{
+  "run_id": "R217-soft-seam-patch-context-enrichment",
+  "candidate_csv": "outputs/analysis/r216_soft_seam_action_fullval_candidates.csv",
+  "output_csv": "outputs/analysis/r217_soft_seam_patch_context_fullval_candidates.csv",
+  "num_rows": 1060,
+  "num_images": 92,
+  "num_matched": 1060,
+  "num_unmatched": 0,
+  "match_rate": 1.0,
+  "feature_keys": [
+    "r217_cut_intensity_mean",
+    "r217_cut_intensity_std",
+    "r217_cut_intensity_p10",
+    "r217_cut_intensity_p90",
+    "r217_ring_intensity_mean",
+    "r217_ring_intensity_std",
+    "r217_inner_ring_intensity_mean",
+    "r217_outer_ring_intensity_mean",
+    "r217_cut_minus_ring_intensity",
+    "r217_cut_minus_inner_intensity",
+    "r217_cut_minus_outer_intensity",
+    "r217_inner_minus_outer_intensity",
+    "r217_cut_gradient_mean",
+    "r217_cut_gradient_p90",
+    "r217_ring_gradient_mean",
+    "r217_outer_ring_gradient_mean",
+    "r217_cut_ring_gradient_ratio",
+    "r217_cut_outer_gradient_ratio",
+    "r217_anchor_dist_mean",
+    "r217_anchor_dist_p90",
+    "r217_bg_dist_mean",
+    "r217_bg_dist_p10",
+    "r217_local_bg_frac",
+    "r217_local_anchor_frac",
+    "r217_cut_touches_boundary_frac",
+    "r217_cut_neighbor_bg_frac",
+    "r217_cut_neighbor_fg_frac",
+    "r217_local_h",
+    "r217_local_w",
+    "r217_local_area_frac_image",
+    "r217_cut_y_center_norm",
+    "r217_cut_x_center_norm",
+    "r217_feature_matched"
+  ],
+  "clean_test_v2_used": false,
+  "writes_masks": false
+}

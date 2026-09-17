@@ -1,0 +1,9 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r288_directional_pair_gate_dev",
+    "started":  "2026-07-22T19:22:13.6643480+08:00",
+    "pid":  26348,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r288_directional_pair_gate_dev.stderr.log",
+    "official_test_locked":  true,
+    "experiment":  "R288",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r288_directional_pair_gate_dev.stdout.log"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "ready_for_r190_maskdino_tiny_train_smoke",
+  "parts": {
+    "torch_gpu_smoke": {
+      "torch": "2.11.0+cu130",
+      "torch_cuda": "13.0",
+      "cuda_available": true,
+      "device_count": 1,
+      "gpu_tensor_smoke": "ok",
+      "device_name": "NVIDIA GeForce RTX 4090"
+    },
+    "detectron2_smoke": {
+      "status": "detectron2_import_ok",
+      "detectron2_version": "0.6",
+      "torch": "2.11.0+cu130",
+      "torch_cuda": "13.0",
+      "cuda_available": true,
+      "nms_keep": [
+        0
+      ]
+    },
+    "maskdino_source_smoke": {
+      "status": "maskdino_source_ready",
+      "existing": {
+        "external_src/MaskDINO/maskdino": true,
+        "external_src/MaskDINO/train_net.py": true,
+        "external_src/MaskDINO/configs": true
+      }
+    }
+  }
+}

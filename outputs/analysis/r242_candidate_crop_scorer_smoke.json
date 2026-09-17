@@ -1,0 +1,97 @@
+{
+  "run_id": "R242-candidate-crop-scorer",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "evidence_level": "original_val_candidate_crop_grouped_cv_diagnostic",
+  "idea": "score local background-channel cuts from image/cut crops to separate true bone gaps from foreground erosion",
+  "num_candidate_rows": 6,
+  "num_candidate_images": 3,
+  "num_crops": 6,
+  "num_safe_useful": 0,
+  "num_risk": 6,
+  "device": "cpu",
+  "crop_size": 56,
+  "epochs": 1,
+  "candidate_generation": "R239 GT-free bg components/seeds + seam probability map; GT only labels/audits candidate effects",
+  "labels": {
+    "safe_useful": "non-worse Dice/IoU/Recall/Boundary, gap-FP gain, component-count non-worse, cut_gt_fg_frac<=0.25, cut_gt_gap_frac>=0.75",
+    "risk": "foreground-heavy cut, recall loss, overlap drop, or boundary drop"
+  },
+  "seam_probability_model": {
+    "images": 1,
+    "positive_pixels": 86,
+    "sampled_positive": 16,
+    "sampled_negative": 48,
+    "skipped_training_images": [
+      {
+        "image": "10624.png",
+        "reason": "UnidentifiedImageError",
+        "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\10624.png'"
+      }
+    ],
+    "num_samples": 64,
+    "positive_sample_rate": 0.25
+  },
+  "skipped_images": [
+    {
+      "image": "10520.png",
+      "reason": "UnidentifiedImageError",
+      "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\10520.png'"
+    },
+    {
+      "image": "10624.png",
+      "reason": "UnidentifiedImageError",
+      "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\10624.png'"
+    },
+    {
+      "image": "11852.png",
+      "reason": "UnidentifiedImageError",
+      "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\11852.png'"
+    }
+  ],
+  "grouped_cv": {
+    "skipped": false,
+    "folds": 2,
+    "fold_summaries": [
+      {
+        "fold": 1,
+        "train_images": 1,
+        "val_images": 2,
+        "train_rows": 2,
+        "val_rows": 4
+      },
+      {
+        "fold": 2,
+        "train_images": 2,
+        "val_images": 1,
+        "train_rows": 4,
+        "val_rows": 2
+      }
+    ],
+    "best": {
+      "useful_threshold": 0.2,
+      "risk_threshold": 0.5,
+      "selected": 1,
+      "selected_images": 1,
+      "safe_useful": 0,
+      "risk": 1,
+      "mean_delta_dice": -7.665212327612192e-05,
+      "mean_delta_iou": -0.0001238633862838956,
+      "mean_delta_recall": -0.00018578535598534618,
+      "mean_delta_boundary_iou": -0.0002475824497886747,
+      "mean_delta_boundary_f1": -0.0003485710983134327,
+      "mean_delta_gap_region_fp_rate": -0.000125617619964824,
+      "mean_delta_component_count_mae": 0.0,
+      "mean_cut_gt_fg_frac": 0.75,
+      "mean_cut_gt_gap_frac": 0.25
+    }
+  },
+  "promotion_gate": {
+    "candidate_level": "selected risk far below selected safe, Recall delta zero, positive Boundary IoU/F1, negative gap FP",
+    "next_step": "only if candidate-level gate passes, write an isolated original-val mask editor; clean-test-v2 remains locked"
+  },
+  "warning": "Original-val development only; not clean-test-v2 or R201 final evidence."
+}

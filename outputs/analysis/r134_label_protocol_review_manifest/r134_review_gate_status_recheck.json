@@ -1,0 +1,22 @@
+{
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "gate_pass": false,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "clean_test_reference": 24,
+    "train_review_queue": 64,
+    "val_audit_queue": 6,
+    "reviewed_train": 0,
+    "confirmed_train_for_variant": 0,
+    "confirmed_train_p0": 0,
+    "reviewed_val": 0
+  },
+  "train_decision_counts": {
+    "blank": 64
+  },
+  "val_decision_counts": {
+    "blank": 6
+  },
+  "next_action": "continue_human_review_before_gpu_or_dataset_variant"
+}

@@ -1,0 +1,55 @@
+{"uploaded": "1/7", "file": "data/remote_variants/RAM-W600_BoneSegmentation.tar.gz", "mb": 174.5}
+{"uploaded": "2/7", "file": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth", "mb": 41.0}
+{"uploaded": "3/7", "file": "scripts/train_r323_ram_r317_prior.py", "mb": 0.0}
+{"uploaded": "4/7", "file": "scripts/build_r323_ram_native_prior_maps.py", "mb": 0.0}
+{"uploaded": "5/7", "file": "scripts/build_r322_ram_r317_seam_prior_maps.py", "mb": 0.0}
+{"uploaded": "6/7", "file": "scripts/train_r322_ram_nnunet_r317_seam_prior.py", "mb": 0.0}
+{"uploaded": "7/7", "file": "run_r323_ram_native_r317_remote.sh", "mb": 0.0}
+{
+  "complete": true,
+  "files": [
+    {
+      "local": "outputs/deploy_cache/RAM-W600_BoneSegmentation.tar.gz",
+      "remote": "data/remote_variants/RAM-W600_BoneSegmentation.tar.gz",
+      "bytes": 182949055,
+      "sha256": "a80bddcad28a871694b038f9e7ade685d2b38d6dff3fe52becfdd8e8607abb4c"
+    },
+    {
+      "local": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+      "remote": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+      "bytes": 42973438,
+      "sha256": "3e42fbeb763f6e1fafc80e550c1c630b7fd599ff8cb85f7462ff8b5926475d01"
+    },
+    {
+      "local": "scripts/train_r323_ram_r317_prior.py",
+      "remote": "scripts/train_r323_ram_r317_prior.py",
+      "bytes": 15515,
+      "sha256": "45c1dc3d849087a6d7b4cf27f02e52343d7eb53180cb0c36f4d0f24fa7f28cd9"
+    },
+    {
+      "local": "scripts/build_r323_ram_native_prior_maps.py",
+      "remote": "scripts/build_r323_ram_native_prior_maps.py",
+      "bytes": 4977,
+      "sha256": "d475fcc0da8e96cd692e72deac7733564a4068ff85a361802ffab02dc076f615"
+    },
+    {
+      "local": "scripts/build_r322_ram_r317_seam_prior_maps.py",
+      "remote": "scripts/build_r322_ram_r317_seam_prior_maps.py",
+      "bytes": 8950,
+      "sha256": "2016f89383d44a3c085b777990a553dcf692faf0d27abb7c45b6520f171be747"
+    },
+    {
+      "local": "scripts/train_r322_ram_nnunet_r317_seam_prior.py",
+      "remote": "scripts/train_r322_ram_nnunet_r317_seam_prior.py",
+      "bytes": 16310,
+      "sha256": "ecd5f17c961ec43d2423f939afb05e69fef52ab1f1b48068403d5a140d351c86"
+    },
+    {
+      "local": "run_r323_ram_native_r317_remote.sh",
+      "remote": "run_r323_ram_native_r317_remote.sh",
+      "bytes": 2407,
+      "sha256": "fb577aea134fd50ffc235d48b7ba759a89340b987c1fcfe10b1e9d9bc2eb65da"
+    }
+  ],
+  "extract": "3.6G\t/root/autodl-tmp/YOLO_SAM_generic_src/data/remote_variants/RAM-W600"
+}

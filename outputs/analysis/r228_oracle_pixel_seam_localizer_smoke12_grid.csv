@@ -1,0 +1,7 @@
+accepted,mean_cut_gt_fg_frac,mean_cut_gt_gap_frac,mean_delta_boundary_f1,mean_delta_boundary_iou,mean_delta_component_count_mae,mean_delta_dice,mean_delta_gap_region_fp_rate,mean_delta_iou,mean_delta_recall,mean_seam_prob_mean,mean_seam_prob_p90,num_hard_risk,num_images,num_overerosion_proxy,num_quick_useful,num_rows,num_safe_gap_positive,seam_prob_threshold
+1,0.0,1.0,6.865659061999763e-05,4.623857947771981e-05,0.0,0.00010984234427935391,-0.0005110297248956952,0.00017050789561456892,0.0,0.49255215107706446,0.9864660535927151,0,1,0,1,1,1,0.4
+0,,,,,,,,,,,,0,0,0,0,0,0,0.5
+0,,,,,,,,,,,,0,0,0,0,0,0,0.6
+0,,,,,,,,,,,,0,0,0,0,0,0,0.7
+0,,,,,,,,,,,,0,0,0,0,0,0,0.8
+0,,,,,,,,,,,,0,0,0,0,0,0,0.9

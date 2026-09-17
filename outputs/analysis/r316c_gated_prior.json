@@ -1,0 +1,766 @@
+{
+  "experiment": "R316B_FULL_QUANTILE_HARD_NEGATIVE",
+  "config": {
+    "variant_root": "data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1",
+    "train_metadata": "outputs/metadata/r256/filtered_train.csv",
+    "val_metadata": "outputs/metadata/r256/filtered_val.csv",
+    "train_proposals": "outputs/analysis/r258_oof_center_basin_full_proposals.csv",
+    "val_proposals": "outputs/analysis/r257b_scale_repair_fullval_proposals.csv",
+    "output_dir": "outputs/pair_prior/r316c_gated",
+    "result_json": "outputs/analysis/r316c_gated_prior.json",
+    "crop_size": 256,
+    "epochs": 8,
+    "batch_size": 16,
+    "workers": 6,
+    "lr": 0.0003,
+    "seed": 3161,
+    "device": "cuda",
+    "crop_margin_scales": 1.35,
+    "match_tolerance_scale": 0.6,
+    "relative_pair_limit": 0.8,
+    "proposal_distance_limit": 4.0,
+    "relative_close_threshold": 0.2,
+    "max_pairs_per_case": 32,
+    "limit_train": 0,
+    "limit_val": 0,
+    "hard_negative_quantile": 0.2,
+    "require_full_data": true,
+    "r316c": true,
+    "global_size": 128,
+    "center_sigma_rel": 0.15,
+    "center_sigma_min": 3.0,
+    "center_sigma_max": 12.0,
+    "center_jitter_rel": 0.03
+  },
+  "train_audit": {
+    "included_cases": 871.0,
+    "positive_pairs": 14491.0,
+    "negative_pairs": 14491.0,
+    "close_positive_pairs": 7685.0,
+    "contact_positive_pairs": 2352.0,
+    "cases_without_balanced_pairs": 4.0,
+    "num_images_with_proposals": 875.0,
+    "num_expected_images": 875.0,
+    "num_proposals": 23714.0
+  },
+  "val_audit": {
+    "included_cases": 96.0,
+    "positive_pairs": 1778.0,
+    "negative_pairs": 1778.0,
+    "close_positive_pairs": 914.0,
+    "contact_positive_pairs": 256.0,
+    "num_images_with_proposals": 96.0,
+    "num_expected_images": 96.0,
+    "num_proposals": 2618.0
+  },
+  "hard_negative_train_count": 2899,
+  "hard_negative_val_count": 356,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5719718021930711,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9988751406074241,
+          "close_recall": 1.0,
+          "negative_specificity": 0.14285714285714285,
+          "hard_negative_specificity": 0.0056179775280898875
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9977502812148481,
+          "close_recall": 1.0,
+          "negative_specificity": 0.22890888638920134,
+          "hard_negative_specificity": 0.011235955056179775
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9915635545556806,
+          "close_recall": 0.9978118161925602,
+          "negative_specificity": 0.33970753655793023,
+          "hard_negative_specificity": 0.011235955056179775
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.984251968503937,
+          "close_recall": 0.9978118161925602,
+          "negative_specificity": 0.48200224971878514,
+          "hard_negative_specificity": 0.033707865168539325
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.9403824521934758,
+          "close_recall": 0.9507658643326039,
+          "negative_specificity": 0.6361079865016873,
+          "hard_negative_specificity": 0.10393258426966293
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.7947131608548932,
+          "close_recall": 0.7888402625820569,
+          "negative_specificity": 0.8008998875140607,
+          "hard_negative_specificity": 0.37640449438202245
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.38863892013498313,
+          "close_recall": 0.44529540481400437,
+          "negative_specificity": 0.9460067491563554,
+          "hard_negative_specificity": 0.8174157303370787
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.0562429696287964,
+          "close_recall": 0.08315098468271334,
+          "negative_specificity": 0.9960629921259843,
+          "hard_negative_specificity": 0.9803370786516854
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.00562429696287964,
+          "close_recall": 0.010940919037199124,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.0,
+          "close_recall": 0.0,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.0,
+          "close_recall": 0.0,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.10062915831804276,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3938336946135983,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9898762654668166,
+          "close_recall": 0.9989059080962801,
+          "negative_specificity": 0.3250843644544432,
+          "hard_negative_specificity": 0.019662921348314606
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9797525309336333,
+          "close_recall": 0.9945295404814004,
+          "negative_specificity": 0.4769403824521935,
+          "hard_negative_specificity": 0.06460674157303371
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9656917885264342,
+          "close_recall": 0.9923413566739606,
+          "negative_specificity": 0.6220472440944882,
+          "hard_negative_specificity": 0.1544943820224719
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.9392575928008999,
+          "close_recall": 0.9835886214442013,
+          "negative_specificity": 0.7536557930258717,
+          "hard_negative_specificity": 0.2949438202247191
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.8970753655793026,
+          "close_recall": 0.9693654266958425,
+          "negative_specificity": 0.843644544431946,
+          "hard_negative_specificity": 0.44662921348314605
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.8160854893138357,
+          "close_recall": 0.9463894967177243,
+          "negative_specificity": 0.9122609673790776,
+          "hard_negative_specificity": 0.6264044943820225
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.68785151856018,
+          "close_recall": 0.8522975929978118,
+          "negative_specificity": 0.9561304836895388,
+          "hard_negative_specificity": 0.797752808988764
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.4870641169853768,
+          "close_recall": 0.6663019693654267,
+          "negative_specificity": 0.9808773903262092,
+          "hard_negative_specificity": 0.9044943820224719
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.22215973003374578,
+          "close_recall": 0.32603938730853393,
+          "negative_specificity": 0.9915635545556806,
+          "hard_negative_specificity": 0.9578651685393258
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.07142857142857142,
+          "close_recall": 0.11159737417943107,
+          "negative_specificity": 0.9983127109111362,
+          "hard_negative_specificity": 0.9915730337078652
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.01687289088863892,
+          "close_recall": 0.030634573304157548,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.20086248219013214,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.36788778614754447,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9983127109111362,
+          "close_recall": 1.0,
+          "negative_specificity": 0.12935883014623173,
+          "hard_negative_specificity": 0.0028089887640449437
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9955005624296963,
+          "close_recall": 1.0,
+          "negative_specificity": 0.2064116985376828,
+          "hard_negative_specificity": 0.0028089887640449437
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9938132733408324,
+          "close_recall": 1.0,
+          "negative_specificity": 0.3065241844769404,
+          "hard_negative_specificity": 0.016853932584269662
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.9881889763779528,
+          "close_recall": 0.9967177242888403,
+          "negative_specificity": 0.4398200224971879,
+          "hard_negative_specificity": 0.025280898876404494
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.9769403824521935,
+          "close_recall": 0.9945295404814004,
+          "negative_specificity": 0.5961754780652418,
+          "hard_negative_specificity": 0.0898876404494382
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.9454443194600675,
+          "close_recall": 0.9814004376367614,
+          "negative_specificity": 0.7615298087739033,
+          "hard_negative_specificity": 0.28651685393258425
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.8419572553430821,
+          "close_recall": 0.9409190371991247,
+          "negative_specificity": 0.8875140607424072,
+          "hard_negative_specificity": 0.547752808988764
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.49606299212598426,
+          "close_recall": 0.6312910284463895,
+          "negative_specificity": 0.9791901012373453,
+          "hard_negative_specificity": 0.898876404494382
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.05174353205849269,
+          "close_recall": 0.0700218818380744,
+          "negative_specificity": 0.9983127109111362,
+          "hard_negative_specificity": 0.9915730337078652
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.0005624296962879641,
+          "close_recall": 0.0010940919037199124,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.0,
+          "close_recall": 0.0,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.23057402670383453,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3531075332305552,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9943757030371203,
+          "close_recall": 1.0,
+          "negative_specificity": 0.34758155230596177,
+          "hard_negative_specificity": 0.011235955056179775
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9853768278965129,
+          "close_recall": 0.9967177242888403,
+          "negative_specificity": 0.45894263217097864,
+          "hard_negative_specificity": 0.03651685393258427
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9707536557930259,
+          "close_recall": 0.9934354485776805,
+          "negative_specificity": 0.5815523059617548,
+          "hard_negative_specificity": 0.11797752808988764
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.9555680539932508,
+          "close_recall": 0.9835886214442013,
+          "negative_specificity": 0.6968503937007874,
+          "hard_negative_specificity": 0.199438202247191
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.9268841394825647,
+          "close_recall": 0.9715536105032823,
+          "negative_specificity": 0.8031496062992126,
+          "hard_negative_specificity": 0.3258426966292135
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.8633295838020247,
+          "close_recall": 0.9299781181619255,
+          "negative_specificity": 0.8841394825646794,
+          "hard_negative_specificity": 0.5252808988764045
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.7694038245219348,
+          "close_recall": 0.8687089715536105,
+          "negative_specificity": 0.9308211473565804,
+          "hard_negative_specificity": 0.6741573033707865
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.6383577052868391,
+          "close_recall": 0.7899343544857768,
+          "negative_specificity": 0.9673790776152981,
+          "hard_negative_specificity": 0.8426966292134831
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.468503937007874,
+          "close_recall": 0.6422319474835886,
+          "negative_specificity": 0.9881889763779528,
+          "hard_negative_specificity": 0.9410112359550562
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.265466816647919,
+          "close_recall": 0.41575492341356673,
+          "negative_specificity": 0.9977502812148481,
+          "hard_negative_specificity": 0.9887640449438202
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.043869516310461196,
+          "close_recall": 0.0787746170678337,
+          "negative_specificity": 0.999437570303712,
+          "hard_negative_specificity": 0.9971910112359551
+        }
+      ],
+      "mean_seam_soft_dice": 0.3069201111793518,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.34191267656997076,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9651293588301463,
+          "close_recall": 0.9923413566739606,
+          "negative_specificity": 0.7739032620922385,
+          "hard_negative_specificity": 0.32303370786516855
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9274465691788526,
+          "close_recall": 0.9803063457330415,
+          "negative_specificity": 0.8385826771653543,
+          "hard_negative_specificity": 0.44662921348314605
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.8835770528683915,
+          "close_recall": 0.9660831509846827,
+          "negative_specificity": 0.8807649043869517,
+          "hard_negative_specificity": 0.5168539325842697
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.8346456692913385,
+          "close_recall": 0.9474835886214442,
+          "negative_specificity": 0.9083239595050618,
+          "hard_negative_specificity": 0.598314606741573
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.78177727784027,
+          "close_recall": 0.9299781181619255,
+          "negative_specificity": 0.9336332958380202,
+          "hard_negative_specificity": 0.6825842696629213
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.7232845894263217,
+          "close_recall": 0.9080962800875274,
+          "negative_specificity": 0.9499437570303711,
+          "hard_negative_specificity": 0.75
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.6428571428571429,
+          "close_recall": 0.8599562363238512,
+          "negative_specificity": 0.9606299212598425,
+          "hard_negative_specificity": 0.8033707865168539
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.5534308211473565,
+          "close_recall": 0.7921225382932167,
+          "negative_specificity": 0.9746906636670416,
+          "hard_negative_specificity": 0.8735955056179775
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.43194600674915634,
+          "close_recall": 0.6280087527352297,
+          "negative_specificity": 0.9876265466816648,
+          "hard_negative_specificity": 0.9382022471910112
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.2879640044994376,
+          "close_recall": 0.40919037199124725,
+          "negative_specificity": 0.9955005624296963,
+          "hard_negative_specificity": 0.9775280898876404
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.15241844769403826,
+          "close_recall": 0.2100656455142232,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.3297586143016815,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3355266780450644,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9600674915635545,
+          "close_recall": 0.9956236323851203,
+          "negative_specificity": 0.703037120359955,
+          "hard_negative_specificity": 0.29775280898876405
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9150731158605174,
+          "close_recall": 0.9814004376367614,
+          "negative_specificity": 0.8307086614173228,
+          "hard_negative_specificity": 0.45224719101123595
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.8385826771653543,
+          "close_recall": 0.9540481400437637,
+          "negative_specificity": 0.9111361079865017,
+          "hard_negative_specificity": 0.6544943820224719
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.7401574803149606,
+          "close_recall": 0.9168490153172867,
+          "negative_specificity": 0.9510686164229472,
+          "hard_negative_specificity": 0.7668539325842697
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.6265466816647919,
+          "close_recall": 0.8599562363238512,
+          "negative_specificity": 0.9617547806524185,
+          "hard_negative_specificity": 0.8089887640449438
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.5326209223847019,
+          "close_recall": 0.7910284463894968,
+          "negative_specificity": 0.9713160854893138,
+          "hard_negative_specificity": 0.8567415730337079
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.43532058492688414,
+          "close_recall": 0.6969365426695843,
+          "negative_specificity": 0.9780652418447694,
+          "hard_negative_specificity": 0.8904494382022472
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.33014623172103486,
+          "close_recall": 0.5426695842450766,
+          "negative_specificity": 0.984251968503937,
+          "hard_negative_specificity": 0.9213483146067416
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.1940382452193476,
+          "close_recall": 0.32166301969365424,
+          "negative_specificity": 0.9876265466816648,
+          "hard_negative_specificity": 0.9382022471910112
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.08211473565804274,
+          "close_recall": 0.13676148796498905,
+          "negative_specificity": 0.9960629921259843,
+          "hard_negative_specificity": 0.9803370786516854
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.012935883014623173,
+          "close_recall": 0.02188183807439825,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.34872934222221375,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.33027639973571493,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9853768278965129,
+          "close_recall": 0.9956236323851203,
+          "negative_specificity": 0.5584926884139483,
+          "hard_negative_specificity": 0.13202247191011235
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9634420697412823,
+          "close_recall": 0.9923413566739606,
+          "negative_specificity": 0.735658042744657,
+          "hard_negative_specificity": 0.2893258426966292
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9133858267716536,
+          "close_recall": 0.9824945295404814,
+          "negative_specificity": 0.8610798650168728,
+          "hard_negative_specificity": 0.4803370786516854
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.8492688413948256,
+          "close_recall": 0.9573304157549234,
+          "negative_specificity": 0.9280089988751407,
+          "hard_negative_specificity": 0.6769662921348315
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.7615298087739033,
+          "close_recall": 0.9288840262582057,
+          "negative_specificity": 0.9600674915635545,
+          "hard_negative_specificity": 0.8061797752808989
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.6681664791901012,
+          "close_recall": 0.8796498905908097,
+          "negative_specificity": 0.9752530933633295,
+          "hard_negative_specificity": 0.8764044943820225
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.5562429696287964,
+          "close_recall": 0.8063457330415755,
+          "negative_specificity": 0.9870641169853769,
+          "hard_negative_specificity": 0.9353932584269663
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.4128233970753656,
+          "close_recall": 0.6400437636761488,
+          "negative_specificity": 0.9938132733408324,
+          "hard_negative_specificity": 0.9691011235955056
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.23678290213723285,
+          "close_recall": 0.3982494529540481,
+          "negative_specificity": 0.9971878515185602,
+          "hard_negative_specificity": 0.9859550561797753
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.07930258717660292,
+          "close_recall": 0.1301969365426696,
+          "negative_specificity": 0.999437570303712,
+          "hard_negative_specificity": 0.9971910112359551
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.005061867266591676,
+          "close_recall": 0.0087527352297593,
+          "negative_specificity": 1.0,
+          "hard_negative_specificity": 1.0
+        }
+      ],
+      "mean_seam_soft_dice": 0.4216511845588684,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.3258034956968383,
+      "num_pairs": 3556,
+      "threshold_grid": [
+        {
+          "threshold": 0.3,
+          "positive_recall": 0.9859392575928009,
+          "close_recall": 0.9956236323851203,
+          "negative_specificity": 0.6169853768278966,
+          "hard_negative_specificity": 0.09269662921348315
+        },
+        {
+          "threshold": 0.35,
+          "positive_recall": 0.9746906636670416,
+          "close_recall": 0.9934354485776805,
+          "negative_specificity": 0.7350956130483689,
+          "hard_negative_specificity": 0.18820224719101122
+        },
+        {
+          "threshold": 0.39999999999999997,
+          "positive_recall": 0.9505061867266592,
+          "close_recall": 0.9912472647702407,
+          "negative_specificity": 0.827334083239595,
+          "hard_negative_specificity": 0.33707865168539325
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "positive_recall": 0.9167604049493814,
+          "close_recall": 0.9770240700218819,
+          "negative_specificity": 0.8869516310461192,
+          "hard_negative_specificity": 0.4943820224719101
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "positive_recall": 0.8740157480314961,
+          "close_recall": 0.9617067833698031,
+          "negative_specificity": 0.9173228346456693,
+          "hard_negative_specificity": 0.5926966292134831
+        },
+        {
+          "threshold": 0.5499999999999999,
+          "positive_recall": 0.8166479190101237,
+          "close_recall": 0.9485776805251641,
+          "negative_specificity": 0.9353205849268842,
+          "hard_negative_specificity": 0.6769662921348315
+        },
+        {
+          "threshold": 0.5999999999999999,
+          "positive_recall": 0.7519685039370079,
+          "close_recall": 0.9223194748358862,
+          "negative_specificity": 0.952193475815523,
+          "hard_negative_specificity": 0.7612359550561798
+        },
+        {
+          "threshold": 0.6499999999999999,
+          "positive_recall": 0.6856017997750281,
+          "close_recall": 0.899343544857768,
+          "negative_specificity": 0.9640044994375703,
+          "hard_negative_specificity": 0.8202247191011236
+        },
+        {
+          "threshold": 0.7,
+          "positive_recall": 0.5877390326209224,
+          "close_recall": 0.8457330415754923,
+          "negative_specificity": 0.9775028121484814,
+          "hard_negative_specificity": 0.8876404494382022
+        },
+        {
+          "threshold": 0.7499999999999999,
+          "positive_recall": 0.48200224971878514,
+          "close_recall": 0.7417943107221007,
+          "negative_specificity": 0.9865016872890888,
+          "hard_negative_specificity": 0.9325842696629213
+        },
+        {
+          "threshold": 0.7999999999999998,
+          "positive_recall": 0.32002249718785153,
+          "close_recall": 0.5328227571115973,
+          "negative_specificity": 0.9949381327334084,
+          "hard_negative_specificity": 0.9747191011235955
+        }
+      ],
+      "mean_seam_soft_dice": 0.3343676030635834,
+      "hard_negative_count": 356,
+      "hard_negative_distance_threshold": 2.065416885897182,
+      "hard_negative_quantile": 0.2
+    }
+  ],
+  "checkpoint": "outputs/pair_prior/r316c_gated/safe_relation_seed3161_final.pt",
+  "clean_test_used": false
+}

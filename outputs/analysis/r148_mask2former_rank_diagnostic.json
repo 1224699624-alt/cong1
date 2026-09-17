@@ -1,0 +1,4250 @@
+{
+  "status": "diagnostic_complete",
+  "run_id": "R148",
+  "checkpoint": "outputs/r146_mask2former_hf_maskonly_readout/model.pt",
+  "clean_test_policy": "clean-test-v2 used only for diagnostic inference; top-k GT-fraction is an oracle diagnostic, not a deployable readout",
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_evaluated": 16,
+      "threshold_summary": [
+        {
+          "value": 1e-06,
+          "mean": {
+            "dice": 0.0606877251297389,
+            "iou": 0.03148564753574238,
+            "precision": 0.03148564753574238,
+            "recall": 1.0,
+            "specificity": 0.10777322419630547,
+            "boundary_iou": 0.0,
+            "threshold": 1e-06,
+            "selected_fraction": 0.8952212259810102
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 3e-06,
+          "mean": {
+            "dice": 0.06449464629819657,
+            "iou": 0.033532492243776246,
+            "precision": 0.033532492243776246,
+            "recall": 1.0,
+            "specificity": 0.1574794708501229,
+            "boundary_iou": 0.0,
+            "threshold": 3e-06,
+            "selected_fraction": 0.8467586983663922
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 5e-06,
+          "mean": {
+            "dice": 0.10596040281231164,
+            "iou": 0.05673615587881874,
+            "precision": 0.05673846620266327,
+            "recall": 0.9992893590057059,
+            "specificity": 0.5057789272324686,
+            "boundary_iou": 0.00036992858618074945,
+            "threshold": 5e-06,
+            "selected_fraction": 0.5084538772767477
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 7.5e-06,
+          "mean": {
+            "dice": 0.14827144858342564,
+            "iou": 0.0830384867563167,
+            "precision": 0.30210149644625184,
+            "recall": 0.5372925574724177,
+            "specificity": 0.8855029438505168,
+            "boundary_iou": 0.004437056270101575,
+            "threshold": 7.5e-06,
+            "selected_fraction": 0.12456479357376445
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 1e-05,
+          "mean": {
+            "dice": 0.06689402331448183,
+            "iou": 0.03807572415309612,
+            "precision": 0.6946934153085338,
+            "recall": 0.17757920130358276,
+            "specificity": 0.9520933931452616,
+            "boundary_iou": 0.0025741089366228694,
+            "threshold": 1e-05,
+            "selected_fraction": 0.05123138101468839
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 1.5e-05,
+          "mean": {
+            "dice": 0.022474732305238526,
+            "iou": 0.012660178204334,
+            "precision": 0.887675496808922,
+            "recall": 0.1243598635916999,
+            "specificity": 0.9607197758761519,
+            "boundary_iou": 0.0005312222762785107,
+            "threshold": 1.5e-05,
+            "selected_fraction": 0.04170924438241443
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 2e-05,
+          "mean": {
+            "dice": 0.026182379918432558,
+            "iou": 0.0151483773484005,
+            "precision": 0.8903431459103054,
+            "recall": 0.1201007167215768,
+            "specificity": 0.966154385816867,
+            "boundary_iou": 0.0007041637508747376,
+            "threshold": 2e-05,
+            "selected_fraction": 0.03629123325662181
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 5e-05,
+          "mean": {
+            "dice": 0.01075364302670109,
+            "iou": 0.005882924471069993,
+            "precision": 0.9772072936660269,
+            "recall": 0.006218936630726682,
+            "specificity": 0.9999188093404014,
+            "boundary_iou": 0.001101904090267983,
+            "threshold": 5e-05,
+            "selected_fraction": 0.0002176823952851581
+          },
+          "num_evaluated": 16
+        }
+      ],
+      "topk_gt_fraction_summary": [
+        {
+          "value": 0.5,
+          "mean": {
+            "dice": 0.2790249131914815,
+            "iou": 0.1709526951612878,
+            "precision": 0.41853828354315087,
+            "recall": 0.20926845650142772,
+            "specificity": 0.9924208283735332,
+            "boundary_iou": 0.009228484519657014,
+            "factor": 0.5,
+            "selected_fraction": 0.014045687338180598
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 0.75,
+          "mean": {
+            "dice": 0.32397112493256003,
+            "iou": 0.20428473018978743,
+            "precision": 0.3779658107961883,
+            "recall": 0.283475016497226,
+            "specificity": 0.9874759794313415,
+            "boundary_iou": 0.010094001200317856,
+            "factor": 0.75,
+            "selected_fraction": 0.021068685218989865
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 1.0,
+          "mean": {
+            "dice": 0.3460820562046883,
+            "iou": 0.2203134863784344,
+            "precision": 0.3460820562046883,
+            "recall": 0.3460820562046883,
+            "specificity": 0.9820536386095602,
+            "boundary_iou": 0.010105119096126922,
+            "factor": 1.0,
+            "selected_fraction": 0.028091528557675046
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 1.25,
+          "mean": {
+            "dice": 0.355161355011115,
+            "iou": 0.2256876523385622,
+            "precision": 0.3196454501391667,
+            "recall": 0.3995561640416595,
+            "specificity": 0.9763353660353614,
+            "boundary_iou": 0.009479813486062572,
+            "factor": 1.25,
+            "selected_fraction": 0.03511437189636023
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 1.5,
+          "mean": {
+            "dice": 0.3535258894992066,
+            "iou": 0.22244267325967046,
+            "precision": 0.29460471669268945,
+            "recall": 0.44190779215503445,
+            "specificity": 0.9703227916796686,
+            "boundary_iou": 0.009671783514071386,
+            "factor": 1.5,
+            "selected_fraction": 0.04213736977716949
+          },
+          "num_evaluated": 16
+        },
+        {
+          "value": 2.0,
+          "mean": {
+            "dice": 0.336854987573279,
+            "iou": 0.2072726432373443,
+            "precision": 0.25264124067995924,
+            "recall": 0.5052824813599185,
+            "specificity": 0.9577702210811873,
+            "boundary_iou": 0.008519671500985808,
+            "factor": 2.0,
+            "selected_fraction": 0.05618305711535009
+          },
+          "num_evaluated": 16
+        }
+      ],
+      "per_image": [
+        {
+          "image": "10003.png",
+          "gt_fraction": 0.015128592413089123,
+          "prob_max": 1.1340862329234369e-05,
+          "prob_mean": 4.937877292832127e-06,
+          "prob_p99": 1.0171603207709268e-05,
+          "threshold_records": [
+            {
+              "dice": 0.032417840615617984,
+              "iou": 0.016475978124217642,
+              "precision": 0.016475978124217642,
+              "recall": 1.0,
+              "specificity": 0.08303500217612865,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.918221200527814
+            },
+            {
+              "dice": 0.034939548897543624,
+              "iou": 0.01778039392016745,
+              "precision": 0.01778039392016745,
+              "recall": 1.0,
+              "specificity": 0.15143285326488815,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8508581126501075
+            },
+            {
+              "dice": 0.05603469143572471,
+              "iou": 0.02882494414322105,
+              "precision": 0.02882494414322105,
+              "recall": 1.0,
+              "specificity": 0.48245509443724216,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5248437720441173
+            },
+            {
+              "dice": 0.2356282024469309,
+              "iou": 0.1335479306423473,
+              "precision": 0.1337490771896111,
+              "recall": 0.9888642036259908,
+              "specificity": 0.901619604285857,
+              "boundary_iou": 0.005921354405571077,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.11185216229449696
+            },
+            {
+              "dice": 0.23292151162790697,
+              "iou": 0.1318116389060251,
+              "precision": 0.2210508165628002,
+              "recall": 0.24613949916344388,
+              "specificity": 0.9866765312214423,
+              "boundary_iou": 0.02115372136785413,
+              "threshold": 1e-05,
+              "selected_fraction": 0.016845647609484052
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.08239316864451718,
+              "iou": 0.042966664123884356,
+              "precision": 0.1235874931431706,
+              "recall": 0.06179544145478483,
+              "specificity": 0.9932685368031174,
+              "boundary_iou": 0.005100614868641699,
+              "factor": 0.5,
+              "selected_fraction": 0.007564503680589558
+            },
+            {
+              "dice": 0.14989890757487892,
+              "iou": 0.0810220091153996,
+              "precision": 0.17488297249853715,
+              "recall": 0.13116103019830494,
+              "specificity": 0.9904941307724814,
+              "boundary_iou": 0.01847315102959677,
+              "factor": 0.75,
+              "selected_fraction": 0.011346340572794343
+            },
+            {
+              "dice": 0.21388408897665873,
+              "iou": 0.11974815724815725,
+              "precision": 0.21388408897665873,
+              "recall": 0.21388408897665873,
+              "specificity": 0.9879244872826031,
+              "boundary_iou": 0.017861748774825895,
+              "factor": 1.0,
+              "selected_fraction": 0.015128592413089123
+            },
+            {
+              "dice": 0.2537759194470518,
+              "iou": 0.14532838154808445,
+              "precision": 0.22839777065870892,
+              "recall": 0.28549877945089003,
+              "specificity": 0.9851842083420933,
+              "boundary_iou": 0.01895148160208401,
+              "factor": 1.25,
+              "selected_fraction": 0.0189108442533839
+            },
+            {
+              "dice": 0.283827224154388,
+              "iou": 0.1653838285685061,
+              "precision": 0.23652355178466938,
+              "recall": 0.35478208398475,
+              "specificity": 0.9824085383451563,
+              "boundary_iou": 0.017709335899903755,
+              "factor": 1.5,
+              "selected_fraction": 0.022692681145588686
+            },
+            {
+              "dice": 0.29249293727200415,
+              "iou": 0.1712982298326212,
+              "precision": 0.21936970295400313,
+              "recall": 0.43873940590800625,
+              "specificity": 0.9760175034053359,
+              "boundary_iou": 0.01798368367772286,
+              "factor": 2.0,
+              "selected_fraction": 0.030257184826178247
+            }
+          ]
+        },
+        {
+          "image": "10004.png",
+          "gt_fraction": 0.03643128653291838,
+          "prob_max": 7.812437615939416e-06,
+          "prob_mean": 4.961887498211581e-06,
+          "prob_p99": 7.411591923300875e-06,
+          "threshold_records": [
+            {
+              "dice": 0.07648178024820175,
+              "iou": 0.03976140151044194,
+              "precision": 0.03976140151044194,
+              "recall": 1.0,
+              "specificity": 0.08691902663199319,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9162475453323993
+            },
+            {
+              "dice": 0.07791592821242332,
+              "iou": 0.04053721133017868,
+              "precision": 0.04053721133017868,
+              "recall": 1.0,
+              "specificity": 0.10511735667992744,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8987122038608619
+            },
+            {
+              "dice": 0.10968843009039511,
+              "iou": 0.05802664060064999,
+              "precision": 0.05802664060064999,
+              "recall": 1.0,
+              "specificity": 0.38623374084994505,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.6278372512316402
+            },
+            {
+              "dice": 0.23866271232138042,
+              "iou": 0.1355008572128337,
+              "precision": 0.8248229593738352,
+              "recall": 0.1395158239818434,
+              "specificity": 0.9988797067215213,
+              "boundary_iou": 0.005746013299761121,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.006162220512408273
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.4682217458916488,
+              "iou": 0.3056720152775644,
+              "precision": 0.7023326188374732,
+              "recall": 0.3511663094187366,
+              "specificity": 0.9943727906982287,
+              "boundary_iou": 0.009115662365336806,
+              "factor": 0.5,
+              "selected_fraction": 0.01821564326645919
+            },
+            {
+              "dice": 0.5083578304225027,
+              "iou": 0.34080414243483975,
+              "precision": 0.5930869842977707,
+              "recall": 0.4448114991804312,
+              "specificity": 0.9884614559522136,
+              "boundary_iou": 0.009721756620851492,
+              "factor": 0.75,
+              "selected_fraction": 0.02732323522318814
+            },
+            {
+              "dice": 0.5255831547093683,
+              "iou": 0.35646849558732985,
+              "precision": 0.5255831547093683,
+              "recall": 0.5255831547093683,
+              "specificity": 0.9820629128101961,
+              "boundary_iou": 0.007623820440368929,
+              "factor": 1.0,
+              "selected_fraction": 0.03643128653291838
+            },
+            {
+              "dice": 0.508226486147225,
+              "iou": 0.3406860903667864,
+              "precision": 0.4574028122415219,
+              "recall": 0.5717563989408649,
+              "specificity": 0.9743562484953507,
+              "boundary_iou": 0.005013368983957219,
+              "factor": 1.25,
+              "selected_fraction": 0.04553933784264863
+            },
+            {
+              "dice": 0.4809179170344219,
+              "iou": 0.31658454959561216,
+              "precision": 0.40076493086201825,
+              "recall": 0.6011473962930274,
+              "specificity": 0.9660155458569409,
+              "boundary_iou": 0.007257430777053576,
+              "factor": 1.5,
+              "selected_fraction": 0.054646929799377575
+            },
+            {
+              "dice": 0.4197537090740974,
+              "iou": 0.2656254986861283,
+              "precision": 0.31481528180557306,
+              "recall": 0.6296305636111461,
+              "specificity": 0.9481881043922648,
+              "boundary_iou": 0.002930529219100155,
+              "factor": 2.0,
+              "selected_fraction": 0.07286257306583677
+            }
+          ]
+        },
+        {
+          "image": "10015.png",
+          "gt_fraction": 0.025243170172886763,
+          "prob_max": 7.9007149906829e-06,
+          "prob_mean": 4.840491783397738e-06,
+          "prob_p99": 7.477889994333964e-06,
+          "threshold_records": [
+            {
+              "dice": 0.05356795235774054,
+              "iou": 0.027521100684007007,
+              "precision": 0.027521100684007007,
+              "recall": 1.0,
+              "specificity": 0.08491382133653158,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9172296727054966
+            },
+            {
+              "dice": 0.05426378601796856,
+              "iou": 0.02788856250298977,
+              "precision": 0.02788856250298977,
+              "recall": 1.0,
+              "specificity": 0.09731228575795288,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9051441848313477
+            },
+            {
+              "dice": 0.0904740173572707,
+              "iou": 0.04738035417148776,
+              "precision": 0.04738035417148776,
+              "recall": 1.0,
+              "specificity": 0.47932246623135016,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5327771523514155
+            },
+            {
+              "dice": 0.23373365926240833,
+              "iou": 0.13233205766962716,
+              "precision": 0.4346932321315623,
+              "recall": 0.15983952088844958,
+              "specificity": 0.9946168921172479,
+              "boundary_iou": 0.00832870627429206,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.009282077400548646
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.2730884775656556,
+              "iou": 0.15813692480359148,
+              "precision": 0.4096406558902198,
+              "recall": 0.20481437334651278,
+              "specificity": 0.992355986806492,
+              "boundary_iou": 0.010497956150130064,
+              "factor": 0.5,
+              "selected_fraction": 0.012621218147899717
+            },
+            {
+              "dice": 0.3043442146357671,
+              "iou": 0.17948466738512786,
+              "precision": 0.3550662842080781,
+              "recall": 0.2663022938046923,
+              "specificity": 0.9874735456009468,
+              "boundary_iou": 0.005471020687296974,
+              "factor": 0.75,
+              "selected_fraction": 0.018932561098936904
+            },
+            {
+              "dice": 0.3218594644881821,
+              "iou": 0.19179529823467248,
+              "precision": 0.3218594644881821,
+              "recall": 0.3218594644881821,
+              "specificity": 0.9824382693044649,
+              "boundary_iou": 0.007981845214805541,
+              "factor": 1.0,
+              "selected_fraction": 0.025243170172886763
+            },
+            {
+              "dice": 0.34574186295918236,
+              "iou": 0.20900115599712563,
+              "precision": 0.3111684807889106,
+              "recall": 0.3889583393900631,
+              "specificity": 0.9777018872498643,
+              "boundary_iou": 0.011116367076631977,
+              "factor": 1.25,
+              "selected_fraction": 0.031553779246836625
+            },
+            {
+              "dice": 0.36147128254625377,
+              "iou": 0.2206072305574087,
+              "precision": 0.3012249011551283,
+              "recall": 0.45184173038346365,
+              "specificity": 0.9728555843909447,
+              "boundary_iou": 0.012114537444933921,
+              "factor": 1.5,
+              "selected_fraction": 0.03786512219787381
+            },
+            {
+              "dice": 0.34722020331230435,
+              "iou": 0.21008255546695437,
+              "precision": 0.26041515248422825,
+              "recall": 0.5208303049684565,
+              "specificity": 0.9616941054592243,
+              "boundary_iou": 0.015548675610595116,
+              "factor": 2.0,
+              "selected_fraction": 0.050486340345773525
+            }
+          ]
+        },
+        {
+          "image": "10043.png",
+          "gt_fraction": 0.01983790179172364,
+          "prob_max": 7.562990504084155e-06,
+          "prob_mean": 4.804149739356944e-06,
+          "prob_p99": 7.067817477945937e-06,
+          "threshold_records": [
+            {
+              "dice": 0.04232162073927185,
+              "iou": 0.021618270492037427,
+              "precision": 0.021618270492037427,
+              "recall": 1.0,
+              "specificity": 0.08402162937327294,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9176451834586147
+            },
+            {
+              "dice": 0.042905322061894846,
+              "iou": 0.021922967011027642,
+              "precision": 0.021922967011027642,
+              "recall": 1.0,
+              "specificity": 0.09703365910390324,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9048912850958916
+            },
+            {
+              "dice": 0.0689023164370704,
+              "iou": 0.0356803889433204,
+              "precision": 0.03568353411602387,
+              "recall": 0.9975358022927753,
+              "specificity": 0.4543953728580422,
+              "boundary_iou": 0.001718290752882659,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5545699934112179
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9999298874078507,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 6.872170543184862e-05
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9898806568031983,
+              "boundary_iou": 0.0,
+              "factor": 0.5,
+              "selected_fraction": 0.00991859666026681
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9848202623945691,
+              "boundary_iou": 0.0,
+              "factor": 0.75,
+              "selected_fraction": 0.014878603461590234
+            },
+            {
+              "dice": 0.0004999821434948752,
+              "iou": 0.0002500535829106237,
+              "precision": 0.0004999821434948752,
+              "recall": 0.0004999821434948752,
+              "specificity": 0.979770710139365,
+              "boundary_iou": 0.0014024016127618547,
+              "factor": 1.0,
+              "selected_fraction": 0.01983790179172364
+            },
+            {
+              "dice": 0.015174121456461699,
+              "iou": 0.007645064295310601,
+              "precision": 0.013656752664209595,
+              "recall": 0.017070818899325026,
+              "specificity": 0.9750464224869153,
+              "boundary_iou": 0.005184078727704068,
+              "factor": 1.25,
+              "selected_fraction": 0.024797200121857044
+            },
+            {
+              "dice": 0.04722654743368141,
+              "iou": 0.024184345281638625,
+              "precision": 0.03935526879672396,
+              "recall": 0.0590336059426449,
+              "specificity": 0.9708353300965892,
+              "boundary_iou": 0.004945100997401726,
+              "factor": 1.5,
+              "selected_fraction": 0.029757206923180467
+            },
+            {
+              "dice": 0.07352118376724641,
+              "iou": 0.03816350491256257,
+              "precision": 0.0551408878254348,
+              "recall": 0.1102817756508696,
+              "specificity": 0.9617532195774596,
+              "boundary_iou": 0.0060330578512396696,
+              "factor": 2.0,
+              "selected_fraction": 0.03967580358344728
+            }
+          ]
+        },
+        {
+          "image": "10055.png",
+          "gt_fraction": 0.0392104440275172,
+          "prob_max": 7.707134500378743e-06,
+          "prob_mean": 4.912960775982356e-06,
+          "prob_p99": 7.328226729441667e-06,
+          "threshold_records": [
+            {
+              "dice": 0.08205952088318935,
+              "iou": 0.04278522810101845,
+              "precision": 0.04278522810101845,
+              "recall": 1.0,
+              "specificity": 0.08696163353245862,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9164481707317074
+            },
+            {
+              "dice": 0.08357103821494742,
+              "iou": 0.04360768903069874,
+              "precision": 0.04360768903069874,
+              "recall": 1.0,
+              "specificity": 0.1049516615380109,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8991635397123202
+            },
+            {
+              "dice": 0.12033477240202917,
+              "iou": 0.06401925759716548,
+              "precision": 0.06401925759716548,
+              "recall": 1.0,
+              "specificity": 0.4033360942913261,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.6124788930581614
+            },
+            {
+              "dice": 0.10916020647930581,
+              "iou": 0.057731071058142035,
+              "precision": 0.758159856078129,
+              "recall": 0.05881414729454922,
+              "specificity": 0.9992343630242091,
+              "boundary_iou": 0.006063559092631693,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.0030417448405253285
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.4210960032962505,
+              "iou": 0.26670146137787054,
+              "precision": 0.6316440049443758,
+              "recall": 0.3158220024721879,
+              "specificity": 0.9924835766393663,
+              "boundary_iou": 0.010657370517928286,
+              "factor": 0.5,
+              "selected_fraction": 0.0196052220137586
+            },
+            {
+              "dice": 0.4744322227475463,
+              "iou": 0.31098731227923443,
+              "precision": 0.5535042598721374,
+              "recall": 0.415128194904103,
+              "specificity": 0.9863336647567781,
+              "boundary_iou": 0.008723793443084283,
+              "factor": 0.75,
+              "selected_fraction": 0.0294078330206379
+            },
+            {
+              "dice": 0.466655369033853,
+              "iou": 0.3043382156950702,
+              "precision": 0.466655369033853,
+              "recall": 0.466655369033853,
+              "specificity": 0.9782338601935491,
+              "boundary_iou": 0.004823797400509178,
+              "factor": 1.0,
+              "selected_fraction": 0.0392104440275172
+            },
+            {
+              "dice": 0.43986336509961854,
+              "iou": 0.281939001533481,
+              "precision": 0.3958770285896567,
+              "recall": 0.49484628573707085,
+              "specificity": 0.9691816878511882,
+              "boundary_iou": 0.005362965505405869,
+              "factor": 1.25,
+              "selected_fraction": 0.0490130550343965
+            },
+            {
+              "dice": 0.41408349615215917,
+              "iou": 0.2611004394919192,
+              "precision": 0.34506958012679934,
+              "recall": 0.517604370190199,
+              "specificity": 0.9599077981061672,
+              "boundary_iou": 0.0027518109344016836,
+              "factor": 1.5,
+              "selected_fraction": 0.0588156660412758
+            },
+            {
+              "dice": 0.3913367093318447,
+              "iou": 0.24326825358792376,
+              "precision": 0.29350253199888354,
+              "recall": 0.5870050639977671,
+              "specificity": 0.9423347615459846,
+              "boundary_iou": 0.006132182602770838,
+              "factor": 2.0,
+              "selected_fraction": 0.0784208880550344
+            }
+          ]
+        },
+        {
+          "image": "10066.png",
+          "gt_fraction": 0.02590555817239755,
+          "prob_max": 7.560523954452947e-06,
+          "prob_mean": 4.768260623677634e-06,
+          "prob_p99": 7.013697086222237e-06,
+          "threshold_records": [
+            {
+              "dice": 0.05489542881205259,
+              "iou": 0.028222353504894555,
+              "precision": 0.028222353504894555,
+              "recall": 1.0,
+              "specificity": 0.0842739551813888,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9179092086669807
+            },
+            {
+              "dice": 0.05552116872325162,
+              "iou": 0.028553238960588898,
+              "precision": 0.028553238960588898,
+              "recall": 1.0,
+              "specificity": 0.09519391296673964,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9072721384832784
+            },
+            {
+              "dice": 0.09425627814367984,
+              "iou": 0.04945905216041746,
+              "precision": 0.04946016464978182,
+              "recall": 0.9995454338833584,
+              "specificity": 0.4891314202956718,
+              "boundary_iou": 0.0006025377472176933,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5235280263777673
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.999943181886869,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 5.534620819594913e-05
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.14367319726654243,
+              "iou": 0.07739649993470027,
+              "precision": 0.21550979589981362,
+              "recall": 0.10775489794990681,
+              "specificity": 0.9895684362083702,
+              "boundary_iou": 0.001087547580206634,
+              "factor": 0.5,
+              "selected_fraction": 0.012952779086198775
+            },
+            {
+              "dice": 0.142345056886072,
+              "iou": 0.07662620951954807,
+              "precision": 0.16607067094975453,
+              "recall": 0.12455111595981636,
+              "specificity": 0.9833667996049328,
+              "boundary_iou": 0.0008848252470137148,
+              "factor": 0.75,
+              "selected_fraction": 0.019428874234573717
+            },
+            {
+              "dice": 0.13696077094413384,
+              "iou": 0.073514700500183,
+              "precision": 0.13696077094413384,
+              "recall": 0.13696077094413384,
+              "specificity": 0.9770479000871614,
+              "boundary_iou": 0.0051578295853105015,
+              "factor": 1.0,
+              "selected_fraction": 0.02590555817239755
+            },
+            {
+              "dice": 0.1402884965049093,
+              "iou": 0.07543562334332768,
+              "precision": 0.12625913669587985,
+              "recall": 0.15782535569798628,
+              "specificity": 0.9709538552298655,
+              "boundary_iou": 0.0062584118438761775,
+              "factor": 1.25,
+              "selected_fraction": 0.032382242110221386
+            },
+            {
+              "dice": 0.1584072003272876,
+              "iou": 0.08601640946654424,
+              "precision": 0.13200600027273968,
+              "recall": 0.19800900040910951,
+              "specificity": 0.965374195630808,
+              "boundary_iou": 0.010944260626113514,
+              "factor": 1.5,
+              "selected_fraction": 0.038858337258596325
+            },
+            {
+              "dice": 0.198418109914087,
+              "iou": 0.11013549314964802,
+              "precision": 0.14881358243556525,
+              "recall": 0.2976271648711305,
+              "specificity": 0.9547262394508711,
+              "boundary_iou": 0.010619469026548672,
+              "factor": 2.0,
+              "selected_fraction": 0.0518111163447951
+            }
+          ]
+        },
+        {
+          "image": "10144.png",
+          "gt_fraction": 0.032915188739622805,
+          "prob_max": 2.8991144063184038e-05,
+          "prob_mean": 8.094209078990389e-06,
+          "prob_p99": 2.5997762350016274e-05,
+          "threshold_records": [
+            {
+              "dice": 0.07957684125797734,
+              "iou": 0.04143713894291107,
+              "precision": 0.04143713894291107,
+              "recall": 1.0,
+              "specificity": 0.21265944107147705,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.7943402845686534
+            },
+            {
+              "dice": 0.09591747803727592,
+              "iou": 0.050374643394344276,
+              "precision": 0.050374643394344276,
+              "recall": 1.0,
+              "specificity": 0.3583885508926811,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.6534078759020714
+            },
+            {
+              "dice": 0.1128159315579436,
+              "iou": 0.059780036004160174,
+              "precision": 0.059780036004160174,
+              "recall": 1.0,
+              "specificity": 0.4646903364123492,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5506050337161421
+            },
+            {
+              "dice": 0.1614015185792263,
+              "iou": 0.08778508206669657,
+              "precision": 0.08778508206669657,
+              "recall": 1.0,
+              "specificity": 0.6463218436481085,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.37495196182211
+            },
+            {
+              "dice": 0.21121782624248114,
+              "iou": 0.11807912072312116,
+              "precision": 0.11807912072312116,
+              "recall": 1.0,
+              "specificity": 0.745792534111212,
+              "boundary_iou": 0.0010105858871680858,
+              "threshold": 1e-05,
+              "selected_fraction": 0.27875536790966005
+            },
+            {
+              "dice": 0.2665630954308273,
+              "iou": 0.1537772126162727,
+              "precision": 0.15402231028968116,
+              "recall": 0.9897578174671984,
+              "specificity": 0.814972617782487,
+              "boundary_iou": 0.008499556420456172,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.21151523637827524
+            },
+            {
+              "dice": 0.31912896414382497,
+              "iou": 0.1898592797045088,
+              "precision": 0.19297557669498705,
+              "recall": 0.9216114675452286,
+              "specificity": 0.8688210990422224,
+              "boundary_iou": 0.0112666200139958,
+              "threshold": 2e-05,
+              "selected_fraction": 0.15719613807294802
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.4475288423745925,
+              "iou": 0.28826869998610033,
+              "precision": 0.6712984370664941,
+              "recall": 0.33564533841974453,
+              "specificity": 0.9944063081200797,
+              "boundary_iou": 0.008831924174699768,
+              "factor": 0.5,
+              "selected_fraction": 0.016457404119601934
+            },
+            {
+              "dice": 0.49727844422131795,
+              "iou": 0.33091855394570263,
+              "precision": 0.580156907473913,
+              "recall": 0.435119357262586,
+              "specificity": 0.989282790102191,
+              "boundary_iou": 0.012306450799414939,
+              "factor": 0.75,
+              "selected_fraction": 0.024686486679821835
+            },
+            {
+              "dice": 0.5297150453730998,
+              "iou": 0.36028053181535846,
+              "precision": 0.5297150453730998,
+              "recall": 0.5297150453730998,
+              "specificity": 0.9839936292425322,
+              "boundary_iou": 0.00877764959622812,
+              "factor": 1.0,
+              "selected_fraction": 0.032915188739622805
+            },
+            {
+              "dice": 0.5218664584146817,
+              "iou": 0.35305772024831594,
+              "precision": 0.46968029519749194,
+              "recall": 0.5870990116178255,
+              "specificity": 0.9774379498373671,
+              "boundary_iou": 0.005137449301487156,
+              "factor": 1.25,
+              "selected_fraction": 0.04114389079942377
+            },
+            {
+              "dice": 0.49552628050105657,
+              "iou": 0.3293685187575685,
+              "precision": 0.4129379306092881,
+              "recall": 0.619409282700422,
+              "specificity": 0.970028481912864,
+              "boundary_iou": 0.0053707044853774175,
+              "factor": 1.5,
+              "selected_fraction": 0.04937297335964367
+            },
+            {
+              "dice": 0.43163593626572644,
+              "iou": 0.27521412039880694,
+              "precision": 0.3237269521992948,
+              "recall": 0.6474539043985896,
+              "specificity": 0.953965454221394,
+              "boundary_iou": 0.006205569302069832,
+              "factor": 2.0,
+              "selected_fraction": 0.06583037747924561
+            }
+          ]
+        },
+        {
+          "image": "10390.png",
+          "gt_fraction": 0.00994895966735142,
+          "prob_max": 8.453967893728986e-06,
+          "prob_mean": 4.830754733120557e-06,
+          "prob_p99": 8.121212886180729e-06,
+          "threshold_records": [
+            {
+              "dice": 0.021442570650264326,
+              "iou": 0.01083747700834317,
+              "precision": 0.01083747700834317,
+              "recall": 1.0,
+              "specificity": 0.08280949471069081,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9180143736122596
+            },
+            {
+              "dice": 0.021785605212256948,
+              "iou": 0.011012762453684644,
+              "precision": 0.011012762453684644,
+              "recall": 1.0,
+              "specificity": 0.09756796962654271,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9034027301680971
+            },
+            {
+              "dice": 0.04155382838916131,
+              "iou": 0.02121775364138956,
+              "precision": 0.02121775364138956,
+              "recall": 1.0,
+              "specificity": 0.536439132873858,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.468897878423093
+            },
+            {
+              "dice": 0.16213383247543284,
+              "iou": 0.08821851957469344,
+              "precision": 0.09539647577092511,
+              "recall": 0.5396884735202492,
+              "specificity": 0.9485732389004649,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.056284457183520806
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.13591426435158263,
+              "iou": 0.07291202424458508,
+              "precision": 0.20388833499501496,
+              "recall": 0.10193146417445482,
+              "specificity": 0.9960004608110274,
+              "boundary_iou": 0.011907248798830166,
+              "factor": 0.5,
+              "selected_fraction": 0.004973859960799239
+            },
+            {
+              "dice": 0.1949587012247223,
+              "iou": 0.10800788954635109,
+              "precision": 0.2274464196710417,
+              "recall": 0.1705919003115265,
+              "specificity": 0.9941772519634556,
+              "boundary_iou": 0.011870650839132215,
+              "factor": 0.75,
+              "selected_fraction": 0.0074620296869517995
+            },
+            {
+              "dice": 0.2269158878504673,
+              "iou": 0.12797807294960994,
+              "precision": 0.2269158878504673,
+              "recall": 0.2269158878504673,
+              "specificity": 0.9922313271357589,
+              "boundary_iou": 0.009598080383923215,
+              "factor": 1.0,
+              "selected_fraction": 0.00994895966735142
+            },
+            {
+              "dice": 0.23692955250332298,
+              "iou": 0.13438462021737765,
+              "precision": 0.21323895922639816,
+              "recall": 0.26654205607476633,
+              "specificity": 0.9901176069882994,
+              "boundary_iou": 0.009881805851579151,
+              "factor": 1.25,
+              "selected_fraction": 0.012435889647751039
+            },
+            {
+              "dice": 0.23824951403080297,
+              "iou": 0.13523453856164772,
+              "precision": 0.1985379631167968,
+              "recall": 0.29781931464174455,
+              "specificity": 0.9879187369770797,
+              "boundary_iou": 0.014312267657992565,
+              "factor": 1.5,
+              "selected_fraction": 0.014924059373903599
+            },
+            {
+              "dice": 0.25744548286604363,
+              "iou": 0.14774027459954234,
+              "precision": 0.19308411214953272,
+              "recall": 0.38616822429906544,
+              "specificity": 0.9837827075653149,
+              "boundary_iou": 0.011105585943974806,
+              "factor": 2.0,
+              "selected_fraction": 0.01989791933470284
+            }
+          ]
+        },
+        {
+          "image": "10474.png",
+          "gt_fraction": 0.06561235935959754,
+          "prob_max": 7.946650839585345e-06,
+          "prob_mean": 4.764116511069005e-06,
+          "prob_p99": 7.271782578754937e-06,
+          "threshold_records": [
+            {
+              "dice": 0.1334071645639713,
+              "iou": 0.07147095072440258,
+              "precision": 0.07147095072440258,
+              "recall": 1.0,
+              "specificity": 0.0877276634813809,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9180283555007372
+            },
+            {
+              "dice": 0.13483569340079235,
+              "iou": 0.07229159003511118,
+              "precision": 0.07229159003511118,
+              "recall": 1.0,
+              "specificity": 0.09888071094018981,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9076070857997504
+            },
+            {
+              "dice": 0.23553535785260812,
+              "iou": 0.13348828433646392,
+              "precision": 0.13350192362678426,
+              "recall": 0.9992352335313092,
+              "specificity": 0.5445859886403746,
+              "boundary_iou": 0.00021738700816189402,
+              "threshold": 5e-06,
+              "selected_fraction": 0.4910954048161295
+            },
+            {
+              "dice": 0.046799254567571294,
+              "iou": 0.02396028911877677,
+              "precision": 0.8234921973850696,
+              "recall": 0.024083976292239472,
+              "specificity": 0.9996375140479546,
+              "boundary_iou": 0.007242877836793819,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.0019189089007913577
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.30426255391409107,
+              "iou": 0.17942786757253493,
+              "precision": 0.4563957074133465,
+              "recall": 0.2281964463029092,
+              "specificity": 0.9809142701234921,
+              "boundary_iou": 0.001765360555704801,
+              "factor": 0.5,
+              "selected_fraction": 0.032805977348619855
+            },
+            {
+              "dice": 0.3380264813372476,
+              "iou": 0.2033886085075703,
+              "precision": 0.3943637649458086,
+              "recall": 0.2957734317661788,
+              "specificity": 0.9681042677632191,
+              "boundary_iou": 0.005277512131193993,
+              "factor": 0.75,
+              "selected_fraction": 0.04920937068528761
+            },
+            {
+              "dice": 0.3476665371497647,
+              "iou": 0.21040942701120893,
+              "precision": 0.3476665371497647,
+              "recall": 0.3476665371497647,
+              "specificity": 0.954193382141179,
+              "boundary_iou": 0.006452417318662137,
+              "factor": 1.0,
+              "selected_fraction": 0.06561235935959754
+            },
+            {
+              "dice": 0.3621377293273066,
+              "iou": 0.2211038961038961,
+              "precision": 0.32592413507272694,
+              "recall": 0.40740466630895333,
+              "specificity": 0.9408333712276234,
+              "boundary_iou": 0.005357629324696553,
+              "factor": 1.25,
+              "selected_fraction": 0.08201534803390746
+            },
+            {
+              "dice": 0.37591926049640684,
+              "iou": 0.2314658694932298,
+              "precision": 0.31326579280627603,
+              "recall": 0.46989965523834193,
+              "specificity": 0.9276665129241183,
+              "boundary_iou": 0.01012330419940555,
+              "factor": 1.5,
+              "selected_fraction": 0.09841874137057521
+            },
+            {
+              "dice": 0.40887458035495855,
+              "iou": 0.2569719365341878,
+              "precision": 0.3066559352662189,
+              "recall": 0.6133118705324379,
+              "specificity": 0.9026272652665268,
+              "boundary_iou": 0.011305003188590642,
+              "factor": 2.0,
+              "selected_fraction": 0.13122471871919508
+            }
+          ]
+        },
+        {
+          "image": "10526.png",
+          "gt_fraction": 0.03876348379083059,
+          "prob_max": 1.0380534149589948e-05,
+          "prob_mean": 4.904282377538038e-06,
+          "prob_p99": 9.588189641362987e-06,
+          "threshold_records": [
+            {
+              "dice": 0.08100034388066843,
+              "iou": 0.042209670868034524,
+              "precision": 0.042209670868034524,
+              "recall": 1.0,
+              "specificity": 0.0849369424090213,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9183555093812935
+            },
+            {
+              "dice": 0.083531461523043,
+              "iou": 0.0435861376516134,
+              "precision": 0.0435861376516134,
+              "recall": 1.0,
+              "specificity": 0.1151085134447101,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8893534935503905
+            },
+            {
+              "dice": 0.21023846636440663,
+              "iou": 0.11746730634965835,
+              "precision": 0.11746730634965835,
+              "recall": 1.0,
+              "specificity": 0.6970253212924945,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.32999380845122556
+            },
+            {
+              "dice": 0.32686168687595973,
+              "iou": 0.1953584376808945,
+              "precision": 0.19752335333030427,
+              "recall": 0.9468768458357945,
+              "specificity": 0.844868500582093,
+              "boundary_iou": 0.008136978905557056,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.18582230732024235
+            },
+            {
+              "dice": 0.05666995636199332,
+              "iou": 0.029161261900682835,
+              "precision": 0.839971801198449,
+              "recall": 0.02932417798779287,
+              "specificity": 0.9997747057031217,
+              "boundary_iou": 0.0020471551602428348,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0013532684031623645
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.481361160333399,
+              "iou": 0.31696881955098427,
+              "precision": 0.7220417405000984,
+              "recall": 0.3610208702500492,
+              "specificity": 0.9943954321829429,
+              "boundary_iou": 0.01663985800654501,
+              "factor": 0.5,
+              "selected_fraction": 0.019381741895415295
+            },
+            {
+              "dice": 0.5397153545411076,
+              "iou": 0.3695959936437617,
+              "precision": 0.6296679136312923,
+              "recall": 0.47225093522346917,
+              "specificity": 0.9887993004959452,
+              "boundary_iou": 0.012390598878945816,
+              "factor": 0.75,
+              "selected_fraction": 0.029072612843122944
+            },
+            {
+              "dice": 0.5420235282535932,
+              "iou": 0.3717642491201121,
+              "precision": 0.5420235282535932,
+              "recall": 0.5420235282535932,
+              "specificity": 0.9815313263283679,
+              "boundary_iou": 0.007166832985575615,
+              "factor": 1.0,
+              "selected_fraction": 0.03876348379083059
+            },
+            {
+              "dice": 0.5264268994333968,
+              "iou": 0.35724518806089806,
+              "precision": 0.4737842094900571,
+              "recall": 0.5922302618625713,
+              "specificity": 0.9734743258787718,
+              "boundary_iou": 0.007585899152164213,
+              "factor": 1.25,
+              "selected_fraction": 0.04845435473853824
+            },
+            {
+              "dice": 0.5085154557983855,
+              "iou": 0.3409458433715059,
+              "precision": 0.4237628798319879,
+              "recall": 0.6356443197479819,
+              "specificity": 0.9651433993237201,
+              "boundary_iou": 0.009154203197524496,
+              "factor": 1.5,
+              "selected_fraction": 0.05814522568624589
+            },
+            {
+              "dice": 0.4650111570519131,
+              "iou": 0.3029410664372104,
+              "precision": 0.3487583677889348,
+              "recall": 0.6975167355778696,
+              "specificity": 0.9474751655218342,
+              "boundary_iou": 0.007267318317042074,
+              "factor": 2.0,
+              "selected_fraction": 0.07752696758166118
+            }
+          ]
+        },
+        {
+          "image": "10542.png",
+          "gt_fraction": 0.013294389623285547,
+          "prob_max": 1.0447601198393386e-05,
+          "prob_mean": 5.0079675020242576e-06,
+          "prob_p99": 9.581921403878368e-06,
+          "threshold_records": [
+            {
+              "dice": 0.02856154766021808,
+              "iou": 0.014487668953763227,
+              "precision": 0.014487668953763227,
+              "recall": 1.0,
+              "specificity": 0.08347491907794856,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9176348290200459
+            },
+            {
+              "dice": 0.03183044072632173,
+              "iou": 0.016172611031576085,
+              "precision": 0.016172611031576085,
+              "recall": 1.0,
+              "specificity": 0.18036674180342369,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8220311239371936
+            },
+            {
+              "dice": 0.05382367305659856,
+              "iou": 0.02765611332922346,
+              "precision": 0.02765611332922346,
+              "recall": 1.0,
+              "specificity": 0.5262932786541112,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.48070346924843294
+            },
+            {
+              "dice": 0.12419102118672934,
+              "iou": 0.06620664608679862,
+              "precision": 0.06640225023777242,
+              "recall": 0.9574021123883993,
+              "specificity": 0.8186355406033322,
+              "boundary_iou": 0.006526329259709514,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.19168140631787997
+            },
+            {
+              "dice": 0.003116987582323664,
+              "iou": 0.0015609264853977845,
+              "precision": 0.011256354393609296,
+              "recall": 0.0018089513917255062,
+              "specificity": 0.997859113470131,
+              "boundary_iou": 0.0029562782013381047,
+              "threshold": 1e-05,
+              "selected_fraction": 0.002136473654812884
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.021552227193153084,
+              "iou": 0.010893503224791568,
+              "precision": 0.0323295985060691,
+              "recall": 0.01616385598412791,
+              "specificity": 0.9934814211461094,
+              "boundary_iou": 0.0024442846872753414,
+              "factor": 0.5,
+              "selected_fraction": 0.006646806926084528
+            },
+            {
+              "dice": 0.035945315105035014,
+              "iou": 0.018301585684696614,
+              "precision": 0.04193573484789543,
+              "recall": 0.03145241290774348,
+              "specificity": 0.9903184440951865,
+              "boundary_iou": 0.006596306068601583,
+              "factor": 0.75,
+              "selected_fraction": 0.009970986160243282
+            },
+            {
+              "dice": 0.08087763319134038,
+              "iou": 0.04214303089272683,
+              "precision": 0.08087763319134038,
+              "recall": 0.08087763319134038,
+              "specificity": 0.9876161940022156,
+              "boundary_iou": 0.006296641791044776,
+              "factor": 1.0,
+              "selected_fraction": 0.013294389623285547
+            },
+            {
+              "dice": 0.12614762176461436,
+              "iou": 0.06731993578032441,
+              "precision": 0.11353344848513142,
+              "recall": 0.141915154344401,
+              "specificity": 0.9850704023813137,
+              "boundary_iou": 0.004722284686305375,
+              "factor": 1.25,
+              "selected_fraction": 0.016617793086327808
+            },
+            {
+              "dice": 0.144947832784819,
+              "iou": 0.07813679601389098,
+              "precision": 0.120788920874504,
+              "recall": 0.18118690552605474,
+              "specificity": 0.9822305631797393,
+              "boundary_iou": 0.008626130864717021,
+              "factor": 1.5,
+              "selected_fraction": 0.019941972320486563
+            },
+            {
+              "dice": 0.16226099472875455,
+              "iou": 0.08829381879762913,
+              "precision": 0.12169574604656591,
+              "recall": 0.24339149209313182,
+              "specificity": 0.9763323146497807,
+              "boundary_iou": 0.009347595644213164,
+              "factor": 2.0,
+              "selected_fraction": 0.026588779246571093
+            }
+          ]
+        },
+        {
+          "image": "10621.png",
+          "gt_fraction": 0.020128767510966462,
+          "prob_max": 1.0401929102954455e-05,
+          "prob_mean": 4.941527095070342e-06,
+          "prob_p99": 9.626922292227391e-06,
+          "threshold_records": [
+            {
+              "dice": 0.04290117602144161,
+              "iou": 0.021920802105551532,
+              "precision": 0.021920802105551532,
+              "recall": 1.0,
+              "specificity": 0.08342974962708527,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9182495884066565
+            },
+            {
+              "dice": 0.04561714279169737,
+              "iou": 0.023340945006475457,
+              "precision": 0.023340945006475457,
+              "recall": 1.0,
+              "specificity": 0.14044687877678239,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8623801437937564
+            },
+            {
+              "dice": 0.07803233225181846,
+              "iou": 0.04060023150297987,
+              "precision": 0.04060023150297987,
+              "recall": 1.0,
+              "specificity": 0.5145782009206682,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.49577962405187537
+            },
+            {
+              "dice": 0.2060125945753586,
+              "iou": 0.11483502835773525,
+              "precision": 0.11585824272209615,
+              "recall": 0.928585376740034,
+              "specificity": 0.8544323128965173,
+              "boundary_iou": 0.008133838617247435,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.16132886813515085
+            },
+            {
+              "dice": 0.1164804188060002,
+              "iou": 0.06184189427548239,
+              "precision": 0.5956241956241957,
+              "recall": 0.06455212430607861,
+              "specificity": 0.999099732555814,
+              "boundary_iou": 0.008207802240247199,
+              "threshold": 1e-05,
+              "selected_fraction": 0.002181500872600349
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.3018727566904093,
+              "iou": 0.17776804293067572,
+              "precision": 0.45280071412631107,
+              "recall": 0.22640667280386084,
+              "specificity": 0.9943794888016702,
+              "boundary_iou": 0.004946628482166103,
+              "factor": 0.5,
+              "selected_fraction": 0.010064664514926295
+            },
+            {
+              "dice": 0.3706561244659823,
+              "iou": 0.22748796618792314,
+              "precision": 0.43243444299795425,
+              "recall": 0.3243228164142048,
+              "specificity": 0.9912557728002329,
+              "boundary_iou": 0.014000643707756678,
+              "factor": 0.75,
+              "selected_fraction": 0.015096435253503316
+            },
+            {
+              "dice": 0.4073981086283371,
+              "iou": 0.2558066211245402,
+              "precision": 0.4073981086283371,
+              "recall": 0.4073981086283371,
+              "specificity": 0.9878266191490496,
+              "boundary_iou": 0.018662759312099948,
+              "factor": 1.0,
+              "selected_fraction": 0.020128767510966462
+            },
+            {
+              "dice": 0.4215681412418171,
+              "iou": 0.26708035503888145,
+              "precision": 0.3794103863063224,
+              "recall": 0.4742656289229224,
+              "specificity": 0.9840645212680305,
+              "boundary_iou": 0.01465446700885219,
+              "factor": 1.25,
+              "selected_fraction": 0.02516109976842961
+            },
+            {
+              "dice": 0.41601481861700346,
+              "iou": 0.2626380748422002,
+              "precision": 0.3466803050027897,
+              "recall": 0.5200156219488381,
+              "specificity": 0.9798691947505984,
+              "boundary_iou": 0.012332245194051506,
+              "factor": 1.5,
+              "selected_fraction": 0.03019287050700663
+            },
+            {
+              "dice": 0.3862340874643159,
+              "iou": 0.23933712099385754,
+              "precision": 0.28967556559823693,
+              "recall": 0.5793511311964739,
+              "specificity": 0.9708166646323259,
+              "boundary_iou": 0.009031252030407382,
+              "factor": 2.0,
+              "selected_fraction": 0.040257535021932925
+            }
+          ]
+        },
+        {
+          "image": "10685.png",
+          "gt_fraction": 0.02993154046031197,
+          "prob_max": 7.51641891838517e-06,
+          "prob_mean": 4.889858246315271e-06,
+          "prob_p99": 7.158294465625659e-06,
+          "threshold_records": [
+            {
+              "dice": 0.06323634385941058,
+              "iou": 0.03265052173966459,
+              "precision": 0.03265052173966459,
+              "recall": 1.0,
+              "specificity": 0.08584474355710392,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9167247218579806
+            },
+            {
+              "dice": 0.0643851166847211,
+              "iou": 0.033263392030982775,
+              "precision": 0.033263392030982775,
+              "recall": 1.0,
+              "specificity": 0.10325634006516494,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8998342812552793
+            },
+            {
+              "dice": 0.09452126862949152,
+              "iou": 0.049604997984683596,
+              "precision": 0.049624066213807806,
+              "recall": 0.9923132743838525,
+              "specificity": 0.41362078445063827,
+              "boundary_iou": 0.0031701303275801338,
+              "threshold": 5e-06,
+              "selected_fraction": 0.598529447255585
+            },
+            {
+              "dice": 0.0004299341663307806,
+              "iou": 0.0002150133039481818,
+              "precision": 1.0,
+              "recall": 0.0002150133039481818,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 6.435679406630359e-06
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.29338302485173173,
+              "iou": 0.17190912145136905,
+              "precision": 0.44006665233283165,
+              "recall": 0.22003923992797053,
+              "specificity": 0.9913613735557024,
+              "boundary_iou": 0.01631265930331351,
+              "factor": 0.5,
+              "selected_fraction": 0.0149661724601189
+            },
+            {
+              "dice": 0.39620960805995825,
+              "iou": 0.24704575488862926,
+              "precision": 0.4622469091560652,
+              "recall": 0.34668207595344963,
+              "specificity": 0.9875558002857704,
+              "boundary_iou": 0.017225597070816345,
+              "factor": 0.75,
+              "selected_fraction": 0.02244845423025252
+            },
+            {
+              "dice": 0.42736581826000486,
+              "iou": 0.2717515765727274,
+              "precision": 0.42736581826000486,
+              "recall": 0.42736581826000486,
+              "specificity": 0.9823313261954302,
+              "boundary_iou": 0.016423070878516424,
+              "factor": 1.0,
+              "selected_fraction": 0.02993154046031197
+            },
+            {
+              "dice": 0.431673754121076,
+              "iou": 0.2752448702911024,
+              "precision": 0.38850545055795654,
+              "recall": 0.4856344236299621,
+              "specificity": 0.9764152312493211,
+              "boundary_iou": 0.013358501524611587,
+              "factor": 1.25,
+              "selected_fraction": 0.03741462669037142
+            },
+            {
+              "dice": 0.42641667652149606,
+              "iou": 0.2709844913575186,
+              "precision": 0.3553485038523562,
+              "recall": 0.5330179804875427,
+              "specificity": 0.9701641065361488,
+              "boundary_iou": 0.010270504845942427,
+              "factor": 1.5,
+              "selected_fraction": 0.04489690846050504
+            },
+            {
+              "dice": 0.3852500873491547,
+              "iou": 0.23858189081225034,
+              "precision": 0.28893756551186606,
+              "recall": 0.5778751310237321,
+              "specificity": 0.9561202226123532,
+              "boundary_iou": 0.002659016164019313,
+              "factor": 2.0,
+              "selected_fraction": 0.05986308092062394
+            }
+          ]
+        },
+        {
+          "image": "10693.png",
+          "gt_fraction": 0.031783793051715636,
+          "prob_max": 9.85795668384526e-06,
+          "prob_mean": 5.0142598411184736e-06,
+          "prob_p99": 9.301385034632403e-06,
+          "threshold_records": [
+            {
+              "dice": 0.0669549889856861,
+              "iou": 0.03463705635625797,
+              "precision": 0.03463705635625797,
+              "recall": 1.0,
+              "specificity": 0.08508020482852252,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9176239667945448
+            },
+            {
+              "dice": 0.0709843918900053,
+              "iou": 0.03679824652095697,
+              "precision": 0.03679824652095697,
+              "recall": 1.0,
+              "specificity": 0.14074213446667846,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8637311844088672
+            },
+            {
+              "dice": 0.1386383510792656,
+              "iou": 0.07448222174323388,
+              "precision": 0.07448222174323388,
+              "recall": 1.0,
+              "specificity": 0.5920889041378903,
+              "boundary_iou": 0.00021051154304961055,
+              "threshold": 5e-06,
+              "selected_fraction": 0.42672992705944546
+            },
+            {
+              "dice": 0.22759596438465754,
+              "iou": 0.1284108813855419,
+              "precision": 0.1310771147250047,
+              "recall": 0.8632557878174871,
+              "specificity": 0.812143062688153,
+              "boundary_iou": 0.009504550050556117,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.2093236746036849
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.347718588446842,
+              "iou": 0.21044755815535302,
+              "precision": 0.521577882670263,
+              "recall": 0.2607889413351315,
+              "specificity": 0.992147379139366,
+              "boundary_iou": 0.01601810742578567,
+              "factor": 0.5,
+              "selected_fraction": 0.015891896525857818
+            },
+            {
+              "dice": 0.426452172237742,
+              "iou": 0.27101316192225283,
+              "precision": 0.4975275342773657,
+              "recall": 0.3731456507080243,
+              "specificity": 0.9876289401452099,
+              "boundary_iou": 0.01163575042158516,
+              "factor": 0.75,
+              "selected_fraction": 0.02383784478878673
+            },
+            {
+              "dice": 0.46679028995279837,
+              "iou": 0.3044529961517317,
+              "precision": 0.46679028995279837,
+              "recall": 0.46679028995279837,
+              "specificity": 0.9824962369399681,
+              "boundary_iou": 0.018897124704732426,
+              "factor": 1.0,
+              "selected_fraction": 0.031783793051715636
+            },
+            {
+              "dice": 0.48695087535276343,
+              "iou": 0.3218341476297372,
+              "precision": 0.4382557878174871,
+              "recall": 0.5478197347718589,
+              "specificity": 0.976949412667493,
+              "boundary_iou": 0.014017297942141366,
+              "factor": 1.25,
+              "selected_fraction": 0.039729741314644546
+            },
+            {
+              "dice": 0.47896156439649357,
+              "iou": 0.3148911646052223,
+              "precision": 0.399134636997078,
+              "recall": 0.598701955495617,
+              "specificity": 0.9704129404993802,
+              "boundary_iou": 0.011843876177658143,
+              "factor": 1.5,
+              "selected_fraction": 0.04767568957757346
+            },
+            {
+              "dice": 0.4311643065857496,
+              "iou": 0.27483076041405496,
+              "precision": 0.3233732299393122,
+              "recall": 0.6467464598786244,
+              "specificity": 0.9555765229325306,
+              "boundary_iou": 0.007117670105785556,
+              "factor": 2.0,
+              "selected_fraction": 0.06356758610343127
+            }
+          ]
+        },
+        {
+          "image": "10727.png",
+          "gt_fraction": 0.022238088107360346,
+          "prob_max": 5.195870471652597e-05,
+          "prob_mean": 1.7334643416688778e-05,
+          "prob_p99": 4.914403325528838e-05,
+          "threshold_records": [
+            {
+              "dice": 0.06314531978248793,
+              "iou": 0.03260199148001986,
+              "precision": 0.03260199148001986,
+              "recall": 1.0,
+              "specificity": 0.32512181447734867,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.6821082730786234
+            },
+            {
+              "dice": 0.08138055660660465,
+              "iou": 0.04241620551007744,
+              "precision": 0.04241620551007744,
+              "recall": 1.0,
+              "specificity": 0.4865368223856038,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.5242828263380824
+            },
+            {
+              "dice": 0.08437495772628276,
+              "iou": 0.04404565395853011,
+              "precision": 0.04404565395853011,
+              "recall": 1.0,
+              "specificity": 0.5063735522423436,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5048872274276587
+            },
+            {
+              "dice": 0.08688777793449548,
+              "iou": 0.04541697916742516,
+              "precision": 0.04541697916742516,
+              "recall": 1.0,
+              "specificity": 0.5219648937285486,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.48964260756713585
+            },
+            {
+              "dice": 0.08897868349067202,
+              "iou": 0.04656080113915239,
+              "precision": 0.04656080113915239,
+              "recall": 1.0,
+              "specificity": 0.5342671303745368,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.4776139491435987
+            },
+            {
+              "dice": 0.09303262145298914,
+              "iou": 0.04878563865307132,
+              "precision": 0.04878563865307132,
+              "recall": 1.0,
+              "specificity": 0.5565437962359441,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.4558326737403557
+            },
+            {
+              "dice": 0.09978911455109597,
+              "iou": 0.05251475786989921,
+              "precision": 0.05251475786989921,
+              "recall": 1.0,
+              "specificity": 0.5896490740276492,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.42346359403300105
+            },
+            {
+              "dice": 0.17205828842721743,
+              "iou": 0.09412679153711989,
+              "precision": 0.6353166986564299,
+              "recall": 0.09950298609162692,
+              "specificity": 0.9987009494464222,
+              "boundary_iou": 0.01763046544428773,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0034829183245625294
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.37676860796023887,
+              "iou": 0.23211022766556375,
+              "precision": 0.5651529119403583,
+              "recall": 0.28257645597017916,
+              "specificity": 0.9950549475593803,
+              "boundary_iou": 0.016527120495085548,
+              "factor": 0.5,
+              "selected_fraction": 0.011119044053680173
+            },
+            {
+              "dice": 0.4074116488399258,
+              "iou": 0.2558172980124831,
+              "precision": 0.47530996152201793,
+              "recall": 0.35648723395727283,
+              "specificity": 0.9910497695894545,
+              "boundary_iou": 0.008879492600422832,
+              "factor": 0.75,
+              "selected_fraction": 0.016678788915985683
+            },
+            {
+              "dice": 0.4344462703915989,
+              "iou": 0.2775032642924806,
+              "precision": 0.4344462703915989,
+              "recall": 0.4344462703915989,
+              "specificity": 0.9871371204835203,
+              "boundary_iou": 0.008615625611905228,
+              "factor": 1.0,
+              "selected_fraction": 0.022238088107360346
+            },
+            {
+              "dice": 0.4669101273715151,
+              "iou": 0.30455496165465956,
+              "precision": 0.42022061181299303,
+              "recall": 0.525271553970099,
+              "specificity": 0.98351709960755,
+              "boundary_iou": 0.009972745292368681,
+              "factor": 1.25,
+              "selected_fraction": 0.02779738729873501
+            },
+            {
+              "dice": 0.44638262054591366,
+              "iou": 0.28731824608113266,
+              "precision": 0.3719855171215947,
+              "recall": 0.5579782756823921,
+              "specificity": 0.978574782010201,
+              "boundary_iou": 0.00809646856158484,
+              "factor": 1.5,
+              "selected_fraction": 0.03335713216104052
+            },
+            {
+              "dice": 0.39496573008938235,
+              "iou": 0.24607931275596842,
+              "precision": 0.2962242975670368,
+              "recall": 0.5924485951340736,
+              "specificity": 0.9679868362877238,
+              "boundary_iou": 0.006045367001925958,
+              "factor": 2.0,
+              "selected_fraction": 0.04447617621472069
+            }
+          ]
+        },
+        {
+          "image": "10779.png",
+          "gt_fraction": 0.023090933501225784,
+          "prob_max": 1.1863282452395651e-05,
+          "prob_mean": 5.024716301704757e-06,
+          "prob_p99": 1.075403270078823e-05,
+          "threshold_records": [
+            {
+              "dice": 0.04903316175762262,
+              "iou": 0.02513274997631252,
+              "precision": 0.02513274997631252,
+              "recall": 1.0,
+              "specificity": 0.08316154566853484,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9187587320523565
+            },
+            {
+              "dice": 0.052529661770397154,
+              "iou": 0.026973279509946515,
+              "precision": 0.026973279509946515,
+              "recall": 1.0,
+              "specificity": 0.14733514188876695,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8560669640749803
+            },
+            {
+              "dice": 0.10614177222323982,
+              "iou": 0.05604525759451481,
+              "precision": 0.05604525759451481,
+              "recall": 1.0,
+              "specificity": 0.601893147131193,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.4120051275040568
+            },
+            {
+              "dice": 0.21284481207902303,
+              "iou": 0.11909699477560672,
+              "precision": 0.1192471229615979,
+              "recall": 0.9895396378696968,
+              "specificity": 0.8272465590695415,
+              "boundary_iou": 0.0053886925795053,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.19161379668870152
+            },
+            {
+              "dice": 0.3609189889203319,
+              "iou": 0.22019594301967624,
+              "precision": 0.2825515552952132,
+              "recall": 0.49944246800828335,
+              "specificity": 0.9700245428879279,
+              "boundary_iou": 0.005810200129115558,
+              "threshold": 1e-05,
+              "selected_fraction": 0.04081588864169573
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.36556399228304925,
+              "iou": 0.22366369228103614,
+              "precision": 0.5483459884245739,
+              "recall": 0.27417299421228697,
+              "specificity": 0.9946621885779872,
+              "boundary_iou": 0.015803408902862817,
+              "factor": 0.5,
+              "selected_fraction": 0.011545466750612892
+            },
+            {
+              "dice": 0.3975059166211542,
+              "iou": 0.24805452996307867,
+              "precision": 0.4637522123893805,
+              "recall": 0.3478203154038125,
+              "specificity": 0.990493474578877,
+              "boundary_iou": 0.018046469659372885,
+              "factor": 0.75,
+              "selected_fraction": 0.017318506648160897
+            },
+            {
+              "dice": 0.4086709499283173,
+              "iou": 0.2568110912761307,
+              "precision": 0.4086709499283173,
+              "recall": 0.4086709499283173,
+              "specificity": 0.9860229163176004,
+              "boundary_iou": 0.01594025992676097,
+              "factor": 1.0,
+              "selected_fraction": 0.023090933501225784
+            },
+            {
+              "dice": 0.39890026903289755,
+              "iou": 0.24914142530768663,
+              "precision": 0.35901193662121406,
+              "recall": 0.44876015504699196,
+              "specificity": 0.981061625804735,
+              "boundary_iou": 0.015102261953135581,
+              "factor": 1.25,
+              "selected_fraction": 0.028863360354290667
+            },
+            {
+              "dice": 0.3795465406467371,
+              "iou": 0.23422242610918145,
+              "precision": 0.31628878387228093,
+              "recall": 0.47443317580842137,
+              "specificity": 0.9757589563342426,
+              "boundary_iou": 0.008896354361080005,
+              "factor": 1.5,
+              "selected_fraction": 0.03463640025183867
+            },
+            {
+              "dice": 0.34409458574488044,
+              "iou": 0.2077984544181622,
+              "precision": 0.2580709393086603,
+              "recall": 0.5161418786173206,
+              "specificity": 0.9649264497780723,
+              "boundary_iou": 0.006982768329766866,
+              "factor": 2.0,
+              "selected_fraction": 0.04618186700245157
+            }
+          ]
+        }
+      ]
+    },
+    "val": {
+      "split": "val",
+      "num_evaluated": 4,
+      "threshold_summary": [
+        {
+          "value": 1e-06,
+          "mean": {
+            "dice": 0.04703961661395918,
+            "iou": 0.024101615026384977,
+            "precision": 0.024101615026384977,
+            "recall": 1.0,
+            "specificity": 0.09779648001437379,
+            "boundary_iou": 0.0,
+            "threshold": 1e-06,
+            "selected_fraction": 0.9043077703504627
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 3e-06,
+          "mean": {
+            "dice": 0.04806995801249741,
+            "iou": 0.024642562282005634,
+            "precision": 0.024642562282005634,
+            "recall": 1.0,
+            "specificity": 0.11772360753449519,
+            "boundary_iou": 0.0,
+            "threshold": 3e-06,
+            "selected_fraction": 0.8848070399868373
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 5e-06,
+          "mean": {
+            "dice": 0.0855519395921793,
+            "iou": 0.045162056955129794,
+            "precision": 0.04516365389355173,
+            "recall": 0.9983321661567948,
+            "specificity": 0.4520445080027582,
+            "boundary_iou": 0.0005159958720330237,
+            "threshold": 5e-06,
+            "selected_fraction": 0.5581538734940454
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 7.5e-06,
+          "mean": {
+            "dice": 0.06719633095958051,
+            "iou": 0.03703223053770576,
+            "precision": 0.5379267382390992,
+            "recall": 0.4518713246287252,
+            "specificity": 0.7842428039709807,
+            "boundary_iou": 0.002661527165932452,
+            "threshold": 7.5e-06,
+            "selected_fraction": 0.22144899089522857
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1e-05,
+          "mean": {
+            "dice": 0.032181362565634926,
+            "iou": 0.01719673843068701,
+            "precision": 0.5173232204916778,
+            "recall": 0.24018540909727787,
+            "specificity": 0.9345801379920348,
+            "boundary_iou": 0.0007844955837623558,
+            "threshold": 1e-05,
+            "selected_fraction": 0.06884688504295083
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.5e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 1.5e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 2e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 2e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 5e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 5e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        }
+      ],
+      "topk_gt_fraction_summary": [
+        {
+          "value": 0.5,
+          "mean": {
+            "dice": 0.17319038296207093,
+            "iou": 0.10523929204614937,
+            "precision": 0.25978080701423845,
+            "recall": 0.12989397911451495,
+            "specificity": 0.9917395245664679,
+            "boundary_iou": 0.006807166538157329,
+            "factor": 0.5,
+            "selected_fraction": 0.010907234770771525
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 0.75,
+          "mean": {
+            "dice": 0.21072999368629738,
+            "iou": 0.13382764625197677,
+            "precision": 0.2458529467028743,
+            "recall": 0.18438802031904344,
+            "specificity": 0.9873880378688267,
+            "boundary_iou": 0.008350002064560472,
+            "factor": 0.75,
+            "selected_fraction": 0.016360366731191404
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.0,
+          "mean": {
+            "dice": 0.22872245068531824,
+            "iou": 0.14757575362820777,
+            "precision": 0.22872245068531824,
+            "recall": 0.22872245068531824,
+            "specificity": 0.982808430249624,
+            "boundary_iou": 0.011350601188617627,
+            "factor": 1.0,
+            "selected_fraction": 0.021813984116577163
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.25,
+          "mean": {
+            "dice": 0.2394938761243742,
+            "iou": 0.15344720321537608,
+            "precision": 0.21554397035260192,
+            "recall": 0.26943142026880523,
+            "specificity": 0.9781341321627851,
+            "boundary_iou": 0.00964292298555563,
+            "factor": 1.25,
+            "selected_fraction": 0.027267601501962925
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.5,
+          "mean": {
+            "dice": 0.23595880696052413,
+            "iou": 0.14819041221539508,
+            "precision": 0.19663304268337695,
+            "recall": 0.294946925730212,
+            "specificity": 0.9731370162149569,
+            "boundary_iou": 0.009262276722739202,
+            "factor": 1.5,
+            "selected_fraction": 0.03272073346238281
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 2.0,
+          "mean": {
+            "dice": 0.23451822994764088,
+            "iou": 0.14232009319566075,
+            "precision": 0.17588867246073067,
+            "recall": 0.35177734492146134,
+            "specificity": 0.9633072416488947,
+            "boundary_iou": 0.008276840899515862,
+            "factor": 2.0,
+            "selected_fraction": 0.043627968233154325
+          },
+          "num_evaluated": 4
+        }
+      ],
+      "per_image": [
+        {
+          "image": "10375.png",
+          "gt_fraction": 0.02476079102351334,
+          "prob_max": 7.369366358034313e-06,
+          "prob_mean": 4.833171260543168e-06,
+          "prob_p99": 7.018599717412144e-06,
+          "threshold_records": [
+            {
+              "dice": 0.0525662973547314,
+              "iou": 0.02699259917466188,
+              "precision": 0.02699259917466188,
+              "recall": 1.0,
+              "specificity": 0.08478148127580712,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.917317775264727
+            },
+            {
+              "dice": 0.05318918194150866,
+              "iou": 0.027321186757403054,
+              "precision": 0.027321186757403054,
+              "recall": 1.0,
+              "specificity": 0.09609402427787123,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9062853397758815
+            },
+            {
+              "dice": 0.08192402249228213,
+              "iou": 0.0427115627602674,
+              "precision": 0.0427115627602674,
+              "recall": 1.0,
+              "specificity": 0.43094962675855497,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5797210268912747
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.2927118602179769,
+              "iou": 0.17144842361251847,
+              "precision": 0.4390569395017794,
+              "recall": 0.2195366079703429,
+              "specificity": 0.9928787170019455,
+              "boundary_iou": 0.01094680238140964,
+              "factor": 0.5,
+              "selected_fraction": 0.012380854469885003
+            },
+            {
+              "dice": 0.36008134559166205,
+              "iou": 0.2195726871108585,
+              "precision": 0.4200978696060501,
+              "recall": 0.31506950880444856,
+              "specificity": 0.9889575876112642,
+              "boundary_iou": 0.01707253661495797,
+              "factor": 0.75,
+              "selected_fraction": 0.01857036378857084
+            },
+            {
+              "dice": 0.38461538461538464,
+              "iou": 0.23809523809523808,
+              "precision": 0.38461538461538464,
+              "recall": 0.38461538461538464,
+              "specificity": 0.9843757206228252,
+              "boundary_iou": 0.021465274324548318,
+              "factor": 1.0,
+              "selected_fraction": 0.02476079102351334
+            },
+            {
+              "dice": 0.3914390219791083,
+              "iou": 0.24334733176277784,
+              "precision": 0.3522939588955782,
+              "recall": 0.44037071362372565,
+              "specificity": 0.9794437191808736,
+              "boundary_iou": 0.016219152568679188,
+              "factor": 1.25,
+              "selected_fraction": 0.030951218258455846
+            },
+            {
+              "dice": 0.3799101383513501,
+              "iou": 0.2344994233620737,
+              "precision": 0.31659334684395235,
+              "recall": 0.4748841519925857,
+              "specificity": 0.973973338955564,
+              "boundary_iou": 0.014575318141461971,
+              "factor": 1.5,
+              "selected_fraction": 0.03714072757714168
+            },
+            {
+              "dice": 0.35766450417052825,
+              "iou": 0.2177779784208388,
+              "precision": 0.2682483781278962,
+              "recall": 0.5364967562557924,
+              "specificity": 0.9628424517318007,
+              "boundary_iou": 0.009729575046501645,
+              "factor": 2.0,
+              "selected_fraction": 0.04952158204702668
+            }
+          ]
+        },
+        {
+          "image": "10520.png",
+          "gt_fraction": 0.016783740229693072,
+          "prob_max": 7.398469278996345e-06,
+          "prob_mean": 4.7638836804253515e-06,
+          "prob_p99": 6.94303435011534e-06,
+          "threshold_records": [
+            {
+              "dice": 0.035912552913799814,
+              "iou": 0.01828459978555307,
+              "precision": 0.01828459978555307,
+              "recall": 1.0,
+              "specificity": 0.08348444104408402,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.917916740127621
+            },
+            {
+              "dice": 0.0363250767009263,
+              "iou": 0.018498518400336002,
+              "precision": 0.018498518400336002,
+              "recall": 1.0,
+              "specificity": 0.09428051547338763,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9073018642070393
+            },
+            {
+              "dice": 0.059828661369776645,
+              "iou": 0.03083679269894594,
+              "precision": 0.03084318045263369,
+              "recall": 0.9933286646271793,
+              "specificity": 0.46719588970248666,
+              "boundary_iou": 0.0020639834881320948,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5405334347867776
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9914645640359034,
+              "boundary_iou": 0.0,
+              "factor": 0.5,
+              "selected_fraction": 0.00839217942412798
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9871974752323871,
+              "boundary_iou": 0.0,
+              "factor": 0.75,
+              "selected_fraction": 0.012587650517629083
+            },
+            {
+              "dice": 0.002801223692455125,
+              "iou": 0.0014025763112243015,
+              "precision": 0.002801223692455125,
+              "recall": 0.002801223692455125,
+              "specificity": 0.9829775748187651,
+              "boundary_iou": 0.003829270570654712,
+              "factor": 1.0,
+              "selected_fraction": 0.016783740229693072
+            },
+            {
+              "dice": 0.024342698009665,
+              "iou": 0.012321316042585653,
+              "precision": 0.02190835643097246,
+              "recall": 0.027385647414396815,
+              "specificity": 0.9791295189175109,
+              "boundary_iou": 0.0028841820639927897,
+              "factor": 1.25,
+              "selected_fraction": 0.020979829941757063
+            },
+            {
+              "dice": 0.03688796496970233,
+              "iou": 0.018790555155010814,
+              "precision": 0.030740121879300177,
+              "recall": 0.04610961630607055,
+              "specificity": 0.9751820528082126,
+              "boundary_iou": 0.0047578589634664405,
+              "factor": 1.5,
+              "selected_fraction": 0.025175301035258165
+            },
+            {
+              "dice": 0.05830968265084221,
+              "iou": 0.03003037205770691,
+              "precision": 0.043732261988131654,
+              "recall": 0.08746452397626331,
+              "specificity": 0.967352555156936,
+              "boundary_iou": 0.004543610547667343,
+              "factor": 2.0,
+              "selected_fraction": 0.033567480459386144
+            }
+          ]
+        },
+        {
+          "image": "10618.png",
+          "gt_fraction": 0.01962741022555538,
+          "prob_max": 1.3145699085725937e-05,
+          "prob_mean": 7.685886885155924e-06,
+          "prob_p99": 1.2350987162790261e-05,
+          "threshold_records": [
+            {
+              "dice": 0.04444299694587996,
+              "iou": 0.022726515707018745,
+              "precision": 0.022726515707018745,
+              "recall": 1.0,
+              "specificity": 0.13909526314767157,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.8636348166425594
+            },
+            {
+              "dice": 0.04650691704347993,
+              "iou": 0.023807054885033888,
+              "precision": 0.023807054885033888,
+              "recall": 1.0,
+              "specificity": 0.17907812043458513,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8244367192976059
+            },
+            {
+              "dice": 0.048130369186946194,
+              "iou": 0.024658598313708802,
+              "precision": 0.024658598313708802,
+              "recall": 1.0,
+              "specificity": 0.2081186533630176,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.7959661768221284
+            },
+            {
+              "dice": 0.053336372129177446,
+              "iou": 0.027398864069553965,
+              "precision": 0.027398864069553965,
+              "recall": 1.0,
+              "specificity": 0.2893200649505494,
+              "boundary_iou": 0.0,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.7163585386507194
+            },
+            {
+              "dice": 0.12867906269440796,
+              "iou": 0.06876375940071808,
+              "precision": 0.06895764897978536,
+              "recall": 0.960716718617757,
+              "specificity": 0.7403106269529902,
+              "boundary_iou": 0.002006957452502007,
+              "threshold": 1e-05,
+              "selected_fraction": 0.27344872433785905
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.3981559210073626,
+              "iou": 0.2485609718380041,
+              "precision": 0.5972256626207579,
+              "recall": 0.29861899552050863,
+              "specificity": 0.9959680735566212,
+              "boundary_iou": 0.014425516491482422,
+              "factor": 0.5,
+              "selected_fraction": 0.00981390769529968
+            },
+            {
+              "dice": 0.4759186080802123,
+              "iou": 0.3122658741215442,
+              "precision": 0.5552405592865793,
+              "recall": 0.41642755403257437,
+              "specificity": 0.9933218635302831,
+              "boundary_iou": 0.014414038019636515,
+              "factor": 0.75,
+              "selected_fraction": 0.01472045637790554
+            },
+            {
+              "dice": 0.5092583035732717,
+              "iou": 0.341614046748643,
+              "precision": 0.5092583035732717,
+              "recall": 0.5092583035732717,
+              "specificity": 0.9901751755495649,
+              "boundary_iou": 0.015628213037219823,
+              "factor": 1.0,
+              "selected_fraction": 0.01962741022555538
+            },
+            {
+              "dice": 0.5086378524179564,
+              "iou": 0.3410558952717251,
+              "precision": 0.4577732272021667,
+              "recall": 0.5722188964349855,
+              "specificity": 0.9864304763384686,
+              "boundary_iou": 0.007477949635689633,
+              "factor": 1.25,
+              "selected_fraction": 0.02453436407320522
+            },
+            {
+              "dice": 0.47881625339575745,
+              "iou": 0.3147655596929858,
+              "precision": 0.3990146427391831,
+              "recall": 0.5985178457155833,
+              "specificity": 0.9819522111744204,
+              "boundary_iou": 0.005942871748993546,
+              "factor": 1.5,
+              "selected_fraction": 0.02944091275581108
+            },
+            {
+              "dice": 0.4273613662792698,
+              "iou": 0.27174797637278497,
+              "precision": 0.3205210247094524,
+              "recall": 0.6410420494189047,
+              "specificity": 0.9727931753156503,
+              "boundary_iou": 0.003051237766263673,
+              "factor": 2.0,
+              "selected_fraction": 0.03925482045111076
+            }
+          ]
+        },
+        {
+          "image": "10624.png",
+          "gt_fraction": 0.026083994987546863,
+          "prob_max": 1.0699060112528969e-05,
+          "prob_mean": 4.900512067251839e-06,
+          "prob_p99": 9.723499715619255e-06,
+          "threshold_records": [
+            {
+              "dice": 0.05523661924142554,
+              "iou": 0.028402745438306197,
+              "precision": 0.028402745438306197,
+              "recall": 1.0,
+              "specificity": 0.08382473458993243,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9183617493669438
+            },
+            {
+              "dice": 0.05625865636407476,
+              "iou": 0.02894348908524958,
+              "precision": 0.02894348908524958,
+              "recall": 1.0,
+              "specificity": 0.10144176995213676,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.9012042366668227
+            },
+            {
+              "dice": 0.1523247053197122,
+              "iou": 0.08244127404759703,
+              "precision": 0.08244127404759703,
+              "recall": 1.0,
+              "specificity": 0.7019138621869736,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.31639485547600105
+            },
+            {
+              "dice": 0.21544895170914458,
+              "iou": 0.12073005808126908,
+              "precision": 0.12430808888684304,
+              "recall": 0.8074852985149008,
+              "specificity": 0.8476511509333732,
+              "boundary_iou": 0.010646108663729809,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.16943742493019484
+            },
+            {
+              "dice": 4.6387568131740696e-05,
+              "iou": 2.3194322029967063e-05,
+              "precision": 0.00033523298692591353,
+              "recall": 2.491777135453005e-05,
+              "specificity": 0.9980099250151492,
+              "boundary_iou": 0.001131024882547416,
+              "threshold": 1e-05,
+              "selected_fraction": 0.001938815833944291
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.0018937506229442839,
+              "iou": 0.0009477727340749239,
+              "precision": 0.0028406259344164256,
+              "recall": 0.0014203129672082128,
+              "specificity": 0.9866467436714014,
+              "boundary_iou": 0.0018563472797372554,
+              "factor": 0.5,
+              "selected_fraction": 0.013041997493773431
+            },
+            {
+              "dice": 0.006920021073315203,
+              "iou": 0.0034720237755043724,
+              "precision": 0.008073357918867737,
+              "recall": 0.006055018439150802,
+              "specificity": 0.9800752251013723,
+              "boundary_iou": 0.0019134336236474004,
+              "factor": 0.75,
+              "selected_fraction": 0.019562996240660147
+            },
+            {
+              "dice": 0.018214890860161467,
+              "iou": 0.009191153357725725,
+              "precision": 0.018214890860161467,
+              "recall": 0.018214890860161467,
+              "specificity": 0.973705250007341,
+              "boundary_iou": 0.004479646822047653,
+              "factor": 1.0,
+              "selected_fraction": 0.026083994987546863
+            },
+            {
+              "dice": 0.033555932090767134,
+              "iou": 0.01706426978441576,
+              "precision": 0.030200338881690422,
+              "recall": 0.037750423602113024,
+              "specificity": 0.9675328142142874,
+              "boundary_iou": 0.011990407673860911,
+              "factor": 1.25,
+              "selected_fraction": 0.032604993734433575
+            },
+            {
+              "dice": 0.04822087112528656,
+              "iou": 0.024706110651510044,
+              "precision": 0.04018405927107213,
+              "recall": 0.06027608890660819,
+              "specificity": 0.9614404619216302,
+              "boundary_iou": 0.011773058037034845,
+              "factor": 1.5,
+              "selected_fraction": 0.039125992481320294
+            },
+            {
+              "dice": 0.09473736668992325,
+              "iou": 0.049724045931312286,
+              "precision": 0.07105302501744244,
+              "recall": 0.14210605003488488,
+              "specificity": 0.9502407843911919,
+              "boundary_iou": 0.015782940237630785,
+              "factor": 2.0,
+              "selected_fraction": 0.052167989975093726
+            }
+          ]
+        }
+      ]
+    },
+    "clean_test_v2": {
+      "split": "clean_test_v2",
+      "num_evaluated": 4,
+      "threshold_summary": [
+        {
+          "value": 1e-06,
+          "mean": {
+            "dice": 0.04211144280408671,
+            "iou": 0.021516763133604157,
+            "precision": 0.021516763133604157,
+            "recall": 1.0,
+            "specificity": 0.08347845324384946,
+            "boundary_iou": 0.0,
+            "threshold": 1e-06,
+            "selected_fraction": 0.9181717590897465
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 3e-06,
+          "mean": {
+            "dice": 0.04460959832145418,
+            "iou": 0.02282426649441676,
+            "precision": 0.02282426649441676,
+            "recall": 1.0,
+            "specificity": 0.1348236313046146,
+            "boundary_iou": 0.0,
+            "threshold": 3e-06,
+            "selected_fraction": 0.8678530221707987
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 5e-06,
+          "mean": {
+            "dice": 0.08725142061001023,
+            "iou": 0.04569602265229242,
+            "precision": 0.04569608821050657,
+            "recall": 0.9999573390972953,
+            "specificity": 0.5690816753160769,
+            "boundary_iou": 0.00015055706112616682,
+            "threshold": 5e-06,
+            "selected_fraction": 0.44216129719625563
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 7.5e-06,
+          "mean": {
+            "dice": 0.18852567242611623,
+            "iou": 0.10420091806577479,
+            "precision": 0.10716362383757039,
+            "recall": 0.8096323842640162,
+            "specificity": 0.8632855966795308,
+            "boundary_iou": 0.010275051247681816,
+            "threshold": 7.5e-06,
+            "selected_fraction": 0.15035587791814978
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1e-05,
+          "mean": {
+            "dice": 0.09955448032584276,
+            "iou": 0.060179430971393076,
+            "precision": 0.5629952354742747,
+            "recall": 0.0734700531997909,
+            "specificity": 0.9974206403298369,
+            "boundary_iou": 0.005515717057728802,
+            "threshold": 1e-05,
+            "selected_fraction": 0.004218437116005568
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.5e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 1.5e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 2e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 2e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 5e-05,
+          "mean": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 1.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "boundary_iou": 0.0,
+            "threshold": 5e-05,
+            "selected_fraction": 0.0
+          },
+          "num_evaluated": 4
+        }
+      ],
+      "topk_gt_fraction_summary": [
+        {
+          "value": 0.5,
+          "mean": {
+            "dice": 0.16894898704820327,
+            "iou": 0.0982640514741546,
+            "precision": 0.25342318552968085,
+            "recall": 0.1267118140518242,
+            "specificity": 0.9926641578873501,
+            "boundary_iou": 0.008739598941356194,
+            "factor": 0.5,
+            "selected_fraction": 0.009877788023516151
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 0.75,
+          "mean": {
+            "dice": 0.21406312848293563,
+            "iou": 0.128198131845191,
+            "precision": 0.24974131294037968,
+            "recall": 0.1873046769729657,
+            "specificity": 0.9889153587220904,
+            "boundary_iou": 0.010059386457666072,
+            "factor": 0.75,
+            "selected_fraction": 0.014816631758485563
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.0,
+          "mean": {
+            "dice": 0.24700051926834168,
+            "iou": 0.1498451025421873,
+            "precision": 0.24700051926834168,
+            "recall": 0.24700051926834168,
+            "specificity": 0.9851334142887305,
+            "boundary_iou": 0.010937742068364405,
+            "factor": 1.0,
+            "selected_fraction": 0.019755601821515582
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.25,
+          "mean": {
+            "dice": 0.26082650830137943,
+            "iou": 0.15861044776089667,
+            "precision": 0.23474349698516417,
+            "recall": 0.29343038510719166,
+            "specificity": 0.9810814252911891,
+            "boundary_iou": 0.011436188996117425,
+            "factor": 1.25,
+            "selected_fraction": 0.0246945718845456
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 1.5,
+          "mean": {
+            "dice": 0.2651526073753841,
+            "iou": 0.16005419747797828,
+            "precision": 0.22096046591019491,
+            "recall": 0.33144084975523513,
+            "specificity": 0.9768333907324003,
+            "boundary_iou": 0.010429180814372729,
+            "factor": 1.5,
+            "selected_fraction": 0.029633415619515012
+          },
+          "num_evaluated": 4
+        },
+        {
+          "value": 2.0,
+          "mean": {
+            "dice": 0.26828521973003694,
+            "iou": 0.15947783880573957,
+            "precision": 0.20121391479752768,
+            "recall": 0.40242782959505535,
+            "specificity": 0.9682013089456614,
+            "boundary_iou": 0.00955056393135775,
+            "factor": 2.0,
+            "selected_fraction": 0.039511203643031165
+          },
+          "num_evaluated": 4
+        }
+      ],
+      "per_image": [
+        {
+          "image": "10793.png",
+          "gt_fraction": 0.020424036478754612,
+          "prob_max": 1.0424720130686183e-05,
+          "prob_mean": 5.0460862439649645e-06,
+          "prob_p99": 9.723751645651646e-06,
+          "threshold_records": [
+            {
+              "dice": 0.043540095436283247,
+              "iou": 0.022254529895920624,
+              "precision": 0.022254529895920624,
+              "recall": 1.0,
+              "specificity": 0.08396757806176393,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9177473788156022
+            },
+            {
+              "dice": 0.049525848560291005,
+              "iou": 0.025391696949038957,
+              "precision": 0.025391696949038957,
+              "recall": 1.0,
+              "specificity": 0.19972023062294642,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.804358862652842
+            },
+            {
+              "dice": 0.07543829531555117,
+              "iou": 0.03919764959051808,
+              "precision": 0.03919791182337469,
+              "recall": 0.9998293563891812,
+              "specificity": 0.4890241812535542,
+              "boundary_iou": 0.0006022282445046673,
+              "threshold": 5e-06,
+              "selected_fraction": 0.5209601812320293
+            },
+            {
+              "dice": 0.19171454310072247,
+              "iou": 0.10602006578621789,
+              "precision": 0.10708918044368612,
+              "recall": 0.913938738943716,
+              "specificity": 0.8411149503465689,
+              "boundary_iou": 0.006386779812416257,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.17430629374691411
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "specificity": 0.9954286940913395,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.00447794139002643
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.026886103790220134,
+              "iou": 0.013626230012300122,
+              "precision": 0.04032992036405006,
+              "recall": 0.020164386678422117,
+              "specificity": 0.9899957838909054,
+              "boundary_iou": 0.0009711309261057649,
+              "factor": 0.5,
+              "selected_fraction": 0.010211727803432952
+            },
+            {
+              "dice": 0.06100890593512319,
+              "iou": 0.031464252786857765,
+              "precision": 0.07117667134352129,
+              "recall": 0.053383009584482805,
+              "specificity": 0.9854754745198172,
+              "boundary_iou": 0.004335608189482136,
+              "factor": 0.75,
+              "selected_fraction": 0.015318172577038134
+            },
+            {
+              "dice": 0.10662381615994994,
+              "iou": 0.05631412134048338,
+              "precision": 0.10662381615994994,
+              "recall": 0.10662381615994994,
+              "specificity": 0.9813732181602228,
+              "boundary_iou": 0.011967308814944542,
+              "factor": 1.0,
+              "selected_fraction": 0.020424036478754612
+            },
+            {
+              "dice": 0.14308827990696735,
+              "iou": 0.07705712574198116,
+              "precision": 0.12877977747946576,
+              "recall": 0.1609738062057393,
+              "specificity": 0.9772940881374345,
+              "boundary_iou": 0.01474967107541029,
+              "factor": 1.25,
+              "selected_fraction": 0.025529900380471086
+            },
+            {
+              "dice": 0.17321365596168503,
+              "iou": 0.09481878191555611,
+              "precision": 0.1443441659398582,
+              "recall": 0.21651830152726032,
+              "specificity": 0.9732392704174423,
+              "boundary_iou": 0.01566412017718431,
+              "factor": 1.5,
+              "selected_fraction": 0.030636345154076268
+            },
+            {
+              "dice": 0.23254932074362694,
+              "iou": 0.13157330129374156,
+              "precision": 0.1744119905577202,
+              "recall": 0.3488239811154404,
+              "specificity": 0.9655731862577377,
+              "boundary_iou": 0.017570711399534714,
+              "factor": 2.0,
+              "selected_fraction": 0.040848072957509224
+            }
+          ]
+        },
+        {
+          "image": "11099.png",
+          "gt_fraction": 0.015882639605549823,
+          "prob_max": 9.143788702203892e-06,
+          "prob_mean": 4.835093022848014e-06,
+          "prob_p99": 8.37085008242866e-06,
+          "threshold_records": [
+            {
+              "dice": 0.03400487932119129,
+              "iou": 0.017296522744903994,
+              "precision": 0.017296522744903994,
+              "recall": 1.0,
+              "specificity": 0.08306303970731096,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9182562206169017
+            },
+            {
+              "dice": 0.035303375607186625,
+              "iou": 0.017968868663423843,
+              "precision": 0.017968868663423843,
+              "recall": 1.0,
+              "specificity": 0.11797618891570383,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8838975843748805
+            },
+            {
+              "dice": 0.06651786205592479,
+              "iou": 0.03440314278085603,
+              "precision": 0.03440314278085603,
+              "recall": 1.0,
+              "specificity": 0.5470257505958112,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.4616624622558575
+            },
+            {
+              "dice": 0.15831914352259605,
+              "iou": 0.08596448345855873,
+              "precision": 0.09453686984672381,
+              "recall": 0.486658845471227,
+              "specificity": 0.9247736548795827,
+              "boundary_iou": 0.016703534829127353,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.08176097924549937
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.06465456733179585,
+              "iou": 0.03340724929019957,
+              "precision": 0.09697990614847792,
+              "recall": 0.04849141172577685,
+              "specificity": 0.9927128741327422,
+              "boundary_iou": 0.006647953907519575,
+              "factor": 0.5,
+              "selected_fraction": 0.007941558689752704
+            },
+            {
+              "dice": 0.08945423291792007,
+              "iou": 0.04682129811239271,
+              "precision": 0.10436386972565379,
+              "recall": 0.07827211743825768,
+              "specificity": 0.9891591258750255,
+              "boundary_iou": 0.011271352562307477,
+              "factor": 0.75,
+              "selected_fraction": 0.01191186026067347
+            },
+            {
+              "dice": 0.11509189904641579,
+              "iou": 0.06105968720076604,
+              "precision": 0.11509189904641579,
+              "recall": 0.11509189904641579,
+              "specificity": 0.9857184955604849,
+              "boundary_iou": 0.01406760450696713,
+              "factor": 1.0,
+              "selected_fraction": 0.015882639605549823
+            },
+            {
+              "dice": 0.11890851237349091,
+              "iou": 0.06321250888415067,
+              "precision": 0.1070173749819512,
+              "recall": 0.13377252353879013,
+              "specificity": 0.9819851179509437,
+              "boundary_iou": 0.008893093661305583,
+              "factor": 1.25,
+              "selected_fraction": 0.019853418950426173
+            },
+            {
+              "dice": 0.1156099967511762,
+              "iou": 0.0613514169316629,
+              "precision": 0.0963420503770255,
+              "recall": 0.14451162650783625,
+              "specificity": 0.9781240578561868,
+              "boundary_iou": 0.005244323790720632,
+              "factor": 1.5,
+              "selected_fraction": 0.02382372052134694
+            },
+            {
+              "dice": 0.11254499694171204,
+              "iou": 0.05962790994188085,
+              "precision": 0.08440874770628402,
+              "recall": 0.16881749541256805,
+              "specificity": 0.9704466022622618,
+              "boundary_iou": 0.006802328932956707,
+              "factor": 2.0,
+              "selected_fraction": 0.031765279211099645
+            }
+          ]
+        },
+        {
+          "image": "12046.png",
+          "gt_fraction": 0.01942897054564658,
+          "prob_max": 1.0314654900867026e-05,
+          "prob_mean": 4.8810870794113725e-06,
+          "prob_p99": 9.405444870935753e-06,
+          "threshold_records": [
+            {
+              "dice": 0.04141713686889091,
+              "iou": 0.021146481799947422,
+              "precision": 0.021146481799947422,
+              "recall": 1.0,
+              "specificity": 0.082828998556798,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9187802836164874
+            },
+            {
+              "dice": 0.04241711401840855,
+              "iou": 0.021668106276449862,
+              "precision": 0.021668106276449862,
+              "recall": 1.0,
+              "specificity": 0.1053853895342416,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8966621400949607
+            },
+            {
+              "dice": 0.10705958277807112,
+              "iou": 0.056557291399161574,
+              "precision": 0.056557291399161574,
+              "recall": 1.0,
+              "specificity": 0.6694800625925269,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.34352724582448096
+            },
+            {
+              "dice": 0.19109723851368815,
+              "iou": 0.10564262633811795,
+              "precision": 0.10685540650707774,
+              "recall": 0.9029874115362936,
+              "specificity": 0.8504530016243779,
+              "boundary_iou": 0.007912264009214283,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.16418556997082065
+            },
+            {
+              "dice": 0.030699469959251203,
+              "iou": 0.015589022341153775,
+              "precision": 0.7106382978723405,
+              "recall": 0.015688607753491575,
+              "specificity": 0.9998734251042691,
+              "boundary_iou": 0.004613863561463254,
+              "threshold": 1e-05,
+              "selected_fraction": 0.0004289291737546452
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.22225005741007495,
+              "iou": 0.12501761473061204,
+              "precision": 0.3333750861151124,
+              "recall": 0.1666875430575562,
+              "specificity": 0.9933957686756916,
+              "boundary_iou": 0.009904588823262154,
+              "factor": 0.5,
+              "selected_fraction": 0.00971448527282329
+            },
+            {
+              "dice": 0.27109727292248226,
+              "iou": 0.15680308017139663,
+              "precision": 0.3162839248434238,
+              "recall": 0.23720799148243252,
+              "specificity": 0.9898398827569005,
+              "boundary_iou": 0.0097319446815776,
+              "factor": 0.75,
+              "selected_fraction": 0.014571423704147168
+            },
+            {
+              "dice": 0.29094382163211624,
+              "iou": 0.1702365465305898,
+              "precision": 0.29094382163211624,
+              "recall": 0.29094382163211624,
+              "specificity": 0.9859508070390534,
+              "boundary_iou": 0.008338528678304239,
+              "factor": 1.0,
+              "selected_fraction": 0.01942897054564658
+            },
+            {
+              "dice": 0.29566330791070533,
+              "iou": 0.1734770537318308,
+              "precision": 0.26609549576632097,
+              "recall": 0.33262353604308886,
+              "specificity": 0.981822852228773,
+              "boundary_iou": 0.009663990484686292,
+              "factor": 1.25,
+              "selected_fraction": 0.024286517387145996
+            },
+            {
+              "dice": 0.30725872111229413,
+              "iou": 0.18151546544324404,
+              "precision": 0.2560489342602451,
+              "recall": 0.3840734013903676,
+              "specificity": 0.9778891030183149,
+              "boundary_iou": 0.01067975176793188,
+              "factor": 1.5,
+              "selected_fraction": 0.029143455818469874
+            },
+            {
+              "dice": 0.32105801549028207,
+              "iou": 0.19122639046044043,
+              "precision": 0.24079351161771154,
+              "recall": 0.4815870232354231,
+              "specificity": 0.9699142641220976,
+              "boundary_iou": 0.010334711294839313,
+              "factor": 2.0,
+              "selected_fraction": 0.03885794109129316
+            }
+          ]
+        },
+        {
+          "image": "12133.png",
+          "gt_fraction": 0.023286760656111318,
+          "prob_max": 1.1146104043291416e-05,
+          "prob_mean": 4.9709583436197136e-06,
+          "prob_p99": 1.0040695997304283e-05,
+          "threshold_records": [
+            {
+              "dice": 0.04948365958998139,
+              "iou": 0.025369518093644586,
+              "precision": 0.025369518093644586,
+              "recall": 1.0,
+              "specificity": 0.08405419664952496,
+              "boundary_iou": 0.0,
+              "threshold": 1e-06,
+              "selected_fraction": 0.9179031533099943
+            },
+            {
+              "dice": 0.05119205509993056,
+              "iou": 0.02626839408875438,
+              "precision": 0.02626839408875438,
+              "recall": 1.0,
+              "specificity": 0.11621271614556664,
+              "boundary_iou": 0.0,
+              "threshold": 3e-06,
+              "selected_fraction": 0.8864935015605118
+            },
+            {
+              "dice": 0.09998994229049384,
+              "iou": 0.05262600683863399,
+              "precision": 0.05262600683863399,
+              "recall": 1.0,
+              "specificity": 0.5707967068224155,
+              "boundary_iou": 0.0,
+              "threshold": 5e-06,
+              "selected_fraction": 0.44249529947265465
+            },
+            {
+              "dice": 0.2129717645674582,
+              "iou": 0.1191764966802046,
+              "precision": 0.12017303855279388,
+              "recall": 0.9349445411048282,
+              "specificity": 0.8368007798675936,
+              "boundary_iou": 0.010097626339969372,
+              "threshold": 7.5e-06,
+              "selected_fraction": 0.18117066870936496
+            },
+            {
+              "dice": 0.3675184513441198,
+              "iou": 0.22512870154441852,
+              "precision": 0.541342644024758,
+              "recall": 0.27819160504567203,
+              "specificity": 0.9943804421237392,
+              "boundary_iou": 0.017449004669451953,
+              "threshold": 1e-05,
+              "selected_fraction": 0.011966877900241198
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 1.5e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 2e-05,
+              "selected_fraction": 0.0
+            },
+            {
+              "dice": 0.0,
+              "iou": 0.0,
+              "precision": 1.0,
+              "recall": 0.0,
+              "specificity": 1.0,
+              "boundary_iou": 0.0,
+              "threshold": 5e-05,
+              "selected_fraction": 0.0
+            }
+          ],
+          "topk_records": [
+            {
+              "dice": 0.3620052196607221,
+              "iou": 0.2210051118635066,
+              "precision": 0.5430078294910831,
+              "recall": 0.27150391474554153,
+              "specificity": 0.9945522048500609,
+              "boundary_iou": 0.017434722108537283,
+              "factor": 0.5,
+              "selected_fraction": 0.011643380328055659
+            },
+            {
+              "dice": 0.434692102156217,
+              "iou": 0.2777038963101169,
+              "precision": 0.5071407858489199,
+              "recall": 0.38035558938668984,
+              "specificity": 0.9911869517366184,
+              "boundary_iou": 0.014898640397297077,
+              "factor": 0.75,
+              "selected_fraction": 0.017465070492083488
+            },
+            {
+              "dice": 0.47534254023488476,
+              "iou": 0.3117700550969099,
+              "precision": 0.47534254023488476,
+              "recall": 0.47534254023488476,
+              "specificity": 0.9874911363951606,
+              "boundary_iou": 0.009377526273241715,
+              "factor": 1.0,
+              "selected_fraction": 0.023286760656111318
+            },
+            {
+              "dice": 0.48564593301435405,
+              "iou": 0.320695102685624,
+              "precision": 0.4370813397129187,
+              "recall": 0.5463516746411483,
+              "specificity": 0.9832236428476057,
+              "boundary_iou": 0.012438000763067532,
+              "factor": 1.25,
+              "selected_fraction": 0.02910845082013915
+            },
+            {
+              "dice": 0.46452805567638106,
+              "iou": 0.3025311256214501,
+              "precision": 0.38710671306365085,
+              "recall": 0.5806600695954763,
+              "specificity": 0.9780811316376571,
+              "boundary_iou": 0.010128527521654093,
+              "factor": 1.5,
+              "selected_fraction": 0.034930140984166975
+            },
+            {
+              "dice": 0.4069885457445266,
+              "iou": 0.2554837535268954,
+              "precision": 0.30524140930839494,
+              "recall": 0.6104828186167899,
+              "specificity": 0.9668711831405485,
+              "boundary_iou": 0.0034945040981002604,
+              "factor": 2.0,
+              "selected_fraction": 0.046573521312222636
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

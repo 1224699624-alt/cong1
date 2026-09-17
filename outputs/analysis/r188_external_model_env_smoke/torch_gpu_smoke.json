@@ -1,0 +1,8 @@
+{
+  "torch": "2.5.1+cu124",
+  "torch_cuda": "12.4",
+  "cuda_available": true,
+  "device_count": 1,
+  "gpu_tensor_smoke": "ok",
+  "device_name": "NVIDIA GeForce RTX 4090"
+}

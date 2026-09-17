@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\train_r289_tsrs_pair_gap_head.py", line 433, in <module>
+    main()
+  File "G:\gutou\YOLO+SAM\scripts\train_r289_tsrs_pair_gap_head.py", line 402, in main
+    metrics = evaluate(model, val_loader, device, pairs, args.gap_radius)
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "G:\gutou\YOLO+SAM\scripts\train_r289_tsrs_pair_gap_head.py", line 291, in evaluate
+    for batch in loader:
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "G:\gutou\YOLO+SAM\scripts\train_r289_tsrs_pair_gap_head.py", line 143, in __getitem__
+    Image.open(find_image(self.root / self.split, label_path.stem)).convert("L"),
+  File "G:\gutou\YOLO+SAM\scripts\train_r289_tsrs_pair_gap_head.py", line 36, in find_image
+    raise RuntimeError({"stem": stem, "candidates": [str(path) for path in candidates]})
+RuntimeError: {'stem': '10520', 'candidates': ['data\\raw\\TSRS_RSNA-Epiphysis\\val\\10520.bmp', 'data\\raw\\TSRS_RSNA-Epiphysis\\val\\10520.jpeg', 'data\\raw\\TSRS_RSNA-Epiphysis\\val\\10520.jpg', 'data\\raw\\TSRS_RSNA-Epiphysis\\val\\10520.png']}

@@ -1,0 +1,281 @@
+total 292
+drwxr-xr-x  7 root root 4096 Aug 24 09:57 .
+drwxr-xr-x  5 root root 4096 Jul 29 21:18 ..
+drwxr-xr-x  5 root root   76 Aug  3 11:09 data
+drwxr-xr-x  2 root root   68 Jul 21 14:44 gutou
+drwxr-xr-x 19 root root 4096 Aug 13 14:22 outputs
+drwxr-xr-x  3 root root   33 Jul 28 15:05 research-workflow
+-rw-rw-rw-  1 root root 1105 Jul 15 13:26 run_r258b_prediction_relation_prior_full.sh
+-rw-rw-rw-  1 root root  891 Jul 15 13:26 run_r258b_prediction_relation_prior_sanity.sh
+-rw-r--r--  1 root root 5190 Jul 15 15:29 run_r259_nnunet_frozen_prior_visual_probe.sh
+-rw-r--r--  1 root root 4366 Jul 15 15:59 run_r259_nnunet_resume_after_preprocess.sh
+-rw-r--r--  1 root root 5332 Jul 15 18:07 run_r260_mature_nnunet_prior.sh
+-rw-r--r--  1 root root 4695 Jul 15 21:33 run_r261_conditional_seam_nnunet.sh
+-rwxr-xr-x  1 root root 2521 Jul 16 16:23 run_r265_hierarchical_carpal_nnunet.sh
+-rwxr-xr-x  1 root root 4024 Jul 21 17:08 run_r279_instance_prior_nnunet.sh
+-rwxr-xr-x  1 root root 3462 Jul 21 17:53 run_r280_balanced_instance_prior_nnunet.sh
+-rwxr-xr-x  1 root root 3564 Jul 21 18:34 run_r281_low_support_instance_prior_nnunet.sh
+-rwxr-xr-x  1 root root 3432 Jul 21 19:06 run_r282_gradnorm_instance_prior_nnunet.sh
+-rwxr-xr-x  1 root root 3946 Jul 23 13:32 run_r291a_interface_hinge_nnunet.sh
+-rwxr-xr-x  1 root root 3649 Jul 23 14:50 run_r292_dualscale_input_nnunet.sh
+-rwxr-xr-x  1 root root 3878 Jul 23 16:40 run_r293_dualbranch_interface_nnunet.sh
+-rwxr-xr-x  1 root root 4290 Jul 23 19:01 run_r294_local_fusion_nnunet.sh
+-rwxr-xr-x  1 root root  634 Jul 23 18:30 run_r295_checkpoint_aligned_local_fusion.sh
+-rwxr-xr-x  1 root root 1184 Jul 23 19:01 run_r296_plan_aligned_local_fusion.sh
+-rwxr-xr-x  1 root root 3677 Jul 23 19:11 run_r296_resume_after_plan_name_fix.sh
+-rwxr-xr-x  1 root root 2931 Jul 24 13:44 run_r305_binary_vs_instance_supervision.sh
+-rwxr-xr-x  1 root root 4437 Jul 24 14:55 run_r306_r260_instance_aux_pair.sh
+-rwxr-xr-x  1 root root 3864 Jul 24 16:13 run_r307_exact_r260_instance_aux_pair.sh
+-rwxr-xr-x  1 root root 3183 Jul 24 17:02 run_r307_resume_instance_after_validation_fix.sh
+-rwxr-xr-x  1 root root 7435 Jul 28 18:52 run_r316c_dual_route_remote.sh
+-rw-r--r--  1 root root 6707 Jul 29 13:54 run_r317_continuous_maturity_remote.sh
+-rwxr-xr-x  1 root root 6898 Jul 29 17:27 run_r317_image_centers_only_remote.sh
+-rwxr-xr-x  1 root root 1058 Jul 27 20:14 run_r318_full_r260_prior.sh
+-rwxr-xr-x  1 root root 4029 Jul 28 13:34 run_r319_r316b_nnunet_remote.sh
+-rwxr-xr-x  1 root root 6491 Jul 30 13:13 run_r320_multibackbone_queue.sh
+-rwxr-xr-x  1 root root 2355 Jul 30 12:35 run_r320_prepare_assets.sh
+-rwxr-xr-x  1 root root  784 Jul 30 20:56 run_r321_promptfree_medsam_adapter.sh
+-rw-r--r--  1 root root 2407 Aug  3 11:12 run_r323_ram_native_r317_remote.sh
+-rwxr-xr-x  1 root root  595 Aug  3 12:37 run_r324_ram_explicit_overlap_iem_remote.sh
+-rwxr-xr-x  1 root root  744 Aug  3 13:12 run_r324b_ram_overlap_iem_lambda002_remote.sh
+-rwxr-xr-x  1 root root  899 Aug  3 13:28 run_r324cde_ram_overlap_iem_lambda_sweep_remote.sh
+-rwxr-xr-x  1 root root  602 Aug  3 16:15 run_r325_ram_nnunet_native_resolution_overlap_iem_remote.sh
+-rwxr-xr-x  1 root root 1629 Aug  5 13:52 run_r326_ram_layer_projection_prior_remote.sh
+-rwxr-xr-x  1 root root 3493 Aug 13 12:45 run_r335_conditional_state_loss_remote.sh
+-rwxr-xr-x  1 root root 3122 Aug 13 13:27 run_r335_tsrs_recovery_remote.sh
+-rwxr-xr-x  1 root root 2886 Aug 13 14:25 run_r336_state_pcgrad_distill_remote.sh
+-rwxr-xr-x  1 root root  682 Aug 13 20:03 run_r337_ram_frozen_prior_backprop_remote.sh
+-rwxr-xr-x  1 root root  811 Aug 13 20:39 run_r338_ram_frozen_differentiable_prior_remote.sh
+-rwxr-xr-x  1 root root 1463 Aug 13 20:47 run_r339_r340_ram_prior_from_scratch_remote.sh
+-rwxr-xr-x  1 root root  770 Aug 14 13:18 run_r341_ram_sample_adaptive_gate_remote.sh
+-rwxr-xr-x  1 root root 2291 Aug 14 14:17 run_r342_tsrs_sample_adaptive_seam_remote.sh
+-rwxr-xr-x  1 root root 2200 Aug 14 15:40 run_r343_tsrs_local_seam_remote.sh
+-rwxr-xr-x  1 root root 2614 Aug 14 18:05 run_r344_tsrs_region_seam_remote.sh
+-rwxr-xr-x  1 root root 2325 Aug 14 19:36 run_r345a_tsrs_ungated_control_remote.sh
+-rwxr-xr-x  1 root root 2513 Aug 18 18:35 run_r345b_tsrs_conflict_seam_remote.sh
+-rwxr-xr-x  1 root root  838 Aug 18 20:48 run_r346_ram_conflict_aware_remote.sh
+-rwxr-xr-x  1 root root 1545 Aug 18 21:00 run_r346_tsrs_conflict_aware_remote.sh
+-rwxr-xr-x  1 root root  800 Aug 19 16:32 run_r347_ram_conflict_aware_corrected_remote.sh
+-rwxr-xr-x  1 root root 1371 Aug 19 16:45 run_r348_tsrs_corrected_seam_remote.sh
+-rwxr-xr-x  1 root root 3030 Aug 20 15:42 run_r349_remote.sh
+-rw-r--r--  1 root root 2654 Aug 24 09:57 run_r350_native_nnunet_matched_recheck.sh
+-rwxr-xr-x  1 root root 4179 Aug 21 12:05 run_r350_unified_interaction_pcgrad.sh
+drwxr-xr-x  4 root root 8192 Aug 21 12:05 scripts
+86M	outputs/experiments/r321_promptfree_medsam_adapter_official448_seed3201
+86M	outputs/ram_w600/r333_dual_interaction_prior
+113M	outputs/pair_prior/r317_image_centers_only
+121M	outputs/pair_prior/r323_ram_native_r317_single_seed
+128M	outputs/smoke/r321_msa_448
+128M	outputs/smoke/r321_promptfree_medsam_adapter_official
+129M	outputs/smoke/r321_msa_448_medium
+284M	outputs/priors/r323_ram_native_r317_single_seed
+343M	outputs/pair_prior
+442M	outputs/artifact_bundles
+452M	outputs/nnunet/r275_mature_control
+453M	outputs/bridge_logs/r348_tsrs_corrected_seam
+454M	outputs/bridge_logs/r349_tsrs_parameter_pcgrad
+454M	outputs/nnunet/r345a_ungated_control
+455M	outputs/nnunet/r335_conditional_state_loss
+455M	outputs/nnunet/r336_state_pcgrad_distill
+455M	outputs/nnunet/r342_sample_adaptive_seam
+457M	outputs/nnunet/r350_unified_interaction_pcgrad
+458M	outputs/nnunet/r294_local_fusion
+458M	outputs/nnunet/r296_plan_aligned_local_fusion
+459M	outputs/nnunet/r295_checkpoint_aligned_local_fusion
+606M	outputs/priors
+629M	outputs/ram_w600/r332_joint_iterative_refinement
+687M	outputs/smoke/r320_swin_umamba_exact
+906M	outputs/bridge_logs/r346_tsrs_conflict_aware
+906M	outputs/nnunet/r345b_conflict_seam
+1.2G	outputs/smoke/r320_transunet_exact
+1.4G	outputs/nnunet/r307_exact_r260_instance_aux_pair
+1.4G	outputs/nnunet/r316c_continuous
+1.4G	outputs/nnunet/r316c_gated
+1.4G	outputs/nnunet/r319_r316b_gated_prior
+1.5G	/root/autodl-tmp/external/checkpoints
+1.5G	outputs/ram_w600
+1.6G	/root/autodl-tmp/external
+1.8G	outputs/bridge_logs
+2.0G	outputs/experiments/r320_multibackbone
+2.1G	outputs/experiments
+2.3G	outputs/nnunet/r293_dualbranch
+2.4G	outputs/smoke
+3.5G	outputs/nnunet/r292_dualscale_input
+3.9G	outputs/nnunet/r306_r260_instance_aux_pair
+4.7G	outputs/nnunet/r305_binary_vs_instance
+5.1G	outputs/nnunet/r317_image_centers_only
+30G	outputs/nnunet
+40G	outputs
+2026-07-23 13:58 r291a_r275_control_original_val_r201.json
+2026-07-23 14:00 r291a_interface_hinge_original_val_r201.json
+2026-07-23 15:49 r292_r275_control_original_val_r201.json
+2026-07-23 15:51 r292_dualscale_input_original_val_r201.json
+2026-07-23 16:50 r293_r275_control_original_val_r201.json
+2026-07-23 16:57 r293_dualbranch_control_original_val_r201.json
+2026-07-23 17:04 r293_dualbranch_gap_original_val_r201.json
+2026-07-23 18:07 r294_r275_control_original_val_r201.json
+2026-07-23 18:12 r294_local_fusion_control_original_val_r201.json
+2026-07-23 18:19 r294_local_fusion_gap_original_val_r201.json
+2026-07-23 18:38 r295_r275_control_original_val_r201.json
+2026-07-23 18:44 r295_local_fusion_control_original_val_r201.json
+2026-07-23 18:51 r295_local_fusion_gap_original_val_r201.json
+2026-07-23 18:58 r295_r275_final_direct_original_val_r201.json
+2026-07-23 19:02 r296_r275_control_original_val_r201.json
+2026-07-23 19:15 r296_local_fusion_control_original_val_r201.json
+2026-07-23 19:24 r296_local_fusion_gap_original_val_r201.json
+2026-07-24 14:18 r305_binary_supervision_original_val_r201.json
+2026-07-24 14:20 r305_instance_supervision_original_val_r201.json
+2026-07-24 16:21 r260_recovered_exact_original_val_r201.json
+2026-07-24 17:26 r307_exact_r260_binary_continue_original_val_r201.json
+2026-07-24 17:28 r307_exact_r260_instance_aux_original_val_r201.json
+2026-07-27 20:23 r316_safe_relation_selector.json
+2026-07-27 21:58 r316b_full_quantile_safe_relation.json
+2026-07-28 14:39 r319_r316b_gated_nnunet_original_val_r201.json
+2026-07-28 15:49 r316c_continuous_pairs.csv
+2026-07-28 17:44 r316c_continuous_prior.json
+2026-07-28 18:38 r316c_gated_prior.json
+2026-07-28 19:40 r316c_continuous_alpha020_original_val_r201.json
+2026-07-28 20:25 r316c_continuous_alpha035_original_val_r201.json
+2026-07-28 21:17 r316c_gated_alpha020_original_val_r201.json
+2026-07-28 22:03 r316c_dual_route_summary.json
+2026-07-28 22:03 r316c_gated_alpha035_original_val_r201.json
+2026-07-29 14:15 r317_continuous_pairs.csv
+2026-07-29 17:45 r317_image_centers_only_pairs.csv
+2026-07-29 17:47 r317_image_centers_only_prior_convergence.json
+2026-07-29 18:49 r317_image_centers_only_epoch003_original_val_r201.json
+2026-07-29 18:52 r317_image_centers_only_epoch006_original_val_r201.json
+2026-07-29 18:55 r317_image_centers_only_epoch009_original_val_r201.json
+2026-07-29 18:58 r317_image_centers_only_epoch012_original_val_r201.json
+2026-07-29 19:00 r317_image_centers_only_epoch015_original_val_r201.json
+2026-07-29 19:03 r317_image_centers_only_checkpoint_selection.json
+2026-07-29 19:03 r317_image_centers_only_ema_best_original_val_r201.json
+2026-07-30 12:38 r320_unet_seed3201_prior_original_val_r201.json
+2026-07-30 13:12 r320_unet_seed3201_plain_original_val_r201.json
+2026-07-30 16:17 r320_transunet_seed3201_plain_original_val_r201.json
+2026-07-30 16:19 r320_transunet_seed3201_prior_original_val_r201.json
+2026-07-30 18:37 r320_swin_umamba_seed3201_plain_original_val_r201.json
+2026-07-30 18:39 r320_swin_umamba_seed3201_prior_original_val_r201.json
+2026-07-30 19:51 r320_promptfree_medsam_seed3201_plain_original_val_r201.json
+2026-07-30 19:53 r320_promptfree_medsam_seed3201_prior_original_val_r201.json
+2026-08-03 11:46 r323_ram_native_r317_single_seed.json
+2026-08-13 13:59 r335_tsrs_conditional_state_loss_original_val_r201.json
+2026-08-13 15:54 r336_tsrs_state_pcgrad_distill_original_val_r201.json
+2026-08-14 15:08 r342_tsrs_sample_adaptive_seam_original_val_r201.json
+2026-08-14 16:41 r343_tsrs_local_seam_original_val_r201.json
+2026-08-14 19:04 r344_tsrs_region_seam_best_original_val_r201.json
+2026-08-14 19:07 r344_tsrs_region_seam_final_original_val_r201.json
+2026-08-14 20:17 r345a_tsrs_ungated_best_original_val_r201.json
+2026-08-14 20:20 r345a_tsrs_ungated_final_original_val_r201.json
+2026-08-18 19:45 r345b_tsrs_conflict_seam_best_original_val_r201.json
+2026-08-18 19:48 r345b_tsrs_conflict_seam_final_original_val_r201.json
+2026-08-21 14:15 r350_tsrs_unified_best_original_val_r201.json
+2026-08-21 14:18 r350_tsrs_unified_final_original_val_r201.json
+2026-08-24 10:00 r350_native_nnunet_matched_original_val_r201.json
+scripts/r350_unified_interaction_loss.py
+scripts/smoke_r350_unified_interaction_loss.py
+scripts/train_r350_ram_unified_interaction_pcgrad.py
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT=/root/autodl-tmp/YOLO_SAM_generic_src
+PY=/root/miniconda3/bin
+DATA="$ROOT/outputs/nnunet/r317_image_centers_only/data"
+DATASET=Dataset204_TSRS_RSNAEpiphysisMaturePrior2D
+R317="$ROOT/outputs/nnunet/r317_image_centers_only/nnUNet_results/$DATASET/nnUNetTrainerR317Continuous035__nnUNetPlans__2d/fold_0/checkpoint_best.pth"
+R332="$ROOT/outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth"
+TSRS="$ROOT/outputs/nnunet/r350_unified_interaction_pcgrad"
+RAM="$ROOT/outputs/ram_w600/r350_unified_interaction_pcgrad"
+
+cd "$ROOT"
+mkdir -p outputs/bridge_logs outputs/analysis "$TSRS" "$RAM"
+exec > >(tee -a outputs/bridge_logs/r350_unified_interaction_pcgrad.log) 2>&1
+export PATH="$PY:$PATH" PYTHONPATH="$ROOT/scripts:${PYTHONPATH:-}" CUDA_VISIBLE_DEVICES=0
+export nnUNet_compile=false nnUNet_n_proc_DA=0
+
+test -s "$R317"
+test -s "$R332"
+test -d data/remote_variants/RAM-W600
+test -d outputs/priors/r323_ram_native_r317_single_seed
+test -d outputs/nnunet/r317_image_centers_only/imagesValPrior
+test "$(find data/raw/TSRS_RSNA-Epiphysis/val_labels -maxdepth 1 -type f | wc -l)" -eq 96
+! printf '%s\n' "$TSRS" "$RAM" | grep -qi 'clean-test\|articular'
+avail_kb="$(df --output=avail /root/autodl-tmp | tail -1)"
+test "$avail_kb" -ge 5242880
+
+echo '[R350] shared CPU smoke'
+$PY/python scripts/smoke_r350_unified_interaction_loss.py
+
+echo '[R350] RAM real-data audit'
+rm -rf "$RAM/audit"
+$PY/python scripts/train_r350_ram_unified_interaction_pcgrad.py \
+  --dataset-root data/remote_variants/RAM-W600 \
+  --prior-root outputs/priors/r323_ram_native_r317_single_seed \
+  --r332-checkpoint "$R332" --output "$RAM/audit" --audit
+$PY/python -c "import json; assert json.load(open('$RAM/audit/smoke_audit.json'))['passed']"
+
+TRAINER=nnUNetTrainerR350UnifiedInteractionPCGrad
+TRAINER_DIR="$($PY/python -c "from pathlib import Path; import nnunetv2; print(Path(nnunetv2.__file__).parent/'training/nnUNetTrainer/variants/loss')")"
+cp scripts/nnunet_trainers/${TRAINER}.py "$TRAINER_DIR/${TRAINER}.py"
+$PY/python -m py_compile scripts/r350_unified_interaction_loss.py scripts/train_r350_ram_unified_interaction_pcgrad.py "$TRAINER_DIR/${TRAINER}.py"
+
+echo '[R350] TSRS real-data audit'
+export nnUNet_raw="$DATA/nnUNet_raw" nnUNet_preprocessed="$DATA/nnUNet_preprocessed"
+export nnUNet_results="$TSRS/audit_results" R350_TSRS_INIT_CHECKPOINT="$R317" R350_AUDIT_ONLY=true
+rm -rf "$nnUNet_results"
+nnUNetv2_train 204 2d 0 -tr "$TRAINER"
+AUDIT="$(find "$nnUNet_results" -name smoke_audit.json -print -quit)"
+test -n "$AUDIT"
+$PY/python -c "import json,sys; assert json.load(open(sys.argv[1]))['passed']" "$AUDIT"
+
+echo '[R350] TSRS full 30 epochs'
+unset R350_AUDIT_ONLY
+export nnUNet_results="$TSRS/nnUNet_results"
+rm -rf "$nnUNet_results"
+nnUNetv2_train 204 2d 0 -tr "$TRAINER"
+FOLD="$nnUNet_results/$DATASET/${TRAINER}__nnUNetPlans__2d/fold_0"
+test -s "$FOLD/checkpoint_best.pth"
+test -s "$FOLD/checkpoint_final.pth"
+test "$(wc -l < "$FOLD/r350_dynamics.jsonl")" -eq 30
+
+evaluate_tsrs () {
+  local checkpoint="$1" tag="$2" pred="$TSRS/predictions_$2" masks="$TSRS/masks_$2"
+  rm -rf "$pred" "$masks"
+  nnUNetv2_predict -i outputs/nnunet/r317_image_centers_only/imagesValPrior -o "$pred" \
+    -d 204 -c 2d -f 0 -tr "$TRAINER" -chk "$checkpoint"
+  $PY/python scripts/convert_nnunet_predictions.py --pred-dir "$pred" --mask-dir "$masks" \
+    --expected-count 96 --strip-prefix val_
+  $PY/python scripts/evaluate_r201_single_split.py \
+    --gt-dir data/raw/TSRS_RSNA-Epiphysis/val_labels --pred-dir "$masks" \
+    --output "outputs/analysis/r350_tsrs_unified_${tag}_original_val_r201.json" --expected-count 96
+  rm -rf "$pred"
+}
+evaluate_tsrs checkpoint_best.pth best
+evaluate_tsrs checkpoint_final.pth final
+rm -f "$FOLD/checkpoint_final.pth" "$FOLD/checkpoint_latest.pth"
+
+echo '[R350] RAM full 30 epochs'
+rm -rf "$RAM/full"
+$PY/python scripts/train_r350_ram_unified_interaction_pcgrad.py \
+  --dataset-root data/remote_variants/RAM-W600 \
+  --prior-root outputs/priors/r323_ram_native_r317_single_seed \
+  --r332-checkpoint "$R332" --output "$RAM/full" --epochs 30
+test -s "$RAM/full/result.json"
+
+echo '[R350] complete'
+df -h /root/autodl-tmp
+
+  "boundary_iou": 0.24322050882152116,
+  "boundary_f1": 0.38411192588320775,
+  "gap_region_fp_rate": 0.2148550220193001,
+  "gap_region_precision": 0.7851449779806998,
+  "component_merge_rate": 0.6354166666666666,
+  "component_count_mae": 2.1666666666666665,
+  "component_delta_mean": -1.3125,
+  "surface_dice_2px": 0.6633426237785511,
+  "surface_dice_5px": 0.9089936225500499,
+  "hd95_px": 16.963342422177195,
+  "assd_px": 4.381480329887412
+}
+[R350 native recheck] complete
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0         50G   46G  4.7G  91% /root/autodl-tmp

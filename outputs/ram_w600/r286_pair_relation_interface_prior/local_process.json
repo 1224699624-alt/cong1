@@ -1,0 +1,9 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r286_pair_relation_interface_prior",
+    "started":  "2026-07-22T18:27:10.7397799+08:00",
+    "architecture":  "pair-specific gap-overlap-uncertain local-interface nnUNet",
+    "pid":  9296,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r286_pair_relation_interface_prior_local.stderr.log",
+    "experiment":  "R286",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r286_pair_relation_interface_prior_local.stdout.log"
+}

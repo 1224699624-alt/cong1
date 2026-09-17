@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "metric_checks": [
+    {
+      "experiment_slug": "r110_r100_r108_patch_basic",
+      "metric": "dice",
+      "expected": 0.9177231563529792,
+      "actual": 0.9177231563529792,
+      "abs_delta": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "experiment_slug": "r110_r100_r108_patch_basic",
+      "metric": "iou",
+      "expected": 0.8485699269403064,
+      "actual": 0.8485699269403064,
+      "abs_delta": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "experiment_slug": "r110_r100_r108_patch_basic",
+      "metric": "boundary_iou",
+      "expected": 0.25189601044085763,
+      "actual": 0.2518960104408576,
+      "abs_delta": 5.551115123125783e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "experiment_slug": "araa_danet_epoch98",
+      "metric": "dice",
+      "expected": 0.9117660066557425,
+      "actual": 0.9117660066557423,
+      "abs_delta": 2.220446049250313e-16,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "experiment_slug": "araa_danet_epoch98",
+      "metric": "iou",
+      "expected": 0.8384360930797206,
+      "actual": 0.8384360930797206,
+      "abs_delta": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "experiment_slug": "araa_danet_epoch98",
+      "metric": "boundary_iou",
+      "expected": 0.2352651559145258,
+      "actual": 0.23526515591452576,
+      "abs_delta": 2.7755575615628914e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    }
+  ],
+  "ranking_checks": {
+    "r110_dice_gt_araa": true,
+    "r110_iou_gt_araa": true,
+    "r110_boundary_iou_gt_araa": true,
+    "r110_component_merge_worse_than_araa": true
+  }
+}

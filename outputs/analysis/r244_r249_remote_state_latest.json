@@ -1,0 +1,134 @@
+{
+  "host": "10.1.115.157",
+  "remote_root": "/home/shenzeyu/workspace/YOLO_SAM_generic_src",
+  "screen": "No Sockets found in /run/screen/S-shenzeyu.",
+  "proc": "",
+  "r244_tail": "\"num_images\": 87,\n      \"num_safe_useful\": 87,\n      \"num_risk\": 0,\n      \"mean_delta_dice\": 0.0002297751850006359,\n      \"mean_delta_iou\": 0.0003746835524832732,\n      \"mean_delta_recall\": 0.0,\n      \"mean_delta_boundary_iou\": 0.001281312547913567,\n      \"mean_delta_boundary_f1\": 0.0016952217940827494,\n      \"mean_delta_gap_region_fp_rate\": -0.001125484632384627,\n      \"mean_delta_component_count_mae\": -0.5632183908045977,\n      \"mean_delta_merged_pred_components\": 0.0,\n      \"mean_cut_gt_fg_frac\": 0.0,\n      \"mean_cut_gt_gap_frac\": 0.9980537185031462,\n      \"mean_cut_area\": 28.597701149425287,\n      \"mean_background_connected_by_cut\": 0.9655172413793104\n    },\n    \"decision\": \"no_go_generator_or_filter_needs_revision\",\n    \"warning\": \"Candidate generation is GT-free; labels/metrics are original-val GT audit only. No masks written.\"\n  }\n}",
+  "r249_tail": "[R249] R244 summary images= 40 rows= 3533\n[R249] 2026-07-09 18:52:12 still waiting for R244\n[R249] R244 summary images= 40 rows= 3533\n[R249] 2026-07-09 18:57:12 still waiting for R244\n[R249] R244 summary images= 40 rows= 3533\n[R249] 2026-07-09 19:02:12 still waiting for R244\n[R249] R244 summary images= 40 rows= 3533\n[R249] 2026-07-09 19:07:12 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:12:12 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:17:12 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:22:13 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:27:13 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:32:13 still waiting for R244\n[R249] R244 summary images= 50 rows= 5370\n[R249] 2026-07-09 19:37:13 still waiting for R244\n[R249] R244 summary images= 60 rows= 6406\n[R249] 2026-07-09 19:42:13 still waiting for R244\n[R249] R244 summary images= 60 rows= 6406\n[R249] 2026-07-09 19:47:13 still waiting for R244\n[R249] R244 summary images= 60 rows= 6406\n[R249] 2026-07-09 19:52:13 still waiting for R244\n[R249] R244 summary images= 70 rows= 7088\n[R249] 2026-07-09 19:57:13 still waiting for R244\n[R249] R244 summary images= 70 rows= 7088\n[R249] 2026-07-09 20:02:14 still waiting for R244\n[R249] R244 summary images= 80 rows= 7690\n[R249] 2026-07-09 20:07:14 still waiting for R244\n[R249] R244 summary images= 80 rows= 7690\n[R249] 2026-07-09 20:12:14 still waiting for R244\n[R249] R244 summary images= 90 rows= 8366\n[R249] R244 process finished; checking final files.\nTraceback (most recent call last):\n  File \"/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/search_r245_gtfree_merge_filter.py\", line 20, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'",
+  "r250_tail": "[R250] waiting for R249 full R245/R246 audit to finish...\n[R250] 2026-07-09 18:20:35 still waiting for R249\n[R250] 2026-07-09 18:25:35 still waiting for R249\n[R250] 2026-07-09 18:30:35 still waiting for R249\n[R250] 2026-07-09 18:35:35 still waiting for R249\n[R250] 2026-07-09 18:40:35 still waiting for R249\n[R250] 2026-07-09 18:45:35 still waiting for R249\n[R250] 2026-07-09 18:50:35 still waiting for R249\n[R250] 2026-07-09 18:55:35 still waiting for R249\n[R250] 2026-07-09 19:00:35 still waiting for R249\n[R250] 2026-07-09 19:05:35 still waiting for R249\n[R250] 2026-07-09 19:10:36 still waiting for R249\n[R250] 2026-07-09 19:15:36 still waiting for R249\n[R250] 2026-07-09 19:20:36 still waiting for R249\n[R250] 2026-07-09 19:25:36 still waiting for R249\n[R250] 2026-07-09 19:30:36 still waiting for R249\n[R250] 2026-07-09 19:35:36 still waiting for R249\n[R250] 2026-07-09 19:40:36 still waiting for R249\n[R250] 2026-07-09 19:45:36 still waiting for R249\n[R250] 2026-07-09 19:50:36 still waiting for R249\n[R250] 2026-07-09 19:55:36 still waiting for R249\n[R250] 2026-07-09 20:00:36 still waiting for R249\n[R250] 2026-07-09 20:05:37 still waiting for R249\n[R250] 2026-07-09 20:10:37 still waiting for R249\n[R250] 2026-07-09 20:15:37 still waiting for R249\n[R250] R249 process finished; checking R245 decision.\n[R250] Missing outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.json; not launching R248.",
+  "artifacts": "-rw-rw-r-- 1 shenzeyu shenzeyu 6.1M Jul  9 20:15 outputs/analysis/r244_gtfree_merge_targeted_fullval_candidates.csv\n-rw-rw-r-- 1 shenzeyu shenzeyu 4.1K Jul  9 20:15 outputs/analysis/r244_gtfree_merge_targeted_fullval_summary.json\n-rw-rw-r-- 1 shenzeyu shenzeyu 4.7M Jul  9 20:40 outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.csv\n-rw-rw-r-- 1 shenzeyu shenzeyu 1.8K Jul  9 20:40 outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.json\n-rw-rw-r-- 1 shenzeyu shenzeyu  15K Jul  9 20:40 outputs/analysis/r246_gtfree_merge_feature_failure_feature_table.fullval.csv\n-rw-rw-r-- 1 shenzeyu shenzeyu 3.5K Jul  9 20:40 outputs/analysis/r246_gtfree_merge_feature_failure.fullval.json\n-rw-rw-r-- 1 shenzeyu shenzeyu 1.6K Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval.json\n-rw-rw-r-- 1 shenzeyu shenzeyu 6.5M Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval_probed_rows.csv\n-rw-rw-r-- 1 shenzeyu shenzeyu 1.9K Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval_threshold_grid.csv",
+  "stderr": "",
+  "json": {
+    "r244": {
+      "path": "outputs/analysis/r244_gtfree_merge_targeted_fullval_summary.json",
+      "exists": true,
+      "num_candidate_images": 96,
+      "num_candidate_rows": 8568,
+      "decision": "no_go_generator_or_filter_needs_revision",
+      "oracle_images": 87,
+      "oracle_boundary_iou": 0.001281312547913567,
+      "oracle_gap_fp": -0.001125484632384627,
+      "oracle_component_count_mae": -0.5632183908045977,
+      "clean_safe": 79,
+      "clean_risk": 476
+    },
+    "r245": {
+      "path": "outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.json",
+      "exists": true,
+      "decision": "no_go_filter_not_clean_enough",
+      "num_passing_configs": 0,
+      "num_input_rows": 8568,
+      "num_input_images": 96,
+      "best_rows": 9,
+      "best_images": 9,
+      "best_safe": 6,
+      "best_risk": 4,
+      "best_recall": -5.347933751219239e-05,
+      "best_boundary_iou": 0.0008474256177278083,
+      "best_gap_fp": -0.0008337157105579102,
+      "best_cut_gt_fg_frac": 0.1845238095238095
+    },
+    "r246": {
+      "path": "outputs/analysis/r246_gtfree_merge_feature_failure.fullval.json",
+      "exists": true,
+      "groups": {
+        "all": {
+          "num_rows": 8568,
+          "num_images": 96,
+          "num_safe_useful": 971,
+          "num_risk": 7590,
+          "mean_delta_recall": -0.00023831672272062545,
+          "mean_delta_boundary_iou": -1.1022957692595224e-05,
+          "mean_delta_gap_region_fp_rate": -0.00039271087172197303,
+          "mean_cut_gt_fg_frac": 0.6266320878493348
+        },
+        "safe_useful": {
+          "num_rows": 971,
+          "num_images": 87,
+          "num_safe_useful": 971,
+          "num_risk": 124,
+          "mean_delta_recall": 0.0,
+          "mean_delta_boundary_iou": 0.0005320490142750353,
+          "mean_delta_gap_region_fp_rate": -0.0006736858322540208,
+          "mean_cut_gt_fg_frac": 0.0
+        },
+        "risk": {
+          "num_rows": 7590,
+          "num_images": 95,
+          "num_safe_useful": 124,
+          "num_risk": 7590,
+          "mean_delta_recall": -0.0002690247273083424,
+          "mean_delta_boundary_iou": -9.201629163525686e-05,
+          "mean_delta_gap_region_fp_rate": -0.00034757350177722145,
+          "mean_cut_gt_fg_frac": 0.7073759853350595
+        },
+        "oracle_safe_best": {
+          "num_rows": 87,
+          "num_images": 87,
+          "num_safe_useful": 87,
+          "num_risk": 0,
+          "mean_delta_recall": 0.0,
+          "mean_delta_boundary_iou": 0.0012813125479135114,
+          "mean_delta_gap_region_fp_rate": -0.0011254846323845795,
+          "mean_cut_gt_fg_frac": 0.0
+        },
+        "r245_best_selected": {
+          "num_rows": 9,
+          "num_images": 9,
+          "num_safe_useful": 6,
+          "num_risk": 4,
+          "mean_delta_recall": -5.347933751219239e-05,
+          "mean_delta_boundary_iou": 0.0008474256177278083,
+          "mean_delta_gap_region_fp_rate": -0.0008337157105579102,
+          "mean_cut_gt_fg_frac": 0.1845238095238095
+        }
+      }
+    },
+    "r248": {
+      "path": "outputs/analysis/r248_r244_context_crop_scorer_fullval.json",
+      "exists": true,
+      "num_candidate_rows": 8568,
+      "num_candidate_images": 96,
+      "num_passing_configs": 0,
+      "best": null
+    }
+  },
+  "parsed_status": {
+    "r244_running": false,
+    "r249_waiting": false,
+    "r250_waiting": false,
+    "r248_running": false,
+    "r244_log_progress": {
+      "current": null,
+      "total": null
+    },
+    "r249_seen_summary": {
+      "images": 90,
+      "rows": 8366
+    },
+    "full_r245_exists": true,
+    "full_r246_exists": true,
+    "full_r248_exists": true,
+    "artifact_lines": [
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 6.1M Jul  9 20:15 outputs/analysis/r244_gtfree_merge_targeted_fullval_candidates.csv",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 4.1K Jul  9 20:15 outputs/analysis/r244_gtfree_merge_targeted_fullval_summary.json",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 4.7M Jul  9 20:40 outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.csv",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 1.8K Jul  9 20:40 outputs/analysis/r245_gtfree_merge_filter_search.fullval.top1.json",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu  15K Jul  9 20:40 outputs/analysis/r246_gtfree_merge_feature_failure_feature_table.fullval.csv",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 3.5K Jul  9 20:40 outputs/analysis/r246_gtfree_merge_feature_failure.fullval.json",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 1.6K Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval.json",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 6.5M Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval_probed_rows.csv",
+      "-rw-rw-r-- 1 shenzeyu shenzeyu 1.9K Jul 10 01:08 outputs/analysis/r248_r244_context_crop_scorer_fullval_threshold_grid.csv"
+    ]
+  }
+}

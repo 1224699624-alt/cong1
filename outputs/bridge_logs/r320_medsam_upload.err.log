@@ -1,0 +1,55 @@
+Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\sync_single_file_paramiko.py", line 47, in <module>
+    main()
+    ~~~~^^
+  File "G:\gutou\YOLO+SAM\scripts\sync_single_file_paramiko.py", line 35, in main
+    sftp.put(str(args.local), temporary, confirm=True)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp_client.py", line 759, in put
+    return self.putfo(fl, remotepath, file_size, callback, confirm)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp_client.py", line 716, in putfo
+    size = self._transfer_with_callback(
+        reader=fl, writer=fr, file_size=file_size, callback=callback
+    )
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp_client.py", line 679, in _transfer_with_callback
+    writer.write(data)
+    ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\file.py", line 389, in write
+    self._write_all(data)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\file.py", line 507, in _write_all
+    count = self._write(data)
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp_file.py", line 195, in _write
+    sftp_async_request = self.sftp._async_request(
+        type(None),
+    ...<3 lines>...
+        data[:chunk],
+    )
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp_client.py", line 881, in _async_request
+    self._send_packet(t, msg)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp.py", line 209, in _send_packet
+    self._write_all(out)
+    ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\sftp.py", line 173, in _write_all
+    n = self.sock.send(out)
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\channel.py", line 799, in send
+    return self._send(s, m)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\channel.py", line 1206, in _send
+    self.transport._send_user_message(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\transport.py", line 1982, in _send_user_message
+    self._send_message(data)
+    ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\transport.py", line 1958, in _send_message
+    self.packetizer.send_message(data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\packet.py", line 468, in send_message
+    self.write_all(out)
+    ~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\12246\AppData\Roaming\Python\Python313\site-packages\paramiko\packet.py", line 382, in write_all
+    raise EOFError()
+EOFError

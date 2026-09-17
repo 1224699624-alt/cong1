@@ -1,0 +1,74 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "threshold": 0.7,
+  "min_component_area": 16,
+  "tta_flips": false,
+  "num_evaluated": 4,
+  "mean": {
+    "dice": 0.3148367943585418,
+    "iou": 0.18909643504058438,
+    "precision": 0.19340860329895826,
+    "recall": 0.9045895850438022,
+    "specificity": 0.9182128101448568,
+    "boundary_iou": 0.005223774209655875,
+    "pred_component_count": 3.5,
+    "gt_component_count": 26.0,
+    "component_count_error": 22.5,
+    "false_bridge_flag": 1.0
+  },
+  "per_image": [
+    {
+      "dice": 0.35792769808685465,
+      "iou": 0.2179731657795094,
+      "precision": 0.22315308988764046,
+      "recall": 0.903757003498194,
+      "specificity": 0.9344024421411667,
+      "boundary_iou": 0.0045871559633027525,
+      "pred_component_count": 2.0,
+      "gt_component_count": 27.0,
+      "component_count_error": 25.0,
+      "false_bridge_flag": 1.0,
+      "image": "10793.png"
+    },
+    {
+      "dice": 0.19215316199608004,
+      "iou": 0.10628840782122904,
+      "precision": 0.10733855668939837,
+      "recall": 0.9157115783774028,
+      "specificity": 0.8770961410274896,
+      "boundary_iou": 0.0037296921423604526,
+      "pred_component_count": 2.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 24.0,
+      "false_bridge_flag": 1.0,
+      "image": "11099.png"
+    },
+    {
+      "dice": 0.3203587006523342,
+      "iou": 0.19073042605987012,
+      "precision": 0.19462608168625206,
+      "recall": 0.9050228596480241,
+      "specificity": 0.9257960878429776,
+      "boundary_iou": 0.008137044967880086,
+      "pred_component_count": 6.0,
+      "gt_component_count": 25.0,
+      "component_count_error": 19.0,
+      "false_bridge_flag": 1.0,
+      "image": "12046.png"
+    },
+    {
+      "dice": 0.38890761669889823,
+      "iou": 0.24139374050172896,
+      "precision": 0.24851668493254223,
+      "recall": 0.8938668986515876,
+      "specificity": 0.9355565695677931,
+      "boundary_iou": 0.004441203765080207,
+      "pred_component_count": 4.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 22.0,
+      "false_bridge_flag": 1.0,
+      "image": "12133.png"
+    }
+  ]
+}

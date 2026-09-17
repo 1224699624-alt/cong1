@@ -1,0 +1,114 @@
+# ARIS Epiphysis Current Status
+
+- Target clean-test-v2 Dice: `0.9317660066557425`
+- Current valid best R110 Dice: `0.9177231563529792`
+- Reviewed CSV exists: `True`
+- R134 gate pass: `True`
+- Reviewed train: `64`
+- Confirmed train: `54`
+- Reviewed variant exists: `True`
+- R140 launcher check: `True`
+- R140 monitor status: `below_best`
+- R143 clean-test-v2 Dice: `0.8913745464011716`
+- R144 Mask2Former smoke: `smoke_complete`
+- R145 clean-test-v2 Dice: `0.0`
+- R146 clean-test-v2 Dice: `0.0`
+- R147 Mask2Former logits diagnostic: `mask_logits_collapsed`
+- R148 Mask2Former rank diagnostic: `spatial_rank_poor`
+- R149 union overfit rescue: `overfit_failed:train_dice=0.811855`
+- R149b instance overfit control: `overfit_failed:train_dice=0.650195`
+- R150 union-source overfit rescue: `overfit_pass:train_dice=0.891038`
+- R151 union small gate: `overfit_pass:train_dice=0.857548`
+- R152 post-HF decision exists: `True`
+- R153 faithful external feasibility: `blocked_or_high_risk`
+- R154 post-Detectron2 decision exists: `True`
+- R155 ASPP/context smoke: `failed_all_foreground:dice=0.038733`
+- R156 post-ASPP decision exists: `True`
+- R157 SegFormer smoke Dice: `0.3148367943585418`
+- R158 SegFormer tiny-gate best val Dice: `0.4921917070543888`
+- R159 CUDA toolkit probe exists: `True`
+- R160 UPerNet smoke Dice: `0.45022749255503003`
+- R161 train/val-only reannotated variant exists: `True`
+- R162 clean-test-v2 Dice: `0.8726263750014701`
+- R162 status: `below_best:dice=0.872626`
+- R162 history epochs: `29`
+- R163 reannotated shift status: `train_protocol_shift:train_dice=0.862338,val_dice=0.945487,extras=381`
+- R164 filtered variant exists: `True`
+- R164 filtered variant check: `True`
+- R165 clean-test-v2 Dice: `0.8903028393595949`
+- R165 original-test Dice: `0.8748391142656348`
+- R166 R110/R165 complementarity: `complete`
+- R167 next-material gate exists: `True`
+- R168 review package: `ready`
+- R168 reviewed CSV exists: `False`
+- R174 readiness: `not_ready_for_training:human_review_r168_html_and_export_reviewed_csv`
+- R176 mask-synced constraint audit: `complete`
+- R177 arbitrator result: `below_best:dice=0.900540`
+- R178 delete-only result: `None`
+- R179 boundary/gap constrained result: `dice=0.892977,boundary_iou=0.187623,component_error=0.938272,false_bridge=0.296296`
+- R180 R110/R179 complementarity: `r179_better=5/81,oracle=0.918213`
+- Next action: `manual_r168_review_csv_or_new_model_family_required_do_not_continue_dinov3_loss_sweeps`
+
+## Evidence Files
+
+- Review HTML: `outputs\analysis\r134_label_protocol_review_manifest\review_package\R134_HUMAN_REVIEW_WORK_PACKAGE.html`
+- Reviewed CSV: `outputs\analysis\r134_label_protocol_review_manifest\review_package\r134_train_val_review_worklist_reviewed.csv`
+- Gate status: `outputs\analysis\r134_label_protocol_review_manifest\r134_review_gate_status.json`
+- R140 launcher: `outputs\bridge_logs\run_r140_reviewed_variant_instance_sep.sh`
+- R140 monitor summary: `outputs\analysis\r140_reviewed_variant_dinov3_instance_sep_result_summary.json`
+- R143 metrics: `outputs\analysis\r143_highres_medical_recipe_unet_clean_test_v2_metrics.json`
+- R144 smoke metrics: `outputs\analysis\r144_mask2former_hf_smoke_clean_test_v2_metrics.json`
+- R145 metrics: `outputs\analysis\r145_mask2former_hf_small_overfit_clean_test_v2_metrics.json`
+- R146 metrics: `outputs\analysis\r146_mask2former_hf_maskonly_readout_clean_test_v2_metrics.json`
+- R147 diagnostic: `outputs\analysis\r147_mask2former_logits_threshold_diagnostic.json`
+- R148 diagnostic: `outputs\analysis\r148_mask2former_rank_diagnostic.json`
+- R149 metrics: `outputs\analysis\r149_mask2former_union_overfit_rescue_metrics.json`
+- R149b metrics: `outputs\analysis\r149b_mask2former_instance_overfit_control_metrics.json`
+- R150 metrics: `outputs\analysis\r150_mask2former_union_overfit_rescue_metrics.json`
+- R151 metrics: `outputs\analysis\r151_mask2former_union_small_gate_metrics.json`
+- R152 decision: `research-workflow\refine-logs\R152_POST_HF_DIRECTION_DECISION.md`
+- R153 probe: `research-workflow\refine-logs\R153_FAITHFUL_EXTERNAL_FEASIBILITY_PROBE.md`
+- R154 decision: `research-workflow\refine-logs\R154_POST_DETECTRON2_BLOCK_DIRECTION.md`
+- R155 metrics: `outputs\analysis\r155_aspp_context_smoke_clean_test_v2_metrics.json`
+- R155 history: `outputs\timm_aspp\r155_aspp_context_smoke\history.json`
+- R156 decision: `research-workflow\refine-logs\R156_POST_ASPP_COLLAPSE_DIRECTION_DECISION.md`
+- R157 metrics: `outputs\analysis\r157_hf_segformer_smoke_clean_test_v2_metrics.json`
+- R157 history: `outputs\hf_segformer\r157_hf_segformer_smoke\history.json`
+- R158 history: `outputs\hf_segformer\r158_hf_segformer_one_image_overfit\history.json`
+- R158 summary: `research-workflow\refine-logs\R158_HF_SEGFORMER_GATE_SUMMARY.md`
+- R159 probe: `outputs\analysis\r159_cuda_toolkit_env_probe.json`
+- R159 summary: `research-workflow\refine-logs\R159_CUDA_TOOLKIT_ENV_PROBE.md`
+- R160 metrics: `outputs\analysis\r160_hf_upernet_convnext_smoke_clean_test_v2_metrics.json`
+- R160 history: `outputs\hf_semantic\r160_hf_upernet_convnext_smoke\history.json`
+- R160 summary: `research-workflow\refine-logs\R160_HF_UPERNET_CONVNEXT_SMOKE_SUMMARY.md`
+- R161 audit: `outputs\analysis\r161_reannotated_variant_audit.json`
+- R161 build: `outputs\analysis\r161_reannotated_trainval_only_variant_build.json`
+- R161 variant: `data\raw_variants\TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1`
+- R161 summary: `research-workflow\refine-logs\R161_REANNOTATED_TRAINVAL_ONLY_VARIANT.md`
+- R162 metrics: `outputs\analysis\r162_reannotated_trainval_dinov3_instance_sep_clean_test_v2_metrics.json`
+- R162 history: `outputs\timm_instance_sep\r162_reannotated_trainval_dinov3_instance_sep\history.json`
+- R162 launcher check: `outputs\analysis\r162_reannotated_trainval_launcher_check.json`
+- R163 pair-shift audit: `outputs\analysis\r163_reannotated_pair_shift.json`
+- R163 decision: `research-workflow\refine-logs\R163_REANNOTATED_SHIFT_DECISION.md`
+- R164 build: `outputs\analysis\r164_filtered_reannotated_variant_build.json`
+- R164 check: `outputs\analysis\r164_filtered_reannotated_variant_check.json`
+- R164 variant: `data\raw_variants\TSRS_RSNA-Epiphysis_reannotated_filtered_trainval_v1`
+- R164 summary: `research-workflow\refine-logs\R164_FILTERED_REANNOTATED_VARIANT.md`
+- R165 metrics: `outputs\analysis\r165_filtered_reannotated_dinov3_instance_sep_clean_test_v2_metrics.json`
+- R165 original-test control metrics: `outputs\analysis\r165_filtered_reannotated_dinov3_instance_sep_original_test_metrics.json`
+- R165 history: `outputs\timm_instance_sep\r165_filtered_reannotated_dinov3_instance_sep\history.json`
+- R165 launcher check: `outputs\analysis\r165_filtered_reannotated_launcher_check.json`
+- R165 summary: `research-workflow\refine-logs\R165_FILTERED_REANNOTATED_RESULT.md`
+- R166 complementarity audit: `outputs\analysis\r166_r110_r165_filtered_reannotated_complementarity.json`
+- R167 decision: `research-workflow\refine-logs\R167_NEXT_MATERIAL_GATE.md`
+- R168 package summary: `outputs\analysis\r168_reannotation_protocol_review_package\r168_reannotation_protocol_review_summary.json`
+- R168 review HTML: `outputs\analysis\r168_reannotation_protocol_review_package\R168_REANNOTATION_PROTOCOL_REVIEW.html`
+- R168 worklist CSV: `outputs\analysis\r168_reannotation_protocol_review_package\r168_reannotation_protocol_review_worklist.csv`
+- R168 reviewed CSV: `outputs\analysis\r168_reannotation_protocol_review_package\r168_reannotation_protocol_review_reviewed.csv`
+- R174 readiness audit: `outputs\analysis\r174_reannotation_protocol_readiness.json`
+- R176 full audit: `outputs\analysis\r176_mask_synced_bridge_boundary_audit.json`
+- R177 result summary: `outputs\analysis\r177_boundary_preserving_separation_arbitrator_result_summary.json`
+- R178 metrics: `outputs\analysis\r178_delete_only_bridge_suppressor_clean_test_v2_metrics.json`
+- R179 metrics: `outputs\analysis\r179_boundary_gap_constrained_dinov3_instance_sep_clean_test_v2_metrics.json`
+- R179 history: `outputs\timm_instance_sep\r179_boundary_gap_constrained_dinov3_instance_sep\history.json`
+- R180 audit: `outputs\analysis\r180_r110_r179_complementarity_audit.json`

@@ -1,0 +1,13 @@
+rank,image,group,reason,panel
+1,3840.png,positive,large component-count improvement with gap and boundary improvement,panels/01_positive_3840.jpg
+2,3700.png,positive,component-count improvement with gap reduction and Dice preserved,panels/02_positive_3700.jpg
+3,15040.png,positive,component-count and merge improvement with small Dice cost,panels/03_positive_15040.jpg
+4,3354.png,positive,merge improvement with gap and boundary improvement,panels/04_positive_3354.jpg
+5,11852.png,positive,strong gap and boundary improvement with Dice preserved,panels/05_positive_11852.jpg
+6,6606.png,positive,merge and gap improvement with Dice improvement,panels/06_positive_6606.jpg
+7,1560.png,risk,largest Dice/Recall drop among accepted edits despite component improvement,panels/07_risk_1560.jpg
+8,13480.png,risk,Recall drop risk with small gap gain,panels/08_risk_13480.jpg
+9,3366.png,risk,Dice/Recall drop risk with no component-count gain,panels/09_risk_3366.jpg
+10,3567.png,risk,Recall drop risk with gap gain,panels/10_risk_3567.jpg
+11,3777.png,risk,Dice/Recall drop risk with small gap gain,panels/11_risk_3777.jpg
+12,1884.png,risk,Dice/Recall drop risk with gap gain,panels/12_risk_1884.jpg

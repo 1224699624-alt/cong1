@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "identity_probability_max_abs": 0.0,
+  "states": {
+    "separation_mass": 0.0015331903705373406,
+    "overlap_observed_mass": 0.0,
+    "overlap_labels_observed": false,
+    "overlap_prior_mean": 0.41884109377861023
+  },
+  "input_gradient_norm": 0.18645690296398243,
+  "routing": [
+    {
+      "name": "separation",
+      "base_norm": 0.17150339484214783,
+      "raw_norm": 0.06744064390659332,
+      "projected_norm": 0.008656652644276619,
+      "applied_norm": 6.059656880097464e-05,
+      "cosine_before": -0.9917276501655579,
+      "cosine_after": -1.089663470565938e-07,
+      "conflicted": true,
+      "scale": 0.007000000216066837
+    },
+    {
+      "name": "overlap",
+      "base_norm": 0.17150339484214783,
+      "raw_norm": 0.0,
+      "projected_norm": 0.0,
+      "applied_norm": 0.0,
+      "cosine_before": 0.0,
+      "cosine_after": 0.0,
+      "conflicted": false,
+      "scale": 0.007000000216066837
+    },
+    {
+      "name": "preserve",
+      "base_norm": 0.17150339484214783,
+      "raw_norm": 1.7344457467483032e-11,
+      "projected_norm": 1.7344457467483032e-11,
+      "applied_norm": 3.4688912983402154e-13,
+      "cosine_before": 0.9970777034759521,
+      "cosine_after": 0.9970777034759521,
+      "conflicted": false,
+      "scale": 0.019999999552965164
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source": "outputs\\ram_w600\\r285_nnunet_overlap_prior\\baseline_best.pth",
+  "sha256": "3e42fbeb763f6e1fafc80e550c1c630b7fd599ff8cb85f7462ff8b5926475d01",
+  "expanded_input_keys": [
+    "backbone.encoder.stages.0.0.convs.0.conv.weight",
+    "backbone.encoder.stages.0.0.convs.0.all_modules.0.weight",
+    "backbone.decoder.encoder.stages.0.0.convs.0.conv.weight",
+    "backbone.decoder.encoder.stages.0.0.convs.0.all_modules.0.weight"
+  ],
+  "truncated_output_keys": [
+    "backbone.decoder.seg_layers.0.weight",
+    "backbone.decoder.seg_layers.0.bias",
+    "backbone.decoder.seg_layers.1.weight",
+    "backbone.decoder.seg_layers.1.bias",
+    "backbone.decoder.seg_layers.2.weight",
+    "backbone.decoder.seg_layers.2.bias",
+    "backbone.decoder.seg_layers.3.weight",
+    "backbone.decoder.seg_layers.3.bias",
+    "backbone.decoder.seg_layers.4.weight",
+    "backbone.decoder.seg_layers.4.bias"
+  ],
+  "prior_channel_nonzero": 0,
+  "max_abs_logit_difference": 0.0
+}

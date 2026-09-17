@@ -1,0 +1,31 @@
+{
+  "status": "train_and_eval_completed",
+  "error": null,
+  "result": "None",
+  "metrics_count": 126,
+  "last_metrics": {
+    "bbox/AP": 10.36328193237977,
+    "bbox/AP50": 64.97053375062278,
+    "bbox/AP75": 0.0,
+    "bbox/APl": NaN,
+    "bbox/APm": 25.67529829906067,
+    "bbox/APs": NaN,
+    "iteration": 2500,
+    "segm/AP": 49.99436034996579,
+    "segm/AP50": 96.43564356435641,
+    "segm/AP75": 33.62493081606298,
+    "segm/APl": NaN,
+    "segm/APm": 50.03646773375022,
+    "segm/APs": NaN
+  },
+  "model_final_exists": true,
+  "constraints": {
+    "train_source": "data/raw/TSRS_RSNA-Epiphysis/train first 24 only",
+    "val_source": "data/raw/TSRS_RSNA-Epiphysis/val first 12 only",
+    "target": "binary union mask, one foreground instance per image",
+    "clean_test_v2_used": false,
+    "new_or_reannotated_test_used": false,
+    "success_claim_allowed": false,
+    "purpose": "server-only binary union train/val gate"
+  }
+}

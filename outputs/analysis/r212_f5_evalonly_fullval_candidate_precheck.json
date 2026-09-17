@@ -1,0 +1,145 @@
+{
+  "run_id": "R212-candidate-precheck",
+  "candidate_csv": "outputs/analysis/r212_f5_evalonly_fullval_val_candidates.csv",
+  "checkpoint": "outputs/r211_f1_learned_acceptance_gate/r212_f5_cutfrac006_hgb_remote_val32.joblib",
+  "warning": "candidate-level risk audit only; not a substitute for full R201 mask evaluation",
+  "num_candidate_rows": 433,
+  "num_images_with_candidates": 92,
+  "feature_keys": [
+    "component_area",
+    "cut_area",
+    "cut_frac_component",
+    "split_gain",
+    "piece_count",
+    "min_piece_area",
+    "min_piece_frac",
+    "bbox_h",
+    "bbox_w",
+    "slenderness",
+    "fill",
+    "gradient_ratio",
+    "dist_ratio",
+    "component_edge_contact_frac",
+    "cut_boundary_contact_frac",
+    "cut_exposed_boundary_frac",
+    "cut_neighbor_fg_frac",
+    "cut_centroid_dist_norm",
+    "anchor_component_count",
+    "anchor_area",
+    "candidate_rank"
+  ],
+  "checkpoint_filter_args": {
+    "threshold_grid": "0.50,0.55,0.60,0.65,0.70,0.75,0.80",
+    "max_cut_frac_component": 0.006,
+    "max_accept_candidate_rank": 2,
+    "min_accept_gradient_ratio": 2.0,
+    "min_accept_dist_ratio": 0.12,
+    "min_accept_slenderness": 4.0,
+    "max_accept_fill": 0.8,
+    "max_pred_component_increase": 0,
+    "max_step_component_increase": 0
+  },
+  "thresholds": [
+    {
+      "threshold": 0.5,
+      "accepted_images": 10,
+      "label_negative_accepted": 7,
+      "risk_accepted": 9
+    },
+    {
+      "threshold": 0.55,
+      "accepted_images": 10,
+      "label_negative_accepted": 7,
+      "risk_accepted": 9
+    },
+    {
+      "threshold": 0.6,
+      "accepted_images": 8,
+      "label_negative_accepted": 7,
+      "risk_accepted": 7
+    },
+    {
+      "threshold": 0.65,
+      "accepted_images": 8,
+      "label_negative_accepted": 7,
+      "risk_accepted": 7
+    },
+    {
+      "threshold": 0.7,
+      "accepted_images": 7,
+      "label_negative_accepted": 6,
+      "risk_accepted": 6
+    },
+    {
+      "threshold": 0.75,
+      "accepted_images": 3,
+      "label_negative_accepted": 2,
+      "risk_accepted": 2
+    },
+    {
+      "threshold": 0.8,
+      "accepted_images": 1,
+      "label_negative_accepted": 0,
+      "risk_accepted": 1
+    }
+  ],
+  "risk_images_by_threshold": {
+    "0.50": [
+      "15446.png",
+      "1620.png",
+      "2246.png",
+      "3058.png",
+      "3468.png",
+      "6605.png",
+      "7259.png",
+      "8253.png"
+    ],
+    "0.55": [
+      "15446.png",
+      "1620.png",
+      "2246.png",
+      "3058.png",
+      "3468.png",
+      "6605.png",
+      "7259.png",
+      "8253.png"
+    ],
+    "0.60": [
+      "15446.png",
+      "1620.png",
+      "2246.png",
+      "3058.png",
+      "3468.png",
+      "6605.png",
+      "7259.png",
+      "8253.png"
+    ],
+    "0.65": [
+      "15446.png",
+      "1620.png",
+      "2246.png",
+      "3058.png",
+      "3468.png",
+      "6605.png",
+      "7259.png",
+      "8253.png"
+    ],
+    "0.70": [
+      "15446.png",
+      "1620.png",
+      "2246.png",
+      "3058.png",
+      "3468.png",
+      "6605.png",
+      "8253.png"
+    ],
+    "0.75": [
+      "15446.png",
+      "2246.png",
+      "6605.png"
+    ],
+    "0.80": [
+      "15446.png"
+    ]
+  }
+}

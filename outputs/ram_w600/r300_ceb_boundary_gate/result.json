@@ -1,0 +1,23 @@
+{
+  "experiment": "R300",
+  "device": "cuda",
+  "train_candidates": 9540,
+  "train_positive_fraction": 0.7611111111111111,
+  "baseline_val": {
+    "macro_dice": 0.9779632878820715,
+    "overlap_dice": 0.8712147613074968,
+    "overlap_nsd_2px": 0.8782348855953463
+  },
+  "gated_val": {
+    "macro_dice": 0.9771477146039786,
+    "overlap_dice": 0.8643849136226794,
+    "overlap_nsd_2px": 0.8412510504921156
+  },
+  "delta_val": {
+    "macro_dice": -0.0008155732780928959,
+    "overlap_dice": -0.006829847684817314,
+    "overlap_nsd_2px": -0.03698383510323078
+  },
+  "test_evaluated": false,
+  "decision": "NO_GO_VALIDATION_GATE"
+}

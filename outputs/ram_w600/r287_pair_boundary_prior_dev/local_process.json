@@ -1,0 +1,9 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r287_pair_boundary_prior_dev",
+    "started":  "2026-07-22T18:56:00.4805395+08:00",
+    "pid":  9656,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r287_pair_boundary_prior_dev.stderr.log",
+    "official_test_locked":  true,
+    "experiment":  "R287",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r287_pair_boundary_prior_dev.stdout.log"
+}

@@ -1,0 +1,54 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "num_evaluated": 4,
+  "threshold": 0.35,
+  "readout_mode": "mask_only",
+  "mean": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 1.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "boundary_iou": 0.0
+  },
+  "per_image": [
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10375.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10520.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10618.png"
+    },
+    {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "boundary_iou": 0.0,
+      "image": "10624.png"
+    }
+  ],
+  "prediction_dir": "outputs/r146_mask2former_hf_maskonly_readout/TSRS_RSNA-Epiphysis/val/masks"
+}

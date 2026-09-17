@@ -1,0 +1,49 @@
+{
+  "status": "below_best",
+  "metrics_path": "outputs/analysis/r177_boundary_preserving_separation_arbitrator_clean_test_v2_metrics.json",
+  "val_summary_path": "outputs/analysis/r177_boundary_preserving_separation_arbitrator_val_summary.json",
+  "num_evaluated": 81,
+  "mean": {
+    "dice": 0.9005401848832788,
+    "iou": 0.8197805123057201,
+    "precision": 0.8630152441420895,
+    "recall": 0.9430129373974788,
+    "specificity": 0.9953095367531265,
+    "boundary_iou": 0.26510890791606834,
+    "pred_component_count": 168.22222222222223,
+    "gt_component_count": 24.320987654320987,
+    "component_count_error": 143.90123456790124,
+    "false_bridge_flag": 0.0,
+    "sep_fp_rate": 0.5688643729815085
+  },
+  "comparisons": {
+    "target_dice": 0.9317660066557425,
+    "target_margin": -0.03122582177246369,
+    "r110_dice": 0.9177231563529792,
+    "dice_delta_vs_r110": -0.01718297146970038,
+    "r110_boundary_iou": 0.25189601044085763,
+    "boundary_iou_delta_vs_r110": 0.013212897475210705,
+    "r110_false_bridge": 0.790123,
+    "false_bridge_delta_vs_r110": -0.790123,
+    "r110_component_error": 2.506173,
+    "component_error_delta_vs_r110": 141.39506156790125
+  },
+  "val_best": {
+    "zone_radius": 3,
+    "threshold": 0.45,
+    "margin": 0.2,
+    "mean": {
+      "dice": 0.8837606458026585,
+      "iou": 0.7956361534404445,
+      "precision": 0.8564126976962365,
+      "recall": 0.9185217957194647,
+      "specificity": 0.9960550267366025,
+      "boundary_iou": 0.24902037438158162,
+      "pred_component_count": 157.39583333333334,
+      "gt_component_count": 24.28125,
+      "component_count_error": 133.11458333333334,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.5164256404868577
+    }
+  }
+}

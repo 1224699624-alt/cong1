@@ -1,0 +1,263 @@
+r211_f1/candidates/val:   0%|          | 0/96 [00:00<?, ?it/s][R211-F1] candidates/val: 10375.png
+r211_f1/candidates/val:   1%|          | 1/96 [00:06<10:28,  6.62s/it][R211-F1] candidates/val: 10520.png
+r211_f1/candidates/val:   2%|▏         | 2/96 [00:19<16:32, 10.56s/it][R211-F1] candidates/val: 10618.png
+r211_f1/candidates/val:   3%|▎         | 3/96 [00:43<25:33, 16.49s/it][R211-F1] candidates/val: 10624.png
+r211_f1/candidates/val:   4%|▍         | 4/96 [00:56<23:27, 15.30s/it][R211-F1] candidates/val: 11852.png
+r211_f1/candidates/val:   5%|▌         | 5/96 [01:11<22:37, 14.92s/it][R211-F1] candidates/val: 11945.png
+r211_f1/candidates/val:   6%|▋         | 6/96 [01:24<21:24, 14.28s/it][R211-F1] candidates/val: 12498.png
+r211_f1/candidates/val:   7%|▋         | 7/96 [01:46<24:58, 16.83s/it][R211-F1] candidates/val: 12627.png
+r211_f1/candidates/val:   8%|▊         | 8/96 [01:55<21:07, 14.40s/it][R211-F1] candidates/val: 12827.png
+r211_f1/candidates/val:   9%|▉         | 9/96 [02:21<26:15, 18.11s/it][R211-F1] candidates/val: 13220.png
+r211_f1/candidates/val:  10%|█         | 10/96 [02:27<20:28, 14.28s/it][R211-F1] candidates/val: 13436.png
+r211_f1/candidates/val:  11%|█▏        | 11/96 [02:49<23:26, 16.55s/it][R211-F1] candidates/val: 13441.png
+r211_f1/candidates/val:  12%|█▎        | 12/96 [02:54<18:23, 13.13s/it][R211-F1] candidates/val: 13454.png
+r211_f1/candidates/val:  14%|█▎        | 13/96 [03:02<16:07, 11.66s/it][R211-F1] candidates/val: 13480.png
+r211_f1/candidates/val:  15%|█▍        | 14/96 [03:16<16:44, 12.26s/it][R211-F1] candidates/val: 13517.png
+r211_f1/candidates/val:  16%|█▌        | 15/96 [03:30<17:11, 12.73s/it][R211-F1] candidates/val: 13840.png
+r211_f1/candidates/val:  17%|█▋        | 16/96 [03:45<17:50, 13.38s/it][R211-F1] candidates/val: 13867.png
+r211_f1/candidates/val:  18%|█▊        | 17/96 [04:04<19:49, 15.06s/it][R211-F1] candidates/val: 1399.png
+r211_f1/candidates/val:  19%|█▉        | 18/96 [04:21<20:18, 15.63s/it][R211-F1] candidates/val: 14041.png
+r211_f1/candidates/val:  20%|█▉        | 19/96 [04:48<24:35, 19.16s/it][R211-F1] candidates/val: 1418.png
+r211_f1/candidates/val:  21%|██        | 20/96 [05:10<25:16, 19.95s/it][R211-F1] candidates/val: 1452.png
+r211_f1/candidates/val:  22%|██▏       | 21/96 [05:42<29:35, 23.67s/it][R211-F1] candidates/val: 15040.png
+r211_f1/candidates/val:  23%|██▎       | 22/96 [06:09<30:19, 24.58s/it][R211-F1] candidates/val: 15067.png
+r211_f1/candidates/val:  24%|██▍       | 23/96 [06:33<29:46, 24.47s/it][R211-F1] candidates/val: 1518.png
+r211_f1/candidates/val:  25%|██▌       | 24/96 [06:38<22:22, 18.64s/it][R211-F1] candidates/val: 1522.png
+r211_f1/candidates/val:  26%|██▌       | 25/96 [06:47<18:34, 15.70s/it][R211-F1] candidates/val: 15274.png
+r211_f1/candidates/val:  27%|██▋       | 26/96 [07:05<18:59, 16.28s/it][R211-F1] candidates/val: 15369.png
+r211_f1/candidates/val:  28%|██▊       | 27/96 [07:26<20:37, 17.93s/it][R211-F1] candidates/val: 15446.png
+r211_f1/candidates/val:  29%|██▉       | 28/96 [07:41<19:11, 16.94s/it][R211-F1] candidates/val: 1560.png
+r211_f1/candidates/val:  30%|███       | 29/96 [09:04<41:04, 36.78s/it][R211-F1] candidates/val: 1572.png
+r211_f1/candidates/val:  31%|███▏      | 30/96 [10:28<56:12, 51.09s/it][R211-F1] candidates/val: 1585.png
+r211_f1/candidates/val:  32%|███▏      | 31/96 [12:10<1:11:40, 66.17s/it][R211-F1] candidates/val: 1590.png
+r211_f1/candidates/val:  33%|███▎      | 32/96 [12:28<55:16, 51.82s/it]  [R211-F1] candidates/val: 1620.png
+r211_f1/candidates/val:  34%|███▍      | 33/96 [13:18<53:45, 51.20s/it][R211-F1] candidates/val: 1660.png
+r211_f1/candidates/val:  35%|███▌      | 34/96 [14:58<1:08:01, 65.84s/it][R211-F1] candidates/val: 1666.png
+r211_f1/candidates/val:  36%|███▋      | 35/96 [16:59<1:23:47, 82.42s/it][R211-F1] candidates/val: 1674.png
+r211_f1/candidates/val:  38%|███▊      | 36/96 [18:37<1:26:59, 87.00s/it][R211-F1] candidates/val: 1678.png
+r211_f1/candidates/val:  39%|███▊      | 37/96 [19:56<1:23:14, 84.65s/it][R211-F1] candidates/val: 1694.png
+r211_f1/candidates/val:  40%|███▉      | 38/96 [21:38<1:27:01, 90.03s/it][R211-F1] candidates/val: 1736.png
+r211_f1/candidates/val:  41%|████      | 39/96 [22:33<1:15:16, 79.25s/it][R211-F1] candidates/val: 1742.png
+r211_f1/candidates/val:  42%|████▏     | 40/96 [24:14<1:20:13, 85.95s/it][R211-F1] candidates/val: 1807.png
+r211_f1/candidates/val:  43%|████▎     | 41/96 [25:08<1:09:51, 76.21s/it][R211-F1] candidates/val: 1812.png
+r211_f1/candidates/val:  44%|████▍     | 42/96 [26:42<1:13:31, 81.70s/it][R211-F1] candidates/val: 1827.png
+r211_f1/candidates/val:  45%|████▍     | 43/96 [27:58<1:10:36, 79.93s/it][R211-F1] candidates/val: 1828.png
+r211_f1/candidates/val:  46%|████▌     | 44/96 [28:56<1:03:32, 73.32s/it][R211-F1] candidates/val: 1846.png
+r211_f1/candidates/val:  47%|████▋     | 45/96 [30:17<1:04:17, 75.64s/it][R211-F1] candidates/val: 1855.png
+r211_f1/candidates/val:  48%|████▊     | 46/96 [31:38<1:04:17, 77.15s/it][R211-F1] candidates/val: 1880.png
+r211_f1/candidates/val:  49%|████▉     | 47/96 [32:08<51:32, 63.10s/it]  [R211-F1] candidates/val: 1884.png
+r211_f1/candidates/val:  50%|█████     | 48/96 [32:25<39:22, 49.21s/it][R211-F1] candidates/val: 1886.png
+r211_f1/candidates/val:  51%|█████     | 49/96 [33:45<45:52, 58.56s/it][R211-F1] candidates/val: 1901.png
+r211_f1/candidates/val:  52%|█████▏    | 50/96 [34:33<42:22, 55.28s/it][R211-F1] candidates/val: 1931.png
+r211_f1/candidates/val:  53%|█████▎    | 51/96 [35:43<44:47, 59.72s/it][R211-F1] candidates/val: 1934.png
+r211_f1/candidates/val:  54%|█████▍    | 52/96 [36:48<45:00, 61.38s/it][R211-F1] candidates/val: 2024.png
+r211_f1/candidates/val:  55%|█████▌    | 53/96 [36:53<31:54, 44.53s/it][R211-F1] candidates/val: 2044.png
+r211_f1/candidates/val:  56%|█████▋    | 54/96 [37:07<24:45, 35.36s/it][R211-F1] candidates/val: 2246.png
+r211_f1/candidates/val:  57%|█████▋    | 55/96 [37:25<20:35, 30.14s/it][R211-F1] candidates/val: 2248.png
+r211_f1/candidates/val:  58%|█████▊    | 56/96 [37:38<16:36, 24.91s/it][R211-F1] candidates/val: 2709.png
+r211_f1/candidates/val:  59%|█████▉    | 57/96 [37:39<11:38, 17.90s/it][R211-F1] candidates/val: 2853.png
+r211_f1/candidates/val:  60%|██████    | 58/96 [37:44<08:51, 13.97s/it][R211-F1] candidates/val: 3058.png
+r211_f1/candidates/val:  61%|██████▏   | 59/96 [37:58<08:32, 13.86s/it][R211-F1] candidates/val: 3249.png
+r211_f1/candidates/val:  62%|██████▎   | 60/96 [39:15<19:38, 32.73s/it][R211-F1] candidates/val: 3269.png
+r211_f1/candidates/val:  64%|██████▎   | 61/96 [39:22<14:40, 25.15s/it][R211-F1] candidates/val: 3352.png
+r211_f1/candidates/val:  65%|██████▍   | 62/96 [39:25<10:31, 18.57s/it][R211-F1] candidates/val: 3353.png
+r211_f1/candidates/val:  66%|██████▌   | 63/96 [39:32<08:16, 15.04s/it][R211-F1] candidates/val: 3354.png
+r211_f1/candidates/val:  67%|██████▋   | 64/96 [39:42<07:16, 13.63s/it][R211-F1] candidates/val: 3366.png
+r211_f1/candidates/val:  68%|██████▊   | 65/96 [39:47<05:35, 10.81s/it][R211-F1] candidates/val: 3392.png
+r211_f1/candidates/val:  69%|██████▉   | 66/96 [39:55<05:00, 10.03s/it][R211-F1] candidates/val: 3460.png
+r211_f1/candidates/val:  70%|██████▉   | 67/96 [40:48<11:09, 23.10s/it][R211-F1] candidates/val: 3468.png
+r211_f1/candidates/val:  71%|███████   | 68/96 [40:55<08:29, 18.20s/it][R211-F1] candidates/val: 3493.png
+r211_f1/candidates/val:  72%|███████▏  | 69/96 [41:56<13:57, 31.01s/it][R211-F1] candidates/val: 3567.png
+r211_f1/candidates/val:  73%|███████▎  | 70/96 [42:03<10:19, 23.83s/it][R211-F1] candidates/val: 3595.png
+r211_f1/candidates/val:  74%|███████▍  | 71/96 [42:09<07:40, 18.40s/it][R211-F1] candidates/val: 3596.png
+r211_f1/candidates/val:  75%|███████▌  | 72/96 [42:54<10:31, 26.31s/it][R211-F1] candidates/val: 3602.png
+r211_f1/candidates/val:  76%|███████▌  | 73/96 [43:00<07:49, 20.41s/it][R211-F1] candidates/val: 3678.png
+r211_f1/candidates/val:  77%|███████▋  | 74/96 [43:16<06:55, 18.88s/it][R211-F1] candidates/val: 3700.png
+r211_f1/candidates/val:  78%|███████▊  | 75/96 [43:25<05:34, 15.94s/it][R211-F1] candidates/val: 3725.png
+r211_f1/candidates/val:  79%|███████▉  | 76/96 [43:30<04:16, 12.83s/it][R211-F1] candidates/val: 3732.png
+r211_f1/candidates/val:  80%|████████  | 77/96 [43:32<02:59,  9.47s/it][R211-F1] candidates/val: 3777.png
+r211_f1/candidates/val:  81%|████████▏ | 78/96 [43:50<03:34, 11.93s/it][R211-F1] candidates/val: 3840.png
+r211_f1/candidates/val:  82%|████████▏ | 79/96 [43:58<03:04, 10.87s/it][R211-F1] candidates/val: 4047.png
+r211_f1/candidates/val:  83%|████████▎ | 80/96 [44:37<05:10, 19.44s/it][R211-F1] candidates/val: 4193.png
+r211_f1/candidates/val:  84%|████████▍ | 81/96 [45:36<07:48, 31.25s/it][R211-F1] candidates/val: 5355.png
+r211_f1/candidates/val:  85%|████████▌ | 82/96 [45:55<06:26, 27.64s/it][R211-F1] candidates/val: 5825.png
+r211_f1/candidates/val:  86%|████████▋ | 83/96 [46:03<04:41, 21.62s/it][R211-F1] candidates/val: 5882.png
+r211_f1/candidates/val:  88%|████████▊ | 84/96 [46:07<03:17, 16.46s/it][R211-F1] candidates/val: 6503.png
+r211_f1/candidates/val:  89%|████████▊ | 85/96 [46:16<02:33, 13.98s/it][R211-F1] candidates/val: 6605.png
+r211_f1/candidates/val:  90%|████████▉ | 86/96 [46:38<02:43, 16.39s/it][R211-F1] candidates/val: 6606.png
+r211_f1/candidates/val:  91%|█████████ | 87/96 [47:00<02:44, 18.23s/it][R211-F1] candidates/val: 6698.png
+r211_f1/candidates/val:  92%|█████████▏| 88/96 [47:14<02:15, 16.92s/it][R211-F1] candidates/val: 6918.png
+r211_f1/candidates/val:  93%|█████████▎| 89/96 [47:30<01:55, 16.52s/it][R211-F1] candidates/val: 6947.png
+r211_f1/candidates/val:  94%|█████████▍| 90/96 [47:40<01:27, 14.61s/it][R211-F1] candidates/val: 7253.png
+r211_f1/candidates/val:  95%|█████████▍| 91/96 [47:52<01:09, 13.98s/it][R211-F1] candidates/val: 7259.png
+r211_f1/candidates/val:  96%|█████████▌| 92/96 [48:17<01:09, 17.34s/it][R211-F1] candidates/val: 7269.png
+r211_f1/candidates/val:  97%|█████████▋| 93/96 [48:29<00:46, 15.63s/it][R211-F1] candidates/val: 7312.png
+r211_f1/candidates/val:  98%|█████████▊| 94/96 [48:41<00:29, 14.65s/it][R211-F1] candidates/val: 7654.png
+r211_f1/candidates/val:  99%|█████████▉| 95/96 [48:52<00:13, 13.52s/it][R211-F1] candidates/val: 8253.png
+r211_f1/candidates/val: 100%|██████████| 96/96 [49:08<00:00, 14.12s/it]r211_f1/candidates/val: 100%|██████████| 96/96 [49:08<00:00, 30.71s/it]
+r211_f1/eval/val/cached:   0%|          | 0/96 [00:00<?, ?it/s][R211-F1] eval/val/cached: 10375.png
+r211_f1/eval/val/cached:   1%|          | 1/96 [00:07<12:34,  7.94s/it][R211-F1] eval/val/cached: 10520.png
+r211_f1/eval/val/cached:   2%|▏         | 2/96 [00:23<19:05, 12.19s/it][R211-F1] eval/val/cached: 10618.png
+r211_f1/eval/val/cached:   3%|▎         | 3/96 [00:45<26:13, 16.92s/it][R211-F1] eval/val/cached: 10624.png
+r211_f1/eval/val/cached:   4%|▍         | 4/96 [01:00<24:49, 16.19s/it][R211-F1] eval/val/cached: 11852.png
+r211_f1/eval/val/cached:   5%|▌         | 5/96 [01:17<24:58, 16.47s/it][R211-F1] eval/val/cached: 11945.png
+r211_f1/eval/val/cached:   6%|▋         | 6/96 [01:32<23:38, 15.76s/it][R211-F1] eval/val/cached: 12498.png
+r211_f1/eval/val/cached:   7%|▋         | 7/96 [01:51<25:17, 17.05s/it][R211-F1] eval/val/cached: 12627.png
+r211_f1/eval/val/cached:   8%|▊         | 8/96 [02:03<22:34, 15.39s/it][R211-F1] eval/val/cached: 12827.png
+r211_f1/eval/val/cached:   9%|▉         | 9/96 [02:32<28:19, 19.53s/it][R211-F1] eval/val/cached: 13220.png
+r211_f1/eval/val/cached:  10%|█         | 10/96 [02:41<23:15, 16.23s/it][R211-F1] eval/val/cached: 13436.png
+r211_f1/eval/val/cached:  11%|█▏        | 11/96 [03:02<25:17, 17.86s/it][R211-F1] eval/val/cached: 13441.png
+r211_f1/eval/val/cached:  12%|█▎        | 12/96 [03:09<20:18, 14.51s/it][R211-F1] eval/val/cached: 13454.png
+r211_f1/eval/val/cached:  14%|█▎        | 13/96 [03:18<17:43, 12.81s/it][R211-F1] eval/val/cached: 13480.png
+r211_f1/eval/val/cached:  15%|█▍        | 14/96 [03:33<18:34, 13.59s/it][R211-F1] eval/val/cached: 13517.png
+r211_f1/eval/val/cached:  16%|█▌        | 15/96 [03:48<18:36, 13.79s/it][R211-F1] eval/val/cached: 13840.png
+r211_f1/eval/val/cached:  17%|█▋        | 16/96 [04:03<19:12, 14.41s/it][R211-F1] eval/val/cached: 13867.png
+r211_f1/eval/val/cached:  18%|█▊        | 17/96 [04:24<21:29, 16.32s/it][R211-F1] eval/val/cached: 1399.png
+r211_f1/eval/val/cached:  19%|█▉        | 18/96 [04:44<22:47, 17.53s/it][R211-F1] eval/val/cached: 14041.png
+r211_f1/eval/val/cached:  20%|█▉        | 19/96 [05:12<26:13, 20.43s/it][R211-F1] eval/val/cached: 1418.png
+r211_f1/eval/val/cached:  21%|██        | 20/96 [05:36<27:19, 21.57s/it][R211-F1] eval/val/cached: 1452.png
+r211_f1/eval/val/cached:  22%|██▏       | 21/96 [06:13<32:52, 26.31s/it][R211-F1] eval/val/cached: 15040.png
+r211_f1/eval/val/cached:  23%|██▎       | 22/96 [06:36<31:14, 25.33s/it][R211-F1] eval/val/cached: 15067.png
+r211_f1/eval/val/cached:  24%|██▍       | 23/96 [07:03<31:12, 25.65s/it][R211-F1] eval/val/cached: 1518.png
+r211_f1/eval/val/cached:  25%|██▌       | 24/96 [07:09<23:48, 19.84s/it][R211-F1] eval/val/cached: 1522.png
+r211_f1/eval/val/cached:  26%|██▌       | 25/96 [07:23<21:15, 17.97s/it][R211-F1] eval/val/cached: 15274.png
+r211_f1/eval/val/cached:  27%|██▋       | 26/96 [07:46<22:43, 19.47s/it][R211-F1] eval/val/cached: 15369.png
+r211_f1/eval/val/cached:  28%|██▊       | 27/96 [08:09<23:37, 20.55s/it][R211-F1] eval/val/cached: 15446.png
+r211_f1/eval/val/cached:  29%|██▉       | 28/96 [08:23<21:12, 18.71s/it][R211-F1] eval/val/cached: 1560.png
+r211_f1/eval/val/cached:  30%|███       | 29/96 [09:29<36:43, 32.88s/it][R211-F1] eval/val/cached: 1572.png
+r211_f1/eval/val/cached:  31%|███▏      | 30/96 [10:36<47:18, 43.01s/it][R211-F1] eval/val/cached: 1585.png
+r211_f1/eval/val/cached:  32%|███▏      | 31/96 [11:49<56:19, 51.99s/it][R211-F1] eval/val/cached: 1590.png
+r211_f1/eval/val/cached:  33%|███▎      | 32/96 [12:11<45:58, 43.10s/it][R211-F1] eval/val/cached: 1620.png
+r211_f1/eval/val/cached:  34%|███▍      | 33/96 [12:46<42:50, 40.80s/it][R211-F1] eval/val/cached: 1660.png
+r211_f1/eval/val/cached:  35%|███▌      | 34/96 [14:07<54:23, 52.64s/it][R211-F1] eval/val/cached: 1666.png
+r211_f1/eval/val/cached:  36%|███▋      | 35/96 [15:43<1:06:55, 65.82s/it][R211-F1] eval/val/cached: 1674.png
+r211_f1/eval/val/cached:  38%|███▊      | 36/96 [17:05<1:10:36, 70.60s/it][R211-F1] eval/val/cached: 1678.png
+r211_f1/eval/val/cached:  39%|███▊      | 37/96 [18:07<1:07:02, 68.17s/it][R211-F1] eval/val/cached: 1694.png
+r211_f1/eval/val/cached:  40%|███▉      | 38/96 [19:28<1:09:27, 71.86s/it][R211-F1] eval/val/cached: 1736.png
+r211_f1/eval/val/cached:  41%|████      | 39/96 [20:07<59:02, 62.15s/it]  [R211-F1] eval/val/cached: 1742.png
+r211_f1/eval/val/cached:  42%|████▏     | 40/96 [21:18<1:00:28, 64.79s/it][R211-F1] eval/val/cached: 1807.png
+r211_f1/eval/val/cached:  43%|████▎     | 41/96 [22:02<53:32, 58.42s/it]  [R211-F1] eval/val/cached: 1812.png
+r211_f1/eval/val/cached:  44%|████▍     | 42/96 [23:30<1:00:36, 67.34s/it][R211-F1] eval/val/cached: 1827.png
+r211_f1/eval/val/cached:  45%|████▍     | 43/96 [24:43<1:01:03, 69.12s/it][R211-F1] eval/val/cached: 1828.png
+r211_f1/eval/val/cached:  46%|████▌     | 44/96 [26:04<1:02:47, 72.45s/it][R211-F1] eval/val/cached: 1846.png
+r211_f1/eval/val/cached:  47%|████▋     | 45/96 [27:33<1:05:49, 77.44s/it][R211-F1] eval/val/cached: 1855.png
+r211_f1/eval/val/cached:  48%|████▊     | 46/96 [29:02<1:07:31, 81.02s/it][R211-F1] eval/val/cached: 1880.png
+r211_f1/eval/val/cached:  49%|████▉     | 47/96 [29:36<54:37, 66.90s/it]  [R211-F1] eval/val/cached: 1884.png
+r211_f1/eval/val/cached:  50%|█████     | 48/96 [29:55<41:58, 52.46s/it][R211-F1] eval/val/cached: 1886.png
+r211_f1/eval/val/cached:  51%|█████     | 49/96 [31:24<49:49, 63.60s/it][R211-F1] eval/val/cached: 1901.png
+r211_f1/eval/val/cached:  52%|█████▏    | 50/96 [32:16<46:00, 60.02s/it][R211-F1] eval/val/cached: 1931.png
+r211_f1/eval/val/cached:  53%|█████▎    | 51/96 [33:25<46:55, 62.56s/it][R211-F1] eval/val/cached: 1934.png
+r211_f1/eval/val/cached:  54%|█████▍    | 52/96 [34:27<45:54, 62.61s/it][R211-F1] eval/val/cached: 2024.png
+r211_f1/eval/val/cached:  55%|█████▌    | 53/96 [34:34<32:45, 45.71s/it][R211-F1] eval/val/cached: 2044.png
+r211_f1/eval/val/cached:  56%|█████▋    | 54/96 [34:48<25:25, 36.32s/it][R211-F1] eval/val/cached: 2246.png
+r211_f1/eval/val/cached:  57%|█████▋    | 55/96 [35:09<21:41, 31.73s/it][R211-F1] eval/val/cached: 2248.png
+r211_f1/eval/val/cached:  58%|█████▊    | 56/96 [35:21<17:07, 25.69s/it][R211-F1] eval/val/cached: 2709.png
+r211_f1/eval/val/cached:  59%|█████▉    | 57/96 [35:23<12:10, 18.73s/it][R211-F1] eval/val/cached: 2853.png
+r211_f1/eval/val/cached:  60%|██████    | 58/96 [35:30<09:37, 15.20s/it][R211-F1] eval/val/cached: 3058.png
+r211_f1/eval/val/cached:  61%|██████▏   | 59/96 [35:49<10:02, 16.27s/it][R211-F1] eval/val/cached: 3249.png
+r211_f1/eval/val/cached:  62%|██████▎   | 60/96 [37:31<25:11, 42.00s/it][R211-F1] eval/val/cached: 3269.png
+r211_f1/eval/val/cached:  64%|██████▎   | 61/96 [37:41<18:55, 32.44s/it][R211-F1] eval/val/cached: 3352.png
+r211_f1/eval/val/cached:  65%|██████▍   | 62/96 [37:45<13:31, 23.85s/it][R211-F1] eval/val/cached: 3353.png
+r211_f1/eval/val/cached:  66%|██████▌   | 63/96 [37:53<10:31, 19.13s/it][R211-F1] eval/val/cached: 3354.png
+r211_f1/eval/val/cached:  67%|██████▋   | 64/96 [38:07<09:23, 17.61s/it][R211-F1] eval/val/cached: 3366.png
+r211_f1/eval/val/cached:  68%|██████▊   | 65/96 [38:13<07:15, 14.04s/it][R211-F1] eval/val/cached: 3392.png
+r211_f1/eval/val/cached:  69%|██████▉   | 66/96 [38:23<06:32, 13.09s/it][R211-F1] eval/val/cached: 3460.png
+r211_f1/eval/val/cached:  70%|██████▉   | 67/96 [39:21<12:43, 26.34s/it][R211-F1] eval/val/cached: 3468.png
+r211_f1/eval/val/cached:  71%|███████   | 68/96 [39:28<09:38, 20.65s/it][R211-F1] eval/val/cached: 3493.png
+r211_f1/eval/val/cached:  72%|███████▏  | 69/96 [40:37<15:50, 35.22s/it][R211-F1] eval/val/cached: 3567.png
+r211_f1/eval/val/cached:  73%|███████▎  | 70/96 [40:46<11:45, 27.12s/it][R211-F1] eval/val/cached: 3595.png
+r211_f1/eval/val/cached:  74%|███████▍  | 71/96 [40:50<08:28, 20.35s/it][R211-F1] eval/val/cached: 3596.png
+r211_f1/eval/val/cached:  75%|███████▌  | 72/96 [41:41<11:51, 29.63s/it][R211-F1] eval/val/cached: 3602.png
+r211_f1/eval/val/cached:  76%|███████▌  | 73/96 [41:51<09:00, 23.51s/it][R211-F1] eval/val/cached: 3678.png
+r211_f1/eval/val/cached:  77%|███████▋  | 74/96 [42:18<08:59, 24.54s/it][R211-F1] eval/val/cached: 3700.png
+r211_f1/eval/val/cached:  78%|███████▊  | 75/96 [42:31<07:22, 21.07s/it][R211-F1] eval/val/cached: 3725.png
+r211_f1/eval/val/cached:  79%|███████▉  | 76/96 [42:38<05:41, 17.06s/it][R211-F1] eval/val/cached: 3732.png
+r211_f1/eval/val/cached:  80%|████████  | 77/96 [42:41<04:03, 12.83s/it][R211-F1] eval/val/cached: 3777.png
+r211_f1/eval/val/cached:  81%|████████▏ | 78/96 [43:01<04:29, 14.97s/it][R211-F1] eval/val/cached: 3840.png
+r211_f1/eval/val/cached:  82%|████████▏ | 79/96 [43:09<03:37, 12.81s/it][R211-F1] eval/val/cached: 4047.png
+r211_f1/eval/val/cached:  83%|████████▎ | 80/96 [44:04<06:49, 25.58s/it][R211-F1] eval/val/cached: 4193.png
+r211_f1/eval/val/cached:  84%|████████▍ | 81/96 [45:16<09:53, 39.54s/it][R211-F1] eval/val/cached: 5355.png
+r211_f1/eval/val/cached:  85%|████████▌ | 82/96 [45:46<08:29, 36.41s/it][R211-F1] eval/val/cached: 5825.png
+r211_f1/eval/val/cached:  86%|████████▋ | 83/96 [45:54<06:04, 28.04s/it][R211-F1] eval/val/cached: 5882.png
+r211_f1/eval/val/cached:  88%|████████▊ | 84/96 [45:59<04:14, 21.17s/it][R211-F1] eval/val/cached: 6503.png
+r211_f1/eval/val/cached:  89%|████████▊ | 85/96 [46:09<03:16, 17.88s/it][R211-F1] eval/val/cached: 6605.png
+r211_f1/eval/val/cached:  90%|████████▉ | 86/96 [46:33<03:15, 19.59s/it][R211-F1] eval/val/cached: 6606.png
+r211_f1/eval/val/cached:  91%|█████████ | 87/96 [46:50<02:49, 18.81s/it][R211-F1] eval/val/cached: 6698.png
+r211_f1/eval/val/cached:  92%|█████████▏| 88/96 [47:06<02:22, 17.84s/it][R211-F1] eval/val/cached: 6918.png
+r211_f1/eval/val/cached:  93%|█████████▎| 89/96 [47:26<02:09, 18.52s/it][R211-F1] eval/val/cached: 6947.png
+r211_f1/eval/val/cached:  94%|█████████▍| 90/96 [47:40<01:43, 17.18s/it][R211-F1] eval/val/cached: 7253.png
+r211_f1/eval/val/cached:  95%|█████████▍| 91/96 [47:53<01:19, 15.88s/it][R211-F1] eval/val/cached: 7259.png
+r211_f1/eval/val/cached:  96%|█████████▌| 92/96 [48:19<01:16, 19.16s/it][R211-F1] eval/val/cached: 7269.png
+r211_f1/eval/val/cached:  97%|█████████▋| 93/96 [48:32<00:51, 17.10s/it][R211-F1] eval/val/cached: 7312.png
+r211_f1/eval/val/cached:  98%|█████████▊| 94/96 [48:44<00:31, 15.60s/it][R211-F1] eval/val/cached: 7654.png
+r211_f1/eval/val/cached:  99%|█████████▉| 95/96 [48:56<00:14, 14.65s/it][R211-F1] eval/val/cached: 8253.png
+r211_f1/eval/val/cached: 100%|██████████| 96/96 [49:15<00:00, 15.92s/it]                                                                        {
+  "val_gate_pass": true,
+  "best": {
+    "threshold": 0.8,
+    "mean": {
+      "accepted": 0.010416666666666666,
+      "accepted_candidate_summary": null,
+      "accepted_components": 0.010416666666666666,
+      "accepted_cut_pixels": 0.2916666666666667,
+      "accepted_mean_prob": 0.8176254206172734,
+      "anchor_assd_px": 4.957876934668302,
+      "anchor_boundary_f1": 0.35805780356213623,
+      "anchor_boundary_iou": 0.22294454594576676,
+      "anchor_component_count_mae": 3.0208333333333335,
+      "anchor_component_delta_mean": 1.2916666666666667,
+      "anchor_component_merge_rate": 0.34375,
+      "anchor_dice": 0.895722598735221,
+      "anchor_gap_region_fp_rate": 0.1881988752755006,
+      "anchor_gap_region_precision": 0.8118011247244995,
+      "anchor_hd95_px": 17.99680115709573,
+      "anchor_instance_merge_count": 1.15625,
+      "anchor_iou": 0.8147833270122922,
+      "anchor_precision": 0.9046697887666705,
+      "anchor_pred_component_count": 22.78125,
+      "anchor_recall": 0.8926191772136659,
+      "anchor_specificity": 0.9975354474422278,
+      "anchor_surface_dice_2px": 0.6313875210904006,
+      "anchor_surface_dice_5px": 0.895342709329329,
+      "delta_assd_px": -5.815965821859281e-06,
+      "delta_boundary_f1": 3.3434975659334585e-06,
+      "delta_boundary_iou": 2.4803350155185263e-06,
+      "delta_component_count_mae": 0.0,
+      "delta_component_delta_mean": 0.0,
+      "delta_component_merge_rate": 0.0,
+      "delta_dice": -9.589849103708303e-08,
+      "delta_gap_region_fp_rate": -7.344646046817734e-06,
+      "delta_gap_region_precision": 7.344646046817301e-06,
+      "delta_hd95_px": 0.0,
+      "delta_instance_merge_count": 0.0,
+      "delta_iou": -1.5904192795720973e-07,
+      "delta_precision": 3.8634449677580245e-06,
+      "delta_pred_component_count": 0.0,
+      "delta_recall": -3.122142039210333e-06,
+      "delta_specificity": 9.144769455340003e-08,
+      "delta_surface_dice_2px": 6.466232106558621e-06,
+      "delta_surface_dice_5px": -2.332787180074162e-06,
+      "num_candidates": 12.625,
+      "num_candidates_scored": 4.510416666666667,
+      "r211_f1_assd_px": 4.957871118702479,
+      "r211_f1_boundary_f1": 0.35806114705970216,
+      "r211_f1_boundary_iou": 0.2229470262807823,
+      "r211_f1_component_count_mae": 3.0208333333333335,
+      "r211_f1_component_delta_mean": 1.2916666666666667,
+      "r211_f1_component_merge_rate": 0.34375,
+      "r211_f1_dice": 0.8957225028367297,
+      "r211_f1_gap_region_fp_rate": 0.1881915306294538,
+      "r211_f1_gap_region_precision": 0.8118084693705462,
+      "r211_f1_hd95_px": 17.99680115709573,
+      "r211_f1_instance_merge_count": 1.15625,
+      "r211_f1_iou": 0.8147831679703642,
+      "r211_f1_precision": 0.9046736522116382,
+      "r211_f1_pred_component_count": 22.78125,
+      "r211_f1_recall": 0.8926160550716267,
+      "r211_f1_specificity": 0.9975355388899222,
+      "r211_f1_surface_dice_2px": 0.6313939873225073,
+      "r211_f1_surface_dice_5px": 0.8953403765421489
+    },
+    "gate_pass": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "experiment": "R350_RAM_UNIFIED_INTERACTION_PCGRAD",
+  "split": "validation",
+  "test_used": false,
+  "config": {
+    "dataset_root": "data/remote_variants/RAM-W600",
+    "prior_root": "outputs/priors/r323_ram_native_r317_single_seed",
+    "r332_checkpoint": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+    "output": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r350_unified_interaction_pcgrad/full",
+    "epochs": 30,
+    "steps": 2,
+    "lr": 2e-06,
+    "structural_weight": 0.035,
+    "preserve_weight": 0.1,
+    "max_aux_ratio": 0.15,
+    "seam_threshold": 0.25,
+    "reference_mass": 0.01,
+    "seed": 3501,
+    "audit": false
+  },
+  "best": {
+    "epoch": 29,
+    "seconds": 580.0961670875549,
+    "ramp": 1.0,
+    "gate": true,
+    "checks": {
+      "overall_dsc_not_below_r325": true,
+      "overall_iou_not_below_r325": true,
+      "overlap_ravd_within_0.003": true,
+      "pair_fail_rate_within_0.001": true,
+      "overlap_dsc_not_below_r332": true,
+      "overlap_nsd_not_below_r332": true,
+      "overlap_msd_not_above_r332": true,
+      "seam_fp_not_above_r332": true
+    },
+    "losses": {
+      "base": 0.021493014051195452,
+      "separation": 0.011266729785129428,
+      "overlap": 0.03429709568619728,
+      "preserve": 3.1005956075472674e-06
+    },
+    "state_mass": {
+      "separation_mass": 0.006659748308490688,
+      "overlap_mass": 0.040583942677168285,
+      "preserve_mass": 0.9527563012347502
+    },
+    "effective_weights": {
+      "separation": 0.02264305579969114,
+      "overlap": 0.035000000000000114,
+      "preserve": 0.10000000000000078
+    },
+    "conflict_rate": {
+      "separation": 0.4776470588235294,
+      "overlap": 0.508235294117647,
+      "preserve": 0.4211764705882353
+    },
+    "baseline": {
+      "overall_dsc": 0.9793887278762697,
+      "overall_iou": 0.9601000060271913,
+      "overall_nsd_2px": 0.8926001862903746,
+      "overall_msd_px": 1.083031717685968,
+      "overall_ravd": 0.020048841741321183,
+      "overlap_dsc": 0.8770053422932838,
+      "overlap_iou": 0.7823914252083409,
+      "overlap_nsd_2px": 0.7876488477653405,
+      "overlap_msd_px": 1.8189993198975911,
+      "overlap_ravd": 0.05386668727019946,
+      "pair_dsc": 0.8355764266398339,
+      "pair_iou": 0.7433706468513726,
+      "pair_nsd_2px": 0.7875246466373967,
+      "pair_msd_px": 1.6631362433668286,
+      "pair_ravd": 0.6408184433996473,
+      "pair_msd_fail_rate": 0.00199203187250996
+    },
+    "adapted": {
+      "overall_dsc": 0.9794093217837375,
+      "overall_iou": 0.9601360861101293,
+      "overall_nsd_2px": 0.892634741427718,
+      "overall_msd_px": 1.0793616970601896,
+      "overall_ravd": 0.020029111127607566,
+      "overlap_dsc": 0.877764717434274,
+      "overlap_iou": 0.783591186377279,
+      "overlap_nsd_2px": 0.7884740257906417,
+      "overlap_msd_px": 1.8089606625611279,
+      "overlap_ravd": 0.05095113592808928,
+      "pair_dsc": 0.8369592013823759,
+      "pair_iou": 0.7448368327870316,
+      "pair_nsd_2px": 0.7891073927813813,
+      "pair_msd_px": 1.654357885556156,
+      "pair_ravd": 0.6524432309476044,
+      "pair_msd_fail_rate": 0.00199203187250996
+    },
+    "seam_fp": {
+      "baseline": 0.010971004689581341,
+      "adapted": 0.010108231861680828
+    }
+  }
+}

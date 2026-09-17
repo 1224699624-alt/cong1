@@ -1,0 +1,48 @@
+{"split": "train", "done": 50, "total": 875, "selected_pairs": 509}
+{"split": "train", "done": 100, "total": 875, "selected_pairs": 1072}
+{"split": "train", "done": 150, "total": 875, "selected_pairs": 1786}
+{"split": "train", "done": 200, "total": 875, "selected_pairs": 2266}
+{"split": "train", "done": 250, "total": 875, "selected_pairs": 2938}
+{"split": "train", "done": 300, "total": 875, "selected_pairs": 3507}
+{"split": "train", "done": 350, "total": 875, "selected_pairs": 4187}
+{"split": "train", "done": 400, "total": 875, "selected_pairs": 4901}
+{"split": "train", "done": 450, "total": 875, "selected_pairs": 5642}
+{"split": "train", "done": 500, "total": 875, "selected_pairs": 6339}
+{"split": "train", "done": 550, "total": 875, "selected_pairs": 7110}
+{"split": "train", "done": 600, "total": 875, "selected_pairs": 7882}
+{"split": "train", "done": 650, "total": 875, "selected_pairs": 8663}
+{"split": "train", "done": 700, "total": 875, "selected_pairs": 9479}
+{"split": "train", "done": 750, "total": 875, "selected_pairs": 10207}
+{"split": "train", "done": 800, "total": 875, "selected_pairs": 10826}
+{"split": "train", "done": 850, "total": 875, "selected_pairs": 11532}
+{"split": "train", "done": 875, "total": 875, "selected_pairs": 11769}
+{"split": "val", "done": 50, "total": 96, "selected_pairs": 708}
+{"split": "val", "done": 96, "total": 96, "selected_pairs": 1374}
+{
+  "experiment": "R319_R316B_GATED_PRIOR_MAPS",
+  "checkpoint": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r316b_full_quantile_remote_43758_20260727\\safe_relation_seed3161_final.pt",
+  "checkpoint_sha256": "462e538f1f29a5f04ffb9beaddf1583184754043caf478f7fba9af72e7e01f2e",
+  "threshold": 0.65,
+  "support_suppression": "1-max(sigmoid(support_a),sigmoid(support_b))",
+  "clean_test_used": false,
+  "splits": {
+    "train": {
+      "images": 875,
+      "candidate_pairs": 32325,
+      "selected_pairs": 11769,
+      "selection_rate": 0.36408352668213456,
+      "nonzero_maps": 835,
+      "mean_selected_score": 0.7761351204747017,
+      "mean_support_suppression": 0.09395085646024587
+    },
+    "val": {
+      "images": 96,
+      "candidate_pairs": 3813,
+      "selected_pairs": 1374,
+      "selection_rate": 0.36034618410700237,
+      "nonzero_maps": 89,
+      "mean_selected_score": 0.7911266739191447,
+      "mean_support_suppression": 0.09023478776867212
+    }
+  }
+}

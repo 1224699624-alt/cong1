@@ -1,0 +1,1820 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R168 新旧标注协议审查</title>
+  <style>
+    body { margin: 0; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #f5f7f8; color: #20292c; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(245,247,248,.96); border-bottom: 1px solid #ccd6d9; }
+    .wrap { max-width: 1480px; margin: 0 auto; padding: 16px 22px; }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    p { margin: 0; color: #607075; line-height: 1.45; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    button { border: 1px solid #b8c6ca; background: white; min-height: 34px; padding: 0 10px; cursor: pointer; }
+    button.active, #exportCsv { border-color: #006b5f; background: #006b5f; color: white; }
+    .grid { display: grid; gap: 12px; }
+    .card { display: grid; grid-template-columns: minmax(420px, 58%) 1fr; gap: 14px; background: white; border: 1px solid #ccd6d9; }
+    .panel { background: #dfe7e9; display: flex; align-items: center; justify-content: center; overflow: auto; }
+    .panel img { width: 100%; height: auto; display: block; }
+    .body { padding: 14px 14px 14px 0; }
+    .top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+    h3 { margin: 0; font-size: 18px; }
+    .top span { border: 1px solid #ccd6d9; padding: 2px 7px; font-size: 12px; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 8px; margin: 14px 0; }
+    .metrics span { border-left: 3px solid #ccd6d9; padding-left: 8px; color: #607075; font-size: 13px; }
+    .metrics b { display: block; color: #20292c; }
+    .editor { display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 8px; }
+    label { display: grid; gap: 4px; color: #607075; font-size: 12px; font-weight: 700; }
+    select, input { min-height: 34px; border: 1px solid #b8c6ca; padding: 0 8px; font: inherit; }
+    .hidden { display: none; }
+    @media (max-width: 900px) {
+      .card { grid-template-columns: 1fr; }
+      .body { padding: 12px; }
+      .editor { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>R168 新旧标注协议审查</h1>
+      <p>只包含 train/val，不包含 clean-test-v2，也不包含新标注 test。蓝色是原标签，红色是新标注，差异图中绿色表示重合。这里的判断用于决定后续是否构建新的隔离训练变体。</p>
+      <div class="toolbar">
+        <button class="active" data-filter="all">全部</button>
+        <button data-filter="train">Train</button>
+        <button data-filter="val">Val</button>
+        <button id="exportCsv" type="button">导出已审查 CSV</button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap grid" id="cards">
+    
+            <article class="card" data-split="train" data-reason="新标注为空">
+              <div class="panel"><img loading="lazy" src="panels/train/001_15057_r168.jpg" alt="15057.png"></div>
+              <div class="body">
+                <div class="top"><b>#1</b><h3>15057.png</h3><span>train</span><span>新标注为空</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>0.000000</span>
+                  <span><b>原连通域</b>28</span>
+                  <span><b>新连通域</b>0</span>
+                  <span><b>连通域差</b>-28</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注为空">
+              <div class="panel"><img loading="lazy" src="panels/train/002_15087_r168.jpg" alt="15087.png"></div>
+              <div class="body">
+                <div class="top"><b>#2</b><h3>15087.png</h3><span>train</span><span>新标注为空</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>0.000000</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>0</span>
+                  <span><b>连通域差</b>-26</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注为空">
+              <div class="panel"><img loading="lazy" src="panels/train/003_15113_r168.jpg" alt="15113.png"></div>
+              <div class="body">
+                <div class="top"><b>#3</b><h3>15113.png</h3><span>train</span><span>新标注为空</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>0.000000</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>0</span>
+                  <span><b>连通域差</b>-26</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注为空">
+              <div class="panel"><img loading="lazy" src="panels/train/004_15047_r168.jpg" alt="15047.png"></div>
+              <div class="body">
+                <div class="top"><b>#4</b><h3>15047.png</h3><span>train</span><span>新标注为空</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>0.000000</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>0</span>
+                  <span><b>连通域差</b>-24</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/005_1683_r168.jpg" alt="1683.png"></div>
+              <div class="body">
+                <div class="top"><b>#5</b><h3>1683.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>15.119139</span>
+                  <span><b>原连通域</b>2</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>24</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注为空">
+              <div class="panel"><img loading="lazy" src="panels/train/006_15118_r168.jpg" alt="15118.png"></div>
+              <div class="body">
+                <div class="top"><b>#6</b><h3>15118.png</h3><span>train</span><span>新标注为空</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.000000</span>
+                  <span><b>面积比</b>0.000000</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>0</span>
+                  <span><b>连通域差</b>-22</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/007_1672_r168.jpg" alt="1672.png"></div>
+              <div class="body">
+                <div class="top"><b>#7</b><h3>1672.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.017490</span>
+                  <span><b>面积比</b>11.854018</span>
+                  <span><b>原连通域</b>7</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>19</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显缩小">
+              <div class="panel"><img loading="lazy" src="panels/train/008_2808_r168.jpg" alt="2808.png"></div>
+              <div class="body">
+                <div class="top"><b>#8</b><h3>2808.png</h3><span>train</span><span>新标注面积明显缩小</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.185429</span>
+                  <span><b>面积比</b>0.109603</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>2</span>
+                  <span><b>连通域差</b>-21</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/009_1677_r168.jpg" alt="1677.png"></div>
+              <div class="body">
+                <div class="top"><b>#9</b><h3>1677.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.042808</span>
+                  <span><b>面积比</b>4.606276</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/010_2082_r168.jpg" alt="2082.png"></div>
+              <div class="body">
+                <div class="top"><b>#10</b><h3>2082.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.260238</span>
+                  <span><b>面积比</b>5.893468</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>32</span>
+                  <span><b>连通域差</b>8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/011_1702_r168.jpg" alt="1702.png"></div>
+              <div class="body">
+                <div class="top"><b>#11</b><h3>1702.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.087875</span>
+                  <span><b>面积比</b>3.941044</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>4</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/012_1663_r168.jpg" alt="1663.png"></div>
+              <div class="body">
+                <div class="top"><b>#12</b><h3>1663.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.018461</span>
+                  <span><b>面积比</b>2.925657</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/013_2101_r168.jpg" alt="2101.png"></div>
+              <div class="body">
+                <div class="top"><b>#13</b><h3>2101.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.289103</span>
+                  <span><b>面积比</b>5.171529</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>-3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/014_2118_r168.jpg" alt="2118.png"></div>
+              <div class="body">
+                <div class="top"><b>#14</b><h3>2118.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.341740</span>
+                  <span><b>面积比</b>4.460862</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>13</span>
+                  <span><b>连通域差</b>-8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/015_1711_r168.jpg" alt="1711.png"></div>
+              <div class="body">
+                <div class="top"><b>#15</b><h3>1711.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.006197</span>
+                  <span><b>面积比</b>2.582100</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/016_1662_r168.jpg" alt="1662.png"></div>
+              <div class="body">
+                <div class="top"><b>#16</b><h3>1662.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.161826</span>
+                  <span><b>面积比</b>3.011190</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显缩小">
+              <div class="panel"><img loading="lazy" src="panels/train/017_1837_r168.jpg" alt="1837.png"></div>
+              <div class="body">
+                <div class="top"><b>#17</b><h3>1837.png</h3><span>train</span><span>新标注面积明显缩小</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.488075</span>
+                  <span><b>面积比</b>0.359007</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>2</span>
+                  <span><b>连通域差</b>-19</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/018_1699_r168.jpg" alt="1699.png"></div>
+              <div class="body">
+                <div class="top"><b>#18</b><h3>1699.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.001630</span>
+                  <span><b>面积比</b>1.894363</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/019_2175_r168.jpg" alt="2175.png"></div>
+              <div class="body">
+                <div class="top"><b>#19</b><h3>2175.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.396558</span>
+                  <span><b>面积比</b>2.749184</span>
+                  <span><b>原连通域</b>10</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>13</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/020_2096_r168.jpg" alt="2096.png"></div>
+              <div class="body">
+                <div class="top"><b>#20</b><h3>2096.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.374602</span>
+                  <span><b>面积比</b>3.563460</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>7</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显缩小">
+              <div class="panel"><img loading="lazy" src="panels/train/021_1818_r168.jpg" alt="1818.png"></div>
+              <div class="body">
+                <div class="top"><b>#21</b><h3>1818.png</h3><span>train</span><span>新标注面积明显缩小</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.514458</span>
+                  <span><b>面积比</b>0.364527</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>1</span>
+                  <span><b>连通域差</b>-18</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/022_2100_r168.jpg" alt="2100.png"></div>
+              <div class="body">
+                <div class="top"><b>#22</b><h3>2100.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.351366</span>
+                  <span><b>面积比</b>3.806853</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>24</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/023_1690_r168.jpg" alt="1690.png"></div>
+              <div class="body">
+                <div class="top"><b>#23</b><h3>1690.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.041116</span>
+                  <span><b>面积比</b>1.648955</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/024_1688_r168.jpg" alt="1688.png"></div>
+              <div class="body">
+                <div class="top"><b>#24</b><h3>1688.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.042528</span>
+                  <span><b>面积比</b>1.540458</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/025_1713_r168.jpg" alt="1713.png"></div>
+              <div class="body">
+                <div class="top"><b>#25</b><h3>1713.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.012654</span>
+                  <span><b>面积比</b>1.012973</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>6</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/026_1701_r168.jpg" alt="1701.png"></div>
+              <div class="body">
+                <div class="top"><b>#26</b><h3>1701.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.021255</span>
+                  <span><b>面积比</b>1.032469</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>6</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/027_2108_r168.jpg" alt="2108.png"></div>
+              <div class="body">
+                <div class="top"><b>#27</b><h3>2108.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.379996</span>
+                  <span><b>面积比</b>3.723156</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>20</span>
+                  <span><b>连通域差</b>-1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/028_1665_r168.jpg" alt="1665.png"></div>
+              <div class="body">
+                <div class="top"><b>#28</b><h3>1665.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.030693</span>
+                  <span><b>面积比</b>0.677293</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/029_2104_r168.jpg" alt="2104.png"></div>
+              <div class="body">
+                <div class="top"><b>#29</b><h3>2104.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.370843</span>
+                  <span><b>面积比</b>3.630823</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>24</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/030_2022_r168.jpg" alt="2022.png"></div>
+              <div class="body">
+                <div class="top"><b>#30</b><h3>2022.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.506837</span>
+                  <span><b>面积比</b>2.918838</span>
+                  <span><b>原连通域</b>27</span>
+                  <span><b>新连通域</b>17</span>
+                  <span><b>连通域差</b>-10</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/031_1656_r168.jpg" alt="1656.png"></div>
+              <div class="body">
+                <div class="top"><b>#31</b><h3>1656.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.038564</span>
+                  <span><b>面积比</b>0.793876</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/032_2099_r168.jpg" alt="2099.png"></div>
+              <div class="body">
+                <div class="top"><b>#32</b><h3>2099.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.433325</span>
+                  <span><b>面积比</b>3.141008</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>18</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/033_1668_r168.jpg" alt="1668.png"></div>
+              <div class="body">
+                <div class="top"><b>#33</b><h3>1668.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.020513</span>
+                  <span><b>面积比</b>1.308010</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/034_1659_r168.jpg" alt="1659.png"></div>
+              <div class="body">
+                <div class="top"><b>#34</b><h3>1659.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.086861</span>
+                  <span><b>面积比</b>0.760360</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/035_1689_r168.jpg" alt="1689.png"></div>
+              <div class="body">
+                <div class="top"><b>#35</b><h3>1689.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.024104</span>
+                  <span><b>面积比</b>0.880861</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/036_1685_r168.jpg" alt="1685.png"></div>
+              <div class="body">
+                <div class="top"><b>#36</b><h3>1685.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.020198</span>
+                  <span><b>面积比</b>0.864908</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显缩小">
+              <div class="panel"><img loading="lazy" src="panels/train/037_1794_r168.jpg" alt="1794.png"></div>
+              <div class="body">
+                <div class="top"><b>#37</b><h3>1794.png</h3><span>train</span><span>新标注面积明显缩小</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.573872</span>
+                  <span><b>面积比</b>0.448134</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>4</span>
+                  <span><b>连通域差</b>-15</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/train/038_2039_r168.jpg" alt="2039.png"></div>
+              <div class="body">
+                <div class="top"><b>#38</b><h3>2039.png</h3><span>train</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.561996</span>
+                  <span><b>面积比</b>2.513883</span>
+                  <span><b>原连通域</b>27</span>
+                  <span><b>新连通域</b>16</span>
+                  <span><b>连通域差</b>-11</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/039_1691_r168.jpg" alt="1691.png"></div>
+              <div class="body">
+                <div class="top"><b>#39</b><h3>1691.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.162795</span>
+                  <span><b>面积比</b>1.321858</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/040_1679_r168.jpg" alt="1679.png"></div>
+              <div class="body">
+                <div class="top"><b>#40</b><h3>1679.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.041804</span>
+                  <span><b>面积比</b>0.949459</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/041_1697_r168.jpg" alt="1697.png"></div>
+              <div class="body">
+                <div class="top"><b>#41</b><h3>1697.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.068328</span>
+                  <span><b>面积比</b>1.103444</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/042_1680_r168.jpg" alt="1680.png"></div>
+              <div class="body">
+                <div class="top"><b>#42</b><h3>1680.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.185347</span>
+                  <span><b>面积比</b>0.803280</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/043_1708_r168.jpg" alt="1708.png"></div>
+              <div class="body">
+                <div class="top"><b>#43</b><h3>1708.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.124727</span>
+                  <span><b>面积比</b>1.243550</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/044_1396_r168.jpg" alt="1396.png"></div>
+              <div class="body">
+                <div class="top"><b>#44</b><h3>1396.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.644749</span>
+                  <span><b>面积比</b>0.551882</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>2</span>
+                  <span><b>连通域差</b>-18</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/045_1754_r168.jpg" alt="1754.png"></div>
+              <div class="body">
+                <div class="top"><b>#45</b><h3>1754.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.643137</span>
+                  <span><b>面积比</b>0.532905</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>4</span>
+                  <span><b>连通域差</b>-17</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/046_1648_r168.jpg" alt="1648.png"></div>
+              <div class="body">
+                <div class="top"><b>#46</b><h3>1648.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.121982</span>
+                  <span><b>面积比</b>0.937179</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/047_2178_r168.jpg" alt="2178.png"></div>
+              <div class="body">
+                <div class="top"><b>#47</b><h3>2178.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.492394</span>
+                  <span><b>面积比</b>2.081220</span>
+                  <span><b>原连通域</b>16</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>7</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/048_1722_r168.jpg" alt="1722.png"></div>
+              <div class="body">
+                <div class="top"><b>#48</b><h3>1722.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.661997</span>
+                  <span><b>面积比</b>0.564187</span>
+                  <span><b>原连通域</b>17</span>
+                  <span><b>新连通域</b>1</span>
+                  <span><b>连通域差</b>-16</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/049_1728_r168.jpg" alt="1728.png"></div>
+              <div class="body">
+                <div class="top"><b>#49</b><h3>1728.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.648823</span>
+                  <span><b>面积比</b>0.518672</span>
+                  <span><b>原连通域</b>17</span>
+                  <span><b>新连通域</b>4</span>
+                  <span><b>连通域差</b>-13</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/050_1748_r168.jpg" alt="1748.png"></div>
+              <div class="body">
+                <div class="top"><b>#50</b><h3>1748.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.660496</span>
+                  <span><b>面积比</b>0.536190</span>
+                  <span><b>原连通域</b>18</span>
+                  <span><b>新连通域</b>4</span>
+                  <span><b>连通域差</b>-14</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/051_14090_r168.jpg" alt="14090.png"></div>
+              <div class="body">
+                <div class="top"><b>#51</b><h3>14090.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.524007</span>
+                  <span><b>面积比</b>0.512842</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>25</span>
+                  <span><b>连通域差</b>6</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/052_3061_r168.jpg" alt="3061.png"></div>
+              <div class="body">
+                <div class="top"><b>#52</b><h3>3061.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.546229</span>
+                  <span><b>面积比</b>2.078941</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>17</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/053_1377_r168.jpg" alt="1377.png"></div>
+              <div class="body">
+                <div class="top"><b>#53</b><h3>1377.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.727655</span>
+                  <span><b>面积比</b>0.588269</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>3</span>
+                  <span><b>连通域差</b>-17</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/054_1675_r168.jpg" alt="1675.png"></div>
+              <div class="body">
+                <div class="top"><b>#54</b><h3>1675.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.218161</span>
+                  <span><b>面积比</b>1.092714</span>
+                  <span><b>原连通域</b>27</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/055_2006_r168.jpg" alt="2006.png"></div>
+              <div class="body">
+                <div class="top"><b>#55</b><h3>2006.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.624927</span>
+                  <span><b>面积比</b>2.093319</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>16</span>
+                  <span><b>连通域差</b>-8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/056_3055_r168.jpg" alt="3055.png"></div>
+              <div class="body">
+                <div class="top"><b>#56</b><h3>3055.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.513297</span>
+                  <span><b>面积比</b>2.167173</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>20</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/057_13780_r168.jpg" alt="13780.png"></div>
+              <div class="body">
+                <div class="top"><b>#57</b><h3>13780.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.488094</span>
+                  <span><b>面积比</b>1.781357</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/058_2035_r168.jpg" alt="2035.png"></div>
+              <div class="body">
+                <div class="top"><b>#58</b><h3>2035.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.612729</span>
+                  <span><b>面积比</b>1.966705</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>14</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/059_3079_r168.jpg" alt="3079.png"></div>
+              <div class="body">
+                <div class="top"><b>#59</b><h3>3079.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.556866</span>
+                  <span><b>面积比</b>1.995345</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/060_2109_r168.jpg" alt="2109.png"></div>
+              <div class="body">
+                <div class="top"><b>#60</b><h3>2109.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.574649</span>
+                  <span><b>面积比</b>1.728961</span>
+                  <span><b>原连通域</b>18</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>4</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/061_1833_r168.jpg" alt="1833.png"></div>
+              <div class="body">
+                <div class="top"><b>#61</b><h3>1833.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.621948</span>
+                  <span><b>面积比</b>0.539177</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>17</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/062_13798_r168.jpg" alt="13798.png"></div>
+              <div class="body">
+                <div class="top"><b>#62</b><h3>13798.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.523448</span>
+                  <span><b>面积比</b>1.710095</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/063_3041_r168.jpg" alt="3041.png"></div>
+              <div class="body">
+                <div class="top"><b>#63</b><h3>3041.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.578462</span>
+                  <span><b>面积比</b>1.977147</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>20</span>
+                  <span><b>连通域差</b>-1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/064_1772_r168.jpg" alt="1772.png"></div>
+              <div class="body">
+                <div class="top"><b>#64</b><h3>1772.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.689475</span>
+                  <span><b>面积比</b>0.578332</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>15</span>
+                  <span><b>连通域差</b>-8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/065_3330_r168.jpg" alt="3330.png"></div>
+              <div class="body">
+                <div class="top"><b>#65</b><h3>3330.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.681799</span>
+                  <span><b>面积比</b>0.611390</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>29</span>
+                  <span><b>连通域差</b>8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/066_3081_r168.jpg" alt="3081.png"></div>
+              <div class="body">
+                <div class="top"><b>#66</b><h3>3081.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.652588</span>
+                  <span><b>面积比</b>1.427489</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>17</span>
+                  <span><b>连通域差</b>-8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/067_1840_r168.jpg" alt="1840.png"></div>
+              <div class="body">
+                <div class="top"><b>#67</b><h3>1840.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.649098</span>
+                  <span><b>面积比</b>0.501872</span>
+                  <span><b>原连通域</b>9</span>
+                  <span><b>新连通域</b>7</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/068_3344_r168.jpg" alt="3344.png"></div>
+              <div class="body">
+                <div class="top"><b>#68</b><h3>3344.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.704338</span>
+                  <span><b>面积比</b>0.610910</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/069_1729_r168.jpg" alt="1729.png"></div>
+              <div class="body">
+                <div class="top"><b>#69</b><h3>1729.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.721800</span>
+                  <span><b>面积比</b>0.653960</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>14</span>
+                  <span><b>连通域差</b>-10</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/070_3104_r168.jpg" alt="3104.png"></div>
+              <div class="body">
+                <div class="top"><b>#70</b><h3>3104.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.608434</span>
+                  <span><b>面积比</b>1.693275</span>
+                  <span><b>原连通域</b>23</span>
+                  <span><b>新连通域</b>21</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="连通域数量变化很大">
+              <div class="panel"><img loading="lazy" src="panels/train/071_3329_r168.jpg" alt="3329.png"></div>
+              <div class="body">
+                <div class="top"><b>#71</b><h3>3329.png</h3><span>train</span><span>连通域数量变化很大</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.762547</span>
+                  <span><b>面积比</b>0.694055</span>
+                  <span><b>原连通域</b>18</span>
+                  <span><b>新连通域</b>30</span>
+                  <span><b>连通域差</b>12</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/072_13821_r168.jpg" alt="13821.png"></div>
+              <div class="body">
+                <div class="top"><b>#72</b><h3>13821.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.555156</span>
+                  <span><b>面积比</b>1.347917</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/073_3116_r168.jpg" alt="3116.png"></div>
+              <div class="body">
+                <div class="top"><b>#73</b><h3>3116.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.648814</span>
+                  <span><b>面积比</b>1.460612</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>21</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/074_3405_r168.jpg" alt="3405.png"></div>
+              <div class="body">
+                <div class="top"><b>#74</b><h3>3405.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.715516</span>
+                  <span><b>面积比</b>0.660132</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>28</span>
+                  <span><b>连通域差</b>7</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/075_3331_r168.jpg" alt="3331.png"></div>
+              <div class="body">
+                <div class="top"><b>#75</b><h3>3331.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.711079</span>
+                  <span><b>面积比</b>0.597723</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/076_1967_r168.jpg" alt="1967.png"></div>
+              <div class="body">
+                <div class="top"><b>#76</b><h3>1967.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.726563</span>
+                  <span><b>面积比</b>1.619694</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>18</span>
+                  <span><b>连通域差</b>-6</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/077_12905_r168.jpg" alt="12905.png"></div>
+              <div class="body">
+                <div class="top"><b>#77</b><h3>12905.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.784958</span>
+                  <span><b>面积比</b>1.422703</span>
+                  <span><b>原连通域</b>9</span>
+                  <span><b>新连通域</b>20</span>
+                  <span><b>连通域差</b>11</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/078_2070_r168.jpg" alt="2070.png"></div>
+              <div class="body">
+                <div class="top"><b>#78</b><h3>2070.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.660363</span>
+                  <span><b>面积比</b>1.732280</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>-1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/train/079_13698_r168.jpg" alt="13698.png"></div>
+              <div class="body">
+                <div class="top"><b>#79</b><h3>13698.png</h3><span>train</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.623714</span>
+                  <span><b>面积比</b>1.535891</span>
+                  <span><b>原连通域</b>22</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="train" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/train/080_3214_r168.jpg" alt="3214.png"></div>
+              <div class="body">
+                <div class="top"><b>#80</b><h3>3214.png</h3><span>train</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.735896</span>
+                  <span><b>面积比</b>0.726100</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>27</span>
+                  <span><b>连通域差</b>8</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="新标注面积明显膨胀">
+              <div class="panel"><img loading="lazy" src="panels/val/001_1518_r168.jpg" alt="1518.png"></div>
+              <div class="body">
+                <div class="top"><b>#1</b><h3>1518.png</h3><span>val</span><span>新标注面积明显膨胀</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.278545</span>
+                  <span><b>面积比</b>5.359370</span>
+                  <span><b>原连通域</b>2</span>
+                  <span><b>新连通域</b>21</span>
+                  <span><b>连通域差</b>19</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="新标注面积明显缩小">
+              <div class="panel"><img loading="lazy" src="panels/val/002_1560_r168.jpg" alt="1560.png"></div>
+              <div class="body">
+                <div class="top"><b>#2</b><h3>1560.png</h3><span>val</span><span>新标注面积明显缩小</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.315743</span>
+                  <span><b>面积比</b>0.296855</span>
+                  <span><b>原连通域</b>27</span>
+                  <span><b>新连通域</b>12</span>
+                  <span><b>连通域差</b>-15</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="原标签和新标注重合度低">
+              <div class="panel"><img loading="lazy" src="panels/val/003_1418_r168.jpg" alt="1418.png"></div>
+              <div class="body">
+                <div class="top"><b>#3</b><h3>1418.png</h3><span>val</span><span>原标签和新标注重合度低</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.624479</span>
+                  <span><b>面积比</b>0.638945</span>
+                  <span><b>原连通域</b>16</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>6</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/004_1884_r168.jpg" alt="1884.png"></div>
+              <div class="body">
+                <div class="top"><b>#4</b><h3>1884.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.678693</span>
+                  <span><b>面积比</b>1.210626</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/005_1522_r168.jpg" alt="1522.png"></div>
+              <div class="body">
+                <div class="top"><b>#5</b><h3>1522.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.725402</span>
+                  <span><b>面积比</b>1.288231</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>4</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/006_1855_r168.jpg" alt="1855.png"></div>
+              <div class="body">
+                <div class="top"><b>#6</b><h3>1855.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.845038</span>
+                  <span><b>面积比</b>0.822766</span>
+                  <span><b>原连通域</b>17</span>
+                  <span><b>新连通域</b>26</span>
+                  <span><b>连通域差</b>9</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/007_1399_r168.jpg" alt="1399.png"></div>
+              <div class="body">
+                <div class="top"><b>#7</b><h3>1399.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.794033</span>
+                  <span><b>面积比</b>0.774949</span>
+                  <span><b>原连通域</b>18</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>4</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/008_1678_r168.jpg" alt="1678.png"></div>
+              <div class="body">
+                <div class="top"><b>#8</b><h3>1678.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.851865</span>
+                  <span><b>面积比</b>0.895037</span>
+                  <span><b>原连通域</b>27</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/009_1694_r168.jpg" alt="1694.png"></div>
+              <div class="body">
+                <div class="top"><b>#9</b><h3>1694.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.850238</span>
+                  <span><b>面积比</b>0.961340</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>20</span>
+                  <span><b>连通域差</b>-5</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/010_1452_r168.jpg" alt="1452.png"></div>
+              <div class="body">
+                <div class="top"><b>#10</b><h3>1452.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.869298</span>
+                  <span><b>面积比</b>0.907125</span>
+                  <span><b>原连通域</b>21</span>
+                  <span><b>新连通域</b>24</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/011_1828_r168.jpg" alt="1828.png"></div>
+              <div class="body">
+                <div class="top"><b>#11</b><h3>1828.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.852781</span>
+                  <span><b>面积比</b>0.949962</span>
+                  <span><b>原连通域</b>26</span>
+                  <span><b>新连通域</b>29</span>
+                  <span><b>连通域差</b>3</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/012_1812_r168.jpg" alt="1812.png"></div>
+              <div class="body">
+                <div class="top"><b>#12</b><h3>1812.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.839580</span>
+                  <span><b>面积比</b>0.941861</span>
+                  <span><b>原连通域</b>20</span>
+                  <span><b>新连通域</b>22</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/013_1666_r168.jpg" alt="1666.png"></div>
+              <div class="body">
+                <div class="top"><b>#13</b><h3>1666.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.879530</span>
+                  <span><b>面积比</b>0.893178</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>23</span>
+                  <span><b>连通域差</b>-2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/014_1585_r168.jpg" alt="1585.png"></div>
+              <div class="body">
+                <div class="top"><b>#14</b><h3>1585.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.852135</span>
+                  <span><b>面积比</b>0.914399</span>
+                  <span><b>原连通域</b>24</span>
+                  <span><b>新连通域</b>25</span>
+                  <span><b>连通域差</b>1</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/015_1827_r168.jpg" alt="1827.png"></div>
+              <div class="body">
+                <div class="top"><b>#15</b><h3>1827.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.849320</span>
+                  <span><b>面积比</b>1.008317</span>
+                  <span><b>原连通域</b>19</span>
+                  <span><b>新连通域</b>21</span>
+                  <span><b>连通域差</b>2</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card" data-split="val" data-reason="协议差异候选">
+              <div class="panel"><img loading="lazy" src="panels/val/016_1736_r168.jpg" alt="1736.png"></div>
+              <div class="body">
+                <div class="top"><b>#16</b><h3>1736.png</h3><span>val</span><span>协议差异候选</span></div>
+                <div class="metrics">
+                  <span><b>标注 Dice</b>0.849091</span>
+                  <span><b>面积比</b>0.900573</span>
+                  <span><b>原连通域</b>25</span>
+                  <span><b>新连通域</b>25</span>
+                  <span><b>连通域差</b>0</span>
+                </div>
+                <div class="editor">
+                  <label>人工判断<select class="decision"><option value="">未决定</option><option value="original_label_correct">原标签更可信</option><option value="reannotated_label_correct">新标注更可信</option><option value="both_wrong_needs_correction">两者都不对，需要修正PNG</option><option value="exclude_from_training_variant">排除，不放入训练变体</option><option value="uncertain_second_review">不确定，需要二审</option></select></label>
+                  <label>备注<input class="notes" type="text" placeholder="可留空"></label>
+                </div>
+              </div>
+            </article>
+            
+  </main>
+  <script>
+    const headers = ["run_id", "split", "rank", "image", "priority_reason", "priority_score", "label_dice", "orig_fg_frac", "reann_fg_frac", "fg_frac_ratio", "orig_component_count", "reann_component_count", "component_count_delta", "panel", "human_decision", "human_notes"];
+    const sourceRows = [{"run_id": "R168", "split": "train", "rank": 1, "image": "15057.png", "priority_reason": "新标注为空", "priority_score": "10.333333", "label_dice": "0.000000", "orig_fg_frac": "0.01474570", "reann_fg_frac": "0.00000000", "fg_frac_ratio": "0.000000", "orig_component_count": "28", "reann_component_count": "0", "component_count_delta": "-28", "panel": "panels/train/001_15057_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 2, "image": "15087.png", "priority_reason": "新标注为空", "priority_score": "10.166667", "label_dice": "0.000000", "orig_fg_frac": "0.02441321", "reann_fg_frac": "0.00000000", "fg_frac_ratio": "0.000000", "orig_component_count": "26", "reann_component_count": "0", "component_count_delta": "-26", "panel": "panels/train/002_15087_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 3, "image": "15113.png", "priority_reason": "新标注为空", "priority_score": "10.166667", "label_dice": "0.000000", "orig_fg_frac": "0.02221593", "reann_fg_frac": "0.00000000", "fg_frac_ratio": "0.000000", "orig_component_count": "26", "reann_component_count": "0", "component_count_delta": "-26", "panel": "panels/train/003_15113_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 4, "image": "15047.png", "priority_reason": "新标注为空", "priority_score": "10.000000", "label_dice": "0.000000", "orig_fg_frac": "0.01268647", "reann_fg_frac": "0.00000000", "fg_frac_ratio": "0.000000", "orig_component_count": "24", "reann_component_count": "0", "component_count_delta": "-24", "panel": "panels/train/004_15047_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 5, "image": "1683.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "9.918304", "label_dice": "0.000000", "orig_fg_frac": "0.00100626", "reann_fg_frac": "0.01521384", "fg_frac_ratio": "15.119139", "orig_component_count": "2", "reann_component_count": "26", "component_count_delta": "24", "panel": "panels/train/005_1683_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 6, "image": "15118.png", "priority_reason": "新标注为空", "priority_score": "9.833333", "label_dice": "0.000000", "orig_fg_frac": "0.01418656", "reann_fg_frac": "0.00000000", "fg_frac_ratio": "0.000000", "orig_component_count": "22", "reann_component_count": "0", "component_count_delta": "-22", "panel": "panels/train/006_15118_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 7, "image": "1672.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "9.080676", "label_dice": "0.017490", "orig_fg_frac": "0.00254119", "reann_fg_frac": "0.03012329", "fg_frac_ratio": "11.854018", "orig_component_count": "7", "reann_component_count": "26", "component_count_delta": "19", "panel": "panels/train/007_1672_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 8, "image": "2808.png", "priority_reason": "新标注面积明显缩小", "priority_score": "8.197920", "label_dice": "0.185429", "orig_fg_frac": "0.02227314", "reann_fg_frac": "0.00244121", "fg_frac_ratio": "0.109603", "orig_component_count": "23", "reann_component_count": "2", "component_count_delta": "-21", "panel": "panels/train/008_2808_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 9, "image": "1677.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "6.199037", "label_dice": "0.042808", "orig_fg_frac": "0.00841821", "reann_fg_frac": "0.03877661", "fg_frac_ratio": "4.606276", "orig_component_count": "24", "reann_component_count": "26", "component_count_delta": "2", "panel": "panels/train/009_1677_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 10, "image": "2082.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "6.184831", "label_dice": "0.260238", "orig_fg_frac": "0.01374387", "reann_fg_frac": "0.08099906", "fg_frac_ratio": "5.893468", "orig_component_count": "24", "reann_component_count": "32", "component_count_delta": "8", "panel": "panels/train/010_2082_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 11, "image": "1702.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.960413", "label_dice": "0.087875", "orig_fg_frac": "0.00432879", "reann_fg_frac": "0.01705997", "fg_frac_ratio": "3.941044", "orig_component_count": "22", "reann_component_count": "26", "component_count_delta": "4", "panel": "panels/train/011_1702_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 12, "image": "1663.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.641582", "label_dice": "0.018461", "orig_fg_frac": "0.00948520", "reann_fg_frac": "0.02775044", "fg_frac_ratio": "2.925657", "orig_component_count": "24", "reann_component_count": "26", "component_count_delta": "2", "panel": "panels/train/012_1663_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 13, "image": "2101.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.464177", "label_dice": "0.289103", "orig_fg_frac": "0.02861306", "reann_fg_frac": "0.14797327", "fg_frac_ratio": "5.171529", "orig_component_count": "26", "reann_component_count": "23", "component_count_delta": "-3", "panel": "panels/train/013_2101_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 14, "image": "2118.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.457031", "label_dice": "0.341740", "orig_fg_frac": "0.03581139", "reann_fg_frac": "0.15974969", "fg_frac_ratio": "4.460862", "orig_component_count": "21", "reann_component_count": "13", "component_count_delta": "-8", "panel": "panels/train/014_2118_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 15, "image": "1711.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.343759", "label_dice": "0.006197", "orig_fg_frac": "0.00964141", "reann_fg_frac": "0.02489509", "fg_frac_ratio": "2.582100", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/015_1711_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 16, "image": "1662.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "5.193029", "label_dice": "0.161826", "orig_fg_frac": "0.01137815", "reann_fg_frac": "0.03426176", "fg_frac_ratio": "3.011190", "orig_component_count": "23", "reann_component_count": "26", "component_count_delta": "3", "panel": "panels/train/016_1662_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 17, "image": "1837.png", "priority_reason": "新标注面积明显缩小", "priority_score": "5.108948", "label_dice": "0.488075", "orig_fg_frac": "0.03823339", "reann_fg_frac": "0.01372606", "fg_frac_ratio": "0.359007", "orig_component_count": "21", "reann_component_count": "2", "component_count_delta": "-19", "panel": "panels/train/017_1837_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 18, "image": "1699.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.998527", "label_dice": "0.001630", "orig_fg_frac": "0.02151179", "reann_fg_frac": "0.04075113", "fg_frac_ratio": "1.894363", "orig_component_count": "25", "reann_component_count": "26", "component_count_delta": "1", "panel": "panels/train/018_1699_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 19, "image": "2175.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.956103", "label_dice": "0.396558", "orig_fg_frac": "0.00304123", "reann_fg_frac": "0.00836089", "fg_frac_ratio": "2.749184", "orig_component_count": "10", "reann_component_count": "23", "component_count_delta": "13", "panel": "panels/train/019_2175_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 20, "image": "2096.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.918204", "label_dice": "0.374602", "orig_fg_frac": "0.04243459", "reann_fg_frac": "0.15121393", "fg_frac_ratio": "3.563460", "orig_component_count": "20", "reann_component_count": "27", "component_count_delta": "7", "panel": "panels/train/020_2096_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 21, "image": "1818.png", "priority_reason": "新标注面积明显缩小", "priority_score": "4.898068", "label_dice": "0.514458", "orig_fg_frac": "0.03680571", "reann_fg_frac": "0.01341669", "fg_frac_ratio": "0.364527", "orig_component_count": "19", "reann_component_count": "1", "component_count_delta": "-18", "panel": "panels/train/021_1818_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 22, "image": "2100.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.689802", "label_dice": "0.351366", "orig_fg_frac": "0.02679843", "reann_fg_frac": "0.10201768", "fg_frac_ratio": "3.806853", "orig_component_count": "26", "reann_component_count": "24", "component_count_delta": "-2", "panel": "panels/train/022_2100_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 23, "image": "1690.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.557088", "label_dice": "0.041116", "orig_fg_frac": "0.03253554", "reann_fg_frac": "0.05364963", "fg_frac_ratio": "1.648955", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/023_1690_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 24, "image": "1688.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.536580", "label_dice": "0.042528", "orig_fg_frac": "0.04460155", "reann_fg_frac": "0.06870680", "fg_frac_ratio": "1.540458", "orig_component_count": "25", "reann_component_count": "26", "component_count_delta": "1", "panel": "panels/train/024_1688_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 25, "image": "1713.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.467980", "label_dice": "0.012654", "orig_fg_frac": "0.04340066", "reann_fg_frac": "0.04396372", "fg_frac_ratio": "1.012973", "orig_component_count": "20", "reann_component_count": "26", "component_count_delta": "6", "panel": "panels/train/025_1713_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 26, "image": "1701.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.461081", "label_dice": "0.021255", "orig_fg_frac": "0.04099165", "reann_fg_frac": "0.04232261", "fg_frac_ratio": "1.032469", "orig_component_count": "20", "reann_component_count": "26", "component_count_delta": "6", "panel": "panels/train/026_1701_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 27, "image": "2108.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.459874", "label_dice": "0.379996", "orig_fg_frac": "0.03692595", "reann_fg_frac": "0.13748109", "fg_frac_ratio": "3.723156", "orig_component_count": "21", "reann_component_count": "20", "component_count_delta": "-1", "panel": "panels/train/027_2108_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 28, "image": "1665.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.439377", "label_dice": "0.030693", "orig_fg_frac": "0.04744078", "reann_fg_frac": "0.03213129", "fg_frac_ratio": "0.677293", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/028_1665_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 29, "image": "2104.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.376923", "label_dice": "0.370843", "orig_fg_frac": "0.01754826", "reann_fg_frac": "0.06371462", "fg_frac_ratio": "3.630823", "orig_component_count": "24", "reann_component_count": "24", "component_count_delta": "0", "panel": "panels/train/029_2104_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 30, "image": "2022.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.351381", "label_dice": "0.506837", "orig_fg_frac": "0.02552812", "reann_fg_frac": "0.07451243", "fg_frac_ratio": "2.918838", "orig_component_count": "27", "reann_component_count": "17", "component_count_delta": "-10", "panel": "panels/train/030_2022_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 31, "image": "1656.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.345424", "label_dice": "0.038564", "orig_fg_frac": "0.04795296", "reann_fg_frac": "0.03806870", "fg_frac_ratio": "0.793876", "orig_component_count": "24", "reann_component_count": "26", "component_count_delta": "2", "panel": "panels/train/031_1656_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 32, "image": "2099.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "4.334595", "label_dice": "0.433325", "orig_fg_frac": "0.04504684", "reann_fg_frac": "0.14149247", "fg_frac_ratio": "3.141008", "orig_component_count": "23", "reann_component_count": "18", "component_count_delta": "-5", "panel": "panels/train/032_2099_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 33, "image": "1668.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.305323", "label_dice": "0.020513", "orig_fg_frac": "0.03254394", "reann_fg_frac": "0.04256780", "fg_frac_ratio": "1.308010", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/033_1668_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 34, "image": "1659.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.297803", "label_dice": "0.086861", "orig_fg_frac": "0.05252057", "reann_fg_frac": "0.03993452", "fg_frac_ratio": "0.760360", "orig_component_count": "24", "reann_component_count": "27", "component_count_delta": "3", "panel": "panels/train/034_1659_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 35, "image": "1689.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.253265", "label_dice": "0.024104", "orig_fg_frac": "0.03120516", "reann_fg_frac": "0.02748742", "fg_frac_ratio": "0.880861", "orig_component_count": "25", "reann_component_count": "27", "component_count_delta": "2", "panel": "panels/train/035_1689_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 36, "image": "1685.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "4.128589", "label_dice": "0.020198", "orig_fg_frac": "0.04695995", "reann_fg_frac": "0.04061602", "fg_frac_ratio": "0.864908", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/036_1685_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 37, "image": "1794.png", "priority_reason": "新标注面积明显缩小", "priority_score": "4.112508", "label_dice": "0.573872", "orig_fg_frac": "0.03967136", "reann_fg_frac": "0.01777810", "fg_frac_ratio": "0.448134", "orig_component_count": "19", "reann_component_count": "4", "component_count_delta": "-15", "panel": "panels/train/037_1794_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 38, "image": "2039.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "3.998600", "label_dice": "0.561996", "orig_fg_frac": "0.02745599", "reann_fg_frac": "0.06902117", "fg_frac_ratio": "2.513883", "orig_component_count": "27", "reann_component_count": "16", "component_count_delta": "-11", "panel": "panels/train/038_2039_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 39, "image": "1691.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.918054", "label_dice": "0.162795", "orig_fg_frac": "0.02542554", "reann_fg_frac": "0.03360895", "fg_frac_ratio": "1.321858", "orig_component_count": "24", "reann_component_count": "26", "component_count_delta": "2", "panel": "panels/train/039_1691_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 40, "image": "1679.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.907606", "label_dice": "0.041804", "orig_fg_frac": "0.04104742", "reann_fg_frac": "0.03897285", "fg_frac_ratio": "0.949459", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/040_1679_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 41, "image": "1697.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.868699", "label_dice": "0.068328", "orig_fg_frac": "0.03588750", "reann_fg_frac": "0.03959983", "fg_frac_ratio": "1.103444", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/041_1697_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 42, "image": "1680.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.824637", "label_dice": "0.185347", "orig_fg_frac": "0.06264396", "reann_fg_frac": "0.05032062", "fg_frac_ratio": "0.803280", "orig_component_count": "23", "reann_component_count": "26", "component_count_delta": "3", "panel": "panels/train/042_1680_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 43, "image": "1708.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.815557", "label_dice": "0.124727", "orig_fg_frac": "0.03102194", "reann_fg_frac": "0.03857732", "fg_frac_ratio": "1.243550", "orig_component_count": "26", "reann_component_count": "26", "component_count_delta": "0", "panel": "panels/train/043_1708_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 44, "image": "1396.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.778572", "label_dice": "0.644749", "orig_fg_frac": "0.04218779", "reann_fg_frac": "0.02328269", "fg_frac_ratio": "0.551882", "orig_component_count": "20", "reann_component_count": "2", "component_count_delta": "-18", "panel": "panels/train/044_1396_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 45, "image": "1754.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.752170", "label_dice": "0.643137", "orig_fg_frac": "0.03025864", "reann_fg_frac": "0.01612497", "fg_frac_ratio": "0.532905", "orig_component_count": "21", "reann_component_count": "4", "component_count_delta": "-17", "panel": "panels/train/045_1754_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 46, "image": "1648.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.689009", "label_dice": "0.121982", "orig_fg_frac": "0.05218935", "reann_fg_frac": "0.04891075", "fg_frac_ratio": "0.937179", "orig_component_count": "25", "reann_component_count": "26", "component_count_delta": "1", "panel": "panels/train/046_1648_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 47, "image": "2178.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.671186", "label_dice": "0.492394", "orig_fg_frac": "0.00661120", "reann_fg_frac": "0.01375936", "fg_frac_ratio": "2.081220", "orig_component_count": "16", "reann_component_count": "23", "component_count_delta": "7", "panel": "panels/train/047_2178_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 48, "image": "1722.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.511100", "label_dice": "0.661997", "orig_fg_frac": "0.06482517", "reann_fg_frac": "0.03657352", "fg_frac_ratio": "0.564187", "orig_component_count": "17", "reann_component_count": "1", "component_count_delta": "-16", "panel": "panels/train/048_1722_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 49, "image": "1728.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.435144", "label_dice": "0.648823", "orig_fg_frac": "0.04158503", "reann_fg_frac": "0.02156901", "fg_frac_ratio": "0.518672", "orig_component_count": "17", "reann_component_count": "4", "component_count_delta": "-13", "panel": "panels/train/049_1728_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 50, "image": "1748.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.423868", "label_dice": "0.660496", "orig_fg_frac": "0.03618963", "reann_fg_frac": "0.01940452", "fg_frac_ratio": "0.536190", "orig_component_count": "18", "reann_component_count": "4", "component_count_delta": "-14", "panel": "panels/train/050_1748_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 51, "image": "14090.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.367386", "label_dice": "0.524007", "orig_fg_frac": "0.04381808", "reann_fg_frac": "0.02247177", "fg_frac_ratio": "0.512842", "orig_component_count": "19", "reann_component_count": "25", "component_count_delta": "6", "panel": "panels/train/051_14090_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 52, "image": "3061.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.287599", "label_dice": "0.546229", "orig_fg_frac": "0.00982460", "reann_fg_frac": "0.02042477", "fg_frac_ratio": "2.078941", "orig_component_count": "22", "reann_component_count": "17", "component_count_delta": "-5", "panel": "panels/train/052_3061_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 53, "image": "1377.png", "priority_reason": "连通域数量变化很大", "priority_score": "3.271498", "label_dice": "0.727655", "orig_fg_frac": "0.05924418", "reann_fg_frac": "0.03485150", "fg_frac_ratio": "0.588269", "orig_component_count": "20", "reann_component_count": "3", "component_count_delta": "-17", "panel": "panels/train/053_1377_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 54, "image": "1675.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.255273", "label_dice": "0.218161", "orig_fg_frac": "0.02797342", "reann_fg_frac": "0.03056696", "fg_frac_ratio": "1.092714", "orig_component_count": "27", "reann_component_count": "27", "component_count_delta": "0", "panel": "panels/train/054_1675_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 55, "image": "2006.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.232753", "label_dice": "0.624927", "orig_fg_frac": "0.01835451", "reann_fg_frac": "0.03842184", "fg_frac_ratio": "2.093319", "orig_component_count": "24", "reann_component_count": "16", "component_count_delta": "-8", "panel": "panels/train/055_2006_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 56, "image": "3055.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.229294", "label_dice": "0.513297", "orig_fg_frac": "0.00741128", "reann_fg_frac": "0.01606152", "fg_frac_ratio": "2.167173", "orig_component_count": "22", "reann_component_count": "20", "component_count_delta": "-2", "panel": "panels/train/056_3055_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 57, "image": "13780.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "3.047269", "label_dice": "0.488094", "orig_fg_frac": "0.00521235", "reann_fg_frac": "0.00928506", "fg_frac_ratio": "1.781357", "orig_component_count": "25", "reann_component_count": "23", "component_count_delta": "-2", "panel": "panels/train/057_13780_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 58, "image": "2035.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.941533", "label_dice": "0.612729", "orig_fg_frac": "0.03858678", "reann_fg_frac": "0.07588882", "fg_frac_ratio": "1.966705", "orig_component_count": "19", "reann_component_count": "14", "component_count_delta": "-5", "panel": "panels/train/058_2035_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 59, "image": "3079.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.935839", "label_dice": "0.556866", "orig_fg_frac": "0.01511807", "reann_fg_frac": "0.03016577", "fg_frac_ratio": "1.995345", "orig_component_count": "24", "reann_component_count": "22", "component_count_delta": "-2", "panel": "panels/train/059_3079_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 60, "image": "2109.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.824643", "label_dice": "0.574649", "orig_fg_frac": "0.04405909", "reann_fg_frac": "0.07617647", "fg_frac_ratio": "1.728961", "orig_component_count": "18", "reann_component_count": "22", "component_count_delta": "4", "panel": "panels/train/060_2109_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 61, "image": "1833.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.820046", "label_dice": "0.621948", "orig_fg_frac": "0.05565149", "reann_fg_frac": "0.03000598", "fg_frac_ratio": "0.539177", "orig_component_count": "22", "reann_component_count": "17", "component_count_delta": "-5", "panel": "panels/train/061_1833_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 62, "image": "13798.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.763617", "label_dice": "0.523448", "orig_fg_frac": "0.01708432", "reann_fg_frac": "0.02921581", "fg_frac_ratio": "1.710095", "orig_component_count": "26", "reann_component_count": "27", "component_count_delta": "1", "panel": "panels/train/062_13798_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 63, "image": "3041.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.752907", "label_dice": "0.578462", "orig_fg_frac": "0.01522052", "reann_fg_frac": "0.03009321", "fg_frac_ratio": "1.977147", "orig_component_count": "21", "reann_component_count": "20", "component_count_delta": "-1", "panel": "panels/train/063_3041_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 64, "image": "1772.png", "priority_reason": "协议差异候选", "priority_score": "2.698796", "label_dice": "0.689475", "orig_fg_frac": "0.00660050", "reann_fg_frac": "0.00381727", "fg_frac_ratio": "0.578332", "orig_component_count": "23", "reann_component_count": "15", "component_count_delta": "-8", "panel": "panels/train/064_1772_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 65, "image": "3330.png", "priority_reason": "协议差异候选", "priority_score": "2.649304", "label_dice": "0.681799", "orig_fg_frac": "0.04677006", "reann_fg_frac": "0.02859477", "fg_frac_ratio": "0.611390", "orig_component_count": "21", "reann_component_count": "29", "component_count_delta": "8", "panel": "panels/train/065_3330_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 66, "image": "3081.png", "priority_reason": "协议差异候选", "priority_score": "2.569797", "label_dice": "0.652588", "orig_fg_frac": "0.02438222", "reann_fg_frac": "0.03480537", "fg_frac_ratio": "1.427489", "orig_component_count": "25", "reann_component_count": "17", "component_count_delta": "-8", "panel": "panels/train/066_3081_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 67, "image": "1840.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.564884", "label_dice": "0.649098", "orig_fg_frac": "0.00181250", "reann_fg_frac": "0.00090964", "fg_frac_ratio": "0.501872", "orig_component_count": "9", "reann_component_count": "7", "component_count_delta": "-2", "panel": "panels/train/067_1840_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 68, "image": "3344.png", "priority_reason": "协议差异候选", "priority_score": "2.560284", "label_dice": "0.704338", "orig_fg_frac": "0.04568875", "reann_fg_frac": "0.02791172", "fg_frac_ratio": "0.610910", "orig_component_count": "19", "reann_component_count": "27", "component_count_delta": "8", "panel": "panels/train/068_3344_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 69, "image": "1729.png", "priority_reason": "协议差异候选", "priority_score": "2.558858", "label_dice": "0.721800", "orig_fg_frac": "0.00911135", "reann_fg_frac": "0.00595846", "fg_frac_ratio": "0.653960", "orig_component_count": "24", "reann_component_count": "14", "component_count_delta": "-10", "panel": "panels/train/069_1729_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 70, "image": "3104.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.492746", "label_dice": "0.608434", "orig_fg_frac": "0.01230170", "reann_fg_frac": "0.02083016", "fg_frac_ratio": "1.693275", "orig_component_count": "23", "reann_component_count": "21", "component_count_delta": "-2", "panel": "panels/train/070_3104_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 71, "image": "3329.png", "priority_reason": "连通域数量变化很大", "priority_score": "2.476692", "label_dice": "0.762547", "orig_fg_frac": "0.05204275", "reann_fg_frac": "0.03612052", "fg_frac_ratio": "0.694055", "orig_component_count": "18", "reann_component_count": "30", "component_count_delta": "12", "panel": "panels/train/071_3329_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 72, "image": "13821.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.376773", "label_dice": "0.555156", "orig_fg_frac": "0.01263835", "reann_fg_frac": "0.01703545", "fg_frac_ratio": "1.347917", "orig_component_count": "24", "reann_component_count": "26", "component_count_delta": "2", "panel": "panels/train/072_13821_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 73, "image": "3116.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.367986", "label_dice": "0.648814", "orig_fg_frac": "0.01196137", "reann_fg_frac": "0.01747092", "fg_frac_ratio": "1.460612", "orig_component_count": "26", "reann_component_count": "21", "component_count_delta": "-5", "panel": "panels/train/073_3116_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 74, "image": "3405.png", "priority_reason": "协议差异候选", "priority_score": "2.320445", "label_dice": "0.715516", "orig_fg_frac": "0.03925318", "reann_fg_frac": "0.02591227", "fg_frac_ratio": "0.660132", "orig_component_count": "21", "reann_component_count": "28", "component_count_delta": "7", "panel": "panels/train/074_3405_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 75, "image": "3331.png", "priority_reason": "协议差异候选", "priority_score": "2.314800", "label_dice": "0.711079", "orig_fg_frac": "0.04395465", "reann_fg_frac": "0.02627272", "fg_frac_ratio": "0.597723", "orig_component_count": "21", "reann_component_count": "26", "component_count_delta": "5", "panel": "panels/train/075_3331_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 76, "image": "1967.png", "priority_reason": "协议差异候选", "priority_score": "2.289468", "label_dice": "0.726563", "orig_fg_frac": "0.03648563", "reann_fg_frac": "0.05909554", "fg_frac_ratio": "1.619694", "orig_component_count": "24", "reann_component_count": "18", "component_count_delta": "-6", "panel": "panels/train/076_1967_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 77, "image": "12905.png", "priority_reason": "协议差异候选", "priority_score": "2.285470", "label_dice": "0.784958", "orig_fg_frac": "0.03509739", "reann_fg_frac": "0.04993315", "fg_frac_ratio": "1.422703", "orig_component_count": "9", "reann_component_count": "20", "component_count_delta": "11", "panel": "panels/train/077_12905_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 78, "image": "2070.png", "priority_reason": "协议差异候选", "priority_score": "2.234553", "label_dice": "0.660363", "orig_fg_frac": "0.01238002", "reann_fg_frac": "0.02144565", "fg_frac_ratio": "1.732280", "orig_component_count": "24", "reann_component_count": "23", "component_count_delta": "-1", "panel": "panels/train/078_2070_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 79, "image": "13698.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.207551", "label_dice": "0.623714", "orig_fg_frac": "0.01777734", "reann_fg_frac": "0.02730405", "fg_frac_ratio": "1.535891", "orig_component_count": "22", "reann_component_count": "23", "component_count_delta": "1", "panel": "panels/train/079_13698_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "train", "rank": 80, "image": "3214.png", "priority_reason": "协议差异候选", "priority_score": "2.184840", "label_dice": "0.735896", "orig_fg_frac": "0.03927067", "reann_fg_frac": "0.02851444", "fg_frac_ratio": "0.726100", "orig_component_count": "19", "reann_component_count": "27", "component_count_delta": "8", "panel": "panels/train/080_3214_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 1, "image": "1518.png", "priority_reason": "新标注面积明显膨胀", "priority_score": "6.891216", "label_dice": "0.278545", "orig_fg_frac": "0.00096393", "reann_fg_frac": "0.00516607", "fg_frac_ratio": "5.359370", "orig_component_count": "2", "reann_component_count": "21", "component_count_delta": "19", "panel": "panels/val/001_1518_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 2, "image": "1560.png", "priority_reason": "新标注面积明显缩小", "priority_score": "5.739199", "label_dice": "0.315743", "orig_fg_frac": "0.01492466", "reann_fg_frac": "0.00443046", "fg_frac_ratio": "0.296855", "orig_component_count": "27", "reann_component_count": "12", "component_count_delta": "-15", "panel": "panels/val/002_1560_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 3, "image": "1418.png", "priority_reason": "原标签和新标注重合度低", "priority_score": "2.648319", "label_dice": "0.624479", "orig_fg_frac": "0.00539324", "reann_fg_frac": "0.00344598", "fg_frac_ratio": "0.638945", "orig_component_count": "16", "reann_component_count": "22", "component_count_delta": "6", "panel": "panels/val/003_1418_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 4, "image": "1884.png", "priority_reason": "协议差异候选", "priority_score": "1.810980", "label_dice": "0.678693", "orig_fg_frac": "0.00526689", "reann_fg_frac": "0.00637624", "fg_frac_ratio": "1.210626", "orig_component_count": "19", "reann_component_count": "22", "component_count_delta": "3", "panel": "panels/val/004_1884_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 5, "image": "1522.png", "priority_reason": "协议差异候选", "priority_score": "1.797115", "label_dice": "0.725402", "orig_fg_frac": "0.00403604", "reann_fg_frac": "0.00519935", "fg_frac_ratio": "1.288231", "orig_component_count": "19", "reann_component_count": "23", "component_count_delta": "4", "panel": "panels/val/005_1522_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 6, "image": "1855.png", "priority_reason": "协议差异候选", "priority_score": "1.651296", "label_dice": "0.845038", "orig_fg_frac": "0.03848993", "reann_fg_frac": "0.03166819", "fg_frac_ratio": "0.822766", "orig_component_count": "17", "reann_component_count": "26", "component_count_delta": "9", "panel": "panels/val/006_1855_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 7, "image": "1399.png", "priority_reason": "协议差异候选", "priority_score": "1.525027", "label_dice": "0.794033", "orig_fg_frac": "0.00793313", "reann_fg_frac": "0.00614777", "fg_frac_ratio": "0.774949", "orig_component_count": "18", "reann_component_count": "22", "component_count_delta": "4", "panel": "panels/val/007_1399_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 8, "image": "1678.png", "priority_reason": "协议差异候选", "priority_score": "1.169188", "label_dice": "0.851865", "orig_fg_frac": "0.02190433", "reann_fg_frac": "0.01960517", "fg_frac_ratio": "0.895037", "orig_component_count": "27", "reann_component_count": "22", "component_count_delta": "-5", "panel": "panels/val/008_1678_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 9, "image": "1694.png", "priority_reason": "协议差异候选", "priority_score": "1.072596", "label_dice": "0.850238", "orig_fg_frac": "0.02931582", "reann_fg_frac": "0.02818246", "fg_frac_ratio": "0.961340", "orig_component_count": "25", "reann_component_count": "20", "component_count_delta": "-5", "panel": "panels/val/009_1694_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 10, "image": "1452.png", "priority_reason": "协议差异候选", "priority_score": "0.913433", "label_dice": "0.869298", "orig_fg_frac": "0.03691573", "reann_fg_frac": "0.03348719", "fg_frac_ratio": "0.907125", "orig_component_count": "21", "reann_component_count": "24", "component_count_delta": "3", "panel": "panels/val/010_1452_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 11, "image": "1828.png", "priority_reason": "协议差异候选", "priority_score": "0.912937", "label_dice": "0.852781", "orig_fg_frac": "0.02130808", "reann_fg_frac": "0.02024186", "fg_frac_ratio": "0.949962", "orig_component_count": "26", "reann_component_count": "29", "component_count_delta": "3", "panel": "panels/val/011_1828_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 12, "image": "1812.png", "priority_reason": "协议差异候选", "priority_score": "0.894762", "label_dice": "0.839580", "orig_fg_frac": "0.03487068", "reann_fg_frac": "0.03284333", "fg_frac_ratio": "0.941861", "orig_component_count": "20", "reann_component_count": "22", "component_count_delta": "2", "panel": "panels/val/012_1812_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 13, "image": "1666.png", "priority_reason": "协议差异候选", "priority_score": "0.811528", "label_dice": "0.879530", "orig_fg_frac": "0.04336080", "reann_fg_frac": "0.03872892", "fg_frac_ratio": "0.893178", "orig_component_count": "25", "reann_component_count": "23", "component_count_delta": "-2", "panel": "panels/val/013_1666_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 14, "image": "1585.png", "priority_reason": "协议差异候选", "priority_score": "0.803897", "label_dice": "0.852135", "orig_fg_frac": "0.02634203", "reann_fg_frac": "0.02408713", "fg_frac_ratio": "0.914399", "orig_component_count": "24", "reann_component_count": "25", "component_count_delta": "1", "panel": "panels/val/014_1585_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 15, "image": "1827.png", "priority_reason": "协议差异候选", "priority_score": "0.781337", "label_dice": "0.849320", "orig_fg_frac": "0.02885138", "reann_fg_frac": "0.02909133", "fg_frac_ratio": "1.008317", "orig_component_count": "19", "reann_component_count": "21", "component_count_delta": "2", "panel": "panels/val/015_1827_r168.jpg", "human_decision": "", "human_notes": ""}, {"run_id": "R168", "split": "val", "rank": 16, "image": "1736.png", "priority_reason": "协议差异候选", "priority_score": "0.754723", "label_dice": "0.849091", "orig_fg_frac": "0.04243564", "reann_fg_frac": "0.03821637", "fg_frac_ratio": "0.900573", "orig_component_count": "25", "reann_component_count": "25", "component_count_delta": "0", "panel": "panels/val/016_1736_r168.jpg", "human_decision": "", "human_notes": ""}];
+    const cards = Array.from(document.querySelectorAll('.card'));
+    document.querySelectorAll('button[data-filter]').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('button[data-filter]').forEach((b) => b.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.dataset.filter;
+        cards.forEach((card) => card.classList.toggle('hidden', !(filter === 'all' || card.dataset.split === filter)));
+      });
+    });
+    function csvEscape(value) {
+      const text = String(value ?? '');
+      return /[",\r\n]/.test(text) ? '"' + text.replaceAll('"', '""') + '"' : text;
+    }
+    document.getElementById('exportCsv').addEventListener('click', () => {
+      const edited = sourceRows.map((row, idx) => {
+        const card = cards[idx];
+        return {
+          ...row,
+          human_decision: card.querySelector('.decision').value,
+          human_notes: card.querySelector('.notes').value,
+        };
+      });
+      const csv = [headers.join(','), ...edited.map((row) => headers.map((key) => csvEscape(row[key])).join(','))].join('\r\n') + '\r\n';
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'r168_reannotation_protocol_review_reviewed.csv';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>

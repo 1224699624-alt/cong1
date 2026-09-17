@@ -1,0 +1,16 @@
+{
+  "experiment": "R297",
+  "status": "NO_GO_VALIDATION_EARLY_STOP",
+  "reason": "Native-resolution overlap patch refiner did not improve validation metrics over the R285 baseline during the first 7 epochs.",
+  "official_test_evaluated": false,
+  "baseline_checkpoint": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+  "observed": {
+    "epoch_0_val_macro_dice": 0.9778021951563429,
+    "epoch_6_val_macro_dice": 0.977704818575457,
+    "epoch_0_val_overlap_dice": 0.8715166478634442,
+    "epoch_6_val_overlap_dice": 0.8713805021865695,
+    "epoch_0_val_overlap_nsd_2px": 0.8766400441595844,
+    "epoch_6_val_overlap_nsd_2px": 0.8762000943343685
+  },
+  "selection_rule": "No test-set selection; stopped before official test evaluation."
+}

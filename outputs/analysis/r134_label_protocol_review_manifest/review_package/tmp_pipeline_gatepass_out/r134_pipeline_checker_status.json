@@ -1,0 +1,23 @@
+{
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+  "gate_pass": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "clean_test_reference": 24,
+    "train_review_queue": 64,
+    "val_audit_queue": 6,
+    "reviewed_train": 20,
+    "confirmed_train_for_variant": 20,
+    "confirmed_train_p0": 20,
+    "reviewed_val": 0
+  },
+  "train_decision_counts": {
+    "label_ok_protocol_clear": 20,
+    "blank": 44
+  },
+  "val_decision_counts": {
+    "blank": 6
+  },
+  "next_action": "build_isolated_corrected_variant"
+}

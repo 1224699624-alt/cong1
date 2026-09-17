@@ -1,0 +1,1441 @@
+[R190] start 2026-07-03T22:39:51+08:00
+[R190] CUDA_VISIBLE_DEVICES=0
+0, NVIDIA GeForce RTX 4090, 15 MiB, 24564 MiB, 0 %
+1, NVIDIA GeForce RTX 4090, 15 MiB, 24564 MiB, 0 %
+Requirement already satisfied: timm==1.0.22 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (1.0.22)
+Requirement already satisfied: shapely in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (2.1.2)
+Requirement already satisfied: scipy in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (1.15.3)
+Requirement already satisfied: torch in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from timm==1.0.22) (2.11.0+cu130)
+Requirement already satisfied: torchvision in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from timm==1.0.22) (0.26.0+cu130)
+Requirement already satisfied: pyyaml in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from timm==1.0.22) (6.0.3)
+Requirement already satisfied: huggingface_hub in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from timm==1.0.22) (1.22.0)
+Requirement already satisfied: safetensors in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from timm==1.0.22) (0.8.0)
+Requirement already satisfied: numpy>=1.21 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from shapely) (2.2.6)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (8.4.2)
+Requirement already satisfied: filelock>=3.10.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (3.29.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (2026.4.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.5.1 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (1.5.1)
+Requirement already satisfied: httpx<1,>=0.23.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (0.28.1)
+Requirement already satisfied: packaging>=20.9 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (26.2)
+Requirement already satisfied: tqdm>=4.42.1 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (4.68.3)
+Requirement already satisfied: typing-extensions>=4.1.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from huggingface_hub->timm==1.0.22) (4.15.0)
+Requirement already satisfied: anyio in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (4.14.1)
+Requirement already satisfied: certifi in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (2026.6.17)
+Requirement already satisfied: httpcore==1.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (1.0.9)
+Requirement already satisfied: idna in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (3.18)
+Requirement already satisfied: h11>=0.16 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (0.16.0)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from anyio->httpx<1,>=0.23.0->huggingface_hub->timm==1.0.22) (1.3.1)
+Requirement already satisfied: setuptools<82 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (70.2.0)
+Requirement already satisfied: sympy>=1.13.3 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (3.4.2)
+Requirement already satisfied: jinja2 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (3.1.6)
+Requirement already satisfied: cuda-toolkit==13.0.2 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.2)
+Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (13.0.3)
+Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (0.8.0)
+Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torch->timm==1.0.22) (3.6.0)
+Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.1.0.3)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.96)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.85)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (12.6.3.3)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.88)
+Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.88)
+Requirement already satisfied: nvidia-nvtx==13.0.85.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (13.0.85)
+Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (12.0.0.61)
+Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (1.15.1.6)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (12.0.4.66)
+Requirement already satisfied: nvidia-curand==10.4.0.35.* in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch->timm==1.0.22) (10.4.0.35)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from cuda-bindings<14,>=13.0.3->torch->timm==1.0.22) (1.2.2)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from sympy>=1.13.3->torch->timm==1.0.22) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from jinja2->torch->timm==1.0.22) (3.0.3)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from torchvision->timm==1.0.22) (12.2.0)
+{
+  "train": {
+    "images": 12,
+    "annotations": 311,
+    "json": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train.json",
+    "image_root": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train"
+  },
+  "val": {
+    "images": 4,
+    "annotations": 109,
+    "json": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val.json",
+    "image_root": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val"
+  }
+}
+/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/pixel_decoder/maskdino_encoder.py:362: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/transformer_decoder/dino_decoder.py:220: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+[07/03 22:39:56 detectron2]: Rank of current process: 0. World size: 1
+[07/03 22:39:56 detectron2]: Environment info:
+-------------------------------  --------------------------------------------------------------------------------------------------------------
+sys.platform                     linux
+Python                           3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]
+numpy                            2.2.6
+detectron2                       0.6 @/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2
+Compiler                         GCC 13.3
+CUDA compiler                    CUDA 13.0
+detectron2 arch flags            8.9
+DETECTRON2_ENV_MODULE            <not set>
+PyTorch                          2.11.0+cu130 @/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torch
+PyTorch debug build              False
+torch._C._GLIBCXX_USE_CXX11_ABI  True
+GPU available                    Yes
+GPU 0                            NVIDIA GeForce RTX 4090 (arch=8.9)
+Driver version                   595.71.05
+CUDA_HOME                        /usr/local/cuda
+TORCH_CUDA_ARCH_LIST             8.9
+Pillow                           12.2.0
+torchvision                      0.26.0+cu130 @/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torchvision
+torchvision arch flags           1.0.0, 1.2.0, 7.5, 8.0, 8.6, 9.0
+fvcore                           0.1.5.post20221221
+iopath                           0.1.9
+cv2                              4.10.0
+-------------------------------  --------------------------------------------------------------------------------------------------------------
+PyTorch built with:
+  - GCC 13.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.10.2 (Git Hash f1d471933dc852f956fd05389f9313c7148783d5)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 13.0
+  - NVCC architecture flags: -gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90;-gencode;arch=compute_100,code=sm_100;-gencode;arch=compute_120,code=sm_120
+  - CuDNN 91.9  (built against CUDA 13.1)
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=70d99e998b4955e0049d13a98d77ae1b14db1f45, CUDA_VERSION=13.0, CUDNN_VERSION=9.19.0, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_MSLK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.11.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, 
+
+[07/03 22:39:56 detectron2]: Command line arguments: Namespace(config_file='/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/configs/coco/instance-segmentation/maskdino_R50_bs16_50ep_3s.yaml', resume=False, eval_only=False, num_gpus=1, num_machines=1, machine_rank=0, dist_url='tcp://127.0.0.1:50157', opts=['MODEL.WEIGHTS', '', 'MODEL.SEM_SEG_HEAD.NUM_CLASSES', '1', 'MODEL.MaskDINO.NUM_OBJECT_QUERIES', '40', 'MODEL.MaskDINO.DN_NUM', '10', 'MODEL.MaskDINO.DEC_LAYERS', '2', 'MODEL.SEM_SEG_HEAD.TRANSFORMER_ENC_LAYERS', '1', 'MODEL.MaskDINO.TRAIN_NUM_POINTS', '1024', 'DATASETS.TRAIN', "('epiphysis_r190_train',)", 'DATASETS.TEST', "('epiphysis_r190_val',)", 'INPUT.IMAGE_SIZE', '384', 'INPUT.MIN_SCALE', '1.0', 'INPUT.MAX_SCALE', '1.0', 'INPUT.MASK_FORMAT', 'bitmask', 'SOLVER.IMS_PER_BATCH', '1', 'SOLVER.MAX_ITER', '12', 'SOLVER.WARMUP_ITERS', '0', 'SOLVER.BASE_LR', '0.0001', 'SOLVER.STEPS', '()', 'SOLVER.CHECKPOINT_PERIOD', '1000', 'TEST.EVAL_PERIOD', '0', 'DATALOADER.NUM_WORKERS', '0', 'OUTPUT_DIR', '/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output'])
+[07/03 22:39:56 detectron2]: Contents of args.config_file=/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/configs/coco/instance-segmentation/maskdino_R50_bs16_50ep_3s.yaml:
+_BASE_: Base-COCO-InstanceSegmentation.yaml
+MODEL:
+  META_ARCHITECTURE: "MaskDINO"
+  SEM_SEG_HEAD:
+    NAME: "MaskDINOHead"
+    IGNORE_VALUE: 255
+    NUM_CLASSES: 80
+    LOSS_WEIGHT: 1.0
+    CONVS_DIM: 256
+    MASK_DIM: 256
+    NORM: "GN"
+    # pixel decoder
+    PIXEL_DECODER_NAME: "MaskDINOEncoder"
+    DIM_FEEDFORWARD: 1024
+    NUM_FEATURE_LEVELS: 3
+    TOTAL_NUM_FEATURE_LEVELS: 3
+    IN_FEATURES: ["res2", "res3", "res4", "res5"]
+    DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES: ["res3", "res4", "res5"]
+    COMMON_STRIDE: 4
+    TRANSFORMER_ENC_LAYERS: 6
+  MaskDINO:
+    TRANSFORMER_DECODER_NAME: "MaskDINODecoder"
+    DEEP_SUPERVISION: True
+    NO_OBJECT_WEIGHT: 0.1
+    CLASS_WEIGHT: 4.0
+    MASK_WEIGHT: 5.0
+    DICE_WEIGHT: 5.0
+    BOX_WEIGHT: 5.0
+    GIOU_WEIGHT: 2.0
+    HIDDEN_DIM: 256
+    NUM_OBJECT_QUERIES: 300
+    NHEADS: 8
+    DROPOUT: 0.0
+    DIM_FEEDFORWARD: 2048
+    ENC_LAYERS: 0
+    PRE_NORM: False
+    ENFORCE_INPUT_PROJ: False
+    SIZE_DIVISIBILITY: 32
+    DEC_LAYERS: 9  # 9+1, 9 decoder layers, add one for the loss on learnable query
+    TRAIN_NUM_POINTS: 12544
+    OVERSAMPLE_RATIO: 3.0
+    IMPORTANCE_SAMPLE_RATIO: 0.75
+    INITIAL_PRED: True
+    TWO_STAGE: True
+    DN: "seg"
+    DN_NUM: 100
+    INITIALIZE_BOX_TYPE: "bitmask"
+    TEST:
+      SEMANTIC_ON: False
+      INSTANCE_ON: True
+      PANOPTIC_ON: False
+      OVERLAP_THRESHOLD: 0.8
+      OBJECT_MASK_THRESHOLD: 0.25
+
+SOLVER:
+  AMP:
+    ENABLED: True
+TEST:
+  EVAL_PERIOD: 5000
+#  EVAL_FLAG: 1
+[07/03 22:39:57 detectron2]: Running with full config:
+CUDNN_BENCHMARK: false
+DATALOADER:
+  ASPECT_RATIO_GROUPING: true
+  FILTER_EMPTY_ANNOTATIONS: true
+  NUM_WORKERS: 0
+  REPEAT_SQRT: true
+  REPEAT_THRESHOLD: 0.0
+  SAMPLER_TRAIN: TrainingSampler
+DATASETS:
+  PRECOMPUTED_PROPOSAL_TOPK_TEST: 1000
+  PRECOMPUTED_PROPOSAL_TOPK_TRAIN: 2000
+  PROPOSAL_FILES_TEST: []
+  PROPOSAL_FILES_TRAIN: []
+  TEST:
+  - epiphysis_r190_val
+  TRAIN:
+  - epiphysis_r190_train
+Default_loading: true
+FLOAT32_PRECISION: ''
+GLOBAL:
+  HACK: 1.0
+INPUT:
+  COLOR_AUG_SSD: false
+  CROP:
+    ENABLED: false
+    SINGLE_CATEGORY_MAX_AREA: 1.0
+    SIZE:
+    - 0.9
+    - 0.9
+    TYPE: relative_range
+  DATASET_MAPPER_NAME: coco_instance_lsj
+  FORMAT: RGB
+  IMAGE_SIZE: 384
+  MASK_FORMAT: bitmask
+  MAX_SCALE: 1.0
+  MAX_SIZE_TEST: 1333
+  MAX_SIZE_TRAIN: 1333
+  MIN_SCALE: 1.0
+  MIN_SIZE_TEST: 800
+  MIN_SIZE_TRAIN:
+  - 800
+  MIN_SIZE_TRAIN_SAMPLING: choice
+  RANDOM_FLIP: horizontal
+  SIZE_DIVISIBILITY: -1
+MODEL:
+  ANCHOR_GENERATOR:
+    ANGLES:
+    - - -90
+      - 0
+      - 90
+    ASPECT_RATIOS:
+    - - 0.5
+      - 1.0
+      - 2.0
+    NAME: DefaultAnchorGenerator
+    OFFSET: 0.0
+    SIZES:
+    - - 32
+      - 64
+      - 128
+      - 256
+      - 512
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: build_resnet_backbone
+  DEVICE: cuda
+  FPN:
+    FUSE_TYPE: sum
+    IN_FEATURES: []
+    NORM: ''
+    OUT_CHANNELS: 256
+  KEYPOINT_ON: false
+  LOAD_PROPOSALS: false
+  MASK_ON: false
+  META_ARCHITECTURE: MaskDINO
+  MaskDINO:
+    BOX_LOSS: true
+    BOX_WEIGHT: 5.0
+    CLASS_WEIGHT: 4.0
+    COST_BOX_WEIGHT: 5.0
+    COST_CLASS_WEIGHT: 4.0
+    COST_DICE_WEIGHT: 5.0
+    COST_GIOU_WEIGHT: 2.0
+    COST_MASK_WEIGHT: 5.0
+    DEC_LAYERS: 2
+    DEEP_SUPERVISION: true
+    DICE_WEIGHT: 5.0
+    DIM_FEEDFORWARD: 2048
+    DN: seg
+    DN_NOISE_SCALE: 0.4
+    DN_NUM: 10
+    DROPOUT: 0.0
+    ENC_LAYERS: 0
+    ENFORCE_INPUT_PROJ: false
+    EVAL_FLAG: 1
+    GIOU_WEIGHT: 2.0
+    HIDDEN_DIM: 256
+    IMPORTANCE_SAMPLE_RATIO: 0.75
+    INITIALIZE_BOX_TYPE: bitmask
+    INITIAL_PRED: true
+    LEARN_TGT: false
+    MASK_WEIGHT: 5.0
+    NHEADS: 8
+    NO_OBJECT_WEIGHT: 0.1
+    NUM_OBJECT_QUERIES: 40
+    OVERSAMPLE_RATIO: 3.0
+    PANO_BOX_LOSS: false
+    PRED_CONV: false
+    PRE_NORM: false
+    SEMANTIC_CE_LOSS: false
+    SIZE_DIVISIBILITY: 32
+    TEST:
+      INSTANCE_ON: true
+      OBJECT_MASK_THRESHOLD: 0.25
+      OVERLAP_THRESHOLD: 0.8
+      PANOPTIC_ON: false
+      PANO_TEMPERATURE: 0.06
+      PANO_TRANSFORM_EVAL: true
+      SEMANTIC_ON: false
+      SEM_SEG_POSTPROCESSING_BEFORE_INFERENCE: false
+      TEST_FOUCUS_ON_BOX: false
+    TRAIN_NUM_POINTS: 1024
+    TRANSFORMER_DECODER_NAME: MaskDINODecoder
+    TWO_STAGE: true
+  PANOPTIC_FPN:
+    COMBINE:
+      ENABLED: true
+      INSTANCES_CONFIDENCE_THRESH: 0.5
+      OVERLAP_THRESH: 0.5
+      STUFF_AREA_LIMIT: 4096
+    INSTANCE_LOSS_WEIGHT: 1.0
+  PIXEL_MEAN:
+  - 123.675
+  - 116.28
+  - 103.53
+  PIXEL_STD:
+  - 58.395
+  - 57.12
+  - 57.375
+  PROPOSAL_GENERATOR:
+    MIN_SIZE: 0
+    NAME: RPN
+  RESNETS:
+    DEFORM_MODULATED: false
+    DEFORM_NUM_GROUPS: 1
+    DEFORM_ON_PER_STAGE:
+    - false
+    - false
+    - false
+    - false
+    DEPTH: 50
+    NORM: FrozenBN
+    NUM_GROUPS: 1
+    OUT_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    RES2_OUT_CHANNELS: 256
+    RES4_DILATION: 1
+    RES5_DILATION: 1
+    RES5_MULTI_GRID:
+    - 1
+    - 1
+    - 1
+    STEM_OUT_CHANNELS: 64
+    STEM_TYPE: basic
+    STRIDE_IN_1X1: false
+    WIDTH_PER_GROUP: 64
+  RETINANET:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_WEIGHTS: &id002
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    FOCAL_LOSS_ALPHA: 0.25
+    FOCAL_LOSS_GAMMA: 2.0
+    IN_FEATURES:
+    - p3
+    - p4
+    - p5
+    - p6
+    - p7
+    IOU_LABELS:
+    - 0
+    - -1
+    - 1
+    IOU_THRESHOLDS:
+    - 0.4
+    - 0.5
+    NMS_THRESH_TEST: 0.5
+    NORM: ''
+    NUM_CLASSES: 80
+    NUM_CONVS: 4
+    PRIOR_PROB: 0.01
+    SCORE_THRESH_TEST: 0.05
+    SMOOTH_L1_LOSS_BETA: 0.1
+    TOPK_CANDIDATES_TEST: 1000
+  ROI_BOX_CASCADE_HEAD:
+    BBOX_REG_WEIGHTS:
+    - &id001
+      - 10.0
+      - 10.0
+      - 5.0
+      - 5.0
+    - - 20.0
+      - 20.0
+      - 10.0
+      - 10.0
+    - - 30.0
+      - 30.0
+      - 15.0
+      - 15.0
+    IOUS:
+    - 0.5
+    - 0.6
+    - 0.7
+  ROI_BOX_HEAD:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: *id001
+    CLS_AGNOSTIC_BBOX_REG: false
+    CONV_DIM: 256
+    FC_DIM: 1024
+    FED_LOSS_FREQ_WEIGHT_POWER: 0.5
+    FED_LOSS_NUM_CLASSES: 50
+    NAME: ''
+    NORM: ''
+    NUM_CONV: 0
+    NUM_FC: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+    SMOOTH_L1_BETA: 0.0
+    TRAIN_ON_PRED_BOXES: false
+    USE_FED_LOSS: false
+    USE_SIGMOID_CE: false
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 512
+    IN_FEATURES:
+    - res4
+    IOU_LABELS:
+    - 0
+    - 1
+    IOU_THRESHOLDS:
+    - 0.5
+    NAME: Res5ROIHeads
+    NMS_THRESH_TEST: 0.5
+    NUM_CLASSES: 80
+    POSITIVE_FRACTION: 0.25
+    PROPOSAL_APPEND_GT: true
+    SCORE_THRESH_TEST: 0.05
+  ROI_KEYPOINT_HEAD:
+    CONV_DIMS:
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    LOSS_WEIGHT: 1.0
+    MIN_KEYPOINTS_PER_IMAGE: 1
+    NAME: KRCNNConvDeconvUpsampleHead
+    NORMALIZE_LOSS_BY_VISIBLE_KEYPOINTS: true
+    NUM_KEYPOINTS: 17
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  ROI_MASK_HEAD:
+    CLS_AGNOSTIC_MASK: false
+    CONV_DIM: 256
+    NAME: MaskRCNNConvUpsampleHead
+    NORM: ''
+    NUM_CONV: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  RPN:
+    BATCH_SIZE_PER_IMAGE: 256
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: *id002
+    BOUNDARY_THRESH: -1
+    CONV_DIMS:
+    - -1
+    HEAD_NAME: StandardRPNHead
+    IN_FEATURES:
+    - res4
+    IOU_LABELS:
+    - 0
+    - -1
+    - 1
+    IOU_THRESHOLDS:
+    - 0.3
+    - 0.7
+    LOSS_WEIGHT: 1.0
+    NMS_THRESH: 0.7
+    POSITIVE_FRACTION: 0.5
+    POST_NMS_TOPK_TEST: 1000
+    POST_NMS_TOPK_TRAIN: 2000
+    PRE_NMS_TOPK_TEST: 6000
+    PRE_NMS_TOPK_TRAIN: 12000
+    SMOOTH_L1_BETA: 0.0
+  SEM_SEG_HEAD:
+    ASPP_CHANNELS: 256
+    ASPP_DILATIONS:
+    - 6
+    - 12
+    - 18
+    ASPP_DROPOUT: 0.1
+    COMMON_STRIDE: 4
+    CONVS_DIM: 256
+    DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES:
+    - res3
+    - res4
+    - res5
+    DEFORMABLE_TRANSFORMER_ENCODER_N_HEADS: 8
+    DEFORMABLE_TRANSFORMER_ENCODER_N_POINTS: 4
+    DIM_FEEDFORWARD: 1024
+    FEATURE_ORDER: high2low
+    IGNORE_VALUE: 255
+    IN_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    LOSS_TYPE: hard_pixel_mining
+    LOSS_WEIGHT: 1.0
+    MASK_DIM: 256
+    NAME: MaskDINOHead
+    NORM: GN
+    NUM_CLASSES: 1
+    NUM_FEATURE_LEVELS: 3
+    PIXEL_DECODER_NAME: MaskDINOEncoder
+    PROJECT_CHANNELS:
+    - 48
+    PROJECT_FEATURES:
+    - res2
+    TOTAL_NUM_FEATURE_LEVELS: 3
+    TRANSFORMER_ENC_LAYERS: 1
+    USE_DEPTHWISE_SEPARABLE_CONV: false
+  SWIN:
+    APE: false
+    ATTN_DROP_RATE: 0.0
+    DEPTHS:
+    - 2
+    - 2
+    - 6
+    - 2
+    DROP_PATH_RATE: 0.3
+    DROP_RATE: 0.0
+    EMBED_DIM: 96
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    OUT_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    PRETRAIN_IMG_SIZE: 224
+    QKV_BIAS: true
+    QK_SCALE: null
+    USE_CHECKPOINT: false
+    WINDOW_SIZE: 7
+  WEIGHTS: ''
+OUTPUT_DIR: /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output
+SEED: -1
+SOLVER:
+  AMP:
+    ENABLED: true
+  BACKBONE_MULTIPLIER: 0.1
+  BASE_LR: 0.0001
+  BASE_LR_END: 0.0
+  BIAS_LR_FACTOR: 1.0
+  CHECKPOINT_PERIOD: 1000
+  CLIP_GRADIENTS:
+    CLIP_TYPE: full_model
+    CLIP_VALUE: 0.01
+    ENABLED: true
+    NORM_TYPE: 2.0
+  GAMMA: 0.1
+  IMS_PER_BATCH: 1
+  LR_SCHEDULER_NAME: WarmupMultiStepLR
+  MAX_ITER: 12
+  MOMENTUM: 0.9
+  NESTEROV: false
+  NUM_DECAYS: 3
+  OPTIMIZER: ADAMW
+  POLY_LR_CONSTANT_ENDING: 0.0
+  POLY_LR_POWER: 0.9
+  REFERENCE_WORLD_SIZE: 0
+  RESCALE_INTERVAL: false
+  STEPS: []
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 0
+  WARMUP_METHOD: linear
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: null
+  WEIGHT_DECAY_EMBED: 0.0
+  WEIGHT_DECAY_NORM: 0.0
+TEST:
+  AUG:
+    ENABLED: false
+    FLIP: true
+    MAX_SIZE: 4000
+    MIN_SIZES:
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+    - 1000
+    - 1100
+    - 1200
+  DETECTIONS_PER_IMAGE: 100
+  EVAL_PERIOD: 0
+  EXPECTED_RESULTS: []
+  KEYPOINT_OKS_SIGMAS: []
+  PRECISE_BN:
+    ENABLED: false
+    NUM_ITER: 200
+VERSION: 2
+VIS_PERIOD: 0
+
+[07/03 22:39:57 detectron2]: Full config saved to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output/config.yaml
+[07/03 22:39:57 d2.utils.env]: Using a generated random seed 60303854
+Command cfg: CUDNN_BENCHMARK: False
+DATALOADER:
+  ASPECT_RATIO_GROUPING: True
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 0
+  REPEAT_SQRT: True
+  REPEAT_THRESHOLD: 0.0
+  SAMPLER_TRAIN: TrainingSampler
+DATASETS:
+  PRECOMPUTED_PROPOSAL_TOPK_TEST: 1000
+  PRECOMPUTED_PROPOSAL_TOPK_TRAIN: 2000
+  PROPOSAL_FILES_TEST: ()
+  PROPOSAL_FILES_TRAIN: ()
+  TEST: ('epiphysis_r190_val',)
+  TRAIN: ('epiphysis_r190_train',)
+Default_loading: True
+FLOAT32_PRECISION: 
+GLOBAL:
+  HACK: 1.0
+INPUT:
+  COLOR_AUG_SSD: False
+  CROP:
+    ENABLED: False
+    SINGLE_CATEGORY_MAX_AREA: 1.0
+    SIZE: [0.9, 0.9]
+    TYPE: relative_range
+  DATASET_MAPPER_NAME: coco_instance_lsj
+  FORMAT: RGB
+  IMAGE_SIZE: 384
+  MASK_FORMAT: bitmask
+  MAX_SCALE: 1.0
+  MAX_SIZE_TEST: 1333
+  MAX_SIZE_TRAIN: 1333
+  MIN_SCALE: 1.0
+  MIN_SIZE_TEST: 800
+  MIN_SIZE_TRAIN: (800,)
+  MIN_SIZE_TRAIN_SAMPLING: choice
+  RANDOM_FLIP: horizontal
+  SIZE_DIVISIBILITY: -1
+MODEL:
+  ANCHOR_GENERATOR:
+    ANGLES: [[-90, 0, 90]]
+    ASPECT_RATIOS: [[0.5, 1.0, 2.0]]
+    NAME: DefaultAnchorGenerator
+    OFFSET: 0.0
+    SIZES: [[32, 64, 128, 256, 512]]
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: build_resnet_backbone
+  DEVICE: cuda
+  FPN:
+    FUSE_TYPE: sum
+    IN_FEATURES: []
+    NORM: 
+    OUT_CHANNELS: 256
+  KEYPOINT_ON: False
+  LOAD_PROPOSALS: False
+  MASK_ON: False
+  META_ARCHITECTURE: MaskDINO
+  MaskDINO:
+    BOX_LOSS: True
+    BOX_WEIGHT: 5.0
+    CLASS_WEIGHT: 4.0
+    COST_BOX_WEIGHT: 5.0
+    COST_CLASS_WEIGHT: 4.0
+    COST_DICE_WEIGHT: 5.0
+    COST_GIOU_WEIGHT: 2.0
+    COST_MASK_WEIGHT: 5.0
+    DEC_LAYERS: 2
+    DEEP_SUPERVISION: True
+    DICE_WEIGHT: 5.0
+    DIM_FEEDFORWARD: 2048
+    DN: seg
+    DN_NOISE_SCALE: 0.4
+    DN_NUM: 10
+    DROPOUT: 0.0
+    ENC_LAYERS: 0
+    ENFORCE_INPUT_PROJ: False
+    EVAL_FLAG: 1
+    GIOU_WEIGHT: 2.0
+    HIDDEN_DIM: 256
+    IMPORTANCE_SAMPLE_RATIO: 0.75
+    INITIALIZE_BOX_TYPE: bitmask
+    INITIAL_PRED: True
+    LEARN_TGT: False
+    MASK_WEIGHT: 5.0
+    NHEADS: 8
+    NO_OBJECT_WEIGHT: 0.1
+    NUM_OBJECT_QUERIES: 40
+    OVERSAMPLE_RATIO: 3.0
+    PANO_BOX_LOSS: False
+    PRED_CONV: False
+    PRE_NORM: False
+    SEMANTIC_CE_LOSS: False
+    SIZE_DIVISIBILITY: 32
+    TEST:
+      INSTANCE_ON: True
+      OBJECT_MASK_THRESHOLD: 0.25
+      OVERLAP_THRESHOLD: 0.8
+      PANOPTIC_ON: False
+      PANO_TEMPERATURE: 0.06
+      PANO_TRANSFORM_EVAL: True
+      SEMANTIC_ON: False
+      SEM_SEG_POSTPROCESSING_BEFORE_INFERENCE: False
+      TEST_FOUCUS_ON_BOX: False
+    TRAIN_NUM_POINTS: 1024
+    TRANSFORMER_DECODER_NAME: MaskDINODecoder
+    TWO_STAGE: True
+  PANOPTIC_FPN:
+    COMBINE:
+      ENABLED: True
+      INSTANCES_CONFIDENCE_THRESH: 0.5
+      OVERLAP_THRESH: 0.5
+      STUFF_AREA_LIMIT: 4096
+    INSTANCE_LOSS_WEIGHT: 1.0
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [58.395, 57.12, 57.375]
+  PROPOSAL_GENERATOR:
+    MIN_SIZE: 0
+    NAME: RPN
+  RESNETS:
+    DEFORM_MODULATED: False
+    DEFORM_NUM_GROUPS: 1
+    DEFORM_ON_PER_STAGE: [False, False, False, False]
+    DEPTH: 50
+    NORM: FrozenBN
+    NUM_GROUPS: 1
+    OUT_FEATURES: ['res2', 'res3', 'res4', 'res5']
+    RES2_OUT_CHANNELS: 256
+    RES4_DILATION: 1
+    RES5_DILATION: 1
+    RES5_MULTI_GRID: [1, 1, 1]
+    STEM_OUT_CHANNELS: 64
+    STEM_TYPE: basic
+    STRIDE_IN_1X1: False
+    WIDTH_PER_GROUP: 64
+  RETINANET:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_WEIGHTS: (1.0, 1.0, 1.0, 1.0)
+    FOCAL_LOSS_ALPHA: 0.25
+    FOCAL_LOSS_GAMMA: 2.0
+    IN_FEATURES: ['p3', 'p4', 'p5', 'p6', 'p7']
+    IOU_LABELS: [0, -1, 1]
+    IOU_THRESHOLDS: [0.4, 0.5]
+    NMS_THRESH_TEST: 0.5
+    NORM: 
+    NUM_CLASSES: 80
+    NUM_CONVS: 4
+    PRIOR_PROB: 0.01
+    SCORE_THRESH_TEST: 0.05
+    SMOOTH_L1_LOSS_BETA: 0.1
+    TOPK_CANDIDATES_TEST: 1000
+  ROI_BOX_CASCADE_HEAD:
+    BBOX_REG_WEIGHTS: ((10.0, 10.0, 5.0, 5.0), (20.0, 20.0, 10.0, 10.0), (30.0, 30.0, 15.0, 15.0))
+    IOUS: (0.5, 0.6, 0.7)
+  ROI_BOX_HEAD:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: (10.0, 10.0, 5.0, 5.0)
+    CLS_AGNOSTIC_BBOX_REG: False
+    CONV_DIM: 256
+    FC_DIM: 1024
+    FED_LOSS_FREQ_WEIGHT_POWER: 0.5
+    FED_LOSS_NUM_CLASSES: 50
+    NAME: 
+    NORM: 
+    NUM_CONV: 0
+    NUM_FC: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+    SMOOTH_L1_BETA: 0.0
+    TRAIN_ON_PRED_BOXES: False
+    USE_FED_LOSS: False
+    USE_SIGMOID_CE: False
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 512
+    IN_FEATURES: ['res4']
+    IOU_LABELS: [0, 1]
+    IOU_THRESHOLDS: [0.5]
+    NAME: Res5ROIHeads
+    NMS_THRESH_TEST: 0.5
+    NUM_CLASSES: 80
+    POSITIVE_FRACTION: 0.25
+    PROPOSAL_APPEND_GT: True
+    SCORE_THRESH_TEST: 0.05
+  ROI_KEYPOINT_HEAD:
+    CONV_DIMS: (512, 512, 512, 512, 512, 512, 512, 512)
+    LOSS_WEIGHT: 1.0
+    MIN_KEYPOINTS_PER_IMAGE: 1
+    NAME: KRCNNConvDeconvUpsampleHead
+    NORMALIZE_LOSS_BY_VISIBLE_KEYPOINTS: True
+    NUM_KEYPOINTS: 17
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  ROI_MASK_HEAD:
+    CLS_AGNOSTIC_MASK: False
+    CONV_DIM: 256
+    NAME: MaskRCNNConvUpsampleHead
+    NORM: 
+    NUM_CONV: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  RPN:
+    BATCH_SIZE_PER_IMAGE: 256
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: (1.0, 1.0, 1.0, 1.0)
+    BOUNDARY_THRESH: -1
+    CONV_DIMS: [-1]
+    HEAD_NAME: StandardRPNHead
+    IN_FEATURES: ['res4']
+    IOU_LABELS: [0, -1, 1]
+    IOU_THRESHOLDS: [0.3, 0.7]
+    LOSS_WEIGHT: 1.0
+    NMS_THRESH: 0.7
+    POSITIVE_FRACTION: 0.5
+    POST_NMS_TOPK_TEST: 1000
+    POST_NMS_TOPK_TRAIN: 2000
+    PRE_NMS_TOPK_TEST: 6000
+    PRE_NMS_TOPK_TRAIN: 12000
+    SMOOTH_L1_BETA: 0.0
+  SEM_SEG_HEAD:
+    ASPP_CHANNELS: 256
+    ASPP_DILATIONS: [6, 12, 18]
+    ASPP_DROPOUT: 0.1
+    COMMON_STRIDE: 4
+    CONVS_DIM: 256
+    DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES: ['res3', 'res4', 'res5']
+    DEFORMABLE_TRANSFORMER_ENCODER_N_HEADS: 8
+    DEFORMABLE_TRANSFORMER_ENCODER_N_POINTS: 4
+    DIM_FEEDFORWARD: 1024
+    FEATURE_ORDER: high2low
+    IGNORE_VALUE: 255
+    IN_FEATURES: ['res2', 'res3', 'res4', 'res5']
+    LOSS_TYPE: hard_pixel_mining
+    LOSS_WEIGHT: 1.0
+    MASK_DIM: 256
+    NAME: MaskDINOHead
+    NORM: GN
+    NUM_CLASSES: 1
+    NUM_FEATURE_LEVELS: 3
+    PIXEL_DECODER_NAME: MaskDINOEncoder
+    PROJECT_CHANNELS: [48]
+    PROJECT_FEATURES: ['res2']
+    TOTAL_NUM_FEATURE_LEVELS: 3
+    TRANSFORMER_ENC_LAYERS: 1
+    USE_DEPTHWISE_SEPARABLE_CONV: False
+  SWIN:
+    APE: False
+    ATTN_DROP_RATE: 0.0
+    DEPTHS: [2, 2, 6, 2]
+    DROP_PATH_RATE: 0.3
+    DROP_RATE: 0.0
+    EMBED_DIM: 96
+    MLP_RATIO: 4.0
+    NUM_HEADS: [3, 6, 12, 24]
+    OUT_FEATURES: ['res2', 'res3', 'res4', 'res5']
+    PATCH_NORM: True
+    PATCH_SIZE: 4
+    PRETRAIN_IMG_SIZE: 224
+    QKV_BIAS: True
+    QK_SCALE: None
+    USE_CHECKPOINT: False
+    WINDOW_SIZE: 7
+  WEIGHTS: 
+OUTPUT_DIR: /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output
+SEED: -1
+SOLVER:
+  AMP:
+    ENABLED: True
+  BACKBONE_MULTIPLIER: 0.1
+  BASE_LR: 0.0001
+  BASE_LR_END: 0.0
+  BIAS_LR_FACTOR: 1.0
+  CHECKPOINT_PERIOD: 1000
+  CLIP_GRADIENTS:
+    CLIP_TYPE: full_model
+    CLIP_VALUE: 0.01
+    ENABLED: True
+    NORM_TYPE: 2.0
+  GAMMA: 0.1
+  IMS_PER_BATCH: 1
+  LR_SCHEDULER_NAME: WarmupMultiStepLR
+  MAX_ITER: 12
+  MOMENTUM: 0.9
+  NESTEROV: False
+  NUM_DECAYS: 3
+  OPTIMIZER: ADAMW
+  POLY_LR_CONSTANT_ENDING: 0.0
+  POLY_LR_POWER: 0.9
+  REFERENCE_WORLD_SIZE: 0
+  RESCALE_INTERVAL: False
+  STEPS: ()
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 0
+  WARMUP_METHOD: linear
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: None
+  WEIGHT_DECAY_EMBED: 0.0
+  WEIGHT_DECAY_NORM: 0.0
+TEST:
+  AUG:
+    ENABLED: False
+    FLIP: True
+    MAX_SIZE: 4000
+    MIN_SIZES: (400, 500, 600, 700, 800, 900, 1000, 1100, 1200)
+  DETECTIONS_PER_IMAGE: 100
+  EVAL_PERIOD: 0
+  EXPECTED_RESULTS: []
+  KEYPOINT_OKS_SIGMAS: []
+  PRECISE_BN:
+    ENABLED: False
+    NUM_ITER: 200
+VERSION: 2
+VIS_PERIOD: 0
+criterion.weight_dict  {'loss_ce': 4.0, 'loss_mask': 5.0, 'loss_dice': 5.0, 'loss_bbox': 5.0, 'loss_giou': 2.0, 'loss_ce_interm': 4.0, 'loss_mask_interm': 5.0, 'loss_dice_interm': 5.0, 'loss_bbox_interm': 5.0, 'loss_giou_interm': 2.0, 'loss_ce_dn': 4.0, 'loss_mask_dn': 5.0, 'loss_dice_dn': 5.0, 'loss_bbox_dn': 5.0, 'loss_giou_dn': 2.0, 'loss_ce_interm_dn': 4.0, 'loss_mask_interm_dn': 5.0, 'loss_dice_interm_dn': 5.0, 'loss_bbox_interm_dn': 5.0, 'loss_giou_interm_dn': 2.0, 'loss_ce_0': 4.0, 'loss_mask_0': 5.0, 'loss_dice_0': 5.0, 'loss_bbox_0': 5.0, 'loss_giou_0': 2.0, 'loss_ce_interm_0': 4.0, 'loss_mask_interm_0': 5.0, 'loss_dice_interm_0': 5.0, 'loss_bbox_interm_0': 5.0, 'loss_giou_interm_0': 2.0, 'loss_ce_dn_0': 4.0, 'loss_mask_dn_0': 5.0, 'loss_dice_dn_0': 5.0, 'loss_bbox_dn_0': 5.0, 'loss_giou_dn_0': 2.0, 'loss_ce_interm_dn_0': 4.0, 'loss_mask_interm_dn_0': 5.0, 'loss_dice_interm_dn_0': 5.0, 'loss_bbox_interm_dn_0': 5.0, 'loss_giou_interm_dn_0': 2.0, 'loss_ce_1': 4.0, 'loss_mask_1': 5.0, 'loss_dice_1': 5.0, 'loss_bbox_1': 5.0, 'loss_giou_1': 2.0, 'loss_ce_interm_1': 4.0, 'loss_mask_interm_1': 5.0, 'loss_dice_interm_1': 5.0, 'loss_bbox_interm_1': 5.0, 'loss_giou_interm_1': 2.0, 'loss_ce_dn_1': 4.0, 'loss_mask_dn_1': 5.0, 'loss_dice_dn_1': 5.0, 'loss_bbox_dn_1': 5.0, 'loss_giou_dn_1': 2.0, 'loss_ce_interm_dn_1': 4.0, 'loss_mask_interm_dn_1': 5.0, 'loss_dice_interm_dn_1': 5.0, 'loss_bbox_interm_dn_1': 5.0, 'loss_giou_interm_dn_1': 2.0}
+[07/03 22:39:57 d2.engine.defaults]: Model:
+MaskDINO(
+  (backbone): ResNet(
+    (stem): BasicStem(
+      (conv1): Conv2d(
+        3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False
+        (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+      )
+    )
+    (res2): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+    )
+    (res3): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+    )
+    (res4): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (4): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (5): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+    )
+    (res5): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+    )
+  )
+  (sem_seg_head): MaskDINOHead(
+    (pixel_decoder): MaskDINOEncoder(
+      (input_proj): ModuleList(
+        (0): Sequential(
+          (0): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (1): Sequential(
+          (0): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (2): Sequential(
+          (0): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+      )
+      (transformer): MSDeformAttnTransformerEncoderOnly(
+        (encoder): MSDeformAttnTransformerEncoder(
+          (layers): ModuleList(
+            (0): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+        )
+      )
+      (pe_layer): Positional encoding PositionEmbeddingSine
+          num_pos_feats: 128
+          temperature: 10000
+          normalize: True
+          scale: 6.283185307179586
+      (mask_features): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (adapter_1): Conv2d(
+        256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+      (layer_1): Conv2d(
+        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+    )
+    (predictor): MaskDINODecoder(
+      (enc_output): Linear(in_features=256, out_features=256, bias=True)
+      (enc_output_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (input_proj): ModuleList(
+        (0-2): 3 x Sequential()
+      )
+      (class_embed): Linear(in_features=256, out_features=1, bias=True)
+      (label_enc): Embedding(1, 256)
+      (mask_embed): MLP(
+        (layers): ModuleList(
+          (0-2): 3 x Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+      (decoder_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (decoder): TransformerDecoder(
+        (layers): ModuleList(
+          (0-1): 2 x DeformableTransformerDecoderLayer(
+            (cross_attn): MSDeformAttn(
+              (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+              (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+              (value_proj): Linear(in_features=256, out_features=256, bias=True)
+              (output_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (dropout1): Dropout(p=0.0, inplace=False)
+            (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (self_attn): MultiheadAttention(
+              (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+            )
+            (dropout2): Dropout(p=0.0, inplace=False)
+            (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (linear1): Linear(in_features=256, out_features=2048, bias=True)
+            (dropout3): Dropout(p=0.0, inplace=False)
+            (linear2): Linear(in_features=2048, out_features=256, bias=True)
+            (dropout4): Dropout(p=0.0, inplace=False)
+            (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ref_point_head): MLP(
+          (layers): ModuleList(
+            (0): Linear(in_features=512, out_features=256, bias=True)
+            (1): Linear(in_features=256, out_features=256, bias=True)
+          )
+        )
+        (bbox_embed): ModuleList(
+          (0-1): 2 x MLP(
+            (layers): ModuleList(
+              (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+              (2): Linear(in_features=256, out_features=4, bias=True)
+            )
+          )
+        )
+      )
+      (_bbox_embed): MLP(
+        (layers): ModuleList(
+          (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+          (2): Linear(in_features=256, out_features=4, bias=True)
+        )
+      )
+      (bbox_embed): ModuleList(
+        (0-1): 2 x MLP(
+          (layers): ModuleList(
+            (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+            (2): Linear(in_features=256, out_features=4, bias=True)
+          )
+        )
+      )
+    )
+  )
+  (criterion): Criterion SetCriterion
+      matcher: Matcher HungarianMatcher
+          cost_class: 4.0
+          cost_mask: 5.0
+          cost_dice: 5.0
+      losses: ['labels', 'masks', 'boxes']
+      weight_dict: {'loss_ce': 4.0, 'loss_mask': 5.0, 'loss_dice': 5.0, 'loss_bbox': 5.0, 'loss_giou': 2.0, 'loss_ce_interm': 4.0, 'loss_mask_interm': 5.0, 'loss_dice_interm': 5.0, 'loss_bbox_interm': 5.0, 'loss_giou_interm': 2.0, 'loss_ce_dn': 4.0, 'loss_mask_dn': 5.0, 'loss_dice_dn': 5.0, 'loss_bbox_dn': 5.0, 'loss_giou_dn': 2.0, 'loss_ce_interm_dn': 4.0, 'loss_mask_interm_dn': 5.0, 'loss_dice_interm_dn': 5.0, 'loss_bbox_interm_dn': 5.0, 'loss_giou_interm_dn': 2.0, 'loss_ce_0': 4.0, 'loss_mask_0': 5.0, 'loss_dice_0': 5.0, 'loss_bbox_0': 5.0, 'loss_giou_0': 2.0, 'loss_ce_interm_0': 4.0, 'loss_mask_interm_0': 5.0, 'loss_dice_interm_0': 5.0, 'loss_bbox_interm_0': 5.0, 'loss_giou_interm_0': 2.0, 'loss_ce_dn_0': 4.0, 'loss_mask_dn_0': 5.0, 'loss_dice_dn_0': 5.0, 'loss_bbox_dn_0': 5.0, 'loss_giou_dn_0': 2.0, 'loss_ce_interm_dn_0': 4.0, 'loss_mask_interm_dn_0': 5.0, 'loss_dice_interm_dn_0': 5.0, 'loss_bbox_interm_dn_0': 5.0, 'loss_giou_interm_dn_0': 2.0, 'loss_ce_1': 4.0, 'loss_mask_1': 5.0, 'loss_dice_1': 5.0, 'loss_bbox_1': 5.0, 'loss_giou_1': 2.0, 'loss_ce_interm_1': 4.0, 'loss_mask_interm_1': 5.0, 'loss_dice_interm_1': 5.0, 'loss_bbox_interm_1': 5.0, 'loss_giou_interm_1': 2.0, 'loss_ce_dn_1': 4.0, 'loss_mask_dn_1': 5.0, 'loss_dice_dn_1': 5.0, 'loss_bbox_dn_1': 5.0, 'loss_giou_dn_1': 2.0, 'loss_ce_interm_dn_1': 4.0, 'loss_mask_interm_dn_1': 5.0, 'loss_dice_interm_dn_1': 5.0, 'loss_bbox_interm_dn_1': 5.0, 'loss_giou_interm_dn_1': 2.0}
+      num_classes: 1
+      eos_coef: 0.1
+      num_points: 1024
+      oversample_ratio: 3.0
+      importance_sample_ratio: 0.75
+)
+[07/03 22:39:57 maskdino.data.dataset_mappers.coco_instance_new_baseline_dataset_mapper]: [COCOInstanceNewBaselineDatasetMapper] Full TransformGens used in training: [RandomFlip(), ResizeScale(min_scale=1.0, max_scale=1.0, target_height=384, target_width=384), FixedSizeCrop(crop_size=(384, 384))]
+[07/03 22:39:57 d2.data.datasets.coco]: Loaded 12 images in COCO format from /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train.json
+[07/03 22:39:57 d2.data.build]: Removed 0 images with no usable annotations. 12 images left.
+[07/03 22:39:57 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+| epiphysis  | 311          |
+|            |              |
+[07/03 22:39:57 d2.data.build]: Using training sampler TrainingSampler
+[07/03 22:39:57 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[07/03 22:39:57 d2.data.common]: Serializing 12 elements to byte tensors and concatenating them all ...
+[07/03 22:39:57 d2.data.common]: Serialized dataset takes 0.03 MiB
+[07/03 22:39:57 d2.data.build]: Making batched data loader with batch_size=1
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:471: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  grad_scaler = GradScaler()
+[07/03 22:39:57 d2.checkpoint.detection_checkpoint]: [DetectionCheckpointer] Loading from  ...
+[07/03 22:39:57 fvcore.common.checkpoint]: No checkpoint found. Initializing model from scratch
+[07/03 22:39:57 d2.engine.train_loop]: Starting training from iteration 0
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/hooks.py:359: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  self.scheduler.step()
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py:490: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=self.precision):
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/modeling/matcher.py:159: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+[07/03 22:40:01 fvcore.common.checkpoint]: Saving checkpoint to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output/model_final.pth
+[07/03 22:40:01 d2.utils.events]:  eta: 0:00:00  iter: 11  total_loss: 56.39  loss_ce: 0.5376  loss_mask: 2.828  loss_dice: 3.165  loss_bbox: 3.5  loss_giou: 1.637  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 1.119  loss_mask_0: 2.417  loss_dice_0: 3.657  loss_bbox_0: 3.482  loss_giou_0: 1.635  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.8502  loss_mask_1: 2.592  loss_dice_1: 3.272  loss_bbox_1: 3.496  loss_giou_1: 1.635  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 1.139  loss_mask_interm: 2.465  loss_dice_interm: 3.658  loss_bbox_interm: 10.27  loss_giou_interm: 2.018    time: 0.2248  last_time: 0.1715  data_time: 0.0418  last_data_time: 0.0365   lr: 0.0001  max_mem: 766M
+[07/03 22:40:01 d2.engine.hooks]: Overall training speed: 10 iterations in 0:00:02 (0.2248 s / it)
+[07/03 22:40:01 d2.engine.hooks]: Total training time: 0:00:02 (0:00:00 on hooks)
+[07/03 22:40:01 d2.data.datasets.coco]: Loaded 4 images in COCO format from /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val.json
+[07/03 22:40:01 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+| epiphysis  | 109          |
+|            |              |
+[07/03 22:40:01 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[07/03 22:40:01 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[07/03 22:40:01 d2.data.common]: Serializing 4 elements to byte tensors and concatenating them all ...
+[07/03 22:40:01 d2.data.common]: Serialized dataset takes 0.01 MiB
+[07/03 22:40:01 d2.evaluation.evaluator]: Start inference on 4 batches
+Traceback (most recent call last):
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r190_maskdino_tiny_train_smoke/r190_register_and_train.py", line 45, in <module>
+    result = main(args)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/train_net.py", line 364, in main
+    return trainer.train()
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/defaults.py", line 520, in train
+    super().train(self.start_iter, self.max_iter)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py", line 162, in train
+    self.after_train()
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/train_loop.py", line 171, in after_train
+    h.after_train()
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/hooks.py", line 561, in after_train
+    self._do_eval()
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/hooks.py", line 529, in _do_eval
+    results = self._func()
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/defaults.py", line 489, in test_and_save_results
+    self._last_eval_results = self.test(self.cfg, self.model)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/engine/defaults.py", line 653, in test
+    results_i = inference_on_dataset(model, data_loader, evaluator)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/evaluation/evaluator.py", line 165, in inference_on_dataset
+    outputs = model(inputs)
+  File "/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/maskdino.py", line 329, in forward
+    instance_r = retry_if_cuda_oom(self.instance_inference)(mask_cls_result, mask_pred_result, mask_box_result)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2/utils/memory.py", line 70, in wrapped
+    return func(*args, **kwargs)
+  File "/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/maskdino/maskdino.py", line 460, in instance_inference
+    scores_per_image, topk_indices = scores.flatten(0, 1).topk(self.test_topk_per_image, sorted=False)  # select 100
+RuntimeError: selected index k out of range

@@ -1,0 +1,24 @@
+{
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "gate_pass": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "clean_test_reference": 24,
+    "train_review_queue": 64,
+    "val_audit_queue": 6,
+    "reviewed_train": 64,
+    "confirmed_train_for_variant": 54,
+    "confirmed_train_p0": 19,
+    "reviewed_val": 6
+  },
+  "train_decision_counts": {
+    "label_ok_protocol_clear": 54,
+    "label_boundary_ambiguous": 9,
+    "exclude_from_training_variant": 1
+  },
+  "val_decision_counts": {
+    "label_ok_protocol_clear": 6
+  },
+  "next_action": "build_isolated_corrected_variant"
+}

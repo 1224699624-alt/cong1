@@ -1,0 +1,1784 @@
+{
+  "status": "overfit_pass",
+  "run_id": "R149",
+  "architecture": "hf_mask2former",
+  "target_mode": "union",
+  "thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.35,
+    0.5,
+    0.65
+  ],
+  "config": {
+    "num_queries": 64,
+    "hidden_dim": 128,
+    "encoder_layers": 2,
+    "decoder_layers": 4,
+    "steps": 900,
+    "lr": 0.0002,
+    "img_size": 384,
+    "class_weight": 1.0,
+    "mask_weight": 12.0,
+    "dice_weight": 12.0,
+    "no_object_weight": 0.05
+  },
+  "train_images": [
+    "10003.png"
+  ],
+  "val_images": [
+    "10375.png",
+    "10520.png"
+  ],
+  "clean_test_v2_images": [
+    "10793.png",
+    "11099.png"
+  ],
+  "clean_test_policy": "clean-test-v2 used only for post-overfit diagnostic inference, never for training or success tuning",
+  "trace": [
+    {
+      "step": 1,
+      "loss": 83.5965805053711,
+      "train_best_threshold_dice": 0.029806258096083265,
+      "train_union_max_mean": 0.49668967723846436,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.029806258096083265,
+          "iou": 0.015128592413089123,
+          "precision": 0.015128592413089123,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "boundary_iou": 0.0,
+          "threshold": 0.05,
+          "selected_fraction": 1.0
+        },
+        "per_image": [
+          {
+            "dice": 0.029806258096083265,
+            "iou": 0.015128592413089123,
+            "precision": 0.015128592413089123,
+            "recall": 1.0,
+            "specificity": 0.0,
+            "boundary_iou": 0.0,
+            "threshold": 0.05,
+            "selected_fraction": 1.0,
+            "all_thresholds": [
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.05,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.1,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.15,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.2,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.25,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.029806258096083265,
+                "iou": 0.015128592413089123,
+                "precision": 0.015128592413089123,
+                "recall": 1.0,
+                "specificity": 0.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.35,
+                "selected_fraction": 1.0
+              },
+              {
+                "dice": 0.0,
+                "iou": 0.0,
+                "precision": 1.0,
+                "recall": 0.0,
+                "specificity": 1.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.5,
+                "selected_fraction": 0.0
+              },
+              {
+                "dice": 0.0,
+                "iou": 0.0,
+                "precision": 1.0,
+                "recall": 0.0,
+                "specificity": 1.0,
+                "boundary_iou": 0.0,
+                "threshold": 0.65,
+                "selected_fraction": 0.0
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 0.49668967723846436,
+              "union_mean": 0.4896836578845978,
+              "foreground_score_max": 0.21461810171604156,
+              "kept_queries_005": 64.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 100,
+      "loss": 29.572872161865234,
+      "train_best_threshold_dice": 0.625829504849413,
+      "train_union_max_mean": 0.9788432121276855,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.625829504849413,
+          "iou": 0.4554234769687964,
+          "precision": 0.5516974339654234,
+          "recall": 0.722976494144107,
+          "specificity": 0.9909757019331522,
+          "boundary_iou": 0.03332302458636153,
+          "threshold": 0.5,
+          "selected_fraction": 0.01982538984373055
+        },
+        "per_image": [
+          {
+            "dice": 0.625829504849413,
+            "iou": 0.4554234769687964,
+            "precision": 0.5516974339654234,
+            "recall": 0.722976494144107,
+            "specificity": 0.9909757019331522,
+            "boundary_iou": 0.03332302458636153,
+            "threshold": 0.5,
+            "selected_fraction": 0.01982538984373055,
+            "all_thresholds": [
+              {
+                "dice": 0.5067497570729905,
+                "iou": 0.3393602374908575,
+                "precision": 0.35827352834302323,
+                "recall": 0.8653830329959681,
+                "specificity": 0.9761898241443685,
+                "boundary_iou": 0.005058693819313833,
+                "threshold": 0.05,
+                "selected_fraction": 0.03654198859722649
+              },
+              {
+                "dice": 0.5477748691099477,
+                "iou": 0.37719693555655703,
+                "precision": 0.4042264367666062,
+                "recall": 0.8494198963218959,
+                "specificity": 0.9807691740527942,
+                "boundary_iou": 0.010285793179621704,
+                "threshold": 0.1,
+                "selected_fraction": 0.03179041801870586
+              },
+              {
+                "dice": 0.5665112809994406,
+                "iou": 0.39519758578527014,
+                "precision": 0.4291182327933221,
+                "recall": 0.8333196192983899,
+                "specificity": 0.9829705820269891,
+                "boundary_iou": 0.014687368862778011,
+                "threshold": 0.15,
+                "selected_fraction": 0.02937873971966107
+              },
+              {
+                "dice": 0.5794879269299907,
+                "iou": 0.40794297909598337,
+                "precision": 0.4487029011676899,
+                "recall": 0.8178776159521655,
+                "specificity": 0.9845640222104158,
+                "boundary_iou": 0.014934836209933074,
+                "threshold": 0.2,
+                "selected_fraction": 0.027575790268637393
+              },
+              {
+                "dice": 0.5914834445093811,
+                "iou": 0.41993361185829564,
+                "precision": 0.46748323590780944,
+                "recall": 0.8050138511752928,
+                "specificity": 0.9859139382198552,
+                "boundary_iou": 0.024757804090419805,
+                "threshold": 0.25,
+                "selected_fraction": 0.026051685934089644
+              },
+              {
+                "dice": 0.6095110948417868,
+                "iou": 0.43834301200154857,
+                "precision": 0.5016837403849562,
+                "recall": 0.776378946213555,
+                "specificity": 0.9881541078272799,
+                "boundary_iou": 0.031346578366445915,
+                "threshold": 0.35,
+                "selected_fraction": 0.02341220113363818
+              },
+              {
+                "dice": 0.625829504849413,
+                "iou": 0.4554234769687964,
+                "precision": 0.5516974339654234,
+                "recall": 0.722976494144107,
+                "specificity": 0.9909757019331522,
+                "boundary_iou": 0.03332302458636153,
+                "threshold": 0.5,
+                "selected_fraction": 0.01982538984373055
+              },
+              {
+                "dice": 0.6042961905379973,
+                "iou": 0.4329687906855634,
+                "precision": 0.5735721677425714,
+                "recall": 0.638498038893003,
+                "specificity": 0.9927081784096861,
+                "boundary_iou": 0.021329285828407093,
+                "threshold": 0.65,
+                "selected_fraction": 0.01684108318049412
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 0.9788432121276855,
+              "union_mean": 0.020915023982524872,
+              "foreground_score_max": 0.24838393926620483,
+              "kept_queries_005": 64.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 200,
+      "loss": 18.5787410736084,
+      "train_best_threshold_dice": 0.7305383670536977,
+      "train_union_max_mean": 0.9999991655349731,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.7305383670536977,
+          "iou": 0.5754710092011099,
+          "precision": 0.6324765745701157,
+          "recall": 0.8645876189692532,
+          "specificity": 0.9922826430883585,
+          "boundary_iou": 0.06798066662481954,
+          "threshold": 0.65,
+          "selected_fraction": 0.020680597857208063
+        },
+        "per_image": [
+          {
+            "dice": 0.7305383670536977,
+            "iou": 0.5754710092011099,
+            "precision": 0.6324765745701157,
+            "recall": 0.8645876189692532,
+            "specificity": 0.9922826430883585,
+            "boundary_iou": 0.06798066662481954,
+            "threshold": 0.65,
+            "selected_fraction": 0.020680597857208063,
+            "all_thresholds": [
+              {
+                "dice": 0.5867088498176097,
+                "iou": 0.4151365765942091,
+                "precision": 0.42835144584548196,
+                "recall": 0.9308264077456869,
+                "specificity": 0.980918322076309,
+                "boundary_iou": 0.023004406189158725,
+                "threshold": 0.05,
+                "selected_fraction": 0.032875092325950026
+              },
+              {
+                "dice": 0.6185447307309521,
+                "iou": 0.4477486491895137,
+                "precision": 0.4657562762812773,
+                "recall": 0.9205134534682794,
+                "specificity": 0.9837807844259129,
+                "boundary_iou": 0.030506073977229396,
+                "threshold": 0.1,
+                "selected_fraction": 0.02989991452069346
+              },
+              {
+                "dice": 0.6379259230923714,
+                "iou": 0.4683489201561491,
+                "precision": 0.4897075233452752,
+                "recall": 0.9148084149318413,
+                "specificity": 0.9853569504032264,
+                "boundary_iou": 0.03609483960948396,
+                "threshold": 0.15,
+                "selected_fraction": 0.028261284513307384
+              },
+              {
+                "dice": 0.6524772447724477,
+                "iou": 0.48420499189437866,
+                "precision": 0.508762237976859,
+                "recall": 0.9093502290243836,
+                "specificity": 0.986512636924416,
+                "boundary_iou": 0.03820288217010455,
+                "threshold": 0.2,
+                "selected_fraction": 0.027040507232545207
+              },
+              {
+                "dice": 0.6638667311256143,
+                "iou": 0.49685667335031886,
+                "precision": 0.5245507647742285,
+                "recall": 0.9039468992566994,
+                "specificity": 0.9874142662191102,
+                "boundary_iou": 0.04058302372106316,
+                "threshold": 0.25,
+                "selected_fraction": 0.026070773546229366
+              },
+              {
+                "dice": 0.6830055091225203,
+                "iou": 0.5186092378165161,
+                "precision": 0.5524661549670445,
+                "recall": 0.8943196467264598,
+                "specificity": 0.9888716193641323,
+                "boundary_iou": 0.04356967643966826,
+                "threshold": 0.35,
+                "selected_fraction": 0.024489821323352447
+              },
+              {
+                "dice": 0.7074781995948207,
+                "iou": 0.547362682295216,
+                "precision": 0.5909684539685459,
+                "recall": 0.8812090293206067,
+                "specificity": 0.9906310604550869,
+                "boundary_iou": 0.05326231691078562,
+                "threshold": 0.5,
+                "selected_fraction": 0.022558652912520644
+              },
+              {
+                "dice": 0.7305383670536977,
+                "iou": 0.5754710092011099,
+                "precision": 0.6324765745701157,
+                "recall": 0.8645876189692532,
+                "specificity": 0.9922826430883585,
+                "boundary_iou": 0.06798066662481954,
+                "threshold": 0.65,
+                "selected_fraction": 0.020680597857208063
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 0.9999991655349731,
+              "union_mean": 0.022970950230956078,
+              "foreground_score_max": 0.2455907016992569,
+              "kept_queries_005": 64.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 300,
+      "loss": 16.266145706176758,
+      "train_best_threshold_dice": 0.8174926649230647,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8174926649230647,
+          "iou": 0.691321432581116,
+          "precision": 0.7921984355701935,
+          "recall": 0.8444554156723991,
+          "specificity": 0.9965974027177803,
+          "boundary_iou": 0.13171435742971888,
+          "threshold": 0.15,
+          "selected_fraction": 0.016126542569524553
+        },
+        "per_image": [
+          {
+            "dice": 0.8174926649230647,
+            "iou": 0.691321432581116,
+            "precision": 0.7921984355701935,
+            "recall": 0.8444554156723991,
+            "specificity": 0.9965974027177803,
+            "boundary_iou": 0.13171435742971888,
+            "threshold": 0.15,
+            "selected_fraction": 0.016126542569524553,
+            "all_thresholds": [
+              {
+                "dice": 0.8035718702847107,
+                "iou": 0.6716424082037711,
+                "precision": 0.7317490708413109,
+                "recall": 0.8910282783400532,
+                "specificity": 0.994982475107237,
+                "boundary_iou": 0.11545378252008152,
+                "threshold": 0.05,
+                "selected_fraction": 0.018421620455281045
+              },
+              {
+                "dice": 0.8142687461268333,
+                "iou": 0.6867228501121492,
+                "precision": 0.7692026245822865,
+                "recall": 0.8649441838777805,
+                "specificity": 0.9960134502867307,
+                "boundary_iou": 0.12815582159915637,
+                "threshold": 0.1,
+                "selected_fraction": 0.01701162684548163
+              },
+              {
+                "dice": 0.8174926649230647,
+                "iou": 0.691321432581116,
+                "precision": 0.7921984355701935,
+                "recall": 0.8444554156723991,
+                "specificity": 0.9965974027177803,
+                "boundary_iou": 0.13171435742971888,
+                "threshold": 0.15,
+                "selected_fraction": 0.016126542569524553
+              },
+              {
+                "dice": 0.817289972899729,
+                "iou": 0.6910315750882178,
+                "precision": 0.8076377172544924,
+                "recall": 0.8271757316437642,
+                "specificity": 0.99697364335337,
+                "boundary_iou": 0.1286604949933875,
+                "threshold": 0.2,
+                "selected_fraction": 0.015494576628463779
+              },
+              {
+                "dice": 0.8148883648449243,
+                "iou": 0.6876047291007261,
+                "precision": 0.8194652465745825,
+                "recall": 0.8103623248032036,
+                "specificity": 0.9972576144489886,
+                "boundary_iou": 0.12377111167128813,
+                "threshold": 0.25,
+                "selected_fraction": 0.014960538436641576
+              },
+              {
+                "dice": 0.8089511124994675,
+                "iou": 0.6791921985646503,
+                "precision": 0.8386128120584079,
+                "recall": 0.7813159987931649,
+                "specificity": 0.9976903122460218,
+                "boundary_iou": 0.12155046628179915,
+                "threshold": 0.35,
+                "selected_fraction": 0.014094956720914214
+              },
+              {
+                "dice": 0.7954042000177216,
+                "iou": 0.6603079639074146,
+                "precision": 0.8616221404575268,
+                "recall": 0.7386379220494254,
+                "specificity": 0.9981777819160971,
+                "boundary_iou": 0.11245210727969349,
+                "threshold": 0.5,
+                "selected_fraction": 0.012969202552760649
+              },
+              {
+                "dice": 0.7770408555820574,
+                "iou": 0.635377607771095,
+                "precision": 0.8850872887891748,
+                "recall": 0.6925039084999589,
+                "specificity": 0.9986189061551367,
+                "boundary_iou": 0.10673319940379755,
+                "threshold": 0.65,
+                "selected_fraction": 0.011836809215167183
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.013085286132991314,
+              "foreground_score_max": 0.25747230648994446,
+              "kept_queries_005": 64.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 400,
+      "loss": 11.72685718536377,
+      "train_best_threshold_dice": 0.8421081977724808,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8421081977724808,
+          "iou": 0.7272771049526883,
+          "precision": 0.8561791383219954,
+          "recall": 0.8284922789983269,
+          "specificity": 0.9978622116629541,
+          "boundary_iou": 0.14479811188365121,
+          "threshold": 0.15,
+          "selected_fraction": 0.014639368614986265
+        },
+        "per_image": [
+          {
+            "dice": 0.8421081977724808,
+            "iou": 0.7272771049526883,
+            "precision": 0.8561791383219954,
+            "recall": 0.8284922789983269,
+            "specificity": 0.9978622116629541,
+            "boundary_iou": 0.14479811188365121,
+            "threshold": 0.15,
+            "selected_fraction": 0.014639368614986265,
+            "all_thresholds": [
+              {
+                "dice": 0.8412083449827589,
+                "iou": 0.7259357981571267,
+                "precision": 0.8173445099865466,
+                "recall": 0.8665075838613236,
+                "specificity": 0.9970254659717099,
+                "boundary_iou": 0.1464067754390335,
+                "threshold": 0.05,
+                "selected_fraction": 0.01603857357444584
+              },
+              {
+                "dice": 0.8419350861088657,
+                "iou": 0.7270189054255496,
+                "precision": 0.8411168902272105,
+                "recall": 0.8427548753394224,
+                "specificity": 0.9975546465297174,
+                "boundary_iou": 0.14389626818469323,
+                "threshold": 0.1,
+                "selected_fraction": 0.015158053727478693
+              },
+              {
+                "dice": 0.8421081977724808,
+                "iou": 0.7272771049526883,
+                "precision": 0.8561791383219954,
+                "recall": 0.8284922789983269,
+                "specificity": 0.9978622116629541,
+                "boundary_iou": 0.14479811188365121,
+                "threshold": 0.15,
+                "selected_fraction": 0.014639368614986265
+              },
+              {
+                "dice": 0.8407127124865872,
+                "iou": 0.7251979052490561,
+                "precision": 0.8662748406994676,
+                "recall": 0.8166159247373762,
+                "specificity": 0.9980636036269092,
+                "boundary_iou": 0.1447250352518908,
+                "threshold": 0.2,
+                "selected_fraction": 0.014261350905001784
+              },
+              {
+                "dice": 0.839946920080476,
+                "iou": 0.7240590405904059,
+                "precision": 0.8753568879371877,
+                "recall": 0.8072903809758907,
+                "specificity": 0.9982342390775405,
+                "boundary_iou": 0.14565862469358792,
+                "threshold": 0.25,
+                "selected_fraction": 0.013952214577956298
+              },
+              {
+                "dice": 0.8377378205407288,
+                "iou": 0.7207821396463889,
+                "precision": 0.8895155325443787,
+                "recall": 0.7916563811404591,
+                "specificity": 0.9984895602703371,
+                "boundary_iou": 0.147911227154047,
+                "threshold": 0.35,
+                "selected_fraction": 0.013464235624123423
+              },
+              {
+                "dice": 0.8341954321115739,
+                "iou": 0.7155534084263521,
+                "precision": 0.9074551786405263,
+                "recall": 0.7718807427521326,
+                "specificity": 0.998790805572069,
+                "boundary_iou": 0.1468568409931326,
+                "threshold": 0.5,
+                "selected_fraction": 0.012868370166892122
+              },
+              {
+                "dice": 0.8286159478389785,
+                "iou": 0.7073819609463787,
+                "precision": 0.9238631763594657,
+                "recall": 0.7511725499876574,
+                "specificity": 0.9990490760195679,
+                "boundary_iou": 0.1438718756282249,
+                "threshold": 0.65,
+                "selected_fraction": 0.01230072117978041
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.012996961362659931,
+              "foreground_score_max": 0.18707361817359924,
+              "kept_queries_005": 64.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 500,
+      "loss": 7.553536415100098,
+      "train_best_threshold_dice": 0.8843851011306447,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8843851011306447,
+          "iou": 0.792733318663048,
+          "precision": 0.8795507568770007,
+          "recall": 0.889272881867303,
+          "specificity": 0.9981293298745598,
+          "boundary_iou": 0.20528506559031282,
+          "threshold": 0.15,
+          "selected_fraction": 0.01529581649335668
+        },
+        "per_image": [
+          {
+            "dice": 0.8843851011306447,
+            "iou": 0.792733318663048,
+            "precision": 0.8795507568770007,
+            "recall": 0.889272881867303,
+            "specificity": 0.9981293298745598,
+            "boundary_iou": 0.20528506559031282,
+            "threshold": 0.15,
+            "selected_fraction": 0.01529581649335668,
+            "all_thresholds": [
+              {
+                "dice": 0.8804449049723901,
+                "iou": 0.7864239186466095,
+                "precision": 0.8436730179478156,
+                "recall": 0.9205683096080529,
+                "specificity": 0.9973797978580827,
+                "boundary_iou": 0.19005328596802842,
+                "threshold": 0.05,
+                "selected_fraction": 0.01650746491613899
+              },
+              {
+                "dice": 0.8839484932390655,
+                "iou": 0.7920319876674053,
+                "precision": 0.8667070824217823,
+                "recall": 0.9018897940151952,
+                "specificity": 0.9978693741386596,
+                "boundary_iou": 0.20202715385096665,
+                "threshold": 0.1,
+                "selected_fraction": 0.015742715586280157
+              },
+              {
+                "dice": 0.8843851011306447,
+                "iou": 0.792733318663048,
+                "precision": 0.8795507568770007,
+                "recall": 0.889272881867303,
+                "specificity": 0.9981293298745598,
+                "boundary_iou": 0.20528506559031282,
+                "threshold": 0.15,
+                "selected_fraction": 0.01529581649335668
+              },
+              {
+                "dice": 0.8838844912706512,
+                "iou": 0.7919292262831443,
+                "precision": 0.8888364997919844,
+                "recall": 0.8789873556597823,
+                "specificity": 0.9983113410218999,
+                "boundary_iou": 0.2065638291119152,
+                "threshold": 0.2,
+                "selected_fraction": 0.01496095338473157
+              },
+              {
+                "dice": 0.8834166237454236,
+                "iou": 0.7911783773001546,
+                "precision": 0.8969133359715077,
+                "recall": 0.870320085575578,
+                "specificity": 0.998463438300117,
+                "boundary_iou": 0.20956821665815023,
+                "threshold": 0.25,
+                "selected_fraction": 0.014680033527805671
+              },
+              {
+                "dice": 0.8810126582278481,
+                "iou": 0.7873303167420814,
+                "precision": 0.9094784792384512,
+                "recall": 0.8542746646918457,
+                "specificity": 0.9986939014889944,
+                "boundary_iou": 0.20987813527629118,
+                "threshold": 0.35,
+                "selected_fraction": 0.014210312289932529
+              },
+              {
+                "dice": 0.8755680588617183,
+                "iou": 0.7786759045419553,
+                "precision": 0.9235756026296567,
+                "recall": 0.8323047807125813,
+                "specificity": 0.9989420602060854,
+                "boundary_iou": 0.20680884367051458,
+                "threshold": 0.5,
+                "selected_fraction": 0.01363353444484095
+              },
+              {
+                "dice": 0.8688671616555171,
+                "iou": 0.7681389242727533,
+                "precision": 0.9363670934212194,
+                "recall": 0.8104446090128637,
+                "specificity": 0.9991539852225486,
+                "boundary_iou": 0.2027355822976261,
+                "threshold": 0.65,
+                "selected_fraction": 0.013094101927848826
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.013740025460720062,
+              "foreground_score_max": 0.99481600522995,
+              "kept_queries_005": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 600,
+      "loss": 7.212579727172852,
+      "train_best_threshold_dice": 0.8827608847306003,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8827608847306003,
+          "iou": 0.7901270844046132,
+          "precision": 0.8804846103470858,
+          "recall": 0.8850489591047478,
+          "specificity": 0.9981546092005792,
+          "boundary_iou": 0.20238615778624525,
+          "threshold": 0.35,
+          "selected_fraction": 0.015207017602097977
+        },
+        "per_image": [
+          {
+            "dice": 0.8827608847306003,
+            "iou": 0.7901270844046132,
+            "precision": 0.8804846103470858,
+            "recall": 0.8850489591047478,
+            "specificity": 0.9981546092005792,
+            "boundary_iou": 0.20238615778624525,
+            "threshold": 0.35,
+            "selected_fraction": 0.015207017602097977,
+            "all_thresholds": [
+              {
+                "dice": 0.8704942305728581,
+                "iou": 0.7706859532150525,
+                "precision": 0.8141100632684732,
+                "recall": 0.9352697550673359,
+                "specificity": 0.9967195861268744,
+                "boundary_iou": 0.1773062291963861,
+                "threshold": 0.05,
+                "selected_fraction": 0.01738010074939625
+              },
+              {
+                "dice": 0.8761244231220504,
+                "iou": 0.7795564216778025,
+                "precision": 0.8348945263000969,
+                "recall": 0.9216380043336351,
+                "specificity": 0.9972003146433446,
+                "boundary_iou": 0.18620648041996019,
+                "threshold": 0.1,
+                "selected_fraction": 0.016700415777986175
+              },
+              {
+                "dice": 0.8794553146483343,
+                "iou": 0.784846268198872,
+                "precision": 0.8489063576733621,
+                "recall": 0.9122850325022628,
+                "specificity": 0.9975057731660797,
+                "boundary_iou": 0.19215758019270643,
+                "threshold": 0.15,
+                "selected_fraction": 0.016258081114052633
+              },
+              {
+                "dice": 0.8809008575779435,
+                "iou": 0.787151758218148,
+                "precision": 0.8586047965002734,
+                "recall": 0.9043857483748868,
+                "specificity": 0.9977122209952386,
+                "boundary_iou": 0.1952688172043011,
+                "threshold": 0.2,
+                "selected_fraction": 0.015935251500037346
+              },
+              {
+                "dice": 0.8818131594195087,
+                "iou": 0.788609852501687,
+                "precision": 0.8666896222916777,
+                "recall": 0.8974738747634329,
+                "specificity": 0.9978794858690674,
+                "boundary_iou": 0.19740660697746218,
+                "threshold": 0.25,
+                "selected_fraction": 0.015665950189631277
+              },
+              {
+                "dice": 0.8827608847306003,
+                "iou": 0.7901270844046132,
+                "precision": 0.8804846103470858,
+                "recall": 0.8850489591047478,
+                "specificity": 0.9981546092005792,
+                "boundary_iou": 0.20238615778624525,
+                "threshold": 0.35,
+                "selected_fraction": 0.015207017602097977
+              },
+              {
+                "dice": 0.8810853728183199,
+                "iou": 0.7874464694751518,
+                "precision": 0.8951375523604664,
+                "recall": 0.867467566307359,
+                "specificity": 0.9984390016182982,
+                "boundary_iou": 0.20513469078032123,
+                "threshold": 0.5,
+                "selected_fraction": 0.014660945915665951
+              },
+              {
+                "dice": 0.8780273257381213,
+                "iou": 0.7825746079919069,
+                "precision": 0.9094462732189043,
+                "recall": 0.848706766504841,
+                "specificity": 0.9987019066089006,
+                "boundary_iou": 0.20502839640099546,
+                "threshold": 0.65,
+                "selected_fraction": 0.014118193813953874
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.014700774103403091,
+              "foreground_score_max": 0.9977733492851257,
+              "kept_queries_005": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 700,
+      "loss": 7.513136863708496,
+      "train_best_threshold_dice": 0.8862797444733509,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8862797444733509,
+          "iou": 0.7957830883252207,
+          "precision": 0.8802965528437686,
+          "recall": 0.8923448256946158,
+          "specificity": 0.9981360710281649,
+          "boundary_iou": 0.20343785417453722,
+          "threshold": 0.5,
+          "selected_fraction": 0.0153356515099961
+        },
+        "per_image": [
+          {
+            "dice": 0.8862797444733509,
+            "iou": 0.7957830883252207,
+            "precision": 0.8802965528437686,
+            "recall": 0.8923448256946158,
+            "specificity": 0.9981360710281649,
+            "boundary_iou": 0.20343785417453722,
+            "threshold": 0.5,
+            "selected_fraction": 0.0153356515099961,
+            "all_thresholds": [
+              {
+                "dice": 0.867107561766908,
+                "iou": 0.7653926643903514,
+                "precision": 0.7954259288935693,
+                "recall": 0.9529882882141584,
+                "specificity": 0.9962350657115013,
+                "boundary_iou": 0.17196778176259628,
+                "threshold": 0.05,
+                "selected_fraction": 0.01812534751902537
+              },
+              {
+                "dice": 0.8757649938800489,
+                "iou": 0.778987479586282,
+                "precision": 0.8182402973340004,
+                "recall": 0.9419896321895829,
+                "specificity": 0.9967857336966254,
+                "boundary_iou": 0.18587047939444912,
+                "threshold": 0.1,
+                "selected_fraction": 0.01741661618131572
+              },
+              {
+                "dice": 0.8808791208791209,
+                "iou": 0.7871170463472114,
+                "precision": 0.8331417671370228,
+                "recall": 0.9344194849008475,
+                "specificity": 0.9971253193094868,
+                "boundary_iou": 0.1948899323129459,
+                "threshold": 0.15,
+                "selected_fraction": 0.016967642347942274
+              },
+              {
+                "dice": 0.8832906496628861,
+                "iou": 0.790976317513807,
+                "precision": 0.8434606842512414,
+                "recall": 0.927068762171206,
+                "specificity": 0.9973570464646652,
+                "boundary_iou": 0.19767298694902732,
+                "threshold": 0.2,
+                "selected_fraction": 0.016628214810327228
+              },
+              {
+                "dice": 0.8846696093286778,
+                "iou": 0.7931906247046593,
+                "precision": 0.8512780200831728,
+                "recall": 0.9207877341671467,
+                "specificity": 0.9975289458815976,
+                "boundary_iou": 0.19946742630666336,
+                "threshold": 0.25,
+                "selected_fraction": 0.016363892877001088
+              },
+              {
+                "dice": 0.8860251851455766,
+                "iou": 0.7953727259636154,
+                "precision": 0.8642136281847341,
+                "recall": 0.9089662360459695,
+                "specificity": 0.997806175823611,
+                "boundary_iou": 0.1986429282868526,
+                "threshold": 0.35,
+                "selected_fraction": 0.015912014406997684
+              },
+              {
+                "dice": 0.8862797444733509,
+                "iou": 0.7957830883252207,
+                "precision": 0.8802965528437686,
+                "recall": 0.8923448256946158,
+                "specificity": 0.9981360710281649,
+                "boundary_iou": 0.20343785417453722,
+                "threshold": 0.5,
+                "selected_fraction": 0.0153356515099961
+              },
+              {
+                "dice": 0.8850198385172442,
+                "iou": 0.7937538882667662,
+                "precision": 0.8954046542963815,
+                "recall": 0.874873145176774,
+                "specificity": 0.9984301538541914,
+                "boundary_iou": 0.20289578967422367,
+                "threshold": 0.65,
+                "selected_fraction": 0.014781695809854186
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.015393584035336971,
+              "foreground_score_max": 0.9990604519844055,
+              "kept_queries_005": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 800,
+      "loss": 7.1919379234313965,
+      "train_best_threshold_dice": 0.8890112158535747,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8890112158535747,
+          "iou": 0.8001981915025393,
+          "precision": 0.8921173286195658,
+          "recall": 0.8859266573411229,
+          "specificity": 0.998354315876133,
+          "boundary_iou": 0.21172949566989302,
+          "threshold": 0.5,
+          "selected_fraction": 0.015023610546320655
+        },
+        "per_image": [
+          {
+            "dice": 0.8890112158535747,
+            "iou": 0.8001981915025393,
+            "precision": 0.8921173286195658,
+            "recall": 0.8859266573411229,
+            "specificity": 0.998354315876133,
+            "boundary_iou": 0.21172949566989302,
+            "threshold": 0.5,
+            "selected_fraction": 0.015023610546320655,
+            "all_thresholds": [
+              {
+                "dice": 0.8720755337032496,
+                "iou": 0.7731683811829041,
+                "precision": 0.8087111444512166,
+                "recall": 0.946213554952138,
+                "specificity": 0.996562011661353,
+                "boundary_iou": 0.18084095498277705,
+                "threshold": 0.05,
+                "selected_fraction": 0.01770085562296157
+              },
+              {
+                "dice": 0.8806525842231817,
+                "iou": 0.7867553646085972,
+                "precision": 0.8328891062477075,
+                "recall": 0.9342274884116405,
+                "specificity": 0.9971206847663833,
+                "boundary_iou": 0.1951249164184548,
+                "threshold": 0.1,
+                "selected_fraction": 0.016969302140302248
+              },
+              {
+                "dice": 0.8838361334626372,
+                "iou": 0.7918515909357755,
+                "precision": 0.846261951966271,
+                "recall": 0.924901944650155,
+                "specificity": 0.9974189808134128,
+                "boundary_iou": 0.19678172214715636,
+                "threshold": 0.15,
+                "selected_fraction": 0.016534436541988596
+              },
+              {
+                "dice": 0.8854312879048704,
+                "iou": 0.7944160627301889,
+                "precision": 0.8559614941498759,
+                "recall": 0.917002660522779,
+                "specificity": 0.9976296418635751,
+                "boundary_iou": 0.19752857584182884,
+                "threshold": 0.2,
+                "selected_fraction": 0.01620745744707337
+              },
+              {
+                "dice": 0.8868178965779671,
+                "iou": 0.7966512341977116,
+                "precision": 0.8639887611218066,
+                "recall": 0.91088620093804,
+                "specificity": 0.9977973280595042,
+                "boundary_iou": 0.20014913316348723,
+                "threshold": 0.25,
+                "selected_fraction": 0.015949774683187132
+              },
+              {
+                "dice": 0.8885940926442321,
+                "iou": 0.7995225567572835,
+                "precision": 0.8772417479620473,
+                "recall": 0.9002441098219919,
+                "specificity": 0.9980648675932101,
+                "boundary_iou": 0.20575847111334633,
+                "threshold": 0.35,
+                "selected_fraction": 0.015525282787123331
+              },
+              {
+                "dice": 0.8890112158535747,
+                "iou": 0.8001981915025393,
+                "precision": 0.8921173286195658,
+                "recall": 0.8859266573411229,
+                "specificity": 0.998354315876133,
+                "boundary_iou": 0.21172949566989302,
+                "threshold": 0.5,
+                "selected_fraction": 0.015023610546320655
+              },
+              {
+                "dice": 0.887105808547583,
+                "iou": 0.7971160379495181,
+                "precision": 0.9062169198638171,
+                "recall": 0.8687841136619217,
+                "specificity": 0.9986189061551367,
+                "boundary_iou": 0.21420301042068698,
+                "threshold": 0.65,
+                "selected_fraction": 0.014503680589558246
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.015081283636391163,
+              "foreground_score_max": 0.9992600083351135,
+              "kept_queries_005": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": 900,
+      "loss": 6.956032752990723,
+      "train_best_threshold_dice": 0.8910381978452497,
+      "train_union_max_mean": 1.0,
+      "train_eval": {
+        "num_evaluated": 1,
+        "mean": {
+          "dice": 0.8910381978452497,
+          "iou": 0.8034886288363877,
+          "precision": 0.8838960408064125,
+          "recall": 0.8982967168600345,
+          "specificity": 0.9981874723244045,
+          "boundary_iou": 0.2155794806839772,
+          "threshold": 0.25,
+          "selected_fraction": 0.015375071578545525
+        },
+        "per_image": [
+          {
+            "dice": 0.8910381978452497,
+            "iou": 0.8034886288363877,
+            "precision": 0.8838960408064125,
+            "recall": 0.8982967168600345,
+            "specificity": 0.9981874723244045,
+            "boundary_iou": 0.2155794806839772,
+            "threshold": 0.25,
+            "selected_fraction": 0.015375071578545525,
+            "all_thresholds": [
+              {
+                "dice": 0.8845950032958085,
+                "iou": 0.7930706836616455,
+                "precision": 0.8364538521705123,
+                "recall": 0.9386159795935161,
+                "specificity": 0.9971809338267296,
+                "boundary_iou": 0.2056005895357406,
+                "threshold": 0.05,
+                "selected_fraction": 0.016976356257832146
+              },
+              {
+                "dice": 0.888495995566756,
+                "iou": 0.7993637378029961,
+                "precision": 0.8560459676599207,
+                "recall": 0.9235031130859321,
+                "specificity": 0.9976144742679633,
+                "boundary_iou": 0.20737613311809264,
+                "threshold": 0.1,
+                "selected_fraction": 0.016320738275641716
+              },
+              {
+                "dice": 0.8908373989173294,
+                "iou": 0.8031621315466004,
+                "precision": 0.8688080091771822,
+                "recall": 0.9140130009051263,
+                "specificity": 0.9978799071911677,
+                "boundary_iou": 0.21463108320251179,
+                "threshold": 0.15,
+                "selected_fraction": 0.01591574893980763
+              },
+              {
+                "dice": 0.890934614761622,
+                "iou": 0.8033201888905117,
+                "precision": 0.8771295681063123,
+                "recall": 0.9051811624016018,
+                "specificity": 0.9980522279302004,
+                "boundary_iou": 0.21481294555548547,
+                "threshold": 0.2,
+                "selected_fraction": 0.015612421886022059
+              },
+              {
+                "dice": 0.8910381978452497,
+                "iou": 0.8034886288363877,
+                "precision": 0.8838960408064125,
+                "recall": 0.8982967168600345,
+                "specificity": 0.9981874723244045,
+                "boundary_iou": 0.2155794806839772,
+                "threshold": 0.25,
+                "selected_fraction": 0.015375071578545525
+              },
+              {
+                "dice": 0.8898051491374437,
+                "iou": 0.8014855666517613,
+                "precision": 0.8947528981086028,
+                "recall": 0.8849118187553142,
+                "specificity": 0.998401082629269,
+                "boundary_iou": 0.21545130035696072,
+                "threshold": 0.35,
+                "selected_fraction": 0.014962198229001552
+              },
+              {
+                "dice": 0.8887704285614084,
+                "iou": 0.7998081147271947,
+                "precision": 0.9096077643140182,
+                "recall": 0.8688663978715818,
+                "specificity": 0.9986736780281789,
+                "boundary_iou": 0.21866958311888832,
+                "threshold": 0.5,
+                "selected_fraction": 0.014450982182129016
+              },
+              {
+                "dice": 0.8849431209945618,
+                "iou": 0.7936304754102558,
+                "precision": 0.9225641330873162,
+                "recall": 0.8502701664883842,
+                "specificity": 0.998903719894956,
+                "boundary_iou": 0.22385237350026083,
+                "threshold": 0.65,
+                "selected_fraction": 0.013943085719976432
+              }
+            ],
+            "image": "10003.png",
+            "probability": {
+              "union_max": 1.0,
+              "union_mean": 0.014500695280730724,
+              "foreground_score_max": 0.9993916749954224,
+              "kept_queries_005": 1.0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "train_eval": {
+    "num_evaluated": 1,
+    "mean": {
+      "dice": 0.8910381978452497,
+      "iou": 0.8034886288363877,
+      "precision": 0.8838960408064125,
+      "recall": 0.8982967168600345,
+      "specificity": 0.9981874723244045,
+      "boundary_iou": 0.2155794806839772,
+      "threshold": 0.25,
+      "selected_fraction": 0.015375071578545525
+    },
+    "per_image": [
+      {
+        "dice": 0.8910381978452497,
+        "iou": 0.8034886288363877,
+        "precision": 0.8838960408064125,
+        "recall": 0.8982967168600345,
+        "specificity": 0.9981874723244045,
+        "boundary_iou": 0.2155794806839772,
+        "threshold": 0.25,
+        "selected_fraction": 0.015375071578545525,
+        "all_thresholds": [
+          {
+            "dice": 0.8845950032958085,
+            "iou": 0.7930706836616455,
+            "precision": 0.8364538521705123,
+            "recall": 0.9386159795935161,
+            "specificity": 0.9971809338267296,
+            "boundary_iou": 0.2056005895357406,
+            "threshold": 0.05,
+            "selected_fraction": 0.016976356257832146
+          },
+          {
+            "dice": 0.888495995566756,
+            "iou": 0.7993637378029961,
+            "precision": 0.8560459676599207,
+            "recall": 0.9235031130859321,
+            "specificity": 0.9976144742679633,
+            "boundary_iou": 0.20737613311809264,
+            "threshold": 0.1,
+            "selected_fraction": 0.016320738275641716
+          },
+          {
+            "dice": 0.8908373989173294,
+            "iou": 0.8031621315466004,
+            "precision": 0.8688080091771822,
+            "recall": 0.9140130009051263,
+            "specificity": 0.9978799071911677,
+            "boundary_iou": 0.21463108320251179,
+            "threshold": 0.15,
+            "selected_fraction": 0.01591574893980763
+          },
+          {
+            "dice": 0.890934614761622,
+            "iou": 0.8033201888905117,
+            "precision": 0.8771295681063123,
+            "recall": 0.9051811624016018,
+            "specificity": 0.9980522279302004,
+            "boundary_iou": 0.21481294555548547,
+            "threshold": 0.2,
+            "selected_fraction": 0.015612421886022059
+          },
+          {
+            "dice": 0.8910381978452497,
+            "iou": 0.8034886288363877,
+            "precision": 0.8838960408064125,
+            "recall": 0.8982967168600345,
+            "specificity": 0.9981874723244045,
+            "boundary_iou": 0.2155794806839772,
+            "threshold": 0.25,
+            "selected_fraction": 0.015375071578545525
+          },
+          {
+            "dice": 0.8898051491374437,
+            "iou": 0.8014855666517613,
+            "precision": 0.8947528981086028,
+            "recall": 0.8849118187553142,
+            "specificity": 0.998401082629269,
+            "boundary_iou": 0.21545130035696072,
+            "threshold": 0.35,
+            "selected_fraction": 0.014962198229001552
+          },
+          {
+            "dice": 0.8887704285614084,
+            "iou": 0.7998081147271947,
+            "precision": 0.9096077643140182,
+            "recall": 0.8688663978715818,
+            "specificity": 0.9986736780281789,
+            "boundary_iou": 0.21866958311888832,
+            "threshold": 0.5,
+            "selected_fraction": 0.014450982182129016
+          },
+          {
+            "dice": 0.8849431209945618,
+            "iou": 0.7936304754102558,
+            "precision": 0.9225641330873162,
+            "recall": 0.8502701664883842,
+            "specificity": 0.998903719894956,
+            "boundary_iou": 0.22385237350026083,
+            "threshold": 0.65,
+            "selected_fraction": 0.013943085719976432
+          }
+        ],
+        "image": "10003.png",
+        "probability": {
+          "union_max": 1.0,
+          "union_mean": 0.014500695280730724,
+          "foreground_score_max": 0.9993916749954224,
+          "kept_queries_005": 1.0
+        }
+      }
+    ]
+  },
+  "val_eval": {
+    "num_evaluated": 2,
+    "mean": {
+      "dice": 0.16613398792287515,
+      "iou": 0.09200969958531338,
+      "precision": 0.1911761699662447,
+      "recall": 0.15568432145152059,
+      "specificity": 0.9832411332272437,
+      "boundary_iou": 0.020225061954867864,
+      "threshold": 0.1,
+      "selected_fraction": 0.019805278838138145
+    },
+    "per_image": [
+      {
+        "dice": 0.23220534121949568,
+        "iou": 0.13135311845533024,
+        "precision": 0.2969056690913289,
+        "recall": 0.19065801668211307,
+        "specificity": 0.9885368615340595,
+        "boundary_iou": 0.029611534795042898,
+        "threshold": 0.15,
+        "selected_fraction": 0.015900145397935054,
+        "all_thresholds": [
+          {
+            "dice": 0.23086340339883385,
+            "iou": 0.130494956603331,
+            "precision": 0.26218305212555376,
+            "recall": 0.20622798887859128,
+            "specificity": 0.985265175081345,
+            "boundary_iou": 0.028688752011542088,
+            "threshold": 0.05,
+            "selected_fraction": 0.01947634713389828
+          },
+          {
+            "dice": 0.23219597550306212,
+            "iou": 0.13134712461645057,
+            "precision": 0.28316884502534007,
+            "recall": 0.19677479147358665,
+            "specificity": 0.9873528046993314,
+            "boundary_iou": 0.02877322989637006,
+            "threshold": 0.1,
+            "selected_fraction": 0.01720634023116803
+          },
+          {
+            "dice": 0.23220534121949568,
+            "iou": 0.13135311845533024,
+            "precision": 0.2969056690913289,
+            "recall": 0.19065801668211307,
+            "specificity": 0.9885368615340595,
+            "boundary_iou": 0.029611534795042898,
+            "threshold": 0.15,
+            "selected_fraction": 0.015900145397935054
+          },
+          {
+            "dice": 0.23195102229409725,
+            "iou": 0.1311903828563962,
+            "precision": 0.3077866339668915,
+            "recall": 0.1860982391102873,
+            "specificity": 0.9893736075802226,
+            "boundary_iou": 0.0299072265625,
+            "threshold": 0.2,
+            "selected_fraction": 0.014971214146191014
+          },
+          {
+            "dice": 0.23036796841956858,
+            "iou": 0.13017845761631613,
+            "precision": 0.31457357376628375,
+            "recall": 0.18172381835032436,
+            "specificity": 0.9899468115646022,
+            "boundary_iou": 0.02998696219035202,
+            "threshold": 0.25,
+            "selected_fraction": 0.014303889027596235
+          },
+          {
+            "dice": 0.22940593341231655,
+            "iou": 0.1295643861805271,
+            "precision": 0.3298109010011123,
+            "recall": 0.17586654309545877,
+            "specificity": 0.9909266233014479,
+            "boundary_iou": 0.03178765590022386,
+            "threshold": 0.35,
+            "selected_fraction": 0.013203307435856012
+          },
+          {
+            "dice": 0.22600145483733414,
+            "iou": 0.12739664046151236,
+            "precision": 0.349441514117282,
+            "recall": 0.1670064874884152,
+            "specificity": 0.9921059740279298,
+            "boundary_iou": 0.03220283174185051,
+            "threshold": 0.5,
+            "selected_fraction": 0.011833776380913217
+          },
+          {
+            "dice": 0.2222222222222222,
+            "iou": 0.125,
+            "precision": 0.373794916739702,
+            "recall": 0.15810936051899907,
+            "specificity": 0.9932749713162703,
+            "boundary_iou": 0.033818726183995645,
+            "threshold": 0.65,
+            "selected_fraction": 0.010473424488537062
+          }
+        ],
+        "image": "10375.png",
+        "probability": {
+          "union_max": 1.0,
+          "union_mean": 0.012211328372359276,
+          "foreground_score_max": 0.9991293549537659,
+          "kept_queries_005": 1.0
+        }
+      },
+      {
+        "dice": 0.1000626346262546,
+        "iou": 0.05266628071529654,
+        "precision": 0.0854466708411605,
+        "recall": 0.12071062622092808,
+        "specificity": 0.9779454049204278,
+        "boundary_iou": 0.010838589114692829,
+        "threshold": 0.05,
+        "selected_fraction": 0.023710412278341236,
+        "all_thresholds": [
+          {
+            "dice": 0.1000626346262546,
+            "iou": 0.05266628071529654,
+            "precision": 0.0854466708411605,
+            "recall": 0.12071062622092808,
+            "specificity": 0.9779454049204278,
+            "boundary_iou": 0.010838589114692829,
+            "threshold": 0.05,
+            "selected_fraction": 0.023710412278341236
+          },
+          {
+            "dice": 0.08211404912327004,
+            "iou": 0.042814875976192934,
+            "precision": 0.07431625462797085,
+            "recall": 0.09174007592790535,
+            "specificity": 0.9804935779747247,
+            "boundary_iou": 0.010749550075392772,
+            "threshold": 0.1,
+            "selected_fraction": 0.020718772908218656
+          },
+          {
+            "dice": 0.06938138970715647,
+            "iou": 0.03593738780785524,
+            "precision": 0.0654697668334478,
+            "recall": 0.07379012937230474,
+            "specificity": 0.982019965093175,
+            "boundary_iou": 0.010595028872709014,
+            "threshold": 0.15,
+            "selected_fraction": 0.018916737034528196
+          },
+          {
+            "dice": 0.06022386316678345,
+            "iou": 0.031046811033103014,
+            "precision": 0.05874929893438026,
+            "recall": 0.061774354059931445,
+            "specificity": 0.983105298060746,
+            "boundary_iou": 0.010391481043263543,
+            "threshold": 0.2,
+            "selected_fraction": 0.017647950362046513
+          },
+          {
+            "dice": 0.054473844788373,
+            "iou": 0.02799954379562044,
+            "precision": 0.05465677179962894,
+            "recall": 0.05429213814455788,
+            "specificity": 0.983970418542143,
+            "boundary_iou": 0.01004681500184104,
+            "threshold": 0.25,
+            "selected_fraction": 0.016671770269810485
+          },
+          {
+            "dice": 0.045605516169758185,
+            "iou": 0.023334857188288843,
+            "precision": 0.04820563357148723,
+            "recall": 0.04327153440713575,
+            "specificity": 0.9854156416299751,
+            "boundary_iou": 0.009984805730410246,
+            "threshold": 0.35,
+            "selected_fraction": 0.015065836480555272
+          },
+          {
+            "dice": 0.034771489853159546,
+            "iou": 0.0176933571203694,
+            "precision": 0.03947183593201292,
+            "recall": 0.031071468062364084,
+            "specificity": 0.9870930315960875,
+            "boundary_iou": 0.00891032917139614,
+            "threshold": 0.5,
+            "selected_fraction": 0.013211836647582284
+          },
+          {
+            "dice": 0.025067144136078783,
+            "iou": 0.012692656391659111,
+            "precision": 0.030751098253509055,
+            "recall": 0.02115661051933213,
+            "specificity": 0.9886169020004102,
+            "boundary_iou": 0.008144097015812627,
+            "threshold": 0.65,
+            "selected_fraction": 0.011547134094852784
+          }
+        ],
+        "image": "10520.png",
+        "probability": {
+          "union_max": 0.9999997615814209,
+          "union_mean": 0.013975808396935463,
+          "foreground_score_max": 0.9992460012435913,
+          "kept_queries_005": 1.0
+        }
+      }
+    ]
+  },
+  "clean_test_v2_eval": {
+    "num_evaluated": 2,
+    "mean": {
+      "dice": 0.20582885191824446,
+      "iou": 0.11488839446280154,
+      "precision": 0.23434059310545285,
+      "recall": 0.1844710732878855,
+      "specificity": 0.9890602666185268,
+      "boundary_iou": 0.01925750691336966,
+      "threshold": 0.1,
+      "selected_fraction": 0.014024522112730768
+    },
+    "per_image": [
+      {
+        "dice": 0.1838348636150392,
+        "iou": 0.1012214472858777,
+        "precision": 0.2237083554214411,
+        "recall": 0.15602514149199398,
+        "specificity": 0.9887113827236776,
+        "boundary_iou": 0.019380966155626265,
+        "threshold": 0.05,
+        "selected_fraction": 0.014244721326711394,
+        "all_thresholds": [
+          {
+            "dice": 0.1838348636150392,
+            "iou": 0.1012214472858777,
+            "precision": 0.2237083554214411,
+            "recall": 0.15602514149199398,
+            "specificity": 0.9887113827236776,
+            "boundary_iou": 0.019380966155626265,
+            "threshold": 0.05,
+            "selected_fraction": 0.014244721326711394
+          },
+          {
+            "dice": 0.17433098168460442,
+            "iou": 0.095488820775118,
+            "precision": 0.21986491167301697,
+            "recall": 0.14442137595631524,
+            "specificity": 0.9893156323956098,
+            "boundary_iou": 0.018711638162207257,
+            "threshold": 0.1,
+            "selected_fraction": 0.013415817141529436
+          },
+          {
+            "dice": 0.16790459253059944,
+            "iou": 0.0916462056757837,
+            "precision": 0.2169603027981796,
+            "recall": 0.13694149768209096,
+            "specificity": 0.9896951415124269,
+            "boundary_iou": 0.01733301123324073,
+            "threshold": 0.15,
+            "selected_fraction": 0.012891289826028869
+          },
+          {
+            "dice": 0.16313932980599646,
+            "iou": 0.08881421027364378,
+            "precision": 0.21472677468777565,
+            "recall": 0.13153778333949545,
+            "specificity": 0.9899702856221192,
+            "boundary_iou": 0.016726476491697586,
+            "threshold": 0.2,
+            "selected_fraction": 0.012511399610815835
+          },
+          {
+            "dice": 0.1594489240134565,
+            "iou": 0.08663107810142741,
+            "precision": 0.21308277830637487,
+            "recall": 0.1273854554762379,
+            "specificity": 0.9901914682792642,
+            "boundary_iou": 0.01628504958981266,
+            "threshold": 0.25,
+            "selected_fraction": 0.012209927100577967
+          },
+          {
+            "dice": 0.15156882591093118,
+            "iou": 0.08199863107460643,
+            "precision": 0.207913918778202,
+            "recall": 0.11925144336054151,
+            "specificity": 0.9905276896374443,
+            "boundary_iou": 0.014615718090047686,
+            "threshold": 0.35,
+            "selected_fraction": 0.011714443379512648
+          },
+          {
+            "dice": 0.14086690162936172,
+            "iou": 0.0757702080355725,
+            "precision": 0.2005569567044977,
+            "recall": 0.10855777708256306,
+            "specificity": 0.9909777637306695,
+            "boundary_iou": 0.011957678582608152,
+            "threshold": 0.5,
+            "selected_fraction": 0.011055153785832534
+          },
+          {
+            "dice": 0.1287838755944742,
+            "iou": 0.06882362433435533,
+            "precision": 0.19139507488640825,
+            "recall": 0.09703933335229374,
+            "specificity": 0.9914521501266909,
+            "boundary_iou": 0.009519578599987307,
+            "threshold": 0.65,
+            "selected_fraction": 0.010355203159943075
+          }
+        ],
+        "image": "10793.png",
+        "probability": {
+          "union_max": 1.0,
+          "union_mean": 0.011052059940993786,
+          "foreground_score_max": 0.9991457462310791,
+          "kept_queries_005": 1.0
+        }
+      },
+      {
+        "dice": 0.22782284022144972,
+        "iou": 0.12855534163972537,
+        "precision": 0.24497283078946458,
+        "recall": 0.21291700508377703,
+        "specificity": 0.9894091505133759,
+        "boundary_iou": 0.019134047671113055,
+        "threshold": 0.15,
+        "selected_fraction": 0.013804322898750143,
+        "all_thresholds": [
+          {
+            "dice": 0.22594607241036438,
+            "iou": 0.1273614453859088,
+            "precision": 0.21983212405747618,
+            "recall": 0.2324098306410372,
+            "specificity": 0.986688494060337,
+            "boundary_iou": 0.01942798247874259,
+            "threshold": 0.05,
+            "selected_fraction": 0.01679136566907465
+          },
+          {
+            "dice": 0.2272332775401401,
+            "iou": 0.12818002203066808,
+            "precision": 0.23435951536076213,
+            "recall": 0.22052762987696659,
+            "specificity": 0.9883726406048752,
+            "boundary_iou": 0.019066333846725795,
+            "threshold": 0.1,
+            "selected_fraction": 0.01494524710468983
+          },
+          {
+            "dice": 0.22782284022144972,
+            "iou": 0.12855534163972537,
+            "precision": 0.24497283078946458,
+            "recall": 0.21291700508377703,
+            "specificity": 0.9894091505133759,
+            "boundary_iou": 0.019134047671113055,
+            "threshold": 0.15,
+            "selected_fraction": 0.013804322898750143
+          },
+          {
+            "dice": 0.22730353983764032,
+            "iou": 0.1282247383834804,
+            "precision": 0.2523494860499266,
+            "recall": 0.20678037481575068,
+            "specificity": 0.9901126178938993,
+            "boundary_iou": 0.01946458449525934,
+            "threshold": 0.2,
+            "selected_fraction": 0.013014562550166265
+          },
+          {
+            "dice": 0.22639347577003438,
+            "iou": 0.12764582937488125,
+            "precision": 0.25734533614250144,
+            "recall": 0.20208765755196584,
+            "specificity": 0.9905879074491322,
+            "boundary_iou": 0.019224225927186117,
+            "threshold": 0.25,
+            "selected_fraction": 0.012472289110576004
+          },
+          {
+            "dice": 0.22401359129047915,
+            "iou": 0.12613474415789783,
+            "precision": 0.2643508858066364,
+            "recall": 0.1943567066750895,
+            "specificity": 0.9912709844707998,
+            "boundary_iou": 0.0194808982210557,
+            "threshold": 0.35,
+            "selected_fraction": 0.011677273248480679
+          },
+          {
+            "dice": 0.21866943569177885,
+            "iou": 0.12275623630625741,
+            "precision": 0.27006589130146375,
+            "recall": 0.18370784826880848,
+            "specificity": 0.9919865889696897,
+            "boundary_iou": 0.01967509025270758,
+            "threshold": 0.5,
+            "selected_fraction": 0.010803902457669228
+          },
+          {
+            "dice": 0.21152782387432237,
+            "iou": 0.11827291847086478,
+            "precision": 0.2732599685579534,
+            "recall": 0.1725476040068586,
+            "specificity": 0.9925939303727503,
+            "boundary_iou": 0.018502528678919453,
+            "threshold": 0.65,
+            "selected_fraction": 0.01002895310170852
+          }
+        ],
+        "image": "11099.png",
+        "probability": {
+          "union_max": 1.0,
+          "union_mean": 0.01128473412245512,
+          "foreground_score_max": 0.9991337656974792,
+          "kept_queries_005": 1.0
+        }
+      }
+    ]
+  },
+  "decision": "full run allowed only if status is overfit_pass"
+}

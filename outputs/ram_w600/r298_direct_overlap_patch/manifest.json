@@ -1,0 +1,7 @@
+{
+  "experiment": "R298",
+  "architecture": "frozen R285 + direct local 14-channel patch mask",
+  "crop_source": "coarse sigmoid overlap prediction",
+  "blend": "0.5 base logits + 0.5 direct patch logits",
+  "test_used_for_selection": false
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "R301",
+  "test_evaluated": false,
+  "train_candidates": 9540,
+  "val_candidates": 1562,
+  "train_positive_fraction": 0.7611111111111111,
+  "val_positive_fraction": 0.7125480153649167,
+  "val_auc": 0.953835717587451,
+  "val_precision": 0.9258589511754068,
+  "val_recall": 0.9200359389038635,
+  "val_f1": 0.9229382604776927,
+  "val_confusion_matrix": [
+    [
+      367,
+      82
+    ],
+    [
+      89,
+      1024
+    ]
+  ],
+  "interpretation": "signature separability only; no prediction editing performed"
+}

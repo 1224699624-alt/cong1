@@ -1,0 +1,44 @@
+[
+  {
+    "path": "outputs/analysis/r350_native_nnunet_matched_original_val_r201.json",
+    "remote_bytes": 64920,
+    "sha256": "f017a791768fff1d64da695b6e01708d6c7a97389ee5f2ffc5d743da2aeb89fd",
+    "local_identical": true
+  },
+  {
+    "path": "outputs/analysis/r350_tsrs_unified_best_original_val_r201.json",
+    "remote_bytes": 64870,
+    "sha256": "687bfce32bf1591c0a14fe19c58e274342557db64b31b595b5cd7ba1a3523dbf",
+    "local_identical": true
+  },
+  {
+    "path": "outputs/ram_w600/r350_unified_interaction_pcgrad/full/result.json",
+    "remote_bytes": 3302,
+    "sha256": "1d519fc8354aedb42d1c32197a01b6ddd5dc5ae9cfb770becc58b3b7c725323b",
+    "local_identical": false
+  },
+  {
+    "path": "scripts/r350_unified_interaction_loss.py",
+    "remote_bytes": 3303,
+    "sha256": "99c54c5d565d988ccf8e367841f17bc1940b2a8d58db2776eadfbe04d88aedd4",
+    "local_identical": true
+  },
+  {
+    "path": "scripts/train_r350_ram_unified_interaction_pcgrad.py",
+    "remote_bytes": 14435,
+    "sha256": "a5b81ba3d09d6f8971286497d1181fad242dc4afb8cdf18b568113b5925d4080",
+    "local_identical": true
+  },
+  {
+    "path": "scripts/nnunet_trainers/nnUNetTrainerR350UnifiedInteractionPCGrad.py",
+    "remote_bytes": 10171,
+    "sha256": "c482faecc8bb203b09d7730156acd16f6b8791f4eda8fdaddb94d2edb88d4ff6",
+    "local_identical": true
+  },
+  {
+    "path": "scripts/r349_parameter_gradient_gate.py",
+    "remote_bytes": 4263,
+    "sha256": "524a432da8bec318727e684e65c9c094fff043531fbd76006d264579227b3378",
+    "local_identical": true
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "status": "preview_gate_failed",
+  "mutated_dataset": false,
+  "created_variant": false,
+  "preview": {
+    "status": "ok",
+    "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+    "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+    "gate_pass_if_applied": false,
+    "errors": [],
+    "warnings": [],
+    "thresholds": {
+      "min_reviewed_train": 40,
+      "min_usable_train": 20,
+      "min_reviewed_val": 8
+    },
+    "counts": {
+      "rows": 96,
+      "train_rows": 80,
+      "val_rows": 16,
+      "reviewed_train": 0,
+      "usable_train": 0,
+      "reviewed_val": 0,
+      "selected_original": 0,
+      "selected_reannotated": 0,
+      "corrections_needed": 0,
+      "excluded": 0,
+      "uncertain": 0
+    },
+    "decision_counts": {
+      "blank": 96
+    },
+    "train_decision_counts": {
+      "blank": 80
+    },
+    "val_decision_counts": {
+      "blank": 16
+    },
+    "correction_rows": [],
+    "policy": {
+      "mutates_dataset": false,
+      "uses_clean_test_v2": false,
+      "uses_reannotated_test": false,
+      "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+    },
+    "next_action": "continue_human_review_or_fix_reviewed_csv"
+  },
+  "steps": {
+    "preview": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\python.exe",
+        "scripts/preview_r168_reannotation_protocol_decisions.py",
+        "--worklist-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+        "--decisions-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+        "--output-json",
+        "outputs\\analysis\\r172_reannotation_protocol_pipeline_empty_test\\r172_preview_status.json",
+        "--min-reviewed-train",
+        "40",
+        "--min-usable-train",
+        "20",
+        "--min-reviewed-val",
+        "8"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"worklist_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\r168_reannotation_protocol_review_worklist.csv\",\n  \"decisions_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\r168_reannotation_protocol_review_worklist.csv\",\n  \"gate_pass_if_applied\": false,\n  \"errors\": [],\n  \"warnings\": [],\n  \"thresholds\": {\n    \"min_reviewed_train\": 40,\n    \"min_usable_train\": 20,\n    \"min_reviewed_val\": 8\n  },\n  \"counts\": {\n    \"rows\": 96,\n    \"train_rows\": 80,\n    \"val_rows\": 16,\n    \"reviewed_train\": 0,\n    \"usable_train\": 0,\n    \"reviewed_val\": 0,\n    \"selected_original\": 0,\n    \"selected_reannotated\": 0,\n    \"corrections_needed\": 0,\n    \"excluded\": 0,\n    \"uncertain\": 0\n  },\n  \"decision_counts\": {\n    \"blank\": 96\n  },\n  \"train_decision_counts\": {\n    \"blank\": 80\n  },\n  \"val_decision_counts\": {\n    \"blank\": 16\n  },\n  \"correction_rows\": [],\n  \"policy\": {\n    \"mutates_dataset\": false,\n    \"uses_clean_test_v2\": false,\n    \"uses_reannotated_test\": false,\n    \"success_eval_remains\": \"TSRS_RSNA-Epiphysis_clean_test_v2/test\"\n  },\n  \"next_action\": \"continue_human_review_or_fix_reviewed_csv\"\n}\n",
+      "stderr": ""
+    }
+  },
+  "next_action": "continue_human_review_or_fix_reviewed_csv"
+}

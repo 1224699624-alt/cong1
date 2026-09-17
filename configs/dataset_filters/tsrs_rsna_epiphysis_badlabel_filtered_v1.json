@@ -1,0 +1,15 @@
+{
+  "source_dataset": "TSRS_RSNA-Epiphysis",
+  "target_dataset": "TSRS_RSNA-Epiphysis_badlabel_filtered_v1",
+  "notes": "Exclude a small set of suspected poor-annotation epiphysis samples in a separate dataset variant. Articular-Surface is untouched.",
+  "excludes": {
+    "train": {},
+    "val": {},
+    "test": {
+      "1433": "Suspected GT/foreground boundary mismatch in epiphysis region.",
+      "1475": "Suspected GT/foreground mismatch on thin distal epiphysis.",
+      "2982": "Suspected GT contour mismatch around bone-gap/edge region.",
+      "3040": "Suspected GT contour mismatch on thin epiphysis and seam region."
+    }
+  }
+}

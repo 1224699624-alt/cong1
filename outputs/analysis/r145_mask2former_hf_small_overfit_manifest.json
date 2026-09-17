@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "hf_deps": ".tmp/r144_hf_deps",
+  "model_class": "Mask2FormerForUniversalSegmentation",
+  "config": {
+    "num_queries": 48,
+    "hidden_dim": 96,
+    "encoder_layers": 2,
+    "decoder_layers": 3
+  },
+  "metrics_json": "outputs/analysis/r145_mask2former_hf_small_overfit_clean_test_v2_metrics.json",
+  "prediction_dir": "outputs/r145_mask2former_hf_small_overfit/TSRS_RSNA-Epiphysis_clean_test_v2/test/masks",
+  "train_images": [
+    "10003.png",
+    "10004.png",
+    "10015.png",
+    "10043.png",
+    "10055.png",
+    "10066.png",
+    "10144.png",
+    "10390.png",
+    "10474.png",
+    "10526.png",
+    "10542.png",
+    "10621.png",
+    "10685.png",
+    "10693.png",
+    "10727.png",
+    "10779.png"
+  ],
+  "val_images": [
+    "10375.png",
+    "10520.png",
+    "10618.png",
+    "10624.png"
+  ],
+  "eval_images": [
+    "10793.png",
+    "11099.png",
+    "12046.png",
+    "12133.png"
+  ]
+}

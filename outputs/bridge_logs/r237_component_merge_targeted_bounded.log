@@ -1,0 +1,117 @@
+r237/merge-targeted/val:   0%|          | 0/96 [00:00<?, ?it/s]r237/merge-targeted/val:   1%|          | 1/96 [00:06<10:19,  6.52s/it]r237/merge-targeted/val:   2%|▏         | 2/96 [00:08<06:01,  3.85s/it]r237/merge-targeted/val:   3%|▎         | 3/96 [00:11<05:36,  3.61s/it]r237/merge-targeted/val:   4%|▍         | 4/96 [00:19<07:57,  5.19s/it]r237/merge-targeted/val:   5%|▌         | 5/96 [00:24<07:44,  5.10s/it]r237/merge-targeted/val:   6%|▋         | 6/96 [00:29<07:29,  4.99s/it]r237/merge-targeted/val:   7%|▋         | 7/96 [00:35<08:05,  5.45s/it]r237/merge-targeted/val:   8%|▊         | 8/96 [00:39<07:10,  4.89s/it]r237/merge-targeted/val:   9%|▉         | 9/96 [00:48<09:07,  6.29s/it]r237/merge-targeted/val:  10%|█         | 10/96 [00:50<07:01,  4.90s/it]r237/merge-targeted/val:  11%|█▏        | 11/96 [00:55<06:49,  4.82s/it]r237/merge-targeted/val:  12%|█▎        | 12/96 [00:56<05:06,  3.65s/it]r237/merge-targeted/val:  14%|█▎        | 13/96 [00:57<04:07,  2.99s/it]r237/merge-targeted/val:  15%|█▍        | 14/96 [01:02<05:02,  3.69s/it]r237/merge-targeted/val:  16%|█▌        | 15/96 [01:04<04:16,  3.16s/it]r237/merge-targeted/val:  17%|█▋        | 16/96 [01:06<03:47,  2.84s/it]r237/merge-targeted/val:  18%|█▊        | 17/96 [01:16<06:19,  4.80s/it]r237/merge-targeted/val:  19%|█▉        | 18/96 [01:24<07:40,  5.91s/it]r237/merge-targeted/val:  20%|█▉        | 19/96 [01:33<08:42,  6.79s/it]r237/merge-targeted/val:  21%|██        | 20/96 [01:40<08:33,  6.76s/it]r237/merge-targeted/val:  22%|██▏       | 21/96 [01:51<10:05,  8.08s/it]r237/merge-targeted/val:  23%|██▎       | 22/96 [02:05<12:02,  9.76s/it]r237/merge-targeted/val:  24%|██▍       | 23/96 [02:16<12:25, 10.22s/it]r237/merge-targeted/val:  25%|██▌       | 24/96 [02:17<08:55,  7.44s/it]r237/merge-targeted/val:  26%|██▌       | 25/96 [02:20<07:11,  6.08s/it]r237/merge-targeted/val:  27%|██▋       | 26/96 [02:22<05:55,  5.08s/it]r237/merge-targeted/val:  28%|██▊       | 27/96 [02:31<06:59,  6.07s/it]r237/merge-targeted/val:  29%|██▉       | 28/96 [02:36<06:35,  5.81s/it]r237/merge-targeted/val:  30%|███       | 29/96 [02:45<07:36,  6.82s/it]r237/merge-targeted/val:  31%|███▏      | 30/96 [03:06<12:04, 10.98s/it]r237/merge-targeted/val:  32%|███▏      | 31/96 [03:21<13:19, 12.30s/it]r237/merge-targeted/val:  33%|███▎      | 32/96 [03:27<10:57, 10.27s/it]r237/merge-targeted/val:  34%|███▍      | 33/96 [03:38<10:55, 10.41s/it]r237/merge-targeted/val:  35%|███▌      | 34/96 [03:58<13:44, 13.30s/it]r237/merge-targeted/val:  36%|███▋      | 35/96 [04:09<12:49, 12.62s/it]r237/merge-targeted/val:  38%|███▊      | 36/96 [04:25<13:39, 13.66s/it]r237/merge-targeted/val:  39%|███▊      | 37/96 [04:34<12:17, 12.50s/it]r237/merge-targeted/val:  40%|███▉      | 38/96 [04:53<13:50, 14.32s/it]r237/merge-targeted/val:  41%|████      | 39/96 [05:04<12:44, 13.41s/it]r237/merge-targeted/val:  42%|████▏     | 40/96 [05:22<13:37, 14.59s/it]r237/merge-targeted/val:  43%|████▎     | 41/96 [05:27<10:53, 11.88s/it]r237/merge-targeted/val:  44%|████▍     | 42/96 [05:45<12:18, 13.68s/it]r237/merge-targeted/val:  45%|████▍     | 43/96 [05:54<10:51, 12.30s/it]r237/merge-targeted/val:  46%|████▌     | 44/96 [06:13<12:21, 14.27s/it]r237/merge-targeted/val:  47%|████▋     | 45/96 [06:32<13:12, 15.54s/it]r237/merge-targeted/val:  48%|████▊     | 46/96 [06:41<11:26, 13.73s/it]r237/merge-targeted/val:  49%|████▉     | 47/96 [06:50<09:59, 12.23s/it]r237/merge-targeted/val:  50%|█████     | 48/96 [06:52<07:22,  9.23s/it]r237/merge-targeted/val:  51%|█████     | 49/96 [07:23<12:24, 15.84s/it]r237/merge-targeted/val:  52%|█████▏    | 50/96 [07:44<13:08, 17.14s/it]r237/merge-targeted/val:  53%|█████▎    | 51/96 [08:11<15:11, 20.26s/it]r237/merge-targeted/val:  54%|█████▍    | 52/96 [08:38<16:16, 22.20s/it]r237/merge-targeted/val:  55%|█████▌    | 53/96 [08:40<11:35, 16.18s/it]r237/merge-targeted/val:  56%|█████▋    | 54/96 [08:49<09:44, 13.92s/it]r237/merge-targeted/val:  57%|█████▋    | 55/96 [08:51<07:13, 10.57s/it]r237/merge-targeted/val:  58%|█████▊    | 56/96 [08:55<05:35,  8.39s/it]r237/merge-targeted/val:  59%|█████▉    | 57/96 [08:55<03:56,  6.05s/it]r237/merge-targeted/val:  60%|██████    | 58/96 [08:56<02:52,  4.54s/it]r237/merge-targeted/val:  61%|██████▏   | 59/96 [08:58<02:23,  3.87s/it]r237/merge-targeted/val:  62%|██████▎   | 60/96 [09:33<07:50, 13.08s/it]r237/merge-targeted/val:  64%|██████▎   | 61/96 [09:38<06:14, 10.70s/it]r237/merge-targeted/val:  65%|██████▍   | 62/96 [09:39<04:23,  7.74s/it]r237/merge-targeted/val:  66%|██████▌   | 63/96 [09:40<03:11,  5.80s/it]r237/merge-targeted/val:  67%|██████▋   | 64/96 [09:50<03:40,  6.90s/it]r237/merge-targeted/val:  68%|██████▊   | 65/96 [09:52<02:47,  5.40s/it]r237/merge-targeted/val:  69%|██████▉   | 66/96 [09:55<02:24,  4.82s/it]r237/merge-targeted/val:  70%|██████▉   | 67/96 [10:34<07:19, 15.16s/it]r237/merge-targeted/val:  71%|███████   | 68/96 [10:42<05:57, 12.76s/it]r237/merge-targeted/val:  72%|███████▏  | 69/96 [10:59<06:23, 14.22s/it]r237/merge-targeted/val:  73%|███████▎  | 70/96 [11:04<04:56, 11.42s/it]r237/merge-targeted/val:  74%|███████▍  | 71/96 [11:05<03:26,  8.27s/it]r237/merge-targeted/val:  75%|███████▌  | 72/96 [11:12<03:12,  8.02s/it]r237/merge-targeted/val:  76%|███████▌  | 73/96 [11:16<02:36,  6.81s/it]r237/merge-targeted/val:  77%|███████▋  | 74/96 [11:29<03:04,  8.40s/it]r237/merge-targeted/val:  78%|███████▊  | 75/96 [11:31<02:17,  6.55s/it]r237/merge-targeted/val:  79%|███████▉  | 76/96 [11:34<01:51,  5.59s/it]r237/merge-targeted/val:  80%|████████  | 77/96 [11:35<01:18,  4.13s/it]r237/merge-targeted/val:  81%|████████▏ | 78/96 [11:43<01:35,  5.30s/it]r237/merge-targeted/val:  82%|████████▏ | 79/96 [11:48<01:30,  5.33s/it]r237/merge-targeted/val:  83%|████████▎ | 80/96 [12:04<02:14,  8.38s/it]r237/merge-targeted/val:  84%|████████▍ | 81/96 [12:53<05:09, 20.62s/it]r237/merge-targeted/val:  85%|████████▌ | 82/96 [13:01<03:53, 16.69s/it]r237/merge-targeted/val:  86%|████████▋ | 83/96 [13:02<02:37, 12.09s/it]r237/merge-targeted/val:  88%|████████▊ | 84/96 [13:03<01:44,  8.71s/it]r237/merge-targeted/val:  89%|████████▊ | 85/96 [13:04<01:11,  6.54s/it]r237/merge-targeted/val:  90%|████████▉ | 86/96 [13:12<01:08,  6.89s/it]r237/merge-targeted/val:  91%|█████████ | 87/96 [13:22<01:11,  7.94s/it]r237/merge-targeted/val:  92%|█████████▏| 88/96 [13:24<00:49,  6.17s/it]r237/merge-targeted/val:  93%|█████████▎| 89/96 [13:31<00:43,  6.28s/it]r237/merge-targeted/val:  94%|█████████▍| 90/96 [13:41<00:44,  7.40s/it]r237/merge-targeted/val:  95%|█████████▍| 91/96 [13:43<00:29,  5.82s/it]r237/merge-targeted/val:  96%|█████████▌| 92/96 [13:51<00:26,  6.58s/it]r237/merge-targeted/val:  97%|█████████▋| 93/96 [13:54<00:16,  5.34s/it]r237/merge-targeted/val:  98%|█████████▊| 94/96 [13:58<00:09,  4.91s/it]r237/merge-targeted/val:  99%|█████████▉| 95/96 [14:00<00:04,  4.01s/it]r237/merge-targeted/val: 100%|██████████| 96/96 [14:08<00:00,  5.18s/it]r237/merge-targeted/val: 100%|██████████| 96/96 [14:08<00:00,  8.83s/it]
+{
+  "decision": "no_go_merge_target_weak_signal",
+  "output_csv": "outputs/analysis/r237_component_merge_targeted_bounded_val_candidates.csv",
+  "output_json": "outputs/analysis/r237_component_merge_targeted_bounded_val_summary.json",
+  "summary": {
+    "run_id": "R237-component-merge-targeted-candidate-diagnostic",
+    "dataset": "TSRS_RSNA-Epiphysis",
+    "split": "val",
+    "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+    "clean_test_v2_used": false,
+    "writes_masks": false,
+    "evidence_level": "train_val_oracle_candidate_diagnostic",
+    "purpose": "test whether cutting within predicted multi-instance components can connect bone-gap background and reduce merge diagnostics",
+    "num_candidate_rows": 747,
+    "num_images_with_merge_candidates": 62,
+    "num_skipped": 0,
+    "skipped": [],
+    "overall": {
+      "num_rows": 747,
+      "num_images": 62,
+      "num_merge_targeted_promotable": 0,
+      "num_safe_nonmerge_gain": 735,
+      "num_overerosion_proxy": 0,
+      "mean_cut_area": 11.78045515394913,
+      "mean_cut_gt_fg_frac": 0.0,
+      "mean_cut_gt_gap_frac": 1.0,
+      "mean_delta_dice": 8.564017627029274e-05,
+      "mean_delta_iou": 0.00014402331975562133,
+      "mean_delta_recall": 0.0,
+      "mean_delta_boundary_iou": 0.0006204577337139359,
+      "mean_delta_boundary_f1": 0.0008136976172211046,
+      "mean_delta_gap_region_fp_rate": -0.0004545447227264455,
+      "mean_delta_component_count_mae": 0.009370816599732263,
+      "mean_delta_merged_pred_components": -0.008032128514056224,
+      "mean_background_connected_by_cut": 0.5850066934404283
+    },
+    "merge_targeted_promotable": {
+      "num_rows": 0,
+      "num_images": 0,
+      "num_merge_targeted_promotable": 0,
+      "num_safe_nonmerge_gain": 0,
+      "num_overerosion_proxy": 0,
+      "mean_cut_area": null,
+      "mean_cut_gt_fg_frac": null,
+      "mean_cut_gt_gap_frac": null,
+      "mean_delta_dice": null,
+      "mean_delta_iou": null,
+      "mean_delta_recall": null,
+      "mean_delta_boundary_iou": null,
+      "mean_delta_boundary_f1": null,
+      "mean_delta_gap_region_fp_rate": null,
+      "mean_delta_component_count_mae": null,
+      "mean_delta_merged_pred_components": null,
+      "mean_background_connected_by_cut": null
+    },
+    "safe_nonmerge_gain": {
+      "num_rows": 735,
+      "num_images": 61,
+      "num_merge_targeted_promotable": 0,
+      "num_safe_nonmerge_gain": 735,
+      "num_overerosion_proxy": 0,
+      "mean_cut_area": 11.774149659863946,
+      "mean_cut_gt_fg_frac": 0.0,
+      "mean_cut_gt_gap_frac": 1.0,
+      "mean_delta_dice": 8.548238669636494e-05,
+      "mean_delta_iou": 0.00014384709852863526,
+      "mean_delta_recall": 0.0,
+      "mean_delta_boundary_iou": 0.0006235949872478462,
+      "mean_delta_boundary_f1": 0.0008171764818419604,
+      "mean_delta_gap_region_fp_rate": -0.0004536029410570697,
+      "mean_delta_component_count_mae": -0.014965986394557823,
+      "mean_delta_merged_pred_components": 0.0,
+      "mean_background_connected_by_cut": 0.5782312925170068
+    },
+    "oracle_merge_best_per_image": {
+      "num_rows": 0,
+      "num_images": 0,
+      "num_merge_targeted_promotable": 0,
+      "num_safe_nonmerge_gain": 0,
+      "num_overerosion_proxy": 0,
+      "mean_cut_area": null,
+      "mean_cut_gt_fg_frac": null,
+      "mean_cut_gt_gap_frac": null,
+      "mean_delta_dice": null,
+      "mean_delta_iou": null,
+      "mean_delta_recall": null,
+      "mean_delta_boundary_iou": null,
+      "mean_delta_boundary_f1": null,
+      "mean_delta_gap_region_fp_rate": null,
+      "mean_delta_component_count_mae": null,
+      "mean_delta_merged_pred_components": null,
+      "mean_background_connected_by_cut": null
+    },
+    "oracle_safe_best_per_image": {
+      "num_rows": 61,
+      "num_images": 61,
+      "num_merge_targeted_promotable": 0,
+      "num_safe_nonmerge_gain": 61,
+      "num_overerosion_proxy": 0,
+      "mean_cut_area": 27.42622950819672,
+      "mean_cut_gt_fg_frac": 0.0,
+      "mean_cut_gt_gap_frac": 1.0,
+      "mean_delta_dice": 0.00018907981611180748,
+      "mean_delta_iou": 0.00031581435444725376,
+      "mean_delta_recall": 0.0,
+      "mean_delta_boundary_iou": 0.0013877737501410518,
+      "mean_delta_boundary_f1": 0.0018315219068434445,
+      "mean_delta_gap_region_fp_rate": -0.0010341523905230982,
+      "mean_delta_component_count_mae": -0.06557377049180328,
+      "mean_delta_merged_pred_components": 0.0,
+      "mean_background_connected_by_cut": 0.6557377049180327
+    },
+    "decision": "no_go_merge_target_weak_signal",
+    "warning": "GT instances are used for candidate generation on original train/val only; this is not deployable and not clean-test-v2 evidence."
+  }
+}

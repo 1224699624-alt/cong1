@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\build_r259_frozen_prior_maps.py", line 70, in <module>
+    if __name__=='__main__': main()
+  File "G:\gutou\YOLO+SAM\scripts\build_r259_frozen_prior_maps.py", line 34, in main
+    payload=torch.load(p,map_location='cpu'); seed=int(payload['seed']); digest=sha256(p); exp=expected.get(seed)
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\serialization.py", line 1026, in load
+    return _load(opened_zipfile,
+  File "E:\360Downloads\anaconda3\envs\unet\lib\site-packages\torch\serialization.py", line 1438, in _load
+    result = unpickler.load()
+  File "E:\360Downloads\anaconda3\envs\unet\lib\pathlib.py", line 960, in __new__
+    raise NotImplementedError("cannot instantiate %r on your system"
+NotImplementedError: cannot instantiate 'PosixPath' on your system
+Command failed (1): E:\360Downloads\anaconda3\envs\unet\python.exe scripts/build_r259_frozen_prior_maps.py --checkpoint
+-dir G:\gutou\YOLO+SAM\outputs\artifact_bundles\r260_recovered_from_49284_20260724\outputs\pair_prior\r258b_prediction_
+relation_prior_full_20260715_133745 --output-root G:\gutou\YOLO+SAM\outputs\priors\r259_frozen_relation --batch-size 32
+ --device cuda
+ËùÔÚÎ»ÖÃ G:\gutou\YOLO+SAM\run_r308_clean_panels_r260_local.ps1:31 ×Ö·û: 9
++         throw "Command failed ($LASTEXITCODE): $Command $($Arguments  ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Command failed ...2 --device cuda:String) [], RuntimeException
+    + FullyQualifiedErrorId : Command failed (1): E:\360Downloads\anaconda3\envs\unet\python.exe scripts/build_r259_fr 
+   ozen_prior_maps.py --checkpoint-dir G:\gutou\YOLO+SAM\outputs\artifact_bundles\r260_recovered_from_49284_20260724\  
+  outputs\pair_prior\r258b_prediction_relation_prior_full_20260715_133745 --output-root G:\gutou\YOLO+SAM\outputs\pr   
+ iors\r259_frozen_relation --batch-size 32 --device cuda
+ 

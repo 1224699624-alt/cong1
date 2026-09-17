@@ -1,0 +1,30 @@
+{
+  "status": "train_and_eval_completed",
+  "error": null,
+  "result": "None",
+  "metrics_count": 76,
+  "last_metrics": {
+    "bbox/AP": 0.0,
+    "bbox/AP50": 0.0,
+    "bbox/AP75": 0.0,
+    "bbox/APl": NaN,
+    "bbox/APm": NaN,
+    "bbox/APs": 0.0,
+    "iteration": 1500,
+    "segm/AP": 6.336633663366337,
+    "segm/AP50": 7.920792079207921,
+    "segm/AP75": 7.920792079207921,
+    "segm/APl": NaN,
+    "segm/APm": NaN,
+    "segm/APs": 6.336633663366337
+  },
+  "model_final_exists": true,
+  "constraints": {
+    "train_source": "data/raw/TSRS_RSNA-Epiphysis/train first 1 only",
+    "eval_source": "same first train image",
+    "clean_test_v2_used": false,
+    "new_or_reannotated_test_used": false,
+    "success_claim_allowed": false,
+    "purpose": "server-only one-image overfit target/config rescue"
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "experiment": "R324_RAM_NNUNET_EXPLICIT_OVERLAP_IEM",
+  "split": "validation",
+  "test_used": false,
+  "threshold": 0.5,
+  "threshold_search": false,
+  "prior_position": "after multi-label logits, before training loss; absent at inference",
+  "prior_weight": 0.001,
+  "initialization": {
+    "source": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+    "sha256": "3e42fbeb763f6e1fafc80e550c1c630b7fd599ff8cb85f7462ff8b5926475d01",
+    "strict_load": true,
+    "same_state_for_both_arms": true
+  },
+  "relation_graph": {
+    "source_split": "train",
+    "num_train_masks": 425,
+    "min_overlap_cases": 3,
+    "max_pairs": 24,
+    "pairs": [
+      {
+        "indices": [
+          7,
+          8
+        ],
+        "bones": [
+          "Trapezium",
+          "Trapezoid"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 1081847
+      },
+      {
+        "indices": [
+          0,
+          6
+        ],
+        "bones": [
+          "Capitate",
+          "Scaphoid"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 591200
+      },
+      {
+        "indices": [
+          0,
+          4
+        ],
+        "bones": [
+          "Capitate",
+          "Lunate"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 538963
+      },
+      {
+        "indices": [
+          3,
+          13
+        ],
+        "bones": [
+          "Hamate",
+          "Metacarpal5"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 509531
+      },
+      {
+        "indices": [
+          12,
+          13
+        ],
+        "bones": [
+          "Metacarpal4",
+          "Metacarpal5"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 480963
+      },
+      {
+        "indices": [
+          7,
+          10
+        ],
+        "bones": [
+          "Trapezium",
+          "Metacarpal2"
+        ],
+        "overlap_cases": 425,
+        "overlap_pixels": 351789
+      },
+      {
+        "indices": [
+          0,
+          3
+        ],
+        "bones": [
+          "Capitate",
+          "Hamate"
+        ],
+        "overlap_cases": 424,
+        "overlap_pixels": 629063
+      },
+      {
+        "indices": [
+          11,
+          12
+        ],
+        "bones": [
+          "Metacarpal3",
+          "Metacarpal4"
+        ],
+        "overlap_cases": 420,
+        "overlap_pixels": 303468
+      },
+      {
+        "indices": [
+          1,
+          4
+        ],
+        "bones": [
+          "DistalRadius",
+          "Lunate"
+        ],
+        "overlap_cases": 418,
+        "overlap_pixels": 584476
+      },
+      {
+        "indices": [
+          7,
+          9
+        ],
+        "bones": [
+          "Trapezium",
+          "Metacarpal1"
+        ],
+        "overlap_cases": 418,
+        "overlap_pixels": 154677
+      },
+      {
+        "indices": [
+          1,
+          6
+        ],
+        "bones": [
+          "DistalRadius",
+          "Scaphoid"
+        ],
+        "overlap_cases": 415,
+        "overlap_pixels": 500304
+      },
+      {
+        "indices": [
+          0,
+          11
+        ],
+        "bones": [
+          "Capitate",
+          "Metacarpal3"
+        ],
+        "overlap_cases": 412,
+        "overlap_pixels": 127475
+      },
+      {
+        "indices": [
+          10,
+          11
+        ],
+        "bones": [
+          "Metacarpal2",
+          "Metacarpal3"
+        ],
+        "overlap_cases": 411,
+        "overlap_pixels": 219523
+      },
+      {
+        "indices": [
+          0,
+          8
+        ],
+        "bones": [
+          "Capitate",
+          "Trapezoid"
+        ],
+        "overlap_cases": 402,
+        "overlap_pixels": 145677
+      },
+      {
+        "indices": [
+          4,
+          6
+        ],
+        "bones": [
+          "Lunate",
+          "Scaphoid"
+        ],
+        "overlap_cases": 395,
+        "overlap_pixels": 337457
+      },
+      {
+        "indices": [
+          3,
+          5
+        ],
+        "bones": [
+          "Hamate",
+          "Tri"
+        ],
+        "overlap_cases": 384,
+        "overlap_pixels": 171757
+      },
+      {
+        "indices": [
+          6,
+          7
+        ],
+        "bones": [
+          "Scaphoid",
+          "Trapezium"
+        ],
+        "overlap_cases": 381,
+        "overlap_pixels": 177098
+      },
+      {
+        "indices": [
+          8,
+          10
+        ],
+        "bones": [
+          "Trapezoid",
+          "Metacarpal2"
+        ],
+        "overlap_cases": 376,
+        "overlap_pixels": 98471
+      },
+      {
+        "indices": [
+          0,
+          12
+        ],
+        "bones": [
+          "Capitate",
+          "Metacarpal4"
+        ],
+        "overlap_cases": 358,
+        "overlap_pixels": 89670
+      },
+      {
+        "indices": [
+          3,
+          12
+        ],
+        "bones": [
+          "Hamate",
+          "Metacarpal4"
+        ],
+        "overlap_cases": 353,
+        "overlap_pixels": 90770
+      },
+      {
+        "indices": [
+          1,
+          2
+        ],
+        "bones": [
+          "DistalRadius",
+          "DistalUlna"
+        ],
+        "overlap_cases": 228,
+        "overlap_pixels": 78639
+      },
+      {
+        "indices": [
+          9,
+          10
+        ],
+        "bones": [
+          "Metacarpal1",
+          "Metacarpal2"
+        ],
+        "overlap_cases": 150,
+        "overlap_pixels": 35049
+      },
+      {
+        "indices": [
+          4,
+          5
+        ],
+        "bones": [
+          "Lunate",
+          "Tri"
+        ],
+        "overlap_cases": 140,
+        "overlap_pixels": 48941
+      },
+      {
+        "indices": [
+          3,
+          4
+        ],
+        "bones": [
+          "Hamate",
+          "Lunate"
+        ],
+        "overlap_cases": 108,
+        "overlap_pixels": 18491
+      }
+    ]
+  },
+  "plain_best": {
+    "arm": "plain",
+    "epoch": 6,
+    "seconds": 27.06956171989441,
+    "learning_rate": 4.522542485937369e-05,
+    "train_loss": 0.025380876318496816,
+    "train_native": 0.025380876318496816,
+    "train_prior": 0.0,
+    "train_critical": 0.0,
+    "train_spurious": 0.0,
+    "train_missing": 0.0,
+    "macro_dsc": 0.9780833721160889,
+    "macro_iou": 0.9573203921318054,
+    "voe": 0.04267960786819458,
+    "macro_sensitivity": 0.9755631685256958,
+    "macro_specificity": 0.9993612170219421,
+    "overlap_dsc": 0.8724306934968478,
+    "overlap_iou": 0.7737271313409401,
+    "overlap_voe": 0.22627286865905993,
+    "overlap_nsd_2px": 0.8793678181577084,
+    "overlap_msd_px": 1.1294276333412137,
+    "overlap_msd_fail_rate": 0.0,
+    "pair_overlap_dsc": [
+      0.8970320820808411,
+      0.9123667478561401,
+      0.8643055558204651,
+      0.8905912041664124,
+      0.9047374725341797,
+      0.8461458683013916,
+      0.8197085857391357,
+      0.8399131298065186,
+      0.914191722869873,
+      0.8512365221977234,
+      0.8961910009384155,
+      0.6688001155853271,
+      0.7546429634094238,
+      0.7588935494422913,
+      0.8613165020942688,
+      0.7759746313095093,
+      0.840964138507843,
+      0.4677318036556244,
+      0.743625819683075,
+      0.6302056312561035,
+      0.7663729786872864,
+      0.770926833152771,
+      0.8534038662910461,
+      0.7947368621826172
+    ],
+    "class_dsc": [
+      0.976729691028595,
+      0.9905099272727966,
+      0.9907059669494629,
+      0.9737881422042847,
+      0.9690460562705994,
+      0.9770685434341431,
+      0.980108380317688,
+      0.9643763899803162,
+      0.9504578709602356,
+      0.9884628653526306,
+      0.9847898483276367,
+      0.9780464768409729,
+      0.9829135537147522,
+      0.9861624836921692
+    ]
+  },
+  "prior_best": {
+    "arm": "explicit_overlap_iem",
+    "epoch": 6,
+    "seconds": 36.761969804763794,
+    "learning_rate": 4.522542485937369e-05,
+    "train_loss": 0.027310474339653463,
+    "train_native": 0.025457777757855023,
+    "train_prior": 1.8526964880438412,
+    "train_critical": 0.0006890521508082399,
+    "train_spurious": 0.00032783344457574707,
+    "train_missing": 0.00036121870623249285,
+    "macro_dsc": 0.9780865907669067,
+    "macro_iou": 0.9573262929916382,
+    "voe": 0.042673707008361816,
+    "macro_sensitivity": 0.9758632183074951,
+    "macro_specificity": 0.9993510842323303,
+    "overlap_dsc": 0.8724497061530159,
+    "overlap_iou": 0.7737570391816825,
+    "overlap_voe": 0.22624296081831752,
+    "overlap_nsd_2px": 0.8792738266618152,
+    "overlap_msd_px": 1.1291101441293165,
+    "overlap_msd_fail_rate": 0.0,
+    "pair_overlap_dsc": [
+      0.897487223148346,
+      0.9120645523071289,
+      0.8646011352539062,
+      0.8909569382667542,
+      0.904318630695343,
+      0.8464394211769104,
+      0.8199678063392639,
+      0.837971031665802,
+      0.9143770933151245,
+      0.8512445688247681,
+      0.8962505459785461,
+      0.6695342063903809,
+      0.7535642385482788,
+      0.7584667205810547,
+      0.8617676496505737,
+      0.7763455510139465,
+      0.8410576581954956,
+      0.4694041907787323,
+      0.745517373085022,
+      0.6316394209861755,
+      0.7652009725570679,
+      0.7698412537574768,
+      0.8539523482322693,
+      0.8018451929092407
+    ],
+    "class_dsc": [
+      0.9766955375671387,
+      0.9904974102973938,
+      0.990699052810669,
+      0.9738650918006897,
+      0.9690607786178589,
+      0.9770670533180237,
+      0.9801236391067505,
+      0.9645071625709534,
+      0.9504076242446899,
+      0.9884907603263855,
+      0.9847937226295471,
+      0.9780030846595764,
+      0.982836902141571,
+      0.9861637353897095
+    ]
+  },
+  "plain_val": {
+    "macro_dsc": 0.9780833721160889,
+    "macro_iou": 0.9573203921318054,
+    "voe": 0.04267960786819458,
+    "macro_sensitivity": 0.9755631685256958,
+    "macro_specificity": 0.9993612170219421,
+    "overlap_dsc": 0.8724306934968478,
+    "overlap_iou": 0.7737271313409401,
+    "overlap_voe": 0.22627286865905993,
+    "overlap_nsd_2px": 0.8793678181577084,
+    "overlap_msd_px": 1.1294276333412137,
+    "overlap_msd_fail_rate": 0.0,
+    "pair_overlap_dsc": [
+      0.8970320820808411,
+      0.9123667478561401,
+      0.8643055558204651,
+      0.8905912041664124,
+      0.9047374725341797,
+      0.8461458683013916,
+      0.8197085857391357,
+      0.8399131298065186,
+      0.914191722869873,
+      0.8512365221977234,
+      0.8961910009384155,
+      0.6688001155853271,
+      0.7546429634094238,
+      0.7588935494422913,
+      0.8613165020942688,
+      0.7759746313095093,
+      0.840964138507843,
+      0.4677318036556244,
+      0.743625819683075,
+      0.6302056312561035,
+      0.7663729786872864,
+      0.770926833152771,
+      0.8534038662910461,
+      0.7947368621826172
+    ],
+    "class_dsc": [
+      0.976729691028595,
+      0.9905099272727966,
+      0.9907059669494629,
+      0.9737881422042847,
+      0.9690460562705994,
+      0.9770685434341431,
+      0.980108380317688,
+      0.9643763899803162,
+      0.9504578709602356,
+      0.9884628653526306,
+      0.9847898483276367,
+      0.9780464768409729,
+      0.9829135537147522,
+      0.9861624836921692
+    ]
+  },
+  "explicit_overlap_iem_val": {
+    "macro_dsc": 0.9780865907669067,
+    "macro_iou": 0.9573262929916382,
+    "voe": 0.042673707008361816,
+    "macro_sensitivity": 0.9758632183074951,
+    "macro_specificity": 0.9993510842323303,
+    "overlap_dsc": 0.8724497061530159,
+    "overlap_iou": 0.7737570391816825,
+    "overlap_voe": 0.22624296081831752,
+    "overlap_nsd_2px": 0.8792738266618152,
+    "overlap_msd_px": 1.1291101441293165,
+    "overlap_msd_fail_rate": 0.0,
+    "pair_overlap_dsc": [
+      0.897487223148346,
+      0.9120645523071289,
+      0.8646011352539062,
+      0.8909569382667542,
+      0.904318630695343,
+      0.8464394211769104,
+      0.8199678063392639,
+      0.837971031665802,
+      0.9143770933151245,
+      0.8512445688247681,
+      0.8962505459785461,
+      0.6695342063903809,
+      0.7535642385482788,
+      0.7584667205810547,
+      0.8617676496505737,
+      0.7763455510139465,
+      0.8410576581954956,
+      0.4694041907787323,
+      0.745517373085022,
+      0.6316394209861755,
+      0.7652009725570679,
+      0.7698412537574768,
+      0.8539523482322693,
+      0.8018451929092407
+    ],
+    "class_dsc": [
+      0.9766955375671387,
+      0.9904974102973938,
+      0.990699052810669,
+      0.9738650918006897,
+      0.9690607786178589,
+      0.9770670533180237,
+      0.9801236391067505,
+      0.9645071625709534,
+      0.9504076242446899,
+      0.9884907603263855,
+      0.9847937226295471,
+      0.9780030846595764,
+      0.982836902141571,
+      0.9861637353897095
+    ]
+  },
+  "delta_prior_minus_plain": {
+    "macro_dsc": 3.2186508178710938e-06,
+    "macro_iou": 5.900859832763672e-06,
+    "voe": -5.900859832763672e-06,
+    "macro_sensitivity": 0.0003000497817993164,
+    "macro_specificity": -1.0132789611816406e-05,
+    "overlap_dsc": 1.901265616810477e-05,
+    "overlap_iou": 2.9907840742415814e-05,
+    "overlap_voe": -2.9907840742415814e-05,
+    "overlap_nsd_2px": -9.399149589317535e-05,
+    "overlap_msd_px": -0.0003174892118971151,
+    "overlap_msd_fail_rate": 0.0
+  },
+  "checkpoints": {
+    "plain": "outputs/ram_w600/r324_nnunet_explicit_overlap_iem/plain_best.pth",
+    "prior": "outputs/ram_w600/r324_nnunet_explicit_overlap_iem/explicit_overlap_iem_best.pth"
+  },
+  "config": {
+    "dataset_root": "data/remote_variants/RAM-W600",
+    "baseline_checkpoint": "outputs/ram_w600/r285_nnunet_overlap_prior/baseline_best.pth",
+    "output": "outputs/ram_w600/r324_nnunet_explicit_overlap_iem",
+    "epochs": 30,
+    "min_epochs": 15,
+    "patience": 10,
+    "prior_weight": 0.001,
+    "learning_rate": 5e-05,
+    "size": 384,
+    "seed": 3241,
+    "min_overlap_cases": 3,
+    "max_pairs": 24,
+    "limit_train": 0,
+    "limit_val": 0,
+    "smoke": false
+  }
+}

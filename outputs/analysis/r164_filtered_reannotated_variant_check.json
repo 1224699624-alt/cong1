@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "errors": [],
+  "variant": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotated_filtered_trainval_v1",
+  "metadata": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotated_filtered_trainval_v1\\r164_filtered_reannotated_metadata.json",
+  "splits": {
+    "train": {
+      "images": 1159,
+      "labels": 1159,
+      "paired": 1159,
+      "images_without_labels": [],
+      "labels_without_images": []
+    },
+    "val": {
+      "images": 95,
+      "labels": 95,
+      "paired": 95,
+      "images_without_labels": [],
+      "labels_without_images": []
+    },
+    "test": {
+      "images": 97,
+      "labels": 97,
+      "paired": 97,
+      "images_without_labels": [],
+      "labels_without_images": []
+    }
+  },
+  "test_equals_original_test": true,
+  "test_equals_reannotated_test": false,
+  "reannotated_test_extra_vs_original_count": 25
+}

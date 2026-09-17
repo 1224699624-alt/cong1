@@ -1,0 +1,135 @@
+{
+  "cwd": "/home/shenzeyu/workspace/YOLO_SAM_generic_src",
+  "env_path": "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python",
+  "which": {
+    "conda": null,
+    "mamba": null,
+    "micromamba": null,
+    "nvcc": null,
+    "gcc": "/usr/bin/gcc",
+    "g++": "/usr/bin/g++",
+    "pip": null
+  },
+  "path_exists": {
+    "/usr/local/cuda": true,
+    "/usr/local/cuda-11.8": false,
+    "/usr/local/cuda-12": false,
+    "/usr/local/cuda-12.1": false,
+    "/usr/local/cuda-12.4": false,
+    "/opt/cuda": false,
+    "/home/shenzeyu/.conda": true,
+    "/home/shenzeyu/miniconda3": true,
+    "/home/shenzeyu/anaconda3": false
+  },
+  "nvidia_smi": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=index,name,driver_version,memory.total,memory.used,utilization.gpu",
+      "--format=csv,noheader,nounits"
+    ],
+    "returncode": 0,
+    "stdout": "0, NVIDIA GeForce RTX 4090, 595.71.05, 24564, 5971, 67\n1, NVIDIA GeForce RTX 4090, 595.71.05, 24564, 18, 0",
+    "stderr": ""
+  },
+  "python_torch": {
+    "command": [
+      "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python",
+      "-c",
+      "import json, torch; print(json.dumps({'torch': torch.__version__, 'cuda': torch.version.cuda, 'cuda_available': torch.cuda.is_available(), 'device_count': torch.cuda.device_count()}))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"torch\": \"2.5.1+cu118\", \"cuda\": \"11.8\", \"cuda_available\": true, \"device_count\": 2}",
+    "stderr": ""
+  },
+  "python_prefix": {
+    "command": [
+      "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python",
+      "-c",
+      "import sys,sysconfig,json; print(json.dumps({'prefix': sys.prefix, 'base_prefix': sys.base_prefix, 'include': sysconfig.get_paths().get('include')}))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"prefix\": \"/home/shenzeyu/.conda/envs/yolo-sam-gpu\", \"base_prefix\": \"/home/shenzeyu/.conda/envs/yolo-sam-gpu\", \"include\": \"/home/shenzeyu/.conda/envs/yolo-sam-gpu/include/python3.11\"}",
+    "stderr": ""
+  },
+  "gcc": {
+    "command": [
+      "gcc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "stderr": ""
+  },
+  "gxx": {
+    "command": [
+      "g++",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "stderr": ""
+  },
+  "nvcc_version": {
+    "command": [
+      "nvcc",
+      "--version"
+    ],
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "conda_info": {
+    "command": [
+      "conda",
+      "info",
+      "--json"
+    ],
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "conda_search_cuda_toolkit": {
+    "command": [
+      "conda",
+      "search",
+      "-c",
+      "nvidia",
+      "cuda-toolkit=11.8",
+      "--json"
+    ],
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "pip_detectron2_dry_query": {
+    "command": [
+      "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python",
+      "-m",
+      "pip",
+      "index",
+      "versions",
+      "detectron2"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "ERROR: No matching distribution found for detectron2\n\n[notice] A new release of pip is available: 26.1.1 -> 26.1.2\n[notice] To update, run: /home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python -m pip install --upgrade pip"
+  },
+  "pip_fvcore_dry_query": {
+    "command": [
+      "/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python",
+      "-m",
+      "pip",
+      "index",
+      "versions",
+      "fvcore"
+    ],
+    "returncode": 0,
+    "stdout": "fvcore (0.1.5.post20221221)\nAvailable versions: 0.1.5.post20221221, 0.1.5.post20221220, 0.1.5.post20221213, 0.1.5.post20221122, 0.1.5.post20220512, 0.1.5.post20220506, 0.1.5.post20220504, 0.1.5.post20220414, 0.1.5.post20220305, 0.1.5.post20220212, 0.1.5.post20220119, 0.1.5.post20211023, 0.1.5.post20211019, 0.1.5.post20211015, 0.1.5.post20210924, 0.1.5.post20210923, 0.1.5.post20210915, 0.1.5.post20210825, 0.1.5.post20210812, 0.1.5.post20210804, 0.1.5.post20210730, 0.1.5.post20210727, 0.1.5.post20210722, 0.1.5.post20210719, 0.1.5.post20210630, 0.1.5.post20210624, 0.1.5.post20210623, 0.1.5.post20210617, 0.1.5.post20210609, 0.1.5.post20210604, 0.1.5.post20210518, 0.1.5.post20210515, 0.1.5.post20210514, 0.1.5.post20210511, 0.1.5.post20210508, 0.1.5.post20210423, 0.1.5.post20210415, 0.1.5.post20210413, 0.1.5.post20210410, 0.1.5.post20210402, 0.1.5.post20210330, 0.1.5.post20210328, 0.1.5.post20210327, 0.1.4.post20210326, 0.1.4.post20210325, 0.1.4.post20210324, 0.1.4.post20210323, 0.1.4, 0.1.3.post20210317, 0.1.3.post20210311, 0.1.3.post20210310, 0.1.3.post20210306, 0.1.3.post20210305, 0.1.3.post20210227, 0.1.3.post20210226, 0.1.3.post20210225, 0.1.3.post20210224, 0.1.3.post20210223, 0.1.3.post20210220, 0.1.3.post20210219, 0.1.3.post20210218, 0.1.3.post20210213, 0.1.3.post20210204, 0.1.3.post20210203, 0.1.2.post20210128, 0.1.2.post20210127, 0.1.2.post20210126, 0.1.2.post20210115, 0.1.2.post20210113, 0.1.2.post20210112, 0.1.2.post20210109, 0.1.2.post20201218, 0.1.2.post20201216, 0.1.2.post20201213, 0.1.2.post20201212, 0.1.2.post20201211, 0.1.2.post20201210, 0.1.2.post20201209, 0.1.2.post20201204, 0.1.2.post20201122, 0.1.2.post20201111, 0.1.2.post20201104, 0.1.2.post20201103, 0.1.2.post20201030, 0.1.2.post20201020, 0.1.2.post20201016, 0.1.2.post20201013, 0.1.2.post20201009, 0.1.2.post20200929, 0.1.2.post20200926, 0.1.2.post20200912, 0.1.2.post20200911, 0.1.2.post20200910, 0.1.1.post20200716, 0.1.1.post20200715, 0.1.1.post20200711, 0.1.1.post20200704, 0.1.1.post20200630, 0.1.1.post20200623, 0.1.1.post20200622, 0.1.1.post20200621, 0.1.1.post20200620, 0.1.1.post20200619, 0.1.1.post20200618, 0.1.1.post20200617, 0.1.1.post20200616, 0.1.1.post20200615, 0.1.1.post20200614, 0.1.1.post20200613, 0.1.1.post20200612, 0.1.1.post20200611, 0.1.1.post20200610, 0.1.1.post20200609, 0.1.1.post20200608, 0.1.1.post20200607, 0.1.1.post20200606, 0.1.1.post20200605, 0.1.1.post20200604, 0.1.1.post20200603, 0.1.1.post20200602, 0.1.1.post20200601, 0.1.1.post20200531, 0.1.1.post200513",
+    "stderr": "[notice] A new release of pip is available: 26.1.1 -> 26.1.2\n[notice] To update, run: /home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python -m pip install --upgrade pip"
+  },
+  "disk": {
+    "command": [
+      "df",
+      "-h",
+      ".",
+      "/home/shenzeyu"
+    ],
+    "returncode": 0,
+    "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p2  1.9T  1.6T  167G  91% /\n/dev/nvme0n1p2  1.9T  1.6T  167G  91% /",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "run_id": "R255_GATE_A",
+  "scope": "TSRS_RSNA-Epiphysis original train only",
+  "clean_test_used": false,
+  "num_cases_requested": 875,
+  "num_cases_with_rows": 860,
+  "num_pairs": 6777,
+  "num_close_gap_pairs_1_4px": 1984,
+  "num_close_gap_cases_1_4px": 668,
+  "num_narrow_pairs_1_2px": 963,
+  "instance_recoverability": 0.9976239714876578,
+  "narrow_augmentation_survival": 0.9252336448598131,
+  "close_xray_pass_rate": 0.8185483870967742,
+  "close_q_xray_mean": 0.6189478244017698,
+  "minimum_support_ess": 47.96421660651848,
+  "gap_bin_counts": {
+    "3-4": 3156,
+    ">8": 966,
+    "5-8": 1692,
+    "1-2": 963
+  },
+  "age_quartiles_months": [
+    66.5,
+    140.0
+  ],
+  "low_age_pair_count": 423,
+  "high_age_pair_count": 2794,
+  "low_age_close_pair_count": 115,
+  "high_age_close_pair_count": 830,
+  "gate_checks": {
+    "metadata_complete": true,
+    "instance_recoverability_ge_095": true,
+    "close_gap_pairs_ge_100": true,
+    "close_gap_cases_ge_50": true,
+    "narrow_aug_survival_ge_060": true,
+    "close_xray_pass_ge_030": true,
+    "third_instance_crossing_zero": true,
+    "minimum_support_ess_ge_30": true,
+    "high_age_has_close_pairs": true
+  },
+  "gate_pass": true,
+  "config": {
+    "raw_root": "data/raw",
+    "dataset": "TSRS_RSNA-Epiphysis",
+    "metadata_csv": "G:/gutou/filtered_train.csv",
+    "output_json": "outputs/analysis/r255_gate_a/r255_close_gap_gate_a.json",
+    "output_csv": "outputs/analysis/r255_gate_a/r255_close_gap_pairs.csv",
+    "max_cases": 0,
+    "seed": 255,
+    "min_area": 24,
+    "neighbors": 4,
+    "roi_v_min": 0.45,
+    "max_gap_px": 12.0,
+    "max_relative_gap": 0.4,
+    "capsule_rho": 0.12,
+    "xray_floor": 0.15,
+    "rotate_deg": 2.0
+  },
+  "notes": "All thresholds were pre-registered before reading Gate A results. Rejected third-instance corridors are not emitted as usable rows."
+}

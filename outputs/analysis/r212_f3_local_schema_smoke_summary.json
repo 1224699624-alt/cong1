@@ -1,0 +1,65 @@
+{
+  "run_id": "R211-F1",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "clean_test_v2_used": false,
+  "purpose": "learned GT-free acceptance gate for R210-F1 candidates",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "output_exp": "r211_f1_learned_acceptance_gate",
+  "classifier": "hgb",
+  "label_mode": "boundary_positive",
+  "strict_boundary_gate": true,
+  "checkpoint": "outputs\\r211_f1_learned_acceptance_gate\\r212_f3_local_schema_smoke.joblib",
+  "features": [
+    "component_area",
+    "cut_area",
+    "cut_frac_component",
+    "split_gain",
+    "piece_count",
+    "min_piece_area",
+    "min_piece_frac",
+    "bbox_h",
+    "bbox_w",
+    "slenderness",
+    "fill",
+    "gradient_ratio",
+    "dist_ratio",
+    "component_edge_contact_frac",
+    "cut_boundary_contact_frac",
+    "cut_exposed_boundary_frac",
+    "cut_neighbor_fg_frac",
+    "cut_centroid_dist_norm",
+    "anchor_component_count",
+    "anchor_area",
+    "candidate_rank"
+  ],
+  "train_candidate_summary": {
+    "num_candidates": 45,
+    "num_positive": 15,
+    "positive_rate": 0.3333333333333333
+  },
+  "val_candidate_summary": {
+    "num_candidates": 0,
+    "num_positive": 0,
+    "positive_rate": 0.0
+  },
+  "num_evaluated": 0,
+  "val_gate_pass": false,
+  "best": {
+    "threshold": 0.7,
+    "mean": {},
+    "gate_pass": false
+  },
+  "grid": [
+    {
+      "threshold": 0.7,
+      "mean": {},
+      "gate_pass": false
+    },
+    {
+      "threshold": 0.8,
+      "mean": {},
+      "gate_pass": false
+    }
+  ]
+}

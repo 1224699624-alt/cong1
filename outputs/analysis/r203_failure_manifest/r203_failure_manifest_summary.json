@@ -1,0 +1,117 @@
+{
+  "run_id": "R203",
+  "purpose": "Select train/val-safe directions for reducing R110 bridge/gap failures without over-erosion.",
+  "inputs": {
+    "r110": "outputs\\analysis\\r201_unified_eval\\r110_r100_r108_patch_basic_unified_metrics.json",
+    "araa": "outputs\\analysis\\r201_unified_eval\\araa_danet_epoch98_unified_metrics.json",
+    "nnunet_risk_audit": "outputs\\analysis\\r201_unified_eval\\r202_nnunet2d_unified_metrics.json"
+  },
+  "selection_note": "clean-test-v2 diagnostic only; do not tune thresholds from these rows.",
+  "summary": {
+    "num_images": 81,
+    "failure_type_counts": {
+      "clean_bridge_candidate": 18,
+      "fragmentation_risk_high_component_error": 9,
+      "gap_fp_candidate": 10,
+      "mixed_or_low_priority": 34,
+      "recall_risk_do_not_cut_aggressively": 10
+    },
+    "top_images": [
+      {
+        "image": "1897.png",
+        "priority_score": 2.4670262463045294,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.8897094485472428,
+        "r110_gap_fp": 0.40703211392205096,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 2.0
+      },
+      {
+        "image": "2495.png",
+        "priority_score": 2.4433167992591907,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9018267978348093,
+        "r110_gap_fp": 0.296883424997304,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 3.0
+      },
+      {
+        "image": "4099.png",
+        "priority_score": 2.4162556427875184,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.8956663793879678,
+        "r110_gap_fp": 0.20533091411785034,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 3.0
+      },
+      {
+        "image": "14169.png",
+        "priority_score": 2.407335963146368,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9401795821472926,
+        "r110_gap_fp": 0.17865000440024642,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 2.0
+      },
+      {
+        "image": "1744.png",
+        "priority_score": 2.2367431113923217,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9208560086754947,
+        "r110_gap_fp": 0.20102684615188127,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 1.0
+      },
+      {
+        "image": "2017.png",
+        "priority_score": 2.2189017331534404,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.914707526772414,
+        "r110_gap_fp": 0.3396661091299271,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 1.0
+      },
+      {
+        "image": "12936.png",
+        "priority_score": 2.2149874597553985,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.8592208449279028,
+        "r110_gap_fp": 0.10050729232720355,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 1.0
+      },
+      {
+        "image": "15071.png",
+        "priority_score": 2.2143910748302775,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9461378111221049,
+        "r110_gap_fp": 0.18316081250812075,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 2.0
+      },
+      {
+        "image": "1944.png",
+        "priority_score": 2.2100635601668195,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9127469643484207,
+        "r110_gap_fp": 0.15940766550522648,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 1.0
+      },
+      {
+        "image": "14123.png",
+        "priority_score": 2.209526498372857,
+        "failure_type": "clean_bridge_candidate",
+        "r110_dice": 0.9304866867503696,
+        "r110_gap_fp": 0.1315552891818999,
+        "r110_component_merge": 1.0,
+        "r110_component_mae": 1.0
+      }
+    ]
+  },
+  "recommended_next": [
+    "Use train/val to learn or select a conservative bridge/gap candidate detector.",
+    "Reject edits that reduce recall or increase component-count MAE on validation.",
+    "Only after locking validation rules, apply once to clean-test-v2 and evaluate with R201."
+  ]
+}

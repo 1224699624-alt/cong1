@@ -1,0 +1,425 @@
+{
+  "run_id": "R177-prep",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "anchor_exp": "r100_like_r025b_r097_patch_basic_trainval",
+  "gate": {
+    "pass": true,
+    "train_ok": true,
+    "val_ok": true,
+    "missing_ok": true,
+    "min_train_risk_images": 1,
+    "min_val_risk_images": 1,
+    "min_risk_pixels": 128
+  },
+  "summary_by_split": {
+    "train": {
+      "num_records": 20,
+      "missing_anchor": 0,
+      "risk_images": 12,
+      "false_bridge_images": 12,
+      "dice": {
+        "mean": 0.9069323843400623,
+        "median": 0.9143641941933003,
+        "min": 0.8303670420727082,
+        "max": 0.943759414532706
+      },
+      "boundary_iou": {
+        "mean": 0.23705270413498783,
+        "median": 0.2313103474343672,
+        "min": 0.1268739247972475,
+        "max": 0.38929590498958894
+      },
+      "boundary_f1": {
+        "mean": 0.3773580932988941,
+        "median": 0.3754592942621484,
+        "min": 0.22517856169238318,
+        "max": 0.5604218706633362
+      },
+      "sep_fp_rate": {
+        "mean": 0.22512918394693665,
+        "median": 0.2135629466245308,
+        "min": 0.09983114158522233,
+        "max": 0.3767342050104801
+      },
+      "component_error": {
+        "mean": 2.65,
+        "median": 1.5,
+        "min": 0.0,
+        "max": 10.0
+      },
+      "risk_pixels": {
+        "mean": 8766.0,
+        "median": 8090.5,
+        "min": 2531.0,
+        "max": 20607.0
+      },
+      "top_risk": [
+        {
+          "image": "10144.png",
+          "risk_pixels": 12849,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9146073334402125,
+          "boundary_iou": 0.16645262852645099
+        },
+        {
+          "image": "10004.png",
+          "risk_pixels": 11061,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9192808910373009,
+          "boundary_iou": 0.21301428507052408
+        },
+        {
+          "image": "10693.png",
+          "risk_pixels": 9597,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8599740596627756,
+          "boundary_iou": 0.14498828751078782
+        },
+        {
+          "image": "10685.png",
+          "risk_pixels": 9183,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8687738378460028,
+          "boundary_iou": 0.16535288725939504
+        },
+        {
+          "image": "10621.png",
+          "risk_pixels": 8292,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.8806611835077974,
+          "boundary_iou": 0.1874049670552458
+        },
+        {
+          "image": "10727.png",
+          "risk_pixels": 7513,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9162958843159066,
+          "boundary_iou": 0.24686420650790766
+        },
+        {
+          "image": "10003.png",
+          "risk_pixels": 6512,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9095946886544949,
+          "boundary_iou": 0.2615064123429464
+        },
+        {
+          "image": "10015.png",
+          "risk_pixels": 6110,
+          "false_bridge": 1,
+          "component_delta": -6,
+          "dice": 0.9095509531052325,
+          "boundary_iou": 0.25505488157134604
+        },
+        {
+          "image": "10043.png",
+          "risk_pixels": 5209,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9055863867929483,
+          "boundary_iou": 0.26640957028175666
+        },
+        {
+          "image": "10779.png",
+          "risk_pixels": 4182,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.943759414532706,
+          "boundary_iou": 0.38929590498958894
+        },
+        {
+          "image": "10390.png",
+          "risk_pixels": 2565,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.8303670420727082,
+          "boundary_iou": 0.24673202614379086
+        },
+        {
+          "image": "10542.png",
+          "risk_pixels": 2531,
+          "false_bridge": 1,
+          "component_delta": -5,
+          "dice": 0.927992288938028,
+          "boundary_iou": 0.38557089084065244
+        },
+        {
+          "image": "10474.png",
+          "risk_pixels": 20607,
+          "false_bridge": 0,
+          "component_delta": 3,
+          "dice": 0.9141210549463882,
+          "boundary_iou": 0.1268739247972475
+        },
+        {
+          "image": "10055.png",
+          "risk_pixels": 15986,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.8968614286488911,
+          "boundary_iou": 0.15143501868697554
+        },
+        {
+          "image": "10852.png",
+          "risk_pixels": 15836,
+          "false_bridge": 0,
+          "component_delta": 10,
+          "dice": 0.9261967415038351,
+          "boundary_iou": 0.1676230745998188
+        },
+        {
+          "image": "10526.png",
+          "risk_pixels": 10655,
+          "false_bridge": 0,
+          "component_delta": 3,
+          "dice": 0.9285465235112356,
+          "boundary_iou": 0.21588866872494356
+        },
+        {
+          "image": "10066.png",
+          "risk_pixels": 8479,
+          "false_bridge": 0,
+          "component_delta": 2,
+          "dice": 0.8958176254047102,
+          "boundary_iou": 0.20488765346305304
+        },
+        {
+          "image": "11013.png",
+          "risk_pixels": 7889,
+          "false_bridge": 0,
+          "component_delta": 6,
+          "dice": 0.927413440549425,
+          "boundary_iou": 0.2858120197873908
+        },
+        {
+          "image": "10833.png",
+          "risk_pixels": 5629,
+          "false_bridge": 0,
+          "component_delta": 3,
+          "dice": 0.9343038408423063,
+          "boundary_iou": 0.32124352331606215
+        },
+        {
+          "image": "10910.png",
+          "risk_pixels": 4635,
+          "false_bridge": 0,
+          "component_delta": 0,
+          "dice": 0.9289430674883421,
+          "boundary_iou": 0.33864325122387134
+        }
+      ]
+    },
+    "val": {
+      "num_records": 20,
+      "missing_anchor": 0,
+      "risk_images": 7,
+      "false_bridge_images": 7,
+      "dice": {
+        "mean": 0.8830074591330181,
+        "median": 0.9049087693629997,
+        "min": 0.6708300806661462,
+        "max": 0.949538762663638
+      },
+      "boundary_iou": {
+        "mean": 0.23847697066368193,
+        "median": 0.2555829385444477,
+        "min": 0.09642993266421039,
+        "max": 0.3629086962420296
+      },
+      "boundary_f1": {
+        "mean": 0.3788660575440256,
+        "median": 0.40711430839895013,
+        "min": 0.17589803012746233,
+        "max": 0.532550268763687
+      },
+      "sep_fp_rate": {
+        "mean": 0.1782367789500316,
+        "median": 0.15554893752650759,
+        "min": 0.06374736842105264,
+        "max": 0.38120127569099926
+      },
+      "component_error": {
+        "mean": 2.35,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 7.0
+      },
+      "risk_pixels": {
+        "mean": 6981.5,
+        "median": 6423.5,
+        "min": 2518.0,
+        "max": 12277.0
+      },
+      "top_risk": [
+        {
+          "image": "10624.png",
+          "risk_pixels": 10651,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.8540182462664885,
+          "boundary_iou": 0.1458286102924507
+        },
+        {
+          "image": "13867.png",
+          "risk_pixels": 10462,
+          "false_bridge": 1,
+          "component_delta": -7,
+          "dice": 0.8642395660403295,
+          "boundary_iou": 0.16046389035318925
+        },
+        {
+          "image": "14041.png",
+          "risk_pixels": 7931,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9393912788996196,
+          "boundary_iou": 0.2907996197316996
+        },
+        {
+          "image": "12498.png",
+          "risk_pixels": 7931,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.949538762663638,
+          "boundary_iou": 0.30144136378872766
+        },
+        {
+          "image": "11945.png",
+          "risk_pixels": 6255,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9385887158933252,
+          "boundary_iou": 0.31034689353543826
+        },
+        {
+          "image": "13517.png",
+          "risk_pixels": 5192,
+          "false_bridge": 1,
+          "component_delta": -5,
+          "dice": 0.7885912362005953,
+          "boundary_iou": 0.15103744059348556
+        },
+        {
+          "image": "10375.png",
+          "risk_pixels": 5081,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.9032545366831187,
+          "boundary_iou": 0.2825042615837595
+        },
+        {
+          "image": "13840.png",
+          "risk_pixels": 12277,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.8735794963904528,
+          "boundary_iou": 0.1525889431048368
+        },
+        {
+          "image": "12827.png",
+          "risk_pixels": 9915,
+          "false_bridge": 0,
+          "component_delta": 3,
+          "dice": 0.9260635284507859,
+          "boundary_iou": 0.23160852259424022
+        },
+        {
+          "image": "10618.png",
+          "risk_pixels": 9261,
+          "false_bridge": 0,
+          "component_delta": 5,
+          "dice": 0.887309708141001,
+          "boundary_iou": 0.19118769767695495
+        },
+        {
+          "image": "13436.png",
+          "risk_pixels": 9093,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.9164383014420965,
+          "boundary_iou": 0.2217011723621851
+        },
+        {
+          "image": "11852.png",
+          "risk_pixels": 7638,
+          "false_bridge": 0,
+          "component_delta": 0,
+          "dice": 0.8740158949292937,
+          "boundary_iou": 0.2558600583090379
+        },
+        {
+          "image": "13480.png",
+          "risk_pixels": 6592,
+          "false_bridge": 0,
+          "component_delta": 0,
+          "dice": 0.9246086462811258,
+          "boundary_iou": 0.2948882767064585
+        },
+        {
+          "image": "1399.png",
+          "risk_pixels": 5676,
+          "false_bridge": 0,
+          "component_delta": 7,
+          "dice": 0.8042814788978025,
+          "boundary_iou": 0.12619586014959122
+        },
+        {
+          "image": "10520.png",
+          "risk_pixels": 5544,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.8978390408500251,
+          "boundary_iou": 0.2553058187798575
+        },
+        {
+          "image": "12627.png",
+          "risk_pixels": 4915,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.9166579243162233,
+          "boundary_iou": 0.32986638323716977
+        },
+        {
+          "image": "1418.png",
+          "risk_pixels": 4736,
+          "false_bridge": 0,
+          "component_delta": 0,
+          "dice": 0.6708300806661462,
+          "boundary_iou": 0.09642993266421039
+        },
+        {
+          "image": "13454.png",
+          "risk_pixels": 4453,
+          "false_bridge": 0,
+          "component_delta": 0,
+          "dice": 0.9065630020428807,
+          "boundary_iou": 0.28577825541823393
+        },
+        {
+          "image": "13441.png",
+          "risk_pixels": 3509,
+          "false_bridge": 0,
+          "component_delta": 1,
+          "dice": 0.9166860276009479,
+          "boundary_iou": 0.32279771615008157
+        },
+        {
+          "image": "13220.png",
+          "risk_pixels": 2518,
+          "false_bridge": 0,
+          "component_delta": 6,
+          "dice": 0.9076537100044678,
+          "boundary_iou": 0.3629086962420296
+        }
+      ]
+    }
+  },
+  "manifest_csv": "outputs\\analysis\\r177_bridge_risk_manifest_smoke\\r177_bridge_risk_manifest.csv"
+}

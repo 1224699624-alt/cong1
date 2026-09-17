@@ -1,0 +1,237 @@
+{
+  "experiment": "R351_RAM_DUAL_PRIOR",
+  "identity": {
+    "cases": 2,
+    "per_case": [
+      {
+        "case": "0019_0001_L",
+        "max_abs_logit_difference": 0.0013475418090820312,
+        "max_abs_input_adapter_difference": 0.0,
+        "valid_pixels": 360000,
+        "target_pixels": 172792
+      },
+      {
+        "case": "0019_0001_R",
+        "max_abs_logit_difference": 0.0014142990112304688,
+        "max_abs_input_adapter_difference": 0.0,
+        "valid_pixels": 360000,
+        "target_pixels": 177838
+      }
+    ],
+    "max_abs_logit_difference": 0.0014142990112304688,
+    "max_abs_input_adapter_difference": 0.0,
+    "seventh_input_channel_nonzero": 0,
+    "seventh_input_channel_abs_sum": 0.0,
+    "tolerance": 1e-06,
+    "passed": false
+  },
+  "backward": {
+    "cases": 2,
+    "per_case": [
+      {
+        "cases": [
+          "0001_0001_L"
+        ],
+        "finite": true,
+        "channels": 14,
+        "adapted_image_max_abs_delta": 0.0,
+        "losses": {
+          "base": 0.009222337044775486,
+          "separation": 0.002413702430203557,
+          "overlap": 0.12748496234416962,
+          "preserve": 8.704669607730378e-15
+        },
+        "states": {
+          "separation_mass": 0.013344444334506989,
+          "overlap_observed_mass": 0.023172222077846527,
+          "overlap_labels_observed": true,
+          "overlap_prior_mean": 0.030968405306339264
+        },
+        "adapter_gradient_sum": 0.0003283631485828664,
+        "refiner_gradient_sum": 3.6628319984301925,
+        "gradient_routing": [
+          {
+            "name": "separation",
+            "base_norm": 0.04095246642827988,
+            "raw_norm": 0.07883394509553909,
+            "projected_norm": 0.05945376679301262,
+            "applied_norm": 0.0020808817353099585,
+            "cosine_before": -0.6566855311393738,
+            "cosine_after": 5.379020606710583e-08,
+            "conflicted": true,
+            "scale": 0.03500000014901161
+          },
+          {
+            "name": "overlap",
+            "base_norm": 0.04095246642827988,
+            "raw_norm": 3.7156896591186523,
+            "projected_norm": 3.7156896591186523,
+            "applied_norm": 0.006142870057374239,
+            "cosine_before": 0.7245541214942932,
+            "cosine_after": 0.7245541214942932,
+            "conflicted": false,
+            "scale": 0.0016532246954739094
+          },
+          {
+            "name": "preserve",
+            "base_norm": 0.04095246642827988,
+            "raw_norm": 2.27713026212939e-09,
+            "projected_norm": 2.27713026212939e-09,
+            "applied_norm": 2.2771302898849655e-10,
+            "cosine_before": 0.21628862619400024,
+            "cosine_after": 0.21628862619400024,
+            "conflicted": false,
+            "scale": 0.10000000149011612
+          }
+        ]
+      },
+      {
+        "cases": [
+          "0001_0001_R"
+        ],
+        "finite": true,
+        "channels": 14,
+        "adapted_image_max_abs_delta": 0.0,
+        "losses": {
+          "base": 0.009892578236758709,
+          "separation": 0.0030166569631546736,
+          "overlap": 0.1382884532213211,
+          "preserve": 3.613437470789162e-15
+        },
+        "states": {
+          "separation_mass": 0.012305555865168571,
+          "overlap_observed_mass": 0.027380555868148804,
+          "overlap_labels_observed": true,
+          "overlap_prior_mean": 0.03379414230585098
+        },
+        "adapter_gradient_sum": 0.0013259615952847525,
+        "refiner_gradient_sum": 3.981373691436602,
+        "gradient_routing": [
+          {
+            "name": "separation",
+            "base_norm": 0.041194621473550797,
+            "raw_norm": 0.07212419807910919,
+            "projected_norm": 0.05568234995007515,
+            "applied_norm": 0.0019488822435960174,
+            "cosine_before": -0.6355808973312378,
+            "cosine_after": 3.806390580507468e-08,
+            "conflicted": true,
+            "scale": 0.03500000014901161
+          },
+          {
+            "name": "overlap",
+            "base_norm": 0.041194621473550797,
+            "raw_norm": 3.3353471755981445,
+            "projected_norm": 3.3353471755981445,
+            "applied_norm": 0.006179193500429392,
+            "cosine_before": 0.8647193908691406,
+            "cosine_after": 0.8647193908691406,
+            "conflicted": false,
+            "scale": 0.0018526387866586447
+          },
+          {
+            "name": "preserve",
+            "base_norm": 0.041194621473550797,
+            "raw_norm": 1.8162459314297053e-09,
+            "projected_norm": 1.8162459314297053e-09,
+            "applied_norm": 1.8162459036741296e-10,
+            "cosine_before": 0.25581982731819153,
+            "cosine_after": 0.25581982731819153,
+            "conflicted": false,
+            "scale": 0.10000000149011612
+          }
+        ]
+      }
+    ],
+    "gradient_routing": [
+      {
+        "name": "separation",
+        "base_norm": 0.04095246642827988,
+        "raw_norm": 0.07883394509553909,
+        "projected_norm": 0.05945376679301262,
+        "applied_norm": 0.0020808817353099585,
+        "cosine_before": -0.6566855311393738,
+        "cosine_after": 5.379020606710583e-08,
+        "conflicted": true,
+        "scale": 0.03500000014901161
+      },
+      {
+        "name": "overlap",
+        "base_norm": 0.04095246642827988,
+        "raw_norm": 3.7156896591186523,
+        "projected_norm": 3.7156896591186523,
+        "applied_norm": 0.006142870057374239,
+        "cosine_before": 0.7245541214942932,
+        "cosine_after": 0.7245541214942932,
+        "conflicted": false,
+        "scale": 0.0016532246954739094
+      },
+      {
+        "name": "preserve",
+        "base_norm": 0.04095246642827988,
+        "raw_norm": 2.27713026212939e-09,
+        "projected_norm": 2.27713026212939e-09,
+        "applied_norm": 2.2771302898849655e-10,
+        "cosine_before": 0.21628862619400024,
+        "cosine_after": 0.21628862619400024,
+        "conflicted": false,
+        "scale": 0.10000000149011612
+      },
+      {
+        "name": "separation",
+        "base_norm": 0.041194621473550797,
+        "raw_norm": 0.07212419807910919,
+        "projected_norm": 0.05568234995007515,
+        "applied_norm": 0.0019488822435960174,
+        "cosine_before": -0.6355808973312378,
+        "cosine_after": 3.806390580507468e-08,
+        "conflicted": true,
+        "scale": 0.03500000014901161
+      },
+      {
+        "name": "overlap",
+        "base_norm": 0.041194621473550797,
+        "raw_norm": 3.3353471755981445,
+        "projected_norm": 3.3353471755981445,
+        "applied_norm": 0.006179193500429392,
+        "cosine_before": 0.8647193908691406,
+        "cosine_after": 0.8647193908691406,
+        "conflicted": false,
+        "scale": 0.0018526387866586447
+      },
+      {
+        "name": "preserve",
+        "base_norm": 0.041194621473550797,
+        "raw_norm": 1.8162459314297053e-09,
+        "projected_norm": 1.8162459314297053e-09,
+        "applied_norm": 1.8162459036741296e-10,
+        "cosine_before": 0.25581982731819153,
+        "cosine_after": 0.25581982731819153,
+        "conflicted": false,
+        "scale": 0.10000000149011612
+      }
+    ],
+    "passed": true,
+    "max_aux_ratio": 0.15
+  },
+  "passed": false,
+  "config": {
+    "dataset_root": "data/remote_variants/RAM-W600",
+    "prior_root": "outputs/priors/r323_ram_native_r317_single_seed",
+    "r332_checkpoint": "outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+    "overlap_checkpoint": "/root/r351_workspace/overlap/full/best.pth",
+    "native_checkpoint": "outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/plain_native_best.pth",
+    "output": "/root/r351_workspace/ram_audit",
+    "epochs": 2,
+    "steps": 2,
+    "lr": 2e-05,
+    "aux_ramp_epochs": 5,
+    "max_aux_ratio": 0.15,
+    "max_grad_norm": 8.0,
+    "seam_threshold": 0.25,
+    "max_pairs": 15,
+    "num_workers": 2,
+    "seed": 3511,
+    "audit": true
+  }
+}

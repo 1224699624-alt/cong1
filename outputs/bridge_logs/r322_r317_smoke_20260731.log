@@ -1,0 +1,93 @@
+{"variant": "image_centers", "seed": 2581, "epoch": 1, "train_loss": 1.0812989516534668, "num_pairs": 310.0, "auroc": 0.908678459937565, "average_precision": 0.8598598675006691, "accuracy": 0.5, "positive_recall": 1.0, "close_pair_count": 56.0, "close_pair_recall": 1.0, "contact_pair_count": 9.0, "contact_pair_recall": 1.0, "negative_specificity": 0.0, "positive_heatmap_soft_dice": 0.010926567018032074, "positive_heat_count": 155.0, "valid_positive_heat_count": 155.0, "positive_heat_coverage": 1.0, "case_accuracy_by_id": {"10375": 0.5, "10520": 0.5, "10618": 0.5, "10624": 0.5, "11852": 0.5, "11945": 0.5, "12498": 0.5, "12627": 0.5}, "case_auroc_by_id": {"10375": 0.9825, "10520": 0.9917355371900827, "10618": 0.8767999999999999, "10624": 0.888888888888889, "11852": 0.9114583333333334, "11945": 0.9444444444444444, "12498": 0.9062500000000001, "12627": 0.92}, "case_close_recall_by_id": {"10375": 1.0, "10520": 1.0, "10618": 1.0, "10624": 1.0, "11852": 1.0, "11945": 1.0, "12498": 1.0, "12627": 1.0}, "case_specificity_by_id": {"10375": 0.0, "10520": 0.0, "10618": 0.0, "10624": 0.0, "11852": 0.0, "11945": 0.0, "12498": 0.0, "12627": 0.0}}
+{
+  "decision": "sanity_only",
+  "train_pair_audit": {
+    "included_cases": 8.0,
+    "positive_pairs": 138.0,
+    "negative_pairs": 138.0,
+    "close_positive_pairs": 54.0,
+    "contact_positive_pairs": 15.0,
+    "num_images_with_proposals": 8.0,
+    "num_expected_images": 8.0,
+    "num_proposals": 214.0
+  },
+  "val_pair_audit": {
+    "included_cases": 8.0,
+    "positive_pairs": 155.0,
+    "negative_pairs": 155.0,
+    "close_positive_pairs": 56.0,
+    "contact_positive_pairs": 9.0,
+    "num_images_with_proposals": 8.0,
+    "num_expected_images": 8.0,
+    "num_proposals": 226.0
+  },
+  "selected_prior_branch": "baseline",
+  "baseline": {
+    "epoch": 1.0,
+    "train_loss": 1.0812989516534668,
+    "num_pairs": 310.0,
+    "auroc": 0.908678459937565,
+    "average_precision": 0.8598598675006691,
+    "accuracy": 0.5,
+    "positive_recall": 1.0,
+    "close_pair_count": 56.0,
+    "close_pair_recall": 1.0,
+    "contact_pair_count": 9.0,
+    "contact_pair_recall": 1.0,
+    "negative_specificity": 0.0,
+    "positive_heatmap_soft_dice": 0.010926567018032074,
+    "positive_heat_count": 155.0,
+    "valid_positive_heat_count": 155.0,
+    "positive_heat_coverage": 1.0,
+    "case_accuracy_by_id": {
+      "10375": 0.5,
+      "10520": 0.5,
+      "10618": 0.5,
+      "10624": 0.5,
+      "11852": 0.5,
+      "11945": 0.5,
+      "12498": 0.5,
+      "12627": 0.5
+    },
+    "case_auroc_by_id": {
+      "10375": 0.9825,
+      "10520": 0.9917355371900827,
+      "10618": 0.8767999999999999,
+      "10624": 0.888888888888889,
+      "11852": 0.9114583333333334,
+      "11945": 0.9444444444444444,
+      "12498": 0.9062500000000001,
+      "12627": 0.92
+    },
+    "case_close_recall_by_id": {
+      "10375": 1.0,
+      "10520": 1.0,
+      "10618": 1.0,
+      "10624": 1.0,
+      "11852": 1.0,
+      "11945": 1.0,
+      "12498": 1.0,
+      "12627": 1.0
+    },
+    "case_specificity_by_id": {
+      "10375": 0.0,
+      "10520": 0.0,
+      "10618": 0.0,
+      "10624": 0.0,
+      "11852": 0.0,
+      "11945": 0.0,
+      "12498": 0.0,
+      "12627": 0.0
+    }
+  },
+  "development": null,
+  "gate_checks": {
+    "all_defined_scalars_finite": true,
+    "close_recall_ge_075": true,
+    "contact_recall_ge_070": true,
+    "specificity_ge_075": false,
+    "heat_coverage_ge_085": true,
+    "heat_dice_ge_020_including_invalid_as_zero": false,
+    "exact_three_seeds": false
+  }
+}

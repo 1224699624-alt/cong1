@@ -1,0 +1,44 @@
+{"step": 1, "loss": 83.5965805053711, "train_best_threshold_dice": 0.029806258096083265, "train_union_max_mean": 0.49668967723846436}
+{"step": 100, "loss": 29.572872161865234, "train_best_threshold_dice": 0.625829504849413, "train_union_max_mean": 0.9788432121276855}
+{"step": 200, "loss": 18.5787410736084, "train_best_threshold_dice": 0.7305383670536977, "train_union_max_mean": 0.9999991655349731}
+{"step": 300, "loss": 16.266145706176758, "train_best_threshold_dice": 0.8174926649230647, "train_union_max_mean": 1.0}
+{"step": 400, "loss": 11.72685718536377, "train_best_threshold_dice": 0.8421081977724808, "train_union_max_mean": 1.0}
+{"step": 500, "loss": 7.553536415100098, "train_best_threshold_dice": 0.8843851011306447, "train_union_max_mean": 1.0}
+{"step": 600, "loss": 7.212579727172852, "train_best_threshold_dice": 0.8827608847306003, "train_union_max_mean": 1.0}
+{"step": 700, "loss": 7.513136863708496, "train_best_threshold_dice": 0.8862797444733509, "train_union_max_mean": 1.0}
+{"step": 800, "loss": 7.1919379234313965, "train_best_threshold_dice": 0.8890112158535747, "train_union_max_mean": 1.0}
+{"step": 900, "loss": 6.956032752990723, "train_best_threshold_dice": 0.8910381978452497, "train_union_max_mean": 1.0}
+{
+  "output_json": "outputs/analysis/r150_mask2former_union_overfit_rescue_metrics.json",
+  "status": "overfit_pass",
+  "train": {
+    "dice": 0.8910381978452497,
+    "iou": 0.8034886288363877,
+    "precision": 0.8838960408064125,
+    "recall": 0.8982967168600345,
+    "specificity": 0.9981874723244045,
+    "boundary_iou": 0.2155794806839772,
+    "threshold": 0.25,
+    "selected_fraction": 0.015375071578545525
+  },
+  "val": {
+    "dice": 0.16613398792287515,
+    "iou": 0.09200969958531338,
+    "precision": 0.1911761699662447,
+    "recall": 0.15568432145152059,
+    "specificity": 0.9832411332272437,
+    "boundary_iou": 0.020225061954867864,
+    "threshold": 0.1,
+    "selected_fraction": 0.019805278838138145
+  },
+  "clean": {
+    "dice": 0.20582885191824446,
+    "iou": 0.11488839446280154,
+    "precision": 0.23434059310545285,
+    "recall": 0.1844710732878855,
+    "specificity": 0.9890602666185268,
+    "boundary_iou": 0.01925750691336966,
+    "threshold": 0.1,
+    "selected_fraction": 0.014024522112730768
+  }
+}

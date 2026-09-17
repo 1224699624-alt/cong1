@@ -1,0 +1,35 @@
+{
+  "source": "outputs/analysis/r215_background_connectivity_channel_val_candidates.csv",
+  "num_rows": 115,
+  "num_images": 40,
+  "policies": [
+    {
+      "name": "pure_bg_channel_one_per_image",
+      "accepted_images": 38,
+      "rows": 38,
+      "quick_useful": 11,
+      "hard_risk": 24,
+      "mean_delta_dice": -0.0001383717074490413,
+      "mean_delta_iou": -0.00023199716442974896,
+      "mean_delta_recall": -0.0006302440879739577,
+      "mean_delta_boundary_iou": 0.00020754487350880982,
+      "mean_delta_boundary_f1": 0.00028884489286525934,
+      "mean_delta_gap_fp": -0.0010380231141454844,
+      "mean_cut_gt_fg_frac": 0.6469118612551122
+    },
+    {
+      "name": "oracle_safe_channel_one_per_image_diagnostic",
+      "accepted_images": 24,
+      "rows": 24,
+      "quick_useful": 20,
+      "hard_risk": 1,
+      "mean_delta_dice": 0.00023185375828488515,
+      "mean_delta_iou": 0.0003954441574495267,
+      "mean_delta_recall": -0.00024065461463631364,
+      "mean_delta_boundary_iou": 0.0019211331173763335,
+      "mean_delta_boundary_f1": 0.002484987941131046,
+      "mean_delta_gap_fp": -0.0019960765800473164,
+      "mean_cut_gt_fg_frac": 0.19582244737200324
+    }
+  ]
+}

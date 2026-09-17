@@ -1,0 +1,23 @@
+{
+  "train": {
+    "images": 875,
+    "annotations": 875,
+    "skipped_empty": 0,
+    "json": "outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/train.json",
+    "image_root": "outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/train"
+  },
+  "val": {
+    "images": 96,
+    "annotations": 96,
+    "skipped_empty": 0,
+    "json": "outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/val.json",
+    "image_root": "outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/val"
+  },
+  "constraints": {
+    "source": "data/raw/TSRS_RSNA-Epiphysis",
+    "label_transform": "all positive instance ids converted to one binary union mask per image",
+    "clean_test_v2_used": false,
+    "new_or_reannotated_test_used": false,
+    "max_size": 384
+  }
+}

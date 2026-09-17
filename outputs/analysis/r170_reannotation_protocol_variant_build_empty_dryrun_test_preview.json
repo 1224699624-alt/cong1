@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+  "gate_pass_if_applied": false,
+  "errors": [],
+  "warnings": [],
+  "thresholds": {
+    "min_reviewed_train": 40,
+    "min_usable_train": 20,
+    "min_reviewed_val": 8
+  },
+  "counts": {
+    "rows": 96,
+    "train_rows": 80,
+    "val_rows": 16,
+    "reviewed_train": 0,
+    "usable_train": 0,
+    "reviewed_val": 0,
+    "selected_original": 0,
+    "selected_reannotated": 0,
+    "corrections_needed": 0,
+    "excluded": 0,
+    "uncertain": 0
+  },
+  "decision_counts": {
+    "blank": 96
+  },
+  "train_decision_counts": {
+    "blank": 80
+  },
+  "val_decision_counts": {
+    "blank": 16
+  },
+  "correction_rows": [],
+  "policy": {
+    "mutates_dataset": false,
+    "uses_clean_test_v2": false,
+    "uses_reannotated_test": false,
+    "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+  },
+  "next_action": "continue_human_review_or_fix_reviewed_csv"
+}

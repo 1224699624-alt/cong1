@@ -1,0 +1,10 @@
+rank,image,panel,summary
+1,11852.png,panels/01_11852_r233_fullval_hgb_seam_panel.jpg,"cut=31.0 px, Dice +0.000253, Recall +0.000000, BIoU +0.000740, gapFP -0.001086"
+2,12827.png,panels/02_12827_r233_fullval_hgb_seam_panel.jpg,"cut=5.0 px, Dice +0.000031, Recall +0.000000, BIoU +0.000191, gapFP -0.000183"
+3,13436.png,panels/03_13436_r233_fullval_hgb_seam_panel.jpg,"cut=86.0 px, Dice +0.000630, Recall +0.000000, BIoU +0.000959, gapFP -0.002550"
+4,13867.png,panels/04_13867_r233_fullval_hgb_seam_panel.jpg,"cut=8.0 px, Dice +0.000073, Recall +0.000000, BIoU +0.000010, gapFP -0.000341"
+5,14041.png,panels/05_14041_r233_fullval_hgb_seam_panel.jpg,"cut=41.0 px, Dice +0.000283, Recall +0.000000, BIoU +0.001176, gapFP -0.001611"
+6,15446.png,panels/06_15446_r233_fullval_hgb_seam_panel.jpg,"cut=20.0 px, Dice +0.000222, Recall +0.000000, BIoU +0.001815, gapFP -0.000940"
+7,1620.png,panels/07_1620_r233_fullval_hgb_seam_panel.jpg,"cut=19.0 px, Dice +0.000099, Recall +0.000000, BIoU +0.000744, gapFP -0.000592"
+8,3249.png,panels/08_3249_r233_fullval_hgb_seam_panel.jpg,"cut=24.0 px, Dice +0.000083, Recall +0.000000, BIoU +0.000416, gapFP -0.000673"
+9,3602.png,panels/09_3602_r233_fullval_hgb_seam_panel.jpg,"cut=4.0 px, Dice +0.000037, Recall +0.000000, BIoU +0.000178, gapFP -0.000179"

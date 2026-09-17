@@ -1,0 +1,542 @@
+{
+  "run_id": "R186",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "apply_anchor_exp": "r110_r100_r108_patch_basic",
+  "anchor_mean": {
+    "dice": 0.9026491265926603,
+    "iou": 0.8239158832581595,
+    "precision": 0.893803476336764,
+    "recall": 0.9127664220064727,
+    "specificity": 0.9969642873477751,
+    "boundary_iou": 0.25872987005974435,
+    "pred_component_count": 25.625,
+    "gt_component_count": 25.875,
+    "component_count_error": 1.0,
+    "false_bridge_flag": 0.375,
+    "sep_fp_rate": 0.23185599293272066,
+    "edited_frac": 0.0
+  },
+  "anchor_per_image": [
+    {
+      "dice": 0.9025088273555101,
+      "iou": 0.822338119750745,
+      "precision": 0.9048630519843488,
+      "recall": 0.9001668211306766,
+      "specificity": 0.9975970611295224,
+      "boundary_iou": 0.2790805665196192,
+      "pred_component_count": 27.0,
+      "gt_component_count": 28.0,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 1.0,
+      "sep_fp_rate": 0.18403237674760853,
+      "edited_frac": 0.0,
+      "image": "10375.png"
+    },
+    {
+      "dice": 0.8978390408500251,
+      "iou": 0.8146169880145909,
+      "precision": 0.8750043729228616,
+      "recall": 0.9218974604695735,
+      "specificity": 0.9977519451054314,
+      "boundary_iou": 0.2553058187798575,
+      "pred_component_count": 26.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 0.0,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.2517140058765916,
+      "edited_frac": 0.0,
+      "image": "10520.png"
+    },
+    {
+      "dice": 0.8875239843163427,
+      "iou": 0.7977915674621773,
+      "precision": 0.8967820791098561,
+      "recall": 0.8784550915508949,
+      "specificity": 0.9979757712464463,
+      "boundary_iou": 0.191994757822312,
+      "pred_component_count": 27.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.23934037386344384,
+      "edited_frac": 0.0,
+      "image": "10618.png"
+    },
+    {
+      "dice": 0.8543689320388349,
+      "iou": 0.7457627118644068,
+      "precision": 0.8009068515248621,
+      "recall": 0.915478919565434,
+      "specificity": 0.9939049782573296,
+      "boundary_iou": 0.14565143440299352,
+      "pred_component_count": 26.0,
+      "gt_component_count": 29.0,
+      "component_count_error": 3.0,
+      "false_bridge_flag": 1.0,
+      "sep_fp_rate": 0.4191780821917808,
+      "edited_frac": 0.0,
+      "image": "10624.png"
+    },
+    {
+      "dice": 0.8741845467526529,
+      "iou": 0.7764900936748735,
+      "precision": 0.8566516068848201,
+      "recall": 0.8924501695948779,
+      "specificity": 0.9946793740711648,
+      "boundary_iou": 0.25599300087489063,
+      "pred_component_count": 24.0,
+      "gt_component_count": 23.0,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.2409547152194211,
+      "edited_frac": 0.0,
+      "image": "11852.png"
+    },
+    {
+      "dice": 0.9386339329588484,
+      "iou": 0.8843639928828207,
+      "precision": 0.9331583585577992,
+      "recall": 0.9441741456512047,
+      "specificity": 0.9977400024744025,
+      "boundary_iou": 0.31063829787234043,
+      "pred_component_count": 25.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 1.0,
+      "sep_fp_rate": 0.19640300131737212,
+      "edited_frac": 0.0,
+      "image": "11945.png"
+    },
+    {
+      "dice": 0.9495969934624726,
+      "iou": 0.9040311076342552,
+      "precision": 0.9587379825289152,
+      "recall": 0.9406286658207847,
+      "specificity": 0.9981691307431207,
+      "boundary_iou": 0.3010057471264368,
+      "pred_component_count": 24.0,
+      "gt_component_count": 24.0,
+      "component_count_error": 0.0,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.15489053838203515,
+      "edited_frac": 0.0,
+      "image": "12498.png"
+    },
+    {
+      "dice": 0.9165367550065955,
+      "iou": 0.8459324847814056,
+      "precision": 0.92432350718065,
+      "recall": 0.9088801022683355,
+      "specificity": 0.9978960357547835,
+      "boundary_iou": 0.3301693370795049,
+      "pred_component_count": 26.0,
+      "gt_component_count": 25.0,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 0.0,
+      "sep_fp_rate": 0.16833484986351227,
+      "edited_frac": 0.0,
+      "image": "12627.png"
+    }
+  ],
+  "gate_pass": true,
+  "best": {
+    "cfg": {
+      "neck_width": 2.0,
+      "band_radius": 2.0,
+      "min_area": 4.0,
+      "max_remove_frac": 0.0005
+    },
+    "mean": {
+      "dice": 0.9026537543196047,
+      "iou": 0.8239233620399381,
+      "precision": 0.8938129262943935,
+      "recall": 0.9127664220064727,
+      "specificity": 0.9969644939860718,
+      "boundary_iou": 0.2587442943189513,
+      "pred_component_count": 25.625,
+      "gt_component_count": 25.875,
+      "component_count_error": 1.0,
+      "false_bridge_flag": 0.375,
+      "sep_fp_rate": 0.23182775551249138,
+      "edited_frac": 2.0258252199033275e-07
+    },
+    "passes_gate": true,
+    "score": [
+      4.6277269444283675e-06,
+      1.4424259206946566e-05,
+      -0.0,
+      -0.0,
+      2.0258252199033275e-07
+    ]
+  },
+  "grid": [
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 2.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 2.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 2.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 2.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 5.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 5.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 5.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 1.0,
+        "band_radius": 5.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 2.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 2.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 2.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026537543196047,
+        "iou": 0.8239233620399381,
+        "precision": 0.8938129262943935,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969644939860718,
+        "boundary_iou": 0.2587442943189513,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23182775551249138,
+        "edited_frac": 2.0258252199033275e-07
+      },
+      "passes_gate": true
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 2.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026537543196047,
+        "iou": 0.8239233620399381,
+        "precision": 0.8938129262943935,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969644939860718,
+        "boundary_iou": 0.2587442943189513,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23182775551249138,
+        "edited_frac": 2.0258252199033275e-07
+      },
+      "passes_gate": true
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 5.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 5.0,
+        "min_area": 1.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026491265926603,
+        "iou": 0.8239158832581595,
+        "precision": 0.893803476336764,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969642873477751,
+        "boundary_iou": 0.25872987005974435,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23185599293272066,
+        "edited_frac": 0.0
+      },
+      "passes_gate": false
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 5.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.0005
+      },
+      "mean": {
+        "dice": 0.9026537543196047,
+        "iou": 0.8239233620399381,
+        "precision": 0.8938129262943935,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969644939860718,
+        "boundary_iou": 0.2587442943189513,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23182775551249138,
+        "edited_frac": 2.0258252199033275e-07
+      },
+      "passes_gate": true
+    },
+    {
+      "cfg": {
+        "neck_width": 2.0,
+        "band_radius": 5.0,
+        "min_area": 4.0,
+        "max_remove_frac": 0.001
+      },
+      "mean": {
+        "dice": 0.9026537543196047,
+        "iou": 0.8239233620399381,
+        "precision": 0.8938129262943935,
+        "recall": 0.9127664220064727,
+        "specificity": 0.9969644939860718,
+        "boundary_iou": 0.2587442943189513,
+        "pred_component_count": 25.625,
+        "gt_component_count": 25.875,
+        "component_count_error": 1.0,
+        "false_bridge_flag": 0.375,
+        "sep_fp_rate": 0.23182775551249138,
+        "edited_frac": 2.0258252199033275e-07
+      },
+      "passes_gate": true
+    }
+  ]
+}

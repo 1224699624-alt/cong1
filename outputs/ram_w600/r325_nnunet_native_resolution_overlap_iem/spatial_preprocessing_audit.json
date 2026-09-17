@@ -1,0 +1,38 @@
+{
+  "train": {
+    "split": "train",
+    "num_images": 425,
+    "original_hw_counts": {
+      "600x600": 236,
+      "720x720": 54,
+      "650x650": 134,
+      "640x640": 1
+    },
+    "padded_hw_counts": {
+      "608x608": 236,
+      "736x736": 54,
+      "672x672": 134,
+      "640x640": 1
+    },
+    "resize_used": false,
+    "interpolation_used_for_spatial_size": false,
+    "padding": "right/bottom zero padding to a multiple of 32"
+  },
+  "val": {
+    "split": "val",
+    "num_images": 69,
+    "original_hw_counts": {
+      "600x600": 49,
+      "650x650": 12,
+      "720x720": 8
+    },
+    "padded_hw_counts": {
+      "608x608": 49,
+      "672x672": 12,
+      "736x736": 8
+    },
+    "resize_used": false,
+    "interpolation_used_for_spatial_size": false,
+    "padding": "right/bottom zero padding to a multiple of 32"
+  }
+}

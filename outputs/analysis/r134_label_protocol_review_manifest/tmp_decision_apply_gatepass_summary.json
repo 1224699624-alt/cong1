@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "decisions_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\tmp_decision_apply_gatepass_test.csv",
+  "output": "outputs\\analysis\\r134_label_protocol_review_manifest\\tmp_decision_apply_gatepass_manifest.json",
+  "applied": 20,
+  "skipped_blank": 0,
+  "skipped_clean_test_decisions": 1,
+  "warnings": [
+    "ignored clean-test-v2 decision for 4818.png; use --allow-clean-test-decisions only for diagnostic notes"
+  ],
+  "next_step": "run scripts/check_label_protocol_review_manifest.py on the updated manifest"
+}

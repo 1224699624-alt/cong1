@@ -1,0 +1,26 @@
+{
+  "launcher": "outputs\\bridge_logs\\run_r171_reannotation_protocol_variant_instance_sep.sh",
+  "ok": true,
+  "errors": [],
+  "required_checked": [
+    "clean_test_eval_dataset",
+    "clean_test_eval_root",
+    "created_status_guard",
+    "no_clean_train_policy_guard",
+    "no_reannotated_test_policy_guard",
+    "original_control_dataset",
+    "original_control_root",
+    "r170_metadata_guard",
+    "r170_status_guard",
+    "r171_dataset",
+    "r171_output_exp",
+    "result_monitor",
+    "success_policy_guard"
+  ],
+  "forbidden_checked": [
+    "clean_test_train_dataset",
+    "filtered_reannotated_trainval",
+    "flat_output_suffix",
+    "raw_reannotated_trainval"
+  ]
+}

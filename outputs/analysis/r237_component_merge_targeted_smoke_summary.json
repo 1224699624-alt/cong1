@@ -1,0 +1,136 @@
+{
+  "run_id": "R237-component-merge-targeted-candidate-diagnostic",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "evidence_level": "train_val_oracle_candidate_diagnostic",
+  "purpose": "test whether cutting within predicted multi-instance components can connect bone-gap background and reduce merge diagnostics",
+  "num_candidate_rows": 0,
+  "num_images_with_merge_candidates": 0,
+  "num_skipped": 6,
+  "skipped": [
+    {
+      "image": "10375.png",
+      "reason": "missing_anchor"
+    },
+    {
+      "image": "10520.png",
+      "reason": "load_failed:UnidentifiedImageError"
+    },
+    {
+      "image": "10618.png",
+      "reason": "missing_anchor"
+    },
+    {
+      "image": "10624.png",
+      "reason": "load_failed:UnidentifiedImageError"
+    },
+    {
+      "image": "11852.png",
+      "reason": "load_failed:UnidentifiedImageError"
+    },
+    {
+      "image": "11945.png",
+      "reason": "missing_anchor"
+    }
+  ],
+  "overall": {
+    "num_rows": 0,
+    "num_images": 0,
+    "num_merge_targeted_promotable": 0,
+    "num_safe_nonmerge_gain": 0,
+    "num_overerosion_proxy": 0,
+    "mean_cut_area": null,
+    "mean_cut_gt_fg_frac": null,
+    "mean_cut_gt_gap_frac": null,
+    "mean_delta_dice": null,
+    "mean_delta_iou": null,
+    "mean_delta_recall": null,
+    "mean_delta_boundary_iou": null,
+    "mean_delta_boundary_f1": null,
+    "mean_delta_gap_region_fp_rate": null,
+    "mean_delta_component_count_mae": null,
+    "mean_delta_merged_pred_components": null,
+    "mean_background_connected_by_cut": null
+  },
+  "merge_targeted_promotable": {
+    "num_rows": 0,
+    "num_images": 0,
+    "num_merge_targeted_promotable": 0,
+    "num_safe_nonmerge_gain": 0,
+    "num_overerosion_proxy": 0,
+    "mean_cut_area": null,
+    "mean_cut_gt_fg_frac": null,
+    "mean_cut_gt_gap_frac": null,
+    "mean_delta_dice": null,
+    "mean_delta_iou": null,
+    "mean_delta_recall": null,
+    "mean_delta_boundary_iou": null,
+    "mean_delta_boundary_f1": null,
+    "mean_delta_gap_region_fp_rate": null,
+    "mean_delta_component_count_mae": null,
+    "mean_delta_merged_pred_components": null,
+    "mean_background_connected_by_cut": null
+  },
+  "safe_nonmerge_gain": {
+    "num_rows": 0,
+    "num_images": 0,
+    "num_merge_targeted_promotable": 0,
+    "num_safe_nonmerge_gain": 0,
+    "num_overerosion_proxy": 0,
+    "mean_cut_area": null,
+    "mean_cut_gt_fg_frac": null,
+    "mean_cut_gt_gap_frac": null,
+    "mean_delta_dice": null,
+    "mean_delta_iou": null,
+    "mean_delta_recall": null,
+    "mean_delta_boundary_iou": null,
+    "mean_delta_boundary_f1": null,
+    "mean_delta_gap_region_fp_rate": null,
+    "mean_delta_component_count_mae": null,
+    "mean_delta_merged_pred_components": null,
+    "mean_background_connected_by_cut": null
+  },
+  "oracle_merge_best_per_image": {
+    "num_rows": 0,
+    "num_images": 0,
+    "num_merge_targeted_promotable": 0,
+    "num_safe_nonmerge_gain": 0,
+    "num_overerosion_proxy": 0,
+    "mean_cut_area": null,
+    "mean_cut_gt_fg_frac": null,
+    "mean_cut_gt_gap_frac": null,
+    "mean_delta_dice": null,
+    "mean_delta_iou": null,
+    "mean_delta_recall": null,
+    "mean_delta_boundary_iou": null,
+    "mean_delta_boundary_f1": null,
+    "mean_delta_gap_region_fp_rate": null,
+    "mean_delta_component_count_mae": null,
+    "mean_delta_merged_pred_components": null,
+    "mean_background_connected_by_cut": null
+  },
+  "oracle_safe_best_per_image": {
+    "num_rows": 0,
+    "num_images": 0,
+    "num_merge_targeted_promotable": 0,
+    "num_safe_nonmerge_gain": 0,
+    "num_overerosion_proxy": 0,
+    "mean_cut_area": null,
+    "mean_cut_gt_fg_frac": null,
+    "mean_cut_gt_gap_frac": null,
+    "mean_delta_dice": null,
+    "mean_delta_iou": null,
+    "mean_delta_recall": null,
+    "mean_delta_boundary_iou": null,
+    "mean_delta_boundary_f1": null,
+    "mean_delta_gap_region_fp_rate": null,
+    "mean_delta_component_count_mae": null,
+    "mean_delta_merged_pred_components": null,
+    "mean_background_connected_by_cut": null
+  },
+  "decision": "no_go_merge_target_weak_signal",
+  "warning": "GT instances are used for candidate generation on original train/val only; this is not deployable and not clean-test-v2 evidence."
+}

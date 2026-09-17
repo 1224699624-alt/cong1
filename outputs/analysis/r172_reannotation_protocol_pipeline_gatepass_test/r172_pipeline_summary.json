@@ -1,0 +1,173 @@
+{
+  "status": "dry_run_ok",
+  "mutated_dataset": false,
+  "created_variant": false,
+  "preview": {
+    "status": "ok",
+    "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+    "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\tmp_r172_gatepass.csv",
+    "gate_pass_if_applied": true,
+    "errors": [],
+    "warnings": [],
+    "thresholds": {
+      "min_reviewed_train": 40,
+      "min_usable_train": 20,
+      "min_reviewed_val": 8
+    },
+    "counts": {
+      "rows": 96,
+      "train_rows": 80,
+      "val_rows": 16,
+      "reviewed_train": 42,
+      "usable_train": 42,
+      "reviewed_val": 8,
+      "selected_original": 29,
+      "selected_reannotated": 21,
+      "corrections_needed": 0,
+      "excluded": 0,
+      "uncertain": 0
+    },
+    "decision_counts": {
+      "original_label_correct": 29,
+      "reannotated_label_correct": 21,
+      "blank": 46
+    },
+    "train_decision_counts": {
+      "original_label_correct": 21,
+      "reannotated_label_correct": 21,
+      "blank": 38
+    },
+    "val_decision_counts": {
+      "original_label_correct": 8,
+      "blank": 8
+    },
+    "correction_rows": [],
+    "policy": {
+      "mutates_dataset": false,
+      "uses_clean_test_v2": false,
+      "uses_reannotated_test": false,
+      "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+    },
+    "next_action": "build_isolated_variant_from_selected_original_or_reannotated_labels"
+  },
+  "build": {
+    "status": "dry_run_ok",
+    "dry_run": true,
+    "errors": [],
+    "target_dataset": "TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1",
+    "target_path": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1",
+    "worklist_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+    "decisions_csv": "outputs\\analysis\\r168_reannotation_protocol_review_package\\tmp_r172_gatepass.csv",
+    "original_root": "data\\raw\\TSRS_RSNA-Epiphysis",
+    "reannotated_root": "data\\raw_variants\\TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1",
+    "correction_dir": null,
+    "preview": {
+      "gate_pass_if_applied": true,
+      "counts": {
+        "rows": 96,
+        "train_rows": 80,
+        "val_rows": 16,
+        "reviewed_train": 42,
+        "usable_train": 42,
+        "reviewed_val": 8,
+        "selected_original": 29,
+        "selected_reannotated": 21,
+        "corrections_needed": 0,
+        "excluded": 0,
+        "uncertain": 0
+      },
+      "decision_counts": {
+        "original_label_correct": 29,
+        "reannotated_label_correct": 21,
+        "blank": 46
+      },
+      "errors": [],
+      "warnings": []
+    },
+    "selected_counts": {
+      "default_original": 921,
+      "original": 29,
+      "reannotated": 21,
+      "corrected": 0,
+      "excluded": 0,
+      "uncertain": 0
+    },
+    "split_summary": {
+      "train": {
+        "copied": 875,
+        "skipped": 0,
+        "label_sources": {
+          "default_original": 833,
+          "reannotated": 21,
+          "original": 21
+        }
+      },
+      "val": {
+        "copied": 96,
+        "skipped": 0,
+        "label_sources": {
+          "default_original": 88,
+          "original": 8
+        }
+      },
+      "test": {
+        "copied": 97,
+        "skipped": 0,
+        "label_sources": {
+          "original_control_only": 97
+        }
+      }
+    },
+    "policy": {
+      "source_test": "original TSRS_RSNA-Epiphysis/test only as control",
+      "does_not_use_clean_test_v2_for_training": true,
+      "does_not_use_reannotated_test": true,
+      "success_eval_remains": "TSRS_RSNA-Epiphysis_clean_test_v2/test"
+    }
+  },
+  "steps": {
+    "preview": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\python.exe",
+        "scripts/preview_r168_reannotation_protocol_decisions.py",
+        "--worklist-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+        "--decisions-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\tmp_r172_gatepass.csv",
+        "--output-json",
+        "outputs\\analysis\\r172_reannotation_protocol_pipeline_gatepass_test\\r172_preview_status.json",
+        "--min-reviewed-train",
+        "40",
+        "--min-usable-train",
+        "20",
+        "--min-reviewed-val",
+        "8"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"worklist_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\r168_reannotation_protocol_review_worklist.csv\",\n  \"decisions_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\tmp_r172_gatepass.csv\",\n  \"gate_pass_if_applied\": true,\n  \"errors\": [],\n  \"warnings\": [],\n  \"thresholds\": {\n    \"min_reviewed_train\": 40,\n    \"min_usable_train\": 20,\n    \"min_reviewed_val\": 8\n  },\n  \"counts\": {\n    \"rows\": 96,\n    \"train_rows\": 80,\n    \"val_rows\": 16,\n    \"reviewed_train\": 42,\n    \"usable_train\": 42,\n    \"reviewed_val\": 8,\n    \"selected_original\": 29,\n    \"selected_reannotated\": 21,\n    \"corrections_needed\": 0,\n    \"excluded\": 0,\n    \"uncertain\": 0\n  },\n  \"decision_counts\": {\n    \"original_label_correct\": 29,\n    \"reannotated_label_correct\": 21,\n    \"blank\": 46\n  },\n  \"train_decision_counts\": {\n    \"original_label_correct\": 21,\n    \"reannotated_label_correct\": 21,\n    \"blank\": 38\n  },\n  \"val_decision_counts\": {\n    \"original_label_correct\": 8,\n    \"blank\": 8\n  },\n  \"correction_rows\": [],\n  \"policy\": {\n    \"mutates_dataset\": false,\n    \"uses_clean_test_v2\": false,\n    \"uses_reannotated_test\": false,\n    \"success_eval_remains\": \"TSRS_RSNA-Epiphysis_clean_test_v2/test\"\n  },\n  \"next_action\": \"build_isolated_variant_from_selected_original_or_reannotated_labels\"\n}\n",
+      "stderr": ""
+    },
+    "build": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\python.exe",
+        "scripts/build_r170_reannotation_protocol_variant.py",
+        "--worklist-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\r168_reannotation_protocol_review_worklist.csv",
+        "--decisions-csv",
+        "outputs\\analysis\\r168_reannotation_protocol_review_package\\tmp_r172_gatepass.csv",
+        "--output-json",
+        "outputs\\analysis\\r170_reannotation_protocol_variant_build_status.json",
+        "--min-reviewed-train",
+        "40",
+        "--min-usable-train",
+        "20",
+        "--min-reviewed-val",
+        "8"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"dry_run_ok\",\n  \"dry_run\": true,\n  \"errors\": [],\n  \"target_dataset\": \"TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1\",\n  \"target_path\": \"data\\\\raw_variants\\\\TSRS_RSNA-Epiphysis_reannotation_protocol_reviewed_v1\",\n  \"worklist_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\r168_reannotation_protocol_review_worklist.csv\",\n  \"decisions_csv\": \"outputs\\\\analysis\\\\r168_reannotation_protocol_review_package\\\\tmp_r172_gatepass.csv\",\n  \"original_root\": \"data\\\\raw\\\\TSRS_RSNA-Epiphysis\",\n  \"reannotated_root\": \"data\\\\raw_variants\\\\TSRS_RSNA-Epiphysis_reannotated_trainval_only_v1\",\n  \"correction_dir\": null,\n  \"preview\": {\n    \"gate_pass_if_applied\": true,\n    \"counts\": {\n      \"rows\": 96,\n      \"train_rows\": 80,\n      \"val_rows\": 16,\n      \"reviewed_train\": 42,\n      \"usable_train\": 42,\n      \"reviewed_val\": 8,\n      \"selected_original\": 29,\n      \"selected_reannotated\": 21,\n      \"corrections_needed\": 0,\n      \"excluded\": 0,\n      \"uncertain\": 0\n    },\n    \"decision_counts\": {\n      \"original_label_correct\": 29,\n      \"reannotated_label_correct\": 21,\n      \"blank\": 46\n    },\n    \"errors\": [],\n    \"warnings\": []\n  },\n  \"selected_counts\": {\n    \"default_original\": 921,\n    \"original\": 29,\n    \"reannotated\": 21,\n    \"corrected\": 0,\n    \"excluded\": 0,\n    \"uncertain\": 0\n  },\n  \"split_summary\": {\n    \"train\": {\n      \"copied\": 875,\n      \"skipped\": 0,\n      \"label_sources\": {\n        \"default_original\": 833,\n        \"reannotated\": 21,\n        \"original\": 21\n      }\n    },\n    \"val\": {\n      \"copied\": 96,\n      \"skipped\": 0,\n      \"label_sources\": {\n        \"default_original\": 88,\n        \"original\": 8\n      }\n    },\n    \"test\": {\n      \"copied\": 97,\n      \"skipped\": 0,\n      \"label_sources\": {\n        \"original_control_only\": 97\n      }\n    }\n  },\n  \"policy\": {\n    \"source_test\": \"original TSRS_RSNA-Epiphysis/test only as control\",\n    \"does_not_use_clean_test_v2_for_training\": true,\n    \"does_not_use_reannotated_test\": true,\n    \"success_eval_remains\": \"TSRS_RSNA-Epiphysis_clean_test_v2/test\"\n  }\n}\n",
+      "stderr": ""
+    }
+  },
+  "next_action": "rerun_with_create_variant_if_dry_run_is_acceptable"
+}

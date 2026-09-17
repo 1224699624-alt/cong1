@@ -1,0 +1,63 @@
+{
+  "analysis_type": "post-hoc sensitivity analysis; not the primary R201 result",
+  "exclusion_manifest": [
+    "1518.png"
+  ],
+  "exclusion_basis": "largest ASSD influence; visual audit shows a 62-pixel distant false-positive island, not a corrupted image",
+  "scientific_status": "retain image in primary 96-image result; report this only as sensitivity analysis",
+  "num_images": 95,
+  "r317_mean": {
+    "dice": 0.9028677095263531,
+    "iou": 0.8264205362252616,
+    "precision": 0.9099633552769076,
+    "recall": 0.9010956865398568,
+    "specificity": 0.9976308999680066,
+    "boundary_iou": 0.24521587022882185,
+    "boundary_f1": 0.3866324878846024,
+    "gap_region_fp_rate": 0.18025193526190514,
+    "gap_region_precision": 0.8197480647380949,
+    "component_merge_rate": 0.5052631578947369,
+    "component_count_mae": 1.8736842105263158,
+    "component_delta_mean": -0.8421052631578947,
+    "surface_dice_2px": 0.6685363712592286,
+    "surface_dice_5px": 0.9132067748465306,
+    "hd95_px": 14.096352385320944,
+    "assd_px": 4.069313528249197
+  },
+  "r344_best_mean": {
+    "dice": 0.9032926139924423,
+    "iou": 0.8270944215832686,
+    "precision": 0.9125141155828279,
+    "recall": 0.8993421442317368,
+    "specificity": 0.9977070212744081,
+    "boundary_iou": 0.24592825218527603,
+    "boundary_f1": 0.38759128723639,
+    "gap_region_fp_rate": 0.173708523703709,
+    "gap_region_precision": 0.8262914762962911,
+    "component_merge_rate": 0.49473684210526314,
+    "component_count_mae": 1.8736842105263158,
+    "component_delta_mean": -0.8,
+    "surface_dice_2px": 0.6702136427398833,
+    "surface_dice_5px": 0.9140677966323058,
+    "hd95_px": 14.027006692381748,
+    "assd_px": 4.055948317443023
+  },
+  "delta_r344_minus_r317": {
+    "dice": 0.0004249044660892265,
+    "iou": 0.0006738853580070536,
+    "precision": 0.0025507603059202744,
+    "recall": -0.0017535423081200818,
+    "specificity": 7.612130640155534e-05,
+    "boundary_iou": 0.0007123819564541778,
+    "boundary_f1": 0.0009587993517876092,
+    "gap_region_fp_rate": -0.006543411558196127,
+    "gap_region_precision": 0.006543411558196155,
+    "component_merge_rate": -0.010526315789473717,
+    "component_count_mae": 0.0,
+    "component_delta_mean": 0.042105263157894646,
+    "surface_dice_2px": 0.001677271480654663,
+    "surface_dice_5px": 0.0008610217857751845,
+    "hd95_px": -0.06934569293919601,
+    "assd_px": -0.0133652108061737
+  }
+}

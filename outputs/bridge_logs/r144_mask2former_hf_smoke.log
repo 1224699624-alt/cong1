@@ -1,0 +1,33 @@
+{"step": 1, "image": "10003.png", "loss": 19.300716400146484}
+{"step": 2, "image": "10004.png", "loss": 19.105274200439453}
+{
+  "metrics": {
+    "dice": 4.7059561718615196e-05,
+    "iou": 2.3530888212593732e-05,
+    "precision": 5.246956765076256e-05,
+    "recall": 4.266090270470123e-05,
+    "specificity": 0.9842985930105237,
+    "boundary_iou": 0.0005202011444425178
+  },
+  "manifest": {
+    "status": "ok",
+    "hf_deps": ".tmp/r144_hf_deps",
+    "model_class": "Mask2FormerForUniversalSegmentation",
+    "config": {
+      "num_queries": 32,
+      "hidden_dim": 64,
+      "encoder_layers": 1,
+      "decoder_layers": 2
+    },
+    "metrics_json": "outputs/analysis/r144_mask2former_hf_smoke_clean_test_v2_metrics.json",
+    "prediction_dir": "outputs/r144_mask2former_hf_smoke/TSRS_RSNA-Epiphysis_clean_test_v2/test/masks",
+    "train_images": [
+      "10003.png",
+      "10004.png"
+    ],
+    "eval_images": [
+      "10793.png",
+      "11099.png"
+    ]
+  }
+}

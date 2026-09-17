@@ -1,0 +1,43 @@
+{"step": 1, "loss": 83.5965805053711, "train_best_threshold_dice": 0.05434482176842289, "train_union_max_mean": 0.4979971293359995}
+{"step": 200, "loss": 49.97783660888672, "train_best_threshold_dice": 0.43170223141617703, "train_union_max_mean": 0.34824498649686575}
+{"step": 400, "loss": 35.93608856201172, "train_best_threshold_dice": 0.5319721015647332, "train_union_max_mean": 0.9409307949244976}
+{"step": 600, "loss": 31.07093048095703, "train_best_threshold_dice": 0.6709430075903927, "train_union_max_mean": 0.9977034106850624}
+{"step": 800, "loss": 16.146209716796875, "train_best_threshold_dice": 0.7426966210803839, "train_union_max_mean": 0.9998857155442238}
+{"step": 1000, "loss": 22.27818489074707, "train_best_threshold_dice": 0.7834724582091237, "train_union_max_mean": 0.9999755546450615}
+{"step": 1200, "loss": 11.417996406555176, "train_best_threshold_dice": 0.8166641222064461, "train_union_max_mean": 0.9999974071979523}
+{"step": 1400, "loss": 15.734740257263184, "train_best_threshold_dice": 0.833323603712677, "train_union_max_mean": 0.9999995529651642}
+{"step": 1600, "loss": 9.966636657714844, "train_best_threshold_dice": 0.8575481653608751, "train_union_max_mean": 0.9999990612268448}
+{
+  "output_json": "outputs/analysis/r151_mask2former_union_small_gate_metrics.json",
+  "status": "overfit_pass",
+  "train": {
+    "dice": 0.8575481653608751,
+    "iou": 0.7515117273043139,
+    "precision": 0.8489699434211473,
+    "recall": 0.8670465589440375,
+    "specificity": 0.9958074086774066,
+    "boundary_iou": 0.14263283901446291,
+    "threshold": 0.45,
+    "selected_fraction": 0.028584619498976713
+  },
+  "val": {
+    "dice": 0.7108500575644238,
+    "iou": 0.5563497553579966,
+    "precision": 0.6944852251914635,
+    "recall": 0.7350832166485264,
+    "specificity": 0.9911297823769714,
+    "boundary_iou": 0.07982754109554335,
+    "threshold": 0.48125,
+    "selected_fraction": 0.02962920711586541
+  },
+  "clean": {
+    "dice": 0.6393327319112482,
+    "iou": 0.4946179629999215,
+    "precision": 0.6132203679253851,
+    "recall": 0.6854756547713478,
+    "specificity": 0.9897007995398135,
+    "boundary_iou": 0.07739806205670735,
+    "threshold": 0.175,
+    "selected_fraction": 0.023994452433093658
+  }
+}

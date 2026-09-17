@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "decisions_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\r134_train_val_review_worklist_reviewed.csv",
+  "output": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+  "applied": 70,
+  "skipped_blank": 0,
+  "skipped_clean_test_decisions": 0,
+  "warnings": [],
+  "next_step": "run scripts/check_label_protocol_review_manifest.py on the updated manifest"
+}

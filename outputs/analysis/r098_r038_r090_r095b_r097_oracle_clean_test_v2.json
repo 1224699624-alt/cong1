@@ -1,0 +1,944 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "source_dataset": null,
+  "split": "test",
+  "num_images": 81,
+  "target_dice": 0.9317660066557425,
+  "candidate_experiments": [
+    "r038_aggr_r1_t045_m000",
+    "r090_online_patch_disagreement_arbitrator",
+    "r095b_r036_patch_basic",
+    "r097_timm_unet_convnext_tiny"
+  ],
+  "missing": {},
+  "single": {
+    "r038_aggr_r1_t045_m000": {
+      "dice": 0.9143565184864518,
+      "iou": 0.8427598462054594,
+      "precision": 0.8990538525668909,
+      "recall": 0.9314825641124913,
+      "specificity": 0.9966949438126915,
+      "boundary_iou": 0.24317645053375275
+    },
+    "r090_online_patch_disagreement_arbitrator": {
+      "dice": 0.9164396820551889,
+      "iou": 0.8463133152090138,
+      "precision": 0.9062706341293654,
+      "recall": 0.9280801074088797,
+      "specificity": 0.9969269020388343,
+      "boundary_iou": 0.2513660615847711
+    },
+    "r095b_r036_patch_basic": {
+      "dice": 0.916641014890419,
+      "iou": 0.8466608561896706,
+      "precision": 0.9002255526090882,
+      "recall": 0.9349997044164438,
+      "specificity": 0.9966428973270248,
+      "boundary_iou": 0.24555864844426387
+    },
+    "r097_timm_unet_convnext_tiny": {
+      "dice": 0.8675979477279961,
+      "iou": 0.7673416503956847,
+      "precision": 0.8100880628643402,
+      "recall": 0.9364650422717827,
+      "specificity": 0.9932460188687832,
+      "boundary_iou": 0.13758254891217211
+    }
+  },
+  "generated": {
+    "union_all": {
+      "dice": 0.8758782734699067,
+      "iou": 0.7802835464977977,
+      "precision": 0.80127463389682,
+      "recall": 0.9681222215312589,
+      "specificity": 0.9925915155236005,
+      "boundary_iou": 0.14943142828737077
+    },
+    "intersection_all": {
+      "dice": 0.9085263151639777,
+      "iou": 0.8330603029722081,
+      "precision": 0.9214933727827337,
+      "recall": 0.8975556844688176,
+      "specificity": 0.9975301300586749,
+      "boundary_iou": 0.23789932083773116
+    },
+    "vote_ge_1": {
+      "dice": 0.8758782734699067,
+      "iou": 0.7802835464977977,
+      "precision": 0.80127463389682,
+      "recall": 0.9681222215312589,
+      "specificity": 0.9925915155236005,
+      "boundary_iou": 0.14943142828737077
+    },
+    "vote_ge_2": {
+      "dice": 0.9150466394338539,
+      "iou": 0.8439298100083249,
+      "precision": 0.8959975003907242,
+      "recall": 0.9362571474233201,
+      "specificity": 0.9965333269756308,
+      "boundary_iou": 0.24051063935437791
+    },
+    "vote_ge_3": {
+      "dice": 0.9158879750511678,
+      "iou": 0.8453605996169447,
+      "precision": 0.9042290484273751,
+      "recall": 0.929092364786201,
+      "specificity": 0.9968557894894273,
+      "boundary_iou": 0.24838792683868527
+    },
+    "vote_ge_4": {
+      "dice": 0.9085263151639777,
+      "iou": 0.8330603029722081,
+      "precision": 0.9214933727827337,
+      "recall": 0.8975556844688176,
+      "specificity": 0.9975301300586749,
+      "boundary_iou": 0.23789932083773116
+    },
+    "per_image_oracle": {
+      "dice": 0.9175146295626674,
+      "iou": 0.848136911534377,
+      "precision": 0.9037815022669218,
+      "recall": 0.9327262618409703,
+      "specificity": 0.9967953227383134,
+      "boundary_iou": 0.25186383803134976
+    },
+    "pixel_oracle": {
+      "dice": 0.9465298226773928,
+      "iou": 0.8988260534952469,
+      "precision": 0.9265866787873763,
+      "recall": 0.9681222215312589,
+      "specificity": 0.9975301300586749,
+      "boundary_iou": 0.42670115769121025
+    }
+  },
+  "per_image_oracle_selection_counts": {
+    "r090_online_patch_disagreement_arbitrator": 35,
+    "r095b_r036_patch_basic": 43,
+    "r038_aggr_r1_t045_m000": 3
+  },
+  "best_label": "pixel_oracle",
+  "best_mean": {
+    "dice": 0.9465298226773928,
+    "iou": 0.8988260534952469,
+    "precision": 0.9265866787873763,
+    "recall": 0.9681222215312589,
+    "specificity": 0.9975301300586749,
+    "boundary_iou": 0.42670115769121025
+  },
+  "target_reached_by_best": true,
+  "target_margin": 0.014763816021650333,
+  "per_image": {
+    "per_image_oracle": [
+      {
+        "dice": 0.9327550645607888,
+        "iou": 0.8739840626902814,
+        "precision": 0.926680701754386,
+        "recall": 0.9389095873268678,
+        "specificity": 0.9984511284169904,
+        "boundary_iou": 0.35524070914620576,
+        "image": "10793.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9192510154107831,
+        "iou": 0.8505684747510379,
+        "precision": 0.896727314338025,
+        "recall": 0.9429353548115392,
+        "specificity": 0.9982474001078747,
+        "boundary_iou": 0.30812990566717074,
+        "image": "11099.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9369607051958533,
+        "iou": 0.8813979970218109,
+        "precision": 0.9287736139314504,
+        "recall": 0.9452934176739525,
+        "specificity": 0.9985636231195252,
+        "boundary_iou": 0.37442773054283846,
+        "image": "12046.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9380172494735289,
+        "iou": 0.8832697602748377,
+        "precision": 0.9257856972649527,
+        "recall": 0.95057633753806,
+        "specificity": 0.9981832040683785,
+        "boundary_iou": 0.3580664561720042,
+        "image": "12133.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9423929395246214,
+        "iou": 0.8910615054905456,
+        "precision": 0.9461315397317652,
+        "recall": 0.9386837688803644,
+        "specificity": 0.9978805132406516,
+        "boundary_iou": 0.3372601178035341,
+        "image": "12213.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9174923228460513,
+        "iou": 0.847561954718193,
+        "precision": 0.9053227374078098,
+        "recall": 0.9299935396722852,
+        "specificity": 0.9985782637475284,
+        "boundary_iou": 0.3603272468579559,
+        "image": "12517.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.927243236980826,
+        "iou": 0.8643555267563043,
+        "precision": 0.902260300997689,
+        "recall": 0.9536490914507,
+        "specificity": 0.9962531466869303,
+        "boundary_iou": 0.27752919983729446,
+        "image": "12622.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8748324192565509,
+        "iou": 0.7775129982668978,
+        "precision": 0.8603619801030804,
+        "recall": 0.8897979422337919,
+        "specificity": 0.9988233583070903,
+        "boundary_iou": 0.3533873470091364,
+        "image": "12936.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9217503772364734,
+        "iou": 0.8548580567772891,
+        "precision": 0.903205365158156,
+        "recall": 0.9410729023383769,
+        "specificity": 0.9986182649840607,
+        "boundary_iou": 0.3823929299796057,
+        "image": "13954.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9312925004265276,
+        "iou": 0.8714194490056559,
+        "precision": 0.8961910122900835,
+        "recall": 0.9692557455228046,
+        "specificity": 0.9985263574259133,
+        "boundary_iou": 0.3900333755322822,
+        "image": "14018.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9237890560423211,
+        "iou": 0.8583717357910906,
+        "precision": 0.8962469259008448,
+        "recall": 0.9530776228016979,
+        "specificity": 0.9975763479535085,
+        "boundary_iou": 0.3297440423654016,
+        "image": "14123.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9347529347529347,
+        "iou": 0.8774987186058432,
+        "precision": 0.9025917881018157,
+        "recall": 0.9692906966210707,
+        "specificity": 0.9968364877137375,
+        "boundary_iou": 0.3137781576216348,
+        "image": "14169.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9357070193285859,
+        "iou": 0.8791818008029058,
+        "precision": 0.9045730208162597,
+        "recall": 0.9690605794556628,
+        "specificity": 0.9977315374736606,
+        "boundary_iou": 0.3718804920913884,
+        "image": "14224.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9354783428302129,
+        "iou": 0.8787781221072967,
+        "precision": 0.9071835140637334,
+        "recall": 0.9655950117189227,
+        "specificity": 0.9970555090581978,
+        "boundary_iou": 0.39346309982304567,
+        "image": "14235.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9292912778952039,
+        "iou": 0.8679216473257133,
+        "precision": 0.9288031933518522,
+        "recall": 0.9297798756835071,
+        "specificity": 0.9981980747166842,
+        "boundary_iou": 0.30901611244429206,
+        "image": "14289.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9350743775668612,
+        "iou": 0.8780654328049748,
+        "precision": 0.9122016677849133,
+        "recall": 0.9591236167939855,
+        "specificity": 0.9977204347101144,
+        "boundary_iou": 0.32829002017325265,
+        "image": "14543.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8948750898438351,
+        "iou": 0.8097501754054033,
+        "precision": 0.8442942979968601,
+        "recall": 0.9519025818768188,
+        "specificity": 0.9936575697004396,
+        "boundary_iou": 0.16735230061879905,
+        "image": "1468.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9356947360029761,
+        "iou": 0.8791601128504731,
+        "precision": 0.9034534072249589,
+        "recall": 0.9703224028658033,
+        "specificity": 0.9982075916567036,
+        "boundary_iou": 0.35352596195107994,
+        "image": "14724.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9415923792052436,
+        "iou": 0.8896311408814342,
+        "precision": 0.9117217133869924,
+        "recall": 0.9734866445392761,
+        "specificity": 0.9963593325773727,
+        "boundary_iou": 0.34733624977527416,
+        "image": "15071.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9364977219490849,
+        "iou": 0.8805789524639365,
+        "precision": 0.9059262948207172,
+        "recall": 0.9692045394000746,
+        "specificity": 0.9974463690179268,
+        "boundary_iou": 0.28643908895384107,
+        "image": "15130.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9371881594257203,
+        "iou": 0.8818006383136644,
+        "precision": 0.9234745433346289,
+        "recall": 0.9513152099931937,
+        "specificity": 0.9985243475165346,
+        "boundary_iou": 0.4213824162913648,
+        "image": "15299.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.934004280178148,
+        "iou": 0.8761801410743353,
+        "precision": 0.937768589281981,
+        "recall": 0.9302700709742834,
+        "specificity": 0.9985586545290206,
+        "boundary_iou": 0.32474849094567404,
+        "image": "15386.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9398172519075509,
+        "iou": 0.8864672185984278,
+        "precision": 0.9398537071927296,
+        "recall": 0.9397807994503363,
+        "specificity": 0.9974118579540658,
+        "boundary_iou": 0.2548507132098875,
+        "image": "15464.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9317721233956316,
+        "iou": 0.8722596964586846,
+        "precision": 0.9296166316530863,
+        "recall": 0.9339376341987117,
+        "specificity": 0.9967045525617043,
+        "boundary_iou": 0.22227386817886027,
+        "image": "15475.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9315902928904735,
+        "iou": 0.8719410603361102,
+        "precision": 0.907403509826914,
+        "recall": 0.9571017802021227,
+        "specificity": 0.9961398075711414,
+        "boundary_iou": 0.22497857754927164,
+        "image": "15567.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9160671462829736,
+        "iou": 0.8451327433628318,
+        "precision": 0.9411275356754335,
+        "recall": 0.8923067588884844,
+        "specificity": 0.9984258812498503,
+        "boundary_iou": 0.28205521472392636,
+        "image": "15578.png",
+        "selected_exp": "r038_aggr_r1_t045_m000"
+      },
+      {
+        "dice": 0.9082271964343643,
+        "iou": 0.8318829645400333,
+        "precision": 0.8854791777823005,
+        "recall": 0.93217482946715,
+        "specificity": 0.9958935769784695,
+        "boundary_iou": 0.13558178752107924,
+        "image": "1667.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9277239682990551,
+        "iou": 0.8651913694530804,
+        "precision": 0.9219311251868901,
+        "recall": 0.9335900689793816,
+        "specificity": 0.9957130758680647,
+        "boundary_iou": 0.17101405922823812,
+        "image": "1695.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9389079530364586,
+        "iou": 0.884850617553181,
+        "precision": 0.9225550078028917,
+        "recall": 0.9558510951562559,
+        "specificity": 0.9970358125348717,
+        "boundary_iou": 0.17525387647075746,
+        "image": "1703.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.920410760914933,
+        "iou": 0.8525564423881856,
+        "precision": 0.935778915620397,
+        "recall": 0.9055392279968235,
+        "specificity": 0.9982031094684316,
+        "boundary_iou": 0.1329802462066991,
+        "image": "1716.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9222371653015122,
+        "iou": 0.8556958317824301,
+        "precision": 0.9350491748624771,
+        "recall": 0.9097715093874479,
+        "specificity": 0.998085742842219,
+        "boundary_iou": 0.137497695569348,
+        "image": "1744.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9051873300610898,
+        "iou": 0.8267965423816281,
+        "precision": 0.8989024090893152,
+        "recall": 0.9115607553074215,
+        "specificity": 0.999059838675752,
+        "boundary_iou": 0.25133001544534067,
+        "image": "1784.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9065831163050998,
+        "iou": 0.8291285143151922,
+        "precision": 0.9238361676044384,
+        "recall": 0.8899626676818058,
+        "specificity": 0.9940767235595954,
+        "boundary_iou": 0.12306162487570212,
+        "image": "1789.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9211763701790914,
+        "iou": 0.8538711469751662,
+        "precision": 0.9474646926968288,
+        "recall": 0.8963074546156817,
+        "specificity": 0.9954625216347476,
+        "boundary_iou": 0.15149521833729698,
+        "image": "1801.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9380284241236326,
+        "iou": 0.8832895770770008,
+        "precision": 0.9337218287186091,
+        "recall": 0.9423749301376451,
+        "specificity": 0.9979773728287659,
+        "boundary_iou": 0.17362997005779543,
+        "image": "1821.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9269687547087107,
+        "iou": 0.863878623084337,
+        "precision": 0.911050977066042,
+        "recall": 0.9434526506570005,
+        "specificity": 0.99552244015152,
+        "boundary_iou": 0.16158336499602777,
+        "image": "1830.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9201885269379997,
+        "iou": 0.8521751712163596,
+        "precision": 0.8924588765482678,
+        "recall": 0.9496966149876974,
+        "specificity": 0.9962245012960668,
+        "boundary_iou": 0.14145923254301426,
+        "image": "1858.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9171382906251637,
+        "iou": 0.846957910400813,
+        "precision": 0.8858393754191499,
+        "recall": 0.9507299517892307,
+        "specificity": 0.9970135528823253,
+        "boundary_iou": 0.19152632985832665,
+        "image": "1873.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9074251141182508,
+        "iou": 0.8305381405375473,
+        "precision": 0.8737113670172373,
+        "recall": 0.9438450992290922,
+        "specificity": 0.9952061550757498,
+        "boundary_iou": 0.10467639559485704,
+        "image": "1891.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8869112026604458,
+        "iou": 0.7968018407698413,
+        "precision": 0.862979759196743,
+        "recall": 0.9122077975117799,
+        "specificity": 0.9902126204793612,
+        "boundary_iou": 0.10039469153135017,
+        "image": "1897.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9190671543942148,
+        "iou": 0.850253702744266,
+        "precision": 0.8974514773792577,
+        "recall": 0.9417497836680785,
+        "specificity": 0.9976984287012604,
+        "boundary_iou": 0.17645976673166783,
+        "image": "1898.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9295731756182782,
+        "iou": 0.8684135659204911,
+        "precision": 0.9081992713150779,
+        "recall": 0.9519773702179812,
+        "specificity": 0.9939601929771059,
+        "boundary_iou": 0.16361051471014912,
+        "image": "1910.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9116163462241392,
+        "iou": 0.8375873186458893,
+        "precision": 0.8950617283950617,
+        "recall": 0.9287948756144794,
+        "specificity": 0.9990468627964862,
+        "boundary_iou": 0.28404702651677677,
+        "image": "1944.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9334671235397733,
+        "iou": 0.8752352075989516,
+        "precision": 0.9298084812933187,
+        "recall": 0.9371546718282597,
+        "specificity": 0.9984322907933884,
+        "boundary_iou": 0.19112615429895882,
+        "image": "1954.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.943947189137125,
+        "iou": 0.8938446822236559,
+        "precision": 0.9349256301225635,
+        "recall": 0.9531445515196442,
+        "specificity": 0.9961766799692822,
+        "boundary_iou": 0.21516840319844924,
+        "image": "1964.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.913199798565757,
+        "iou": 0.8402646570736859,
+        "precision": 0.8887301683788219,
+        "recall": 0.9390550359279033,
+        "specificity": 0.9971388630282451,
+        "boundary_iou": 0.16105889123345482,
+        "image": "2017.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8909151703010203,
+        "iou": 0.803288573104752,
+        "precision": 0.8267863133176786,
+        "recall": 0.9658287125026941,
+        "specificity": 0.988711946404973,
+        "boundary_iou": 0.1813895512681552,
+        "image": "2050.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8909938793354707,
+        "iou": 0.8034165571616294,
+        "precision": 0.8348505261624731,
+        "recall": 0.9552328972585618,
+        "specificity": 0.9916900653636684,
+        "boundary_iou": 0.18191313908741066,
+        "image": "2075.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8775062113595655,
+        "iou": 0.781747053070469,
+        "precision": 0.8671596197219288,
+        "recall": 0.8881026870559341,
+        "specificity": 0.9959228379781553,
+        "boundary_iou": 0.22276311278711006,
+        "image": "2136.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.912247304035564,
+        "iou": 0.838653222759183,
+        "precision": 0.8732476030730364,
+        "recall": 0.9548933472215932,
+        "specificity": 0.995520535574456,
+        "boundary_iou": 0.24367309031808684,
+        "image": "2168.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8988220924264376,
+        "iou": 0.8162369461325152,
+        "precision": 0.8683622486128199,
+        "recall": 0.9314965189404651,
+        "specificity": 0.9943183819254541,
+        "boundary_iou": 0.18457881044227145,
+        "image": "2495.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9182424394214513,
+        "iou": 0.8488430983836659,
+        "precision": 0.8901517450682853,
+        "recall": 0.9481638326760199,
+        "specificity": 0.9949766667244939,
+        "boundary_iou": 0.20915951079885506,
+        "image": "2498.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9023471964977269,
+        "iou": 0.822069778001399,
+        "precision": 0.9018187692680497,
+        "recall": 0.9028762433619969,
+        "specificity": 0.9949165620541188,
+        "boundary_iou": 0.21567333081855902,
+        "image": "2982.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.926218317801389,
+        "iou": 0.8625760088446656,
+        "precision": 0.9230483208545304,
+        "recall": 0.9294101630305299,
+        "specificity": 0.9976084496891983,
+        "boundary_iou": 0.282531051761821,
+        "image": "3407.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9080761264014104,
+        "iou": 0.8316295195641407,
+        "precision": 0.8861550478422183,
+        "recall": 0.9311092503147026,
+        "specificity": 0.9925981895400144,
+        "boundary_iou": 0.15476695814585278,
+        "image": "3503.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9225312729948492,
+        "iou": 0.8562023656677684,
+        "precision": 0.9450625659580884,
+        "recall": 0.9010493028604284,
+        "specificity": 0.9995041247188928,
+        "boundary_iou": 0.2921843057084447,
+        "image": "3591.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.908331093558987,
+        "iou": 0.8320573098672088,
+        "precision": 0.8745075125208681,
+        "recall": 0.9448763505835243,
+        "specificity": 0.9945615803177971,
+        "boundary_iou": 0.24326453442571294,
+        "image": "3660.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8782613012933496,
+        "iou": 0.7829464226436808,
+        "precision": 0.8497418037708658,
+        "recall": 0.9087616552361871,
+        "specificity": 0.99444308245485,
+        "boundary_iou": 0.21779650197880762,
+        "image": "3665.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9171152474220118,
+        "iou": 0.8469186081331975,
+        "precision": 0.9473437395323909,
+        "recall": 0.8887562063980894,
+        "specificity": 0.9983829289970045,
+        "boundary_iou": 0.30490654205607476,
+        "image": "3736.png",
+        "selected_exp": "r038_aggr_r1_t045_m000"
+      },
+      {
+        "dice": 0.9154419003277625,
+        "iou": 0.8440690273802913,
+        "precision": 0.9128305808984871,
+        "recall": 0.9180682029362572,
+        "specificity": 0.9966836322223707,
+        "boundary_iou": 0.2908147696063473,
+        "image": "3830.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9185806582552515,
+        "iou": 0.849421332499218,
+        "precision": 0.9042555553088996,
+        "recall": 0.9333669401035699,
+        "specificity": 0.9972504985184694,
+        "boundary_iou": 0.2817279313120472,
+        "image": "3858.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.8975126920365455,
+        "iou": 0.8140798406962672,
+        "precision": 0.8740116846974696,
+        "recall": 0.9223124422618758,
+        "specificity": 0.9949836966472,
+        "boundary_iou": 0.12605234376987054,
+        "image": "3900.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9211792985267542,
+        "iou": 0.8538761791174239,
+        "precision": 0.9353421143271138,
+        "recall": 0.9074389878551841,
+        "specificity": 0.998497091634896,
+        "boundary_iou": 0.19679166666666667,
+        "image": "3912.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9016104884851814,
+        "iou": 0.8208476856645746,
+        "precision": 0.9652995800164017,
+        "recall": 0.8458054495042606,
+        "specificity": 0.9991009236298046,
+        "boundary_iou": 0.13316165205202596,
+        "image": "4078.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.8988725308681385,
+        "iou": 0.8163201410067604,
+        "precision": 0.8915301030875611,
+        "recall": 0.9063369039035946,
+        "specificity": 0.992955070375269,
+        "boundary_iou": 0.14987968374011687,
+        "image": "4099.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.8906527662599218,
+        "iou": 0.8028620247757369,
+        "precision": 0.829224007737863,
+        "recall": 0.9619109483878587,
+        "specificity": 0.9938964112305063,
+        "boundary_iou": 0.16593034008013974,
+        "image": "4319.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9165728982478701,
+        "iou": 0.8459940652818991,
+        "precision": 0.8872406639004149,
+        "recall": 0.9479108943810263,
+        "specificity": 0.9982908563171491,
+        "boundary_iou": 0.4427760483427944,
+        "image": "4332.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8527478753541077,
+        "iou": 0.743295965232851,
+        "precision": 0.8209337842260281,
+        "recall": 0.8871271955676058,
+        "specificity": 0.9962097422209086,
+        "boundary_iou": 0.19031035542353786,
+        "image": "4818.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9301365914343365,
+        "iou": 0.8693975174656595,
+        "precision": 0.9136374022671051,
+        "recall": 0.947242650845642,
+        "specificity": 0.9975803463892939,
+        "boundary_iou": 0.206319330423291,
+        "image": "6666.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9196755950531353,
+        "iou": 0.8512957689763281,
+        "precision": 0.8890657855211775,
+        "recall": 0.952468301473901,
+        "specificity": 0.996254039612035,
+        "boundary_iou": 0.22714666945738057,
+        "image": "6671.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9357168341924927,
+        "iou": 0.8791991306961366,
+        "precision": 0.9197503990712523,
+        "recall": 0.9522474020282959,
+        "specificity": 0.9974351620880162,
+        "boundary_iou": 0.35106235245104844,
+        "image": "7022.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9347020320180858,
+        "iou": 0.8774090067859346,
+        "precision": 0.9300081081787984,
+        "recall": 0.9394435784300774,
+        "specificity": 0.9980764821186874,
+        "boundary_iou": 0.3517002963172005,
+        "image": "7035.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9375258891058642,
+        "iou": 0.8823988081148443,
+        "precision": 0.9462540595020345,
+        "recall": 0.9289572629526748,
+        "specificity": 0.9966576875970914,
+        "boundary_iou": 0.18641903232868715,
+        "image": "7252.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9024929369226941,
+        "iou": 0.822311734734708,
+        "precision": 0.8973567768979972,
+        "recall": 0.907688230617473,
+        "specificity": 0.9975540234095083,
+        "boundary_iou": 0.23762305094488756,
+        "image": "7397.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9123925139099646,
+        "iou": 0.8388987070970142,
+        "precision": 0.8780392824981138,
+        "recall": 0.9495433369304872,
+        "specificity": 0.9982140094934431,
+        "boundary_iou": 0.2554193548387097,
+        "image": "7416.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8868833597008485,
+        "iou": 0.7967568964403385,
+        "precision": 0.8686434709113959,
+        "recall": 0.9059056853239312,
+        "specificity": 0.998969183847857,
+        "boundary_iou": 0.28671601090767435,
+        "image": "7484.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9259685722026552,
+        "iou": 0.862142902188308,
+        "precision": 0.9159492144316773,
+        "recall": 0.9362095531587057,
+        "specificity": 0.9979843552547754,
+        "boundary_iou": 0.33720833679315787,
+        "image": "7625.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      },
+      {
+        "dice": 0.9015298427063133,
+        "iou": 0.82071400549235,
+        "precision": 0.9099608525445846,
+        "recall": 0.8932536293766012,
+        "specificity": 0.9989198234146104,
+        "boundary_iou": 0.35209564750134337,
+        "image": "8435.png",
+        "selected_exp": "r038_aggr_r1_t045_m000"
+      },
+      {
+        "dice": 0.9223074228328987,
+        "iou": 0.8558168093328999,
+        "precision": 0.9308949477488804,
+        "recall": 0.9138768898488121,
+        "specificity": 0.9982027399275782,
+        "boundary_iou": 0.35599857600569595,
+        "image": "8579.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.9322547577661898,
+        "iou": 0.8731059815502776,
+        "precision": 0.9266174939641615,
+        "recall": 0.9379610322638506,
+        "specificity": 0.9983484373465524,
+        "boundary_iou": 0.2996066292642033,
+        "image": "9072.png",
+        "selected_exp": "r090_online_patch_disagreement_arbitrator"
+      },
+      {
+        "dice": 0.8791549039249613,
+        "iou": 0.78436789080273,
+        "precision": 0.8986037852932051,
+        "recall": 0.8605300689327312,
+        "specificity": 0.9983815981569631,
+        "boundary_iou": 0.27074527252502784,
+        "image": "9194.png",
+        "selected_exp": "r095b_r036_patch_basic"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "remote_mask_dir": "/home/shenzeyu/workspace/ARAA-Net/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_98/masks",
+  "local_mask_dir": "outputs\\ablations_variants\\araa_danet_epoch98\\TSRS_RSNA-Epiphysis_clean_test_v2\\test\\masks",
+  "remote_png_count": 81,
+  "copied": 81,
+  "local_png_count": 81,
+  "local_metrics": "outputs\\analysis\\araa_danet_epoch98_clean_test_v2_metrics.json"
+}

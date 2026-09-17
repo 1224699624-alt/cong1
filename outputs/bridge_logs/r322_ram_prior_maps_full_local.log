@@ -1,0 +1,27 @@
+{"split": "train", "done": 25, "total": 425}
+{"split": "train", "done": 50, "total": 425}
+{"split": "train", "done": 75, "total": 425}
+{"split": "train", "done": 100, "total": 425}
+{"split": "train", "done": 125, "total": 425}
+{"split": "train", "done": 150, "total": 425}
+{"split": "train", "done": 175, "total": 425}
+{"split": "train", "done": 200, "total": 425}
+{"split": "train", "done": 225, "total": 425}
+{"split": "train", "done": 250, "total": 425}
+{"split": "train", "done": 275, "total": 425}
+{"split": "train", "done": 300, "total": 425}
+{"split": "train", "done": 325, "total": 425}
+{"split": "train", "done": 350, "total": 425}
+{"split": "train", "done": 375, "total": 425}
+{"split": "train", "done": 400, "total": 425}
+{"split": "train", "done": 425, "total": 425}
+{"split": "val", "done": 25, "total": 69}
+{"split": "val", "done": 50, "total": 69}
+{"split": "val", "done": 69, "total": 69}
+{
+  "manifest": "outputs\\priors\\r322_ram_r317_seam\\manifest.json",
+  "splits": {
+    "train": 425,
+    "val": 69
+  }
+}

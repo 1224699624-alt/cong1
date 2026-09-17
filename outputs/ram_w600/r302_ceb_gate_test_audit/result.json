@@ -1,0 +1,28 @@
+{
+  "experiment": "R302",
+  "test_audit_only": true,
+  "test_used_for_selection": false,
+  "classifier_train_candidates": 9540,
+  "test_candidates": 2874,
+  "test_positive_fraction": 0.6945024356297843,
+  "test_signature_auc": 0.9431260014333906,
+  "test_signature_precision": 0.9186164801627671,
+  "test_signature_recall": 0.9048096192384769,
+  "test_signature_f1": 0.911660777385159,
+  "baseline_test": {
+    "macro_dice": 0.9783331442949337,
+    "overlap_dice": 0.8678561782894708,
+    "overlap_nsd_2px": 0.8779420800807353
+  },
+  "hard_gate_test": {
+    "macro_dice": 0.9772386495633886,
+    "overlap_dice": 0.8586658340719086,
+    "overlap_nsd_2px": 0.8332874780193353
+  },
+  "delta_test": {
+    "macro_dice": -0.0010944947315451037,
+    "overlap_dice": -0.009190344217562263,
+    "overlap_nsd_2px": -0.04465460206139993
+  },
+  "warning": "hard gate is evaluated for audit only and is not promoted"
+}

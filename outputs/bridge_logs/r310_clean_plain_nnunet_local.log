@@ -1,0 +1,1388 @@
+[R310] start 2026-07-24T23:51:14.4059882+08:00
+0, NVIDIA GeForce RTX 3060 Laptop GPU, 815 MiB, 6144 MiB
+{
+  "experiment": "R310",
+  "model": "standard one-channel nnU-Net 2.8.1",
+  "train": 814,
+  "val": 94,
+  "prior_channel": false,
+  "prior_loss": false,
+  "instance_auxiliary": false,
+  "source_unchanged": true,
+  "clean_test_used": false
+}
+Dataset310_TSRSPlainCleanPanels2D
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Preprocessing dataset Dataset310_TSRSPlainCleanPanels2D
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+There are 94 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 94 cases that I would like to predict
+
+Predicting val_10375:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10375
+
+Predicting val_10520:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10520
+
+Predicting val_10618:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10618
+
+Predicting val_10624:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10624
+
+Predicting val_11852:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11852
+
+Predicting val_11945:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11945
+
+Predicting val_12498:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12498
+
+Predicting val_12627:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12627
+
+Predicting val_12827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12827
+
+Predicting val_13220:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13220
+
+Predicting val_13436:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13436
+
+Predicting val_13441:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13441
+
+Predicting val_13454:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13454
+
+Predicting val_13480:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13480
+
+Predicting val_13517:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13517
+
+Predicting val_13840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13840
+
+Predicting val_13867:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13867
+
+Predicting val_1399:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1399
+
+Predicting val_14041:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_14041
+
+Predicting val_1418:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1418
+
+Predicting val_1452:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1452
+
+Predicting val_15040:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15040
+
+Predicting val_15067:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15067
+
+Predicting val_1518:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1518
+
+Predicting val_1522:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1522
+
+Predicting val_15274:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15274
+
+Predicting val_15369:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15369
+
+Predicting val_15446:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15446
+
+Predicting val_1560:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1560
+
+Predicting val_1572:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1572
+
+Predicting val_1585:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1585
+
+Predicting val_1590:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1590
+
+Predicting val_1620:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1620
+
+Predicting val_1660:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1660
+
+Predicting val_1666:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1666
+
+Predicting val_1674:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1674
+
+Predicting val_1678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1678
+
+Predicting val_1694:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1694
+
+Predicting val_1736:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1736
+
+Predicting val_1742:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1742
+
+Predicting val_1807:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1807
+
+Predicting val_1812:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1812
+
+Predicting val_1827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1827
+
+Predicting val_1828:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1828
+
+Predicting val_1846:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1846
+
+Predicting val_1855:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1855
+
+Predicting val_1880:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1880
+
+Predicting val_1884:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1884
+
+Predicting val_1886:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1886
+
+Predicting val_1901:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1901
+
+Predicting val_1931:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1931
+
+Predicting val_1934:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1934
+
+Predicting val_2024:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2024
+
+Predicting val_2044:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2044
+
+Predicting val_2248:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2248
+
+Predicting val_2709:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2709
+
+Predicting val_2853:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2853
+
+Predicting val_3058:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3058
+
+Predicting val_3249:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3249
+
+Predicting val_3269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3269
+
+Predicting val_3352:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3352
+
+Predicting val_3353:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3353
+
+Predicting val_3354:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3354
+
+Predicting val_3366:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3366
+
+Predicting val_3392:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3392
+
+Predicting val_3460:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3460
+
+Predicting val_3468:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3468
+
+Predicting val_3493:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3493
+
+Predicting val_3567:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3567
+
+Predicting val_3595:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3595
+
+Predicting val_3596:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3596
+
+Predicting val_3602:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3602
+
+Predicting val_3678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3678
+
+Predicting val_3700:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3700
+
+Predicting val_3725:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3725
+
+Predicting val_3732:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3732
+
+Predicting val_3777:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3777
+
+Predicting val_3840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3840
+
+Predicting val_4047:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4047
+
+Predicting val_4193:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4193
+
+Predicting val_5355:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5355
+
+Predicting val_5825:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5825
+
+Predicting val_6503:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6503
+
+Predicting val_6605:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6605
+
+Predicting val_6606:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6606
+
+Predicting val_6698:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6698
+
+Predicting val_6918:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6918
+
+Predicting val_6947:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6947
+
+Predicting val_7253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7253
+
+Predicting val_7259:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7259
+
+Predicting val_7269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7269
+
+Predicting val_7312:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7312
+
+Predicting val_7654:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7654
+
+Predicting val_8253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_8253
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Segmentation export complete.
+converted 94 predictions to G:\gutou\YOLO+SAM\outputs\nnunet\r310_clean_plain_nnunet\masks_frozen
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-24 23:58:41.143648: R310 initialization {"checkpoint": "G:\\gutou\\YOLO+SAM\\outputs\\artifact_bundles\\r260_recovered_from_49284_20260724\\outputs\\nnunet\\r202_mature_import\\checkpoint_best.pth", "sha256": "65b81565ea77d48b1c91017188533e49f1d0d0d4ec557540b73f6779764397a7", "strict_all_network_keys_loaded": true, "input_channels": 1, "prior_channel": false, "prior_loss": false, "seed": 260}
+2026-07-24 23:58:41.155128: do_dummy_2d_data_aug: False
+2026-07-24 23:58:41.158125: Using splits from existing split file: G:\gutou\YOLO+SAM\outputs\nnunet\r310_clean_plain_nnunet\data\nnUNet_preprocessed\Dataset310_TSRSPlainCleanPanels2D\splits_final.json
+2026-07-24 23:58:41.159462: The split file contains 1 splits.
+2026-07-24 23:58:41.159462: Desired fold for training: 0
+2026-07-24 23:58:41.159462: This split has 814 training and 94 validation cases.
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 1, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset310_TSRSPlainCleanPanels2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}}} 
+
+2026-07-24 23:58:41.470114: Unable to plot network architecture:
+2026-07-24 23:58:41.470114: No module named 'hiddenlayer'
+2026-07-24 23:58:41.528805: 
+2026-07-24 23:58:41.529816: Epoch 0
+2026-07-24 23:58:41.529816: Current learning rate: 0.0001
+2026-07-25 00:01:22.818453: train_loss -0.8797
+2026-07-25 00:01:22.819467: val_loss -0.8709
+2026-07-25 00:01:22.820456: Pseudo dice [0.9207]
+2026-07-25 00:01:22.820706: Epoch time: 161.29 s
+2026-07-25 00:01:22.820706: Yayy! New best EMA pseudo Dice: 0.9207
+2026-07-25 00:01:23.766686: R310 early stop {"completed_epochs": 1, "ema_dice": 0.9206673567051006, "early_best": 0.9206673567051006, "bad_epochs": 0, "stop": false}
+2026-07-25 00:01:23.768693: 
+2026-07-25 00:01:23.769687: Epoch 1
+2026-07-25 00:01:23.769687: Current learning rate: 0.0001
+2026-07-25 00:03:36.516298: train_loss -0.8838
+2026-07-25 00:03:36.517473: val_loss -0.8789
+2026-07-25 00:03:36.517473: Pseudo dice [0.9243]
+2026-07-25 00:03:36.518483: Epoch time: 132.75 s
+2026-07-25 00:03:36.518788: Yayy! New best EMA pseudo Dice: 0.921
+2026-07-25 00:03:37.624186: R310 early stop {"completed_epochs": 2, "ema_dice": 0.9210305873388003, "early_best": 0.9210305873388003, "bad_epochs": 0, "stop": false}
+2026-07-25 00:03:37.626183: 
+2026-07-25 00:03:37.627182: Epoch 2
+2026-07-25 00:03:37.627182: Current learning rate: 0.0001
+2026-07-25 00:05:47.638344: train_loss -0.8912
+2026-07-25 00:05:47.638344: val_loss -0.8848
+2026-07-25 00:05:47.639378: Pseudo dice [0.9234]
+2026-07-25 00:05:47.639378: Epoch time: 130.01 s
+2026-07-25 00:05:47.640374: Yayy! New best EMA pseudo Dice: 0.9213
+2026-07-25 00:05:48.761764: R310 early stop {"completed_epochs": 3, "ema_dice": 0.9212679488243133, "early_best": 0.9212679488243133, "bad_epochs": 0, "stop": false}
+2026-07-25 00:05:48.763765: 
+2026-07-25 00:05:48.764171: Epoch 3
+2026-07-25 00:05:48.764561: Current learning rate: 0.0001
+2026-07-25 00:08:02.305445: train_loss -0.8839
+2026-07-25 00:08:02.305445: val_loss -0.873
+2026-07-25 00:08:02.306432: Pseudo dice [0.9214]
+2026-07-25 00:08:02.306432: Epoch time: 133.54 s
+2026-07-25 00:08:02.307449: Yayy! New best EMA pseudo Dice: 0.9213
+2026-07-25 00:08:03.420088: R310 early stop {"completed_epochs": 4, "ema_dice": 0.9212763652875522, "early_best": 0.9212679488243133, "bad_epochs": 1, "stop": false}
+2026-07-25 00:08:03.422085: 
+2026-07-25 00:08:03.423147: Epoch 4
+2026-07-25 00:08:03.423147: Current learning rate: 9e-05
+2026-07-25 00:10:17.528724: train_loss -0.8843
+2026-07-25 00:10:17.529724: val_loss -0.8869
+2026-07-25 00:10:17.530716: Pseudo dice [0.9282]
+2026-07-25 00:10:17.530716: Epoch time: 134.11 s
+2026-07-25 00:10:17.531363: Yayy! New best EMA pseudo Dice: 0.922
+2026-07-25 00:10:18.818310: R310 early stop {"completed_epochs": 5, "ema_dice": 0.9219656122567187, "early_best": 0.9219656122567187, "bad_epochs": 0, "stop": false}
+2026-07-25 00:10:18.820388: 
+2026-07-25 00:10:18.821366: Epoch 5
+2026-07-25 00:10:18.821366: Current learning rate: 9e-05
+2026-07-25 00:12:33.697180: train_loss -0.888
+2026-07-25 00:12:33.698253: val_loss -0.886
+2026-07-25 00:12:33.698774: Pseudo dice [0.9176]
+2026-07-25 00:12:33.699213: Epoch time: 134.88 s
+2026-07-25 00:12:34.286784: R310 early stop {"completed_epochs": 6, "ema_dice": 0.9215321787127368, "early_best": 0.9219656122567187, "bad_epochs": 1, "stop": false}
+2026-07-25 00:12:34.288355: 
+2026-07-25 00:12:34.289402: Epoch 6
+2026-07-25 00:12:34.289781: Current learning rate: 9e-05
+2026-07-25 00:14:46.376515: train_loss -0.8871
+2026-07-25 00:14:46.377517: val_loss -0.8601
+2026-07-25 00:14:46.377517: Pseudo dice [0.9154]
+2026-07-25 00:14:46.378510: Epoch time: 132.09 s
+2026-07-25 00:14:47.072434: R310 early stop {"completed_epochs": 7, "ema_dice": 0.9209221372680823, "early_best": 0.9219656122567187, "bad_epochs": 2, "stop": false}
+2026-07-25 00:14:47.074434: 
+2026-07-25 00:14:47.075427: Epoch 7
+2026-07-25 00:14:47.075427: Current learning rate: 9e-05
+2026-07-25 00:17:01.438280: train_loss -0.887
+2026-07-25 00:17:01.439266: val_loss -0.8899
+2026-07-25 00:17:01.440087: Pseudo dice [0.9275]
+2026-07-25 00:17:01.440579: Epoch time: 134.36 s
+2026-07-25 00:17:02.116935: R310 early stop {"completed_epochs": 8, "ema_dice": 0.9215767017709802, "early_best": 0.9219656122567187, "bad_epochs": 3, "stop": false}
+2026-07-25 00:17:02.120004: 
+2026-07-25 00:17:02.120004: Epoch 8
+2026-07-25 00:17:02.120972: Current learning rate: 9e-05
+2026-07-25 00:19:15.758600: train_loss -0.8831
+2026-07-25 00:19:15.759598: val_loss -0.8598
+2026-07-25 00:19:15.759598: Pseudo dice [0.9201]
+2026-07-25 00:19:15.759598: Epoch time: 133.64 s
+2026-07-25 00:19:16.395354: R310 early stop {"completed_epochs": 9, "ema_dice": 0.9214318077017203, "early_best": 0.9219656122567187, "bad_epochs": 4, "stop": false}
+2026-07-25 00:19:16.397366: 
+2026-07-25 00:19:16.398361: Epoch 9
+2026-07-25 00:19:16.398361: Current learning rate: 9e-05
+2026-07-25 00:21:29.563491: train_loss -0.8885
+2026-07-25 00:21:29.564492: val_loss -0.8876
+2026-07-25 00:21:29.564492: Pseudo dice [0.9219]
+2026-07-25 00:21:29.565488: Epoch time: 133.17 s
+2026-07-25 00:21:30.169527: R310 early stop {"completed_epochs": 10, "ema_dice": 0.9214809797394288, "early_best": 0.9219656122567187, "bad_epochs": 5, "stop": false}
+2026-07-25 00:21:30.171295: 
+2026-07-25 00:21:30.172229: Epoch 10
+2026-07-25 00:21:30.172229: Current learning rate: 8e-05
+2026-07-25 00:23:44.158231: train_loss -0.8895
+2026-07-25 00:23:44.159230: val_loss -0.8798
+2026-07-25 00:23:44.159230: Pseudo dice [0.9235]
+2026-07-25 00:23:44.160243: Epoch time: 133.99 s
+2026-07-25 00:23:44.797216: R310 early stop {"completed_epochs": 11, "ema_dice": 0.9216830070214956, "early_best": 0.9219656122567187, "bad_epochs": 6, "stop": false}
+2026-07-25 00:23:44.799292: 
+2026-07-25 00:23:44.800225: Epoch 11
+2026-07-25 00:23:44.800225: Current learning rate: 8e-05
+2026-07-25 00:25:59.132163: train_loss -0.8846
+2026-07-25 00:25:59.132163: val_loss -0.8797
+2026-07-25 00:25:59.133158: Pseudo dice [0.9191]
+2026-07-25 00:25:59.133158: Epoch time: 134.33 s
+2026-07-25 00:25:59.744563: R310 early stop {"completed_epochs": 12, "ema_dice": 0.9214253780778093, "early_best": 0.9219656122567187, "bad_epochs": 7, "stop": false}
+2026-07-25 00:25:59.747627: 
+2026-07-25 00:25:59.747627: Epoch 12
+2026-07-25 00:25:59.748641: Current learning rate: 8e-05
+2026-07-25 00:28:10.777886: train_loss -0.8904
+2026-07-25 00:28:10.778882: val_loss -0.8917
+2026-07-25 00:28:10.778882: Pseudo dice [0.9227]
+2026-07-25 00:28:10.779872: Epoch time: 131.03 s
+2026-07-25 00:28:11.392736: R310 early stop {"completed_epochs": 13, "ema_dice": 0.9215513506979924, "early_best": 0.9219656122567187, "bad_epochs": 8, "stop": false}
+2026-07-25 00:28:11.394742: 
+2026-07-25 00:28:11.394742: Epoch 13
+2026-07-25 00:28:11.395739: Current learning rate: 8e-05
+2026-07-25 00:30:23.038453: train_loss -0.8835
+2026-07-25 00:30:23.038453: val_loss -0.8796
+2026-07-25 00:30:23.039450: Pseudo dice [0.9178]
+2026-07-25 00:30:23.039450: Epoch time: 131.65 s
+2026-07-25 00:30:23.651135: R310 early stop {"completed_epochs": 14, "ema_dice": 0.9211714690161799, "early_best": 0.9219656122567187, "bad_epochs": 9, "stop": false}
+2026-07-25 00:30:23.653193: 
+2026-07-25 00:30:23.653193: Epoch 14
+2026-07-25 00:30:23.654137: Current learning rate: 8e-05
+2026-07-25 00:32:34.823032: train_loss -0.8913
+2026-07-25 00:32:34.823032: val_loss -0.8629
+2026-07-25 00:32:34.824031: Pseudo dice [0.9171]
+2026-07-25 00:32:34.824031: Epoch time: 131.17 s
+2026-07-25 00:32:35.619581: R310 early stop {"completed_epochs": 15, "ema_dice": 0.9207600298968043, "early_best": 0.9219656122567187, "bad_epochs": 10, "stop": true}
+2026-07-25 00:32:36.064483: Training done.
+2026-07-25 00:32:36.108481: Using splits from existing split file: G:\gutou\YOLO+SAM\outputs\nnunet\r310_clean_plain_nnunet\data\nnUNet_preprocessed\Dataset310_TSRSPlainCleanPanels2D\splits_final.json
+2026-07-25 00:32:36.109483: The split file contains 1 splits.
+2026-07-25 00:32:36.110487: Desired fold for training: 0
+2026-07-25 00:32:36.110487: This split has 814 training and 94 validation cases.
+2026-07-25 00:32:36.111485: predicting val_10375
+2026-07-25 00:32:36.119488: val_10375, shape torch.Size([1, 1, 1136, 959]), rank 0
+2026-07-25 00:32:38.718136: predicting val_10520
+2026-07-25 00:32:38.727141: val_10520, shape torch.Size([1, 1, 1515, 1067]), rank 0
+2026-07-25 00:32:39.572257: predicting val_10618
+2026-07-25 00:32:39.582258: val_10618, shape torch.Size([1, 1, 1533, 1608]), rank 0
+2026-07-25 00:32:40.847842: predicting val_10624
+2026-07-25 00:32:40.857844: val_10624, shape torch.Size([1, 1, 1257, 1224]), rank 0
+2026-07-25 00:32:41.698761: predicting val_11852
+2026-07-25 00:32:41.707763: val_11852, shape torch.Size([1, 1, 1419, 1075]), rank 0
+2026-07-25 00:32:42.575812: predicting val_11945
+2026-07-25 00:32:42.589246: val_11945, shape torch.Size([1, 1, 1436, 1111]), rank 0
+2026-07-25 00:32:43.462815: predicting val_12498
+2026-07-25 00:32:43.475815: val_12498, shape torch.Size([1, 1, 1536, 1257]), rank 0
+2026-07-25 00:32:44.348371: predicting val_12627
+2026-07-25 00:32:44.356372: val_12627, shape torch.Size([1, 1, 1216, 1006]), rank 0
+2026-07-25 00:32:44.854947: predicting val_12827
+2026-07-25 00:32:44.872454: val_12827, shape torch.Size([1, 1, 2000, 1398]), rank 0
+2026-07-25 00:32:46.720712: predicting val_13220
+2026-07-25 00:32:46.734713: val_13220, shape torch.Size([1, 1, 1328, 1286]), rank 0
+2026-07-25 00:32:47.644033: predicting val_13436
+2026-07-25 00:32:47.655045: val_13436, shape torch.Size([1, 1, 1508, 1470]), rank 0
+2026-07-25 00:32:48.543806: predicting val_13441
+2026-07-25 00:32:48.550812: val_13441, shape torch.Size([1, 1, 1078, 912]), rank 0
+2026-07-25 00:32:48.991210: predicting val_13454
+2026-07-25 00:32:48.998203: val_13454, shape torch.Size([1, 1, 1258, 943]), rank 0
+2026-07-25 00:32:49.429160: predicting val_13480
+2026-07-25 00:32:49.438161: val_13480, shape torch.Size([1, 1, 1412, 1148]), rank 0
+2026-07-25 00:32:50.287927: predicting val_13517
+2026-07-25 00:32:50.296935: val_13517, shape torch.Size([1, 1, 1518, 1220]), rank 0
+2026-07-25 00:32:51.150309: predicting val_13840
+2026-07-25 00:32:51.159390: val_13840, shape torch.Size([1, 1, 1519, 1082]), rank 0
+2026-07-25 00:32:52.012680: predicting val_13867
+2026-07-25 00:32:52.023681: val_13867, shape torch.Size([1, 1, 1547, 1248]), rank 0
+2026-07-25 00:32:53.704108: predicting val_1399
+2026-07-25 00:32:53.720114: val_1399, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:32:55.437795: predicting val_14041
+2026-07-25 00:32:55.450796: val_14041, shape torch.Size([1, 1, 1852, 1472]), rank 0
+2026-07-25 00:32:57.165477: predicting val_1418
+2026-07-25 00:32:57.177978: val_1418, shape torch.Size([1, 1, 1514, 2044]), rank 0
+2026-07-25 00:32:58.471029: predicting val_1452
+2026-07-25 00:32:58.484550: val_1452, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:33:00.203518: predicting val_15040
+2026-07-25 00:33:00.214516: val_15040, shape torch.Size([1, 1, 2087, 1208]), rank 0
+2026-07-25 00:33:01.935568: predicting val_15067
+2026-07-25 00:33:01.944563: val_15067, shape torch.Size([1, 1, 1874, 1384]), rank 0
+2026-07-25 00:33:03.658924: predicting val_1518
+2026-07-25 00:33:03.669919: val_1518, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:33:05.368077: predicting val_1522
+2026-07-25 00:33:05.379084: val_1522, shape torch.Size([1, 1, 1514, 2044]), rank 0
+2026-07-25 00:33:06.648795: predicting val_15274
+2026-07-25 00:33:06.657795: val_15274, shape torch.Size([1, 1, 1678, 1258]), rank 0
+2026-07-25 00:33:08.333718: predicting val_15369
+2026-07-25 00:33:08.346718: val_15369, shape torch.Size([1, 1, 1615, 1656]), rank 0
+2026-07-25 00:33:10.855569: predicting val_15446
+2026-07-25 00:33:10.863571: val_15446, shape torch.Size([1, 1, 1752, 1000]), rank 0
+2026-07-25 00:33:11.710201: predicting val_1560
+2026-07-25 00:33:11.725199: val_1560, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:15.475698: predicting val_1572
+2026-07-25 00:33:15.496225: val_1572, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:19.258264: predicting val_1585
+2026-07-25 00:33:19.284337: val_1585, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:23.048793: predicting val_1590
+2026-07-25 00:33:23.058784: val_1590, shape torch.Size([1, 1, 1824, 992]), rank 0
+2026-07-25 00:33:23.905335: predicting val_1620
+2026-07-25 00:33:23.916332: val_1620, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:33:25.592336: predicting val_1660
+2026-07-25 00:33:25.606850: val_1660, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:29.356313: predicting val_1666
+2026-07-25 00:33:29.371316: val_1666, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:33.119189: predicting val_1674
+2026-07-25 00:33:33.135196: val_1674, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:36.891305: predicting val_1678
+2026-07-25 00:33:36.905332: val_1678, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:40.644725: predicting val_1694
+2026-07-25 00:33:40.659734: val_1694, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:44.400801: predicting val_1736
+2026-07-25 00:33:44.412801: val_1736, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:33:46.089727: predicting val_1742
+2026-07-25 00:33:46.104737: val_1742, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:49.849588: predicting val_1807
+2026-07-25 00:33:49.859602: val_1807, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:33:51.532298: predicting val_1812
+2026-07-25 00:33:51.546824: val_1812, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:55.294216: predicting val_1827
+2026-07-25 00:33:55.307216: val_1827, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:33:59.055812: predicting val_1828
+2026-07-25 00:33:59.070811: val_1828, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:02.824483: predicting val_1846
+2026-07-25 00:34:02.839494: val_1846, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:06.580554: predicting val_1855
+2026-07-25 00:34:06.594554: val_1855, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:10.345308: predicting val_1880
+2026-07-25 00:34:10.356394: val_1880, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:34:12.032068: predicting val_1884
+2026-07-25 00:34:12.042069: val_1884, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:34:13.717007: predicting val_1886
+2026-07-25 00:34:13.733006: val_1886, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:17.473085: predicting val_1901
+2026-07-25 00:34:17.484097: val_1901, shape torch.Size([1, 1, 2044, 1514]), rank 0
+2026-07-25 00:34:19.161093: predicting val_1931
+2026-07-25 00:34:19.176601: val_1931, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:22.916411: predicting val_1934
+2026-07-25 00:34:22.932414: val_1934, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:26.676059: predicting val_2024
+2026-07-25 00:34:26.683579: val_2024, shape torch.Size([1, 1, 1167, 819]), rank 0
+2026-07-25 00:34:27.122069: predicting val_2044
+2026-07-25 00:34:27.129065: val_2044, shape torch.Size([1, 1, 1462, 1203]), rank 0
+2026-07-25 00:34:27.975301: predicting val_2248
+2026-07-25 00:34:27.981811: val_2248, shape torch.Size([1, 1, 1348, 949]), rank 0
+2026-07-25 00:34:28.424220: predicting val_2709
+2026-07-25 00:34:28.429222: val_2709, shape torch.Size([1, 1, 827, 608]), rank 0
+2026-07-25 00:34:28.863171: predicting val_2853
+2026-07-25 00:34:28.869175: val_2853, shape torch.Size([1, 1, 1136, 935]), rank 0
+2026-07-25 00:34:29.306450: predicting val_3058
+2026-07-25 00:34:29.313456: val_3058, shape torch.Size([1, 1, 1416, 995]), rank 0
+2026-07-25 00:34:29.754465: predicting val_3249
+2026-07-25 00:34:29.777813: val_3249, shape torch.Size([1, 1, 2920, 2320]), rank 0
+2026-07-25 00:34:34.803049: predicting val_3269
+2026-07-25 00:34:34.811053: val_3269, shape torch.Size([1, 1, 1190, 994]), rank 0
+2026-07-25 00:34:35.249485: predicting val_3352
+2026-07-25 00:34:35.254485: val_3352, shape torch.Size([1, 1, 966, 742]), rank 0
+2026-07-25 00:34:35.681608: predicting val_3353
+2026-07-25 00:34:35.687117: val_3353, shape torch.Size([1, 1, 1195, 923]), rank 0
+2026-07-25 00:34:36.134228: predicting val_3354
+2026-07-25 00:34:36.141229: val_3354, shape torch.Size([1, 1, 1246, 1253]), rank 0
+2026-07-25 00:34:37.013112: predicting val_3366
+2026-07-25 00:34:37.018111: val_3366, shape torch.Size([1, 1, 961, 837]), rank 0
+2026-07-25 00:34:37.462149: predicting val_3392
+2026-07-25 00:34:37.468147: val_3392, shape torch.Size([1, 1, 1439, 878]), rank 0
+2026-07-25 00:34:37.912543: predicting val_3460
+2026-07-25 00:34:37.925659: val_3460, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:41.730276: predicting val_3468
+2026-07-25 00:34:41.736274: val_3468, shape torch.Size([1, 1, 976, 904]), rank 0
+2026-07-25 00:34:42.172970: predicting val_3493
+2026-07-25 00:34:42.187527: val_3493, shape torch.Size([1, 1, 2570, 2040]), rank 0
+2026-07-25 00:34:45.939929: predicting val_3567
+2026-07-25 00:34:45.945928: val_3567, shape torch.Size([1, 1, 984, 800]), rank 0
+2026-07-25 00:34:46.380373: predicting val_3595
+2026-07-25 00:34:46.385374: val_3595, shape torch.Size([1, 1, 832, 816]), rank 0
+2026-07-25 00:34:46.814938: predicting val_3596
+2026-07-25 00:34:46.829807: val_3596, shape torch.Size([1, 1, 2614, 2164]), rank 0
+2026-07-25 00:34:51.812146: predicting val_3602
+2026-07-25 00:34:51.819152: val_3602, shape torch.Size([1, 1, 1048, 808]), rank 0
+2026-07-25 00:34:52.253672: predicting val_3678
+2026-07-25 00:34:52.259672: val_3678, shape torch.Size([1, 1, 1224, 968]), rank 0
+2026-07-25 00:34:52.685018: predicting val_3700
+2026-07-25 00:34:52.690023: val_3700, shape torch.Size([1, 1, 1376, 624]), rank 0
+2026-07-25 00:34:53.125300: predicting val_3725
+2026-07-25 00:34:53.131302: val_3725, shape torch.Size([1, 1, 1229, 781]), rank 0
+2026-07-25 00:34:53.562353: predicting val_3732
+2026-07-25 00:34:53.566358: val_3732, shape torch.Size([1, 1, 736, 608]), rank 0
+2026-07-25 00:34:53.996601: predicting val_3777
+2026-07-25 00:34:54.004112: val_3777, shape torch.Size([1, 1, 1568, 992]), rank 0
+2026-07-25 00:34:54.848074: predicting val_3840
+2026-07-25 00:34:54.854074: val_3840, shape torch.Size([1, 1, 1249, 889]), rank 0
+2026-07-25 00:34:55.285707: predicting val_4047
+2026-07-25 00:34:55.303216: val_4047, shape torch.Size([1, 1, 2460, 1950]), rank 0
+2026-07-25 00:34:59.052605: predicting val_4193
+2026-07-25 00:34:59.089428: val_4193, shape torch.Size([1, 1, 2920, 2320]), rank 0
+2026-07-25 00:35:04.085089: predicting val_5355
+2026-07-25 00:35:04.095091: val_5355, shape torch.Size([1, 1, 1650, 1380]), rank 0
+2026-07-25 00:35:05.759266: predicting val_5825
+2026-07-25 00:35:05.766274: val_5825, shape torch.Size([1, 1, 1193, 991]), rank 0
+2026-07-25 00:35:06.203577: predicting val_6503
+2026-07-25 00:35:06.210576: val_6503, shape torch.Size([1, 1, 1177, 1172]), rank 0
+2026-07-25 00:35:07.057993: predicting val_6605
+2026-07-25 00:35:07.066991: val_6605, shape torch.Size([1, 1, 1762, 1328]), rank 0
+2026-07-25 00:35:08.737098: predicting val_6606
+2026-07-25 00:35:08.745104: val_6606, shape torch.Size([1, 1, 1580, 1312]), rank 0
+2026-07-25 00:35:10.418779: predicting val_6698
+2026-07-25 00:35:10.425785: val_6698, shape torch.Size([1, 1, 1517, 1122]), rank 0
+2026-07-25 00:35:11.270738: predicting val_6918
+2026-07-25 00:35:11.278738: val_6918, shape torch.Size([1, 1, 1636, 1272]), rank 0
+2026-07-25 00:35:12.949027: predicting val_6947
+2026-07-25 00:35:12.958027: val_6947, shape torch.Size([1, 1, 1376, 1108]), rank 0
+2026-07-25 00:35:13.804961: predicting val_7253
+2026-07-25 00:35:13.812961: val_7253, shape torch.Size([1, 1, 1386, 1249]), rank 0
+2026-07-25 00:35:14.659389: predicting val_7259
+2026-07-25 00:35:14.668460: val_7259, shape torch.Size([1, 1, 1695, 1555]), rank 0
+2026-07-25 00:35:17.168302: predicting val_7269
+2026-07-25 00:35:17.175303: val_7269, shape torch.Size([1, 1, 1366, 1137]), rank 0
+2026-07-25 00:35:18.026009: predicting val_7312
+2026-07-25 00:35:18.033007: val_7312, shape torch.Size([1, 1, 1188, 1104]), rank 0
+2026-07-25 00:35:18.876595: predicting val_7654
+2026-07-25 00:35:18.886594: val_7654, shape torch.Size([1, 1, 1288, 1096]), rank 0
+2026-07-25 00:35:19.729790: predicting val_8253
+2026-07-25 00:35:19.747183: val_8253, shape torch.Size([1, 1, 1437, 1263]), rank 0
+2026-07-25 00:35:26.630217: Validation complete
+2026-07-25 00:35:26.630217: Mean Validation Dice:  0.9077066230031696
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+There are 94 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 94 cases that I would like to predict
+
+Predicting val_10375:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10375
+
+Predicting val_10520:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10520
+
+Predicting val_10618:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10618
+
+Predicting val_10624:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_10624
+
+Predicting val_11852:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11852
+
+Predicting val_11945:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_11945
+
+Predicting val_12498:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12498
+
+Predicting val_12627:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12627
+
+Predicting val_12827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_12827
+
+Predicting val_13220:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13220
+
+Predicting val_13436:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13436
+
+Predicting val_13441:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13441
+
+Predicting val_13454:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13454
+
+Predicting val_13480:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13480
+
+Predicting val_13517:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13517
+
+Predicting val_13840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13840
+
+Predicting val_13867:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_13867
+
+Predicting val_1399:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1399
+
+Predicting val_14041:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_14041
+
+Predicting val_1418:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1418
+
+Predicting val_1452:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1452
+
+Predicting val_15040:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15040
+
+Predicting val_15067:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15067
+
+Predicting val_1518:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1518
+
+Predicting val_1522:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1522
+
+Predicting val_15274:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15274
+
+Predicting val_15369:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15369
+
+Predicting val_15446:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_15446
+
+Predicting val_1560:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1560
+
+Predicting val_1572:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1572
+
+Predicting val_1585:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1585
+
+Predicting val_1590:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1590
+
+Predicting val_1620:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1620
+
+Predicting val_1660:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1660
+
+Predicting val_1666:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1666
+
+Predicting val_1674:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1674
+
+Predicting val_1678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1678
+
+Predicting val_1694:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1694
+
+Predicting val_1736:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1736
+
+Predicting val_1742:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1742
+
+Predicting val_1807:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1807
+
+Predicting val_1812:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1812
+
+Predicting val_1827:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1827
+
+Predicting val_1828:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1828
+
+Predicting val_1846:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1846
+
+Predicting val_1855:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1855
+
+Predicting val_1880:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1880
+
+Predicting val_1884:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1884
+
+Predicting val_1886:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1886
+
+Predicting val_1901:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1901
+
+Predicting val_1931:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1931
+
+Predicting val_1934:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_1934
+
+Predicting val_2024:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2024
+
+Predicting val_2044:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2044
+
+Predicting val_2248:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2248
+
+Predicting val_2709:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2709
+
+Predicting val_2853:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_2853
+
+Predicting val_3058:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3058
+
+Predicting val_3249:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3249
+
+Predicting val_3269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3269
+
+Predicting val_3352:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3352
+
+Predicting val_3353:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3353
+
+Predicting val_3354:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3354
+
+Predicting val_3366:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3366
+
+Predicting val_3392:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3392
+
+Predicting val_3460:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3460
+
+Predicting val_3468:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3468
+
+Predicting val_3493:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3493
+
+Predicting val_3567:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3567
+
+Predicting val_3595:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3595
+
+Predicting val_3596:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3596
+
+Predicting val_3602:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3602
+
+Predicting val_3678:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3678
+
+Predicting val_3700:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3700
+
+Predicting val_3725:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3725
+
+Predicting val_3732:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3732
+
+Predicting val_3777:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3777
+
+Predicting val_3840:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_3840
+
+Predicting val_4047:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4047
+
+Predicting val_4193:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_4193
+
+Predicting val_5355:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5355
+
+Predicting val_5825:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_5825
+
+Predicting val_6503:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6503
+
+Predicting val_6605:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6605
+
+Predicting val_6606:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6606
+
+Predicting val_6698:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6698
+
+Predicting val_6918:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6918
+
+Predicting val_6947:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_6947
+
+Predicting val_7253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7253
+
+Predicting val_7259:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7259
+
+Predicting val_7269:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7269
+
+Predicting val_7312:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7312
+
+Predicting val_7654:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_7654
+
+Predicting val_8253:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with val_8253
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Segmentation export complete.
+converted 94 predictions to G:\gutou\YOLO+SAM\outputs\nnunet\r310_clean_plain_nnunet\masks_clean
+{
+  "dice": 0.9075269812137875,
+  "iou": 0.8332160722914339,
+  "precision": 0.9033616357493022,
+  "recall": 0.9152880360537916,
+  "specificity": 0.9973838420625637,
+  "boundary_iou": 0.24536550344916377,
+  "boundary_f1": 0.38699889883866573,
+  "gap_region_fp_rate": 0.21266555613697086,
+  "gap_region_precision": 0.7873344438630291,
+  "component_merge_rate": 0.648936170212766,
+  "component_count_mae": 2.021276595744681,
+  "component_delta_mean": -1.5319148936170213,
+  "surface_dice_2px": 0.6674556112857452,
+  "surface_dice_5px": 0.9136941461963903,
+  "hd95_px": 10.940607590851958,
+  "assd_px": 2.734614743129959,
+  "dsc": 0.9075269812137875,
+  "nsd_2px": 0.6674556112857452,
+  "voe": 0.16678392770856587,
+  "msd_px": 2.734614743129959,
+  "ravd": 0.06042517686478549
+}
+{
+  "dice": 0.90705907992588,
+  "iou": 0.8325336617600924,
+  "precision": 0.9117261620044624,
+  "recall": 0.9061422727953949,
+  "specificity": 0.9977056820488309,
+  "boundary_iou": 0.24758813990285664,
+  "boundary_f1": 0.3897733668788277,
+  "gap_region_fp_rate": 0.18664044549603157,
+  "gap_region_precision": 0.8133595545039686,
+  "component_merge_rate": 0.5957446808510638,
+  "component_count_mae": 1.8404255319148937,
+  "component_delta_mean": -1.2872340425531914,
+  "surface_dice_2px": 0.6716909612959042,
+  "surface_dice_5px": 0.9148243139750447,
+  "hd95_px": 10.28193667070294,
+  "assd_px": 2.955085481990086,
+  "dsc": 0.90705907992588,
+  "nsd_2px": 0.6716909612959042,
+  "voe": 0.16746633823990753,
+  "msd_px": 2.955085481990086,
+  "ravd": 0.057665572355529236
+}
+{
+  "rendered": 12,
+  "output": "G:\\gutou\\YOLO+SAM\\outputs\\visualizations\\r310_plain_nnunet_frozen_vs_clean_val94"
+}
+[R310] complete 2026-07-25T00:41:05.3204182+08:00

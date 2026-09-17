@@ -1,0 +1,8 @@
+{
+  "experiment": "R297",
+  "architecture": "frozen R285 nnU-Net + native-resolution overlap patch refiner",
+  "crop_from": "coarse sigmoid overlap prediction, no GT at val/test",
+  "patch_size": 192,
+  "threshold": 0.5,
+  "test_used_for_selection": false
+}

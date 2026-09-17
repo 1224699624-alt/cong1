@@ -1,0 +1,9 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r284b_overlap_prior_fp32",
+    "started":  "2026-07-22T16:31:28.9262203+08:00",
+    "baseline_checkpoint":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r284_overlap_prior\\baseline_best.pth",
+    "pid":  28648,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r284b_ramw600_overlap_prior_fp32_local.stderr.log",
+    "experiment":  "R284b",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r284b_ramw600_overlap_prior_fp32_local.stdout.log"
+}

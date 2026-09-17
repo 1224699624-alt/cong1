@@ -1,0 +1,9 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "threshold": 0.35,
+  "slot_blend": 0.75,
+  "num_evaluated": 0,
+  "mean": {},
+  "per_image": []
+}

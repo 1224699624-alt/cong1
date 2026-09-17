@@ -1,0 +1,101 @@
+data
+data/raw
+data/raw/TSRS_RSNA-Epiphysis
+data/raw/TSRS_RSNA-Epiphysis/test
+data/raw/TSRS_RSNA-Epiphysis/test_labels
+data/raw/TSRS_RSNA-Epiphysis/train
+data/raw/TSRS_RSNA-Epiphysis/train_labels
+data/raw/TSRS_RSNA-Epiphysis/val
+data/raw/TSRS_RSNA-Epiphysis/val_labels
+data/raw_variants
+data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1
+data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1/train
+data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1/train_labels
+data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1/val
+data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1/val_labels
+data/remote_variants
+data/remote_variants/RAM-W600
+data/remote_variants/RAM-W600/BoneSegmentation
+outputs/ram_w600/r323_nnunet_ram_native_r317/initialization_audit.json
+outputs/ram_w600/r323_nnunet_ram_native_r317/result.json
+outputs/ram_w600/r324_lambda004_nnunet_explicit_overlap_iem/result.json
+outputs/ram_w600/r324_lambda006_nnunet_explicit_overlap_iem/result.json
+outputs/ram_w600/r324_lambda010_nnunet_explicit_overlap_iem/result.json
+outputs/ram_w600/r324_nnunet_explicit_overlap_iem/initialization_audit.json
+outputs/ram_w600/r324_nnunet_explicit_overlap_iem/overlap_relation_graph.json
+outputs/ram_w600/r324_nnunet_explicit_overlap_iem/result.json
+outputs/ram_w600/r324b_nnunet_explicit_overlap_iem_lambda002/result.json
+outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/overlap_relation_graph.json
+outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/result.json
+outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/spatial_preprocessing_audit.json
+outputs/ram_w600/r326_layer_projection_prior/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior/smoke/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior/smoke_calibrated/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior_batched/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior_batched/result.json
+outputs/ram_w600/r326_layer_projection_prior_batched/smoke/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior_lambda001/initialization_audit.json
+outputs/ram_w600/r326_layer_projection_prior_lambda001/result.json
+outputs/ram_w600/r327_native_instance_completion_prior/oracle.json
+outputs/ram_w600/r327_native_instance_completion_prior/result.json
+outputs/ram_w600/r327_native_instance_completion_prior_smoke/oracle.json
+outputs/ram_w600/r328_fn_focus_completion/oracle.json
+outputs/ram_w600/r328_fn_focus_completion/result.json
+outputs/ram_w600/r329_instance_prior_vs_generic/parameter_matching.json
+outputs/ram_w600/r329_instance_prior_vs_generic/result.json
+outputs/ram_w600/r329_official_metrics_val/result.json
+outputs/ram_w600/r329_official_metrics_val/result.pre_fix_invalid.json
+outputs/ram_w600/r330_pair_surface_volume_prior/result.json
+outputs/ram_w600/r331_r330_five_seed/partial_result.json
+outputs/ram_w600/r331_r330_five_seed/result.json
+outputs/ram_w600/r332_joint_iterative_refinement/r325_official_cache.json
+outputs/ram_w600/r332_joint_iterative_refinement/result.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_1/protocol.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_1/result.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_2/protocol.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_2/result.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_3/protocol.json
+outputs/ram_w600/r332_joint_iterative_refinement/steps_3/result.json
+outputs/ram_w600/r332_joint_iterative_refinement_smoke/protocol.json
+outputs/ram_w600/r332_locked_test_vs_r325/result.json
+outputs/ram_w600/r333_dual_interaction_prior/result.json
+outputs/ram_w600/r334_frozen_dual_interaction/result.json
+outputs/ram_w600/r335_conditional_state_loss/result.json
+outputs/ram_w600/r336_state_pcgrad_distill/result.json
+outputs/ram_w600/r337_frozen_prior_backprop/protocol.json
+outputs/ram_w600/r337_frozen_prior_backprop/result.json
+outputs/ram_w600/r337_frozen_prior_backprop_smoke/protocol.json
+outputs/ram_w600/r337_frozen_prior_backprop_smoke/result.json
+outputs/ram_w600/r338_frozen_differentiable_prior/protocol.json
+outputs/ram_w600/r338_frozen_differentiable_prior_smoke/protocol.json
+outputs/ram_w600/r339_prior_from_scratch/protocol.json
+outputs/ram_w600/r339_prior_from_scratch/result.json
+outputs/ram_w600/r339_prior_from_scratch_smoke/protocol.json
+outputs/ram_w600/r340_frozen_new_prior_backprop/protocol.json
+outputs/ram_w600/r340_frozen_new_prior_backprop/result.json
+outputs/ram_w600/r341_sample_adaptive_gate/protocol.json
+outputs/ram_w600/r341_sample_adaptive_gate/result.json
+outputs/ram_w600/r341_sample_adaptive_gate_smoke/protocol.json
+outputs/ram_w600/r341_sample_adaptive_gate_smoke/result.json
+outputs/ram_w600/r346_conflict_aware_loss/result.json
+outputs/ram_w600/r347_conflict_aware_corrected/result.json
+outputs/ram_w600/r349_parameter_pcgrad/audit/identity_audit.json
+outputs/ram_w600/r349_parameter_pcgrad/audit/smoke_audit.json
+outputs/ram_w600/r349_parameter_pcgrad/full/identity_audit.json
+outputs/ram_w600/r349_parameter_pcgrad_retry/audit/identity_audit.json
+outputs/ram_w600/r349_parameter_pcgrad_retry/audit/smoke_audit.json
+outputs/ram_w600/r349_parameter_pcgrad_retry/full/identity_audit.json
+outputs/ram_w600/r349_parameter_pcgrad_retry/full/result.json
+outputs/ram_w600/r350_unified_interaction_pcgrad/audit/smoke_audit.json
+outputs/ram_w600/r350_unified_interaction_pcgrad/full/result.json
+{"base_loss": -0.8857227294445038, "separation_loss": 0.028119022037135438, "overlap_loss": 0.08045256960764527, "preserve_loss": 0.00010069759685939062, "separation_mass": 0.004678658926859498, "overlap_mass": 0.00040795518067182, "preserve_mass": 0.9949134063720703, "gate_conflict": 0.0, "separation_weight": 0.016315950749907642, "overlap_weight": 0.0014278431358152376, "preserve_weight": 0.10000000149011612, "separation_conflict": 0.256, "overlap_conflict": 0.392, "preserve_conflict": 0.652, "epoch": 29}
+121M	data/raw/TSRS_RSNA-Epiphysis
+121M	data/raw
+480M	data/raw_variants/TSRS_RSNA-Epiphysis_contrast_v1
+480M	data/raw_variants
+3.6G	data/remote_variants/RAM-W600
+3.6G	data/remote_variants
+4.2G	data
+2.1.2+cu118 True /root/miniconda3/lib/python3.10/site-packages/nnunetv2/__init__.py
+No Sockets found in /run/screen/S-root.
+

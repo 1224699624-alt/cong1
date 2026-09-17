@@ -1,0 +1,8 @@
+﻿{
+    "output":  "G:\\gutou\\YOLO+SAM\\outputs\\ram_w600\\r284_overlap_prior",
+    "started":  "2026-07-22T15:56:40.8086198+08:00",
+    "pid":  35480,
+    "stderr":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r284_ramw600_overlap_prior_local.stderr.log",
+    "experiment":  "R284",
+    "stdout":  "G:\\gutou\\YOLO+SAM\\outputs\\bridge_logs\\r284_ramw600_overlap_prior_local.stdout.log"
+}

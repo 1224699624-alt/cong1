@@ -1,0 +1,13 @@
+{
+  "run_id": "R219-action-hardcase-visualizations",
+  "candidate_csv": "outputs/analysis/r216_soft_seam_action_fullval_candidates.csv",
+  "output_dir": "outputs/analysis/r219_action_hardcase_visualizations",
+  "num_cases": 24,
+  "groups": {
+    "ambiguous": 8,
+    "hard_risk": 8,
+    "safe_useful": 8
+  },
+  "clean_test_v2_used": false,
+  "writes_model_masks": false
+}

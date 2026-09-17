@@ -1,0 +1,16 @@
+{
+  "status": "gate_failed",
+  "target_dataset": "TSRS_RSNA-Epiphysis_label_protocol_reviewed_v1",
+  "dry_run": true,
+  "gate": {
+    "gate_pass": false,
+    "errors": [
+      "reviewed train rows 2 < required 20",
+      "confirmed train rows 2 < required 8"
+    ],
+    "reviewed_train": 2,
+    "confirmed_train": 2,
+    "correction_rows": 1
+  },
+  "notes": "Fill human_decision fields in the R134 manifest before building a variant."
+}

@@ -1,0 +1,7 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting opencv-python-headless==4.10.0.84
+  Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.9/49.9 MB 35.3 MB/s  0:00:01
+Requirement already satisfied: numpy>=1.21.2 in /home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages (from opencv-python-headless==4.10.0.84) (2.2.6)
+Installing collected packages: opencv-python-headless
+Successfully installed opencv-python-headless-4.10.0.84

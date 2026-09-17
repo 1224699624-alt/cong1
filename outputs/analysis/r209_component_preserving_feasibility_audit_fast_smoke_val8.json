@@ -1,0 +1,49 @@
+{
+  "run_id": "R209-F0",
+  "purpose": "train/val-only component-preserving instance feasibility audit",
+  "clean_test_v2_used": false,
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "gate": {
+    "min_overlap_frac": 0.05,
+    "min_merged_image_rate": 0.1,
+    "max_oracle_component_mae_delta": 0.0,
+    "min_oracle_gap_delta": 0.0001
+  },
+  "split_summaries": {
+    "val": {
+      "anchor_dice": 0.9026491265926603,
+      "anchor_iou": 0.8239158832581595,
+      "anchor_recall": 0.9127664220064727,
+      "anchor_boundary_iou": 0.25872987005974435,
+      "anchor_gap_region_fp_rate": 0.18544386544060054,
+      "anchor_component_merge_rate": 0.5,
+      "anchor_component_count_mae": 1.875,
+      "oracle_dice": 1.0,
+      "oracle_iou": 1.0,
+      "oracle_recall": 1.0,
+      "oracle_boundary_iou": 1.0,
+      "oracle_gap_region_fp_rate": 0.0,
+      "oracle_component_merge_rate": 0.0,
+      "oracle_component_count_mae": 0.0,
+      "delta_dice": 0.09735087340733972,
+      "delta_recall": 0.08723357799352727,
+      "delta_boundary_iou": 0.7412701299402555,
+      "delta_gap_region_fp_rate": -0.18544386544060054,
+      "delta_component_merge_rate": -0.5,
+      "delta_component_count_mae": -1.875,
+      "merged_pred_components": 1.0,
+      "pred_component_count": 25.625,
+      "gt_instance_count": 26.75,
+      "gt_instances_covered": 26.75,
+      "num_images": 8,
+      "images_with_pred_merge": 6,
+      "pred_merge_image_rate": 0.75
+    }
+  },
+  "missing_by_split": {
+    "val": []
+  },
+  "decision": "go_component_preserving_model_feasible",
+  "decision_note": "R110 has frequent multi-instance merges and instance-level supervision has a component-safe oracle upper bound."
+}

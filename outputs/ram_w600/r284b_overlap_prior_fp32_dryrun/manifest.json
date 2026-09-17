@@ -1,0 +1,186 @@
+{
+  "experiment": "R284",
+  "dataset": "G:\\gutou\\RAM-W600",
+  "splits": {
+    "train": 425,
+    "val": 69,
+    "test": 124
+  },
+  "image_size": 384,
+  "batch_size": 2,
+  "baseline_epochs": 1,
+  "improved_epochs": 1,
+  "device": "cuda",
+  "bone_names": [
+    "Capitate",
+    "DistalRadius",
+    "DistalUlna",
+    "Hamate",
+    "Lunate",
+    "Tri",
+    "Scaphoid",
+    "Trapezium",
+    "Trapezoid",
+    "Metacarpal1",
+    "Metacarpal2",
+    "Metacarpal3",
+    "Metacarpal4",
+    "Metacarpal5"
+  ],
+  "pairs": [
+    {
+      "indices": [
+        7,
+        8
+      ],
+      "names": [
+        "Trapezium",
+        "Trapezoid"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "names": [
+        "Capitate",
+        "Hamate"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        6
+      ],
+      "names": [
+        "Capitate",
+        "Scaphoid"
+      ]
+    },
+    {
+      "indices": [
+        1,
+        4
+      ],
+      "names": [
+        "DistalRadius",
+        "Lunate"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "names": [
+        "Capitate",
+        "Lunate"
+      ]
+    },
+    {
+      "indices": [
+        3,
+        13
+      ],
+      "names": [
+        "Hamate",
+        "Metacarpal5"
+      ]
+    },
+    {
+      "indices": [
+        1,
+        6
+      ],
+      "names": [
+        "DistalRadius",
+        "Scaphoid"
+      ]
+    },
+    {
+      "indices": [
+        12,
+        13
+      ],
+      "names": [
+        "Metacarpal4",
+        "Metacarpal5"
+      ]
+    },
+    {
+      "indices": [
+        7,
+        10
+      ],
+      "names": [
+        "Trapezium",
+        "Metacarpal2"
+      ]
+    },
+    {
+      "indices": [
+        4,
+        6
+      ],
+      "names": [
+        "Lunate",
+        "Scaphoid"
+      ]
+    },
+    {
+      "indices": [
+        11,
+        12
+      ],
+      "names": [
+        "Metacarpal3",
+        "Metacarpal4"
+      ]
+    },
+    {
+      "indices": [
+        10,
+        11
+      ],
+      "names": [
+        "Metacarpal2",
+        "Metacarpal3"
+      ]
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "names": [
+        "Scaphoid",
+        "Trapezium"
+      ]
+    },
+    {
+      "indices": [
+        3,
+        5
+      ],
+      "names": [
+        "Hamate",
+        "Tri"
+      ]
+    },
+    {
+      "indices": [
+        7,
+        9
+      ],
+      "names": [
+        "Trapezium",
+        "Metacarpal1"
+      ]
+    }
+  ],
+  "loss": "multilabel Dice+BCE + 0.10 overlap-prior + 0.05 pair-overlap",
+  "test_used_for_model_selection": false,
+  "threshold_search_used": false,
+  "baseline_checkpoint_source": null
+}

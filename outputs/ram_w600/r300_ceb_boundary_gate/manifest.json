@@ -1,0 +1,7 @@
+{
+  "experiment": "R300",
+  "method": "Ceb-inspired boundary-level candidate overlap classifier",
+  "classifier": "RandomForest on pairwise boundary signature",
+  "test_selection_rule": "test only after validation non-inferiority plus overlap Dice improvement",
+  "threshold": 0.5
+}

@@ -1,0 +1,74 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "test",
+  "threshold": 0.7,
+  "min_component_area": 0,
+  "tta_flips": false,
+  "num_evaluated": 4,
+  "mean": {
+    "dice": 0.45022749255503003,
+    "iou": 0.29100296730046515,
+    "precision": 0.29287324382568963,
+    "recall": 0.9805576898133557,
+    "specificity": 0.9514673305362813,
+    "boundary_iou": 0.017133274030158716,
+    "pred_component_count": 14.5,
+    "gt_component_count": 26.0,
+    "component_count_error": 11.5,
+    "false_bridge_flag": 1.0
+  },
+  "per_image": [
+    {
+      "dice": 0.46718391580083657,
+      "iou": 0.3047879785557717,
+      "precision": 0.3062383357362085,
+      "recall": 0.9846989562299139,
+      "specificity": 0.9534887858020895,
+      "boundary_iou": 0.016472240224670556,
+      "pred_component_count": 15.0,
+      "gt_component_count": 27.0,
+      "component_count_error": 12.0,
+      "false_bridge_flag": 1.0,
+      "image": "10793.png"
+    },
+    {
+      "dice": 0.47340318280597726,
+      "iou": 0.3101036092005753,
+      "precision": 0.3148692680600811,
+      "recall": 0.9534638871341335,
+      "specificity": 0.9665170888199177,
+      "boundary_iou": 0.024310532652944212,
+      "pred_component_count": 13.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 13.0,
+      "false_bridge_flag": 1.0,
+      "image": "11099.png"
+    },
+    {
+      "dice": 0.3977356787321807,
+      "iou": 0.24823349896318322,
+      "precision": 0.2486440305994482,
+      "recall": 0.9933926222834596,
+      "specificity": 0.9405215878448391,
+      "boundary_iou": 0.01353206511080604,
+      "pred_component_count": 15.0,
+      "gt_component_count": 25.0,
+      "component_count_error": 10.0,
+      "false_bridge_flag": 1.0,
+      "image": "12046.png"
+    },
+    {
+      "dice": 0.4625871928811257,
+      "iou": 0.3008867824823304,
+      "precision": 0.3017413409070208,
+      "recall": 0.9906752936059157,
+      "specificity": 0.9453418596782787,
+      "boundary_iou": 0.01421825813221406,
+      "pred_component_count": 15.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 11.0,
+      "false_bridge_flag": 1.0,
+      "image": "12133.png"
+    }
+  ]
+}

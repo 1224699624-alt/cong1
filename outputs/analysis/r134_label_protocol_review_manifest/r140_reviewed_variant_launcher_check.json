@@ -1,0 +1,21 @@
+{
+  "launcher": "outputs\\bridge_logs\\run_r140_reviewed_variant_instance_sep.sh",
+  "ok": true,
+  "errors": [],
+  "required_checked": [
+    "clean_test_eval_dataset",
+    "clean_test_eval_root",
+    "clean_test_policy_guard",
+    "gate_checker",
+    "original_control_dataset",
+    "r140_output_exp",
+    "result_monitor",
+    "reviewed_variant_dataset",
+    "variant_metadata_guard"
+  ],
+  "forbidden_checked": [
+    "clean_test_train_dataset",
+    "new_reannotated_test",
+    "reannotated_dataset"
+  ]
+}

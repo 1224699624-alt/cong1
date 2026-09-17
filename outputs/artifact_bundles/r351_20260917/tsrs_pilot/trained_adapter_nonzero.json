@@ -1,0 +1,18 @@
+{
+  "input_prior.net.2.weight": {
+    "nonzero": 72,
+    "max_abs": 0.0013120891526341438
+  },
+  "input_prior.net.2.bias": {
+    "nonzero": 1,
+    "max_abs": 0.0007942624506540596
+  },
+  "output_prior.residual.weight": {
+    "nonzero": 12,
+    "max_abs": 0.003059153677895665
+  },
+  "output_prior.residual.bias": {
+    "nonzero": 1,
+    "max_abs": 0.002532720798626542
+  }
+}

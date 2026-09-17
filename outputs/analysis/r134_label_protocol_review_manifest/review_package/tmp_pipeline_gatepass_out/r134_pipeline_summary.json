@@ -1,0 +1,159 @@
+{
+  "status": "dry_run_ok",
+  "mutated_manifest": false,
+  "created_variant": false,
+  "preview": {
+    "status": "ok",
+    "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+    "decisions_csv": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass.csv",
+    "gate_pass_if_applied": true,
+    "errors": [],
+    "warnings": [],
+    "counts": {
+      "csv_rows": 20,
+      "applied_decision_rows_preview": 20,
+      "notes_rows_preview": 20,
+      "skipped_blank": 0,
+      "skipped_clean_test_decisions": 0,
+      "reviewed_train_if_applied": 20,
+      "confirmed_train_if_applied": 20,
+      "reviewed_val_if_applied": 0
+    },
+    "train_decision_counts_if_applied": {
+      "label_ok_protocol_clear": 20,
+      "blank": 44
+    },
+    "val_decision_counts_if_applied": {
+      "blank": 6
+    },
+    "next_action": "apply_decisions_then_run_checker"
+  },
+  "checker": {
+    "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+    "gate_pass": true,
+    "errors": [],
+    "warnings": [],
+    "counts": {
+      "clean_test_reference": 24,
+      "train_review_queue": 64,
+      "val_audit_queue": 6,
+      "reviewed_train": 20,
+      "confirmed_train_for_variant": 20,
+      "confirmed_train_p0": 20,
+      "reviewed_val": 0
+    },
+    "train_decision_counts": {
+      "label_ok_protocol_clear": 20,
+      "blank": 44
+    },
+    "val_decision_counts": {
+      "blank": 6
+    },
+    "next_action": "build_isolated_corrected_variant"
+  },
+  "builder": {
+    "status": "dry_run_ok",
+    "manifest": "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+    "source_dataset": "TSRS_RSNA-Epiphysis",
+    "target_dataset": "TSRS_RSNA-Epiphysis_label_protocol_reviewed_v1",
+    "source_raw_root": "data\\raw",
+    "target_raw_root": "data\\raw_variants",
+    "correction_dir": null,
+    "gate": {
+      "gate_pass": true,
+      "errors": [],
+      "reviewed_train": 20,
+      "confirmed_train": 20,
+      "correction_rows": 0
+    },
+    "split_summary": {
+      "train": {
+        "copied": 875,
+        "label_replacements": 0
+      },
+      "val": {
+        "copied": 96,
+        "label_replacements": 0
+      },
+      "test": {
+        "copied": 97,
+        "label_replacements": 0
+      }
+    },
+    "clean_test_policy": "clean-test-v2 rows were diagnostic-only and were not used to build this variant"
+  },
+  "steps": {
+    "preview": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\envs\\YOLOSAM\\python.exe",
+        "scripts/preview_label_protocol_review_decisions.py",
+        "--manifest",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+        "--decisions-csv",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass.csv",
+        "--min-reviewed-train",
+        "20",
+        "--min-confirmed-train",
+        "8",
+        "--output-json",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_status.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"manifest\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\r134_label_protocol_review_manifest.json\",\n  \"decisions_csv\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\review_package\\\\tmp_pipeline_gatepass.csv\",\n  \"gate_pass_if_applied\": true,\n  \"errors\": [],\n  \"warnings\": [],\n  \"counts\": {\n    \"csv_rows\": 20,\n    \"applied_decision_rows_preview\": 20,\n    \"notes_rows_preview\": 20,\n    \"skipped_blank\": 0,\n    \"skipped_clean_test_decisions\": 0,\n    \"reviewed_train_if_applied\": 20,\n    \"confirmed_train_if_applied\": 20,\n    \"reviewed_val_if_applied\": 0\n  },\n  \"train_decision_counts_if_applied\": {\n    \"label_ok_protocol_clear\": 20,\n    \"blank\": 44\n  },\n  \"val_decision_counts_if_applied\": {\n    \"blank\": 6\n  },\n  \"next_action\": \"apply_decisions_then_run_checker\"\n}\n",
+      "stderr": ""
+    },
+    "apply": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\envs\\YOLOSAM\\python.exe",
+        "scripts/apply_label_protocol_review_decisions.py",
+        "--manifest",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\r134_label_protocol_review_manifest.json",
+        "--decisions-csv",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass.csv",
+        "--output",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+        "--summary-json",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_apply_status.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"manifest\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\r134_label_protocol_review_manifest.json\",\n  \"decisions_csv\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\review_package\\\\tmp_pipeline_gatepass.csv\",\n  \"output\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\review_package\\\\tmp_pipeline_gatepass_out\\\\r134_pipeline_preview_manifest.json\",\n  \"applied\": 20,\n  \"skipped_blank\": 0,\n  \"skipped_clean_test_decisions\": 0,\n  \"warnings\": [],\n  \"next_step\": \"run scripts/check_label_protocol_review_manifest.py on the updated manifest\"\n}\n",
+      "stderr": ""
+    },
+    "checker": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\envs\\YOLOSAM\\python.exe",
+        "scripts/check_label_protocol_review_manifest.py",
+        "--manifest",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+        "--min-reviewed-train",
+        "20",
+        "--min-confirmed-train",
+        "8",
+        "--output-json",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_checker_status.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"manifest\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\review_package\\\\tmp_pipeline_gatepass_out\\\\r134_pipeline_preview_manifest.json\",\n  \"gate_pass\": true,\n  \"errors\": [],\n  \"warnings\": [],\n  \"counts\": {\n    \"clean_test_reference\": 24,\n    \"train_review_queue\": 64,\n    \"val_audit_queue\": 6,\n    \"reviewed_train\": 20,\n    \"confirmed_train_for_variant\": 20,\n    \"confirmed_train_p0\": 20,\n    \"reviewed_val\": 0\n  },\n  \"train_decision_counts\": {\n    \"label_ok_protocol_clear\": 20,\n    \"blank\": 44\n  },\n  \"val_decision_counts\": {\n    \"blank\": 6\n  },\n  \"next_action\": \"build_isolated_corrected_variant\"\n}\n",
+      "stderr": ""
+    },
+    "builder": {
+      "command": [
+        "E:\\360Downloads\\anaconda3\\envs\\YOLOSAM\\python.exe",
+        "scripts/build_label_protocol_dataset_variant.py",
+        "--manifest",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_preview_manifest.json",
+        "--min-reviewed-train",
+        "20",
+        "--min-confirmed-train",
+        "8",
+        "--metadata-json",
+        "outputs\\analysis\\r134_label_protocol_review_manifest\\review_package\\tmp_pipeline_gatepass_out\\r134_pipeline_builder_status.json",
+        "--dry-run"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"dry_run_ok\",\n  \"manifest\": \"outputs\\\\analysis\\\\r134_label_protocol_review_manifest\\\\review_package\\\\tmp_pipeline_gatepass_out\\\\r134_pipeline_preview_manifest.json\",\n  \"source_dataset\": \"TSRS_RSNA-Epiphysis\",\n  \"target_dataset\": \"TSRS_RSNA-Epiphysis_label_protocol_reviewed_v1\",\n  \"source_raw_root\": \"data\\\\raw\",\n  \"target_raw_root\": \"data\\\\raw_variants\",\n  \"correction_dir\": null,\n  \"gate\": {\n    \"gate_pass\": true,\n    \"errors\": [],\n    \"reviewed_train\": 20,\n    \"confirmed_train\": 20,\n    \"correction_rows\": 0\n  },\n  \"split_summary\": {\n    \"train\": {\n      \"copied\": 875,\n      \"label_replacements\": 0\n    },\n    \"val\": {\n      \"copied\": 96,\n      \"label_replacements\": 0\n    },\n    \"test\": {\n      \"copied\": 97,\n      \"label_replacements\": 0\n    }\n  },\n  \"clean_test_policy\": \"clean-test-v2 rows were diagnostic-only and were not used to build this variant\"\n}\n",
+      "stderr": ""
+    }
+  },
+  "next_action": "review_dry_run_then_apply_in_place_if_ready"
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd /home/shenzeyu/workspace/YOLO_SAM_generic_src
+export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
+export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
+
+PY=/home/shenzeyu/.conda/envs/yolo-sam-gpu/bin/python
+
+"${PY}" scripts/train_timm_instance_separation_segmenter.py \
+  --encoder convnext_tiny.dinov3_lvd1689m \
+  --pretrained \
+  --img-size 512 \
+  --epochs 36 \
+  --min-epochs 10 \
+  --patience 8 \
+  --batch-size 4 \
+  --num-workers 4 \
+  --decoder-channels 128 \
+  --lr 2e-4 \
+  --weight-decay 1e-4 \
+  --boundary-loss-weight 0.18 \
+  --sep-loss-weight 0.75 \
+  --hover-loss-weight 0.20 \
+  --bridge-gap-loss-weight 0.35 \
+  --background-loss-weight 0.05 \
+  --sep-band-kernel 13 \
+  --sep-suppress-weights 0.30,0.45,0.60,0.75 \
+  --thresholds 0.55,0.60,0.65,0.70,0.75,0.80 \
+  --output-exp r130_dinov3_bridge_suppressed_instance_sep \
+  --checkpoint outputs/timm_instance_sep/r130_dinov3_bridge_suppressed_instance_sep/best.pt \
+  --history-json outputs/timm_instance_sep/r130_dinov3_bridge_suppressed_instance_sep/history.json \
+  --metrics-json outputs/analysis/r130_dinov3_bridge_suppressed_instance_sep_clean_test_v2_metrics.json \
+  --control-metrics-json outputs/analysis/r130_dinov3_bridge_suppressed_instance_sep_original_test_metrics.json \
+  --seed 20260730 \
+  --device cuda

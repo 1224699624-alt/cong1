@@ -1,0 +1,52 @@
+{
+  "run_id": "R215-background-connectivity-candidate-diagnostic",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "purpose": "train/val-only local background-connectivity proxy for bone-gap separation candidates",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "num_candidate_rows": 42,
+  "num_images": 15,
+  "num_strict_useful": 0,
+  "num_hard_risk": 30,
+  "num_bg_proxy_positive": 0,
+  "inference_feature_keys": [
+    "r215_crop_h",
+    "r215_crop_w",
+    "r215_crop_area",
+    "r215_cut_area",
+    "r215_cut_frac_crop",
+    "r215_bg_components_before",
+    "r215_bg_components_after",
+    "r215_bg_component_count_delta",
+    "r215_cut_adjacent_bg_components_before",
+    "r215_cut_adjacent_bg_frac_before",
+    "r215_bg_components_merge_potential",
+    "r215_cut_component_bg_area_after",
+    "r215_cut_component_bg_frac_crop_after",
+    "r215_cut_component_border_contacts_after",
+    "r215_cut_component_touches_crop_border_after",
+    "r215_fg_components_before",
+    "r215_fg_components_after",
+    "r215_fg_component_count_delta"
+  ],
+  "mean": {
+    "r215_cut_adjacent_bg_components_before": 1.0,
+    "r215_bg_component_count_delta": 0.0,
+    "r215_cut_gt_fg_frac": 0.6488911032097632,
+    "r215_cut_gt_gap_frac": 0.331267626948967,
+    "delta_dice": -8.484808661167002e-05,
+    "delta_boundary_iou": -5.287500733455609e-05,
+    "delta_gap_region_fp_rate": -0.000696023797356636
+  },
+  "bg_proxy_positive_mean": {
+    "r215_strict_useful": null,
+    "r215_hard_risk": null,
+    "r215_cut_gt_fg_frac": null,
+    "delta_dice": null,
+    "delta_boundary_iou": null,
+    "delta_gap_region_fp_rate": null
+  },
+  "warning": "candidate-level train/val diagnostic only; not R201 mask-level evidence and not clean-test-v2 evidence"
+}

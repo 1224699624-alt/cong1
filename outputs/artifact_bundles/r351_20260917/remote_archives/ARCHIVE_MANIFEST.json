@@ -1,0 +1,30 @@
+{
+  "description": "SSH-compressed tar streams from westc; extract at project root; source directories: RAM-W600 and R323 priors",
+  "archives": [
+    {
+      "archive": "r351_ram_images.tar",
+      "bytes": 393277440,
+      "sha256": "2bae311e0e0372a2935079f33e9f6ac63ad87cc827abfbdd004dd84a1105f630"
+    },
+    {
+      "archive": "r351_ram_masks_test.tar",
+      "bytes": 676157440,
+      "sha256": "944220b879a003af535a3023d1b27fcaeead58edfa95c499ea588da644a58fee"
+    },
+    {
+      "archive": "r351_ram_masks_train.tar",
+      "bytes": 2379991040,
+      "sha256": "b6720ed8388ac4f40637f727e50a98030aa60bfdccd96d7ee116f817ede10251"
+    },
+    {
+      "archive": "r351_ram_masks_val.tar",
+      "bytes": 376053760,
+      "sha256": "91a036106b72dfcfa56091fc24e0511d630fb9d68b9d799da79b06349406e681"
+    },
+    {
+      "archive": "r351_ram_priors.tar",
+      "bytes": 294492160,
+      "sha256": "27f59fc354802bfff0763277cba1b41ca90dad06dcdb2f70ef85eaac7fdc655f"
+    }
+  ]
+}

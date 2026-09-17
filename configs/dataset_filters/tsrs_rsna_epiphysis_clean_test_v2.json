@@ -1,0 +1,27 @@
+{
+  "source_dataset": "TSRS_RSNA-Epiphysis",
+  "target_dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "notes": "Clean-test-only variant for measuring how much suspicious low-quality test labels affect metrics. Train/val remain untouched. Articular-Surface is untouched.",
+  "excludes": {
+    "train": {},
+    "val": {},
+    "test": {
+      "1407": "High multi-model agreement but consistently very low agreement to GT.",
+      "1433": "Repeatedly suspicious edge mismatch around epiphysis contour.",
+      "1475": "Repeatedly suspicious thin-epiphysis mismatch.",
+      "2112": "High agreement across models but poor GT agreement.",
+      "3040": "Repeatedly suspicious seam/thin-epiphysis mismatch.",
+      "3616": "High agreement across models but poor GT agreement.",
+      "3766": "High agreement across models but poor GT agreement.",
+      "4803": "High agreement across models but poor GT agreement.",
+      "6377": "Very high multi-model agreement but low GT agreement.",
+      "13518": "Very high multi-model agreement but low GT agreement.",
+      "13528": "Very high multi-model agreement but low GT agreement.",
+      "13787": "Very high multi-model agreement but low GT agreement.",
+      "13819": "Very high multi-model agreement but low GT agreement.",
+      "13869": "Very high multi-model agreement but low GT agreement.",
+      "13878": "Very high multi-model agreement but low GT agreement.",
+      "13907": "Very high multi-model agreement but low GT agreement."
+    }
+  }
+}

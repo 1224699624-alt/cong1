@@ -1,0 +1,55 @@
+{"hard_case_manifest": null, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "hard_case_manifest_names": 0, "hard_case_matched_train_names": 0, "hard_case_sampler_enabled": false}
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_instance_separation_segmenter.py:399: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=args.device.startswith("cuda"))
+train/epoch1:   0%|          | 0/8 [00:00<?, ?it/s]/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_instance_separation_segmenter.py:417: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.device.startswith("cuda")):
+train/epoch1:  12%|█▎        | 1/8 [00:01<00:09,  1.29s/it]train/epoch1:  38%|███▊      | 3/8 [00:01<00:01,  2.65it/s]train/epoch1:  62%|██████▎   | 5/8 [00:01<00:00,  4.55it/s]train/epoch1:  88%|████████▊ | 7/8 [00:01<00:00,  6.37it/s]train/epoch1: 100%|██████████| 8/8 [00:01<00:00,  4.29it/s]
+{"epoch": 1, "train_loss": 4.540637850761414, "val_dice": 0.08035128771175884, "val_precision": 0.04207684245023208, "val_recall": 0.970027012493871, "val_boundary_iou": 0.005735680803421431, "val_false_bridge_flag": 1.0, "threshold": 0.45, "sep_suppress_weight": 0.15, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch2:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch2:  12%|█▎        | 1/8 [00:00<00:03,  2.19it/s]train/epoch2:  38%|███▊      | 3/8 [00:00<00:00,  5.79it/s]train/epoch2:  62%|██████▎   | 5/8 [00:00<00:00,  8.11it/s]train/epoch2:  88%|████████▊ | 7/8 [00:00<00:00,  9.74it/s]train/epoch2: 100%|██████████| 8/8 [00:01<00:00,  7.79it/s]
+{"epoch": 2, "train_loss": 4.1527314484119415, "val_dice": 0.3085066496745681, "val_precision": 0.2451516382977028, "val_recall": 0.6057430278675413, "val_boundary_iou": 0.013807094092647859, "val_false_bridge_flag": 1.0, "threshold": 0.6, "sep_suppress_weight": 0.0, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch3:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch3:  12%|█▎        | 1/8 [00:00<00:03,  2.25it/s]train/epoch3:  38%|███▊      | 3/8 [00:00<00:00,  5.89it/s]train/epoch3:  62%|██████▎   | 5/8 [00:00<00:00,  8.28it/s]train/epoch3:  88%|████████▊ | 7/8 [00:00<00:00,  9.82it/s]train/epoch3: 100%|██████████| 8/8 [00:01<00:00,  7.92it/s]
+{"epoch": 3, "train_loss": 3.8782369792461395, "val_dice": 0.021267946512793196, "val_precision": 0.032728747368310475, "val_recall": 0.024069624293624303, "val_boundary_iou": 0.003372992963693178, "val_false_bridge_flag": 0.75, "threshold": 0.45, "sep_suppress_weight": 0.0, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch4:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch4:  12%|█▎        | 1/8 [00:00<00:03,  2.14it/s]train/epoch4:  38%|███▊      | 3/8 [00:00<00:00,  5.66it/s]train/epoch4:  62%|██████▎   | 5/8 [00:00<00:00,  8.02it/s]train/epoch4:  88%|████████▊ | 7/8 [00:00<00:00,  9.72it/s]train/epoch4: 100%|██████████| 8/8 [00:01<00:00,  7.72it/s]
+{"epoch": 4, "train_loss": 3.7962640523910522, "val_dice": 0.3388669159924745, "val_precision": 0.388127585454128, "val_recall": 0.3360308262927448, "val_boundary_iou": 0.016916784935580746, "val_false_bridge_flag": 0.5, "threshold": 0.5, "sep_suppress_weight": 0.45, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch5:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch5:  12%|█▎        | 1/8 [00:00<00:03,  2.20it/s]train/epoch5:  38%|███▊      | 3/8 [00:00<00:00,  5.82it/s]train/epoch5:  62%|██████▎   | 5/8 [00:00<00:00,  8.30it/s]train/epoch5:  88%|████████▊ | 7/8 [00:00<00:00,  9.90it/s]train/epoch5: 100%|██████████| 8/8 [00:01<00:00,  7.92it/s]
+{"epoch": 5, "train_loss": 3.72697976231575, "val_dice": 0.09630818330095994, "val_precision": 0.24749999311283433, "val_recall": 0.07782840434528698, "val_boundary_iou": 0.008292721238849951, "val_false_bridge_flag": 0.25, "threshold": 0.45, "sep_suppress_weight": 0.3, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch6:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch6:  12%|█▎        | 1/8 [00:00<00:03,  2.15it/s]train/epoch6:  38%|███▊      | 3/8 [00:00<00:00,  5.64it/s]train/epoch6:  62%|██████▎   | 5/8 [00:00<00:00,  8.12it/s]train/epoch6:  88%|████████▊ | 7/8 [00:00<00:00,  9.70it/s]train/epoch6: 100%|██████████| 8/8 [00:01<00:00,  7.74it/s]
+{"epoch": 6, "train_loss": 3.6858713626861572, "val_dice": 0.15947299099879744, "val_precision": 0.147078630867431, "val_recall": 0.1814308868808291, "val_boundary_iou": 0.010950653586491516, "val_false_bridge_flag": 0.875, "threshold": 0.45, "sep_suppress_weight": 0.15, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch7:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch7:  12%|█▎        | 1/8 [00:00<00:02,  2.41it/s]train/epoch7:  50%|█████     | 4/8 [00:00<00:00,  8.64it/s]train/epoch7:  88%|████████▊ | 7/8 [00:00<00:00, 12.65it/s]train/epoch7: 100%|██████████| 8/8 [00:00<00:00, 10.27it/s]
+{"epoch": 7, "train_loss": 3.6472062468528748, "val_dice": 0.36412566087347054, "val_precision": 0.3283567807092655, "val_recall": 0.4480500391191031, "val_boundary_iou": 0.019220938599706933, "val_false_bridge_flag": 1.0, "threshold": 0.55, "sep_suppress_weight": 0.45, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+train/epoch8:   0%|          | 0/8 [00:00<?, ?it/s]train/epoch8:  12%|█▎        | 1/8 [00:00<00:03,  2.18it/s]train/epoch8:  38%|███▊      | 3/8 [00:00<00:00,  5.67it/s]train/epoch8:  62%|██████▎   | 5/8 [00:00<00:00,  8.03it/s]train/epoch8:  88%|████████▊ | 7/8 [00:00<00:00,  9.79it/s]train/epoch8: 100%|██████████| 8/8 [00:01<00:00,  7.76it/s]
+{"epoch": 8, "train_loss": 3.6122503876686096, "val_dice": 0.31349299043390355, "val_precision": 0.2098278708974071, "val_recall": 0.7102532310074068, "val_boundary_iou": 0.026225481276134263, "val_false_bridge_flag": 1.0, "threshold": 0.7, "sep_suppress_weight": 0.3, "encoder": "convnext_tiny.dinov3_lvd1689m", "pretrained": true, "hard_case_matched_train_names": 0, "hard_case_weight": 1.0, "hard_case_epoch_multiplier": 1.0, "bridge_gap_loss_weight": 0.18, "background_loss_weight": 0.04, "cldice_loss_weight": 0.08, "skeleton_iters": 8}
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_timm_instance_separation_segmenter.py:485: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(checkpoint, map_location=args.device)
+infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:   0%|          | 0/4 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  25%|██▌       | 1/4 [00:00<00:00,  3.16it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  50%|█████     | 2/4 [00:00<00:00,  2.74it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  75%|███████▌  | 3/4 [00:01<00:00,  2.88it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 4/4 [00:01<00:00,  2.96it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 4/4 [00:01<00:00,  2.93it/s]
+infer/TSRS_RSNA-Epiphysis/test:   0%|          | 0/4 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis/test:  25%|██▌       | 1/4 [00:00<00:01,  2.95it/s]infer/TSRS_RSNA-Epiphysis/test:  50%|█████     | 2/4 [00:00<00:00,  2.69it/s]infer/TSRS_RSNA-Epiphysis/test:  75%|███████▌  | 3/4 [00:01<00:00,  2.83it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 4/4 [00:01<00:00,  2.93it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 4/4 [00:01<00:00,  2.88it/s]
+{
+  "best_epoch": 7,
+  "threshold": 0.55,
+  "sep_suppress_weight": 0.45,
+  "clean_test_v2": {
+    "dice": 0.2840474368775423,
+    "iou": 0.16649466358842044,
+    "precision": 0.21634373353730946,
+    "recall": 0.45547003530312763,
+    "specificity": 0.9644927449002296,
+    "boundary_iou": 0.005653489418823824,
+    "pred_component_count": 4.0,
+    "gt_component_count": 26.0,
+    "component_count_error": 22.0,
+    "false_bridge_flag": 1.0
+  },
+  "original_test": {
+    "dice": 0.2840474368775423,
+    "iou": 0.16649466358842044,
+    "precision": 0.21634373353730946,
+    "recall": 0.45547003530312763,
+    "specificity": 0.9644927449002296,
+    "boundary_iou": 0.005653489418823824,
+    "pred_component_count": 4.0,
+    "gt_component_count": 26.0,
+    "component_count_error": 22.0,
+    "false_bridge_flag": 1.0
+  },
+  "checkpoint": "outputs/timm_instance_sep/r182_topology_cldice_smoke/best.pt"
+}

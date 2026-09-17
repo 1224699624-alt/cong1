@@ -1,0 +1,89 @@
+{
+  "source_dataset": "TSRS_RSNA-Epiphysis",
+  "target_dataset": "TSRS_RSNA-Epiphysis_layout_audit_filtered_v1",
+  "excludes": {
+    "train": {
+      "1473": {
+        "reason": "train_label_layout_outlier",
+        "layout_outlier_score": 6.591469157742253,
+        "top_features": [
+          {
+            "feature": "component_count",
+            "robust_z": -7.08225
+          },
+          {
+            "feature": "cy_span",
+            "robust_z": -6.346078736613379
+          },
+          {
+            "feature": "layout_height",
+            "robust_z": -6.346078736613379
+          },
+          {
+            "feature": "cx_span",
+            "robust_z": -5.294575908295124
+          },
+          {
+            "feature": "layout_width",
+            "robust_z": -5.294575908295124
+          }
+        ]
+      },
+      "1683": {
+        "reason": "train_label_layout_outlier",
+        "layout_outlier_score": 7.6316598647972524,
+        "top_features": [
+          {
+            "feature": "cy_median",
+            "robust_z": 8.697963732215749
+          },
+          {
+            "feature": "component_count",
+            "robust_z": -7.4195
+          },
+          {
+            "feature": "cy_span",
+            "robust_z": -6.777515862176005
+          },
+          {
+            "feature": "layout_height",
+            "robust_z": -6.777515862176005
+          },
+          {
+            "feature": "cx_span",
+            "robust_z": -5.700221257410073
+          }
+        ]
+      },
+      "6079": {
+        "reason": "train_label_layout_outlier",
+        "layout_outlier_score": 15.146105883532881,
+        "top_features": [
+          {
+            "feature": "area_median",
+            "robust_z": 28.866978635787344
+          },
+          {
+            "feature": "thickness_median",
+            "robust_z": 9.489089014811295
+          },
+          {
+            "feature": "component_count",
+            "robust_z": -7.08225
+          },
+          {
+            "feature": "area_iqr",
+            "robust_z": 6.863843466701812
+          },
+          {
+            "feature": "cy_span",
+            "robust_z": -6.488772353975891
+          }
+        ]
+      }
+    },
+    "val": {},
+    "test": {}
+  },
+  "notes": "Draft only: generated from train layout outliers without clean-test-v2 tuning."
+}

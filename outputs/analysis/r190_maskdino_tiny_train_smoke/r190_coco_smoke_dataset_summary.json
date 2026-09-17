@@ -1,0 +1,14 @@
+{
+  "train": {
+    "images": 12,
+    "annotations": 311,
+    "json": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train.json",
+    "image_root": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train"
+  },
+  "val": {
+    "images": 4,
+    "annotations": 109,
+    "json": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val.json",
+    "image_root": "outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val"
+  }
+}

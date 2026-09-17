@@ -1,0 +1,1010 @@
+[07/03 22:49:44] detectron2 INFO: Rank of current process: 0. World size: 1
+[07/03 22:49:45] detectron2 INFO: Environment info:
+-------------------------------  --------------------------------------------------------------------------------------------------------------
+sys.platform                     linux
+Python                           3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]
+numpy                            2.2.6
+detectron2                       0.6 @/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/detectron2/detectron2
+Compiler                         GCC 13.3
+CUDA compiler                    CUDA 13.0
+detectron2 arch flags            8.9
+DETECTRON2_ENV_MODULE            <not set>
+PyTorch                          2.11.0+cu130 @/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torch
+PyTorch debug build              False
+torch._C._GLIBCXX_USE_CXX11_ABI  True
+GPU available                    Yes
+GPU 0                            NVIDIA GeForce RTX 4090 (arch=8.9)
+Driver version                   595.71.05
+CUDA_HOME                        /usr/local/cuda
+TORCH_CUDA_ARCH_LIST             8.9
+Pillow                           12.2.0
+torchvision                      0.26.0+cu130 @/home/shenzeyu/miniconda3/envs/aris-maskdino-r189-cu130/lib/python3.10/site-packages/torchvision
+torchvision arch flags           1.0.0, 1.2.0, 7.5, 8.0, 8.6, 9.0
+fvcore                           0.1.5.post20221221
+iopath                           0.1.9
+cv2                              4.10.0
+-------------------------------  --------------------------------------------------------------------------------------------------------------
+PyTorch built with:
+  - GCC 13.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.10.2 (Git Hash f1d471933dc852f956fd05389f9313c7148783d5)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 13.0
+  - NVCC architecture flags: -gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90;-gencode;arch=compute_100,code=sm_100;-gencode;arch=compute_120,code=sm_120
+  - CuDNN 91.9  (built against CUDA 13.1)
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=70d99e998b4955e0049d13a98d77ae1b14db1f45, CUDA_VERSION=13.0, CUDNN_VERSION=9.19.0, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_MSLK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.11.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, 
+
+[07/03 22:49:45] detectron2 INFO: Command line arguments: Namespace(config_file='/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/configs/coco/instance-segmentation/maskdino_R50_bs16_50ep_3s.yaml', resume=False, eval_only=False, num_gpus=1, num_machines=1, machine_rank=0, dist_url='tcp://127.0.0.1:50157', opts=['MODEL.WEIGHTS', '', 'MODEL.SEM_SEG_HEAD.NUM_CLASSES', '1', 'MODEL.MaskDINO.NUM_OBJECT_QUERIES', '80', 'MODEL.MaskDINO.DN_NUM', '20', 'MODEL.MaskDINO.DEC_LAYERS', '2', 'MODEL.SEM_SEG_HEAD.TRANSFORMER_ENC_LAYERS', '1', 'MODEL.MaskDINO.TRAIN_NUM_POINTS', '2048', 'MODEL.MaskDINO.TEST.OBJECT_MASK_THRESHOLD', '0.05', 'DATASETS.TRAIN', "('epiphysis_r191_train',)", 'DATASETS.TEST', "('epiphysis_r191_val',)", 'INPUT.IMAGE_SIZE', '384', 'INPUT.MIN_SCALE', '1.0', 'INPUT.MAX_SCALE', '1.0', 'INPUT.MASK_FORMAT', 'bitmask', 'SOLVER.IMS_PER_BATCH', '1', 'SOLVER.MAX_ITER', '300', 'SOLVER.WARMUP_ITERS', '0', 'SOLVER.BASE_LR', '0.0001', 'SOLVER.STEPS', '()', 'SOLVER.CHECKPOINT_PERIOD', '300', 'TEST.EVAL_PERIOD', '300', 'TEST.DETECTIONS_PER_IMAGE', '80', 'DATALOADER.NUM_WORKERS', '2', 'OUTPUT_DIR', '/home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output'])
+[07/03 22:49:45] detectron2 INFO: Contents of args.config_file=/home/shenzeyu/workspace/YOLO_SAM_generic_src/external_src/MaskDINO/configs/coco/instance-segmentation/maskdino_R50_bs16_50ep_3s.yaml:
+_BASE_: Base-COCO-InstanceSegmentation.yaml
+MODEL:
+  META_ARCHITECTURE: "MaskDINO"
+  SEM_SEG_HEAD:
+    NAME: "MaskDINOHead"
+    IGNORE_VALUE: 255
+    NUM_CLASSES: 80
+    LOSS_WEIGHT: 1.0
+    CONVS_DIM: 256
+    MASK_DIM: 256
+    NORM: "GN"
+    # pixel decoder
+    PIXEL_DECODER_NAME: "MaskDINOEncoder"
+    DIM_FEEDFORWARD: 1024
+    NUM_FEATURE_LEVELS: 3
+    TOTAL_NUM_FEATURE_LEVELS: 3
+    IN_FEATURES: ["res2", "res3", "res4", "res5"]
+    DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES: ["res3", "res4", "res5"]
+    COMMON_STRIDE: 4
+    TRANSFORMER_ENC_LAYERS: 6
+  MaskDINO:
+    TRANSFORMER_DECODER_NAME: "MaskDINODecoder"
+    DEEP_SUPERVISION: True
+    NO_OBJECT_WEIGHT: 0.1
+    CLASS_WEIGHT: 4.0
+    MASK_WEIGHT: 5.0
+    DICE_WEIGHT: 5.0
+    BOX_WEIGHT: 5.0
+    GIOU_WEIGHT: 2.0
+    HIDDEN_DIM: 256
+    NUM_OBJECT_QUERIES: 300
+    NHEADS: 8
+    DROPOUT: 0.0
+    DIM_FEEDFORWARD: 2048
+    ENC_LAYERS: 0
+    PRE_NORM: False
+    ENFORCE_INPUT_PROJ: False
+    SIZE_DIVISIBILITY: 32
+    DEC_LAYERS: 9  # 9+1, 9 decoder layers, add one for the loss on learnable query
+    TRAIN_NUM_POINTS: 12544
+    OVERSAMPLE_RATIO: 3.0
+    IMPORTANCE_SAMPLE_RATIO: 0.75
+    INITIAL_PRED: True
+    TWO_STAGE: True
+    DN: "seg"
+    DN_NUM: 100
+    INITIALIZE_BOX_TYPE: "bitmask"
+    TEST:
+      SEMANTIC_ON: False
+      INSTANCE_ON: True
+      PANOPTIC_ON: False
+      OVERLAP_THRESHOLD: 0.8
+      OBJECT_MASK_THRESHOLD: 0.25
+
+SOLVER:
+  AMP:
+    ENABLED: True
+TEST:
+  EVAL_PERIOD: 5000
+#  EVAL_FLAG: 1
+[07/03 22:49:45] detectron2 INFO: Running with full config:
+CUDNN_BENCHMARK: false
+DATALOADER:
+  ASPECT_RATIO_GROUPING: true
+  FILTER_EMPTY_ANNOTATIONS: true
+  NUM_WORKERS: 2
+  REPEAT_SQRT: true
+  REPEAT_THRESHOLD: 0.0
+  SAMPLER_TRAIN: TrainingSampler
+DATASETS:
+  PRECOMPUTED_PROPOSAL_TOPK_TEST: 1000
+  PRECOMPUTED_PROPOSAL_TOPK_TRAIN: 2000
+  PROPOSAL_FILES_TEST: []
+  PROPOSAL_FILES_TRAIN: []
+  TEST:
+  - epiphysis_r191_val
+  TRAIN:
+  - epiphysis_r191_train
+Default_loading: true
+FLOAT32_PRECISION: ''
+GLOBAL:
+  HACK: 1.0
+INPUT:
+  COLOR_AUG_SSD: false
+  CROP:
+    ENABLED: false
+    SINGLE_CATEGORY_MAX_AREA: 1.0
+    SIZE:
+    - 0.9
+    - 0.9
+    TYPE: relative_range
+  DATASET_MAPPER_NAME: coco_instance_lsj
+  FORMAT: RGB
+  IMAGE_SIZE: 384
+  MASK_FORMAT: bitmask
+  MAX_SCALE: 1.0
+  MAX_SIZE_TEST: 1333
+  MAX_SIZE_TRAIN: 1333
+  MIN_SCALE: 1.0
+  MIN_SIZE_TEST: 800
+  MIN_SIZE_TRAIN:
+  - 800
+  MIN_SIZE_TRAIN_SAMPLING: choice
+  RANDOM_FLIP: horizontal
+  SIZE_DIVISIBILITY: -1
+MODEL:
+  ANCHOR_GENERATOR:
+    ANGLES:
+    - - -90
+      - 0
+      - 90
+    ASPECT_RATIOS:
+    - - 0.5
+      - 1.0
+      - 2.0
+    NAME: DefaultAnchorGenerator
+    OFFSET: 0.0
+    SIZES:
+    - - 32
+      - 64
+      - 128
+      - 256
+      - 512
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: build_resnet_backbone
+  DEVICE: cuda
+  FPN:
+    FUSE_TYPE: sum
+    IN_FEATURES: []
+    NORM: ''
+    OUT_CHANNELS: 256
+  KEYPOINT_ON: false
+  LOAD_PROPOSALS: false
+  MASK_ON: false
+  META_ARCHITECTURE: MaskDINO
+  MaskDINO:
+    BOX_LOSS: true
+    BOX_WEIGHT: 5.0
+    CLASS_WEIGHT: 4.0
+    COST_BOX_WEIGHT: 5.0
+    COST_CLASS_WEIGHT: 4.0
+    COST_DICE_WEIGHT: 5.0
+    COST_GIOU_WEIGHT: 2.0
+    COST_MASK_WEIGHT: 5.0
+    DEC_LAYERS: 2
+    DEEP_SUPERVISION: true
+    DICE_WEIGHT: 5.0
+    DIM_FEEDFORWARD: 2048
+    DN: seg
+    DN_NOISE_SCALE: 0.4
+    DN_NUM: 20
+    DROPOUT: 0.0
+    ENC_LAYERS: 0
+    ENFORCE_INPUT_PROJ: false
+    EVAL_FLAG: 1
+    GIOU_WEIGHT: 2.0
+    HIDDEN_DIM: 256
+    IMPORTANCE_SAMPLE_RATIO: 0.75
+    INITIALIZE_BOX_TYPE: bitmask
+    INITIAL_PRED: true
+    LEARN_TGT: false
+    MASK_WEIGHT: 5.0
+    NHEADS: 8
+    NO_OBJECT_WEIGHT: 0.1
+    NUM_OBJECT_QUERIES: 80
+    OVERSAMPLE_RATIO: 3.0
+    PANO_BOX_LOSS: false
+    PRED_CONV: false
+    PRE_NORM: false
+    SEMANTIC_CE_LOSS: false
+    SIZE_DIVISIBILITY: 32
+    TEST:
+      INSTANCE_ON: true
+      OBJECT_MASK_THRESHOLD: 0.05
+      OVERLAP_THRESHOLD: 0.8
+      PANOPTIC_ON: false
+      PANO_TEMPERATURE: 0.06
+      PANO_TRANSFORM_EVAL: true
+      SEMANTIC_ON: false
+      SEM_SEG_POSTPROCESSING_BEFORE_INFERENCE: false
+      TEST_FOUCUS_ON_BOX: false
+    TRAIN_NUM_POINTS: 2048
+    TRANSFORMER_DECODER_NAME: MaskDINODecoder
+    TWO_STAGE: true
+  PANOPTIC_FPN:
+    COMBINE:
+      ENABLED: true
+      INSTANCES_CONFIDENCE_THRESH: 0.5
+      OVERLAP_THRESH: 0.5
+      STUFF_AREA_LIMIT: 4096
+    INSTANCE_LOSS_WEIGHT: 1.0
+  PIXEL_MEAN:
+  - 123.675
+  - 116.28
+  - 103.53
+  PIXEL_STD:
+  - 58.395
+  - 57.12
+  - 57.375
+  PROPOSAL_GENERATOR:
+    MIN_SIZE: 0
+    NAME: RPN
+  RESNETS:
+    DEFORM_MODULATED: false
+    DEFORM_NUM_GROUPS: 1
+    DEFORM_ON_PER_STAGE:
+    - false
+    - false
+    - false
+    - false
+    DEPTH: 50
+    NORM: FrozenBN
+    NUM_GROUPS: 1
+    OUT_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    RES2_OUT_CHANNELS: 256
+    RES4_DILATION: 1
+    RES5_DILATION: 1
+    RES5_MULTI_GRID:
+    - 1
+    - 1
+    - 1
+    STEM_OUT_CHANNELS: 64
+    STEM_TYPE: basic
+    STRIDE_IN_1X1: false
+    WIDTH_PER_GROUP: 64
+  RETINANET:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_WEIGHTS: &id002
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    FOCAL_LOSS_ALPHA: 0.25
+    FOCAL_LOSS_GAMMA: 2.0
+    IN_FEATURES:
+    - p3
+    - p4
+    - p5
+    - p6
+    - p7
+    IOU_LABELS:
+    - 0
+    - -1
+    - 1
+    IOU_THRESHOLDS:
+    - 0.4
+    - 0.5
+    NMS_THRESH_TEST: 0.5
+    NORM: ''
+    NUM_CLASSES: 80
+    NUM_CONVS: 4
+    PRIOR_PROB: 0.01
+    SCORE_THRESH_TEST: 0.05
+    SMOOTH_L1_LOSS_BETA: 0.1
+    TOPK_CANDIDATES_TEST: 1000
+  ROI_BOX_CASCADE_HEAD:
+    BBOX_REG_WEIGHTS:
+    - &id001
+      - 10.0
+      - 10.0
+      - 5.0
+      - 5.0
+    - - 20.0
+      - 20.0
+      - 10.0
+      - 10.0
+    - - 30.0
+      - 30.0
+      - 15.0
+      - 15.0
+    IOUS:
+    - 0.5
+    - 0.6
+    - 0.7
+  ROI_BOX_HEAD:
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: *id001
+    CLS_AGNOSTIC_BBOX_REG: false
+    CONV_DIM: 256
+    FC_DIM: 1024
+    FED_LOSS_FREQ_WEIGHT_POWER: 0.5
+    FED_LOSS_NUM_CLASSES: 50
+    NAME: ''
+    NORM: ''
+    NUM_CONV: 0
+    NUM_FC: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+    SMOOTH_L1_BETA: 0.0
+    TRAIN_ON_PRED_BOXES: false
+    USE_FED_LOSS: false
+    USE_SIGMOID_CE: false
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 512
+    IN_FEATURES:
+    - res4
+    IOU_LABELS:
+    - 0
+    - 1
+    IOU_THRESHOLDS:
+    - 0.5
+    NAME: Res5ROIHeads
+    NMS_THRESH_TEST: 0.5
+    NUM_CLASSES: 80
+    POSITIVE_FRACTION: 0.25
+    PROPOSAL_APPEND_GT: true
+    SCORE_THRESH_TEST: 0.05
+  ROI_KEYPOINT_HEAD:
+    CONV_DIMS:
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    - 512
+    LOSS_WEIGHT: 1.0
+    MIN_KEYPOINTS_PER_IMAGE: 1
+    NAME: KRCNNConvDeconvUpsampleHead
+    NORMALIZE_LOSS_BY_VISIBLE_KEYPOINTS: true
+    NUM_KEYPOINTS: 17
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  ROI_MASK_HEAD:
+    CLS_AGNOSTIC_MASK: false
+    CONV_DIM: 256
+    NAME: MaskRCNNConvUpsampleHead
+    NORM: ''
+    NUM_CONV: 0
+    POOLER_RESOLUTION: 14
+    POOLER_SAMPLING_RATIO: 0
+    POOLER_TYPE: ROIAlignV2
+  RPN:
+    BATCH_SIZE_PER_IMAGE: 256
+    BBOX_REG_LOSS_TYPE: smooth_l1
+    BBOX_REG_LOSS_WEIGHT: 1.0
+    BBOX_REG_WEIGHTS: *id002
+    BOUNDARY_THRESH: -1
+    CONV_DIMS:
+    - -1
+    HEAD_NAME: StandardRPNHead
+    IN_FEATURES:
+    - res4
+    IOU_LABELS:
+    - 0
+    - -1
+    - 1
+    IOU_THRESHOLDS:
+    - 0.3
+    - 0.7
+    LOSS_WEIGHT: 1.0
+    NMS_THRESH: 0.7
+    POSITIVE_FRACTION: 0.5
+    POST_NMS_TOPK_TEST: 1000
+    POST_NMS_TOPK_TRAIN: 2000
+    PRE_NMS_TOPK_TEST: 6000
+    PRE_NMS_TOPK_TRAIN: 12000
+    SMOOTH_L1_BETA: 0.0
+  SEM_SEG_HEAD:
+    ASPP_CHANNELS: 256
+    ASPP_DILATIONS:
+    - 6
+    - 12
+    - 18
+    ASPP_DROPOUT: 0.1
+    COMMON_STRIDE: 4
+    CONVS_DIM: 256
+    DEFORMABLE_TRANSFORMER_ENCODER_IN_FEATURES:
+    - res3
+    - res4
+    - res5
+    DEFORMABLE_TRANSFORMER_ENCODER_N_HEADS: 8
+    DEFORMABLE_TRANSFORMER_ENCODER_N_POINTS: 4
+    DIM_FEEDFORWARD: 1024
+    FEATURE_ORDER: high2low
+    IGNORE_VALUE: 255
+    IN_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    LOSS_TYPE: hard_pixel_mining
+    LOSS_WEIGHT: 1.0
+    MASK_DIM: 256
+    NAME: MaskDINOHead
+    NORM: GN
+    NUM_CLASSES: 1
+    NUM_FEATURE_LEVELS: 3
+    PIXEL_DECODER_NAME: MaskDINOEncoder
+    PROJECT_CHANNELS:
+    - 48
+    PROJECT_FEATURES:
+    - res2
+    TOTAL_NUM_FEATURE_LEVELS: 3
+    TRANSFORMER_ENC_LAYERS: 1
+    USE_DEPTHWISE_SEPARABLE_CONV: false
+  SWIN:
+    APE: false
+    ATTN_DROP_RATE: 0.0
+    DEPTHS:
+    - 2
+    - 2
+    - 6
+    - 2
+    DROP_PATH_RATE: 0.3
+    DROP_RATE: 0.0
+    EMBED_DIM: 96
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    OUT_FEATURES:
+    - res2
+    - res3
+    - res4
+    - res5
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    PRETRAIN_IMG_SIZE: 224
+    QKV_BIAS: true
+    QK_SCALE: null
+    USE_CHECKPOINT: false
+    WINDOW_SIZE: 7
+  WEIGHTS: ''
+OUTPUT_DIR: /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output
+SEED: -1
+SOLVER:
+  AMP:
+    ENABLED: true
+  BACKBONE_MULTIPLIER: 0.1
+  BASE_LR: 0.0001
+  BASE_LR_END: 0.0
+  BIAS_LR_FACTOR: 1.0
+  CHECKPOINT_PERIOD: 300
+  CLIP_GRADIENTS:
+    CLIP_TYPE: full_model
+    CLIP_VALUE: 0.01
+    ENABLED: true
+    NORM_TYPE: 2.0
+  GAMMA: 0.1
+  IMS_PER_BATCH: 1
+  LR_SCHEDULER_NAME: WarmupMultiStepLR
+  MAX_ITER: 300
+  MOMENTUM: 0.9
+  NESTEROV: false
+  NUM_DECAYS: 3
+  OPTIMIZER: ADAMW
+  POLY_LR_CONSTANT_ENDING: 0.0
+  POLY_LR_POWER: 0.9
+  REFERENCE_WORLD_SIZE: 0
+  RESCALE_INTERVAL: false
+  STEPS: []
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 0
+  WARMUP_METHOD: linear
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: null
+  WEIGHT_DECAY_EMBED: 0.0
+  WEIGHT_DECAY_NORM: 0.0
+TEST:
+  AUG:
+    ENABLED: false
+    FLIP: true
+    MAX_SIZE: 4000
+    MIN_SIZES:
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+    - 1000
+    - 1100
+    - 1200
+  DETECTIONS_PER_IMAGE: 80
+  EVAL_PERIOD: 300
+  EXPECTED_RESULTS: []
+  KEYPOINT_OKS_SIGMAS: []
+  PRECISE_BN:
+    ENABLED: false
+    NUM_ITER: 200
+VERSION: 2
+VIS_PERIOD: 0
+
+[07/03 22:49:45] detectron2 INFO: Full config saved to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/config.yaml
+[07/03 22:49:45] d2.utils.env INFO: Using a generated random seed 48498872
+[07/03 22:49:45] d2.engine.defaults INFO: Model:
+MaskDINO(
+  (backbone): ResNet(
+    (stem): BasicStem(
+      (conv1): Conv2d(
+        3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False
+        (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+      )
+    )
+    (res2): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+    )
+    (res3): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+    )
+    (res4): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (4): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (5): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+    )
+    (res5): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+    )
+  )
+  (sem_seg_head): MaskDINOHead(
+    (pixel_decoder): MaskDINOEncoder(
+      (input_proj): ModuleList(
+        (0): Sequential(
+          (0): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (1): Sequential(
+          (0): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (2): Sequential(
+          (0): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+      )
+      (transformer): MSDeformAttnTransformerEncoderOnly(
+        (encoder): MSDeformAttnTransformerEncoder(
+          (layers): ModuleList(
+            (0): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+        )
+      )
+      (pe_layer): Positional encoding PositionEmbeddingSine
+          num_pos_feats: 128
+          temperature: 10000
+          normalize: True
+          scale: 6.283185307179586
+      (mask_features): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (adapter_1): Conv2d(
+        256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+      (layer_1): Conv2d(
+        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+    )
+    (predictor): MaskDINODecoder(
+      (enc_output): Linear(in_features=256, out_features=256, bias=True)
+      (enc_output_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (input_proj): ModuleList(
+        (0-2): 3 x Sequential()
+      )
+      (class_embed): Linear(in_features=256, out_features=1, bias=True)
+      (label_enc): Embedding(1, 256)
+      (mask_embed): MLP(
+        (layers): ModuleList(
+          (0-2): 3 x Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+      (decoder_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (decoder): TransformerDecoder(
+        (layers): ModuleList(
+          (0-1): 2 x DeformableTransformerDecoderLayer(
+            (cross_attn): MSDeformAttn(
+              (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+              (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+              (value_proj): Linear(in_features=256, out_features=256, bias=True)
+              (output_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (dropout1): Dropout(p=0.0, inplace=False)
+            (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (self_attn): MultiheadAttention(
+              (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+            )
+            (dropout2): Dropout(p=0.0, inplace=False)
+            (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (linear1): Linear(in_features=256, out_features=2048, bias=True)
+            (dropout3): Dropout(p=0.0, inplace=False)
+            (linear2): Linear(in_features=2048, out_features=256, bias=True)
+            (dropout4): Dropout(p=0.0, inplace=False)
+            (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ref_point_head): MLP(
+          (layers): ModuleList(
+            (0): Linear(in_features=512, out_features=256, bias=True)
+            (1): Linear(in_features=256, out_features=256, bias=True)
+          )
+        )
+        (bbox_embed): ModuleList(
+          (0-1): 2 x MLP(
+            (layers): ModuleList(
+              (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+              (2): Linear(in_features=256, out_features=4, bias=True)
+            )
+          )
+        )
+      )
+      (_bbox_embed): MLP(
+        (layers): ModuleList(
+          (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+          (2): Linear(in_features=256, out_features=4, bias=True)
+        )
+      )
+      (bbox_embed): ModuleList(
+        (0-1): 2 x MLP(
+          (layers): ModuleList(
+            (0-1): 2 x Linear(in_features=256, out_features=256, bias=True)
+            (2): Linear(in_features=256, out_features=4, bias=True)
+          )
+        )
+      )
+    )
+  )
+  (criterion): Criterion SetCriterion
+      matcher: Matcher HungarianMatcher
+          cost_class: 4.0
+          cost_mask: 5.0
+          cost_dice: 5.0
+      losses: ['labels', 'masks', 'boxes']
+      weight_dict: {'loss_ce': 4.0, 'loss_mask': 5.0, 'loss_dice': 5.0, 'loss_bbox': 5.0, 'loss_giou': 2.0, 'loss_ce_interm': 4.0, 'loss_mask_interm': 5.0, 'loss_dice_interm': 5.0, 'loss_bbox_interm': 5.0, 'loss_giou_interm': 2.0, 'loss_ce_dn': 4.0, 'loss_mask_dn': 5.0, 'loss_dice_dn': 5.0, 'loss_bbox_dn': 5.0, 'loss_giou_dn': 2.0, 'loss_ce_interm_dn': 4.0, 'loss_mask_interm_dn': 5.0, 'loss_dice_interm_dn': 5.0, 'loss_bbox_interm_dn': 5.0, 'loss_giou_interm_dn': 2.0, 'loss_ce_0': 4.0, 'loss_mask_0': 5.0, 'loss_dice_0': 5.0, 'loss_bbox_0': 5.0, 'loss_giou_0': 2.0, 'loss_ce_interm_0': 4.0, 'loss_mask_interm_0': 5.0, 'loss_dice_interm_0': 5.0, 'loss_bbox_interm_0': 5.0, 'loss_giou_interm_0': 2.0, 'loss_ce_dn_0': 4.0, 'loss_mask_dn_0': 5.0, 'loss_dice_dn_0': 5.0, 'loss_bbox_dn_0': 5.0, 'loss_giou_dn_0': 2.0, 'loss_ce_interm_dn_0': 4.0, 'loss_mask_interm_dn_0': 5.0, 'loss_dice_interm_dn_0': 5.0, 'loss_bbox_interm_dn_0': 5.0, 'loss_giou_interm_dn_0': 2.0, 'loss_ce_1': 4.0, 'loss_mask_1': 5.0, 'loss_dice_1': 5.0, 'loss_bbox_1': 5.0, 'loss_giou_1': 2.0, 'loss_ce_interm_1': 4.0, 'loss_mask_interm_1': 5.0, 'loss_dice_interm_1': 5.0, 'loss_bbox_interm_1': 5.0, 'loss_giou_interm_1': 2.0, 'loss_ce_dn_1': 4.0, 'loss_mask_dn_1': 5.0, 'loss_dice_dn_1': 5.0, 'loss_bbox_dn_1': 5.0, 'loss_giou_dn_1': 2.0, 'loss_ce_interm_dn_1': 4.0, 'loss_mask_interm_dn_1': 5.0, 'loss_dice_interm_dn_1': 5.0, 'loss_bbox_interm_dn_1': 5.0, 'loss_giou_interm_dn_1': 2.0}
+      num_classes: 1
+      eos_coef: 0.1
+      num_points: 2048
+      oversample_ratio: 3.0
+      importance_sample_ratio: 0.75
+)
+[07/03 22:49:45] maskdino.data.dataset_mappers.coco_instance_new_baseline_dataset_mapper INFO: [COCOInstanceNewBaselineDatasetMapper] Full TransformGens used in training: [RandomFlip(), ResizeScale(min_scale=1.0, max_scale=1.0, target_height=384, target_width=384), FixedSizeCrop(crop_size=(384, 384))]
+[07/03 22:49:45] d2.data.datasets.coco INFO: Loaded 875 images in COCO format from /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/coco/train.json
+[07/03 22:49:45] d2.data.build INFO: Removed 0 images with no usable annotations. 875 images left.
+[07/03 22:49:45] d2.data.build INFO: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+| epiphysis  | 22707        |
+|            |              |
+[07/03 22:49:45] d2.data.build INFO: Using training sampler TrainingSampler
+[07/03 22:49:45] d2.data.common INFO: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[07/03 22:49:45] d2.data.common INFO: Serializing 875 elements to byte tensors and concatenating them all ...
+[07/03 22:49:45] d2.data.common INFO: Serialized dataset takes 2.25 MiB
+[07/03 22:49:45] d2.data.build INFO: Making batched data loader with batch_size=1
+[07/03 22:49:45] d2.checkpoint.detection_checkpoint INFO: [DetectionCheckpointer] Loading from  ...
+[07/03 22:49:45] fvcore.common.checkpoint INFO: No checkpoint found. Initializing model from scratch
+[07/03 22:49:45] d2.engine.train_loop INFO: Starting training from iteration 0
+[07/03 22:49:50] d2.utils.events INFO:  eta: 0:00:43  iter: 19  total_loss: 34.24  loss_ce: 1.178  loss_mask: 2.364  loss_dice: 1.987  loss_bbox: 2.544  loss_giou: 0.7553  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.8956  loss_mask_0: 2.119  loss_dice_0: 1.798  loss_bbox_0: 2.546  loss_giou_0: 0.7553  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.7636  loss_mask_1: 2.361  loss_dice_1: 1.611  loss_bbox_1: 2.544  loss_giou_1: 0.7553  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.9721  loss_mask_interm: 2.218  loss_dice_interm: 1.955  loss_bbox_interm: 7.887  loss_giou_interm: 1.963    time: 0.1710  last_time: 0.1495  data_time: 0.0110  last_data_time: 0.0029   lr: 0.0001  max_mem: 777M
+[07/03 22:49:54] d2.utils.events INFO:  eta: 0:00:40  iter: 39  total_loss: 25.03  loss_ce: 0.7062  loss_mask: 0.2569  loss_dice: 0.08119  loss_bbox: 2.807  loss_giou: 1.151  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.5024  loss_mask_0: 0.2888  loss_dice_0: 0.08811  loss_bbox_0: 2.864  loss_giou_0: 1.183  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.5751  loss_mask_1: 0.2837  loss_dice_1: 0.08572  loss_bbox_1: 2.85  loss_giou_1: 1.166  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.5966  loss_mask_interm: 0.2821  loss_dice_interm: 0.08623  loss_bbox_interm: 6.929  loss_giou_interm: 1.857    time: 0.1629  last_time: 0.1519  data_time: 0.0031  last_data_time: 0.0028   lr: 0.0001  max_mem: 779M
+[07/03 22:49:57] d2.utils.events INFO:  eta: 0:00:37  iter: 59  total_loss: 21.89  loss_ce: 0.4472  loss_mask: 0.1552  loss_dice: 0.06249  loss_bbox: 1.626  loss_giou: 0.7292  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.3747  loss_mask_0: 0.141  loss_dice_0: 0.06068  loss_bbox_0: 2.833  loss_giou_0: 1.19  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2899  loss_mask_1: 0.1425  loss_dice_1: 0.06476  loss_bbox_1: 2.334  loss_giou_1: 0.9876  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.4277  loss_mask_interm: 0.1436  loss_dice_interm: 0.05939  loss_bbox_interm: 6.167  loss_giou_interm: 1.726    time: 0.1664  last_time: 0.1867  data_time: 0.0036  last_data_time: 0.0043   lr: 0.0001  max_mem: 779M
+[07/03 22:50:01] d2.utils.events INFO:  eta: 0:00:34  iter: 79  total_loss: 15.39  loss_ce: 0.4304  loss_mask: 0.2059  loss_dice: 0.09503  loss_bbox: 0.8616  loss_giou: 0.391  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.234  loss_mask_0: 0.1931  loss_dice_0: 0.07101  loss_bbox_0: 3.064  loss_giou_0: 1.248  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2127  loss_mask_1: 0.2074  loss_dice_1: 0.108  loss_bbox_1: 1.015  loss_giou_1: 0.4683  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2433  loss_mask_interm: 0.1943  loss_dice_interm: 0.06878  loss_bbox_interm: 3.704  loss_giou_interm: 1.186    time: 0.1709  last_time: 0.1847  data_time: 0.0042  last_data_time: 0.0040   lr: 0.0001  max_mem: 779M
+[07/03 22:50:05] d2.utils.events INFO:  eta: 0:00:36  iter: 99  total_loss: 12.84  loss_ce: 0.5082  loss_mask: 0.1697  loss_dice: 0.1247  loss_bbox: 0.5447  loss_giou: 0.3255  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2861  loss_mask_0: 0.1276  loss_dice_0: 0.1017  loss_bbox_0: 3.139  loss_giou_0: 1.23  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.3142  loss_mask_1: 0.1644  loss_dice_1: 0.1328  loss_bbox_1: 0.7076  loss_giou_1: 0.4189  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.3771  loss_mask_interm: 0.1188  loss_dice_interm: 0.1042  loss_bbox_interm: 2.512  loss_giou_interm: 1.076    time: 0.1742  last_time: 0.1841  data_time: 0.0043  last_data_time: 0.0042   lr: 0.0001  max_mem: 779M
+[07/03 22:50:08] d2.utils.events INFO:  eta: 0:00:33  iter: 119  total_loss: 12.15  loss_ce: 0.6724  loss_mask: 0.1599  loss_dice: 0.07645  loss_bbox: 0.3154  loss_giou: 0.1954  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.3619  loss_mask_0: 0.1617  loss_dice_0: 0.08798  loss_bbox_0: 3.064  loss_giou_0: 1.242  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.665  loss_mask_1: 0.1712  loss_dice_1: 0.08597  loss_bbox_1: 0.5633  loss_giou_1: 0.2806  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.4514  loss_mask_interm: 0.1577  loss_dice_interm: 0.0913  loss_bbox_interm: 2.097  loss_giou_interm: 0.9953    time: 0.1764  last_time: 0.1867  data_time: 0.0045  last_data_time: 0.0045   lr: 0.0001  max_mem: 781M
+[07/03 22:50:12] d2.utils.events INFO:  eta: 0:00:29  iter: 139  total_loss: 11.78  loss_ce: 0.4043  loss_mask: 0.1712  loss_dice: 0.2068  loss_bbox: 0.5386  loss_giou: 0.2672  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2569  loss_mask_0: 0.1911  loss_dice_0: 0.256  loss_bbox_0: 2.89  loss_giou_0: 1.094  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.3153  loss_mask_1: 0.1864  loss_dice_1: 0.2582  loss_bbox_1: 0.643  loss_giou_1: 0.3841  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2434  loss_mask_interm: 0.1896  loss_dice_interm: 0.2589  loss_bbox_interm: 1.926  loss_giou_interm: 0.9413    time: 0.1791  last_time: 0.1840  data_time: 0.0046  last_data_time: 0.0039   lr: 0.0001  max_mem: 781M
+[07/03 22:50:16] d2.utils.events INFO:  eta: 0:00:25  iter: 159  total_loss: 12.68  loss_ce: 0.2849  loss_mask: 0.2224  loss_dice: 0.2999  loss_bbox: 0.298  loss_giou: 0.1834  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.1839  loss_mask_0: 0.22  loss_dice_0: 0.3276  loss_bbox_0: 2.927  loss_giou_0: 1.176  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.224  loss_mask_1: 0.2179  loss_dice_1: 0.3027  loss_bbox_1: 0.321  loss_giou_1: 0.1693  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2107  loss_mask_interm: 0.214  loss_dice_interm: 0.3234  loss_bbox_interm: 1.789  loss_giou_interm: 0.9059    time: 0.1798  last_time: 0.2053  data_time: 0.0044  last_data_time: 0.0044   lr: 0.0001  max_mem: 781M
+[07/03 22:50:20] d2.utils.events INFO:  eta: 0:00:22  iter: 179  total_loss: 10.57  loss_ce: 0.3654  loss_mask: 0.2142  loss_dice: 0.142  loss_bbox: 0.2707  loss_giou: 0.1514  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.1974  loss_mask_0: 0.1937  loss_dice_0: 0.1348  loss_bbox_0: 2.932  loss_giou_0: 1.177  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2771  loss_mask_1: 0.1986  loss_dice_1: 0.1363  loss_bbox_1: 0.3046  loss_giou_1: 0.1844  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.219  loss_mask_interm: 0.1876  loss_dice_interm: 0.1365  loss_bbox_interm: 1.708  loss_giou_interm: 0.9304    time: 0.1804  last_time: 0.1840  data_time: 0.0044  last_data_time: 0.0044   lr: 0.0001  max_mem: 781M
+[07/03 22:50:23] d2.utils.events INFO:  eta: 0:00:18  iter: 199  total_loss: 10.85  loss_ce: 0.2697  loss_mask: 0.3153  loss_dice: 0.173  loss_bbox: 0.2603  loss_giou: 0.1565  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2122  loss_mask_0: 0.3278  loss_dice_0: 0.1857  loss_bbox_0: 2.916  loss_giou_0: 1.174  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2454  loss_mask_1: 0.3153  loss_dice_1: 0.1883  loss_bbox_1: 0.3528  loss_giou_1: 0.1726  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2596  loss_mask_interm: 0.3382  loss_dice_interm: 0.1873  loss_bbox_interm: 1.637  loss_giou_interm: 0.8646    time: 0.1808  last_time: 0.1854  data_time: 0.0043  last_data_time: 0.0043   lr: 0.0001  max_mem: 781M
+[07/03 22:50:27] d2.utils.events INFO:  eta: 0:00:14  iter: 219  total_loss: 10.12  loss_ce: 0.2771  loss_mask: 0.2162  loss_dice: 0.07426  loss_bbox: 0.2778  loss_giou: 0.179  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2072  loss_mask_0: 0.2059  loss_dice_0: 0.07437  loss_bbox_0: 3.069  loss_giou_0: 1.235  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2595  loss_mask_1: 0.2121  loss_dice_1: 0.06894  loss_bbox_1: 0.2596  loss_giou_1: 0.1709  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.25  loss_mask_interm: 0.2075  loss_dice_interm: 0.07401  loss_bbox_interm: 1.657  loss_giou_interm: 0.8919    time: 0.1812  last_time: 0.1827  data_time: 0.0042  last_data_time: 0.0047   lr: 0.0001  max_mem: 781M
+[07/03 22:50:31] d2.utils.events INFO:  eta: 0:00:11  iter: 239  total_loss: 10.25  loss_ce: 0.2811  loss_mask: 0.2152  loss_dice: 0.1581  loss_bbox: 0.2422  loss_giou: 0.1516  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.1869  loss_mask_0: 0.2379  loss_dice_0: 0.183  loss_bbox_0: 2.864  loss_giou_0: 1.182  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.2652  loss_mask_1: 0.2126  loss_dice_1: 0.1522  loss_bbox_1: 0.2819  loss_giou_1: 0.1776  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2036  loss_mask_interm: 0.2216  loss_dice_interm: 0.1755  loss_bbox_interm: 1.554  loss_giou_interm: 0.8586    time: 0.1815  last_time: 0.2037  data_time: 0.0044  last_data_time: 0.0046   lr: 0.0001  max_mem: 781M
+[07/03 22:50:35] d2.utils.events INFO:  eta: 0:00:07  iter: 259  total_loss: 10.54  loss_ce: 0.3511  loss_mask: 0.1702  loss_dice: 0.1328  loss_bbox: 0.2201  loss_giou: 0.131  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2706  loss_mask_0: 0.1719  loss_dice_0: 0.1144  loss_bbox_0: 3.072  loss_giou_0: 1.284  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.3491  loss_mask_1: 0.1705  loss_dice_1: 0.1003  loss_bbox_1: 0.3177  loss_giou_1: 0.1638  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.304  loss_mask_interm: 0.1792  loss_dice_interm: 0.1119  loss_bbox_interm: 1.503  loss_giou_interm: 0.8313    time: 0.1817  last_time: 0.1839  data_time: 0.0044  last_data_time: 0.0044   lr: 0.0001  max_mem: 781M
+[07/03 22:50:38] d2.utils.events INFO:  eta: 0:00:03  iter: 279  total_loss: 11.59  loss_ce: 0.6014  loss_mask: 0.2292  loss_dice: 0.2091  loss_bbox: 0.3488  loss_giou: 0.2377  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2977  loss_mask_0: 0.2352  loss_dice_0: 0.2584  loss_bbox_0: 3.001  loss_giou_0: 1.203  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.5662  loss_mask_1: 0.212  loss_dice_1: 0.2091  loss_bbox_1: 0.328  loss_giou_1: 0.1822  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.3554  loss_mask_interm: 0.2243  loss_dice_interm: 0.2644  loss_bbox_interm: 1.364  loss_giou_interm: 0.7674    time: 0.1821  last_time: 0.1840  data_time: 0.0042  last_data_time: 0.0038   lr: 0.0001  max_mem: 781M
+[07/03 22:50:42] fvcore.common.checkpoint INFO: Saving checkpoint to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/model_0000299.pth
+[07/03 22:50:43] fvcore.common.checkpoint INFO: Saving checkpoint to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/model_final.pth
+[07/03 22:50:43] d2.utils.events INFO:  eta: 0:00:00  iter: 299  total_loss: 10.35  loss_ce: 0.5133  loss_mask: 0.1938  loss_dice: 0.1865  loss_bbox: 0.4417  loss_giou: 0.2454  loss_bbox_dn: 0  loss_giou_dn: 0  loss_ce_dn: 0  loss_mask_dn: 0  loss_dice_dn: 0  loss_ce_0: 0.2187  loss_mask_0: 0.1894  loss_dice_0: 0.2115  loss_bbox_0: 3.093  loss_giou_0: 1.204  loss_bbox_dn_0: 0  loss_giou_dn_0: 0  loss_ce_dn_0: 0  loss_mask_dn_0: 0  loss_dice_dn_0: 0  loss_ce_1: 0.3785  loss_mask_1: 0.1988  loss_dice_1: 0.1783  loss_bbox_1: 0.4703  loss_giou_1: 0.3224  loss_bbox_dn_1: 0  loss_giou_dn_1: 0  loss_ce_dn_1: 0  loss_mask_dn_1: 0  loss_dice_dn_1: 0  loss_ce_interm: 0.2514  loss_mask_interm: 0.193  loss_dice_interm: 0.2018  loss_bbox_interm: 1.372  loss_giou_interm: 0.7553    time: 0.1823  last_time: 0.1853  data_time: 0.0044  last_data_time: 0.0046   lr: 0.0001  max_mem: 782M
+[07/03 22:50:43] d2.engine.hooks INFO: Overall training speed: 298 iterations in 0:00:54 (0.1823 s / it)
+[07/03 22:50:43] d2.engine.hooks INFO: Total training time: 0:00:55 (0:00:01 on hooks)
+[07/03 22:50:43] d2.data.datasets.coco INFO: Loaded 96 images in COCO format from /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/coco/val.json
+[07/03 22:50:43] d2.data.build INFO: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+| epiphysis  | 2449         |
+|            |              |
+[07/03 22:50:43] d2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[07/03 22:50:43] d2.data.common INFO: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[07/03 22:50:43] d2.data.common INFO: Serializing 96 elements to byte tensors and concatenating them all ...
+[07/03 22:50:43] d2.data.common INFO: Serialized dataset takes 0.24 MiB
+[07/03 22:50:43] d2.evaluation.evaluator INFO: Start inference on 96 batches
+[07/03 22:50:45] d2.evaluation.evaluator INFO: Inference done 11/96. Dataloading: 0.0012 s/iter. Inference: 0.0512 s/iter. Eval: 0.0542 s/iter. Total: 0.1066 s/iter. ETA=0:00:09
+[07/03 22:50:50] d2.evaluation.evaluator INFO: Inference done 77/96. Dataloading: 0.0012 s/iter. Inference: 0.0420 s/iter. Eval: 0.0359 s/iter. Total: 0.0791 s/iter. ETA=0:00:01
+[07/03 22:50:51] d2.evaluation.evaluator INFO: Total inference time: 0:00:07.018456 (0.077126 s / iter per device, on 1 devices)
+[07/03 22:50:51] d2.evaluation.evaluator INFO: Total inference pure compute time: 0:00:03 (0.040958 s / iter per device, on 1 devices)
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Preparing results for COCO format ...
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Saving results to /home/shenzeyu/workspace/YOLO_SAM_generic_src/outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/inference/coco_instances_results.json
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Evaluating predictions with unofficial COCO API...
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: Evaluate annotation type *bbox*
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: COCOeval_opt.evaluate() finished in 0.05 seconds.
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: Accumulating evaluation results...
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: COCOeval_opt.accumulate() finished in 0.00 seconds.
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Evaluation results for bbox: 
+|  AP   |  AP50  |  AP75  |  APs  |  APm  |  APl  |
+|:-----:|:------:|:------:|:-----:|:-----:|:-----:|
+| 0.000 | 0.000  | 0.000  | 0.000 |  nan  |  nan  |
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Some metrics cannot be computed and is shown as NaN.
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: Evaluate annotation type *segm*
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: COCOeval_opt.evaluate() finished in 0.12 seconds.
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: Accumulating evaluation results...
+[07/03 22:50:51] d2.evaluation.fast_eval_api INFO: COCOeval_opt.accumulate() finished in 0.00 seconds.
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Evaluation results for segm: 
+|  AP   |  AP50  |  AP75  |  APs  |  APm  |  APl  |
+|:-----:|:------:|:------:|:-----:|:-----:|:-----:|
+| 0.000 | 0.000  | 0.000  | 0.000 |  nan  |  nan  |
+[07/03 22:50:51] d2.evaluation.coco_evaluation INFO: Some metrics cannot be computed and is shown as NaN.
+[07/03 22:50:51] d2.engine.defaults INFO: Evaluation results for epiphysis_r191_val in csv format:
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: Task: bbox
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: AP,AP50,AP75,APs,APm,APl
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: 0.0000,0.0000,0.0000,0.0000,nan,nan
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: Task: segm
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: AP,AP50,AP75,APs,APm,APl
+[07/03 22:50:51] d2.evaluation.testing INFO: copypaste: 0.0000,0.0000,0.0000,0.0000,nan,nan

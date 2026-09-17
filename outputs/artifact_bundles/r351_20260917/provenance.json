@@ -1,0 +1,65 @@
+{
+  "torch": "2.1.2+cu118",
+  "cuda": "11.8",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/r351_dual_prior.py",
+      "sha256": "30f95c3e6cfd0653cb58fa626d494963c0d292c79295f6f96d4978a1c7ccfbd4"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/r351_data.py",
+      "sha256": "d05e3da858a2dec53007282310dab4f595d0de96b51f614603d54fe20818cfd8"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/train_r351_overlap_prior.py",
+      "sha256": "25ed6d60e2d8fd231c77b2909ff580e0bdaddff46f9cea7e454c69fb1027958a"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/train_r351_ram_dual_prior.py",
+      "sha256": "b7a3cdafd479b2fa00c03bd4912e0360943b26dcaec89bd0f85d4643f86fa252"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/nnunet_trainers/nnUNetTrainerR351DualPrior.py",
+      "sha256": "72878c44dff5a70160f043d3012733b6e9f8c1989dce6419f369be973b50748c"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/r349_parameter_gradient_gate.py",
+      "sha256": "524a432da8bec318727e684e65c9c094fff043531fbd76006d264579227b3378"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/evaluate_r201_single_split.py",
+      "sha256": "a44e4cb60238def1eeefda6fea392152331ed11edfa347491d5848b37921eede"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/scripts/evaluate_r329_ram_official_metrics_val.py",
+      "sha256": "306874d216bf297b57593b6ce35d5e9740eeabeabdcdb30807946c7fb6173469"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/priors/r323_ram_native_r317_single_seed/manifest.json",
+      "sha256": "7da1adf0a418cb909f3db1e788de647a3afeea71925c48a440351e8aeb2e0cf4"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/priors/r317_image_centers_only/manifest.json",
+      "sha256": "40f67d95defd874ee91765af014c100c73d9526c640728b94477be82fdcd12d4"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/nnunet/r350_unified_interaction_pcgrad/nnUNet_results/Dataset204_TSRS_RSNAEpiphysisMaturePrior2D/nnUNetTrainerR350UnifiedInteractionPCGrad__nnUNetPlans__2d/fold_0/checkpoint_best.pth",
+      "sha256": "9caf4fadda81d007d0d669acf6caeae0c4a5e5c540073e683014e26f09f6a9a0"
+    },
+    {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+      "sha256": "eaf3b6918f7b64d90ae4295be1df4ec4c2c314775e68472e85607667a4334655"
+    }
+  ],
+  "overlap_training": {
+    "root": "/root/autodl-tmp/YOLO_SAM_generic_src/data/remote_variants/RAM-W600",
+    "prior_root": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/priors/r323_ram_native_r317_single_seed",
+    "epochs": 6,
+    "seed": 3510,
+    "selection": "lowest validation BCE",
+    "test_used": false
+  },
+  "tsrs_training_shared_chunk": 2,
+  "ram_training_shared_chunk": 3,
+  "chunk_note": "TSRS has one union channel, so chunk2 and chunk3 execute the identical one-member batch; RAM uses3 to match legacy TF32 arithmetic."
+}

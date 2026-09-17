@@ -1,0 +1,23 @@
+{
+  "test_used": false,
+  "seed": 3510,
+  "train_cases": 425,
+  "val_cases": 69,
+  "best": {
+    "epoch": 6,
+    "train": {
+      "bce": 0.06452331245822066,
+      "positive_probability": 0.54167795261916,
+      "negative_probability": 0.020388059545965755,
+      "overlap_fraction": 0.04095439451144022
+    },
+    "val": {
+      "bce": 0.06209669046211934,
+      "positive_probability": 0.5362820752720902,
+      "negative_probability": 0.01908495451283196,
+      "overlap_fraction": 0.04145114914770576
+    }
+  },
+  "sha256": "ab08b0f6a2e4c99bccd38e9136e09fb4b6650b425e93e5855e7d8c314f31e725",
+  "tsrs_transfer": "unvalidated weak prior, not observed overlap annotation"
+}

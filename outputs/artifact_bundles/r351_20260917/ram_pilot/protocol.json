@@ -1,0 +1,73 @@
+{
+  "experiment": "R351_RAM_DUAL_PRIOR",
+  "split": "RAM train/validation only",
+  "test_used": false,
+  "expected_case_counts": {
+    "train": 425,
+    "val": 69
+  },
+  "actual_case_counts": {
+    "train": 425,
+    "val": 69
+  },
+  "audit_mode": false,
+  "spatial_preprocessing": "native pixels; right/bottom padding only; no resize",
+  "alignment": "R323 canonical seam maps; geometric augmentation disabled",
+  "official_metric_padding_compatibility": "full padded prediction/target arrays",
+  "seam_roi": "normalize(seam) >= .25 AND GT union background AND valid",
+  "threshold": 0.5,
+  "steps": 2,
+  "trainable_modules": [
+    "SeamInputAdapter",
+    "OutputCompletionPrior"
+  ],
+  "trainable_parameter_count": 109319,
+  "frozen_modules": [
+    "NnUNetMultiLabelPrior",
+    "ImageOverlapPrior",
+    "InstanceCompletionRefiner teacher"
+  ],
+  "frozen_parameter_count": 10845644,
+  "mature_initialization": {
+    "copied_tensors": 40,
+    "seam_channel_nonzero": 0,
+    "zero_residual": false
+  },
+  "frozen_weights": {
+    "r332_model": {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+      "sha256": "eaf3b6918f7b64d90ae4295be1df4ec4c2c314775e68472e85607667a4334655"
+    },
+    "r332_refiner": {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+      "sha256": "eaf3b6918f7b64d90ae4295be1df4ec4c2c314775e68472e85607667a4334655"
+    },
+    "overlap_prior": {
+      "path": "/root/r351_workspace/overlap/full/best.pth",
+      "sha256": "ab08b0f6a2e4c99bccd38e9136e09fb4b6650b425e93e5855e7d8c314f31e725"
+    },
+    "native_baseline": {
+      "path": "/root/autodl-tmp/YOLO_SAM_generic_src/outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/plain_native_best.pth",
+      "sha256": "88f8f9168d969ee21238aeb77bbb701218a5fef31285f1fc2ceb71e3aa1076c9"
+    }
+  },
+  "config": {
+    "dataset_root": "data/remote_variants/RAM-W600",
+    "prior_root": "outputs/priors/r323_ram_native_r317_single_seed",
+    "r332_checkpoint": "outputs/ram_w600/r332_joint_iterative_refinement/steps_2/best.pth",
+    "overlap_checkpoint": "/root/r351_workspace/overlap/full/best.pth",
+    "native_checkpoint": "outputs/ram_w600/r325_nnunet_native_resolution_overlap_iem/plain_native_best.pth",
+    "output": "/root/r351_workspace/ram_pilot",
+    "epochs": 2,
+    "steps": 2,
+    "lr": 2e-05,
+    "aux_ramp_epochs": 5,
+    "max_aux_ratio": 0.15,
+    "max_grad_norm": 8.0,
+    "seam_threshold": 0.25,
+    "max_pairs": 15,
+    "num_workers": 2,
+    "seed": 3511,
+    "audit": false
+  }
+}

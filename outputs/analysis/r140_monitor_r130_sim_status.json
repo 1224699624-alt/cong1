@@ -1,0 +1,33 @@
+{
+  "status": "below_best",
+  "metrics_json": "outputs\\analysis\\r130_dinov3_bridge_suppressed_instance_sep_clean_test_v2_metrics.json",
+  "control_metrics_json": "outputs\\analysis\\r130_dinov3_bridge_suppressed_instance_sep_original_test_metrics.json",
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "num_evaluated": 81,
+  "clean_test_v2": {
+    "dice": 0.8909381313570002,
+    "precision": 0.8557649464752524,
+    "recall": 0.9311928242959249,
+    "boundary_iou": 0.18067213166331342
+  },
+  "original_test_control": {
+    "dice": 0.8762465506032248,
+    "iou": 0.7821046260791663,
+    "precision": 0.8434101355226186,
+    "recall": 0.9157308939658495,
+    "specificity": 0.9949607949369437,
+    "boundary_iou": 0.17406455111125627,
+    "pred_component_count": 23.072164948453608,
+    "gt_component_count": 23.49484536082474,
+    "component_count_error": 1.1855670103092784,
+    "false_bridge_flag": 0.4329896907216495
+  },
+  "target_dice": 0.9317660066557425,
+  "best_valid_dice": 0.9177231563529792,
+  "delta_vs_best_valid": -0.026785024995979012,
+  "gap_to_target": 0.04082787529874232,
+  "target_met": false,
+  "new_best": false,
+  "next_action": "do_not_continue_without_new_evidence"
+}

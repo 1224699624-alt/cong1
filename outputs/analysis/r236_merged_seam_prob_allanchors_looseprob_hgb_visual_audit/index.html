@@ -1,0 +1,765 @@
+<!doctype html><html><head><meta charset='utf-8'><title>R236 loose-prob HGB full-val seam visual audit</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f7f7f7;color:#222}.case{background:white;border:1px solid #ddd;margin:16px 0;padding:12px}img{max-width:100%;height:auto;border:1px solid #ccc}pre{font-size:12px;white-space:pre-wrap}</style>
+</head><body><h1>R236 loose-prob HGB full-val Seam-Probability Visual Audit</h1>
+<p>Legend: GT boundary green, prediction boundary magenta, TP blue tint, FP red, FN yellow. Accepted cuts: orange if true gap/background, red if GT foreground.</p>
+<div class='case'>
+<h2>10520.png</h2>
+<p>cut=9.0 px, Dice +0.000145, Recall +0.000000, BIoU +0.000430, gapFP -0.000499</p>
+<img src='panels/01_10520_r236_looseprob_hgb_seam_panel.jpg' alt='10520.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4067627425291659&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2553058187798575&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8978390408500251&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19581738503356078&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8146169880145909&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8750043729228616&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9218974604695735&quot;,
+  &quot;cut_pixels&quot;: &quot;9.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005453574895408764&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00042983230463083943&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00014505450603430337&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.000499251123315031&quot;,
+  &quot;delta_iou&quot;: &quot;0.00023885169871740164&quot;,
+  &quot;delta_precision&quot;: &quot;0.00027558228430524245&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;10520.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.40730810001870676&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.2557356510844883&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.8979840953560594&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.19531813391024574&quot;,
+  &quot;r233_iou&quot;: &quot;0.8148558397133083&quot;,
+  &quot;r233_precision&quot;: &quot;0.8752799552071668&quot;,
+  &quot;r233_recall&quot;: &quot;0.9218974604695735&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>10624.png</h2>
+<p>cut=8.0 px, Dice +0.000079, Recall +0.000000, BIoU +0.000273, gapFP -0.000370</p>
+<img src='panels/02_10624_r236_looseprob_hgb_seam_panel.jpg' alt='10624.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2542683228584154&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.14565143440299352&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8543689320388349&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.3637540453074434&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7457627118644068&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8009068515248621&quot;,
+  &quot;anchor_recall&quot;: &quot;0.915478919565434&quot;,
+  &quot;cut_pixels&quot;: &quot;8.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0004155468336108914&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.000272771114482262&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;7.947895224613699e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0003698566805362957&quot;,
+  &quot;delta_iou&quot;: &quot;0.00012112190541269108&quot;,
+  &quot;delta_precision&quot;: &quot;0.00013969813173886347&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;10624.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.2546838696920263&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.14592420551747579&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;3.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-3.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.854448410991081&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.3633841886269071&quot;,
+  &quot;r233_iou&quot;: &quot;0.7458838337698195&quot;,
+  &quot;r233_precision&quot;: &quot;0.8010465496566009&quot;,
+  &quot;r233_recall&quot;: &quot;0.915478919565434&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>11852.png</h2>
+<p>cut=36.0 px, Dice +0.000294, Recall +0.000000, BIoU +0.000887, gapFP -0.001173</p>
+<img src='panels/03_11852_r236_looseprob_hgb_seam_panel.jpg' alt='11852.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4076344385622736&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.25599300087489063&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8741845467526529&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1957871878393051&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7764900936748735&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8566516068848201&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8924501695948779&quot;,
+  &quot;cut_pixels&quot;: &quot;36.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0011233311751788766&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0008866633042138305&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0002938078821720369&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0011726384364820763&quot;,
+  &quot;delta_iou&quot;: &quot;0.00046373767601148863&quot;,
+  &quot;delta_precision&quot;: &quot;0.0005644633997959891&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;11852.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4087577697374525&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.25687966417910446&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.8744783546348249&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.19461454940282302&quot;,
+  &quot;r233_iou&quot;: &quot;0.776953831350885&quot;,
+  &quot;r233_precision&quot;: &quot;0.8572160702846161&quot;,
+  &quot;r233_recall&quot;: &quot;0.8924501695948779&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>12827.png</h2>
+<p>cut=5.0 px, Dice +0.000031, Recall +0.000000, BIoU +0.000191, gapFP -0.000183</p>
+<img src='panels/04_12827_r236_looseprob_hgb_seam_panel.jpg' alt='12827.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3760599262329366&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.23157253910274422&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.925741399762752&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2176649226153452&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8617491166077739&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9180576432912881&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9335548614341729&quot;,
+  &quot;cut_pixels&quot;: &quot;5.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00025146193796199423&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00019073461202306907&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.050520314240579e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00018294244630637224&quot;,
+  &quot;delta_iou&quot;: &quot;5.2868692659302496e-05&quot;,
+  &quot;delta_precision&quot;: &quot;6.0003767535343755e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;12827.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.3763113881708986&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.2317632737147673&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9257719049658945&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.21748198016903883&quot;,
+  &quot;r233_iou&quot;: &quot;0.8618019853004332&quot;,
+  &quot;r233_precision&quot;: &quot;0.9181176470588235&quot;,
+  &quot;r233_recall&quot;: &quot;0.9335548614341729&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13436.png</h2>
+<p>cut=92.0 px, Dice +0.000674, Recall +0.000000, BIoU +0.001164, gapFP -0.002775</p>
+<img src='panels/05_13436_r236_looseprob_hgb_seam_panel.jpg' alt='13436.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3631018008085263&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.22182308037718904&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9164516103259003&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.16284825077805692&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8457874323467386&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9284615758203688&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9047483830257138&quot;,
+  &quot;cut_pixels&quot;: &quot;92.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0015575541880081811&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0011637059603826494&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0006741362619832048&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.002774757208744233&quot;,
+  &quot;delta_iou&quot;: &quot;0.0011490828562384925&quot;,
+  &quot;delta_precision&quot;: &quot;0.001384887319435646&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13436.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.36465935499653446&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.22298678633757169&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9171257465878835&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.1600734935693127&quot;,
+  &quot;r233_iou&quot;: &quot;0.8469365152029771&quot;,
+  &quot;r233_precision&quot;: &quot;0.9298464631398045&quot;,
+  &quot;r233_recall&quot;: &quot;0.9047483830257138&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13441.png</h2>
+<p>cut=9.0 px, Dice +0.000192, Recall +0.000000, BIoU +0.000402, gapFP -0.000596</p>
+<img src='panels/06_13441_r236_looseprob_hgb_seam_panel.jpg' alt='13441.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4851149159339812&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.320232155584971&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9162424157891066&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.06518714806227227&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8454311454311454&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9513855363522256&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8836031027216069&quot;,
+  &quot;cut_pixels&quot;: &quot;9.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0004608975901360113&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0004017974781195255&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00019173599660771146&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005962239152037113&quot;,
+  &quot;delta_iou&quot;: &quot;0.00032654737173865023&quot;,
+  &quot;delta_precision&quot;: &quot;0.0004135459950335152&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13441.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4855758135241172&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.3206339530630905&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9164341517857143&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.06459092414706856&quot;,
+  &quot;r233_iou&quot;: &quot;0.845757692802884&quot;,
+  &quot;r233_precision&quot;: &quot;0.9517990823472591&quot;,
+  &quot;r233_recall&quot;: &quot;0.8836031027216069&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13517.png</h2>
+<p>cut=19.0 px, Dice +0.000565, Recall +0.000000, BIoU +0.000361, gapFP -0.001683</p>
+<img src='panels/07_13517_r236_looseprob_hgb_seam_panel.jpg' alt='13517.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.26297229219143575&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1513921113689095&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.7886899151743638&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.38031537916371366&quot;,
+  &quot;anchor_iou&quot;: &quot;0.6511048863990041&quot;,
+  &quot;anchor_precision&quot;: &quot;0.6906113825432457&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9192371913173389&quot;,
+  &quot;cut_pixels&quot;: &quot;19.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0005439272719202637&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0003606561587657653&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.000565347784966197&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0016832034018426367&quot;,
+  &quot;delta_iou&quot;: &quot;0.0007709705123757349&quot;,
+  &quot;delta_precision&quot;: &quot;0.0008674301757335412&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13517.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.263516219463356&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.15175276752767528&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.78925526295933&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.378632175761871&quot;,
+  &quot;r233_iou&quot;: &quot;0.6518758569113798&quot;,
+  &quot;r233_precision&quot;: &quot;0.6914788127189793&quot;,
+  &quot;r233_recall&quot;: &quot;0.9192371913173389&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>13867.png</h2>
+<p>cut=15.0 px, Dice +0.000137, Recall +0.000000, BIoU +0.000123, gapFP -0.000639</p>
+<img src='panels/08_13867_r236_looseprob_hgb_seam_panel.jpg' alt='13867.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.27669350802966197&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1605596620908131&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8648620047409414&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.2727621156630611&quot;,
+  &quot;anchor_iou&quot;: &quot;0.7619003225626014&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8488719930200673&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8814659821390052&quot;,
+  &quot;cut_pixels&quot;: &quot;15.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0001819753423411008&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0001225641210360895&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00013730729004890474&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006387871561195912&quot;,
+  &quot;delta_iou&quot;: &quot;0.0002131467947039667&quot;,
+  &quot;delta_precision&quot;: &quot;0.0002645944744779083&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;13867.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.2768754833720031&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.1606822262118492&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.8649993120309903&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.2721233285069415&quot;,
+  &quot;r233_iou&quot;: &quot;0.7621134693573054&quot;,
+  &quot;r233_precision&quot;: &quot;0.8491365874945452&quot;,
+  &quot;r233_recall&quot;: &quot;0.8814659821390052&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>15446.png</h2>
+<p>cut=27.0 px, Dice +0.000300, Recall +0.000000, BIoU +0.001987, gapFP -0.001269</p>
+<img src='panels/09_15446_r236_looseprob_hgb_seam_panel.jpg' alt='15446.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.35788797945755096&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2179437060203284&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9018459986963634&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.05983830027263326&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8212381848317878&quot;,
+  &quot;anchor_precision&quot;: &quot;0.966445252780853&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8453415719456805&quot;,
+  &quot;cut_pixels&quot;: &quot;27.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.002674798052747007&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0019871169255699372&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0002995650062103117&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0012691548368901004&quot;,
+  &quot;delta_iou&quot;: &quot;0.0004969504244931588&quot;,
+  &quot;delta_precision&quot;: &quot;0.0006882968485421026&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;15446.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.36056277751029797&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.21993082294589833&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9021455637025737&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.05856914543574316&quot;,
+  &quot;r233_iou&quot;: &quot;0.821735135256281&quot;,
+  &quot;r233_precision&quot;: &quot;0.9671335496293951&quot;,
+  &quot;r233_recall&quot;: &quot;0.8453415719456805&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1620.png</h2>
+<p>cut=19.0 px, Dice +0.000099, Recall +0.000000, BIoU +0.000744, gapFP -0.000592</p>
+<img src='panels/10_1620_r236_looseprob_hgb_seam_panel.jpg' alt='1620.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4165490993799009&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2630641084082715&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9322967245782929&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19494562338350316&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8731796052700757&quot;,
+  &quot;anchor_precision&quot;: &quot;0.926983914358751&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9376707843092974&quot;,
+  &quot;cut_pixels&quot;: &quot;19.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0009317215498741982&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0007436396754244012&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;9.944442567055845e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005920663114268865&quot;,
+  &quot;delta_iou&quot;: &quot;0.0001744816425489626&quot;,
+  &quot;delta_precision&quot;: &quot;0.00019664926056028875&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1620.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4174808209297751&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.2638077480836959&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9323961690039635&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.19435355707207627&quot;,
+  &quot;r233_iou&quot;: &quot;0.8733540869126246&quot;,
+  &quot;r233_precision&quot;: &quot;0.9271805636193113&quot;,
+  &quot;r233_recall&quot;: &quot;0.9376707843092974&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>1736.png</h2>
+<p>cut=37.0 px, Dice +0.000131, Recall +0.000000, BIoU +0.000032, gapFP -0.000408</p>
+<img src='panels/11_1736_r236_looseprob_hgb_seam_panel.jpg' alt='1736.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.21280542592968318&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.11907233214401557&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9040244280075417&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19723747892761978&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8248581912861853&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9315077345611696&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8781163856779519&quot;,
+  &quot;cut_pixels&quot;: &quot;37.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;5.0516829796565244e-05&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;3.1632585131516344e-05&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00013113103275941285&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0004078525205285788&quot;,
+  &quot;delta_iou&quot;: &quot;0.00021836633952654338&quot;,
+  &quot;delta_precision&quot;: &quot;0.00027849339985108745&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;1736.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.21285594275947975&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.11910396472914708&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9041555590403011&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.1968296264070912&quot;,
+  &quot;r233_iou&quot;: &quot;0.8250765576257119&quot;,
+  &quot;r233_precision&quot;: &quot;0.9317862279610207&quot;,
+  &quot;r233_recall&quot;: &quot;0.8781163856779519&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3058.png</h2>
+<p>cut=13.0 px, Dice +0.000081, Recall +0.000000, BIoU +0.000000, gapFP -0.000517</p>
+<img src='panels/12_3058_r236_looseprob_hgb_seam_panel.jpg' alt='3058.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3592010609653177&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.21891838934064858&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9265241541827975&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.20216319389215842&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8631066621508047&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9270297216458732&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9260191378544608&quot;,
+  &quot;cut_pixels&quot;: &quot;13.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;8.110330481292394e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0005169397168760803&quot;,
+  &quot;delta_iou&quot;: &quot;0.00014077217032548717&quot;,
+  &quot;delta_precision&quot;: &quot;0.0001623979083588134&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3058.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.3592010609653177&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.21891838934064858&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9266052574876105&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.20164625417528234&quot;,
+  &quot;r233_iou&quot;: &quot;0.8632474343211302&quot;,
+  &quot;r233_precision&quot;: &quot;0.927192119554232&quot;,
+  &quot;r233_recall&quot;: &quot;0.9260191378544608&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3392.png</h2>
+<p>cut=29.0 px, Dice +0.000251, Recall +0.000000, BIoU +0.000123, gapFP -0.001262</p>
+<img src='panels/13_3392_r236_looseprob_hgb_seam_panel.jpg' alt='3392.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.4301708898055392&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.27402402402402404&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9191734977814545&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.20281028407360682&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8504357506914607&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9054859979256186&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9332811545510079&quot;,
+  &quot;cut_pixels&quot;: &quot;29.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00015160329681729312&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00012304835956289395&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.000250651465820928&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0012615826336624947&quot;,
+  &quot;delta_iou&quot;: &quot;0.00042922894583952154&quot;,
+  &quot;delta_precision&quot;: &quot;0.00048661293738017086&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3392.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4303224931023565&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.27414707238358693&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;4.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-4.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9194241492472754&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.20154870143994433&quot;,
+  &quot;r233_iou&quot;: &quot;0.8508649796373002&quot;,
+  &quot;r233_precision&quot;: &quot;0.9059726108629987&quot;,
+  &quot;r233_recall&quot;: &quot;0.9332811545510079&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3602.png</h2>
+<p>cut=4.0 px, Dice +0.000037, Recall +0.000000, BIoU +0.000178, gapFP -0.000179</p>
+<img src='panels/14_3602_r236_looseprob_hgb_seam_panel.jpg' alt='3602.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.45877446262431826&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.29766860949208995&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9288746924847234&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.15706853247219232&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8671951693863564&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9284142061115628&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9293356358800294&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0002118814321385165&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00017842274295226668&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.6858644199999624e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.00017940437746680193&quot;,
+  &quot;delta_iou&quot;: &quot;6.425452769376339e-05&quot;,
+  &quot;delta_precision&quot;: &quot;7.364713583435378e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3602.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4589863440564568&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.2978470322350422&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-1.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9289115511289234&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.15688912809472552&quot;,
+  &quot;r233_iou&quot;: &quot;0.8672594239140502&quot;,
+  &quot;r233_precision&quot;: &quot;0.9284878532473971&quot;,
+  &quot;r233_recall&quot;: &quot;0.9293356358800294&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>3678.png</h2>
+<p>cut=12.0 px, Dice +0.000170, Recall +0.000000, BIoU +0.001180, gapFP -0.000672</p>
+<img src='panels/15_3678_r236_looseprob_hgb_seam_panel.jpg' alt='3678.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.47867191896454697&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.31464082266775173&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9127124700910475&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.09625189086223318&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8394398399542726&quot;,
+  &quot;anchor_precision&quot;: &quot;0.94174228093238&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8854188647393965&quot;,
+  &quot;cut_pixels&quot;: &quot;12.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.001364072487483159&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00117980778955179&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00017020279162538454&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006723065717967464&quot;,
+  &quot;delta_iou&quot;: &quot;0.00028798896676340835&quot;,
+  &quot;delta_precision&quot;: &quot;0.00036247577929848784&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;3678.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.48003599145203013&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.3158206304573035&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9128826728826729&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.09557958429043643&quot;,
+  &quot;r233_iou&quot;: &quot;0.839727828921036&quot;,
+  &quot;r233_precision&quot;: &quot;0.9421047567116785&quot;,
+  &quot;r233_recall&quot;: &quot;0.8854188647393965&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>5882.png</h2>
+<p>cut=14.0 px, Dice +0.000625, Recall +0.000000, BIoU +0.002465, gapFP -0.001724</p>
+<img src='panels/16_5882_r236_looseprob_hgb_seam_panel.jpg' alt='5882.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.28531894285318943&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.16639767591994836&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.7830892826619565&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.29667487684729066&quot;,
+  &quot;anchor_iou&quot;: &quot;0.6435059462496489&quot;,
+  &quot;anchor_precision&quot;: &quot;0.6903063787041688&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9046866771985256&quot;,
+  &quot;cut_pixels&quot;: &quot;14.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.003615765050590636&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002464791946375555&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.0006251496810896207&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0017241379310344862&quot;,
+  &quot;delta_iou&quot;: &quot;0.0008447335440688875&quot;,
+  &quot;delta_precision&quot;: &quot;0.0009721647019271806&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;5882.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.28893470790378006&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.16886246786632392&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;1.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;1.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.7837144323430462&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.29495073891625617&quot;,
+  &quot;r233_iou&quot;: &quot;0.6443506797937177&quot;,
+  &quot;r233_precision&quot;: &quot;0.691278543406096&quot;,
+  &quot;r233_recall&quot;: &quot;0.9046866771985256&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6503.png</h2>
+<p>cut=9.0 px, Dice +0.000214, Recall +0.000000, BIoU +0.001111, gapFP -0.000690</p>
+<img src='panels/17_6503_r236_looseprob_hgb_seam_panel.jpg' alt='6503.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.2794491711253399&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.1624184339314845&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.8289760348583878&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.23957694665849172&quot;,
+  &quot;anchor_iou&quot;: &quot;0.707906976744186&quot;,
+  &quot;anchor_precision&quot;: &quot;0.810482062780269&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8483337244778221&quot;,
+  &quot;cut_pixels&quot;: &quot;9.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0016423104209256079&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.0011106186786711825&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.00021392929931829396&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0006897608828939361&quot;,
+  &quot;delta_iou&quot;: &quot;0.0003120671429612809&quot;,
+  &quot;delta_precision&quot;: &quot;0.000409081855477722&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6503.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.2810914815462655&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.16352905261015568&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.8291899641577061&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.23888718577559778&quot;,
+  &quot;r233_iou&quot;: &quot;0.7082190438871473&quot;,
+  &quot;r233_precision&quot;: &quot;0.8108911446357467&quot;,
+  &quot;r233_recall&quot;: &quot;0.8483337244778221&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6606.png</h2>
+<p>cut=12.0 px, Dice +0.000061, Recall +0.000000, BIoU +0.000225, gapFP -0.000404</p>
+<img src='panels/18_6606_r236_looseprob_hgb_seam_panel.jpg' alt='6606.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.40271462036654265&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.25212440150109994&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9354451250805298&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19699111470113084&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8787194978100992&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9343126990359029&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9365802995517656&quot;,
+  &quot;cut_pixels&quot;: &quot;12.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.00028689415913546457&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00022493895928460406&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;6.129042588576272e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0004038772213247055&quot;,
+  &quot;delta_iou&quot;: &quot;0.00010817117154848788&quot;,
+  &quot;delta_precision&quot;: &quot;0.00012229223809367973&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6606.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.4030015145256781&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.25234934046038454&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9355064155064156&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.19658723747980614&quot;,
+  &quot;r233_iou&quot;: &quot;0.8788276689816477&quot;,
+  &quot;r233_precision&quot;: &quot;0.9344349912739965&quot;,
+  &quot;r233_recall&quot;: &quot;0.9365802995517656&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>6698.png</h2>
+<p>cut=17.0 px, Dice +0.000307, Recall +0.000000, BIoU +0.002010, gapFP -0.001045</p>
+<img src='panels/19_6698_r236_looseprob_hgb_seam_panel.jpg' alt='6698.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.47479741793709657&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.31130121566861774&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9073808385142675&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.19247787610619468&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8304639626495477&quot;,
+  &quot;anchor_precision&quot;: &quot;0.8750864785917442&quot;,
+  &quot;anchor_recall&quot;: &quot;0.9421501282794008&quot;,
+  &quot;cut_pixels&quot;: &quot;17.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.002334844114819379&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.002010472643070582&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;0.000307482493566269&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.001044739429695185&quot;,
+  &quot;delta_iou&quot;: &quot;0.0005152701691683026&quot;,
+  &quot;delta_precision&quot;: &quot;0.0005721499225437299&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;6698.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.47713226205191595&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.3133116883116883&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9076883210078338&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.1914331366764995&quot;,
+  &quot;r233_iou&quot;: &quot;0.830979232818716&quot;,
+  &quot;r233_precision&quot;: &quot;0.8756586285142879&quot;,
+  &quot;r233_recall&quot;: &quot;0.9421501282794008&quot;
+}</pre>
+</div>
+<div class='case'>
+<h2>8253.png</h2>
+<p>cut=4.0 px, Dice +0.000038, Recall +0.000000, BIoU +0.000464, gapFP -0.000175</p>
+<img src='panels/20_8253_r236_looseprob_hgb_seam_panel.jpg' alt='8253.png'>
+<pre>{
+  &quot;anchor_boundary_f1&quot;: &quot;0.3557485801555863&quot;,
+  &quot;anchor_boundary_iou&quot;: &quot;0.2163589922210612&quot;,
+  &quot;anchor_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;anchor_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;anchor_dice&quot;: &quot;0.9079994533163721&quot;,
+  &quot;anchor_gap_region_fp_rate&quot;: &quot;0.1456825856246985&quot;,
+  &quot;anchor_iou&quot;: &quot;0.8315009146047945&quot;,
+  &quot;anchor_precision&quot;: &quot;0.9269936674895353&quot;,
+  &quot;anchor_recall&quot;: &quot;0.8897679976923394&quot;,
+  &quot;cut_pixels&quot;: &quot;4.0&quot;,
+  &quot;delta_boundary_f1&quot;: &quot;0.0006275469375867093&quot;,
+  &quot;delta_boundary_iou&quot;: &quot;0.00046441425751769794&quot;,
+  &quot;delta_component_count_mae&quot;: &quot;0.0&quot;,
+  &quot;delta_component_delta_mean&quot;: &quot;0.0&quot;,
+  &quot;delta_dice&quot;: &quot;3.818533158039816e-05&quot;,
+  &quot;delta_gap_region_fp_rate&quot;: &quot;-0.0001754155155023196&quot;,
+  &quot;delta_iou&quot;: &quot;6.404659371894716e-05&quot;,
+  &quot;delta_precision&quot;: &quot;7.960272793539058e-05&quot;,
+  &quot;delta_recall&quot;: &quot;0.0&quot;,
+  &quot;edited&quot;: &quot;1.0&quot;,
+  &quot;image&quot;: &quot;8253.png&quot;,
+  &quot;num_accepted_cuts&quot;: &quot;1.0&quot;,
+  &quot;r233_boundary_f1&quot;: &quot;0.356376127093173&quot;,
+  &quot;r233_boundary_iou&quot;: &quot;0.2168234064785789&quot;,
+  &quot;r233_component_count_mae&quot;: &quot;2.0&quot;,
+  &quot;r233_component_delta_mean&quot;: &quot;-2.0&quot;,
+  &quot;r233_dice&quot;: &quot;0.9080376386479525&quot;,
+  &quot;r233_gap_region_fp_rate&quot;: &quot;0.14550717010919617&quot;,
+  &quot;r233_iou&quot;: &quot;0.8315649611985134&quot;,
+  &quot;r233_precision&quot;: &quot;0.9270732702174707&quot;,
+  &quot;r233_recall&quot;: &quot;0.8897679976923394&quot;
+}</pre>
+</div>
+</body></html>

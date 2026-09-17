@@ -1,0 +1,68 @@
+{
+  "run_id": "R213-validation-gate-audit",
+  "summary_json": "outputs\\analysis\\r212_f5_evalonly_fullval_val_summary.json",
+  "threshold_audit_csv": "outputs\\analysis\\r212_f5_evalonly_fullval_threshold_audit.csv",
+  "warning": "validation gate only; not clean-test-v2 evidence",
+  "threshold": 0.8,
+  "num_evaluated": 96,
+  "accepted_images": [
+    "15446.png"
+  ],
+  "risk_images": [
+    "13480.png",
+    "13867.png",
+    "15040.png",
+    "1620.png",
+    "3058.png",
+    "3468.png",
+    "6605.png",
+    "7259.png",
+    "8253.png"
+  ],
+  "risk_hits": [],
+  "metrics": {
+    "delta_dice": -9.589849103708303e-08,
+    "delta_iou": -1.5904192795720973e-07,
+    "delta_boundary_iou": 2.4803350155185263e-06,
+    "delta_boundary_f1": 3.3434975659334585e-06,
+    "delta_surface_dice_2px": 6.466232106558621e-06,
+    "delta_surface_dice_5px": -2.332787180074162e-06,
+    "delta_recall": -3.122142039210333e-06,
+    "delta_hd95_px": 0.0,
+    "delta_assd_px": -5.815965821859281e-06,
+    "delta_gap_region_fp_rate": -7.344646046817734e-06,
+    "delta_component_merge_rate": 0.0,
+    "delta_component_count_mae": 0.0,
+    "delta_instance_merge_count": 0.0,
+    "delta_pred_component_count": 0.0,
+    "accepted": 0.010416666666666666
+  },
+  "criteria": {
+    "min_accepted_rate": 0.03,
+    "min_boundary_iou_delta": 0.0001,
+    "min_boundary_f1_delta": 0.0001,
+    "min_surface2_delta": 0.0001,
+    "max_dice_drop": 0.0005,
+    "max_iou_drop": 0.0008,
+    "max_recall_drop": 0.0008,
+    "require_gap_improvement": true,
+    "require_component_nonworse": true
+  },
+  "checks": {
+    "summary_gate_pass": true,
+    "accepted_rate_meaningful": false,
+    "dice_nonworse": true,
+    "iou_nonworse": true,
+    "recall_nonworse": true,
+    "boundary_iou_meaningful": false,
+    "boundary_f1_meaningful": false,
+    "surface2_meaningful": false,
+    "no_risk_image_accepted": true,
+    "gap_fp_improves": true,
+    "component_merge_nonworse": true,
+    "component_count_nonworse": true,
+    "pred_component_count_nonworse": true
+  },
+  "promote_ready": false,
+  "decision": "do_not_promote"
+}

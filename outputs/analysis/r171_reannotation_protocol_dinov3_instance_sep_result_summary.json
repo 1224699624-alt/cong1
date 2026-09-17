@@ -1,0 +1,15 @@
+{
+  "status": "waiting_for_metrics",
+  "metrics_json": "outputs\\analysis\\r171_reannotation_protocol_dinov3_instance_sep_clean_test_v2_metrics.json",
+  "control_metrics_json": "outputs\\analysis\\r171_reannotation_protocol_dinov3_instance_sep_original_test_metrics.json",
+  "history_json": "outputs\\timm_instance_sep\\r171_reannotation_protocol_dinov3_instance_sep\\history.json",
+  "history": {
+    "exists": false,
+    "epochs": 0,
+    "best_val_dice": null,
+    "best_epoch": null
+  },
+  "target_dice": 0.9317660066557425,
+  "best_valid_dice": 0.9177231563529792,
+  "next_action": "wait_for_r171_final_clean_test_v2_metrics"
+}

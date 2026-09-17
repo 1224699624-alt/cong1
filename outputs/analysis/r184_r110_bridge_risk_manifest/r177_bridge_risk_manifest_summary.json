@@ -1,0 +1,585 @@
+{
+  "run_id": "R177-prep",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "gate": {
+    "pass": true,
+    "train_ok": true,
+    "val_ok": true,
+    "missing_ok": true,
+    "min_train_risk_images": 5,
+    "min_val_risk_images": 2,
+    "min_risk_pixels": 96
+  },
+  "summary_by_split": {
+    "train": {
+      "num_records": 96,
+      "missing_anchor": 0,
+      "risk_images": 29,
+      "false_bridge_images": 29,
+      "dice": {
+        "mean": 0.9162237493143933,
+        "median": 0.9245174888254679,
+        "min": 0.7702082243981405,
+        "max": 0.9487703767850986
+      },
+      "boundary_iou": {
+        "mean": 0.2855383159687237,
+        "median": 0.2984855442845927,
+        "min": 0.07336409123399831,
+        "max": 0.4009396400700749
+      },
+      "boundary_f1": {
+        "mean": 0.4395865005260606,
+        "median": 0.4597441156046441,
+        "min": 0.1366993582758203,
+        "max": 0.5723867447280169
+      },
+      "sep_fp_rate": {
+        "mean": 0.20721896523239214,
+        "median": 0.1806174770298078,
+        "min": 0.09349091550538013,
+        "max": 0.500620501365103
+      },
+      "component_error": {
+        "mean": 1.9479166666666667,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 12.0
+      },
+      "risk_pixels": {
+        "mean": 6533.583333333333,
+        "median": 6219.0,
+        "min": 2292.0,
+        "max": 18603.0
+      },
+      "top_risk": [
+        {
+          "image": "10144.png",
+          "risk_pixels": 12159,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9146555180115686,
+          "boundary_iou": 0.16688774664234787
+        },
+        {
+          "image": "13039.png",
+          "risk_pixels": 11521,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.9271433057678217,
+          "boundary_iou": 0.21288537866335244
+        },
+        {
+          "image": "10004.png",
+          "risk_pixels": 10441,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9192866175380456,
+          "boundary_iou": 0.21241211465657112
+        },
+        {
+          "image": "12449.png",
+          "risk_pixels": 10274,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.9301752811057786,
+          "boundary_iou": 0.2422780777059917
+        },
+        {
+          "image": "10693.png",
+          "risk_pixels": 8674,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.85999636825858,
+          "boundary_iou": 0.1450857072388704
+        },
+        {
+          "image": "10685.png",
+          "risk_pixels": 8369,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8688043710893731,
+          "boundary_iou": 0.165321594521888
+        },
+        {
+          "image": "10621.png",
+          "risk_pixels": 7758,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.8806420597190321,
+          "boundary_iou": 0.18692180965657076
+        },
+        {
+          "image": "11283.png",
+          "risk_pixels": 7488,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9352516834882196,
+          "boundary_iou": 0.29850359861233366
+        },
+        {
+          "image": "12522.png",
+          "risk_pixels": 7371,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9446687315319164,
+          "boundary_iou": 0.3244105191613949
+        },
+        {
+          "image": "10727.png",
+          "risk_pixels": 7203,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9167652938426806,
+          "boundary_iou": 0.2483156297420334
+        },
+        {
+          "image": "13500.png",
+          "risk_pixels": 7031,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.844014729624322,
+          "boundary_iou": 0.17496250803399271
+        },
+        {
+          "image": "12662.png",
+          "risk_pixels": 6734,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.9171548636843522,
+          "boundary_iou": 0.3141527001862197
+        },
+        {
+          "image": "12277.png",
+          "risk_pixels": 6598,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9343027444815616,
+          "boundary_iou": 0.2883529411764706
+        },
+        {
+          "image": "10003.png",
+          "risk_pixels": 6422,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9096801842824235,
+          "boundary_iou": 0.2611045981503191
+        },
+        {
+          "image": "12481.png",
+          "risk_pixels": 6215,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.932579701522138,
+          "boundary_iou": 0.3084567901234568
+        },
+        {
+          "image": "12278.png",
+          "risk_pixels": 6096,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9340489533542113,
+          "boundary_iou": 0.3108946519419283
+        },
+        {
+          "image": "12316.png",
+          "risk_pixels": 5999,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9361968643930823,
+          "boundary_iou": 0.3033425483789897
+        },
+        {
+          "image": "10015.png",
+          "risk_pixels": 5872,
+          "false_bridge": 1,
+          "component_delta": -6,
+          "dice": 0.9095768120886463,
+          "boundary_iou": 0.254928865458222
+        },
+        {
+          "image": "11488.png",
+          "risk_pixels": 5680,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9288947633139555,
+          "boundary_iou": 0.310317248733671
+        },
+        {
+          "image": "11662.png",
+          "risk_pixels": 5127,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.922480510476945,
+          "boundary_iou": 0.30848906272635085
+        },
+        {
+          "image": "10043.png",
+          "risk_pixels": 5107,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9057290937106037,
+          "boundary_iou": 0.26712868168215465
+        },
+        {
+          "image": "10779.png",
+          "risk_pixels": 4163,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9438726535836177,
+          "boundary_iou": 0.39005942733657484
+        },
+        {
+          "image": "12799.png",
+          "risk_pixels": 3949,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9416617905207724,
+          "boundary_iou": 0.4009396400700749
+        },
+        {
+          "image": "12434.png",
+          "risk_pixels": 3774,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.8998289201542272,
+          "boundary_iou": 0.2843601895734597
+        },
+        {
+          "image": "12648.png",
+          "risk_pixels": 3599,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9380638827293194,
+          "boundary_iou": 0.3885384273656153
+        },
+        {
+          "image": "12915.png",
+          "risk_pixels": 2827,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9027613478892756,
+          "boundary_iou": 0.34486153846153844
+        },
+        {
+          "image": "12755.png",
+          "risk_pixels": 2729,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9113749136360781,
+          "boundary_iou": 0.35053516819571867
+        },
+        {
+          "image": "10542.png",
+          "risk_pixels": 2527,
+          "false_bridge": 1,
+          "component_delta": -5,
+          "dice": 0.9280771412365286,
+          "boundary_iou": 0.3860838985179603
+        },
+        {
+          "image": "10390.png",
+          "risk_pixels": 2459,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.8340759849906192,
+          "boundary_iou": 0.24905536389025792
+        },
+        {
+          "image": "10474.png",
+          "risk_pixels": 18603,
+          "false_bridge": 0,
+          "component_delta": 3,
+          "dice": 0.9150814969674134,
+          "boundary_iou": 0.12838981746544773
+        }
+      ]
+    },
+    "val": {
+      "num_records": 96,
+      "missing_anchor": 0,
+      "risk_images": 33,
+      "false_bridge_images": 33,
+      "dice": {
+        "mean": 0.895722598735221,
+        "median": 0.9117078652931702,
+        "min": 0.6380715782936107,
+        "max": 0.9495969934624726
+      },
+      "boundary_iou": {
+        "mean": 0.22294454594576676,
+        "median": 0.21790396467495549,
+        "min": 0.08879242304656669,
+        "max": 0.43669634025717113
+      },
+      "boundary_f1": {
+        "mean": 0.35805780356213623,
+        "median": 0.35783439405804646,
+        "min": 0.16310257339615802,
+        "max": 0.6079173838209982
+      },
+      "sep_fp_rate": {
+        "mean": 0.22880866704697403,
+        "median": 0.23848388631653505,
+        "min": 0.006212822207534699,
+        "max": 0.4494025847354304
+      },
+      "component_error": {
+        "mean": 3.0208333333333335,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 21.0
+      },
+      "risk_pixels": {
+        "mean": 9122.75,
+        "median": 7572.5,
+        "min": 507.0,
+        "max": 22699.0
+      },
+      "top_risk": [
+        {
+          "image": "1660.png",
+          "risk_pixels": 19991,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9149379681143169,
+          "boundary_iou": 0.13564775613886537
+        },
+        {
+          "image": "1694.png",
+          "risk_pixels": 19893,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.903463445404243,
+          "boundary_iou": 0.1254223223282556
+        },
+        {
+          "image": "3493.png",
+          "risk_pixels": 17580,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9199350663623034,
+          "boundary_iou": 0.168419783598059
+        },
+        {
+          "image": "1674.png",
+          "risk_pixels": 16881,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9264087978018595,
+          "boundary_iou": 0.15912083777513011
+        },
+        {
+          "image": "1560.png",
+          "risk_pixels": 13722,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.8760854599693233,
+          "boundary_iou": 0.14323825964141396
+        },
+        {
+          "image": "3460.png",
+          "risk_pixels": 12370,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.933847512614007,
+          "boundary_iou": 0.20728291316526612
+        },
+        {
+          "image": "3700.png",
+          "risk_pixels": 12229,
+          "false_bridge": 1,
+          "component_delta": -5,
+          "dice": 0.8788764999599805,
+          "boundary_iou": 0.1641204714098647
+        },
+        {
+          "image": "4193.png",
+          "risk_pixels": 11101,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8649994491572105,
+          "boundary_iou": 0.16290259230164963
+        },
+        {
+          "image": "6606.png",
+          "risk_pixels": 10243,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9354451250805298,
+          "boundary_iou": 0.25212440150109994
+        },
+        {
+          "image": "3777.png",
+          "risk_pixels": 10017,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9110243378988628,
+          "boundary_iou": 0.20219374878664337
+        },
+        {
+          "image": "13867.png",
+          "risk_pixels": 9685,
+          "false_bridge": 1,
+          "component_delta": -7,
+          "dice": 0.8648620047409414,
+          "boundary_iou": 0.1605596620908131
+        },
+        {
+          "image": "10624.png",
+          "risk_pixels": 9515,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.8543689320388349,
+          "boundary_iou": 0.14565143440299352
+        },
+        {
+          "image": "3840.png",
+          "risk_pixels": 8989,
+          "false_bridge": 1,
+          "component_delta": -6,
+          "dice": 0.9099072081289913,
+          "boundary_iou": 0.2204741263980307
+        },
+        {
+          "image": "7259.png",
+          "risk_pixels": 8383,
+          "false_bridge": 1,
+          "component_delta": -6,
+          "dice": 0.9099027385102431,
+          "boundary_iou": 0.2178642233295826
+        },
+        {
+          "image": "12498.png",
+          "risk_pixels": 7847,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9495969934624726,
+          "boundary_iou": 0.3010057471264368
+        },
+        {
+          "image": "15040.png",
+          "risk_pixels": 7831,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9396147686702027,
+          "boundary_iou": 0.28255061144794985
+        },
+        {
+          "image": "3392.png",
+          "risk_pixels": 7641,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.9191734977814545,
+          "boundary_iou": 0.27402402402402404
+        },
+        {
+          "image": "14041.png",
+          "risk_pixels": 7554,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9403342687778893,
+          "boundary_iou": 0.29416131940393486
+        },
+        {
+          "image": "2248.png",
+          "risk_pixels": 7071,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9038387236073547,
+          "boundary_iou": 0.2384910070774625
+        },
+        {
+          "image": "15274.png",
+          "risk_pixels": 6935,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9112713156800222,
+          "boundary_iou": 0.24083640836408365
+        },
+        {
+          "image": "15446.png",
+          "risk_pixels": 6929,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9018459986963634,
+          "boundary_iou": 0.2179437060203284
+        },
+        {
+          "image": "7253.png",
+          "risk_pixels": 6369,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8734140369501566,
+          "boundary_iou": 0.21153983821318634
+        },
+        {
+          "image": "11945.png",
+          "risk_pixels": 6197,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.9386339329588484,
+          "boundary_iou": 0.31063829787234043
+        },
+        {
+          "image": "5825.png",
+          "risk_pixels": 5910,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.8270781393886306,
+          "boundary_iou": 0.1513392857142857
+        },
+        {
+          "image": "3354.png",
+          "risk_pixels": 5309,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9282843347910715,
+          "boundary_iou": 0.3222393497757848
+        },
+        {
+          "image": "10375.png",
+          "risk_pixels": 5080,
+          "false_bridge": 1,
+          "component_delta": -3,
+          "dice": 0.9025088273555101,
+          "boundary_iou": 0.2790805665196192
+        },
+        {
+          "image": "3269.png",
+          "risk_pixels": 5063,
+          "false_bridge": 1,
+          "component_delta": -2,
+          "dice": 0.9189728096676737,
+          "boundary_iou": 0.3169087913733713
+        },
+        {
+          "image": "6503.png",
+          "risk_pixels": 4865,
+          "false_bridge": 1,
+          "component_delta": -4,
+          "dice": 0.8289760348583878,
+          "boundary_iou": 0.1624184339314845
+        },
+        {
+          "image": "1418.png",
+          "risk_pixels": 4732,
+          "false_bridge": 1,
+          "component_delta": -1,
+          "dice": 0.6380715782936107,
+          "boundary_iou": 0.08879242304656669
+        },
+        {
+          "image": "1884.png",
+          "risk_pixels": 4697,
+          "false_bridge": 1,
+          "component_delta": -5,
+          "dice": 0.7649913344887348,
+          "boundary_iou": 0.14732580961727185
+        }
+      ]
+    }
+  },
+  "manifest_csv": "outputs/analysis/r184_r110_bridge_risk_manifest/r177_bridge_risk_manifest.csv"
+}

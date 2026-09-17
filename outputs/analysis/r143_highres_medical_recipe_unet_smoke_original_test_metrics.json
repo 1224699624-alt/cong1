@@ -1,0 +1,48 @@
+{
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "test",
+  "threshold": 0.45,
+  "min_component_area": 0,
+  "tta_flips": true,
+  "num_evaluated": 2,
+  "mean": {
+    "dice": 0.035649569649152765,
+    "iou": 0.018153338042152217,
+    "precision": 0.018153338042152217,
+    "recall": 1.0,
+    "specificity": 0.0,
+    "boundary_iou": 0.0,
+    "pred_component_count": 1.0,
+    "gt_component_count": 26.5,
+    "component_count_error": 25.5,
+    "false_bridge_flag": 1.0
+  },
+  "per_image": [
+    {
+      "dice": 0.040030488794115825,
+      "iou": 0.020424036478754612,
+      "precision": 0.020424036478754612,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "boundary_iou": 0.0,
+      "pred_component_count": 1.0,
+      "gt_component_count": 27.0,
+      "component_count_error": 26.0,
+      "false_bridge_flag": 1.0,
+      "image": "10793.png"
+    },
+    {
+      "dice": 0.031268650504189706,
+      "iou": 0.015882639605549823,
+      "precision": 0.015882639605549823,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "boundary_iou": 0.0,
+      "pred_component_count": 1.0,
+      "gt_component_count": 26.0,
+      "component_count_error": 25.0,
+      "false_bridge_flag": 1.0,
+      "image": "11099.png"
+    }
+  ]
+}

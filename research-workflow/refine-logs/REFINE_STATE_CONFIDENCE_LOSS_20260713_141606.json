@@ -1,0 +1,10 @@
+{
+  "phase": "done",
+  "round": 3,
+  "agent_id": "/root/prior_lit_review",
+  "last_score": 9.27,
+  "last_verdict": "READY",
+  "status": "completed",
+  "timestamp": "2026-07-13T14:44:52+08:00",
+  "scope": "prior-calibrated confidence-weighted noisy-label loss"
+}

@@ -1,0 +1,1098 @@
+[R281] start 2026-07-21T18:34:53+08:00
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Trainer 'nnUNetTrainerR281LowSupportInstancePrior' not found in nnunetv2.training.nnUNetTrainer.
+Searching in external trainer paths from environment variable 'nnUNet_extTrainer'...
+Searching in: outputs/nnunet/r281_low_support_instance_prior/ext_trainer
+Searching for class nnUNetTrainerR281LowSupportInstancePrior in folder outputs/nnunet/r281_low_support_instance_prior/ext_trainer with current module None
+  Inspecting module: nnUNetTrainerR280BalancedInstancePrior
+  Inspecting module: nnUNetTrainerR281LowSupportInstancePrior
+Found class nnUNetTrainerR281LowSupportInstancePrior in nnUNetTrainerR281LowSupportInstancePrior
+Using trainer 'nnUNetTrainerR281LowSupportInstancePrior' from: outputs/nnunet/r281_low_support_instance_prior/ext_trainer
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-07-21 18:35:04.301023: R280 mature initialization {"checkpoint": "outputs/nnunet/r279_instance_prior/r275_control_two_channel_zero_prior.pth", "sha256": "89eda6b07c0e6c37c3d41abf295d97f4f06c5ea30d4d061ef9ddcb1680128f5a", "strict_all_network_keys_loaded": true, "xray_channel_inherited": true, "prior_channel_nonzero": 0, "seam_alpha": 0.05, "support_alpha": 0.015, "support_radius_px": 4, "clean_test_used": false}
+2026-07-21 18:35:04.303151: do_dummy_2d_data_aug: False
+2026-07-21 18:35:04.305359: Using splits from existing split file: outputs/nnunet/r279_instance_prior/data/nnUNet_preprocessed/Dataset279_TSRS_RSNAEpiphysisInstancePrior2D/splits_final.json
+2026-07-21 18:35:04.305537: The split file contains 1 splits.
+2026-07-21 18:35:04.305572: Desired fold for training: 0
+2026-07-21 18:35:04.305602: This split has 875 training and 96 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [1536, 1024], 'median_image_size_in_voxels': [1556.0, 1259.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 9, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset279_TSRS_RSNAEpiphysisInstancePrior2D', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1556, 1259], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 113.06613159179688, 'median': 113.0, 'min': 2.0, 'percentile_00_5': 22.0, 'percentile_99_5': 215.0, 'std': 47.58992385864258}, '1': {'max': 254.0, 'mean': 1.732549786567688, 'median': 0.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 182.0, 'std': 17.89545249938965}}} 
+
+2026-07-21 18:35:06.405833: Unable to plot network architecture:
+2026-07-21 18:35:06.406005: No module named 'hiddenlayer'
+2026-07-21 18:35:06.419734: 
+2026-07-21 18:35:06.420030: Epoch 0
+2026-07-21 18:35:06.420934: Current learning rate: 0.0001
+2026-07-21 18:35:46.604716: train_loss -0.8536
+2026-07-21 18:35:46.605121: val_loss -0.8655
+2026-07-21 18:35:46.605210: Pseudo dice [0.9091]
+2026-07-21 18:35:46.605275: Epoch time: 40.19 s
+2026-07-21 18:35:46.605321: Yayy! New best EMA pseudo Dice: 0.9091
+2026-07-21 18:35:49.501395: R281 early stop {"completed_epochs": 1, "ema_dice": 0.9091051076572504, "early_best": 0.9091051076572504, "bad_epochs": 0, "stop": false}
+2026-07-21 18:35:49.503698: 
+2026-07-21 18:35:49.504023: Epoch 1
+2026-07-21 18:35:49.504159: Current learning rate: 0.0001
+2026-07-21 18:36:25.533082: train_loss -0.8565
+2026-07-21 18:36:25.534184: val_loss -0.8564
+2026-07-21 18:36:25.534267: Pseudo dice [0.9045]
+2026-07-21 18:36:25.534326: Epoch time: 36.03 s
+2026-07-21 18:36:27.213233: R281 early stop {"completed_epochs": 2, "ema_dice": 0.9086469015921551, "early_best": 0.9091051076572504, "bad_epochs": 1, "stop": false}
+2026-07-21 18:36:27.215534: 
+2026-07-21 18:36:27.215788: Epoch 2
+2026-07-21 18:36:27.216027: Current learning rate: 0.0001
+2026-07-21 18:37:03.396807: train_loss -0.8567
+2026-07-21 18:37:03.397249: val_loss -0.8544
+2026-07-21 18:37:03.397317: Pseudo dice [0.8971]
+2026-07-21 18:37:03.397376: Epoch time: 36.18 s
+2026-07-21 18:37:05.489119: R281 early stop {"completed_epochs": 3, "ema_dice": 0.9074872731876122, "early_best": 0.9091051076572504, "bad_epochs": 2, "stop": false}
+2026-07-21 18:37:05.491433: 
+2026-07-21 18:37:05.491553: Epoch 3
+2026-07-21 18:37:05.491749: Current learning rate: 0.0001
+2026-07-21 18:37:41.727406: train_loss -0.8504
+2026-07-21 18:37:41.727950: val_loss -0.871
+2026-07-21 18:37:41.728071: Pseudo dice [0.91]
+2026-07-21 18:37:41.728132: Epoch time: 36.24 s
+2026-07-21 18:37:43.405972: R281 early stop {"completed_epochs": 4, "ema_dice": 0.9077338516680954, "early_best": 0.9091051076572504, "bad_epochs": 3, "stop": false}
+2026-07-21 18:37:43.408280: 
+2026-07-21 18:37:43.408634: Epoch 4
+2026-07-21 18:37:43.408728: Current learning rate: 9e-05
+2026-07-21 18:38:19.567406: train_loss -0.8591
+2026-07-21 18:38:19.567749: val_loss -0.8578
+2026-07-21 18:38:19.567811: Pseudo dice [0.9066]
+2026-07-21 18:38:19.567868: Epoch time: 36.16 s
+2026-07-21 18:38:21.298842: R281 early stop {"completed_epochs": 5, "ema_dice": 0.9076184312137592, "early_best": 0.9091051076572504, "bad_epochs": 4, "stop": false}
+2026-07-21 18:38:21.301319: 
+2026-07-21 18:38:21.301696: Epoch 5
+2026-07-21 18:38:21.301822: Current learning rate: 9e-05
+2026-07-21 18:38:57.022559: train_loss -0.8562
+2026-07-21 18:38:57.023008: val_loss -0.8789
+2026-07-21 18:38:57.023068: Pseudo dice [0.9165]
+2026-07-21 18:38:57.023124: Epoch time: 35.72 s
+2026-07-21 18:38:58.698909: R281 early stop {"completed_epochs": 6, "ema_dice": 0.9085046464394972, "early_best": 0.9091051076572504, "bad_epochs": 5, "stop": false}
+2026-07-21 18:38:58.701223: 
+2026-07-21 18:38:58.701449: Epoch 6
+2026-07-21 18:38:58.701616: Current learning rate: 9e-05
+2026-07-21 18:39:34.696668: train_loss -0.8543
+2026-07-21 18:39:34.696947: val_loss -0.8744
+2026-07-21 18:39:34.697002: Pseudo dice [0.9164]
+2026-07-21 18:39:34.697057: Epoch time: 36.0 s
+2026-07-21 18:39:34.697102: Yayy! New best EMA pseudo Dice: 0.9093
+2026-07-21 18:39:37.940170: R281 early stop {"completed_epochs": 7, "ema_dice": 0.9092977729569868, "early_best": 0.9092977729569868, "bad_epochs": 0, "stop": false}
+2026-07-21 18:39:37.942496: 
+2026-07-21 18:39:37.942764: Epoch 7
+2026-07-21 18:39:37.942916: Current learning rate: 9e-05
+2026-07-21 18:40:14.082299: train_loss -0.8585
+2026-07-21 18:40:14.082640: val_loss -0.8759
+2026-07-21 18:40:14.082702: Pseudo dice [0.9123]
+2026-07-21 18:40:14.082759: Epoch time: 36.14 s
+2026-07-21 18:40:14.082801: Yayy! New best EMA pseudo Dice: 0.9096
+2026-07-21 18:40:17.683165: R281 early stop {"completed_epochs": 8, "ema_dice": 0.9095992294755237, "early_best": 0.9095992294755237, "bad_epochs": 0, "stop": false}
+2026-07-21 18:40:17.685472: 
+2026-07-21 18:40:17.685735: Epoch 8
+2026-07-21 18:40:17.685952: Current learning rate: 9e-05
+2026-07-21 18:40:53.814286: train_loss -0.8538
+2026-07-21 18:40:53.814803: val_loss -0.8817
+2026-07-21 18:40:53.814888: Pseudo dice [0.9193]
+2026-07-21 18:40:53.814948: Epoch time: 36.13 s
+2026-07-21 18:40:53.814993: Yayy! New best EMA pseudo Dice: 0.9106
+2026-07-21 18:40:57.532797: R281 early stop {"completed_epochs": 9, "ema_dice": 0.9105668442509955, "early_best": 0.9105668442509955, "bad_epochs": 0, "stop": false}
+2026-07-21 18:40:57.535082: 
+2026-07-21 18:40:57.535223: Epoch 9
+2026-07-21 18:40:57.535569: Current learning rate: 9e-05
+2026-07-21 18:41:33.618773: train_loss -0.857
+2026-07-21 18:41:33.619080: val_loss -0.86
+2026-07-21 18:41:33.619135: Pseudo dice [0.9023]
+2026-07-21 18:41:33.619190: Epoch time: 36.09 s
+2026-07-21 18:41:35.255061: R281 early stop {"completed_epochs": 10, "ema_dice": 0.9097441569944703, "early_best": 0.9105668442509955, "bad_epochs": 1, "stop": false}
+2026-07-21 18:41:35.257361: 
+2026-07-21 18:41:35.257540: Epoch 10
+2026-07-21 18:41:35.257700: Current learning rate: 8e-05
+2026-07-21 18:42:11.425293: train_loss -0.8527
+2026-07-21 18:42:11.425693: val_loss -0.8688
+2026-07-21 18:42:11.425758: Pseudo dice [0.9094]
+2026-07-21 18:42:11.425815: Epoch time: 36.17 s
+2026-07-21 18:42:13.088272: R281 early stop {"completed_epochs": 11, "ema_dice": 0.9097083316448606, "early_best": 0.9105668442509955, "bad_epochs": 2, "stop": false}
+2026-07-21 18:42:13.090566: 
+2026-07-21 18:42:13.090970: Epoch 11
+2026-07-21 18:42:13.091155: Current learning rate: 8e-05
+2026-07-21 18:42:49.252710: train_loss -0.8611
+2026-07-21 18:42:49.253005: val_loss -0.8586
+2026-07-21 18:42:49.253061: Pseudo dice [0.9007]
+2026-07-21 18:42:49.253116: Epoch time: 36.16 s
+2026-07-21 18:42:50.920730: R281 early stop {"completed_epochs": 12, "ema_dice": 0.9088037035468393, "early_best": 0.9105668442509955, "bad_epochs": 3, "stop": false}
+2026-07-21 18:42:50.923040: 
+2026-07-21 18:42:50.923278: Epoch 12
+2026-07-21 18:42:50.923516: Current learning rate: 8e-05
+2026-07-21 18:43:27.085547: train_loss -0.8507
+2026-07-21 18:43:27.086004: val_loss -0.8597
+2026-07-21 18:43:27.086195: Pseudo dice [0.9014]
+2026-07-21 18:43:27.086258: Epoch time: 36.16 s
+2026-07-21 18:43:28.780797: R281 early stop {"completed_epochs": 13, "ema_dice": 0.90806615250666, "early_best": 0.9105668442509955, "bad_epochs": 4, "stop": false}
+2026-07-21 18:43:28.783083: 
+2026-07-21 18:43:28.783427: Epoch 13
+2026-07-21 18:43:28.783546: Current learning rate: 8e-05
+2026-07-21 18:44:04.900662: train_loss -0.854
+2026-07-21 18:44:04.901121: val_loss -0.8419
+2026-07-21 18:44:04.901197: Pseudo dice [0.8965]
+2026-07-21 18:44:04.901257: Epoch time: 36.12 s
+2026-07-21 18:44:06.602043: R281 early stop {"completed_epochs": 14, "ema_dice": 0.9069118112234833, "early_best": 0.9105668442509955, "bad_epochs": 5, "stop": false}
+2026-07-21 18:44:06.604369: 
+2026-07-21 18:44:06.604622: Epoch 14
+2026-07-21 18:44:06.604781: Current learning rate: 8e-05
+2026-07-21 18:44:42.709341: train_loss -0.8583
+2026-07-21 18:44:42.709719: val_loss -0.8559
+2026-07-21 18:44:42.709834: Pseudo dice [0.9068]
+2026-07-21 18:44:42.709924: Epoch time: 36.11 s
+2026-07-21 18:44:44.425939: R281 early stop {"completed_epochs": 15, "ema_dice": 0.9069041837167594, "early_best": 0.9105668442509955, "bad_epochs": 6, "stop": false}
+2026-07-21 18:44:44.428216: 
+2026-07-21 18:44:44.428517: Epoch 15
+2026-07-21 18:44:44.428610: Current learning rate: 8e-05
+2026-07-21 18:45:20.470883: train_loss -0.8565
+2026-07-21 18:45:20.471198: val_loss -0.8763
+2026-07-21 18:45:20.471257: Pseudo dice [0.9126]
+2026-07-21 18:45:20.471314: Epoch time: 36.04 s
+2026-07-21 18:45:22.652964: R281 early stop {"completed_epochs": 16, "ema_dice": 0.9074734370779636, "early_best": 0.9105668442509955, "bad_epochs": 7, "stop": false}
+2026-07-21 18:45:22.655245: 
+2026-07-21 18:45:22.655501: Epoch 16
+2026-07-21 18:45:22.655645: Current learning rate: 8e-05
+2026-07-21 18:45:58.817702: train_loss -0.8527
+2026-07-21 18:45:58.818077: val_loss -0.8381
+2026-07-21 18:45:58.818137: Pseudo dice [0.8869]
+2026-07-21 18:45:58.818194: Epoch time: 36.16 s
+2026-07-21 18:46:00.545042: R281 early stop {"completed_epochs": 17, "ema_dice": 0.9054176404124039, "early_best": 0.9105668442509955, "bad_epochs": 8, "stop": false}
+2026-07-21 18:46:00.547369: 
+2026-07-21 18:46:00.547688: Epoch 17
+2026-07-21 18:46:00.547837: Current learning rate: 7e-05
+2026-07-21 18:46:36.639613: train_loss -0.8587
+2026-07-21 18:46:36.639991: val_loss -0.8725
+2026-07-21 18:46:36.640053: Pseudo dice [0.9102]
+2026-07-21 18:46:36.640110: Epoch time: 36.09 s
+2026-07-21 18:46:38.341763: R281 early stop {"completed_epochs": 18, "ema_dice": 0.9058990060220928, "early_best": 0.9105668442509955, "bad_epochs": 9, "stop": false}
+2026-07-21 18:46:38.344044: 
+2026-07-21 18:46:38.344345: Epoch 18
+2026-07-21 18:46:38.344479: Current learning rate: 7e-05
+2026-07-21 18:47:14.490935: train_loss -0.8593
+2026-07-21 18:47:14.491417: val_loss -0.8536
+2026-07-21 18:47:14.491479: Pseudo dice [0.9013]
+2026-07-21 18:47:14.491539: Epoch time: 36.15 s
+2026-07-21 18:47:16.204611: R281 early stop {"completed_epochs": 19, "ema_dice": 0.9054419750471352, "early_best": 0.9105668442509955, "bad_epochs": 10, "stop": true}
+2026-07-21 18:47:17.975257: Training done.
+2026-07-21 18:47:17.988884: Using splits from existing split file: outputs/nnunet/r279_instance_prior/data/nnUNet_preprocessed/Dataset279_TSRS_RSNAEpiphysisInstancePrior2D/splits_final.json
+2026-07-21 18:47:17.989088: The split file contains 1 splits.
+2026-07-21 18:47:17.989125: Desired fold for training: 0
+2026-07-21 18:47:17.989181: This split has 875 training and 96 validation cases.
+2026-07-21 18:47:17.990083: predicting val_10375
+2026-07-21 18:47:17.999118: val_10375, shape torch.Size([2, 1, 1136, 959]), rank 0
+2026-07-21 18:47:21.163946: predicting val_10520
+2026-07-21 18:47:21.182147: val_10520, shape torch.Size([2, 1, 1515, 1067]), rank 0
+2026-07-21 18:47:21.348079: predicting val_10618
+2026-07-21 18:47:21.363889: val_10618, shape torch.Size([2, 1, 1533, 1608]), rank 0
+2026-07-21 18:47:21.604728: predicting val_10624
+2026-07-21 18:47:21.615273: val_10624, shape torch.Size([2, 1, 1257, 1224]), rank 0
+2026-07-21 18:47:21.775113: predicting val_11852
+2026-07-21 18:47:21.784846: val_11852, shape torch.Size([2, 1, 1419, 1075]), rank 0
+2026-07-21 18:47:21.946182: predicting val_11945
+2026-07-21 18:47:21.961808: val_11945, shape torch.Size([2, 1, 1436, 1111]), rank 0
+2026-07-21 18:47:22.126322: predicting val_12498
+2026-07-21 18:47:22.137523: val_12498, shape torch.Size([2, 1, 1536, 1257]), rank 0
+2026-07-21 18:47:22.295318: predicting val_12627
+2026-07-21 18:47:22.303492: val_12627, shape torch.Size([2, 1, 1216, 1006]), rank 0
+2026-07-21 18:47:22.391583: predicting val_12827
+2026-07-21 18:47:22.406686: val_12827, shape torch.Size([2, 1, 2000, 1398]), rank 0
+2026-07-21 18:47:22.850487: predicting val_13220
+2026-07-21 18:47:22.874430: val_13220, shape torch.Size([2, 1, 1328, 1286]), rank 0
+2026-07-21 18:47:23.043576: predicting val_13436
+2026-07-21 18:47:23.055360: val_13436, shape torch.Size([2, 1, 1508, 1470]), rank 0
+2026-07-21 18:47:23.223010: predicting val_13441
+2026-07-21 18:47:23.231741: val_13441, shape torch.Size([2, 1, 1078, 912]), rank 0
+2026-07-21 18:47:23.320815: predicting val_13454
+2026-07-21 18:47:23.328389: val_13454, shape torch.Size([2, 1, 1258, 943]), rank 0
+2026-07-21 18:47:23.418502: predicting val_13480
+2026-07-21 18:47:23.428726: val_13480, shape torch.Size([2, 1, 1412, 1148]), rank 0
+2026-07-21 18:47:23.591428: predicting val_13517
+2026-07-21 18:47:23.601359: val_13517, shape torch.Size([2, 1, 1518, 1220]), rank 0
+2026-07-21 18:47:23.768349: predicting val_13840
+2026-07-21 18:47:23.778664: val_13840, shape torch.Size([2, 1, 1519, 1082]), rank 0
+2026-07-21 18:47:23.941987: predicting val_13867
+2026-07-21 18:47:23.954164: val_13867, shape torch.Size([2, 1, 1547, 1248]), rank 0
+2026-07-21 18:47:24.257987: predicting val_1399
+2026-07-21 18:47:24.285731: val_1399, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:24.590424: predicting val_14041
+2026-07-21 18:47:24.610444: val_14041, shape torch.Size([2, 1, 1852, 1472]), rank 0
+2026-07-21 18:47:24.915490: predicting val_1418
+2026-07-21 18:47:24.934558: val_1418, shape torch.Size([2, 1, 1514, 2044]), rank 0
+2026-07-21 18:47:25.185225: predicting val_1452
+2026-07-21 18:47:25.206242: val_1452, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:25.512604: predicting val_15040
+2026-07-21 18:47:25.527507: val_15040, shape torch.Size([2, 1, 2087, 1208]), rank 0
+2026-07-21 18:47:25.832464: predicting val_15067
+2026-07-21 18:47:25.846565: val_15067, shape torch.Size([2, 1, 1874, 1384]), rank 0
+2026-07-21 18:47:26.151497: predicting val_1518
+2026-07-21 18:47:26.166851: val_1518, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:26.472699: predicting val_1522
+2026-07-21 18:47:26.486352: val_1522, shape torch.Size([2, 1, 1514, 2044]), rank 0
+2026-07-21 18:47:26.733804: predicting val_15274
+2026-07-21 18:47:26.745394: val_15274, shape torch.Size([2, 1, 1678, 1258]), rank 0
+2026-07-21 18:47:27.049879: predicting val_15369
+2026-07-21 18:47:27.071095: val_15369, shape torch.Size([2, 1, 1615, 1656]), rank 0
+2026-07-21 18:47:27.518059: predicting val_15446
+2026-07-21 18:47:27.528246: val_15446, shape torch.Size([2, 1, 1752, 1000]), rank 0
+2026-07-21 18:47:27.693143: predicting val_1560
+2026-07-21 18:47:27.714805: val_1560, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:28.378218: predicting val_1572
+2026-07-21 18:47:28.406446: val_1572, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:29.074004: predicting val_1585
+2026-07-21 18:47:29.104928: val_1585, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:29.772433: predicting val_1590
+2026-07-21 18:47:29.784912: val_1590, shape torch.Size([2, 1, 1824, 992]), rank 0
+2026-07-21 18:47:29.948435: predicting val_1620
+2026-07-21 18:47:29.965240: val_1620, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:30.270388: predicting val_1660
+2026-07-21 18:47:30.291587: val_1660, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:30.957196: predicting val_1666
+2026-07-21 18:47:30.979958: val_1666, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:31.647441: predicting val_1674
+2026-07-21 18:47:31.674863: val_1674, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:32.342350: predicting val_1678
+2026-07-21 18:47:32.363772: val_1678, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:33.031148: predicting val_1694
+2026-07-21 18:47:33.054214: val_1694, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:33.721026: predicting val_1736
+2026-07-21 18:47:33.737759: val_1736, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:34.046708: predicting val_1742
+2026-07-21 18:47:34.069600: val_1742, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:34.734495: predicting val_1807
+2026-07-21 18:47:34.748995: val_1807, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:35.057982: predicting val_1812
+2026-07-21 18:47:35.079132: val_1812, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:35.744454: predicting val_1827
+2026-07-21 18:47:35.765541: val_1827, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:36.432781: predicting val_1828
+2026-07-21 18:47:36.454049: val_1828, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:37.121829: predicting val_1846
+2026-07-21 18:47:37.150450: val_1846, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:37.817822: predicting val_1855
+2026-07-21 18:47:37.839944: val_1855, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:38.507528: predicting val_1880
+2026-07-21 18:47:38.521119: val_1880, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:38.828808: predicting val_1884
+2026-07-21 18:47:38.841661: val_1884, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:39.147605: predicting val_1886
+2026-07-21 18:47:39.176021: val_1886, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:39.841939: predicting val_1901
+2026-07-21 18:47:39.856408: val_1901, shape torch.Size([2, 1, 2044, 1514]), rank 0
+2026-07-21 18:47:40.164660: predicting val_1931
+2026-07-21 18:47:40.188982: val_1931, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:40.854629: predicting val_1934
+2026-07-21 18:47:40.877099: val_1934, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:41.543884: predicting val_2024
+2026-07-21 18:47:41.549152: val_2024, shape torch.Size([2, 1, 1167, 819]), rank 0
+2026-07-21 18:47:41.637241: predicting val_2044
+2026-07-21 18:47:41.646152: val_2044, shape torch.Size([2, 1, 1462, 1203]), rank 0
+2026-07-21 18:47:41.808913: predicting val_2246
+2026-07-21 18:47:41.820088: val_2246, shape torch.Size([2, 1, 1526, 1324]), rank 0
+2026-07-21 18:47:41.983888: predicting val_2248
+2026-07-21 18:47:41.991553: val_2248, shape torch.Size([2, 1, 1348, 949]), rank 0
+2026-07-21 18:47:42.081254: predicting val_2709
+2026-07-21 18:47:42.084529: val_2709, shape torch.Size([2, 1, 827, 608]), rank 0
+2026-07-21 18:47:42.174829: predicting val_2853
+2026-07-21 18:47:42.180912: val_2853, shape torch.Size([2, 1, 1136, 935]), rank 0
+2026-07-21 18:47:42.270058: predicting val_3058
+2026-07-21 18:47:42.277781: val_3058, shape torch.Size([2, 1, 1416, 995]), rank 0
+2026-07-21 18:47:42.368155: predicting val_3249
+2026-07-21 18:47:42.441000: val_3249, shape torch.Size([2, 1, 2920, 2320]), rank 0
+2026-07-21 18:47:43.325038: predicting val_3269
+2026-07-21 18:47:43.336454: val_3269, shape torch.Size([2, 1, 1190, 994]), rank 0
+2026-07-21 18:47:43.427717: predicting val_3352
+2026-07-21 18:47:43.431728: val_3352, shape torch.Size([2, 1, 966, 742]), rank 0
+2026-07-21 18:47:43.520938: predicting val_3353
+2026-07-21 18:47:43.527899: val_3353, shape torch.Size([2, 1, 1195, 923]), rank 0
+2026-07-21 18:47:43.617265: predicting val_3354
+2026-07-21 18:47:43.625286: val_3354, shape torch.Size([2, 1, 1246, 1253]), rank 0
+2026-07-21 18:47:43.787575: predicting val_3366
+2026-07-21 18:47:43.792884: val_3366, shape torch.Size([2, 1, 961, 837]), rank 0
+2026-07-21 18:47:43.882073: predicting val_3392
+2026-07-21 18:47:43.889000: val_3392, shape torch.Size([2, 1, 1439, 878]), rank 0
+2026-07-21 18:47:43.978488: predicting val_3460
+2026-07-21 18:47:44.018260: val_3460, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:44.681473: predicting val_3468
+2026-07-21 18:47:44.690935: val_3468, shape torch.Size([2, 1, 976, 904]), rank 0
+2026-07-21 18:47:44.782791: predicting val_3493
+2026-07-21 18:47:44.824578: val_3493, shape torch.Size([2, 1, 2570, 2040]), rank 0
+2026-07-21 18:47:45.488309: predicting val_3567
+2026-07-21 18:47:45.497132: val_3567, shape torch.Size([2, 1, 984, 800]), rank 0
+2026-07-21 18:47:45.585262: predicting val_3595
+2026-07-21 18:47:45.589910: val_3595, shape torch.Size([2, 1, 832, 816]), rank 0
+2026-07-21 18:47:45.678537: predicting val_3596
+2026-07-21 18:47:45.717575: val_3596, shape torch.Size([2, 1, 2614, 2164]), rank 0
+2026-07-21 18:47:46.595180: predicting val_3602
+2026-07-21 18:47:46.605028: val_3602, shape torch.Size([2, 1, 1048, 808]), rank 0
+2026-07-21 18:47:46.693889: predicting val_3678
+2026-07-21 18:47:46.700351: val_3678, shape torch.Size([2, 1, 1224, 968]), rank 0
+2026-07-21 18:47:46.789927: predicting val_3700
+2026-07-21 18:47:46.795186: val_3700, shape torch.Size([2, 1, 1376, 624]), rank 0
+2026-07-21 18:47:46.883428: predicting val_3725
+2026-07-21 18:47:46.888918: val_3725, shape torch.Size([2, 1, 1229, 781]), rank 0
+2026-07-21 18:47:46.978227: predicting val_3732
+2026-07-21 18:47:46.981941: val_3732, shape torch.Size([2, 1, 736, 608]), rank 0
+2026-07-21 18:47:47.070656: predicting val_3777
+2026-07-21 18:47:47.081782: val_3777, shape torch.Size([2, 1, 1568, 992]), rank 0
+2026-07-21 18:47:47.246947: predicting val_3840
+2026-07-21 18:47:47.252569: val_3840, shape torch.Size([2, 1, 1249, 889]), rank 0
+2026-07-21 18:47:47.341964: predicting val_4047
+2026-07-21 18:47:47.389656: val_4047, shape torch.Size([2, 1, 2460, 1950]), rank 0
+2026-07-21 18:47:48.052639: predicting val_4193
+2026-07-21 18:47:48.123721: val_4193, shape torch.Size([2, 1, 2920, 2320]), rank 0
+2026-07-21 18:47:49.021515: predicting val_5355
+2026-07-21 18:47:49.040259: val_5355, shape torch.Size([2, 1, 1650, 1380]), rank 0
+2026-07-21 18:47:49.346159: predicting val_5825
+2026-07-21 18:47:49.353605: val_5825, shape torch.Size([2, 1, 1193, 991]), rank 0
+2026-07-21 18:47:49.443292: predicting val_5882
+2026-07-21 18:47:49.451235: val_5882, shape torch.Size([2, 1, 1254, 776]), rank 0
+2026-07-21 18:47:49.541126: predicting val_6503
+2026-07-21 18:47:49.550366: val_6503, shape torch.Size([2, 1, 1177, 1172]), rank 0
+2026-07-21 18:47:49.711467: predicting val_6605
+2026-07-21 18:47:49.723651: val_6605, shape torch.Size([2, 1, 1762, 1328]), rank 0
+2026-07-21 18:47:50.026226: predicting val_6606
+2026-07-21 18:47:50.038499: val_6606, shape torch.Size([2, 1, 1580, 1312]), rank 0
+2026-07-21 18:47:50.342123: predicting val_6698
+2026-07-21 18:47:50.352385: val_6698, shape torch.Size([2, 1, 1517, 1122]), rank 0
+2026-07-21 18:47:50.517191: predicting val_6918
+2026-07-21 18:47:50.529247: val_6918, shape torch.Size([2, 1, 1636, 1272]), rank 0
+2026-07-21 18:47:50.831706: predicting val_6947
+2026-07-21 18:47:50.844917: val_6947, shape torch.Size([2, 1, 1376, 1108]), rank 0
+2026-07-21 18:47:51.008188: predicting val_7253
+2026-07-21 18:47:51.018757: val_7253, shape torch.Size([2, 1, 1386, 1249]), rank 0
+2026-07-21 18:47:51.182931: predicting val_7259
+2026-07-21 18:47:51.196064: val_7259, shape torch.Size([2, 1, 1695, 1555]), rank 0
+2026-07-21 18:47:51.642066: predicting val_7269
+2026-07-21 18:47:51.651930: val_7269, shape torch.Size([2, 1, 1366, 1137]), rank 0
+2026-07-21 18:47:51.816283: predicting val_7312
+2026-07-21 18:47:51.824152: val_7312, shape torch.Size([2, 1, 1188, 1104]), rank 0
+2026-07-21 18:47:51.986652: predicting val_7654
+2026-07-21 18:47:51.999688: val_7654, shape torch.Size([2, 1, 1288, 1096]), rank 0
+2026-07-21 18:47:52.162181: predicting val_8253
+2026-07-21 18:47:52.173411: val_8253, shape torch.Size([2, 1, 1437, 1263]), rank 0
+2026-07-21 18:47:57.633107: Validation complete
+2026-07-21 18:47:57.633241: Mean Validation Dice:  0.8930911847449181
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+Trainer 'nnUNetTrainerR281LowSupportInstancePrior' not found in nnunetv2.training.nnUNetTrainer.
+Searching in external trainer paths from environment variable 'nnUNet_extTrainer'...
+Searching in: outputs/nnunet/r281_low_support_instance_prior/ext_trainer
+Searching for class nnUNetTrainerR281LowSupportInstancePrior in folder outputs/nnunet/r281_low_support_instance_prior/ext_trainer with current module None
+  Inspecting module: nnUNetTrainerR280BalancedInstancePrior
+  Inspecting module: nnUNetTrainerR281LowSupportInstancePrior
+Found class nnUNetTrainerR281LowSupportInstancePrior in nnUNetTrainerR281LowSupportInstancePrior
+Using trainer 'nnUNetTrainerR281LowSupportInstancePrior' from: outputs/nnunet/r281_low_support_instance_prior/ext_trainer
+There are 96 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 96 cases that I would like to predict
+
+Predicting val_10375:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.02it/s]100%|██████████| 1/1 [00:00<00:00,  1.02it/s]
+sending off prediction to background worker for resampling and export
+done with val_10375
+
+Predicting val_10520:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.86it/s]
+sending off prediction to background worker for resampling and export
+done with val_10520
+
+Predicting val_10618:
+perform_everything_on_device: True
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 17.98it/s]100%|██████████| 3/3 [00:00<00:00, 17.95it/s]
+sending off prediction to background worker for resampling and export
+done with val_10618
+
+Predicting val_10624:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.89it/s]
+sending off prediction to background worker for resampling and export
+done with val_10624
+
+Predicting val_11852:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.83it/s]
+sending off prediction to background worker for resampling and export
+done with val_11852
+
+Predicting val_11945:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_11945
+
+Predicting val_12498:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_12498
+
+Predicting val_12627:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.92it/s]
+sending off prediction to background worker for resampling and export
+done with val_12627
+
+Predicting val_12827:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.96it/s]100%|██████████| 4/4 [00:00<00:00, 16.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_12827
+
+Predicting val_13220:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.86it/s]
+sending off prediction to background worker for resampling and export
+done with val_13220
+
+Predicting val_13436:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.86it/s]
+sending off prediction to background worker for resampling and export
+done with val_13436
+
+Predicting val_13441:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_13441
+
+Predicting val_13454:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.65it/s]
+sending off prediction to background worker for resampling and export
+done with val_13454
+
+Predicting val_13480:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_13480
+
+Predicting val_13517:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_13517
+
+Predicting val_13840:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.82it/s]
+sending off prediction to background worker for resampling and export
+done with val_13840
+
+Predicting val_13867:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.98it/s]100%|██████████| 4/4 [00:00<00:00, 16.82it/s]
+sending off prediction to background worker for resampling and export
+done with val_13867
+
+Predicting val_1399:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.98it/s]100%|██████████| 4/4 [00:00<00:00, 16.82it/s]
+sending off prediction to background worker for resampling and export
+done with val_1399
+
+Predicting val_14041:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.99it/s]100%|██████████| 4/4 [00:00<00:00, 16.83it/s]
+sending off prediction to background worker for resampling and export
+done with val_14041
+
+Predicting val_1418:
+perform_everything_on_device: True
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 18.01it/s]100%|██████████| 3/3 [00:00<00:00, 17.98it/s]
+sending off prediction to background worker for resampling and export
+done with val_1418
+
+Predicting val_1452:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 18.00it/s]100%|██████████| 4/4 [00:00<00:00, 16.83it/s]
+sending off prediction to background worker for resampling and export
+done with val_1452
+
+Predicting val_15040:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.95it/s]100%|██████████| 4/4 [00:00<00:00, 16.80it/s]
+sending off prediction to background worker for resampling and export
+done with val_15040
+
+Predicting val_15067:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.96it/s]100%|██████████| 4/4 [00:00<00:00, 16.80it/s]
+sending off prediction to background worker for resampling and export
+done with val_15067
+
+Predicting val_1518:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.93it/s]100%|██████████| 4/4 [00:00<00:00, 16.79it/s]
+sending off prediction to background worker for resampling and export
+done with val_1518
+
+Predicting val_1522:
+perform_everything_on_device: True
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 17.99it/s]100%|██████████| 3/3 [00:00<00:00, 17.97it/s]
+sending off prediction to background worker for resampling and export
+done with val_1522
+
+Predicting val_15274:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.96it/s]100%|██████████| 4/4 [00:00<00:00, 16.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_15274
+
+Predicting val_15369:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 50%|█████     | 3/6 [00:00<00:00, 17.92it/s] 83%|████████▎ | 5/6 [00:00<00:00, 15.84it/s]100%|██████████| 6/6 [00:00<00:00, 15.79it/s]
+sending off prediction to background worker for resampling and export
+done with val_15369
+
+Predicting val_15446:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_15446
+
+Predicting val_1560:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.70it/s]100%|██████████| 9/9 [00:00<00:00, 15.18it/s]
+sending off prediction to background worker for resampling and export
+done with val_1560
+
+Predicting val_1572:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.08it/s]100%|██████████| 9/9 [00:00<00:00, 14.70it/s]100%|██████████| 9/9 [00:00<00:00, 15.18it/s]
+sending off prediction to background worker for resampling and export
+done with val_1572
+
+Predicting val_1585:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1585
+
+Predicting val_1590:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.90it/s]
+sending off prediction to background worker for resampling and export
+done with val_1590
+
+Predicting val_1620:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.97it/s]100%|██████████| 4/4 [00:00<00:00, 16.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_1620
+
+Predicting val_1660:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1660
+
+Predicting val_1666:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.08it/s]100%|██████████| 9/9 [00:00<00:00, 14.70it/s]100%|██████████| 9/9 [00:00<00:00, 15.18it/s]
+sending off prediction to background worker for resampling and export
+done with val_1666
+
+Predicting val_1674:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.85it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.18it/s]
+sending off prediction to background worker for resampling and export
+done with val_1674
+
+Predicting val_1678:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.95it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.70it/s]100%|██████████| 9/9 [00:00<00:00, 15.18it/s]
+sending off prediction to background worker for resampling and export
+done with val_1678
+
+Predicting val_1694:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.95it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1694
+
+Predicting val_1736:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.97it/s]100%|██████████| 4/4 [00:00<00:00, 16.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_1736
+
+Predicting val_1742:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1742
+
+Predicting val_1807:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.99it/s]100%|██████████| 4/4 [00:00<00:00, 16.82it/s]
+sending off prediction to background worker for resampling and export
+done with val_1807
+
+Predicting val_1812:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1812
+
+Predicting val_1827:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.95it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1827
+
+Predicting val_1828:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.82it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.16it/s]
+sending off prediction to background worker for resampling and export
+done with val_1828
+
+Predicting val_1846:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.95it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1846
+
+Predicting val_1855:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.95it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.16it/s]
+sending off prediction to background worker for resampling and export
+done with val_1855
+
+Predicting val_1880:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.93it/s]100%|██████████| 4/4 [00:00<00:00, 16.78it/s]
+sending off prediction to background worker for resampling and export
+done with val_1880
+
+Predicting val_1884:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.97it/s]100%|██████████| 4/4 [00:00<00:00, 16.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_1884
+
+Predicting val_1886:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.97it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1886
+
+Predicting val_1901:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.93it/s]100%|██████████| 4/4 [00:00<00:00, 16.78it/s]
+sending off prediction to background worker for resampling and export
+done with val_1901
+
+Predicting val_1931:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.93it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.82it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.16it/s]
+sending off prediction to background worker for resampling and export
+done with val_1931
+
+Predicting val_1934:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.83it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_1934
+
+Predicting val_2024:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.78it/s]
+sending off prediction to background worker for resampling and export
+done with val_2024
+
+Predicting val_2044:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_2044
+
+Predicting val_2246:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.89it/s]
+sending off prediction to background worker for resampling and export
+done with val_2246
+
+Predicting val_2248:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.87it/s]
+sending off prediction to background worker for resampling and export
+done with val_2248
+
+Predicting val_2709:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.94it/s]
+sending off prediction to background worker for resampling and export
+done with val_2709
+
+Predicting val_2853:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.92it/s]
+sending off prediction to background worker for resampling and export
+done with val_2853
+
+Predicting val_3058:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.72it/s]
+sending off prediction to background worker for resampling and export
+done with val_3058
+
+Predicting val_3249:
+perform_everything_on_device: True
+  0%|          | 0/12 [00:00<?, ?it/s] 25%|██▌       | 3/12 [00:00<00:00, 17.97it/s] 42%|████▏     | 5/12 [00:00<00:00, 15.85it/s] 58%|█████▊    | 7/12 [00:00<00:00, 15.09it/s] 75%|███████▌  | 9/12 [00:00<00:00, 14.71it/s] 92%|█████████▏| 11/12 [00:00<00:00, 14.49it/s]100%|██████████| 12/12 [00:00<00:00, 14.91it/s]
+sending off prediction to background worker for resampling and export
+done with val_3249
+
+Predicting val_3269:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_3269
+
+Predicting val_3352:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_3352
+
+Predicting val_3353:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_3353
+
+Predicting val_3354:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_3354
+
+Predicting val_3366:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.89it/s]
+sending off prediction to background worker for resampling and export
+done with val_3366
+
+Predicting val_3392:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.91it/s]
+sending off prediction to background worker for resampling and export
+done with val_3392
+
+Predicting val_3460:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.96it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.84it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.07it/s]100%|██████████| 9/9 [00:00<00:00, 14.69it/s]100%|██████████| 9/9 [00:00<00:00, 15.17it/s]
+sending off prediction to background worker for resampling and export
+done with val_3460
+
+Predicting val_3468:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.90it/s]
+sending off prediction to background worker for resampling and export
+done with val_3468
+
+Predicting val_3493:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.82it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.16it/s]
+sending off prediction to background worker for resampling and export
+done with val_3493
+
+Predicting val_3567:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.87it/s]
+sending off prediction to background worker for resampling and export
+done with val_3567
+
+Predicting val_3595:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.79it/s]
+sending off prediction to background worker for resampling and export
+done with val_3595
+
+Predicting val_3596:
+perform_everything_on_device: True
+  0%|          | 0/12 [00:00<?, ?it/s] 25%|██▌       | 3/12 [00:00<00:00, 17.99it/s] 42%|████▏     | 5/12 [00:00<00:00, 15.86it/s] 58%|█████▊    | 7/12 [00:00<00:00, 15.09it/s] 75%|███████▌  | 9/12 [00:00<00:00, 14.71it/s] 92%|█████████▏| 11/12 [00:00<00:00, 14.49it/s]100%|██████████| 12/12 [00:00<00:00, 14.91it/s]
+sending off prediction to background worker for resampling and export
+done with val_3596
+
+Predicting val_3602:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.87it/s]
+sending off prediction to background worker for resampling and export
+done with val_3602
+
+Predicting val_3678:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.96it/s]
+sending off prediction to background worker for resampling and export
+done with val_3678
+
+Predicting val_3700:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_3700
+
+Predicting val_3725:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 36.36it/s]
+sending off prediction to background worker for resampling and export
+done with val_3725
+
+Predicting val_3732:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.78it/s]
+sending off prediction to background worker for resampling and export
+done with val_3732
+
+Predicting val_3777:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_3777
+
+Predicting val_3840:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_3840
+
+Predicting val_4047:
+perform_everything_on_device: True
+  0%|          | 0/9 [00:00<?, ?it/s] 33%|███▎      | 3/9 [00:00<00:00, 17.94it/s] 56%|█████▌    | 5/9 [00:00<00:00, 15.82it/s] 78%|███████▊  | 7/9 [00:00<00:00, 15.06it/s]100%|██████████| 9/9 [00:00<00:00, 14.68it/s]100%|██████████| 9/9 [00:00<00:00, 15.16it/s]
+sending off prediction to background worker for resampling and export
+done with val_4047
+
+Predicting val_4193:
+perform_everything_on_device: True
+  0%|          | 0/12 [00:00<?, ?it/s] 25%|██▌       | 3/12 [00:00<00:00, 17.95it/s] 42%|████▏     | 5/12 [00:00<00:00, 15.84it/s] 58%|█████▊    | 7/12 [00:00<00:00, 15.08it/s] 75%|███████▌  | 9/12 [00:00<00:00, 14.70it/s] 92%|█████████▏| 11/12 [00:00<00:00, 14.49it/s]100%|██████████| 12/12 [00:00<00:00, 14.90it/s]
+sending off prediction to background worker for resampling and export
+done with val_4193
+
+Predicting val_5355:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.93it/s]100%|██████████| 4/4 [00:00<00:00, 16.79it/s]
+sending off prediction to background worker for resampling and export
+done with val_5355
+
+Predicting val_5825:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.79it/s]
+sending off prediction to background worker for resampling and export
+done with val_5825
+
+Predicting val_5882:
+perform_everything_on_device: True
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 39.88it/s]
+sending off prediction to background worker for resampling and export
+done with val_5882
+
+Predicting val_6503:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.82it/s]
+sending off prediction to background worker for resampling and export
+done with val_6503
+
+Predicting val_6605:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.89it/s]100%|██████████| 4/4 [00:00<00:00, 16.76it/s]
+sending off prediction to background worker for resampling and export
+done with val_6605
+
+Predicting val_6606:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.95it/s]100%|██████████| 4/4 [00:00<00:00, 16.80it/s]
+sending off prediction to background worker for resampling and export
+done with val_6606
+
+Predicting val_6698:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_6698
+
+Predicting val_6918:
+perform_everything_on_device: True
+  0%|          | 0/4 [00:00<?, ?it/s] 75%|███████▌  | 3/4 [00:00<00:00, 17.96it/s]100%|██████████| 4/4 [00:00<00:00, 16.80it/s]
+sending off prediction to background worker for resampling and export
+done with val_6918
+
+Predicting val_6947:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.81it/s]
+sending off prediction to background worker for resampling and export
+done with val_6947
+
+Predicting val_7253:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.84it/s]
+sending off prediction to background worker for resampling and export
+done with val_7253
+
+Predicting val_7259:
+perform_everything_on_device: True
+  0%|          | 0/6 [00:00<?, ?it/s] 50%|█████     | 3/6 [00:00<00:00, 17.95it/s] 83%|████████▎ | 5/6 [00:00<00:00, 15.83it/s]100%|██████████| 6/6 [00:00<00:00, 15.78it/s]
+sending off prediction to background worker for resampling and export
+done with val_7259
+
+Predicting val_7269:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_7269
+
+Predicting val_7312:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.85it/s]
+sending off prediction to background worker for resampling and export
+done with val_7312
+
+Predicting val_7654:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.83it/s]
+sending off prediction to background worker for resampling and export
+done with val_7654
+
+Predicting val_8253:
+perform_everything_on_device: True
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 20.77it/s]
+sending off prediction to background worker for resampling and export
+done with val_8253
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Collecting results:   0%|          | 0/96 [00:00<?, ?it/s]Collecting results: 100%|██████████| 96/96 [00:00<00:00, 2290.43it/s]
+Segmentation export complete.
+converted 96 predictions to outputs/ablations/r281_low_support_instance_prior/TSRS_RSNA-Epiphysis/val/masks
+{
+  "dice": 0.8979654666302306,
+  "iou": 0.8180890454616453,
+  "precision": 0.9020277612994794,
+  "recall": 0.8990573716668226,
+  "specificity": 0.9974736315884152,
+  "boundary_iou": 0.23433503950083387,
+  "boundary_f1": 0.37310470042301996,
+  "gap_region_fp_rate": 0.18730544838941018,
+  "gap_region_precision": 0.8126945516105898,
+  "component_merge_rate": 0.5104166666666666,
+  "component_count_mae": 2.3333333333333335,
+  "component_delta_mean": -0.3125,
+  "surface_dice_2px": 0.6500555577740447,
+  "surface_dice_5px": 0.9004218820490727,
+  "hd95_px": 16.350588502720633,
+  "assd_px": 6.165031994849731
+}
+{
+  "dice": 0.8932147419675317,
+  "iou": 0.8125486704298375,
+  "precision": 0.8930931486707258,
+  "recall": 0.9018883046144559,
+  "specificity": 0.997218389371918,
+  "boundary_iou": 0.23195455317640434,
+  "boundary_f1": 0.3698596322592838,
+  "gap_region_fp_rate": 0.2098434826551804,
+  "gap_region_precision": 0.7901565173448195,
+  "component_merge_rate": 0.5208333333333334,
+  "component_count_mae": 2.1666666666666665,
+  "component_delta_mean": -0.6041666666666666,
+  "surface_dice_2px": 0.6441103591158356,
+  "surface_dice_5px": 0.898186277244131,
+  "hd95_px": 19.072712023258788,
+  "assd_px": 5.021834040999526
+}
+{
+  "decision": "no_go_use_gradient_normalization",
+  "checks": {
+    "gap_fp_not_worse": false,
+    "merge_not_worse": false,
+    "recall_within_0p004": true,
+    "dice_within_0p003": false,
+    "boundary_iou_within_0p002": false,
+    "surface2_within_0p002": false
+  },
+  "baseline": {
+    "dice": 0.8979654666302306,
+    "iou": 0.8180890454616453,
+    "precision": 0.9020277612994794,
+    "recall": 0.8990573716668226,
+    "specificity": 0.9974736315884152,
+    "boundary_iou": 0.23433503950083387,
+    "boundary_f1": 0.37310470042301996,
+    "gap_region_fp_rate": 0.18730544838941018,
+    "gap_region_precision": 0.8126945516105898,
+    "component_merge_rate": 0.5104166666666666,
+    "component_count_mae": 2.3333333333333335,
+    "component_delta_mean": -0.3125,
+    "surface_dice_2px": 0.6500555577740447,
+    "surface_dice_5px": 0.9004218820490727,
+    "hd95_px": 16.350588502720633,
+    "assd_px": 6.165031994849731
+  },
+  "result": {
+    "dice": 0.8932147419675317,
+    "iou": 0.8125486704298375,
+    "precision": 0.8930931486707258,
+    "recall": 0.9018883046144559,
+    "specificity": 0.997218389371918,
+    "boundary_iou": 0.23195455317640434,
+    "boundary_f1": 0.3698596322592838,
+    "gap_region_fp_rate": 0.2098434826551804,
+    "gap_region_precision": 0.7901565173448195,
+    "component_merge_rate": 0.5208333333333334,
+    "component_count_mae": 2.1666666666666665,
+    "component_delta_mean": -0.6041666666666666,
+    "surface_dice_2px": 0.6441103591158356,
+    "surface_dice_5px": 0.898186277244131,
+    "hd95_px": 19.072712023258788,
+    "assd_px": 5.021834040999526
+  },
+  "delta": {
+    "dice": -0.00475072466269888,
+    "iou": -0.00554037503180782,
+    "precision": -0.008934612628753613,
+    "recall": 0.002830932947633258,
+    "specificity": -0.0002552422164971979,
+    "boundary_iou": -0.002380486324429526,
+    "boundary_f1": -0.0032450681637361534,
+    "gap_region_fp_rate": 0.022538034265770224,
+    "gap_region_precision": -0.02253803426577028,
+    "component_merge_rate": 0.01041666666666674,
+    "component_count_mae": -0.16666666666666696,
+    "component_delta_mean": -0.29166666666666663,
+    "surface_dice_2px": -0.005945198658209083,
+    "surface_dice_5px": -0.002235604804941671,
+    "hd95_px": 2.7221235205381547,
+    "assd_px": -1.1431979538502057
+  },
+  "clean_test_used": false
+}
+{
+  "rendered": 12,
+  "output": "outputs/visualizations/r281_low_support_instance_prior_original_val"
+}
+[R281] done 2026-07-21T18:52:37+08:00

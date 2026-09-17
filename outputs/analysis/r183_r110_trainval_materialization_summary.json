@@ -1,0 +1,20 @@
+{
+  "output_exp": "r110_r100_r108_patch_basic_trainval",
+  "splits": {
+    "train": {
+      "mask_dir": "outputs/ablations_variants/r110_r100_r108_patch_basic_trainval/TSRS_RSNA-Epiphysis/train/masks",
+      "mask_count": 875,
+      "expected_count": 875,
+      "metrics_json": "outputs/analysis/r110_r100_r108_patch_basic_trainval_train_metrics.json",
+      "metrics_exists": true
+    },
+    "val": {
+      "mask_dir": "outputs/ablations_variants/r110_r100_r108_patch_basic_trainval/TSRS_RSNA-Epiphysis/val/masks",
+      "mask_count": 96,
+      "expected_count": 96,
+      "metrics_json": "outputs/analysis/r110_r100_r108_patch_basic_trainval_val_metrics.json",
+      "metrics_exists": true
+    }
+  },
+  "status": "ready"
+}

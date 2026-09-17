@@ -1,0 +1,55 @@
+Some weights of UperNetForSemanticSegmentation were not initialized from the model checkpoint at openmmlab/upernet-convnext-tiny and are newly initialized because the shapes did not match:
+- auxiliary_head.classifier.bias: found shape torch.Size([150]) in the checkpoint and torch.Size([2]) in the model instantiated
+- auxiliary_head.classifier.weight: found shape torch.Size([150, 256, 1, 1]) in the checkpoint and torch.Size([2, 256, 1, 1]) in the model instantiated
+- decode_head.classifier.bias: found shape torch.Size([150]) in the checkpoint and torch.Size([2]) in the model instantiated
+- decode_head.classifier.weight: found shape torch.Size([150, 512, 1, 1]) in the checkpoint and torch.Size([2, 512, 1, 1]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_hf_segformer_segmenter.py:166: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=args.device.startswith("cuda"))
+r157/epoch1:   0%|          | 0/8 [00:00<?, ?it/s]/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_hf_segformer_segmenter.py:183: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.device.startswith("cuda")):
+r157/epoch1:  12%|█▎        | 1/8 [00:00<00:06,  1.15it/s]r157/epoch1:  38%|███▊      | 3/8 [00:01<00:01,  3.62it/s]r157/epoch1:  62%|██████▎   | 5/8 [00:01<00:00,  5.84it/s]r157/epoch1:  88%|████████▊ | 7/8 [00:01<00:00,  7.79it/s]r157/epoch1: 100%|██████████| 8/8 [00:01<00:00,  5.71it/s]
+{"epoch": 1, "train_loss": 2.224449396133423, "val_dice": 0.15599954849644943, "val_precision": 0.08481526491030844, "val_recall": 1.0, "val_specificity": 0.6923702456883969, "val_boundary_iou": 1.3679142044210987e-05, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 16, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+r157/epoch2:   0%|          | 0/8 [00:00<?, ?it/s]r157/epoch2:  12%|█▎        | 1/8 [00:00<00:02,  2.84it/s]r157/epoch2:  38%|███▊      | 3/8 [00:00<00:00,  7.37it/s]r157/epoch2:  62%|██████▎   | 5/8 [00:00<00:00, 10.39it/s]r157/epoch2:  88%|████████▊ | 7/8 [00:00<00:00, 11.85it/s]r157/epoch2: 100%|██████████| 8/8 [00:00<00:00,  9.37it/s]
+{"epoch": 2, "train_loss": 1.9353260546922684, "val_dice": 0.24838797841539817, "val_precision": 0.1432086717651324, "val_recall": 0.998354662765943, "val_specificity": 0.8248332454685702, "val_boundary_iou": 0.007024949218166523, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 0, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+r157/epoch3:   0%|          | 0/8 [00:00<?, ?it/s]r157/epoch3:  12%|█▎        | 1/8 [00:00<00:02,  2.90it/s]r157/epoch3:  38%|███▊      | 3/8 [00:00<00:00,  6.89it/s]r157/epoch3:  62%|██████▎   | 5/8 [00:00<00:00,  9.24it/s]r157/epoch3:  88%|████████▊ | 7/8 [00:00<00:00, 10.62it/s]r157/epoch3: 100%|██████████| 8/8 [00:00<00:00,  8.70it/s]
+{"epoch": 3, "train_loss": 1.7153504639863968, "val_dice": 0.30730370517715705, "val_precision": 0.18456699712050728, "val_recall": 0.9988277142136488, "val_specificity": 0.8693239108928498, "val_boundary_iou": 0.008849936718895054, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 8, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+r157/epoch4:   0%|          | 0/8 [00:00<?, ?it/s]r157/epoch4:  12%|█▎        | 1/8 [00:00<00:02,  2.78it/s]r157/epoch4:  38%|███▊      | 3/8 [00:00<00:00,  7.02it/s]r157/epoch4:  62%|██████▎   | 5/8 [00:00<00:00,  9.16it/s]r157/epoch4:  88%|████████▊ | 7/8 [00:00<00:00, 10.58it/s]r157/epoch4: 100%|██████████| 8/8 [00:00<00:00,  8.68it/s]
+{"epoch": 4, "train_loss": 1.5189514011144638, "val_dice": 0.3733681330781212, "val_precision": 0.23367010039857994, "val_recall": 0.9970644912793756, "val_specificity": 0.9024370392743047, "val_boundary_iou": 0.015602310911854577, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 8, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+r157/epoch5:   0%|          | 0/8 [00:00<?, ?it/s]r157/epoch5:  12%|█▎        | 1/8 [00:00<00:02,  2.81it/s]r157/epoch5:  38%|███▊      | 3/8 [00:00<00:00,  6.91it/s]r157/epoch5:  62%|██████▎   | 5/8 [00:00<00:00,  9.23it/s]r157/epoch5:  88%|████████▊ | 7/8 [00:00<00:00, 10.54it/s]r157/epoch5: 100%|██████████| 8/8 [00:00<00:00,  8.68it/s]
+{"epoch": 5, "train_loss": 1.3782841712236404, "val_dice": 0.4583975263772242, "val_precision": 0.3026948970797682, "val_recall": 0.9889025227755572, "val_specificity": 0.9321335683971219, "val_boundary_iou": 0.032388095259658176, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 8, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+r157/epoch6:   0%|          | 0/8 [00:00<?, ?it/s]r157/epoch6:  12%|█▎        | 1/8 [00:00<00:02,  2.79it/s]r157/epoch6:  38%|███▊      | 3/8 [00:00<00:00,  6.83it/s]r157/epoch6:  62%|██████▎   | 5/8 [00:00<00:00,  9.23it/s]r157/epoch6:  88%|████████▊ | 7/8 [00:00<00:00, 10.58it/s]r157/epoch6: 100%|██████████| 8/8 [00:00<00:00,  8.63it/s]
+{"epoch": 6, "train_loss": 1.2576870173215866, "val_dice": 0.49709155458270027, "val_precision": 0.33629530278135616, "val_recall": 0.9847561910907952, "val_specificity": 0.943247273835644, "val_boundary_iou": 0.040058627390603105, "val_false_bridge_flag": 1.0, "threshold": 0.7, "min_component_area": 0, "model_name": "openmmlab/upernet-convnext-tiny", "hf_arch": "upernet"}
+/home/shenzeyu/workspace/YOLO_SAM_generic_src/scripts/train_hf_segformer_segmenter.py:246: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(checkpoint, map_location=args.device)
+infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:   0%|          | 0/4 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  25%|██▌       | 1/4 [00:00<00:00,  3.27it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  50%|█████     | 2/4 [00:00<00:00,  3.12it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test:  75%|███████▌  | 3/4 [00:00<00:00,  3.40it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 4/4 [00:01<00:00,  3.59it/s]infer/TSRS_RSNA-Epiphysis_clean_test_v2/test: 100%|██████████| 4/4 [00:01<00:00,  3.46it/s]
+infer/TSRS_RSNA-Epiphysis/test:   0%|          | 0/4 [00:00<?, ?it/s]infer/TSRS_RSNA-Epiphysis/test:  25%|██▌       | 1/4 [00:00<00:00,  3.64it/s]infer/TSRS_RSNA-Epiphysis/test:  50%|█████     | 2/4 [00:00<00:00,  3.27it/s]infer/TSRS_RSNA-Epiphysis/test:  75%|███████▌  | 3/4 [00:00<00:00,  3.46it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 4/4 [00:01<00:00,  3.61it/s]infer/TSRS_RSNA-Epiphysis/test: 100%|██████████| 4/4 [00:01<00:00,  3.54it/s]
+{
+  "best_epoch": 6,
+  "threshold": 0.7,
+  "min_component_area": 0,
+  "clean_test_v2": {
+    "dice": 0.45022749255503003,
+    "iou": 0.29100296730046515,
+    "precision": 0.29287324382568963,
+    "recall": 0.9805576898133557,
+    "specificity": 0.9514673305362813,
+    "boundary_iou": 0.017133274030158716,
+    "pred_component_count": 14.5,
+    "gt_component_count": 26.0,
+    "component_count_error": 11.5,
+    "false_bridge_flag": 1.0
+  },
+  "original_test": {
+    "dice": 0.45022749255503003,
+    "iou": 0.29100296730046515,
+    "precision": 0.29287324382568963,
+    "recall": 0.9805576898133557,
+    "specificity": 0.9514673305362813,
+    "boundary_iou": 0.017133274030158716,
+    "pred_component_count": 14.5,
+    "gt_component_count": 26.0,
+    "component_count_error": 11.5,
+    "false_bridge_flag": 1.0
+  }
+}

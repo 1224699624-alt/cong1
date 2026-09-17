@@ -1,0 +1,214 @@
+{
+  "run_id": "R251-reverse-background-candidate-selector",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "scope_validation": {
+    "dataset_root": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis",
+    "train_split": "train",
+    "eval_split": "val",
+    "clean_test_v2_used": false
+  },
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "inference_inputs": [
+    "image",
+    "anchor"
+  ],
+  "gt_allowed_at_inference": false,
+  "train_info": {
+    "requested_images": 2,
+    "used_images": 2,
+    "skipped_missing_anchor": 0,
+    "skipped_single_class": 0,
+    "anchor_pixels": 119430,
+    "background_positive_pixels": 489,
+    "bone_negative_pixels": 52625,
+    "case_names": [
+      "10003.png",
+      "10004.png"
+    ],
+    "per_region_counts": [
+      {
+        "image": "10003.png",
+        "corridor": 363,
+        "positive": 119,
+        "corridor_negative": 244,
+        "ring_negative": 1249,
+        "interior_negative": 15643,
+        "hard_negative": 17136
+      },
+      {
+        "image": "10004.png",
+        "corridor": 866,
+        "positive": 370,
+        "corridor_negative": 496,
+        "ring_negative": 2223,
+        "interior_negative": 32770,
+        "hard_negative": 35489
+      }
+    ],
+    "num_samples": 8192,
+    "sample_positive_rate": 0.5,
+    "raw_positive_rate_inside_anchor": 0.004094448630997237
+  },
+  "train_selection_audit": [
+    {
+      "image": "10003.png",
+      "selected": true,
+      "corridor": 363,
+      "positive": 119,
+      "corridor_negative": 244,
+      "ring_negative": 1249,
+      "interior_negative": 15643,
+      "hard_negative": 17136
+    },
+    {
+      "image": "10004.png",
+      "selected": true,
+      "corridor": 866,
+      "positive": 370,
+      "corridor_negative": 496,
+      "ring_negative": 2223,
+      "interior_negative": 32770,
+      "hard_negative": 35489
+    }
+  ],
+  "num_candidate_rows": 21,
+  "num_candidate_images": 2,
+  "num_safe_useful": 4,
+  "num_risk": 17,
+  "num_passing_configs": 0,
+  "best": {
+    "mean_threshold": 0.5334273221324519,
+    "p10_threshold": 0.0003846038120306546,
+    "selected": 1,
+    "selected_images": 1,
+    "safe_useful": 0,
+    "risk": 1,
+    "mean_delta_dice": 0.00026481928339527894,
+    "mean_delta_iou": 0.000439827455381514,
+    "mean_delta_recall": -3.707136237263153e-05,
+    "mean_delta_boundary_iou": 0.0015328638885598878,
+    "mean_delta_boundary_f1": 0.0018716198218633462,
+    "mean_delta_gap_region_fp_rate": -0.0009318642767088825,
+    "mean_delta_component_count_mae": 0.0,
+    "mean_cut_gt_fg_frac": 0.05555555555555555,
+    "mean_cut_gt_gap_frac": 0.9444444444444444,
+    "meets_metric_gate": false,
+    "passes_gate": false
+  },
+  "coverage": {
+    "expected_images": 2,
+    "expected_image_names": [
+      "10375.png",
+      "10520.png"
+    ],
+    "processed_images": 2,
+    "processed_image_names": [
+      "10375.png",
+      "10520.png"
+    ],
+    "zero_candidate_images": [],
+    "skipped": [],
+    "complete": true,
+    "is_fullval": false
+  },
+  "calibration": {
+    "num_rows": 21,
+    "mean_score": {
+      "min": 0.10928009892078791,
+      "max": 0.6472775618508333,
+      "quantiles": {
+        "q00": 0.10928009892078791,
+        "q01": 0.11256077062868672,
+        "q05": 0.12568345746028192,
+        "q10": 0.15177699337063907,
+        "q25": 0.24891841060836759,
+        "q50": 0.3476529149078291,
+        "q75": 0.4171221705777252,
+        "q90": 0.5275746893831715,
+        "q95": 0.5334273221324519,
+        "q99": 0.6245075139071571,
+        "q100": 0.6472775618508333
+      }
+    },
+    "p10_score": {
+      "min": 0.0003846038120306546,
+      "max": 0.2880966305330956,
+      "quantiles": {
+        "q00": 0.0003846038120306546,
+        "q01": 0.0003846038120306546,
+        "q05": 0.0003846038120306546,
+        "q10": 0.0003846038120306546,
+        "q25": 0.0003846038120306546,
+        "q50": 0.00332931517296266,
+        "q75": 0.03261475532643252,
+        "q90": 0.052515961220661996,
+        "q95": 0.08452409952223475,
+        "q99": 0.24738212433092355,
+        "q100": 0.2880966305330956
+      }
+    },
+    "safe_useful": {
+      "positive_rows": 4,
+      "roc_auc": 0.2647058823529412,
+      "average_precision": 0.2398705096073517
+    },
+    "risk": {
+      "positive_rows": 17,
+      "score_definition": "1 - r251_bg_prob_mean",
+      "roc_auc": 0.2647058823529412,
+      "average_precision": 0.7009591081231038
+    }
+  },
+  "threshold_grid": {
+    "mean_thresholds": [
+      0.12568345746028192,
+      0.15177699337063907,
+      0.24891841060836759,
+      0.3476529149078291,
+      0.4171221705777252,
+      0.5,
+      0.5275746893831715,
+      0.5334273221324519,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      0.98
+    ],
+    "p10_thresholds": [
+      0.0003846038120306546,
+      0.00332931517296266,
+      0.03261475532643252,
+      0.052515961220661996,
+      0.08452409952223475,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ]
+  },
+  "reproducibility": {
+    "seed": 202607251,
+    "numpy": "1.26.4",
+    "sklearn": "1.9.0",
+    "feature_source": "audit_r228_oracle_pixel_seam_localizer.feature_stack",
+    "train_case_names": [
+      "10003.png",
+      "10004.png"
+    ],
+    "dist_percentiles": "6,8,10,12",
+    "train_max_candidates_per_percentile": 16,
+    "eval_max_candidates_per_percentile": 16
+  },
+  "decision": "no_go_dense_reverse_background_selector_not_clean_enough",
+  "promotion_gate": "Only a passing full original-val config may proceed to isolated masks and R201 audit; clean-test-v2 remains locked.",
+  "timestamped_output_json": "outputs/analysis/r251_reverse_background_candidate_selector_smoke_20260710_154107.json"
+}

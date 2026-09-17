@@ -1,0 +1,53 @@
+{
+  "run_id": "R248-F0-r244-context-crop-scorer",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "split": "val",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "evidence_level": "original_val_r244_candidate_context_crop_grouped_cv",
+  "num_candidate_rows": 10,
+  "num_candidate_images": 2,
+  "num_crops": 10,
+  "num_safe_useful": 1,
+  "num_risk": 9,
+  "device": "cpu",
+  "crop_size": 56,
+  "epochs": 1,
+  "grouped_cv": {
+    "skipped": false,
+    "folds": 2,
+    "fold_summaries": [
+      {
+        "fold": 1,
+        "train_images": 1,
+        "val_images": 1,
+        "train_rows": 2,
+        "val_rows": 8
+      },
+      {
+        "fold": 2,
+        "train_images": 1,
+        "val_images": 1,
+        "train_rows": 8,
+        "val_rows": 2
+      }
+    ],
+    "best": null,
+    "num_passing_configs": 0
+  },
+  "skipped": [
+    {
+      "image": "10520.png",
+      "reason": "UnidentifiedImageError",
+      "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\10520.png'"
+    },
+    {
+      "image": "10624.png",
+      "reason": "UnidentifiedImageError",
+      "message": "cannot identify image file 'data\\\\raw\\\\TSRS_RSNA-Epiphysis\\\\val\\\\10624.png'"
+    }
+  ],
+  "promotion_gate": "Only if grouped-CV best passes on full original-val, build isolated original-val mask editor; no clean-test-v2 tuning.",
+  "warning": "Candidate generation is GT-free; GT labels/metrics are original-val audit only."
+}

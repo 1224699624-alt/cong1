@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-17",
+  "files": [
+    {
+      "path": "scripts/r351_dual_prior.py",
+      "bytes": 8328,
+      "sha256": "3ff1f968f96b57ed1bb12a6eb479dd169fd5ddb35d20efc8cff43430e20843e2"
+    },
+    {
+      "path": "scripts/r351_data.py",
+      "bytes": 1501,
+      "sha256": "d05e3da858a2dec53007282310dab4f595d0de96b51f614603d54fe20818cfd8"
+    },
+    {
+      "path": "scripts/train_r351_overlap_prior.py",
+      "bytes": 4304,
+      "sha256": "25ed6d60e2d8fd231c77b2909ff580e0bdaddff46f9cea7e454c69fb1027958a"
+    },
+    {
+      "path": "scripts/train_r351_ram_dual_prior.py",
+      "bytes": 45329,
+      "sha256": "b7a3cdafd479b2fa00c03bd4912e0360943b26dcaec89bd0f85d4643f86fa252"
+    },
+    {
+      "path": "scripts/r351_evaluation.py",
+      "bytes": 38771,
+      "sha256": "c61eb5c6179943bc1e9bed62335295e8196a8a5a97ca49e054aaff0d0c5b2034"
+    },
+    {
+      "path": "scripts/test_r351_dual_prior.py",
+      "bytes": 3504,
+      "sha256": "0274707d1be3df5219d7e862d8d14bbdc4eb0ae02f31f824f3d0b7bb97f33f77"
+    },
+    {
+      "path": "scripts/test_r351_evaluation.py",
+      "bytes": 9557,
+      "sha256": "3ce787c77decea994c01d47ca58faf33a4a9e557ddc40ec24dd5fe45eca73fe2"
+    },
+    {
+      "path": "scripts/summarize_r351_tsrs.py",
+      "bytes": 2738,
+      "sha256": "3a7e981d81fb96fffde99c102b9f6c30aaa5def48927c4b0f0600097c82407d3"
+    },
+    {
+      "path": "scripts/nnunet_trainers/nnUNetTrainerR351DualPrior.py",
+      "bytes": 7830,
+      "sha256": "3bc4db5f97d6334d770c592996f5cc9b9a6a6ee24388364dd66f03d18aebfb95"
+    },
+    {
+      "path": "run_r351_tsrs_dual_prior.sh",
+      "bytes": 2483,
+      "sha256": "52a102b9b2a131baa5fb1349f8fbdebab74d34fa3e5cc711c0a45065de6dbfb4"
+    },
+    {
+      "path": "run_r351_tsrs_positive_guard.sh",
+      "bytes": 2065,
+      "sha256": "c8d14e499f6c450e01e8bef641f5c8d901a8332b6c04c5f62b5cf40fa06aae53"
+    },
+    {
+      "path": "run_r351_ram_dual_prior.sh",
+      "bytes": 809,
+      "sha256": "6a0e7f2a66193212c95a8e602bb0a0b6fd35ba4f0bc6f685d4d6d6861e713f5b"
+    },
+    {
+      "path": "research-workflow/refine-logs/R351_EXPERIMENT_PLAN_20260917.md",
+      "bytes": 3712,
+      "sha256": "501c784be44da00710a9203fc06904a778db4355548735ce557f0ace1fd4bce2"
+    },
+    {
+      "path": "research-workflow/refine-logs/R351_TRACKER.md",
+      "bytes": 2823,
+      "sha256": "83486f9d4eb66826cbdc9143d7ab958ad8bf59dae279c788a039da188e0ba093"
+    },
+    {
+      "path": "research-workflow/refine-logs/R351_EXPERIMENT_CODE_REVIEW.md",
+      "bytes": 2588,
+      "sha256": "7d20c9042295e6bbdf779eb00be300a368593138ef09ad81d4424250cafaa779"
+    },
+    {
+      "path": "research-workflow/refine-logs/R351_EVALUATION_NOTES.md",
+      "bytes": 6567,
+      "sha256": "47687f55466e7084b07cd2229ec682c8eb1f94d101e9422c24c780e6b622682d"
+    },
+    {
+      "path": "research-workflow/refine-logs/R351_BACKBONE_CONTRACT.md",
+      "bytes": 1232,
+      "sha256": "2be0b6c2f76bfe51c8f8d510f2b5e6629dd368be3c0d7412ed28bf6bcada9298"
+    },
+    {
+      "path": "research-wiki/experiments/r351_dual_prior_nnunet.md",
+      "bytes": 1596,
+      "sha256": "c6ffd3920c576bfbd597406a4b1670ab59e29c65c1ee81af13568182782637d8"
+    }
+  ]
+}

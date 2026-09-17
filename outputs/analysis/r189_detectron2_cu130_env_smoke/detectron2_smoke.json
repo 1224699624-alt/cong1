@@ -1,0 +1,10 @@
+{
+  "status": "detectron2_import_ok",
+  "detectron2_version": "0.6",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "nms_keep": [
+    0
+  ]
+}

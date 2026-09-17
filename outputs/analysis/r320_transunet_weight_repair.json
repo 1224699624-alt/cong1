@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "local": {
+    "size": 461217452,
+    "entries": 358,
+    "arrays": 358,
+    "sha256": "ff009bf39bb4f9198b834cfe46aba2bfdaf730e933ab3e3c4b1edf4226eaafbe"
+  },
+  "remote": {
+    "size": 461217452,
+    "entries": 358,
+    "arrays": 358,
+    "sha256": "ff009bf39bb4f9198b834cfe46aba2bfdaf730e933ab3e3c4b1edf4226eaafbe",
+    "final": "/root/autodl-tmp/external/checkpoints/R50_ViT-B_16.npz"
+  },
+  "elapsed_seconds": 1377.0856187343597,
+  "queue_restarted": true
+}

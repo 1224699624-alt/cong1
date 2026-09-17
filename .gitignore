@@ -1,0 +1,32 @@
+# Python and local runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runs/
+.tmp/
+tmp/
+
+# Keep experiment records in Git; keep large/rebuildable tensors local.
+outputs/**/*.npy
+outputs/**/*.b2nd
+outputs/**/*.pkl
+outputs/**/*.pth
+outputs/**/*.pt
+outputs/**/*.tar
+outputs/**/*.tar.gz
+outputs/**/predictions/
+outputs/**/predictions_*/
+outputs/**/masks/
+outputs/**/masks_*/
+outputs/**/nnUNet_raw/
+outputs/**/nnUNet_preprocessed/
+outputs/**/imagesVal/
+outputs/**/imagesValPrior/
+
+# Checkpoints and private/large medical data stay in the local backup.
+checkpoints/*.pth
+checkpoints/*.pt
+data/raw/
+data/raw_variants/
+data/remote_variants/
+data/yolo/

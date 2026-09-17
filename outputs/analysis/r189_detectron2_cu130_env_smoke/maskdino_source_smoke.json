@@ -1,0 +1,8 @@
+{
+  "status": "maskdino_source_ready",
+  "existing": {
+    "external_src/MaskDINO/maskdino": true,
+    "external_src/MaskDINO/train_net.py": true,
+    "external_src/MaskDINO/configs": true
+  }
+}

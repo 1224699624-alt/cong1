@@ -1,0 +1,26 @@
+r251/reverse-bg-candidates/val:   0%|          | 0/2 [00:00<?, ?it/s]r251/reverse-bg-candidates/val:  50%|█████     | 1/2 [00:15<00:15, 15.41s/it]r251/reverse-bg-candidates/val: 100%|██████████| 2/2 [00:39<00:00, 20.27s/it]r251/reverse-bg-candidates/val: 100%|██████████| 2/2 [00:39<00:00, 19.54s/it]
+{
+  "output_json": "outputs/analysis/r251_reverse_background_candidate_selector_smoke.json",
+  "candidate_csv": "outputs/analysis/r251_reverse_background_candidate_selector_smoke_candidates.csv",
+  "grid_csv": "outputs/analysis/r251_reverse_background_candidate_selector_smoke_grid.csv",
+  "num_passing_configs": 0,
+  "best": {
+    "mean_threshold": 0.5334273221324519,
+    "p10_threshold": 0.0003846038120306546,
+    "selected": 1,
+    "selected_images": 1,
+    "safe_useful": 0,
+    "risk": 1,
+    "mean_delta_dice": 0.00026481928339527894,
+    "mean_delta_iou": 0.000439827455381514,
+    "mean_delta_recall": -3.707136237263153e-05,
+    "mean_delta_boundary_iou": 0.0015328638885598878,
+    "mean_delta_boundary_f1": 0.0018716198218633462,
+    "mean_delta_gap_region_fp_rate": -0.0009318642767088825,
+    "mean_delta_component_count_mae": 0.0,
+    "mean_cut_gt_fg_frac": 0.05555555555555555,
+    "mean_cut_gt_gap_frac": 0.9444444444444444,
+    "meets_metric_gate": false,
+    "passes_gate": false
+  }
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "G:\gutou\YOLO+SAM\scripts\train_r258b_prediction_relation_prior.py", line 23, in <module>
+    from sklearn.metrics import average_precision_score, roc_auc_score
+ModuleNotFoundError: No module named 'sklearn'
+R317 R260 prior retraining failed
+ËùÔÚÎ»ÖÃ G:\gutou\YOLO+SAM\run_r317_clean_r260_retrain_local.ps1:25 ×Ö·û: 28
++ ... f ($LASTEXITCODE -ne 0) { throw "R317 R260 prior retraining failed" }
++                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (R317 R260 prior retraining failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : R317 R260 prior retraining failed
+ 

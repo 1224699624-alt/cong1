@@ -1,0 +1,235 @@
+{
+  "run_id": "R175",
+  "purpose": "Bridge/boundary claim metric audit for epiphysis segmentation.",
+  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+  "split": "test",
+  "rule": "clean-test-v2 is final evaluation/diagnostic only; do not tune thresholds from this file.",
+  "claim_metrics": {
+    "primary": [
+      "dice",
+      "boundary_iou",
+      "false_bridge_flag",
+      "component_count_error"
+    ],
+    "mask_available_extra": [
+      "boundary_f1",
+      "separation_band_fp_rate",
+      "separation_band_precision"
+    ]
+  },
+  "rankings": {
+    "dice_desc": [
+      "R110 current best",
+      "R100 patch complement",
+      "R090 patch arbitrator",
+      "R143 high-res medical recipe",
+      "R130 bridge penalty source",
+      "R165 filtered reannotation source",
+      "R140 reviewed variant source"
+    ],
+    "boundary_iou_desc": [
+      "R110 current best",
+      "R100 patch complement",
+      "R090 patch arbitrator",
+      "R165 filtered reannotation source",
+      "R130 bridge penalty source",
+      "R140 reviewed variant source",
+      "R143 high-res medical recipe"
+    ],
+    "precision_desc": [
+      "R110 current best",
+      "R100 patch complement",
+      "R090 patch arbitrator",
+      "R165 filtered reannotation source",
+      "R130 bridge penalty source",
+      "R140 reviewed variant source",
+      "R143 high-res medical recipe"
+    ],
+    "false_bridge_asc": [
+      "R140 reviewed variant source",
+      "R165 filtered reannotation source",
+      "R130 bridge penalty source",
+      "R143 high-res medical recipe",
+      "R110 current best",
+      "R100 patch complement",
+      "R090 patch arbitrator"
+    ]
+  },
+  "experiments": [
+    {
+      "name": "R038 anchor",
+      "metrics_json": "outputs\\analysis\\r038_aggr_r1_t045_m000_clean_test_v2_metrics.json",
+      "metrics": {
+        "exists": false,
+        "path": "outputs\\analysis\\r038_aggr_r1_t045_m000_clean_test_v2_metrics.json"
+      }
+    },
+    {
+      "name": "R090 patch arbitrator",
+      "metrics_json": "outputs\\analysis\\r090_online_patch_disagreement_arbitrator_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r090_online_patch_disagreement_arbitrator_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.9164396820551889,
+          "iou": 0.8463133152090138,
+          "precision": 0.9062706341293654,
+          "recall": 0.9280801074088797,
+          "specificity": 0.9969269020388343,
+          "boundary_iou": 0.2513660615847711
+        },
+        "counts": {
+          "dice_below_090": 16,
+          "boundary_iou_below_020": 28
+        }
+      }
+    },
+    {
+      "name": "R100 patch complement",
+      "metrics_json": "outputs\\analysis\\r100_r095b_r097_patch_basic_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r100_r095b_r097_patch_basic_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.917618228684529,
+          "iou": 0.848393935794834,
+          "precision": 0.9126864980058095,
+          "recall": 0.9240391829053347,
+          "specificity": 0.9970466776606388,
+          "boundary_iou": 0.2517593711468095
+        },
+        "counts": {
+          "dice_below_090": 15,
+          "boundary_iou_below_020": 29
+        }
+      }
+    },
+    {
+      "name": "R110 current best",
+      "metrics_json": "outputs\\analysis\\r110_r100_r108_patch_basic_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r110_r100_r108_patch_basic_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.9177231563529792,
+          "iou": 0.8485699269403064,
+          "precision": 0.9133430396452401,
+          "recall": 0.9235799440017021,
+          "specificity": 0.9970747481135067,
+          "boundary_iou": 0.25189601044085763
+        },
+        "counts": {
+          "dice_below_090": 15,
+          "boundary_iou_below_020": 29
+        }
+      }
+    },
+    {
+      "name": "R130 bridge penalty source",
+      "metrics_json": "outputs\\analysis\\r130_dinov3_bridge_suppressed_instance_sep_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r130_dinov3_bridge_suppressed_instance_sep_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.8909381313570002,
+          "iou": 0.8038970150843547,
+          "precision": 0.8557649464752524,
+          "recall": 0.9311928242959249,
+          "specificity": 0.9949381195758947,
+          "boundary_iou": 0.18067213166331342,
+          "pred_component_count": 23.14814814814815,
+          "gt_component_count": 23.666666666666668,
+          "component_count_error": 1.0617283950617284,
+          "false_bridge_flag": 0.4444444444444444
+        },
+        "counts": {
+          "dice_below_090": 52,
+          "boundary_iou_below_020": 47,
+          "false_bridge_cases": 36
+        }
+      }
+    },
+    {
+      "name": "R140 reviewed variant source",
+      "metrics_json": "outputs\\analysis\\r140_reviewed_variant_dinov3_instance_sep_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r140_reviewed_variant_dinov3_instance_sep_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.8855000712919942,
+          "iou": 0.7950782919599647,
+          "precision": 0.8541566700055747,
+          "recall": 0.9208527446305403,
+          "specificity": 0.9950521065547214,
+          "boundary_iou": 0.17443862969724094,
+          "pred_component_count": 23.160493827160494,
+          "gt_component_count": 23.666666666666668,
+          "component_count_error": 1.123456790123457,
+          "false_bridge_flag": 0.43209876543209874
+        },
+        "counts": {
+          "dice_below_090": 63,
+          "boundary_iou_below_020": 54,
+          "false_bridge_cases": 35
+        }
+      }
+    },
+    {
+      "name": "R143 high-res medical recipe",
+      "metrics_json": "outputs\\analysis\\r143_highres_medical_recipe_unet_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r143_highres_medical_recipe_unet_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.8913745464011716,
+          "iou": 0.8046297351855947,
+          "precision": 0.8217583056180966,
+          "recall": 0.9757026511463872,
+          "specificity": 0.9931672362980934,
+          "boundary_iou": 0.16139215426856782,
+          "pred_component_count": 20.40740740740741,
+          "gt_component_count": 23.666666666666668,
+          "component_count_error": 3.2839506172839505,
+          "false_bridge_flag": 0.8271604938271605
+        },
+        "counts": {
+          "dice_below_090": 51,
+          "boundary_iou_below_020": 58,
+          "false_bridge_cases": 67
+        }
+      }
+    },
+    {
+      "name": "R165 filtered reannotation source",
+      "metrics_json": "outputs\\analysis\\r165_filtered_reannotated_dinov3_instance_sep_clean_test_v2_metrics.json",
+      "metrics": {
+        "path": "outputs\\analysis\\r165_filtered_reannotated_dinov3_instance_sep_clean_test_v2_metrics.json",
+        "exists": true,
+        "num_evaluated": 81,
+        "mean": {
+          "dice": 0.8903028393595949,
+          "iou": 0.8029255739205072,
+          "precision": 0.878264802813878,
+          "recall": 0.9050498031393276,
+          "specificity": 0.9959965236548433,
+          "boundary_iou": 0.1849899312529587,
+          "pred_component_count": 23.02469135802469,
+          "gt_component_count": 23.666666666666668,
+          "component_count_error": 1.1851851851851851,
+          "false_bridge_flag": 0.4444444444444444
+        },
+        "counts": {
+          "dice_below_090": 47,
+          "boundary_iou_below_020": 48,
+          "false_bridge_cases": 36
+        }
+      }
+    }
+  ]
+}

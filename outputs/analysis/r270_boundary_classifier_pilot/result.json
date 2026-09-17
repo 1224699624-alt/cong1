@@ -1,0 +1,124 @@
+{
+  "run_id": "R270_boundary_classifier_pilot",
+  "train_source": "outputs\\analysis\\r269_wrist_internal_merge_roi_train96\\candidates.csv",
+  "val_source": "outputs\\analysis\\r269_wrist_internal_merge_roi_fullval\\candidates.csv",
+  "clean_test_used": false,
+  "features": [
+    "neck_score",
+    "saddle_score",
+    "gray_valley_score",
+    "two_side_support",
+    "basin_balance",
+    "score",
+    "peak_min"
+  ],
+  "device": "cuda",
+  "epochs": 250,
+  "label_rule": {
+    "positive_interinstance_ge": 0.02,
+    "negative_interinstance_le": 0.005,
+    "positive_destructive_le": 1.0
+  },
+  "train": {
+    "n": 139,
+    "positive": 6,
+    "t0.50_precision": 0.2,
+    "t0.50_recall": 1.0,
+    "t0.50_selected": 30,
+    "t0.60_precision": 0.2608695652173913,
+    "t0.60_recall": 1.0,
+    "t0.60_selected": 23,
+    "t0.70_precision": 0.38461538461538464,
+    "t0.70_recall": 0.8333333333333334,
+    "t0.70_selected": 13,
+    "t0.80_precision": 0.3333333333333333,
+    "t0.80_recall": 0.3333333333333333,
+    "t0.80_selected": 6,
+    "t0.90_precision": 0.0,
+    "t0.90_recall": 0.0,
+    "t0.90_selected": 0
+  },
+  "original_val": {
+    "n": 160,
+    "positive": 10,
+    "t0.50_precision": 0.25,
+    "t0.50_recall": 0.6,
+    "t0.50_selected": 24,
+    "t0.60_precision": 0.2777777777777778,
+    "t0.60_recall": 0.5,
+    "t0.60_selected": 18,
+    "t0.70_precision": 0.3333333333333333,
+    "t0.70_recall": 0.4,
+    "t0.70_selected": 12,
+    "t0.80_precision": 0.3333333333333333,
+    "t0.80_recall": 0.2,
+    "t0.80_selected": 6,
+    "t0.90_precision": 0.0,
+    "t0.90_recall": 0.0,
+    "t0.90_selected": 2
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.4982553720474243
+    },
+    {
+      "epoch": 25,
+      "loss": 1.276463508605957
+    },
+    {
+      "epoch": 50,
+      "loss": 1.1644601821899414
+    },
+    {
+      "epoch": 75,
+      "loss": 1.0761773586273193
+    },
+    {
+      "epoch": 100,
+      "loss": 1.0058313608169556
+    },
+    {
+      "epoch": 125,
+      "loss": 0.9577847719192505
+    },
+    {
+      "epoch": 150,
+      "loss": 0.8354659676551819
+    },
+    {
+      "epoch": 175,
+      "loss": 0.7774217128753662
+    },
+    {
+      "epoch": 200,
+      "loss": 0.6896919012069702
+    },
+    {
+      "epoch": 225,
+      "loss": 0.6510707139968872
+    },
+    {
+      "epoch": 250,
+      "loss": 0.6076155304908752
+    }
+  ],
+  "normalization_mean": [
+    0.2067677527666092,
+    0.2067677527666092,
+    0.04171467572450638,
+    0.14810366928577423,
+    0.05846546217799187,
+    0.15670490264892578,
+    29.521804809570312
+  ],
+  "normalization_std": [
+    0.24157273769378662,
+    0.24157273769378662,
+    0.050830740481615067,
+    0.19113022089004517,
+    0.14333905279636383,
+    0.1755170077085495,
+    9.037273406982422
+  ]
+}

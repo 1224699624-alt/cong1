@@ -1,0 +1,311 @@
+{
+  "run_id": "R251-S0-reverse-background-channel-sanity",
+  "dataset": "TSRS_RSNA-Epiphysis",
+  "train_split": "train",
+  "eval_split": "train",
+  "anchor_exp": "r110_r100_r108_patch_basic_trainval",
+  "clean_test_v2_used": false,
+  "writes_masks": false,
+  "scope_validation": {
+    "dataset_root": "/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis",
+    "train_split": "train",
+    "eval_split": "train",
+    "clean_test_v2_used": false,
+    "validated_original_raw": true
+  },
+  "target_definition": "positive = GT-free candidate corridor AND NOT bone_GT; negatives = bone_GT in corridor/ring/interior",
+  "inference_inputs": [
+    "image",
+    "anchor"
+  ],
+  "gt_allowed_at_inference": false,
+  "train_info": {
+    "requested_images": 8,
+    "used_images": 8,
+    "skipped_missing_anchor": 0,
+    "skipped_single_class": 0,
+    "anchor_pixels": 588216,
+    "background_positive_pixels": 3740,
+    "bone_negative_pixels": 260049,
+    "case_names": [
+      "10003.png",
+      "10004.png",
+      "10015.png",
+      "10043.png",
+      "10055.png",
+      "10066.png",
+      "10144.png",
+      "10474.png"
+    ],
+    "per_region_counts": [
+      {
+        "image": "10003.png",
+        "corridor": 383,
+        "positive": 135,
+        "corridor_negative": 248,
+        "ring_negative": 1325,
+        "interior_negative": 15643,
+        "hard_negative": 17216
+      },
+      {
+        "image": "10004.png",
+        "corridor": 1164,
+        "positive": 459,
+        "corridor_negative": 705,
+        "ring_negative": 3350,
+        "interior_negative": 32770,
+        "hard_negative": 36825
+      },
+      {
+        "image": "10015.png",
+        "corridor": 343,
+        "positive": 102,
+        "corridor_negative": 241,
+        "ring_negative": 1199,
+        "interior_negative": 14431,
+        "hard_negative": 15871
+      },
+      {
+        "image": "10043.png",
+        "corridor": 169,
+        "positive": 66,
+        "corridor_negative": 103,
+        "ring_negative": 690,
+        "interior_negative": 11725,
+        "hard_negative": 12517
+      },
+      {
+        "image": "10055.png",
+        "corridor": 1626,
+        "positive": 789,
+        "corridor_negative": 837,
+        "ring_negative": 3722,
+        "interior_negative": 40239,
+        "hard_negative": 44798
+      },
+      {
+        "image": "10066.png",
+        "corridor": 371,
+        "positive": 222,
+        "corridor_negative": 149,
+        "ring_negative": 892,
+        "interior_negative": 18810,
+        "hard_negative": 19851
+      },
+      {
+        "image": "10144.png",
+        "corridor": 1714,
+        "positive": 804,
+        "corridor_negative": 910,
+        "ring_negative": 3914,
+        "interior_negative": 35376,
+        "hard_negative": 40200
+      },
+      {
+        "image": "10474.png",
+        "corridor": 2605,
+        "positive": 1163,
+        "corridor_negative": 1442,
+        "ring_negative": 4534,
+        "interior_negative": 66795,
+        "hard_negative": 72771
+      }
+    ],
+    "num_samples": 32768,
+    "sample_positive_rate": 0.5,
+    "raw_positive_rate_inside_anchor": 0.006358208549240415
+  },
+  "eval_info": {
+    "used_images": 8,
+    "missing_anchors": 0,
+    "num_samples": 65536,
+    "positive_rate": 0.5,
+    "roc_auc": 0.9366137301549315,
+    "average_precision": 0.9188819605201484,
+    "prob_min": 0.0007435271982103586,
+    "prob_max": 0.9983167052268982,
+    "prob_mean": 0.8201646208763123,
+    "per_image": [
+      {
+        "image": "10003.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.970649778842926,
+        "average_precision": 0.9635788297945544
+      },
+      {
+        "image": "10004.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9091275334358215,
+        "average_precision": 0.8821942084130039
+      },
+      {
+        "image": "10015.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9850815534591675,
+        "average_precision": 0.97942919496362
+      },
+      {
+        "image": "10043.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9752112627029419,
+        "average_precision": 0.961406219241289
+      },
+      {
+        "image": "10055.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9379882216453552,
+        "average_precision": 0.9224782556239802
+      },
+      {
+        "image": "10066.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.8986035585403442,
+        "average_precision": 0.8835845565490951
+      },
+      {
+        "image": "10144.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9243239760398865,
+        "average_precision": 0.9041367832151833
+      },
+      {
+        "image": "10474.png",
+        "num_samples": 8192,
+        "positive_rate": 0.5,
+        "roc_auc": 0.9013186097145081,
+        "average_precision": 0.8723617172486815
+      }
+    ],
+    "case_names": [
+      "10003.png",
+      "10004.png",
+      "10015.png",
+      "10043.png",
+      "10055.png",
+      "10066.png",
+      "10144.png",
+      "10474.png"
+    ]
+  },
+  "selection_audit": [
+    {
+      "image": "10003.png",
+      "selected": true,
+      "corridor": 383,
+      "positive": 135,
+      "corridor_negative": 248,
+      "ring_negative": 1325,
+      "interior_negative": 15643,
+      "hard_negative": 17216
+    },
+    {
+      "image": "10004.png",
+      "selected": true,
+      "corridor": 1164,
+      "positive": 459,
+      "corridor_negative": 705,
+      "ring_negative": 3350,
+      "interior_negative": 32770,
+      "hard_negative": 36825
+    },
+    {
+      "image": "10015.png",
+      "selected": true,
+      "corridor": 343,
+      "positive": 102,
+      "corridor_negative": 241,
+      "ring_negative": 1199,
+      "interior_negative": 14431,
+      "hard_negative": 15871
+    },
+    {
+      "image": "10043.png",
+      "selected": true,
+      "corridor": 169,
+      "positive": 66,
+      "corridor_negative": 103,
+      "ring_negative": 690,
+      "interior_negative": 11725,
+      "hard_negative": 12517
+    },
+    {
+      "image": "10055.png",
+      "selected": true,
+      "corridor": 1626,
+      "positive": 789,
+      "corridor_negative": 837,
+      "ring_negative": 3722,
+      "interior_negative": 40239,
+      "hard_negative": 44798
+    },
+    {
+      "image": "10066.png",
+      "selected": true,
+      "corridor": 371,
+      "positive": 222,
+      "corridor_negative": 149,
+      "ring_negative": 892,
+      "interior_negative": 18810,
+      "hard_negative": 19851
+    },
+    {
+      "image": "10144.png",
+      "selected": true,
+      "corridor": 1714,
+      "positive": 804,
+      "corridor_negative": 910,
+      "ring_negative": 3914,
+      "interior_negative": 35376,
+      "hard_negative": 40200
+    },
+    {
+      "image": "10390.png",
+      "selected": false,
+      "corridor": 34,
+      "positive": 34,
+      "corridor_negative": 0,
+      "ring_negative": 84,
+      "interior_negative": 3701,
+      "hard_negative": 3729
+    },
+    {
+      "image": "10474.png",
+      "selected": true,
+      "corridor": 2605,
+      "positive": 1163,
+      "corridor_negative": 1442,
+      "ring_negative": 4534,
+      "interior_negative": 66795,
+      "hard_negative": 72771
+    }
+  ],
+  "reproducibility": {
+    "seed": 202607251,
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "sklearn": "1.9.0",
+    "feature_stack_source": "audit_r228_oracle_pixel_seam_localizer.feature_stack",
+    "dist_percentiles": "6,8,10,12",
+    "max_candidates_generated": 32
+  },
+  "sanity_gate": {
+    "same_split_overfit": true,
+    "exact_case_identity": true,
+    "complete_case_set": true,
+    "min_roc_auc": 0.75,
+    "min_average_precision": 0.75,
+    "min_probability_range": 0.25,
+    "passed": true
+  },
+  "next_step": "prepare image-grouped train-to-original-val R251 candidate safety audit",
+  "warning": "Train-only overfit sanity; not original-val model evidence and not R201/clean-test-v2 evidence.",
+  "timestamped_output_json": "outputs/analysis/r251_reverse_background_channel_smoke_20260710_152156.json",
+  "model_written": true
+}

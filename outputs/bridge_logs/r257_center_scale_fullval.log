@@ -1,0 +1,49 @@
+{"epoch": 1, "train_loss": 4.4266826542941, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2666.0, "num_matched": 2268.0, "center_recall": 0.924582144313086, "center_precision": 0.8507126781695424, "mean_normalized_localization_error": 0.16089987323624289, "median_abs_log_scale_error": 0.843529417067624, "proposal_count_mae": 3.3854166666666665, "false_proposals_per_image": 4.145833333333333, "close_pair_count": 886.0, "close_pair_coverage": 0.8340857787810384, "close_matched_endpoint_count": 859.0, "close_endpoint_mean_localization_error": 0.14031696089761517, "close_endpoint_median_abs_log_scale_error": 0.5526978219535034, "contact_pair_count": 256.0, "contact_pair_coverage": 0.7265625, "contact_matched_endpoint_count": 283.0, "contact_endpoint_mean_localization_error": 0.15871344102978605, "contact_endpoint_median_abs_log_scale_error": 0.49584220050289946}
+{"epoch": 2, "train_loss": 1.9699236544695768, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2612.0, "num_matched": 2357.0, "center_recall": 0.9608642478597635, "center_precision": 0.9023736600306279, "mean_normalized_localization_error": 0.13503661757773286, "median_abs_log_scale_error": 0.478078623402683, "proposal_count_mae": 2.28125, "false_proposals_per_image": 2.65625, "close_pair_count": 886.0, "close_pair_coverage": 0.9232505643340858, "close_matched_endpoint_count": 905.0, "close_endpoint_mean_localization_error": 0.10667126682719179, "close_endpoint_median_abs_log_scale_error": 0.4665069266226839, "contact_pair_count": 256.0, "contact_pair_coverage": 0.8671875, "contact_matched_endpoint_count": 307.0, "contact_endpoint_mean_localization_error": 0.12273664786782629, "contact_endpoint_median_abs_log_scale_error": 0.4628829930857837}
+{"epoch": 3, "train_loss": 1.300207129391757, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2837.0, "num_matched": 2403.0, "center_recall": 0.9796167957602935, "center_precision": 0.8470215015861826, "mean_normalized_localization_error": 0.12664800865500928, "median_abs_log_scale_error": 0.755522905786317, "proposal_count_mae": 4.145833333333333, "false_proposals_per_image": 4.520833333333333, "close_pair_count": 886.0, "close_pair_coverage": 0.945823927765237, "close_matched_endpoint_count": 924.0, "close_endpoint_mean_localization_error": 0.09884510473425945, "close_endpoint_median_abs_log_scale_error": 1.1986543324611172, "contact_pair_count": 256.0, "contact_pair_coverage": 0.90234375, "contact_matched_endpoint_count": 314.0, "contact_endpoint_mean_localization_error": 0.11283848941513581, "contact_endpoint_median_abs_log_scale_error": 1.3408248280202422}
+{"epoch": 4, "train_loss": 0.9892065010287545, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2692.0, "num_matched": 2407.0, "center_recall": 0.9812474520994701, "center_precision": 0.8941307578008916, "mean_normalized_localization_error": 0.1197916565349631, "median_abs_log_scale_error": 1.8026285869352638, "proposal_count_mae": 2.7395833333333335, "false_proposals_per_image": 2.96875, "close_pair_count": 886.0, "close_pair_coverage": 0.9446952595936795, "close_matched_endpoint_count": 923.0, "close_endpoint_mean_localization_error": 0.09515192669806116, "close_endpoint_median_abs_log_scale_error": 2.2611187539205595, "contact_pair_count": 256.0, "contact_pair_coverage": 0.89453125, "contact_matched_endpoint_count": 313.0, "contact_endpoint_mean_localization_error": 0.10959393463062175, "contact_endpoint_median_abs_log_scale_error": 2.293490153384054}
+{"epoch": 5, "train_loss": 0.8125745036385276, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2513.0, "num_matched": 2400.0, "center_recall": 0.9783938035059111, "center_precision": 0.955033824114604, "mean_normalized_localization_error": 0.1289573610490923, "median_abs_log_scale_error": 1.7094830434311263, "proposal_count_mae": 1.2916666666666667, "false_proposals_per_image": 1.1770833333333333, "close_pair_count": 886.0, "close_pair_coverage": 0.9424379232505643, "close_matched_endpoint_count": 921.0, "close_endpoint_mean_localization_error": 0.09365379249530839, "close_endpoint_median_abs_log_scale_error": 2.0501273489077705, "contact_pair_count": 256.0, "contact_pair_coverage": 0.890625, "contact_matched_endpoint_count": 313.0, "contact_endpoint_mean_localization_error": 0.10112292561893552, "contact_endpoint_median_abs_log_scale_error": 1.98671980161906}
+{"epoch": 6, "train_loss": 0.6921098611571572, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2477.0, "num_matched": 2377.0, "center_recall": 0.9690175295556461, "center_precision": 0.959628582963262, "mean_normalized_localization_error": 0.12278763817383474, "median_abs_log_scale_error": 1.1301575677263225, "proposal_count_mae": 1.3541666666666667, "false_proposals_per_image": 1.0416666666666667, "close_pair_count": 886.0, "close_pair_coverage": 0.9469525959367946, "close_matched_endpoint_count": 923.0, "close_endpoint_mean_localization_error": 0.0904882272775191, "close_endpoint_median_abs_log_scale_error": 1.8455661055542099, "contact_pair_count": 256.0, "contact_pair_coverage": 0.8984375, "contact_matched_endpoint_count": 314.0, "contact_endpoint_mean_localization_error": 0.10086748528417187, "contact_endpoint_median_abs_log_scale_error": 2.0214806433556776}
+{"epoch": 7, "train_loss": 0.5730175286531448, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2618.0, "num_matched": 2401.0, "center_recall": 0.9788014675907053, "center_precision": 0.9171122994652406, "mean_normalized_localization_error": 0.11566813498520348, "median_abs_log_scale_error": 1.4597346212489397, "proposal_count_mae": 2.1354166666666665, "false_proposals_per_image": 2.2604166666666665, "close_pair_count": 886.0, "close_pair_coverage": 0.9334085778781038, "close_matched_endpoint_count": 918.0, "close_endpoint_mean_localization_error": 0.08606732317554702, "close_endpoint_median_abs_log_scale_error": 2.048961244751651, "contact_pair_count": 256.0, "contact_pair_coverage": 0.87890625, "contact_matched_endpoint_count": 310.0, "contact_endpoint_mean_localization_error": 0.09598066345021122, "contact_endpoint_median_abs_log_scale_error": 2.1726057240942658}
+{"epoch": 8, "train_loss": 0.4944779721173373, "num_images": 96.0, "num_gt_centers": 2453.0, "num_proposals": 2618.0, "num_matched": 2413.0, "center_recall": 0.9836934366082348, "center_precision": 0.9216959511077158, "mean_normalized_localization_error": 0.11462986670922848, "median_abs_log_scale_error": 1.4519016620177974, "proposal_count_mae": 1.96875, "false_proposals_per_image": 2.1354166666666665, "close_pair_count": 886.0, "close_pair_coverage": 0.95372460496614, "close_matched_endpoint_count": 926.0, "close_endpoint_mean_localization_error": 0.08710000548548404, "close_endpoint_median_abs_log_scale_error": 2.161196359735839, "contact_pair_count": 256.0, "contact_pair_coverage": 0.90625, "contact_matched_endpoint_count": 316.0, "contact_endpoint_mean_localization_error": 0.09977682934878052, "contact_endpoint_median_abs_log_scale_error": 2.220378979520735}
+{
+  "decision": "no_go_image_only_proposals_insufficient",
+  "final": {
+    "num_images": 96.0,
+    "num_gt_centers": 2453.0,
+    "num_proposals": 2618.0,
+    "num_matched": 2413.0,
+    "center_recall": 0.9836934366082348,
+    "center_precision": 0.9216959511077158,
+    "mean_normalized_localization_error": 0.11462986670922848,
+    "median_abs_log_scale_error": 1.4519016620177974,
+    "proposal_count_mae": 1.96875,
+    "false_proposals_per_image": 2.1354166666666665,
+    "close_pair_count": 886.0,
+    "close_pair_coverage": 0.95372460496614,
+    "close_matched_endpoint_count": 926.0,
+    "close_endpoint_mean_localization_error": 0.08710000548548404,
+    "close_endpoint_median_abs_log_scale_error": 2.161196359735839,
+    "contact_pair_count": 256.0,
+    "contact_pair_coverage": 0.90625,
+    "contact_matched_endpoint_count": 316.0,
+    "contact_endpoint_mean_localization_error": 0.09977682934878052,
+    "contact_endpoint_median_abs_log_scale_error": 2.220378979520735
+  },
+  "gate_checks": {
+    "metrics_finite": true,
+    "all_val_images": true,
+    "center_recall_ge_085": true,
+    "center_precision_ge_075": true,
+    "close_pair_coverage_ge_080": true,
+    "contact_pair_coverage_ge_075": true,
+    "localization_error_le_050": true,
+    "scale_error_le_050": false,
+    "close_endpoint_localization_le_060": true,
+    "contact_endpoint_localization_le_065": true,
+    "close_endpoint_scale_error_le_060": false,
+    "contact_endpoint_scale_error_le_060": false,
+    "count_mae_le_3": true,
+    "false_proposals_le_3": true
+  }
+}

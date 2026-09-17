@@ -1,0 +1,11 @@
+slug,label,family,priority,r201_evidence_level,r201_num_evaluated,mask_count,legacy_num_evaluated,dice,iou,boundary_iou,gap_region_fp_rate,component_merge_rate,component_count_mae,recommendation
+araa_danet_epoch98,ARAA DANet epoch98,ARAA,must,full_mask_recomputed,81,81,81,0.9117660066557423,0.8384360930797206,0.23526515591452576,0.20125855409543275,0.6790123456790124,2.0864197530864197,ready_for_r201_tables
+r110_r100_r108_patch_basic,R110 current best,YOLO+SAM,must,full_mask_recomputed,81,81,81,0.9177231563529792,0.8485699269403064,0.2518960104408576,0.20135769614509536,0.7901234567901234,2.506172839506173,ready_for_r201_tables
+r202_nnunet2d,R202 nnU-Net 2D,nnU-Net,risk_audit,full_mask_recomputed,81,81,81,0.9235726615895182,0.8585081175842507,0.2704313015298772,0.2187667990544182,0.6790123456790124,1.8271604938271604,ready_for_r201_tables
+r106_swin_tiny_unet,R106 Swin tiny U-Net,Swin/U-Net,baseline_candidate,not_in_r201,,0,81,0.8361478177769716,0.7196151934890623,0.10156382447729334,,,,sync_or_regenerate_masks_for_full_r201
+r097_timm_unet_convnext_tiny,R097 ConvNeXt tiny U-Net,U-Net,baseline_candidate,not_in_r201,,0,81,0.8675979477279961,0.7673416503956847,0.13758254891217211,,,,sync_or_regenerate_masks_for_full_r201
+r143_highres_medical_recipe_unet,R143 high-res medical U-Net,U-Net,included,full_mask_recomputed,81,81,81,0.8913745464011714,0.8046297351855947,0.16139215426856782,0.45064370328345654,0.8888888888888888,3.9135802469135803,ready_for_r201_tables
+r177_boundary_preserving_separation_arbitrator,R177 boundary arbitrator,failed_repair,diagnostic_only,legacy_metrics_only,81,0,81,0.9005401848832788,0.8197805123057201,0.26510890791606834,,,,diagnostic_only_do_not_backfill
+r179_boundary_gap_constrained_dinov3_instance_sep,R179 boundary/gap constrained,failed_repair,diagnostic_only,legacy_metrics_only,81,0,81,0.8929766774679696,0.8071421575909757,0.18762334907358627,,,,diagnostic_only_do_not_backfill
+r184_r110_guarded_arbitrator_smoke,R184 guarded no-op,failed_repair,diagnostic_only,legacy_metrics_only,81,0,81,0.9177231563529792,0.8485699269403064,0.25189601044085763,,,,diagnostic_only_do_not_backfill
+r186_fast_neck_gate_smoke,R186 fast neck gate,failed_repair,diagnostic_only,legacy_metrics_only,81,0,81,0.9177202069995851,0.8485649246392478,0.25189431179029953,,,,diagnostic_only_do_not_backfill

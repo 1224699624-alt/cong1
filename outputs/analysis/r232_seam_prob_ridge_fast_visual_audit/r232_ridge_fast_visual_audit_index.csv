@@ -1,0 +1,4 @@
+rank,image,panel,summary
+1,11852.png,panels/01_11852_r232_ridge_fast_seam_panel.jpg,"cut=17.0 px, Dice +0.000139, Recall +0.000000, BIoU +0.000792, gapFP -0.000738"
+2,13480.png,panels/02_13480_r232_ridge_fast_seam_panel.jpg,"cut=15.0 px, Dice +0.000141, Recall +0.000000, BIoU +0.000210, gapFP -0.000644"
+3,15067.png,panels/03_15067_r232_ridge_fast_seam_panel.jpg,"cut=21.0 px, Dice +0.000154, Recall +0.000000, BIoU +0.000709, gapFP -0.000791"
