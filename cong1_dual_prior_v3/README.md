@@ -1,6 +1,12 @@
-# cong1 双先验 Codex 交付包 · V3
+# cong1 双先验 Codex 交付包 · V3 (SUPERSEDED / 历史协议)
 
-**日期：2026-09-19。当前范围：TSRS + RAM，nnU-Net；不启动其他骨架。**
+> **协议状态（2026-09-29）**：`SUPERSEDED`。
+> 本包（2026-09-19）记录了双先验多任务耦合联合训练的历史探索。后续实验已证实多先验直接强耦合会导致梯度冲突与负向迁移。
+> **当前唯一有效研究入口请参见**：
+> - [`research-wiki/experiments/ram_so_heatmap_20260929.md`](../research-wiki/experiments/ram_so_heatmap_20260929.md)
+> - [`codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md`](../codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md)
+
+**日期：2026-09-19。历史范围：TSRS + RAM，nnU-Net。**
 
 ## 主线
 

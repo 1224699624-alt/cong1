@@ -1,6 +1,23 @@
 # Research Brief
 
-## Current execution priority — 2026-09-22
+## Current execution priority — 2026-09-29
+
+- **Highest Priority Entry Points**:
+  - `research-wiki/experiments/ram_so_heatmap_20260929.md`
+  - `codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md`
+- **Active Research Status & Decisions**:
+  - **S/O Unified Interface**: Fully validated on RAM with a 737-parameter post-R332-step2 lightweight head (21->32->1), zero-init output layer, signed bound 8. Zero-increment and backward pass verified on synthetic and real cases.
+  - **O Hard-Weight Spatial Reweighting**: Concluded as `TRADEOFF / INCONCLUSIVE`. Candidate covered 66 more holdout H0 pixels and 26 val pixels, but full-image AP and overall holdout Dice did not beat base O. Not promoted; no independent long run authorized.
+  - **C00 vs CS Completed (2026-09-29)**: Evaluated on holdout84 and val69 under matched evaluator protocol. Holdout Overlap Dice: C00 `0.90556392`, CS `0.90556490`; val C00 `0.87730192`, CS `0.87730057` (val delta `-0.00000136`, descriptive interval spans zero `[-0.00000908, +0.00000709]`). S entry produces localized decisions (21 false positives removed, but 6 true positive members lost) with no macro gain.
+  - **Negative Rules / Closed Branches**:
+    - **Do NOT launch SO joint training or long runs**: S prior does not yet provide macroscopic positive gain.
+    - **Do NOT search O insertion positions**: 2026-09-28 test124 showed both `INPUT_O (0.873789)` and `REFINER_O (0.873814)` underperform `ZERO (0.874588)`.
+    - **Do NOT extend H0 final-logit supervision**: 2026-09-24 confirmed overlap Dice dropped by 0.003925pp with 1604 extra FN.
+    - **Do NOT launch high-res P1 feature segmentation**: 2026-09-28 showed no stable gain over P0 and 16.5w+ FP.
+- **Next Authorized Action (NOT_RUN)**:
+  - Directed blind audit of RAM S prior response specifically at real C0 false-connection (gap FP) coordinates to determine signal purity and background false-positive costs before any further model updates.
+
+## Historical execution phase — 2026-09-22
 
 - RAM-W600 is the primary dataset for the current nnU-Net prior project; TSRS is an additional dataset.
 - The user reports poorer TSRS label quality and missing consistent color correspondence. Do not assume that colors identify corresponding anatomical members across cases; keep unverified membership/overlap semantics unknown.

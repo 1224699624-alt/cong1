@@ -1,6 +1,12 @@
-# V3.1 / 第四轮修订交付
+# V3.1 / 第四轮修订交付 (HISTORICAL PLAN / 历史计划依据)
 
-本包依据2026-09-20用户整理的成熟最佳实验与第三轮结果编写，是计划文件，不是新实验结果。
+> **方案状态（2026-09-29）**：`HISTORICAL PLAN`。
+> 本包（2026-09-20）为针对历史单先验资产（R317、R332、R350）整合编写的修订计划。后续 09-24～09-29 期间针对 H0、high-res、O-position、C00 vs CS 的真实实验已实际执行。
+> **当前唯一有效研究入口请参见**：
+> - [`research-wiki/experiments/ram_so_heatmap_20260929.md`](../research-wiki/experiments/ram_so_heatmap_20260929.md)
+> - [`codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md`](../codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md)
+
+本包依据2026-09-20用户整理的成熟最佳实验与第三轮结果编写，是历史计划文件，不是新实验结果。
 
 ## 使用
 
