@@ -1,39 +1,67 @@
-# GitHub 备份说明
+# GitHub 同步与仓库维护说明 (2026-09-29)
 
-本项目目前没有执行 `git init`、commit 或 push。清理工作只准备了本地目录和忽略规则。
+本项目已建立正式 GitHub 远端仓库并处于持续维护中。
+远端地址：`https://github.com/1224699624-alt/cong1.git`
 
-## 默认会进入 Git 的内容
+---
 
-- `scripts/`、`configs/`、`run_*.sh`；
-- `research-workflow/`、`research-wiki/`、`paper/`、`paper_zh/`、`patent/`；
-- `outputs/analysis/` 中的 JSON/CSV/表格；
-- 各实验目录中的 `result.json`、`protocol.json`、`history*`、`manifest*`、`README.md` 和日志；
-- `outputs/artifact_bundles/r351_20260917/` 中的报告、结果和 provenance；
-- 根目录 `MANIFEST.md`、`README.md`、`AGENTS.md` 及本说明。
+## 1. 保护点与版本追溯机制
 
-## 默认只保留在本地
+为保证医学研究的可追溯性与完整性，本项目遵循**非破坏性清洗**原则：
+- **历史完整保护标签**：`pre-cleanup-2026-09-29`
+  包含 2026-09-29 清洗前全部 3,589 个文件、历史逐图可视化面板、所有 daemon 日志及中间过渡脚本。
+- **清理工作分支**：`repo-cleanup-2026-09`
+  用于收敛工作树体积、整理有效启动器并生成实验台账。
+- **严禁强制推送**：不重写 Git 历史（不执行 filter-repo、BFG 或 force-push）。
 
-忽略规则不会删除这些文件，只防止它们被普通 `git add .` 意外提交：
+若需查看或还原清洗前的历史产物，可直接通过保护标签检出：
+```bash
+git checkout pre-cleanup-2026-09-29 -- <path/to/historical/file>
+```
 
-- 原始/私有医学图像和标签：`data/raw/`、`data/raw_variants/`、`data/remote_variants/`；
-- checkpoint：`checkpoints/`、`outputs/**/*.pth`、`outputs/**/*.pt`；
-- 先验数组和 nnU-Net预处理：`outputs/**/*.npy`、`outputs/**/*.b2nd`、`outputs/**/*.pkl`；
-- 预测掩膜、临时归档和运行缓存。
+---
 
-这些本地数据已经保留并核对。R351 的 RAM 原始数据与 R323 先验也可从 `outputs/artifact_bundles/r351_20260917/remote_archives/ARCHIVE_MANIFEST.json` 对照，但归档 tar 已清理，正式解包目录才是当前数据源。
+## 2. 仓库内容跟踪与过滤策略
 
-## 建议的备份流程
+### 纳入 Git 跟踪的内容
+- 核心代码：`scripts/`（经审计保留的 436 个当前/通用模块）；
+- 有效入口：`launchers/ram/` 与 `launchers/tsrs/`；
+- 研究文档：`research-wiki/`、`research-workflow/`、`codex_handoff/`、`paper/`、`patent/`；
+- 结构化历史：`docs/history/`（包含实验总账本、路线复盘、删除清单与去重表）；
+- 核心指标数据：`outputs/analysis/` 中的核心评估 JSON / CSV，以及 09-22~09-29 关键结论文档。
 
-1. 使用私有 GitHub 仓库；医学数据是否允许上传由项目所有者决定。
-2. 先运行 `git status --ignored`，确认研究记录没有被忽略。
-3. 小型结果文件先提交；大模型、先验数组和数据通过 Git LFS、私有对象存储或服务器快照保存。
-4. 若使用 Git LFS，先针对明确的 checkpoint/数据模式执行 `git lfs track`，再提交 `.gitattributes`；不要强制添加整个 `outputs/`。
-5. 提交前运行本地完整性检查：R351 归档中的 `RESUME.md`、`CURRENT_FILES_MANIFEST.json`、`provenance.json` 和 `CLEANUP_DELETION_MANIFEST_20260917.json` 必须存在。
+### 默认排除在 Git 之外的内容（仅保留本地/服务器）
+- 原始与变体医学图像：`data/raw/`、`data/raw_variants/`、`data/remote_variants/`；
+- 大规模模型权重与中间 Checkpoint：`checkpoints/`、`*.pth`、`*.pt`；
+- 预处理与先验大数组：`*.npy`、`*.b2nd`、`*.pkl`；
+- 调试临时缓存、`__pycache__` 及大批量运行日志。
 
-## 当前重要入口
+---
 
-- 研究状态：[R351_TRACKER](research-workflow/refine-logs/R351_TRACKER.md)
-- 清理记录：[cleanup_notes](cleanup_notes.md)
-- R351恢复：[RESUME](outputs/artifact_bundles/r351_20260917/RESUME.md)
-- R351代码快照：[CURRENT_FILES_MANIFEST](outputs/artifact_bundles/r351_20260917/CURRENT_FILES_MANIFEST.json)
-- 删除审计：[CLEANUP_DELETION_MANIFEST](outputs/artifact_bundles/r351_20260917/CLEANUP_DELETION_MANIFEST_20260917.json)
+## 3. 标准提交流程
+
+1. 检查工作区状态：
+   ```bash
+   git status
+   ```
+2. 确认未添加未受控的大型二进制产物：
+   ```bash
+   git diff --stat
+   ```
+3. 提交与推送至清理分支：
+   ```bash
+   git add <modified-files>
+   git commit -m "..."
+   git push origin repo-cleanup-2026-09
+   ```
+4. 通过 GitHub PR 审查并合并至 `main`。
+
+---
+
+## 4. 当前核心入口
+
+- **当前研究现状与结论**：[`research-wiki/experiments/ram_so_heatmap_20260929.md`](research-wiki/experiments/ram_so_heatmap_20260929.md)
+- **Agent 交接规格与边界**：[`codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md`](codex_handoff/RAM_SO_HEATMAP_CONDITIONAL_HANDOFF/00_README_AND_START.md)
+- **历史实验总账本**：[`docs/history/EXPERIMENT_LEDGER.md`](docs/history/EXPERIMENT_LEDGER.md)
+- **被取代路线深度复盘**：[`docs/history/SUPERSEDED_ROUTES.md`](docs/history/SUPERSEDED_ROUTES.md)
+- **删除产物检索清单**：[`docs/history/DELETION_MANIFEST.json`](docs/history/DELETION_MANIFEST.json)
