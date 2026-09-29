@@ -1,0 +1,54 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Hu et~al.(2019)Hu, Li, Samaras, and Chen}]{hu2019topology}
+Hu, X.; Li, F.; Samaras, D.; and Chen, C. 2019.
+\newblock Topology-Preserving Deep Image Segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~32, 5658--5669.
+
+\bibitem[{Hu et~al.(2021)Hu, Wang, Li, Samaras, and Chen}]{hu2021morse}
+Hu, X.; Wang, Y.; Li, F.; Samaras, D.; and Chen, C. 2021.
+\newblock Topology-Aware Segmentation Using Discrete Morse Theory.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Isensee et~al.(2021)Isensee, Jaeger, Kohl, Petersen, and
+  Maier-Hein}]{isensee2021nnunet}
+Isensee, F.; Jaeger, P.~F.; Kohl, S. A.~A.; Petersen, J.; and Maier-Hein, K.~H.
+  2021.
+\newblock nnU-Net: A Self-Configuring Method for Deep Learning-Based Biomedical
+  Image Segmentation.
+\newblock \emph{Nature Methods}, 18(2): 203--211.
+
+\bibitem[{Kervadec et~al.(2019)Kervadec, Bouchtiba, Desrosiers, Granger, Dolz,
+  and Ayed}]{kervadec2019boundary}
+Kervadec, H.; Bouchtiba, J.; Desrosiers, C.; Granger, E.; Dolz, J.; and Ayed,
+  I.~B. 2019.
+\newblock Boundary Loss for Highly Unbalanced Segmentation.
+\newblock In \emph{Proceedings of the 2nd International Conference on Medical
+  Imaging with Deep Learning}, volume 102 of \emph{Proceedings of Machine
+  Learning Research}, 285--296.
+
+\bibitem[{Liang et~al.(2025)Liang, Ding, Zhang, Chen, Zheng, Wang, Zhang, Meng,
+  Weninger, Niemier, Hu, and Chen}]{liang2025boundaries}
+Liang, P.; Ding, Y.; Zhang, Y.; Chen, J.; Zheng, H.; Wang, H.; Zhang, Y.; Meng,
+  G.; Weninger, T.; Niemier, M.; Hu, X.~S.; and Chen, D.~Z. 2025.
+\newblock Cell Instance Segmentation: The Devil Is in the Boundaries.
+\newblock \emph{arXiv preprint arXiv:2510.09848}.
+
+\bibitem[{Ronneberger, Fischer, and Brox(2015)}]{ronneberger2015unet}
+Ronneberger, O.; Fischer, P.; and Brox, T. 2015.
+\newblock U-Net: Convolutional Networks for Biomedical Image Segmentation.
+\newblock In \emph{Medical Image Computing and Computer-Assisted Intervention},
+  volume 9351 of \emph{Lecture Notes in Computer Science}, 234--241. Springer.
+
+\bibitem[{Shit et~al.(2021)Shit, Paetzold, Sekuboyina, Ezhov, Unger, Zhylka,
+  Pluim, Bauer, and Menze}]{shit2021cldice}
+Shit, S.; Paetzold, J.~C.; Sekuboyina, A.; Ezhov, I.; Unger, A.; Zhylka, A.;
+  Pluim, J. P.~W.; Bauer, U.; and Menze, B.~H. 2021.
+\newblock clDice---A Novel Topology-Preserving Loss Function for Tubular
+  Structure Segmentation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 16560--16569.
+
+\end{thebibliography}

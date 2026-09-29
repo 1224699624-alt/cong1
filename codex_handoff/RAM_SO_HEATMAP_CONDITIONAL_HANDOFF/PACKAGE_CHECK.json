@@ -1,0 +1,53 @@
+{
+  "scope": "document_package_checks_only",
+  "checks": [
+    {
+      "item": "00_README_AND_START.md",
+      "utf8_readable": true,
+      "nonempty": true,
+      "code_fences_balanced": true,
+      "characters": 2767
+    },
+    {
+      "item": "01_PRIOR_EVIDENCE_AND_IMPROVEMENT.md",
+      "utf8_readable": true,
+      "nonempty": true,
+      "code_fences_balanced": true,
+      "characters": 8036
+    },
+    {
+      "item": "02_DUAL_HEATMAP_UNIFIED_CORRECTOR.md",
+      "utf8_readable": true,
+      "nonempty": true,
+      "code_fences_balanced": true,
+      "characters": 7295
+    },
+    {
+      "item": "03_SOURCE_AND_BOUNDARY.md",
+      "utf8_readable": true,
+      "nonempty": true,
+      "code_fences_balanced": true,
+      "characters": 2338
+    },
+    {
+      "item": "RUN_LOCK_TEMPLATE.json",
+      "json_parse": true
+    },
+    {
+      "item": "SOURCE_INDEX.json",
+      "json_parse": true
+    },
+    {
+      "item": "three_original_source_snapshots",
+      "sha256_match": true
+    },
+    {
+      "item": "experiments_run_in_this_session",
+      "value": false
+    },
+    {
+      "item": "project_root_exact_windows_path",
+      "pass": true
+    }
+  ]
+}

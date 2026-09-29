@@ -1,0 +1,18 @@
+\section{Introduction}
+
+Pediatric hand radiographs contain many small developing bones whose appearance changes substantially with age. In younger children, ossification centers are sparse and often widely separated. As development proceeds, additional centers appear, existing structures enlarge, and some inter-bone gaps become only a few pixels wide. These narrow gaps are easily obscured by low contrast and projection overlap. A segmentation model may therefore achieve strong region overlap while joining two anatomically distinct structures.
+
+This failure is poorly summarized by Dice alone. A bridge that occupies a small number of pixels can merge two components without materially changing the union area. The error is nevertheless conspicuous in a qualitative result and can invalidate downstream measurements based on component count, shape, or spacing. Our goal is not to maximize overlap by expanding or eroding every prediction. Instead, we seek to suppress false foreground specifically inside plausible inter-instance gaps while preserving the bone support on both sides.
+
+The available labels provide a useful but underused signal. They are indexed masks: zero denotes background and each positive value denotes a separate annotated bone instance within an image. We convert these instance identities into a training-only seam target. For each background pixel near the foreground, we identify the nearest annotated instance. A change in nearest-instance identity across neighboring background pixels marks a Voronoi-like separator. This separator is dilated into a narrow seam class, while all bone instances remain a single semantic bone class. At inference, the model receives only the radiograph; no ground-truth seam or instance identifier is supplied.
+
+We test the construction in a controlled comparison between a binary nnU-Net \citep{isensee2021nnunet} and a matched three-class nnU-Net. The two systems use the same split, patch size, optimization budget, and checkpoint rule. Under the frozen R201 original-validation protocol, seam supervision lowers the image-level component under-count rate by 8.33 percentage points with a Dice change of only $-0.0006$. Boundary and gap metrics improve slightly, but surface-distance outliers become worse. The evidence therefore supports a narrow claim: explicit seam supervision changes the topology error profile, but the unweighted formulation is not yet a complete solution.
+
+Our contributions are:
+\begin{itemize}
+    \item We derive a background seam target directly from indexed instance annotations without modifying the original dataset or using ground truth at inference.
+    \item We introduce a matched evaluation protocol that combines overlap, boundary, surface, gap, and component diagnostics rather than relying on Dice alone.
+    \item We show that mature seam-supervised nnU-Net training reduces component under-counting from 51.04\% to 42.71\%, while documenting the accompanying recall and surface-distance trade-offs.
+\end{itemize}
+
+The current paper establishes the supervision mechanism and its failure modes on one backbone. A model-agnostic weighted loss and age/sex-conditioned confidence model are natural extensions, but their cross-backbone effectiveness remains to be validated.

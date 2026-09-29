@@ -1,0 +1,197 @@
+{
+  "audit_date": "2026-09-19",
+  "repository": "1224699624-alt/cong1",
+  "audited_commit": "737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353",
+  "commit_recorded_at": "2026-09-17T10:39:52Z",
+  "retrieval": "Connected GitHub read-only actions; branch, source files, experiment and provenance records",
+  "limits": [
+    "Not an exhaustive audit of every repository file",
+    "No server filesystem or checkpoint tensor validation",
+    "Historical result values are repository reports, not new reruns",
+    "Only the R349 CPU synthetic gradient case was executed against a hash-matched source copy"
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "repository_path": null,
+      "purpose": "main 分支元数据：固定此次审计快照",
+      "coverage": "branch_metadata",
+      "git_blob_sha": null,
+      "url": "https://api.github.com/repos/1224699624-alt/cong1/branches/main",
+      "resolved_commit": "737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353"
+    },
+    {
+      "id": "S02",
+      "repository_path": "research-wiki/experiments/r351_dual_prior_nnunet.md",
+      "purpose": "用户主线、历史双数据集 pilot 与限制",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/research-wiki/experiments/r351_dual_prior_nnunet.md"
+    },
+    {
+      "id": "S03",
+      "repository_path": "research-workflow/refine-logs/R351_EXPERIMENT_PLAN_20260917.md",
+      "purpose": "实验计划、原生参考、局部监督、5%探索门槛",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/research-workflow/refine-logs/R351_EXPERIMENT_PLAN_20260917.md"
+    },
+    {
+      "id": "S04",
+      "repository_path": "research-workflow/refine-logs/R351_TRACKER.md",
+      "purpose": "原生权重 SHA、实际成熟初始化、数据数目与现状",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/research-workflow/refine-logs/R351_TRACKER.md"
+    },
+    {
+      "id": "S05",
+      "repository_path": "research-workflow/refine-logs/R351_EXPERIMENT_CODE_REVIEW.md",
+      "purpose": "成熟初始化、MSD失败率、chunk身份与post-hoc guard",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/research-workflow/refine-logs/R351_EXPERIMENT_CODE_REVIEW.md"
+    },
+    {
+      "id": "S06",
+      "repository_path": "outputs/artifact_bundles/r351_20260917/provenance.json",
+      "purpose": "历史代码/先验/成熟权重哈希和环境记录",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/outputs/artifact_bundles/r351_20260917/provenance.json"
+    },
+    {
+      "id": "S07",
+      "repository_path": "outputs/artifact_bundles/r351_20260917/RESUME.md",
+      "purpose": "归档与下一步 native-start 四组消融",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/outputs/artifact_bundles/r351_20260917/RESUME.md"
+    },
+    {
+      "id": "S08",
+      "repository_path": "scripts/r351_dual_prior.py",
+      "purpose": "先验/输入适配/输出refiner与 local_terms，S*(1-O)依赖",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/r351_dual_prior.py"
+    },
+    {
+      "id": "S09",
+      "repository_path": "scripts/nnunet_trainers/nnUNetTrainerR351DualPrior.py",
+      "purpose": "TSRS冻结成熟骨干、两通道输入与固定损失调用",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/nnunet_trainers/nnUNetTrainerR351DualPrior.py"
+    },
+    {
+      "id": "S10",
+      "repository_path": "scripts/train_r351_overlap_prior.py",
+      "purpose": "RAM真实重叠先验训练、软覆盖目标、TSRS弱迁移声明",
+      "coverage": "whole_file",
+      "git_blob_sha": "3d2106b723c184f36a42288c2504dda8c5e818bf",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/train_r351_overlap_prior.py"
+    },
+    {
+      "id": "S11",
+      "repository_path": "scripts/r349_parameter_gradient_gate.py",
+      "purpose": "参数空间梯度路由及None坐标处理；副本经Git blob核验",
+      "coverage": "whole_file",
+      "git_blob_sha": "7da1eba1b4f39ca8b07869ba0eeb70fc1731022a",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/r349_parameter_gradient_gate.py",
+      "local_evidence_snapshot": "evidence/r349_source_snapshot.py"
+    },
+    {
+      "id": "S12",
+      "repository_path": "scripts/r350_unified_interaction_loss.py",
+      "purpose": "状态支持、局部项和mass weighting定义",
+      "coverage": "whole_file",
+      "git_blob_sha": "20a2d15e81fd1de93ca8a021aeb37091df60a084",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/r350_unified_interaction_loss.py"
+    },
+    {
+      "id": "S13",
+      "repository_path": "scripts/r351_data.py",
+      "purpose": "RAM先验与原图对齐、canonical方向和padding",
+      "coverage": "whole_file",
+      "git_blob_sha": "cb69bbeeb0360557367fd369adec11cfd53b97c6",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/r351_data.py"
+    },
+    {
+      "id": "S14",
+      "repository_path": "scripts/run_r201_unified_eval.py",
+      "purpose": "R201指标函数及默认test入口；仅审计前290行",
+      "coverage": "line_range",
+      "git_blob_sha": "8fcf88212e417443bb8567903f075022e7749311",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/run_r201_unified_eval.py",
+      "read_line_range": [
+        1,
+        290
+      ]
+    },
+    {
+      "id": "S15",
+      "repository_path": "scripts/evaluate_r201_single_split.py",
+      "purpose": "显式单split评价、skip/resize容错和expected count",
+      "coverage": "whole_file",
+      "git_blob_sha": "3999912af22551987b0f5665c202a98d84431e13",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/evaluate_r201_single_split.py"
+    },
+    {
+      "id": "S16",
+      "repository_path": "scripts/evaluate_r329_ram_official_metrics_val.py",
+      "purpose": "R329成员/overlap/pair指标、空样本和MSD失败率",
+      "coverage": "whole_file",
+      "git_blob_sha": "8d9abe4f9c2613f93a875275b8240c210a9c4344",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/evaluate_r329_ram_official_metrics_val.py"
+    },
+    {
+      "id": "S17",
+      "repository_path": ".gitignore",
+      "purpose": "大权重、数据、tensor与归档的Git排除规则",
+      "coverage": "whole_file",
+      "git_blob_sha": "3761d8c00bb2346fe3bac5e68df6ef7bdff504f3",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/.gitignore"
+    },
+    {
+      "id": "S18",
+      "repository_path": "scripts/train_r325_ram_nnunet_native_resolution_overlap_iem.py",
+      "purpose": "RAM native loader和plain训练路径；读取1–220行",
+      "coverage": "line_range",
+      "git_blob_sha": "73bb5020a93712aeebf6e1a1f3f5e0e7af5f7661",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/train_r325_ram_nnunet_native_resolution_overlap_iem.py",
+      "read_line_range": [
+        1,
+        220
+      ]
+    },
+    {
+      "id": "S19",
+      "repository_path": "scripts/train_r284_ramw600_overlap_prior.py",
+      "purpose": "RAM PlainConvUNet适配、15原始输出/14独立成员；读取1–210行",
+      "coverage": "line_range",
+      "git_blob_sha": "7f6e78f752950d45ad8e6bbc98b3c701eea4fc04",
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/train_r284_ramw600_overlap_prior.py",
+      "read_line_range": [
+        1,
+        210
+      ]
+    },
+    {
+      "id": "S20",
+      "repository_path": "AGENTS.md",
+      "purpose": "项目规则、数据隔离和工作流",
+      "coverage": "whole_file",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/AGENTS.md"
+    },
+    {
+      "id": "S21",
+      "repository_path": "scripts/train_r351_ram_dual_prior.py",
+      "purpose": "已见部分：student/teacher forward、native gate与固定seam ROI；未审完完整训练文件",
+      "coverage": "partial_tool_response",
+      "git_blob_sha": null,
+      "url": "https://github.com/1224699624-alt/cong1/blob/737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353/scripts/train_r351_ram_dual_prior.py"
+    }
+  ]
+}

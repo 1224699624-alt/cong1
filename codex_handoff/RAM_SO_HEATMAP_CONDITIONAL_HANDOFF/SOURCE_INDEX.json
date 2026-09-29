@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-29",
+  "sources": [
+    {
+      "source_file": "DIAGNOSIS_AND_NEXT_ACTION(1).md",
+      "snapshot": "sources/O_LABEL_AUDIT_20260928.md",
+      "sha256": "0e9e7238147a4a451cf6b709718737b18f74cbe10324cc2927a41ee86e801379",
+      "bytes": 7290
+    },
+    {
+      "source_file": "2026-09-27--ram-overlap--r00--web-analysis-handoff.md",
+      "snapshot": "sources/RAM_CROSS_ROUND_20260927.md",
+      "sha256": "4ea03007905ddef039a1cc5aaf66959e98c7755ea161463570c17afdb6383e41",
+      "bytes": 12197
+    },
+    {
+      "source_file": "2026-09-20--dual-prior--r3--round-review.md",
+      "snapshot": "sources/MATURE_MAP_20260920.md",
+      "sha256": "9d027bc834eaa73867b2fd5b0f950cc2df7a7ba8df90eb5b1f847a50239a8b0e",
+      "bytes": 18618
+    }
+  ],
+  "snapshots_are_user_reports_not_new_results": true
+}

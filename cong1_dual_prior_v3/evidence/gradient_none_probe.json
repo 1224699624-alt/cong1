@@ -1,0 +1,33 @@
+{
+  "source_blob_sha": "7da1eba1b4f39ca8b07869ba0eeb70fc1731022a",
+  "expected_blob_sha": "7da1eba1b4f39ca8b07869ba0eeb70fc1731022a",
+  "source_exact_match": true,
+  "torch": "2.10.0+cpu",
+  "base_gradient": [
+    1,
+    1
+  ],
+  "aux_gradient": [
+    -1,
+    null
+  ],
+  "combined_gradient": [
+    0.5000000596046448,
+    1.0
+  ],
+  "stats": [
+    {
+      "name": "partial_aux",
+      "base_norm": 1.4142135381698608,
+      "raw_norm": 1.0,
+      "projected_norm": 0.4999999403953552,
+      "applied_norm": 0.4999999403953552,
+      "cosine_before": -0.7071067690849304,
+      "cosine_after": -0.7071067690849304,
+      "conflicted": true,
+      "scale": 1.0
+    }
+  ],
+  "projected_aux_dot_base": -0.4999999403953552,
+  "kind": "CPU_SYNTHETIC_REGRESSION_NOT_MODEL_EXPERIMENT"
+}

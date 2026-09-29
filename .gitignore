@@ -30,3 +30,63 @@ data/raw/
 data/raw_variants/
 data/remote_variants/
 data/yolo/
+
+# ============================================================
+# YOLO+SAM local large artifacts / generated files
+# ============================================================
+
+# Model checkpoints / pretrained weights
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.safetensors
+
+# Large generated experiment outputs
+outputs/
+
+# Prediction directories
+predictions*/
+prediction*/
+
+# Temporary/cache directories
+.tmp/
+temp/
+tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Training/runtime caches
+wandb/
+runs/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# IDE local settings
+.vscode/
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+
+# ARIS runtime traces
+.aris/traces/
+
+# LaTeX generated files
+*.aux
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# ARIS runtime state
+.aris/meta/events.jsonl

@@ -1,0 +1,12 @@
+{
+  "round": 1,
+  "agent_id": "019ecf79-9677-7bb3-bdbf-ee1172e2476a",
+  "status": "completed",
+  "last_score": 3.0,
+  "last_verdict": "not ready",
+  "pending_experiments": [],
+  "timestamp": "2026-06-16T16:11:33+08:00",
+  "termination_reason": "reviewer_routed_back_to_implementation",
+  "final_route": "experiment-bridge",
+  "review_doc": "review-stage/AUTO_REVIEW.md"
+}

@@ -1,0 +1,43 @@
+\section{Method}
+
+\subsection{Problem Formulation}
+
+Let $\X\in\mathbb{R}^{H\times W}$ be a grayscale radiograph and $\Y\in\{0,1,\ldots,K\}^{H\times W}$ its indexed annotation. Label zero denotes background, and each positive integer denotes an annotated bone instance within that image. Instance identifiers are local to an image and are not treated as fixed anatomical classes. The semantic bone mask is
+\begin{equation}
+\B(\mathbf{x})=\mathbb{1}[\Y(\mathbf{x})>0].
+\end{equation}
+The standard model predicts background and bone. Our seam-supervised model additionally predicts a separation class derived from $\Y$ during training.
+
+\subsection{Instance-Derived Seam Construction}
+
+For every background pixel $\mathbf{x}$, we compute its distance to each annotated instance $k$ and assign the nearest identity
+\begin{equation}
+n(\mathbf{x})=\argminop_{k\in\{1,\ldots,K\}} d(\mathbf{x},\{\mathbf{z}:\Y(\mathbf{z})=k\}).
+\end{equation}
+A background pixel becomes a seam candidate if a neighboring background pixel has a different nearest identity. We restrict candidates to a radius $r$ from bone foreground:
+\begin{align}
+\Smap(\mathbf{x})=\mathbb{1}\big[&\B(\mathbf{x})=0,\ d(\mathbf{x},\B)\le r,\nonumber\\
+&\exists\mathbf{q}\in\mathcal{N}(\mathbf{x}):n(\mathbf{q})\ne n(\mathbf{x})\big].
+\end{align}
+We use $r=12$ pixels and dilate the resulting centerline by one pixel. This construction approximates a local Voronoi separator. It does not assume that an instance index has the same anatomical meaning across subjects.
+
+\subsection{Three-Class Supervision}
+
+The training target $\mathbf{T}$ is
+\begin{equation}
+\mathbf{T}(\mathbf{x})=
+\begin{cases}
+1,&\B(\mathbf{x})=1,\\
+2,&\B(\mathbf{x})=0\ \text{and}\ \Smap(\mathbf{x})=1,\\
+0,&\text{otherwise}.
+\end{cases}
+\end{equation}
+The current implementation uses the standard nnU-Net compound cross-entropy and Dice objective over the three classes. During inference, the predicted bone mask contains only class 1; class 2 is excluded as background separation. This version deliberately avoids a hand-tuned seam threshold.
+
+\subsection{Toward a Decoupled Plug-In Objective}
+
+The target construction is independent of the backbone, but the present three-class head is not yet a strict plug-in loss. A decoupled form would retain a binary output probability $p_b$ and impose an upper bound $u(\mathbf{x})$ in high-confidence seam regions:
+\begin{equation}
+\Lsep=\frac{1}{|\Omega|}\sum_{\mathbf{x}\in\Omega}w(\mathbf{x})\left[\max(0,p_b(\mathbf{x})-u(\mathbf{x}))\right]^2.
+\end{equation}
+Foreground-support terms would prevent the model from lowering merge errors by indiscriminately eroding bone. Age and sex could condition $w$ and $u$, but we do not evaluate that extension in the current experiments.

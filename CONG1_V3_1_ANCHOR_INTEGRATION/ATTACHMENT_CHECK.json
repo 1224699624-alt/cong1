@@ -1,0 +1,1751 @@
+{
+  "date": "2026-09-20",
+  "scope": "uploaded_sources_only; no_GitHub_or_local_PC_access",
+  "source_manifest": [
+    {
+      "file": "2026-09-20--dual-prior--r3--round-review.md",
+      "bytes": 18618,
+      "sha256": "9d027bc834eaa73867b2fd5b0f950cc2df7a7ba8df90eb5b1f847a50239a8b0e"
+    },
+    {
+      "file": "analysis-report.md",
+      "bytes": 2617,
+      "sha256": "3f308adb7a1cbe1d9a9fdac52e28f4b301382525ada1debac11e3d1be1a20e2b"
+    },
+    {
+      "file": "stats-appendix.md",
+      "bytes": 2154,
+      "sha256": "3a7f30663a2c1ecc931a0036ab8f1f5e4f1132a2df4e264893e6a07888584751"
+    },
+    {
+      "file": "figure-catalog.md",
+      "bytes": 1575,
+      "sha256": "5d8c7c6eb9ccbde49c342049c2038844603aa04f8e4755dc5b1851582242def1"
+    },
+    {
+      "file": "PILOT_RESULTS(1).csv",
+      "bytes": 3901,
+      "sha256": "f1249a3af64330f84075976f0c0585c8333a69dc5159b17622dd8b6ec87dc1dd"
+    },
+    {
+      "file": "PAIRED_DELTAS(1).json",
+      "bytes": 63213,
+      "sha256": "f19b4326b1c5d2733b32ad1b676b805e21eb0c9132fcb0ce26292508bc7f9a1f"
+    }
+  ],
+  "duplicate_attachment_checks": [
+    {
+      "previous": "PILOT_RESULTS.csv",
+      "current": "PILOT_RESULTS(1).csv",
+      "byte_identical": true,
+      "current_sha256": "f1249a3af64330f84075976f0c0585c8333a69dc5159b17622dd8b6ec87dc1dd"
+    },
+    {
+      "previous": "PAIRED_DELTAS.json",
+      "current": "PAIRED_DELTAS(1).json",
+      "byte_identical": true,
+      "current_sha256": "f19b4326b1c5d2733b32ad1b676b805e21eb0c9132fcb0ce26292508bc7f9a1f"
+    }
+  ],
+  "aggregate_delta_recalculation": {
+    "count": 181,
+    "all_pass": true,
+    "tolerance_abs": 1e-12,
+    "checks": [
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 0.0002207270893952451,
+        "json_delta": 0.0002207270893952451,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 0.0003719464129693373,
+        "json_delta": 0.0003719464129693373,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "precision",
+        "csv_delta": 0.006627142125202212,
+        "json_delta": 0.006627142125202212,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "recall",
+        "csv_delta": -0.006357438639966739,
+        "json_delta": -0.006357438639966739,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "specificity",
+        "csv_delta": 0.00022080888223952044,
+        "json_delta": 0.00022080888223952044,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "boundary_iou",
+        "csv_delta": 0.0021423687925783697,
+        "json_delta": 0.0021423687925783697,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "boundary_f1",
+        "csv_delta": 0.0027678879424374303,
+        "json_delta": 0.0027678879424374303,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "gap_region_fp_rate",
+        "csv_delta": -0.017533196139354695,
+        "json_delta": -0.017533196139354695,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "gap_region_precision",
+        "csv_delta": 0.01753319613935478,
+        "json_delta": 0.01753319613935478,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "component_merge_rate",
+        "csv_delta": -0.04166666666666663,
+        "json_delta": -0.04166666666666663,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "component_count_mae",
+        "csv_delta": -0.16666666666666652,
+        "json_delta": -0.16666666666666652,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "component_delta_mean",
+        "csv_delta": 0.10416666666666674,
+        "json_delta": 0.10416666666666674,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "surface_dice_2px",
+        "csv_delta": 0.00440446555617946,
+        "json_delta": 0.00440446555617946,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "surface_dice_5px",
+        "csv_delta": 0.002293597986786522,
+        "json_delta": 0.002293597986786522,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "hd95_px",
+        "csv_delta": -0.5095580731183453,
+        "json_delta": -0.5095580731183453,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "assd_px",
+        "csv_delta": -0.09852050239424859,
+        "json_delta": -0.09852050239424859,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 0.00020651868716381472,
+        "json_delta": 0.00020651868716381472,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 0.000348393337020525,
+        "json_delta": 0.000348393337020525,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "precision",
+        "csv_delta": 0.007148871956984881,
+        "json_delta": 0.007148871956984881,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "recall",
+        "csv_delta": -0.006910685571297148,
+        "json_delta": -0.006910685571297148,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "specificity",
+        "csv_delta": 0.00023920524629084117,
+        "json_delta": 0.00023920524629084117,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "boundary_iou",
+        "csv_delta": 0.0022753633457306133,
+        "json_delta": 0.0022753633457306133,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "boundary_f1",
+        "csv_delta": 0.0029498634030506454,
+        "json_delta": 0.0029498634030506454,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "gap_region_fp_rate",
+        "csv_delta": -0.01903040410268908,
+        "json_delta": -0.01903040410268908,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "gap_region_precision",
+        "csv_delta": 0.01903040410268919,
+        "json_delta": 0.01903040410268919,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "component_merge_rate",
+        "csv_delta": -0.05208333333333326,
+        "json_delta": -0.05208333333333326,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "component_count_mae",
+        "csv_delta": -0.17708333333333326,
+        "json_delta": -0.17708333333333326,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "component_delta_mean",
+        "csv_delta": 0.15625,
+        "json_delta": 0.15625,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "surface_dice_2px",
+        "csv_delta": 0.004755645013809318,
+        "json_delta": 0.004755645013809318,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "surface_dice_5px",
+        "csv_delta": 0.0025049508171750556,
+        "json_delta": 0.0025049508171750556,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "hd95_px",
+        "csv_delta": -0.5374163380846575,
+        "json_delta": -0.5374163380846575,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "assd_px",
+        "csv_delta": -0.10296207530805024,
+        "json_delta": -0.10296207530805024,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "dice",
+        "csv_delta": -1.4208402231430384e-05,
+        "json_delta": -1.4208402231430384e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "iou",
+        "csv_delta": -2.3553075948812285e-05,
+        "json_delta": -2.3553075948812285e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "precision",
+        "csv_delta": 0.0005217298317826691,
+        "json_delta": 0.0005217298317826691,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "recall",
+        "csv_delta": -0.0005532469313304089,
+        "json_delta": -0.0005532469313304089,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "specificity",
+        "csv_delta": 1.8396364051320724e-05,
+        "json_delta": 1.8396364051320724e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "boundary_iou",
+        "csv_delta": 0.00013299455315224362,
+        "json_delta": 0.00013299455315224362,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "boundary_f1",
+        "csv_delta": 0.00018197546061321512,
+        "json_delta": 0.00018197546061321512,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "gap_region_fp_rate",
+        "csv_delta": -0.0014972079633343849,
+        "json_delta": -0.0014972079633343849,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "gap_region_precision",
+        "csv_delta": 0.0014972079633344126,
+        "json_delta": 0.0014972079633344126,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "component_merge_rate",
+        "csv_delta": -0.01041666666666663,
+        "json_delta": -0.01041666666666663,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "component_count_mae",
+        "csv_delta": -0.01041666666666674,
+        "json_delta": -0.01041666666666674,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "component_delta_mean",
+        "csv_delta": 0.05208333333333326,
+        "json_delta": 0.05208333333333326,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "surface_dice_2px",
+        "csv_delta": 0.0003511794576298577,
+        "json_delta": 0.0003511794576298577,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "surface_dice_5px",
+        "csv_delta": 0.0002113528303885337,
+        "json_delta": 0.0002113528303885337,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "hd95_px",
+        "csv_delta": -0.027858264966312163,
+        "json_delta": -0.027858264966312163,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "TSRS",
+        "arm": "B",
+        "reference": "A",
+        "metric": "assd_px",
+        "csv_delta": -0.00444157291380165,
+        "json_delta": -0.00444157291380165,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 4.539650894341829e-05,
+        "json_delta": 4.539650894341829e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 7.959652336730905e-05,
+        "json_delta": 7.959652336730905e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "nsd",
+        "csv_delta": -0.0002907736888271284,
+        "json_delta": -0.0002907736888271284,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "voe",
+        "csv_delta": -7.959652336730211e-05,
+        "json_delta": -7.959652336730211e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "msd",
+        "csv_delta": -0.0027888045938495587,
+        "json_delta": -0.0027888045938495587,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "ravd",
+        "csv_delta": -0.0001649067082294814,
+        "json_delta": -0.0001649067082294814,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.0002631066944194238,
+        "json_delta": 0.0002631066944194238,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_nsd",
+        "csv_delta": 0.00043397636668152106,
+        "json_delta": 0.00043397636668152106,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_voe",
+        "csv_delta": -0.00039853889554108957,
+        "json_delta": -0.00039853889554108957,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_msd",
+        "csv_delta": 0.00354682833562614,
+        "json_delta": 0.00354682833562614,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.0010639042798923012,
+        "json_delta": -0.0010639042798923012,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_dsc",
+        "csv_delta": 0.0007298871355144732,
+        "json_delta": 0.0007298871355144732,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_nsd",
+        "csv_delta": 0.00039336217427698994,
+        "json_delta": 0.00039336217427698994,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_voe",
+        "csv_delta": -0.0005882461189558597,
+        "json_delta": -0.0005882461189558597,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_msd",
+        "csv_delta": 0.0003107110770785848,
+        "json_delta": 0.0003107110770785848,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "A",
+        "reference": "N0",
+        "metric": "pair_ravd",
+        "csv_delta": 0.021397416451270912,
+        "json_delta": 0.021397416451270912,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 4.5956941240654636e-05,
+        "json_delta": 4.5956941240654636e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 8.059810020288882e-05,
+        "json_delta": 8.059810020288882e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "nsd",
+        "csv_delta": -0.00028629742615515763,
+        "json_delta": -0.00028629742615515763,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "voe",
+        "csv_delta": -8.059810020286107e-05,
+        "json_delta": -8.059810020286107e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "msd",
+        "csv_delta": -0.002951248301208187,
+        "json_delta": -0.002951248301208187,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "ravd",
+        "csv_delta": -0.0001599974809906035,
+        "json_delta": -0.0001599974809906035,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.0003029187938036193,
+        "json_delta": 0.0003029187938036193,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_nsd",
+        "csv_delta": 0.0005269501968754309,
+        "json_delta": 0.0005269501968754309,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_voe",
+        "csv_delta": -0.00046016676332122364,
+        "json_delta": -0.00046016676332122364,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_msd",
+        "csv_delta": 0.0006812834483278518,
+        "json_delta": 0.0006812834483278518,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.0008839969425338406,
+        "json_delta": -0.0008839969425338406,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_dsc",
+        "csv_delta": 0.0005968929796995592,
+        "json_delta": 0.0005968929796995592,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_nsd",
+        "csv_delta": 0.00032895821546763404,
+        "json_delta": 0.00032895821546763404,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_voe",
+        "csv_delta": -0.0005223884856883632,
+        "json_delta": -0.0005223884856883632,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_msd",
+        "csv_delta": 0.0003140824069722825,
+        "json_delta": 0.0003140824069722825,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "N0",
+        "metric": "pair_ravd",
+        "csv_delta": 0.019585790738013253,
+        "json_delta": 0.019585790738013253,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "dice",
+        "csv_delta": 5.604322972363462e-07,
+        "json_delta": 5.604322972363462e-07,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "iou",
+        "csv_delta": 1.001576835579776e-06,
+        "json_delta": 1.001576835579776e-06,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "nsd",
+        "csv_delta": 4.4762626719707654e-06,
+        "json_delta": 4.4762626719707654e-06,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "voe",
+        "csv_delta": -1.0015768355589594e-06,
+        "json_delta": -1.0015768355589594e-06,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "msd",
+        "csv_delta": -0.00016244370735862823,
+        "json_delta": -0.00016244370735862823,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "ravd",
+        "csv_delta": 4.909227238877878e-06,
+        "json_delta": 4.909227238877878e-06,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_dsc",
+        "csv_delta": 3.98120993841955e-05,
+        "json_delta": 3.98120993841955e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_nsd",
+        "csv_delta": 9.297383019390981e-05,
+        "json_delta": 9.297383019390981e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_voe",
+        "csv_delta": -6.162786778013407e-05,
+        "json_delta": -6.162786778013407e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_msd",
+        "csv_delta": -0.002865544887298288,
+        "json_delta": -0.002865544887298288,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "overlap_ravd",
+        "csv_delta": 0.0001799073373584606,
+        "json_delta": 0.0001799073373584606,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_dsc",
+        "csv_delta": -0.00013299415581491392,
+        "json_delta": -0.00013299415581491392,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_nsd",
+        "csv_delta": -6.44039588093559e-05,
+        "json_delta": -6.44039588093559e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_voe",
+        "csv_delta": 6.58576332674965e-05,
+        "json_delta": 6.58576332674965e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_msd",
+        "csv_delta": 3.3713298936977054e-06,
+        "json_delta": 3.3713298936977054e-06,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "B",
+        "reference": "A",
+        "metric": "pair_ravd",
+        "csv_delta": -0.0018116257132576585,
+        "json_delta": -0.0018116257132576585,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 1.2000478414209148e-05,
+        "json_delta": 1.2000478414209148e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 1.3687652072436052e-05,
+        "json_delta": 1.3687652072436052e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "nsd",
+        "csv_delta": -0.0008316031535182677,
+        "json_delta": -0.0008316031535182677,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "voe",
+        "csv_delta": -1.368765207238748e-05,
+        "json_delta": -1.368765207238748e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "msd",
+        "csv_delta": -0.00020425639385268646,
+        "json_delta": -0.00020425639385268646,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "ravd",
+        "csv_delta": -0.00012231942332777482,
+        "json_delta": -0.00012231942332777482,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.0006045051083919395,
+        "json_delta": 0.0006045051083919395,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_nsd",
+        "csv_delta": -0.0006332698460174147,
+        "json_delta": -0.0006332698460174147,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_voe",
+        "csv_delta": -0.0009105853214479154,
+        "json_delta": -0.0009105853214479154,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_msd",
+        "csv_delta": 0.005220573640116299,
+        "json_delta": 0.005220573640116299,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.001287387118648585,
+        "json_delta": -0.001287387118648585,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_dsc",
+        "csv_delta": 0.001039457260161858,
+        "json_delta": 0.001039457260161858,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_nsd",
+        "csv_delta": -0.0008676977150452458,
+        "json_delta": -0.0008676977150452458,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_voe",
+        "csv_delta": -0.0009505775263398131,
+        "json_delta": -0.0009505775263398131,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_msd",
+        "csv_delta": 0.0044816380940770895,
+        "json_delta": 0.0044816380940770895,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "N0",
+        "metric": "pair_ravd",
+        "csv_delta": 0.03528584139755819,
+        "json_delta": 0.03528584139755819,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "dice",
+        "csv_delta": -3.339603052920914e-05,
+        "json_delta": -3.339603052920914e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "iou",
+        "csv_delta": -6.5908871294873e-05,
+        "json_delta": -6.5908871294873e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "nsd",
+        "csv_delta": -0.0005408294646911393,
+        "json_delta": -0.0005408294646911393,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "voe",
+        "csv_delta": 6.590887129491463e-05,
+        "json_delta": 6.590887129491463e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "msd",
+        "csv_delta": 0.0025845481999968722,
+        "json_delta": 0.0025845481999968722,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "ravd",
+        "csv_delta": 4.2587284901706574e-05,
+        "json_delta": 4.2587284901706574e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.0003413984139725157,
+        "json_delta": 0.0003413984139725157,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_nsd",
+        "csv_delta": -0.0010672462126989357,
+        "json_delta": -0.0010672462126989357,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_voe",
+        "csv_delta": -0.0005120464259068258,
+        "json_delta": -0.0005120464259068258,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_msd",
+        "csv_delta": 0.0016737453044901596,
+        "json_delta": 0.0016737453044901596,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.00022348283875628372,
+        "json_delta": -0.00022348283875628372,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_dsc",
+        "csv_delta": 0.00030957012464738476,
+        "json_delta": 0.00030957012464738476,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_nsd",
+        "csv_delta": -0.0012610598893222358,
+        "json_delta": -0.0012610598893222358,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_voe",
+        "csv_delta": -0.0003623314073839534,
+        "json_delta": -0.0003623314073839534,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_msd",
+        "csv_delta": 0.004170927016998505,
+        "json_delta": 0.004170927016998505,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "C",
+        "reference": "A",
+        "metric": "pair_ravd",
+        "csv_delta": 0.013888424946287281,
+        "json_delta": 0.013888424946287281,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "dice",
+        "csv_delta": 1.3956086034383475e-05,
+        "json_delta": 1.3956086034383475e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "iou",
+        "csv_delta": 1.7683248379363192e-05,
+        "json_delta": 1.7683248379363192e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "nsd",
+        "csv_delta": -0.0008058621989379677,
+        "json_delta": -0.0008058621989379677,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "voe",
+        "csv_delta": -1.7683248379404826e-05,
+        "json_delta": -1.7683248379404826e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "msd",
+        "csv_delta": -0.00022905944178375215,
+        "json_delta": -0.00022905944178375215,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "ravd",
+        "csv_delta": -0.0001383009380673851,
+        "json_delta": -0.0001383009380673851,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.000604511946215136,
+        "json_delta": 0.000604511946215136,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_nsd",
+        "csv_delta": -0.000569015047831134,
+        "json_delta": -0.000569015047831134,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_voe",
+        "csv_delta": -0.0009132169029335557,
+        "json_delta": -0.0009132169029335557,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_msd",
+        "csv_delta": 0.0056881184452035605,
+        "json_delta": 0.0056881184452035605,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.001492906335715874,
+        "json_delta": -0.001492906335715874,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_dsc",
+        "csv_delta": 0.0010141178963912756,
+        "json_delta": 0.0010141178963912756,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_nsd",
+        "csv_delta": -0.0007484494869307579,
+        "json_delta": -0.0007484494869307579,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_voe",
+        "csv_delta": -0.0009320989111959999,
+        "json_delta": -0.0009320989111959999,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_msd",
+        "csv_delta": 0.003327796172632569,
+        "json_delta": 0.003327796172632569,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "N0",
+        "metric": "pair_ravd",
+        "csv_delta": 0.032156173688090206,
+        "json_delta": 0.032156173688090206,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "dice",
+        "csv_delta": -3.1440422909034815e-05,
+        "json_delta": -3.1440422909034815e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "iou",
+        "csv_delta": -6.191327498794585e-05,
+        "json_delta": -6.191327498794585e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "nsd",
+        "csv_delta": -0.0005150885101108393,
+        "json_delta": -0.0005150885101108393,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "voe",
+        "csv_delta": 6.191327498789728e-05,
+        "json_delta": 6.191327498789728e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "msd",
+        "csv_delta": 0.0025597451520658066,
+        "json_delta": 0.0025597451520658066,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "msd_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "ravd",
+        "csv_delta": 2.660577016209628e-05,
+        "json_delta": 2.660577016209628e-05,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_dsc",
+        "csv_delta": 0.00034140525179571224,
+        "json_delta": 0.00034140525179571224,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_nsd",
+        "csv_delta": -0.001002991414512655,
+        "json_delta": -0.001002991414512655,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_voe",
+        "csv_delta": -0.0005146780073924662,
+        "json_delta": -0.0005146780073924662,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_msd",
+        "csv_delta": 0.0021412901095774206,
+        "json_delta": 0.0021412901095774206,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "overlap_ravd",
+        "csv_delta": -0.0004290020558235727,
+        "json_delta": -0.0004290020558235727,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_dsc",
+        "csv_delta": 0.00028423076087680244,
+        "json_delta": 0.00028423076087680244,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_nsd",
+        "csv_delta": -0.0011418116612077478,
+        "json_delta": -0.0011418116612077478,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_voe",
+        "csv_delta": -0.0003438527922401402,
+        "json_delta": -0.0003438527922401402,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_msd",
+        "csv_delta": 0.003017085095553984,
+        "json_delta": 0.003017085095553984,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_fail",
+        "csv_delta": 0.0,
+        "json_delta": 0.0,
+        "matches_abs_tolerance_1e_12": true
+      },
+      {
+        "dataset": "RAM",
+        "arm": "D",
+        "reference": "A",
+        "metric": "pair_ravd",
+        "csv_delta": 0.010758757236819294,
+        "json_delta": 0.010758757236819294,
+        "matches_abs_tolerance_1e_12": true
+      }
+    ]
+  },
+  "reported_historical_anchors": [
+    {
+      "version": "R317 continuous alpha=.035",
+      "split": "historical TSRS validation; comparison not assumed matched",
+      "source": "2026-09-20--dual-prior--r3--round-review.md, section 1",
+      "values": {
+        "dice": 0.902858,
+        "iou": 0.826369,
+        "gap_fp": 0.181737,
+        "merge_proxy": 0.5,
+        "hd95_px": 14.0084,
+        "assd_px": 4.0475
+      },
+      "status": "transcribed_report_only; no_model_reproduction"
+    },
+    {
+      "version": "R332 step2",
+      "reference": "R325",
+      "split": "RAM locked_test_124",
+      "source": "2026-09-20--dual-prior--r3--round-review.md, section 4",
+      "reported_deltas": {
+        "overall_dsc": 0.000523,
+        "overlap_dsc": 0.003895,
+        "overlap_nsd": 0.009349,
+        "overlap_msd_px": -0.105,
+        "pair_msd_px": -0.25676
+      },
+      "percentage_point_conversion": {
+        "overall_dsc": 0.0523,
+        "overlap_dsc": 0.3895,
+        "overlap_nsd": 0.9349
+      },
+      "adverse_metrics_reported": [
+        "overlap_ravd",
+        "pair_msd_fail_rate"
+      ],
+      "status": "transcribed_report_only; no_raw_historical_recalculation"
+    },
+    {
+      "version": "R350 epoch29",
+      "reference": "R332 step2",
+      "split": "RAM validation",
+      "source": "2026-09-20--dual-prior--r3--round-review.md, section 6",
+      "reported_deltas": {
+        "overall_dsc": 2.06e-05,
+        "overlap_dsc": 0.0007594,
+        "overlap_nsd": 0.0008252,
+        "overlap_msd_px": -0.01004,
+        "pair_msd_px": -0.00878
+      },
+      "percentage_point_conversion": {
+        "overall_dsc": 0.00206,
+        "overlap_dsc": 0.07594,
+        "overlap_nsd": 0.08252
+      },
+      "status": "transcribed_report_only; combined_optimization_not_isolated_routing_effect"
+    }
+  ],
+  "limitations": [
+    "Historical R317/R332/R350 original checkpoint, training code and per-case results were not supplied in these attachments.",
+    "No new model training or inference was performed.",
+    "Figure catalog was read; actual referenced PDF figures were not supplied.",
+    "Per-case JSON contains summary statistics, not original per-ID vectors; no population CI or p-values calculated.",
+    "Mixed split/init/aggregation numbers were not combined into a best-dual score."
+  ]
+}

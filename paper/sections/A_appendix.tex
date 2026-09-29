@@ -1,0 +1,9 @@
+\section{Supplementary Implementation Details}
+
+The raw indexed label value is treated only as an image-local instance identifier. All positive identifiers are mapped to the semantic bone class. Background Voronoi assignment is computed with a Euclidean distance transform. Seam candidates are restricted to a 12-pixel distance from foreground and dilated by one pixel. Prediction class 2 is excluded from the final binary bone mask. No ground-truth label, ground-truth seam, or instance identifier is used during inference.
+
+The evaluation uses 3-pixel boundary bands, a 9-pixel gap-region dilation, and Surface Dice tolerances of 2 and 5 pixels. HD95 and ASSD are reported in pixels. All development results use the fixed 96-image original-validation split. The separate clean-test-v2 split is not used in this draft.
+
+\section{Reproducibility Scope}
+
+The draft records the exact split size, patch size, batch size, target construction, checkpoint rule, and metric directions. A submission-ready version should additionally report random seeds, repeated-run confidence intervals, age/sex subgroup counts, complete software versions, and the final cross-backbone experiment matrix.

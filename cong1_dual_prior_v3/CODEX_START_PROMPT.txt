@@ -1,0 +1,13 @@
+请先阅读项目 AGENTS.md 和本包 README.md、REPO_AUDIT.md、TASK.md、ACCEPTANCE_TESTS.md，再检查当前工作树及 R351 plan/review/tracker/resume。当前任务以用户明确主线为准，替代旧 V2/V2.1：TSRS 和 RAM 都有输入端骨缝先验、输出端骨重叠先验、统一局部损失与梯度协调；单图可能同时有两类问题。当前只用 nnU-Net，不启动其他骨架。
+
+不要把输出骨重叠改成一般 completion，也不把 OOF-FN/crowding 设为必需流程。completion 只可作为重叠先验的执行修正动作或历史类名。两个数据集的主结构收益不同：TSRS 优先 gap/merge，RAM 优先 overlap/pair；Dice/IoU 守住原生基线，不要求大涨。
+
+先复用记录中的 TSRS R202 r202_two_channel_zero_prior.pth 和 RAM R325 plain_native_best.pth，核验实际路径、SHA、checkpoint祖先和 prior-free 契约。N0直接重现；A是匹配继续训练，不是从头重训。R350/R332成熟模型仅单列参考，不作为新 native-start 四组共同起点。真实数据/权重未访问时明确 NOT_RUN/BLOCKED，不把公开日志当本地验证。
+
+优先修复三个代码问题：1）输出模块显式读取 overlap，不能只有 seam*(1-overlap) 导致关闭seam时overlap也失效；同时检查overlap生成器是否依赖seam，干净C组不得隐含seam信息。2）新trainer保留原生通道和推理契约，解除强制成熟初始化。3）R349辅助梯度None坐标的全空间投影缺陷，先运行随附CPU探针再修，记录每项与总辅助范数及seam/overlap冲突。
+
+TSRS先查是否有完整逐骨/多层标注。只有互斥标签时真实overlap保持unknown，不把“无标注”说成“无重叠”。现有RAM迁移overlap可做标明来源的弱先验pilot，TSRS真实union GT可用于冻结弱重叠区域内的投影保真监督；不能把它叫TSRS原生真实重叠监督。不要以禁用RAM权重为由强制另起大项目；需要独立原生监督但数据不足时报告NATIVE_OVERLAP_SUPERVISION_GAP。
+
+按TASK的M0–M3完成资产、两数据集局部监督、接口/协调测试、真实batch与固定训练病例可视化。配置中的路径和验证状态只能凭证据补齐。若准备运行M4，先冻结同数据集相同起点、预算、base loss、trainability、seed和模型选择规则，显式启用有界pilot；不得跳过测试自动长训。A/B/C/D后做D_no_routing作为协调检查。当前不跑test、不换骨架、不删旧资产、不改历史evaluator追分。
+
+交付实际diff、已执行命令、逐阶段状态、N0重现证据、四先验来源/可信度、各项loss有效质量、主结构与区域全指标、所有失败和未完成项。D未胜单先验或5%探索门槛未达标属于科研结果，不是隐藏结果或改论文主线的理由。

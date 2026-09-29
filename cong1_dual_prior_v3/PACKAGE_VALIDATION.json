@@ -1,0 +1,232 @@
+{
+  "status": "PACKAGE_CHECKS_PASSED",
+  "kind": "HANDOFF_DOCUMENT_AND_SYNTHETIC_CPU_CHECKS_ONLY",
+  "checks": [
+    {
+      "check": "template_static_constraints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "template_not_training_ready",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "unresolved_template_blocks_pilot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "unresolved_template_blocks_formal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_other_backbones",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_cross_backbone_runs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_test_access",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_completion_substitution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "both_datasets_required",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_unknown_negative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "independent_overlap_path_required",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "clean_C_has_no_seam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "B_has_no_overlap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dual_uses_both_priors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_forced_oof",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_automatic_long_training",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "routing_none_handling_required",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_transfer_as_native_supervision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "hash_matched_old_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "old_none_regression_is_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "probe_accepts_corrected_math_fixture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:ACCEPTANCE_TESTS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:REPO_AUDIT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:TASK.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closed_code_fences:SOURCE_INDEX.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_reference_ids_resolve",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "source_partial_coverage_disclosed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_index_matches_repo_snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_weights_or_medical_images",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:TASK.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:REPO_AUDIT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:ACCEPTANCE_TESTS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:SOURCE_INDEX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:SOURCE_INDEX.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:CODEX_START_PROMPT.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:tools/check_protocol.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:tools/probe_gradient_none_case.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file_present:config/dual_prior_v3.template.yaml",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "check_count": 42,
+  "gradient_probe": {
+    "old_source_match": true,
+    "old_source_result": "FAIL_PARTIAL_NONE_PROJECTION",
+    "old_aux_dot_base": -0.4999999403953552,
+    "corrected_temporary_math_fixture_passed": true
+  },
+  "not_run": [
+    "server filesystem validation",
+    "native checkpoint tensor loading",
+    "medical label audit",
+    "real batch",
+    "segmentation training",
+    "validation/test metric rerun"
+  ],
+  "note": "The old-source gradient failure is an expected audit finding. No production model or repository fix is certified by this package check."
+}

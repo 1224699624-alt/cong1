@@ -1,0 +1,471 @@
+=== workspace ===
+total 20
+drwxrwxr-x  5 shenzeyu shenzeyu 4096 May 26 21:07 .
+drwx------ 14 shenzeyu shenzeyu 4096 May 27 21:16 ..
+drwxrwxr-x  9 shenzeyu shenzeyu 4096 Jun 12 15:05 ARAA-Net
+drwxrwxr-x  5 shenzeyu shenzeyu 4096 May 26 21:03 ARAA-Net_tmp_inspect
+drwxrwxr-x 13 shenzeyu shenzeyu 4096 Jul  3 22:58 YOLO_SAM_generic_src
+=== ARAA top ===
+/home/shenzeyu/workspace/ARAA-Net
+total 144
+drwxrwxr-x 9 shenzeyu shenzeyu  4096 Jun 12 15:05 .
+drwxrwxr-x 5 shenzeyu shenzeyu  4096 May 26 21:07 ..
+drwxrwxr-x 3 shenzeyu shenzeyu  4096 May 26 21:08 backbone
+drwxrwxr-x 4 shenzeyu shenzeyu  4096 May 27 10:58 ckpt
+-rw-rw-r-- 1 shenzeyu shenzeyu   377 May 26 22:01 config.py
+-rw-rw-r-- 1 shenzeyu shenzeyu  6319 May 26 21:08 custom_transforms.py
+-rw-rw-r-- 1 shenzeyu shenzeyu   996 May 26 21:08 dar.py
+-rw-rw-r-- 1 shenzeyu shenzeyu 11634 May 26 21:08 daseg.py
+drwxrwxr-x 4 shenzeyu shenzeyu  4096 May 26 21:08 data
+-rw-rw-r-- 1 shenzeyu shenzeyu  3587 May 26 21:08 datasets.py
+-rwxr-xr-x 1 shenzeyu shenzeyu  4015 Jun 12 15:05 eval_all_ckpts_clean_test_v2.py
+drwxrwxr-x 8 shenzeyu shenzeyu  4096 Jun 12 14:46 .git
+-rw-rw-r-- 1 shenzeyu shenzeyu   102 May 26 21:08 .gitattributes
+-rw-rw-r-- 1 shenzeyu shenzeyu  1799 May 26 21:08 .gitignore
+-rw-rw-r-- 1 shenzeyu shenzeyu  3284 May 26 21:08 joint_transforms.py
+-rw-rw-r-- 1 shenzeyu shenzeyu  1690 May 26 22:00 loss.py
+-rw-rw-r-- 1 shenzeyu shenzeyu   605 May 26 21:08 misc.py
+drwxrwxr-x 5 shenzeyu shenzeyu  4096 Jun 12 15:05 outputs
+drwxrwxr-x 2 shenzeyu shenzeyu  4096 May 27 11:01 __pycache__
+-rw-rw-r-- 1 shenzeyu shenzeyu  1187 May 26 21:08 README.md
+drwxrwxr-x 2 shenzeyu shenzeyu  4096 May 27 10:58 results
+-rwxrwxr-x 1 shenzeyu shenzeyu   233 May 26 22:05 run_tsrs_epiphysis_original_baseline.sh
+-rwxrwxr-x 1 shenzeyu shenzeyu   216 May 27 11:01 run_tsrs_epiphysis_test_eval.sh
+-rw-rw-r-- 1 shenzeyu shenzeyu  4892 May 26 21:08 seg_utils.py
+-rw-rw-r-- 1 shenzeyu shenzeyu  7261 May 26 22:01 test.py
+-rwxr-xr-x 1 shenzeyu shenzeyu  4086 Jun 12 15:02 test_tsrs_best_checkpoint_clean_test_v2.py
+-rwxrwxr-x 1 shenzeyu shenzeyu  4015 Jun 12 15:02 test_tsrs_best_checkpoint.py
+-rw-rw-r-- 1 shenzeyu shenzeyu 12567 May 26 22:43 train.py
+=== files ===
+backbone/resnet/resnet50-19c8e357.pth
+ckpt/DANet/10.pth
+ckpt/DANet/11.pth
+ckpt/DANet/16.pth
+ckpt/DANet/17.pth
+ckpt/DANet/1.pth
+ckpt/DANet/25.pth
+ckpt/DANet/27.pth
+ckpt/DANet/33.pth
+ckpt/DANet/4.pth
+ckpt/DANet/54.pth
+ckpt/DANet/57.pth
+ckpt/DANet/5.pth
+ckpt/DANet/62.pth
+ckpt/DANet/6.pth
+ckpt/DANet/71.pth
+ckpt/DANet/77.pth
+ckpt/DANet/7.pth
+ckpt/DANet/80.pth
+ckpt/DANet/8.pth
+ckpt/DANet/90.pth
+ckpt/DANet/98.pth
+ckpt/DANet/log.txt
+config.py
+custom_transforms.py
+dar.py
+daseg.py
+datasets.py
+eval_all_ckpts_clean_test_v2.py
+.gitattributes
+.git/config
+.git/description
+.git/FETCH_HEAD
+.git/HEAD
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/fsmonitor-watchman.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-commit.sample
+.git/hooks/pre-merge-commit.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/pre-push.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/pre-receive.sample
+.git/hooks/push-to-checkout.sample
+.git/hooks/sendemail-validate.sample
+.git/hooks/update.sample
+.gitignore
+.git/index
+.git/info/exclude
+.git/logs/HEAD
+.git/ORIG_HEAD
+.git/packed-refs
+joint_transforms.py
+loss.py
+misc.py
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/summary.json
+outputs/tsrs_epiphysis_clean_test_v2_eval/metrics.json
+outputs/tsrs_epiphysis_test_eval/metrics.json
+__pycache__/config.cpython-311.pyc
+__pycache__/custom_transforms.cpython-311.pyc
+__pycache__/dar.cpython-311.pyc
+__pycache__/daseg.cpython-311.pyc
+__pycache__/datasets.cpython-311.pyc
+__pycache__/eval_tsrs_baseline.cpython-313.pyc
+__pycache__/joint_transforms.cpython-311.pyc
+__pycache__/loss.cpython-311.pyc
+__pycache__/loss.cpython-313.pyc
+__pycache__/misc.cpython-311.pyc
+__pycache__/seg_utils.cpython-311.pyc
+__pycache__/test_tsrs_best_checkpoint.cpython-313.pyc
+__pycache__/train.cpython-311.pyc
+__pycache__/train.cpython-313.pyc
+__pycache__/train_tsrs_baseline.cpython-313.pyc
+README.md
+run_tsrs_epiphysis_original_baseline.sh
+run_tsrs_epiphysis_test_eval.sh
+seg_utils.py
+test.py
+test_tsrs_best_checkpoint_clean_test_v2.py
+test_tsrs_best_checkpoint.py
+train.py
+=== checkpoints/results candidates ===
+backbone/resnet/resnet50-19c8e357.pth
+ckpt/DANet/10.pth
+ckpt/DANet/11.pth
+ckpt/DANet/16.pth
+ckpt/DANet/17.pth
+ckpt/DANet/1.pth
+ckpt/DANet/25.pth
+ckpt/DANet/27.pth
+ckpt/DANet/33.pth
+ckpt/DANet/4.pth
+ckpt/DANet/54.pth
+ckpt/DANet/57.pth
+ckpt/DANet/5.pth
+ckpt/DANet/62.pth
+ckpt/DANet/6.pth
+ckpt/DANet/71.pth
+ckpt/DANet/77.pth
+ckpt/DANet/7.pth
+ckpt/DANet/80.pth
+ckpt/DANet/8.pth
+ckpt/DANet/90.pth
+ckpt/DANet/98.pth
+ckpt/DANet/log.txt
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_10/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_16/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_17/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_1/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_27/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_33/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_4/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_54/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_57/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_5/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_71/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_77/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_7/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_80/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_8/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_90/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_98/metrics.json
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/summary.json
+outputs/tsrs_epiphysis_clean_test_v2_eval/metrics.json
+outputs/tsrs_epiphysis_test_eval/metrics.json
+=== grep clean/test/dice ===
+./test_tsrs_best_checkpoint.py:23:DATA_ROOT = Path("/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis")
+./test_tsrs_best_checkpoint.py:25:OUTPUT_ROOT = Path("./outputs/tsrs_epiphysis_test_eval")
+./test_tsrs_best_checkpoint.py:67:    test_set = ImageFolder(str(DATA_ROOT / "test"), joint_transform_val, img_transform, target_transform, split='test')
+./test_tsrs_best_checkpoint.py:68:    return DataLoader(test_set, batch_size=1, num_workers=0, shuffle=False)
+./test_tsrs_best_checkpoint.py:71:def save_prediction_mask(pred_tensor: torch.Tensor, output_path: Path):
+./test_tsrs_best_checkpoint.py:88:    net.eval()
+./test_tsrs_best_checkpoint.py:94:            *_, predict0 = net(inputs)
+./test_tsrs_best_checkpoint.py:95:            pred = predict0.argmax(1)
+./test_tsrs_best_checkpoint.py:98:            save_prediction_mask(pred, MASK_DIR / f"{image_stem}.png")
+./test_tsrs_best_checkpoint.py:102:        "python", str(YOLO_SAM_ROOT / "scripts" / "evaluate_masks.py"),
+./test_tsrs_best_checkpoint.py:103:        "--dataset", "TSRS_RSNA-Epiphysis",
+./test_tsrs_best_checkpoint.py:104:        "--split", "test",
+./test_tsrs_best_checkpoint.py:113:    print(f"Saved ARAA-Net test metrics to: {metrics_path}")
+./test.py:126:to_test = OrderedDict([
+./test.py:146:test_set = ImageFolder(chameleon_path, joint_transform_val, img_transform, target_transform,split='test')
+./test.py:147:print("Test set: {}".format(test_set.__len__()))
+./test.py:148:test_loader = DataLoader(test_set, batch_size=1, num_workers=0, shuffle=False)
+./test.py:175:    net.eval()
+./test.py:182:    test_iterator = tqdm(test_loader, total=len(test_loader))
+./test.py:183:    for data in test_iterator:
+./test.py:192:            predict_1, predict_2, predict_3, predict_4, predict0 = net(inputs)
+./test.py:195:            pred = predict0.argmax(1)
+./test.py:198:            # Add batch sample into evaluator
+./test.py:201:            confmat.update(labels.flatten(), predict0.argmax(1).flatten() if predict0.dim() == 4 else predict0.flatten())
+./test.py:220:            global_acc, class_acc, class_iou,FWIoU,mDice = confmat.compute()
+./test.py:225:            test_iterator.set_description(log)
+./test.py:231:    global_acc, class_acc, class_iou,FWIoU,mDice = confmat.compute()
+./test.py:243:    print(f'mDice={mDice}')
+./test.py:257:    net.eval()
+./.gitattributes:2:TSRS_RSNA-Epiphysis.zip filter=lfs diff=lfs merge=lfs -text
+./run_tsrs_epiphysis_test_eval.sh:8:python test_tsrs_best_checkpoint.py
+./config.py:12:datasets_root = '/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis'
+./config.py:15:chameleon_path = os.path.join(datasets_root, 'test')
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:2:  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:3:  "split": "test",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:4:  "num_evaluated": 81,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:8:    "dice": 0.9053657931927748,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:17:      "dice": 0.913930863175326,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:26:      "dice": 0.8747932378255628,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:35:      "dice": 0.9258661141411987,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:44:      "dice": 0.9234152958685088,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:53:      "dice": 0.9346331856228459,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:62:      "dice": 0.911613537424519,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:71:      "dice": 0.9221712523397115,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:80:      "dice": 0.8062591466846786,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:89:      "dice": 0.909032960611936,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:98:      "dice": 0.9109648279838555,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:107:      "dice": 0.912121592314448,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:116:      "dice": 0.9190386437934597,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:125:      "dice": 0.9190388786918071,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:134:      "dice": 0.9287099494097808,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:143:      "dice": 0.9254135847778217,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:152:      "dice": 0.9157416217359129,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:161:      "dice": 0.8704084162055652,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:170:      "dice": 0.9147939105219552,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:179:      "dice": 0.9331698694189428,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:188:      "dice": 0.9228809555945472,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:197:      "dice": 0.9204582651391162,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:206:      "dice": 0.9228398508162673,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:215:      "dice": 0.9341909565389196,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:224:      "dice": 0.9284556554729803,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:233:      "dice": 0.9340164920380617,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:242:      "dice": 0.9072858877226414,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:251:      "dice": 0.8943191131432515,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:260:      "dice": 0.9177187021366066,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:269:      "dice": 0.9353356853356853,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:278:      "dice": 0.9168355888576302,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:287:      "dice": 0.9140080782064041,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:296:      "dice": 0.89872849146569,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:305:      "dice": 0.909359566387933,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:314:      "dice": 0.9184087290070049,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:323:      "dice": 0.9149315883402737,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:332:      "dice": 0.9307279678081893,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:341:      "dice": 0.8951365718486682,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:350:      "dice": 0.8976090014064697,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:359:      "dice": 0.8955994746420803,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:368:      "dice": 0.8884849876915548,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:377:      "dice": 0.9121129505972843,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:386:      "dice": 0.9280520321028661,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:395:      "dice": 0.8863559094569204,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:404:      "dice": 0.9198637619690251,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:413:      "dice": 0.9305989422471659,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:422:      "dice": 0.899716312602726,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:431:      "dice": 0.881197932013608,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:440:      "dice": 0.877827968417856,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:449:      "dice": 0.8729090226215583,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:458:      "dice": 0.900855859672909,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:467:      "dice": 0.8962751374029253,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:476:      "dice": 0.9113726591322118,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:485:      "dice": 0.8827885284130426,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:494:      "dice": 0.9174529662378759,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:503:      "dice": 0.9136069770588869,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:512:      "dice": 0.8956063986467766,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:521:      "dice": 0.9047769423131087,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:530:      "dice": 0.8855006885697423,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:539:      "dice": 0.9046270066100094,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:548:      "dice": 0.9052825130982842,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:557:      "dice": 0.9096316935902964,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:566:      "dice": 0.8880013883156355,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:575:      "dice": 0.9126916791463339,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:584:      "dice": 0.8985041102588394,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:593:      "dice": 0.8818124622351791,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:602:      "dice": 0.8887460725506998,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:611:      "dice": 0.9024518573082184,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:620:      "dice": 0.8482212124570542,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:629:      "dice": 0.9109558193255946,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:638:      "dice": 0.9037038179238882,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:647:      "dice": 0.9307781424985518,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:656:      "dice": 0.9293851996305039,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:665:      "dice": 0.9362823770267059,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:674:      "dice": 0.8872815477234204,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:683:      "dice": 0.874913283735617,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:692:      "dice": 0.8575125004370783,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:701:      "dice": 0.9223496278414806,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:710:      "dice": 0.8626114129469834,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:719:      "dice": 0.9089206901163568,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:728:      "dice": 0.914795924012259,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/metrics.json:737:      "dice": 0.8698494222014708,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:2:  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:3:  "split": "test",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:4:  "num_evaluated": 81,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:8:    "dice": 0.9109903975834113,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:17:      "dice": 0.9258616983160157,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:26:      "dice": 0.8838871773397541,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:35:      "dice": 0.9259428679590517,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:44:      "dice": 0.9280302001575188,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:53:      "dice": 0.9381565006810958,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:62:      "dice": 0.9192586342343391,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:71:      "dice": 0.9229623894464132,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:80:      "dice": 0.8386899295990206,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:89:      "dice": 0.9135231806300729,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:98:      "dice": 0.9286746747744604,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:107:      "dice": 0.9201312103788883,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:116:      "dice": 0.9316520708500692,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:125:      "dice": 0.9274068989188261,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:134:      "dice": 0.9325412200266908,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:143:      "dice": 0.9298776231911032,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:152:      "dice": 0.9262806501609506,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:161:      "dice": 0.8938551468491588,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:170:      "dice": 0.926931552587646,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:179:      "dice": 0.9387023654997385,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:188:      "dice": 0.9340406383052373,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:197:      "dice": 0.9314517734166633,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:206:      "dice": 0.9287815953478674,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:215:      "dice": 0.9327062228654125,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:224:      "dice": 0.927295408874987,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:233:      "dice": 0.9319981516099897,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:242:      "dice": 0.9092746711305528,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:251:      "dice": 0.9130174836701739,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:260:      "dice": 0.9196262036186671,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:269:      "dice": 0.9350035682619321,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:278:      "dice": 0.9159833320406969,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:287:      "dice": 0.9091141712400256,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:296:      "dice": 0.9006161264398607,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:305:      "dice": 0.890146323393221,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:314:      "dice": 0.8909160671848225,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:323:      "dice": 0.9133181534809758,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:332:      "dice": 0.933187822536501,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:341:      "dice": 0.905411218422774,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:350:      "dice": 0.9127604514046368,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:359:      "dice": 0.9110650682973446,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:368:      "dice": 0.9007230621428932,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:377:      "dice": 0.9193039833042724,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:386:      "dice": 0.9267826900610395,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:395:      "dice": 0.8962084503855653,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:404:      "dice": 0.9248140299857253,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:413:      "dice": 0.928265563152213,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:422:      "dice": 0.9154101610112256,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:431:      "dice": 0.8937273389857091,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:440:      "dice": 0.8942572620640794,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:449:      "dice": 0.8769511814765858,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:458:      "dice": 0.9096569125405511,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:467:      "dice": 0.9000897239668549,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:476:      "dice": 0.9175681073739714,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:485:      "dice": 0.8821856160312473,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:494:      "dice": 0.9154235664431367,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:503:      "dice": 0.9199227294679129,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:512:      "dice": 0.8981873571972582,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:521:      "dice": 0.9083990310504294,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:530:      "dice": 0.8953165577146951,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:539:      "dice": 0.8979605372243409,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:548:      "dice": 0.910064043915828,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:557:      "dice": 0.9138682389130992,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:566:      "dice": 0.9003948395948941,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:575:      "dice": 0.9063345966432051,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:584:      "dice": 0.8893789537593764,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:593:      "dice": 0.8767679651208056,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:602:      "dice": 0.9040854878139122,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:611:      "dice": 0.9125208861100631,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:620:      "dice": 0.8544170416358148,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:629:      "dice": 0.9217256574843552,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:638:      "dice": 0.9111403940495658,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:647:      "dice": 0.9347002840201305,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:656:      "dice": 0.9346678079936788,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:665:      "dice": 0.9325845645157058,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:674:      "dice": 0.8874574733499659,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:683:      "dice": 0.899539147104752,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:692:      "dice": 0.8743652981285363,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:701:      "dice": 0.9249443936755349,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:710:      "dice": 0.8778100739541558,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:719:      "dice": 0.913344174291256,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:728:      "dice": 0.9211772247275671,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/metrics.json:737:      "dice": 0.8696993527312322,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:2:  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:3:  "split": "test",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:4:  "num_evaluated": 81,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:8:    "dice": 0.9007922551229288,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:17:      "dice": 0.9180486590409273,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:26:      "dice": 0.8442360902040056,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:35:      "dice": 0.9228045001450182,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:44:      "dice": 0.9252068788026766,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:53:      "dice": 0.9350945922003268,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:62:      "dice": 0.9123203982350945,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:71:      "dice": 0.918651650873201,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:80:      "dice": 0.8596598556221705,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:89:      "dice": 0.9156319643425661,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:98:      "dice": 0.9074845326079106,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:107:      "dice": 0.9115528976527845,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:116:      "dice": 0.9171482392005363,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:125:      "dice": 0.9209819268060678,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:134:      "dice": 0.8516923354454642,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:143:      "dice": 0.9225132434179929,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:152:      "dice": 0.9195194845520882,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:161:      "dice": 0.8808528373072452,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:170:      "dice": 0.9168514701661927,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:179:      "dice": 0.9277601954019711,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:188:      "dice": 0.9277476255088195,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:197:      "dice": 0.9271323813199537,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:206:      "dice": 0.918280312225105,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:215:      "dice": 0.9263501383288133,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:224:      "dice": 0.9256458613979943,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:233:      "dice": 0.9289639396509626,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:242:      "dice": 0.9016368457951047,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:251:      "dice": 0.8680096160883689,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:260:      "dice": 0.9146845275644118,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:269:      "dice": 0.9330613661095895,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:278:      "dice": 0.9137337710429592,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:287:      "dice": 0.9108177836051886,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:296:      "dice": 0.897017796184304,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:305:      "dice": 0.8689850984467496,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:314:      "dice": 0.8936235618178178,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:323:      "dice": 0.9156651769917303,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:332:      "dice": 0.9267664847573089,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:341:      "dice": 0.8904752063743556,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:350:      "dice": 0.910393985510074,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:359:      "dice": 0.8952994272744068,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:368:      "dice": 0.8828152733127009,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:377:      "dice": 0.9148927722165114,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:386:      "dice": 0.9102264998604529,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:395:      "dice": 0.874467551991982,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:404:      "dice": 0.9206916292543507,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:413:      "dice": 0.9167177469269617,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:422:      "dice": 0.899481704357954,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:431:      "dice": 0.8759755911791325,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:440:      "dice": 0.8816329626364041,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:449:      "dice": 0.8785139391111629,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:458:      "dice": 0.8933947838821528,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:467:      "dice": 0.8933270947769182,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:476:      "dice": 0.9013936572136262,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:485:      "dice": 0.8786502450152661,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:494:      "dice": 0.8992779177162049,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:503:      "dice": 0.9052663286309554,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:512:      "dice": 0.8860272173809239,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:521:      "dice": 0.8958317367054115,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:530:      "dice": 0.8853325430342546,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:539:      "dice": 0.8850010598229281,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:548:      "dice": 0.9011246063877643,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:557:      "dice": 0.9072764980041478,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:566:      "dice": 0.8390452152308087,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:575:      "dice": 0.9037911240330082,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:584:      "dice": 0.8973776584761511,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:593:      "dice": 0.8779221435474396,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:602:      "dice": 0.8875737516189379,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:611:      "dice": 0.9094986384750922,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:620:      "dice": 0.8509583240472476,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:629:      "dice": 0.9124400830716838,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:638:      "dice": 0.9095396651686963,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:647:      "dice": 0.9304302672414834,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:656:      "dice": 0.9266975506129866,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:665:      "dice": 0.93336730237298,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:674:      "dice": 0.890355508623724,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:683:      "dice": 0.8610547301922823,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:692:      "dice": 0.8569587167460346,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:701:      "dice": 0.9198158873583913,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:710:      "dice": 0.8524743904198528,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:719:      "dice": 0.9071248760393623,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:728:      "dice": 0.9173941353698778,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/metrics.json:737:      "dice": 0.8707306788747666,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:2:  "dataset": "TSRS_RSNA-Epiphysis_clean_test_v2",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:3:  "split": "test",
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:4:  "num_evaluated": 81,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:8:    "dice": 0.8645750357609806,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:17:      "dice": 0.9127462694862033,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:26:      "dice": 0.7642941993101573,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:35:      "dice": 0.88188564214675,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:44:      "dice": 0.9058271482978696,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:53:      "dice": 0.9110438055794781,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:62:      "dice": 0.8870314974485307,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:71:      "dice": 0.9008114539850973,
+./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/metrics.json:80:      "dice": 0.7909101839605627,

@@ -1,0 +1,110 @@
+{
+  "status": "DRAFT_NOT_RUN",
+  "date": "2026-09-29",
+  "project_root": "G:\\gutou\\YOLO+SAM",
+  "scope": {
+    "dataset": "RAM-W600",
+    "train_count": 425,
+    "val_count": 69,
+    "read_test": false,
+    "train_tsrs": false,
+    "new_backbone": false
+  },
+  "permissions": {
+    "prior_diagnostics_and_one_O_pair": "within_presented_lock_and_available_authorized_resources",
+    "corrector_implementation_and_parity": true,
+    "four_arm_segmentation_training": false,
+    "suggested_single_gpu_cumulative_hours": 2,
+    "budget_is_recommendation_not_runtime_estimate": true,
+    "pending_readout_work_deduplicated": null,
+    "explicit_user_budget_if_any": null
+  },
+  "assets": {
+    "C0_sha256": "ae4c4eb21f6e9424e30c731b2c388d24233d389198a6371b1bd3090d3d788384",
+    "O_sha256": "e7b738e0b413f9138660475062e76e5d67d9df5c94afc0a2c2597ff0cf126ae5",
+    "C0_path": null,
+    "O_path": null,
+    "S_path": null,
+    "S_sha256": null,
+    "S_target_source": null,
+    "S_target_validated": false
+  },
+  "data": {
+    "fit_manifest": null,
+    "calibration_manifest": null,
+    "holdout_manifest": null,
+    "val_manifest": null,
+    "grouping_rule": null,
+    "H0_precision_and_definition": null,
+    "H0_unique_mapping": "OR_over_member_then_valid_aware_area",
+    "pretraining_seen_adaptation_holdout": "must_disclose",
+    "GT_used_in_forward": false
+  },
+  "prior_pair": {
+    "arms": [
+      "O_REF_CONTINUE",
+      "O_HARD_WEIGHT"
+    ],
+    "O_target": "count_valid_complete_members_ge2_not_H0",
+    "candidate_weight": "1+beta*area_fraction_H0_unique",
+    "beta_suggested_not_locked": 1.0,
+    "beta_locked": null,
+    "beta_zero_loss_parity_pass": false,
+    "generator_input_resolution": 192,
+    "source_optimizer_policy": null,
+    "optimizer": null,
+    "lr": null,
+    "schedule": null,
+    "successful_steps_per_arm": null,
+    "selection_rule": null,
+    "prior_activation_resize_order": null,
+    "misactivation_budget_source": "original_frozen_O_at_0p5_on_train_internal_calibration_singlebone_only",
+    "misactivation_alpha": null,
+    "threshold_ref": null,
+    "threshold_hard": null
+  },
+  "feature_readout": {
+    "status": null,
+    "artifact_paths": [],
+    "selected_H_layer": null,
+    "eligible_for_segmentation": false
+  },
+  "corrector_prototype": {
+    "location_candidate": "post_R332_step2_shared_conditional_increment",
+    "location_locked": null,
+    "preserve_C0": true,
+    "old_refiner_residual_reset": false,
+    "new_output_zero_init": true,
+    "base_features": null,
+    "extra_H_feature": null,
+    "increment_bound": null,
+    "bound_reason_train_only": null,
+    "zero_increment_parity": null,
+    "GT_independent_forward": null,
+    "future_arms": [
+      "C00",
+      "CS",
+      "CO",
+      "CSO"
+    ],
+    "future_training_authorized": false
+  },
+  "evaluation": {
+    "segmentation_protocol": "existing_locked_R329_verify_exact_version",
+    "member_threshold": 0.5,
+    "pair_list_hash": null,
+    "coordinate_protocol": null,
+    "new_custom_primary_score": false,
+    "val_role": "development_confirmation_not_untouched_test"
+  },
+  "runtime": {
+    "code_sha": null,
+    "dependencies": null,
+    "gpu": null,
+    "free_memory": null,
+    "free_disk": null,
+    "measured_costs": null,
+    "estimated_pair_and_eval_hours": null,
+    "failure_replay_counted": true
+  }
+}

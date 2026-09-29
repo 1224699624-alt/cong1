@@ -1,0 +1,889 @@
+=== metrics summary ===
+FILE outputs/tsrs_epiphysis_clean_test_v2_eval/metrics.json True 20854
+keys ['dataset', 'split', 'num_evaluated', 'num_missing', 'missing', 'mean', 'per_image']
+mean {'dice': 0.6330025195362791, 'iou': 0.5450648531794825, 'precision': 0.8832781198924474, 'recall': 0.6292538770122533, 'specificity': 0.9969466818507342, 'boundary_iou': 0.14729884116162031}
+prefix {"dataset": "TSRS_RSNA-Epiphysis_clean_test_v2", "split": "test", "num_evaluated": 81, "num_missing": 0, "missing": [], "mean": {"dice": 0.6330025195362791, "iou": 0.5450648531794825, "precision": 0.8832781198924474, "recall": 0.6292538770122533, "specificity": 0.9969466818507342, "boundary_iou": 0.14729884116162031}, "per_image": [{"dice": 0.9172202564927345, "iou": 0.8470977241610912, "precision": 0.9023168785427329, "recall": 0.9326242143283752, "specificity": 0.9978949103676554, "boundary_iou": 0.2934489128890152, "image": "10793.png"}, {"dice": 0.8668057381265359, "iou": 0.7649224561845921, "precision": 0.8255000680364676, "recall": 0.9124627741178594, "specificity": 0.9968870718813553, "boundary_iou": 0.2155344988656079, "image": "11099.png"}, {"dice": 0.85357642923109, "iou": 0.744555896263188, "precision": 0.8139772727272727, "recall": 0.8972255276507798, "specificity": 0.9959371940331105, "boundary_iou": 0.2767727930535456, "image": "12046.png"}, {"dice": 0.9172428408699568, "iou": 0.8471362513150491, "precision": 0.8943792943121351, "recall": 0.9413060026098303, "specificity": 0.9973496687247946, "boundary_iou": 0.29003484320557493, "image": "12133.png"}, {"dice": 0.929192745305845, "iou": 0.8677497665732959, "precision": 0.9299923948284834, "recall": 0.9283944697514585, "specificity": 0.9972284244171213, "boundary_iou": 0.3040760036775973, "image": "12213.png"}, {"dice": 0.7793838804205964, "iou": 0.6385167850225952, "precision": 0.6710626749215504, "recall": 0.929
+FILE outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/summary.json True 5633
+keys ['best', 'all']
+best {'epoch': 98, 'dice': 0.9117660066557425, 'iou': 0.8384360930797206, 'precision': 0.9101767600852156, 'recall': 0.9146908686504701, 'specificity': 0.9971764181974658, 'boundary_iou': 0.2352651559145258}
+prefix {"best": {"epoch": 98, "dice": 0.9117660066557425, "iou": 0.8384360930797206, "precision": 0.9101767600852156, "recall": 0.9146908686504701, "specificity": 0.9971764181974658, "boundary_iou": 0.2352651559145258}, "all": [{"epoch": 98, "dice": 0.9117660066557425, "iou": 0.8384360930797206, "precision": 0.9101767600852156, "recall": 0.9146908686504701, "specificity": 0.9971764181974658, "boundary_iou": 0.2352651559145258}, {"epoch": 90, "dice": 0.9117608772853398, "iou": 0.8384442632581032, "precision": 0.9058756826746046, "recall": 0.9191699044087847, "specificity": 0.9969438340550164, "boundary_iou": 0.23435732920351135}, {"epoch": 80, "dice": 0.9114008889066187, "iou": 0.8378179596130778, "precision": 0.9071905164435764, "recall": 0.917073698604088, "specificity": 0.997068683154322, "boundary_iou": 0.23386097232461056}, {"epoch": 62, "dice": 0.9109903975834113, "iou": 0.8371349125439993, "precision": 0.9113173795733933, "recall": 0.912015992824699, "specificity": 0.9972129991597989, "boundary_iou": 0.2337148702923452}, {"epoch": 77, "dice": 0.9109346418626995, "iou": 0.8370323860501946, "precision": 0.9135467431480467, "recall": 0.9096325745438615, "specificity": 0.9972942571830312, "boundary_iou": 0.23539807528039952}, {"epoch": 71, "dice": 0.9101242629459811, "iou": 0.8356943591164289, "precision": 0.9089916885572794, "recall": 0.9125687707070625, "specificity": 0.9971641210214434, "boundary_iou": 0.2322326863911639}, {"epoch": 54, "dice": 0.9092769561866756, "iou": 0.8342
+FILE outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_98/metrics.json True 21799
+keys ['dataset', 'split', 'num_evaluated', 'num_missing', 'missing', 'mean', 'per_image']
+mean {'dice': 0.9117660066557425, 'iou': 0.8384360930797206, 'precision': 0.9101767600852156, 'recall': 0.9146908686504701, 'specificity': 0.9971764181974658, 'boundary_iou': 0.2352651559145258}
+prefix {"dataset": "TSRS_RSNA-Epiphysis_clean_test_v2", "split": "test", "num_evaluated": 81, "num_missing": 0, "missing": [], "mean": {"dice": 0.9117660066557425, "iou": 0.8384360930797206, "precision": 0.9101767600852156, "recall": 0.9146908686504701, "specificity": 0.9971764181974658, "boundary_iou": 0.2352651559145258}, "per_image": [{"dice": 0.9259094624241816, "iou": 0.8620404239980776, "precision": 0.9337150789519347, "recall": 0.9182332698159893, "specificity": 0.9986408829753989, "boundary_iou": 0.3151974119550033, "image": "10793.png"}, {"dice": 0.8815498866045092, "iou": 0.7881888302807009, "precision": 0.8689655172413793, "recall": 0.8945041061276058, "specificity": 0.9978230864497812, "boundary_iou": 0.21737915618887957, "image": "11099.png"}, {"dice": 0.9250484091875127, "iou": 0.8605489001493805, "precision": 0.9301294836483364, "recall": 0.9200225465021608, "specificity": 0.9986306333584415, "boundary_iou": 0.3149166928638793, "image": "12046.png"}, {"dice": 0.930854170345118, "iou": 0.8706522015295104, "precision": 0.9301088402138805, "recall": 0.9316006959547629, "specificity": 0.9983309848291382, "boundary_iou": 0.31936405597479667, "image": "12133.png"}, {"dice": 0.9387026503691154, "iou": 0.8844860026227265, "precision": 0.9477639296187683, "recall": 0.9298129944857348, "specificity": 0.9979676697055221, "boundary_iou": 0.31625933898948966, "image": "12213.png"}, {"dice": 0.9174685310619495, "iou": 0.8475213491594608, "precision": 0.908358277688234, "recall": 0.
+=== output tree ===
+outputs
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_1
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_10
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_10/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_16
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_16/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_17
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_17/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_1/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_27
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_27/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_33
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_33/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_4
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_4/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_5
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_54
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_54/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_57
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_57/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_5/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_7
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_71
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_71/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_77
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_77/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_7/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_8
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_80
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_80/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_8/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_90
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_90/masks
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_98
+outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_98/masks
+outputs/tsrs_epiphysis_clean_test_v2_eval
+outputs/tsrs_epiphysis_clean_test_v2_eval/masks
+outputs/tsrs_epiphysis_test_eval
+outputs/tsrs_epiphysis_test_eval/masks
+=== png masks ===
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1789.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15464.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1744.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3407.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15475.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1891.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15386.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12517.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/9194.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14289.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1716.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2017.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7252.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1784.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/11099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3665.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1821.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/4078.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1801.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7035.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15578.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1898.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/8579.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7397.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3912.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/4099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2982.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14543.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1873.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1703.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15071.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/13954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12046.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3900.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12213.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14169.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14235.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2495.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14224.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1695.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1468.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2498.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3660.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1944.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14724.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7022.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1910.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/4319.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12133.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7416.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2136.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12936.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2050.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/9072.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/4818.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7625.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15130.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/6671.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3591.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/7484.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1964.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3736.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/8435.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2168.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15299.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/4332.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1667.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/12622.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/3503.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/6666.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/15567.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/1897.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14123.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/10793.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/14018.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_25/masks/2075.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1789.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15464.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1744.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3407.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15475.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1891.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15386.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12517.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/9194.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14289.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1716.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2017.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7252.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1784.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/11099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3665.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1821.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/4078.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1801.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7035.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15578.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1898.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/8579.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7397.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3912.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/4099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2982.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14543.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1873.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1703.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15071.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/13954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12046.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3900.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12213.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14169.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14235.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2495.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14224.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1695.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1468.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2498.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3660.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1944.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14724.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7022.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1910.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/4319.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12133.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7416.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2136.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12936.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2050.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/9072.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/4818.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7625.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15130.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/6671.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3591.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/7484.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1964.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3736.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/8435.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2168.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15299.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/4332.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1667.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/12622.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/3503.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/6666.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/15567.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/1897.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14123.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/10793.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/14018.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_62/masks/2075.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1789.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15464.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1744.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3407.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15475.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1891.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15386.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12517.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/9194.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14289.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1716.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2017.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7252.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1784.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/11099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3665.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1821.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/4078.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1801.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7035.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15578.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1898.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/8579.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7397.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3912.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/4099.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2982.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14543.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1873.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1703.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15071.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/13954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12046.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3900.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12213.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14169.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14235.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2495.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14224.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1695.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1468.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2498.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3660.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1944.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14724.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7022.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1910.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/4319.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12133.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1954.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7416.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2136.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12936.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2050.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/9072.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/4818.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7625.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15130.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/6671.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3591.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/7484.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1964.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3736.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/8435.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2168.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1858.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15299.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/4332.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1830.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1667.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/12622.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/3503.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/6666.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/15567.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/1897.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14123.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/10793.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/14018.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_11/masks/2075.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/1789.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/15464.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/1744.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/3407.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/15475.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/1891.png
+/outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep/epoch_6/masks/15386.png
+png_count 1879
+=== scripts heads ===
+---test_tsrs_best_checkpoint_clean_test_v2.py---
+#!/usr/bin/env python3
+import json
+import os
+import re
+import subprocess
+from pathlib import Path
+
+os.environ.setdefault("CUDA_DEVICE_ORDER", "PCI_BUS_ID")
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
+
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+from torchvision import transforms
+
+import joint_transforms
+from config import backbone_path
+from datasets import ImageFolder
+from daseg import daseg
+
+DATA_ROOT = Path("/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw_variants/TSRS_RSNA-Epiphysis_clean_test_v2")
+CKPT_DIR = Path("./ckpt/DANet")
+OUTPUT_ROOT = Path("./outputs/tsrs_epiphysis_clean_test_v2_eval")
+MASK_DIR = OUTPUT_ROOT / "masks"
+YOLO_SAM_ROOT = Path("/home/shenzeyu/workspace/YOLO_SAM_generic_src")
+DATASET_NAME = "TSRS_RSNA-Epiphysis_clean_test_v2"
+RAW_ROOT = YOLO_SAM_ROOT / "data" / "raw_variants"
+
+
+def find_best_checkpoint() -> Path:
+    log_path = CKPT_DIR / "log.txt"
+    best_epoch = None
+    best_score = float("-inf")
+    pattern = re.compile(r"\[(.*?)\]")
+    if log_path.exists():
+        for line in log_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+            groups = [g.strip() for g in pattern.findall(line)]
+            if len(groups) != 3:
+                continue
+            try:
+                epoch = int(groups[0])
+                score = float(groups[1])
+            except ValueError:
+                continue
+            candidate = CKPT_DIR / f"{epoch}.pth"
+            if candidate.exists() and score > best_score:
+                best_score = score
+                best_epoch = epoch
+    if best_epoch is not None:
+        return CKPT_DIR / f"{best_epoch}.pth"
+    ckpts = sorted(CKPT_DIR.glob("*.pth"), key=lambda p: int(p.stem))
+    if not ckpts:
+        raise FileNotFoundError(f"No checkpoints found in {CKPT_DIR}")
+    return ckpts[-1]
+
+
+def build_loader():
+    joint_transform_val = joint_transforms.Compose([
+        joint_transforms.Resize((576, 896))
+    ])
+    img_transform = transforms.Compose([
+        transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ])
+    target_transform = transforms.ToTensor()
+    test_set = ImageFolder(str(DATA_ROOT / "test"), joint_transform_val, img_transform, target_transform, split='test')
+    return DataLoader(test_set, batch_size=1, num_workers=0, shuffle=False)
+
+
+def save_prediction_mask(pred_tensor: torch.Tensor, output_path: Path):
+    pred_np = pred_tensor.squeeze(0).cpu().numpy().astype(np.uint8) * 255
+    from PIL import Image
+    Image.fromarray(pred_np).save(output_path)
+
+
+def main():
+    OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+    MASK_DIR.mkdir(parents=True, exist_ok=True)
+
+    ckpt_path = find_best_checkpoint()
+    print(f"Using checkpoint: {ckpt_path}")
+
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    net = daseg(backbone_path).to(device)
+    state_dict = torch.load(ckpt_path, map_location=device)
+    net.load_state_dict(state_dict, strict=True)
+    net.eval()
+
+    loader = build_loader()
+    with torch.no_grad():
+        for batch in loader:
+            inputs, name = batch['image'].to(device), batch['name']
+            *_, predict0 = net(inputs)
+            pred = predict0.argmax(1)
+            image_name = name[0][0].split('/')[-1]
+            image_stem = Path(image_name).stem
+            save_prediction_mask(pred, MASK_DIR / f"{image_stem}.png")
+
+    metrics_path = OUTPUT_ROOT / "metrics.json"
+    cmd = [
+        "python", str(YOLO_SAM_ROOT / "scripts" / "evaluate_masks.py"),
+        "--dataset", DATASET_NAME,
+        "--split", "test",
+        "--raw-root", str(RAW_ROOT),
+        "--pred-dir", str(MASK_DIR),
+        "--output", str(metrics_path),
+    ]
+    subprocess.run(cmd, check=True)
+
+    summary = json.loads(metrics_path.read_text(encoding="utf-8"))
+    print(json.dumps(summary["mean"], indent=2))
+    print(f"Saved ARAA-Net clean-test-v2 metrics to: {metrics_path}")
+
+
+if __name__ == '__main__':
+    main()
+---eval_all_ckpts_clean_test_v2.py---
+#!/usr/bin/env python3
+import json
+import os
+import subprocess
+from pathlib import Path
+
+os.environ.setdefault("CUDA_DEVICE_ORDER", "PCI_BUS_ID")
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
+
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+from torchvision import transforms
+
+import joint_transforms
+from config import backbone_path
+from datasets import ImageFolder
+from daseg import daseg
+
+DATA_ROOT = Path("/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw_variants/TSRS_RSNA-Epiphysis_clean_test_v2")
+CKPT_DIR = Path("./ckpt/DANet")
+OUTPUT_ROOT = Path("./outputs/tsrs_epiphysis_clean_test_v2_ckpt_sweep")
+YOLO_SAM_ROOT = Path("/home/shenzeyu/workspace/YOLO_SAM_generic_src")
+DATASET_NAME = "TSRS_RSNA-Epiphysis_clean_test_v2"
+RAW_ROOT = YOLO_SAM_ROOT / "data" / "raw_variants"
+
+
+def build_loader():
+    joint_transform_val = joint_transforms.Compose([
+        joint_transforms.Resize((576, 896))
+    ])
+    img_transform = transforms.Compose([
+        transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ])
+    target_transform = transforms.ToTensor()
+    test_set = ImageFolder(str(DATA_ROOT / "test"), joint_transform_val, img_transform, target_transform, split='test')
+    return DataLoader(test_set, batch_size=1, num_workers=0, shuffle=False)
+
+
+def save_prediction_mask(pred_tensor: torch.Tensor, output_path: Path):
+    pred_np = pred_tensor.squeeze(0).cpu().numpy().astype(np.uint8) * 255
+    from PIL import Image
+    Image.fromarray(pred_np).save(output_path)
+
+
+def main():
+    OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+    loader = build_loader()
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    ckpts = sorted(CKPT_DIR.glob("*.pth"), key=lambda p: int(p.stem))
+    if not ckpts:
+        raise FileNotFoundError(f"No checkpoints found in {CKPT_DIR}")
+    sweep = []
+    best = None
+    best_dice = -1.0
+    for ckpt_path in ckpts:
+        epoch = ckpt_path.stem
+        run_root = OUTPUT_ROOT / f"epoch_{epoch}"
+        mask_dir = run_root / "masks"
+        run_root.mkdir(parents=True, exist_ok=True)
+        mask_dir.mkdir(parents=True, exist_ok=True)
+
+        net = daseg(backbone_path).to(device)
+        state_dict = torch.load(ckpt_path, map_location=device)
+        net.load_state_dict(state_dict, strict=True)
+        net.eval()
+
+        with torch.no_grad():
+            for batch in loader:
+                inputs, name = batch['image'].to(device), batch['name']
+                *_, predict0 = net(inputs)
+                pred = predict0.argmax(1)
+                image_name = name[0][0].split('/')[-1]
+                image_stem = Path(image_name).stem
+                save_prediction_mask(pred, mask_dir / f"{image_stem}.png")
+
+        metrics_path = run_root / "metrics.json"
+        cmd = [
+            "python", str(YOLO_SAM_ROOT / "scripts" / "evaluate_masks.py"),
+            "--dataset", DATASET_NAME,
+            "--split", "test",
+            "--raw-root", str(RAW_ROOT),
+            "--pred-dir", str(mask_dir),
+            "--output", str(metrics_path),
+        ]
+        subprocess.run(cmd, check=True)
+        summary = json.loads(metrics_path.read_text(encoding="utf-8"))
+        mean = summary["mean"]
+        row = {"epoch": int(epoch), **mean}
+        sweep.append(row)
+        print(json.dumps(row, ensure_ascii=False))
+        if mean["dice"] > best_dice:
+            best_dice = mean["dice"]
+            best = row
+        del net
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
+    sweep.sort(key=lambda x: x["dice"], reverse=True)
+    result = {"best": best, "all": sweep}
+    out_path = OUTPUT_ROOT / "summary.json"
+    out_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    print("BEST", json.dumps(best, ensure_ascii=False))
+    print(f"Saved sweep summary to: {out_path}")
+
+if __name__ == '__main__':
+    main()
+---train.py---
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on 2022-12-13 09:54:12
+
+@author: XuWang
+
+"""
+import datetime
+import time
+import os
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
+
+import torch
+from torch import nn
+from torch import optim
+from torch.autograd import Variable
+from torch.backends import cudnn
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from tensorboardX import SummaryWriter
+from tqdm import tqdm
+import numpy as np
+
+import joint_transforms
+from config import cod_training_root,chameleon_path
+from config import backbone_path
+from datasets import ImageFolder
+from misc import AvgMeter, check_mkdir
+from daseg import daseg
+from dar import DARConv2d
+import loss
+
+from seg_utils import ConfusionMatrix
+
+cudnn.benchmark = False
+cudnn.deterministic = True
+
+torch.manual_seed(2026)
+np.random.seed(2026)
+import random
+random.seed(2026)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(2026)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+
+
+
+
+
+ckpt_path = './ckpt'
+exp_name = 'DANet'
+
+args = {
+    'epoch_num': 100,
+    'train_batch_size': 2,
+    'last_epoch': 0,
+    'lr': 1e-3,
+    'lr_decay': 0.9,
+    'weight_decay': 5e-4,
+    'momentum': 0.9,
+    'snapshot': '',
+    'scale_w': 576,
+    'scale_h': 896,
+    'poly_train': True,
+    'optimizer': 'Adam',
+}
+
+# Path.
+check_mkdir(ckpt_path)
+check_mkdir(os.path.join(ckpt_path, exp_name))
+vis_path = os.path.join(ckpt_path, exp_name, 'log')
+check_mkdir(vis_path)
+log_path = os.path.join(ckpt_path, exp_name,'log.txt')
+writer = SummaryWriter(log_dir=vis_path, comment=exp_name)
+
+# Transform Data.
+joint_transform = joint_transforms.Compose([
+    joint_transforms.RandomHorizontallyFlip(),
+    joint_transforms.Resize((args['scale_w'], args['scale_h'])),
+    # joint_transforms.FixedResizewx(args['scale_w']),
+    joint_transforms.RandomCrop([576, 576], pad_if_needed=True, lbl_fill=255)
+])
+
+
+joint_transform_val = joint_transforms.Compose([
+    joint_transforms.Resize((args['scale_w'], args['scale_h']))
+])
+
+
+img_transform = transforms.Compose([
+    transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),  
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+target_transform = transforms.ToTensor()
+
+# Prepare Data Set.
+train_set = ImageFolder(cod_training_root, joint_transform, img_transform, target_transform)
+print("Train set: {}".format(train_set.__len__()))
+train_loader = DataLoader(train_set, batch_size=args['train_batch_size'], num_workers=0, shuffle=True)
+
+
+test_set = ImageFolder(chameleon_path, joint_transform_val, img_transform, target_transform)
+print("Test set: {}".format(test_set.__len__()))
+test_loader = DataLoader(test_set, batch_size=1, num_workers=0, shuffle=False)
+
+
+
+
+
+
+
+
+
+
+total_epoch = args['epoch_num'] * len(train_loader)
+print("total_epoch",total_epoch)
+
+# loss function
+structure_loss = loss.structure_loss().to(device)
+bce_loss = nn.BCEWithLogitsLoss().to(device)
+iou_loss = loss.IOU().to(device)
+last_criterion = nn.CrossEntropyLoss(ignore_index=255)
+print("iou_loss=",iou_loss)
+
+def bce_iou_loss(pred, target):
+    bce_out = bce_loss(pred, target)
+    iou_out = iou_loss(pred, target)
+
+    loss = bce_out + iou_out
+
+    return loss
+
+def train(net, optimizer):
+    net.train()
+    curr_iter = 1
+    start_time = time.time()
+    
+    best_mIoU = 0
+    for epoch in range(args['last_epoch'] + 1, args['last_epoch'] + 1 + args['epoch_num']):
+        loss_record, loss_1_record, loss_2_record, loss_3_record, loss_4_record, loss_0_record = AvgMeter(), AvgMeter(), AvgMeter(), AvgMeter(), AvgMeter(), AvgMeter()
+
+        train_iterator = tqdm(train_loader, total=len(train_loader))
+        confmat = ConfusionMatrix(num_classes=2)
+        for data in train_iterator:
+            if args['poly_train']:
+                base_lr = args['lr'] * (1 - float(curr_iter) / float(total_epoch)) ** args['lr_decay']
+                optimizer.param_groups[0]['lr'] = 2 * base_lr
+                optimizer.param_groups[1]['lr'] = 1 * base_lr
+
+
+
+            inputs, labels = data['image'], data['label']
+            batch_size = inputs.size(0)
+            inputs = Variable(inputs).to(device)
+            labels = Variable(labels).to(device)
+            
+            
+            # from  torchvision import utils as vutils
+            # iinputs = inputs[0].cpu().clone()
+            # vutils.save_image(iinputs, './pred_input.jpg', normalize=True)
+            
+            # class_color = [(0, 0, 0),(128, 0, 0)]          
+            # import numpy as np
+            # lla = labels.long().cpu().clone()
+            # lla = np.uint8(lla.squeeze(0).squeeze(0))
+            # label_index = np.full(inputs.squeeze(0).shape, 255, dtype='uint8')
+            # for ik, color in enumerate(class_color):
+            #     for ig in range(label_index.shape[0]):
+            #         label_index[ig][lla == ik] = color[ig]
+                    
+            # image = torch.from_numpy(label_index).float()
+            # vutils.save_image(image, 'labels_input.jpg')
+
+            optimizer.zero_grad()
+
+            predict_1, predict_2, predict_3, predict_4, predict0 = net(inputs)
+
+            loss_1 = bce_iou_loss(predict_1, labels.unsqueeze(1))
+            loss_2 = structure_loss(predict_2, labels.unsqueeze(1))
+            loss_3 = structure_loss(predict_3, labels.unsqueeze(1))
+            loss_4 = structure_loss(predict_4, labels.unsqueeze(1))       
+            loss_0 = last_criterion(predict0, labels.long())
+
+            loss = 1 * loss_1 + 1 * loss_2 + 2 * loss_3 + 4 * loss_4 + 10*loss_0
+
+            loss.backward()
+            optimizer.step()
+
+            loss_record.update(loss.data, batch_size)
+            loss_1_record.update(loss_1.data, batch_size)
+            loss_2_record.update(loss_2.data, batch_size)
+            loss_3_record.update(loss_3.data, batch_size)
+            loss_4_record.update(loss_4.data, batch_size)
+            loss_0_record.update(loss_0.data, batch_size)
+            
+            
+            pred = predict0.data.cpu().numpy()
+            target = labels.cpu().numpy()
+            pred = np.argmax(pred, axis=1)
+            # Add batch sample into evaluator
+            
+            
+            confmat.update(labels.flatten(), predict0.argmax(1).flatten() if predict0.dim() == 4 else predict0.flatten())
+        
+        
+            
+            global_acc, class_acc, class_iou,FWIoU,mDice = confmat.compute()
+
+            if curr_iter % 10 == 0:
+                writer.add_scalar('loss', loss, curr_iter)
+                writer.add_scalar('loss_1', loss_1, curr_iter)
+                writer.add_scalar('loss_2', loss_2, curr_iter)
+                writer.add_scalar('loss_3', loss_3, curr_iter)
+                writer.add_scalar('loss_4', loss_4, curr_iter)
+                writer.add_scalar('loss_0', loss_0, curr_iter)
+---config.py---
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on 2022-12-13 09:54:12
+
+@author: XuWang
+"""
+import os
+
+backbone_path = './backbone/resnet/resnet50-19c8e357.pth'
+
+datasets_root = '/home/shenzeyu/workspace/YOLO_SAM_generic_src/data/raw/TSRS_RSNA-Epiphysis'
+
+cod_training_root = os.path.join(datasets_root, 'train')
+chameleon_path = os.path.join(datasets_root, 'test')
+---datasets.py---
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on 2022-12-13 09:54:12
+
+@author: XuWang
+
+"""
+
+import os
+import os.path
+import torch.utils.data as data
+from PIL import Image
+import cv2
+from PIL import Image
+import numpy as np
+
+
+
+import os
+from PIL import Image
+import numpy as np
+from torch.utils.data import Dataset
+from torchvision import transforms
+import custom_transforms as tr
+from torchvision.datasets.folder import is_image_file
+
+
+def make_dataset(root):
+    # image_path = os.path.join(root, 'Image')
+    mask_path = os.path.join(root, 'GT')
+    image_path = root
+    mask_path = root + '_labels'
+    
+    #Images' format is jpg, GTs' format is png
+    img_list = [os.path.splitext(f)[0] for f in os.listdir(image_path) if f.endswith('.jpg')]
+    return [(os.path.join(image_path, img_name + '.jpg'), os.path.join(mask_path, img_name + '.png')) for img_name in img_list]
+
+
+class ImageFolder(data.Dataset):
+    # image and gt should be in the same folder and have same filename except extended name (jpg and png respectively)
+    def __init__(self, root, joint_transform=None, transform=None, target_transform=None, split='train'):
+        self.root = root
+        self.imgs = make_dataset(root)
+        self.joint_transform = joint_transform
+        self.transform = transform
+        self.target_transform = target_transform
+        self.split = split
+        self.label_mapping = {-1: -1, 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6:6, 7:7, 8:8, 9:9, 10:10,
+                              11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16:16, 17:17, 18:18, 19:19, 20:20,
+                              21: 21, 22: 22, 23: 23, 24: 24, 25: 25, 26:26, 27:27, 28:28, 29:29, 30:30}
+
+    def __getitem__(self, index):
+        img_path, gt_path = self.imgs[index]
+        img = Image.open(img_path).convert('RGB')
+        target = Image.open(gt_path)
+        label = self.convert_label(target)
+        
+        # print(gt_path)
+        # print(target.size)
+        # print(label.size)
+
+        # if self.joint_transform is not None:
+        #     img, label = self.joint_transform(img, label)
+        
+        sample = {'image': img, 'label': label}
+        if self.split == "train":
+            return self.transform_tr(sample) 
+        else:
+            sample = self.transform_val(sample)
+            sample['name'] = self.imgs[index]
+            return sample
+        
+    
+    
+    def convert_label(self, label):
+        label_rgb = np.array(label)
+        label_index = np.full(label_rgb.shape[:2], 0, dtype='uint8')
+        
+        for k in range(1,30):
+            label_index[label_rgb == k] = 1
+
+        label_index = Image.fromarray(label_index, mode='P')
+
+        return label_index
+
+    def __len__(self):
+        return len(self.imgs)
+    
+    
+    def transform_tr(self, sample):
+        composed_transforms = transforms.Compose([
+            tr.RandomHorizontalFlip(),
+            tr.FixedResize(576,896),
+            # tr.RandomScaleCrop(base_size=self.args.base_size, crop_size=self.args.crop_size),
+            tr.RandomCrop((576,576)),
+            tr.RandomGaussianBlur(),
+            tr.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+            tr.ToTensor()])
+        return composed_transforms(sample)
+ 
+    def transform_val(self, sample):
+        composed_transforms = transforms.Compose([
+            # tr.FixScaleCrop(crop_size=self.args.crop_size),
+            tr.FixedResize(576,896),
+            tr.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+            tr.ToTensor()])
+        return composed_transforms(sample)

@@ -1,0 +1,240 @@
+# V3 协议模板：路径/真实验证状态必须由本地证据补齐。
+# 空模板的静态检查成功不等于可以开始训练。
+schema_version: '3.0'
+status: DRAFT_NOT_EXECUTED
+method_line: input_seam__nnunet__output_overlap__unified_coordination
+scope:
+  datasets: [TSRS, RAM]
+  backbone: nnunet
+  cross_backbone_enabled: false
+  test_enabled: false
+  reconstruct_native_from_scratch: false
+  mandatory_oof: false
+  replace_overlap_with_completion: false
+  same_image_can_have_both_structures: true
+source_lock:
+  audit_commit: 737cc4f3a1c395f1ae6fe842c4a2e51d6cf98353
+  actual_repo_commit: null
+  dirty_diff_sha256: null
+  task_sha256: null
+run:
+  default_stage: preflight
+  pilot_enabled: false
+  formal_enabled: false
+  output_root: outputs/dual_prior_v3
+  overwrite_existing: false
+  auto_long_training: false
+  hardware_verified: false
+  protocol_locked: false
+  paired_seeds: [3512]       # 继承作候选 pilot seed；不是已运行
+  pilot_epochs: 2           # 有界探索默认；实际update预算另行锁定
+  formal_seeds: null
+  mode: joint_finetune
+contracts:
+  clean_ablation: true
+  input_adapter_reads_overlap: false
+  output_overlap_has_independent_channel: true
+  overlap_generator_input: image_only
+  allow_legacy_coupled_context_in_main_table: false
+  zero_init_input: true
+  zero_init_output: true
+  bounded_input_residual: true
+  bounded_output_residual: true
+  input_residual_limit: null
+  output_residual_limit: null
+  numerical_identity_tolerance: null
+  no_gt_in_inference: true
+  native_output_semantics_preserved: true
+  target_and_weight_separate: true
+  unknown_overlap_is_negative: false
+  prior_probabilities_forced_disjoint: false
+  valid_masks_required: true
+  current_student_selects_weak_roi: false
+prior_adaptation:
+  # 仅在原先验的seam依赖阻碍clean C时使用；不训练新分割骨架。
+  enabled: false
+  dataset: RAM
+  mode: existing_small_overlap_prior_to_image_only
+  epochs_limit: 6           # 沿用历史量级作为拟定上限，不是已执行
+  selection: lowest_validation_bce
+  no_test: true
+  budget_locked: false
+loss:
+  base_loss_same_within_dataset: true
+  base_loss_resolved: false
+  native_deep_supervision_preserved: true
+  observed_overlap: known_membership_only
+  weak_overlap: observed_union_under_frozen_overlap_evidence
+  weak_overlap_is_true_gt: false
+  teacher: common_frozen_native
+  lambda_seam: null
+  lambda_overlap: null
+  lambda_preserve: null
+  beta_weak: null
+  mass_weighting: valid_and_observation_aware
+  mass_parameters_locked: false
+  routing:
+    enabled: true
+    none_coordinates_as_zero: true
+    per_aux_cap: null
+    aggregate_cap: null
+    empty_or_zero_base_policy: skip_aux_when_base_near_zero
+    log_pairwise_and_aggregate_conflicts: true
+arms:
+  A: {label: Native_Continue, input_seam: false, output_overlap: false, routing: false}
+  B: {label: Seam_Only, input_seam: true, output_overlap: false, routing: true}
+  C: {label: Overlap_Only, input_seam: false, output_overlap: true, routing: true}
+  D: {label: Dual_Unified, input_seam: true, output_overlap: true, routing: true}
+  D_no_routing: {label: Dual_No_Routing, input_seam: true, output_overlap: true, routing: false}
+# N0是已有权重的固定推理参考，不是需要从头训练的第六个arm。
+quality_gate:
+  overall_metrics: [dice_or_dsc, iou]
+  reference_comparisons: [N0, A]
+  causal_reference: A
+  historical_native_reference: N0
+  absolute_noninferiority_margin: 0.0
+  margin_status: inherited_strict_point_estimate_not_statistical_guarantee
+  exploratory_structure_relative_reduction: 0.05
+  structure_threshold_origin: R351_exploratory_default_not_user_fixed_threshold
+  undefined_metric_is_pass: false
+  distance_failure_rate_must_not_increase: true
+  single_checkpoint_all_metrics: true
+  same_case_cohort: true
+  no_posthoc_evaluator_changes: true
+  selection_rule_locked: false
+  claim_requires_paired_statistics: true
+  test_history_status: NOT_AUDITED
+# 此处expected_sha256是仓库记录，不是本轮验证过的文件hash。
+datasets:
+  TSRS:
+    task: TSRS_RSNA_Epiphysis
+    primary_structure: seam
+    label_semantics: union_observed_membership_unknown_until_audit
+    root: null
+    train_manifest: null
+    val_manifest: null
+    expected_train_count: 875
+    expected_val_count: 96
+    missing_1833_reconciled: false
+    native:
+      name: R202_two_channel_zero_prior
+      path_hint: r317_image_centers_only/r202_two_channel_zero_prior.pth
+      path: null
+      expected_sha256: 55d1bd52d3927a6fa9754d9d58adbe93c9abc4190f3b830fee45903d4981f31b
+      observed_sha256: null
+      approved_replacement_record: null  # 合法替代原版权重时，记录来源和等价性审查
+      hash_verified: false
+      prior_free_verified: false
+      input_contract_verified: false
+      output_contract: binary_softmax_or_equivalent_margin
+      baseline_reproduced: false
+    seam:
+      asset: R317
+      path: null
+      provenance_verified: false
+      coverage_verified: false
+      normalization_rule: null
+      support_threshold: null
+    overlap:
+      requested_role: bone_overlap_prior
+      source_mode: transferred_weak_probe
+      source_domain: RAM
+      independently_tsrs_overlap_supervised: false
+      path: null
+      provenance_verified: false
+      generator_image_only_verified: false
+      teacher_frozen: true
+      native_membership_annotation_audit: NOT_RUN
+      observed_overlap_available: false
+      weak_support_rule: null
+      weak_support_validated: false
+      weak_local_term_enabled: false
+      evidence_level_locked: false
+      scientific_status: NATIVE_OVERLAP_SUPERVISION_GAP_PENDING_AUDIT
+    matched_training:
+      extra_updates_per_arm: null
+      optimizer: null
+      learning_rate_schedule: null
+      batch_size: null
+      augmentation: null
+      sampling_manifest_sha256: null
+      base_loss_id: null
+    evaluation:
+      evaluator: scripts/evaluate_r201_single_split.py
+      frozen_metric_function: scripts/run_r201_unified_eval.py::compute_metrics
+      structure_metrics: [gap_region_fp_rate, component_merge_rate]
+      metric_semantics: background_band_fp_and_component_deficit_proxies
+      extra_metrics: [dice, iou, recall, boundary_f1, boundary_iou, surface_dice_2px, surface_dice_5px, hd95_px, assd_px, component_count_mae]
+      overlap_true_gt_metrics: unavailable_unless_annotation_audit_proves_available
+      evaluator_verified: false
+      manifest_and_coordinates_verified: false
+  RAM:
+    task: RAM_W600
+    primary_structure: overlap
+    label_semantics: independent_14_member_multilabel
+    root: null
+    train_manifest: null
+    val_manifest: null
+    expected_train_count: 425
+    expected_val_count: 69
+    native:
+      name: R325_plain_native
+      path_hint: r325_nnunet_native_resolution_overlap_iem/plain_native_best.pth
+      path: null
+      expected_sha256: 88f8f9168d969ee21238aeb77bbb701218a5fef31285f1fc2ceb71e3aa1076c9
+      observed_sha256: null
+      approved_replacement_record: null  # 合法替代原版权重时，记录来源和等价性审查
+      hash_verified: false
+      prior_free_verified: false
+      input_contract_verified: false
+      output_contract: independent_14_sigmoid_members
+      baseline_reproduced: false
+    seam:
+      asset: R323_RAM_native
+      path: null
+      provenance_verified: false
+      coverage_verified: false
+      normalization_rule: null
+      support_threshold: null
+    overlap:
+      requested_role: bone_overlap_prior
+      source_mode: native_observed
+      source_domain: RAM
+      independently_ram_overlap_supervised: true
+      path: null
+      provenance_verified: false
+      generator_image_only_verified: false
+      teacher_frozen: true
+      observed_overlap_available: true
+      annotation_observation_mask_verified: false
+      evidence_level_locked: false
+      scientific_status: SUPPORTED_BY_REPO_RECORD_PENDING_LOCAL_VERIFICATION
+    matched_training:
+      extra_updates_per_arm: null
+      optimizer: null
+      learning_rate_schedule: null
+      batch_size: null
+      augmentation: null
+      sampling_manifest_sha256: null
+      base_loss_id: null
+    evaluation:
+      evaluator: scripts/evaluate_r329_ram_official_metrics_val.py::official_metrics
+      structure_metrics: [overlap_msd_px, pair_msd_px]
+      extra_metrics: [overall_dsc, overall_iou, overlap_dsc, overlap_iou, overlap_nsd_2px, pair_dsc, pair_nsd_2px, overall_msd_fail_rate, overlap_msd_fail_rate, pair_msd_fail_rate, ravd, seam_roi_fp]
+      pair_list_source: train_only_top15_legacy_protocol
+      pair_list_sha256: null
+      right_wrist_and_valid_verified: false
+      evaluator_verified: false
+      manifest_and_coordinates_verified: false
+required_evidence:
+  baseline_identity: NOT_RUN
+  four_prior_semantics: NOT_RUN
+  arm_information_isolation: NOT_RUN
+  overlap_independent_channel: NOT_RUN
+  local_observation_and_valid: NOT_RUN
+  routing_none_regression: NOT_RUN
+  routing_aggregate_cap: NOT_RUN
+  tsrs_real_batch: NOT_RUN
+  ram_real_batch: NOT_RUN
+  evaluator_failure_cases: NOT_RUN
+  evidence_directory: null

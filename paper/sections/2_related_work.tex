@@ -1,0 +1,13 @@
+\section{Related Work}
+
+\paragraph{Medical image segmentation backbones.}
+U-Net established the encoder--decoder design with skip connections that remains common in biomedical segmentation \citep{ronneberger2015unet}. nnU-Net subsequently showed that preprocessing, architecture configuration, training, and post-processing choices can matter as much as introducing a specialized network \citep{isensee2021nnunet}. We use nnU-Net as a controlled backbone because it provides a strong semantic baseline. Our contribution is not a new encoder. It changes how instance information supervises background separation.
+
+\paragraph{Boundary-aware learning.}
+Region losses such as cross entropy and Dice aggregate error over areas and may underweight thin interfaces. Boundary loss instead optimizes a contour-distance objective and is particularly relevant to imbalanced structures \citep{kervadec2019boundary}. Boundary-aware objectives improve localization, but a foreground boundary does not by itself specify whether two nearby foreground regions must remain disconnected. Our seam target focuses on the background channel between annotated instances.
+
+\paragraph{Topology-aware segmentation.}
+Topology-preserving objectives have been developed to maintain connected components, holes, and tubular continuity. Persistent-homology-based losses penalize topological disagreement \citep{hu2019topology}, while clDice measures and optimizes centerline agreement for tubular structures \citep{shit2021cldice}. Discrete Morse theory has also been used to identify critical structures in topology-aware segmentation \citep{hu2021morse}. These approaches commonly preserve foreground connectivity. Pediatric bone separation requires a different orientation: the desired property is continuity of the narrow background seam that prevents adjacent foreground instances from merging.
+
+\paragraph{Boundaries in instance separation.}
+Closely packed object and cell segmentation likewise fails when semantic foreground predictions erase inter-instance boundaries. Recent work on cell instance segmentation argues that instance separation depends critically on boundary representation rather than foreground classification alone \citep{liang2025boundaries}. Pediatric hand radiographs share the adjacency problem but introduce different appearance variation: ossification centers change in number, size, and spacing throughout development. We use this analogy to motivate seam supervision while retaining a task-specific evaluation of gap false positives and component under-counting.

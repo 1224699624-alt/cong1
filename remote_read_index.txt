@@ -1,0 +1,764 @@
+=== python ===
+Python 3.12.3
+=== file index ===
+total_files_indexed 108807
+total_size_MB 25808.51
+top_extensions
+.png 76528
+.jpg 20069
+.pt 4038
+.py 3520
+.txt 2177
+.json 849
+.pyi 272
+.yaml 213
+.sh 207
+.log 202
+.md 150
+<none> 129
+.f90 61
+.c 53
+.csv 48
+.h 47
+.so 30
+.pth 27
+.f 24
+.rst 19
+.cpp 15
+.cu 15
+.yml 14
+.typed 11
+.0 10
+.pxd 7
+.pyf 7
+.pyx 5
+.npy 5
+.cuh 3
+.o 3
+.before_serial_20260624_152114 3
+.html 3
+.build 3
+.gz 3
+.ini 3
+.ps1 2
+.cfg 2
+.css 2
+.js 2
+text_files_under_2MB 7371
+recent_text_files
+outputs/analysis/r199_maskdino_union_512_trainval_gate/r199_val_constraint_metrics.json
+outputs/analysis/r199_maskdino_union_512_trainval_gate/r199_val_prediction_diagnostic.json
+outputs/analysis/r199_maskdino_union_512_trainval_gate/r199_summary.json
+outputs/analysis/r199_maskdino_union_512_trainval_gate/maskdino_output/config.yaml
+outputs/analysis/r199_maskdino_union_512_trainval_gate/r199_register_and_train.py
+outputs/analysis/r199_maskdino_union_512_trainval_gate/r196_union_coco_summary.json
+outputs/analysis/r199_maskdino_union_512_trainval_gate/coco/val.json
+outputs/analysis/r199_maskdino_union_512_trainval_gate/coco/train.json
+outputs/bridge_logs/run_r199_maskdino_union_512_trainval_gate.sh
+outputs/analysis/r198_maskdino_union_full_trainval_gate/r198_val_constraint_metrics.json
+outputs/analysis/r198_maskdino_union_full_trainval_gate/r198_val_prediction_diagnostic.json
+outputs/analysis/r198_maskdino_union_full_trainval_gate/r198_summary.json
+outputs/analysis/r198_maskdino_union_full_trainval_gate/maskdino_output/log.txt
+outputs/analysis/r198_maskdino_union_full_trainval_gate/maskdino_output/config.yaml
+outputs/analysis/r198_maskdino_union_full_trainval_gate/r198_register_and_train.py
+outputs/analysis/r198_maskdino_union_full_trainval_gate/r196_union_coco_summary.json
+outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/val.json
+outputs/analysis/r198_maskdino_union_full_trainval_gate/coco/train.json
+outputs/bridge_logs/run_r198_maskdino_union_full_trainval_gate.sh
+scripts/evaluate_maskdino_union_constraints.py
+scripts/diagnose_r192_maskdino_predictions.py
+scripts/prepare_r196_maskdino_union_coco.py
+outputs/bridge_logs/r197_maskdino_union_trainval_gate.log
+outputs/analysis/r197_maskdino_union_trainval_gate/r197_val_prediction_diagnostic.json
+outputs/analysis/r197_maskdino_union_trainval_gate/r197_summary.json
+outputs/analysis/r197_maskdino_union_trainval_gate/maskdino_output/metrics.json
+outputs/analysis/r197_maskdino_union_trainval_gate/maskdino_output/log.txt
+outputs/analysis/r197_maskdino_union_trainval_gate/maskdino_output/inference/coco_instances_results.json
+outputs/analysis/r197_maskdino_union_trainval_gate/maskdino_output/config.yaml
+outputs/analysis/r197_maskdino_union_trainval_gate/r197_register_and_train.py
+outputs/analysis/r197_maskdino_union_trainval_gate/r196_union_coco_summary.json
+outputs/analysis/r197_maskdino_union_trainval_gate/coco/val.json
+outputs/analysis/r197_maskdino_union_trainval_gate/coco/train.json
+outputs/bridge_logs/run_r197_maskdino_union_trainval_gate.sh
+outputs/bridge_logs/r196_maskdino_union_one_image_gate.log
+outputs/analysis/r196_maskdino_union_one_image_gate/r196_train_prediction_diagnostic.json
+outputs/analysis/r196_maskdino_union_one_image_gate/r196_summary.json
+outputs/analysis/r196_maskdino_union_one_image_gate/maskdino_output/metrics.json
+outputs/analysis/r196_maskdino_union_one_image_gate/maskdino_output/log.txt
+outputs/analysis/r196_maskdino_union_one_image_gate/maskdino_output/inference/coco_instances_results.json
+outputs/analysis/r196_maskdino_union_one_image_gate/maskdino_output/config.yaml
+outputs/analysis/r196_maskdino_union_one_image_gate/r196_register_and_train.py
+outputs/analysis/r196_maskdino_union_one_image_gate/r196_union_coco_summary.json
+outputs/analysis/r196_maskdino_union_one_image_gate/coco/val.json
+outputs/analysis/r196_maskdino_union_one_image_gate/coco/train.json
+outputs/bridge_logs/run_r196_maskdino_union_one_image_gate.sh
+outputs/bridge_logs/r195_maskdino_one_image_overfit_rescue.log
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/r195_train_prediction_diagnostic.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/r195_summary.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/maskdino_output/metrics.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/maskdino_output/log.txt
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/maskdino_output/inference/coco_instances_results.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/maskdino_output/config.yaml
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/r195_register_and_train.py
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/r191_full_coco_summary.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/coco/val.json
+outputs/analysis/r195_maskdino_one_image_overfit_rescue/coco/train.json
+outputs/bridge_logs/run_r195_maskdino_one_image_overfit_rescue.sh
+outputs/bridge_logs/r194_maskdino_r193_train_diagnostic.log
+outputs/analysis/r194_maskdino_r193_train_diagnostic/r194_train_prediction_diagnostic.json
+outputs/analysis/r194_maskdino_r193_train_diagnostic/r194_summary.json
+outputs/analysis/r194_maskdino_r193_train_diagnostic/maskdino_output/log.txt
+outputs/analysis/r194_maskdino_r193_train_diagnostic/maskdino_output/inference/coco_instances_results.json
+outputs/analysis/r194_maskdino_r193_train_diagnostic/maskdino_output/config.yaml
+outputs/analysis/r194_maskdino_r193_train_diagnostic/r194_eval_r193_on_train.py
+outputs/bridge_logs/run_r194_maskdino_r193_train_diagnostic.sh
+outputs/bridge_logs/r193_maskdino_pretrained_overfit_gate.log
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/r193_val_prediction_diagnostic.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/r193_summary.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/maskdino_output/metrics.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/maskdino_output/log.txt
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/maskdino_output/inference/coco_instances_results.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/maskdino_output/config.yaml
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/r193_register_and_train.py
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/r191_full_coco_summary.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/coco/val.json
+outputs/analysis/r193_maskdino_pretrained_overfit_gate/coco/train.json
+outputs/bridge_logs/run_r193_maskdino_pretrained_overfit_gate.sh
+outputs/analysis/r192_maskdino_val_prediction_diagnostic/r192_val_prediction_diagnostic.json
+outputs/bridge_logs/r191_maskdino_full_trainval_gate.log
+outputs/analysis/r191_maskdino_full_trainval_gate/r191_summary.json
+outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/metrics.json
+outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/log.txt
+outputs/analysis/r191_maskdino_full_trainval_gate/maskdino_output/config.yaml
+outputs/analysis/r191_maskdino_full_trainval_gate/r191_register_and_train.py
+outputs/analysis/r191_maskdino_full_trainval_gate/r191_full_coco_summary.json
+outputs/analysis/r191_maskdino_full_trainval_gate/coco/val.json
+outputs/bridge_logs/run_r191_maskdino_full_trainval_gate.sh
+scripts/prepare_r191_maskdino_full_coco.py
+outputs/analysis/r190_maskdino_tiny_train_smoke/r190_summary.json
+outputs/bridge_logs/r190_maskdino_tiny_train_smoke.log
+outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output/log.txt
+outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output/metrics.json
+outputs/analysis/r190_maskdino_tiny_train_smoke/maskdino_output/config.yaml
+outputs/analysis/r190_maskdino_tiny_train_smoke/r190_register_and_train.py
+outputs/analysis/r190_maskdino_tiny_train_smoke/r190_coco_smoke_dataset_summary.json
+outputs/analysis/r190_maskdino_tiny_train_smoke/coco/val.json
+outputs/analysis/r190_maskdino_tiny_train_smoke/coco/train.json
+outputs/bridge_logs/run_r190_maskdino_tiny_train_smoke.sh
+external_src/MaskDINO/maskdino/data/dataset_mappers/coco_instance_new_baseline_dataset_mapper.py
+outputs/bridge_logs/r190_opencv_install3.log
+outputs/bridge_logs/r190_opencv_install2.log
+outputs/bridge_logs/r190_opencv_install.log
+outputs/bridge_logs/r190_msda_build2.log
+external_src/MaskDINO/maskdino/modeling/pixel_decoder/ops/MultiScaleDeformableAttention.egg-info/SOURCES.txt
+external_src/MaskDINO/maskdino/modeling/pixel_decoder/ops/MultiScaleDeformableAttention.egg-info/top_level.txt
+external_src/MaskDINO/maskdino/modeling/pixel_decoder/ops/MultiScaleDeformableAttention.egg-info/dependency_links.txt
+outputs/bridge_logs/r190_msda_build.log
+scripts/prepare_r190_maskdino_coco_smoke.py
+outputs/bridge_logs/r189_detectron2_cu130_env_smoke.log
+outputs/analysis/r189_detectron2_cu130_env_smoke/r189_summary.json
+outputs/analysis/r189_detectron2_cu130_env_smoke/maskdino_source_smoke.json
+outputs/analysis/r189_detectron2_cu130_env_smoke/detectron2_smoke.json
+outputs/analysis/r189_detectron2_cu130_env_smoke/torch_gpu_smoke.json
+outputs/bridge_logs/run_r189_detectron2_cu130_env_smoke.sh
+outputs/bridge_logs/r188_external_model_env_smoke.log
+external_src/MaskDINO/train_net.py
+external_src/MaskDINO/tools/convert-torchvision-to-d2.py
+external_src/MaskDINO/tools/evaluate_coco_boundary_ap.py
+external_src/MaskDINO/tools/evaluate_pq_for_semantic_segmentation.py
+=== scripts configs list ===
+configs/dataset_filters/tsrs_rsna_epiphysis_badlabel_filtered_v1.json
+configs/dataset_filters/tsrs_rsna_epiphysis_clean_test_v2.json
+configs/dataset_filters/tsrs_rsna_epiphysis_layout_audit_filtered_v1_draft.json
+configs/dataset_filters/tsrs_rsna_epiphysis_trainval_filtered_v1.json
+configs/default.yaml
+configs/TSRS_RSNA-Articular-Surface.yaml
+configs/TSRS_RSNA-Epiphysis.yaml
+scripts/analyze_anchor_domain_mismatch.py
+scripts/analyze_boundary_band_oracle.py
+scripts/analyze_candidate_combination_oracle.py
+scripts/analyze_epiphysis_layout_audit.py
+scripts/analyze_label_protocol_shift.py
+scripts/analyze_layout_failure_modes.py
+scripts/analyze_mask_oracle.py
+scripts/analyze_r163_reannotated_pair_shift.py
+scripts/analyze_suspect_labels.py
+scripts/analyze_trainval_label_layout_audit.py
+scripts/analyze_uncertainty_error_alignment.py
+scripts/apply_fast_layout_bridge_cut.py
+scripts/apply_grabcut_boundary_refine.py
+scripts/apply_gradient_boundary_rule.py
+scripts/apply_image_evidence_layout_scorer.py
+scripts/apply_label_protocol_review_decisions.py
+scripts/apply_layout_watershed_repair.py
+scripts/apply_patch_disagreement_arbitrator.py
+scripts/apply_r178_delete_only_bridge_suppressor.py
+scripts/apply_r185_component_accepted_layout_cut.py
+scripts/apply_r186_fast_neck_gate.py
+scripts/apply_separation_veto.py
+scripts/apply_timm_unet_segmenter.py
+scripts/build_label_protocol_dataset_variant.py
+scripts/build_r164_filtered_reannotated_variant.py
+scripts/build_reannotated_trainval_only_variant.py
+scripts/calibrate_pixel_mask_fusion.py
+scripts/check_label_protocol_review_manifest.py
+scripts/check_r140_reviewed_variant_launcher.py
+scripts/check_r162_reannotated_trainval_launcher.py
+scripts/check_r165_filtered_reannotated_launcher.py
+scripts/compare_reannotation_quality.py
+scripts/create_filtered_dataset_variant.py
+scripts/create_hard_case_taxonomy.py
+scripts/diagnose_r192_maskdino_predictions.py
+scripts/download_medsam_checkpoint.py
+scripts/download_sam_checkpoint.py
+scripts/evaluate_anchor_pixel_residual_checkpoint.py
+scripts/evaluate_boundary_band_refiner_checkpoint.py
+scripts/evaluate_maskdino_union_constraints.py
+scripts/evaluate_masks.py
+scripts/fast_cached_pixel_fusion.py
+scripts/fuse_candidate_masks.py
+scripts/infer_error_refiner.py
+scripts/infer_mugu_gated_refine.py
+scripts/infer_yolo_medsam.py
+scripts/infer_yolo_sam.py
+scripts/make_hard_case_audit_pack.py
+scripts/materialize_instance_sep_predictions.py
+scripts/medsam_gbc.py
+scripts/monitor_r140_reviewed_variant_result.py
+scripts/monitor_r177_boundary_preserving_result.py
+scripts/monitor_r182_topology_cldice_smoke.py
+scripts/prepare_label_protocol_review_package.py
+scripts/prepare_r177_bridge_risk_manifest.py
+scripts/prepare_r190_maskdino_coco_smoke.py
+scripts/prepare_r191_maskdino_full_coco.py
+scripts/prepare_r196_maskdino_union_coco.py
+scripts/prepare_yolo_dataset.py
+scripts/preview_label_protocol_review_decisions.py
+scripts/__pycache__/analyze_boundary_band_oracle.cpython-311.pyc
+scripts/__pycache__/analyze_mask_oracle.cpython-311.pyc
+scripts/__pycache__/apply_fast_layout_bridge_cut.cpython-311.pyc
+scripts/__pycache__/apply_image_evidence_layout_scorer.cpython-311.pyc
+scripts/__pycache__/apply_label_protocol_review_decisions.cpython-311.pyc
+scripts/__pycache__/apply_r185_component_accepted_layout_cut.cpython-311.pyc
+scripts/__pycache__/apply_r186_fast_neck_gate.cpython-311.pyc
+scripts/__pycache__/apply_timm_unet_segmenter.cpython-311.pyc
+scripts/__pycache__/build_label_protocol_dataset_variant.cpython-311.pyc
+scripts/__pycache__/calibrate_pixel_mask_fusion.cpython-311.pyc
+scripts/__pycache__/check_label_protocol_review_manifest.cpython-311.pyc
+scripts/__pycache__/check_r140_reviewed_variant_launcher.cpython-311.pyc
+scripts/__pycache__/check_r165_filtered_reannotated_launcher.cpython-311.pyc
+scripts/__pycache__/compare_reannotation_quality.cpython-311.pyc
+scripts/__pycache__/diagnose_r192_maskdino_predictions.cpython-310.pyc
+scripts/__pycache__/evaluate_anchor_pixel_residual_checkpoint.cpython-312.pyc
+scripts/__pycache__/evaluate_maskdino_union_constraints.cpython-310.pyc
+scripts/__pycache__/evaluate_masks.cpython-311.pyc
+scripts/__pycache__/evaluate_masks.cpython-313.pyc
+scripts/__pycache__/fuse_candidate_masks.cpython-311.pyc
+scripts/__pycache__/infer_error_refiner.cpython-311.pyc
+scripts/__pycache__/infer_error_refiner.cpython-312.pyc
+scripts/__pycache__/infer_error_refiner.cpython-313.pyc
+scripts/__pycache__/infer_yolo_sam.cpython-311.pyc
+scripts/__pycache__/infer_yolo_sam.cpython-313.pyc
+scripts/__pycache__/medsam_gbc.cpython-311.pyc
+scripts/__pycache__/monitor_r140_reviewed_variant_result.cpython-311.pyc
+scripts/__pycache__/monitor_r182_topology_cldice_smoke.cpython-311.pyc
+scripts/__pycache__/prepare_label_protocol_review_package.cpython-311.pyc
+scripts/__pycache__/prepare_r177_bridge_risk_manifest.cpython-311.pyc
+scripts/__pycache__/prepare_r196_maskdino_union_coco.cpython-310.pyc
+scripts/__pycache__/preview_label_protocol_review_decisions.cpython-311.pyc
+scripts/__pycache__/r144_mask2former_hf_smoke.cpython-311.pyc
+scripts/__pycache__/r147_mask2former_logits_threshold_diagnostic.cpython-311.pyc
+scripts/__pycache__/r148_mask2former_rank_diagnostic.cpython-311.pyc
+scripts/__pycache__/r149_mask2former_overfit_rescue.cpython-311.pyc
+scripts/__pycache__/run_label_protocol_review_pipeline.cpython-311.pyc
+scripts/__pycache__/select_error_refiner_threshold.cpython-311.pyc
+scripts/__pycache__/select_error_refiner_threshold.cpython-312.pyc
+scripts/__pycache__/select_error_refiner_threshold.cpython-313.pyc
+scripts/__pycache__/select_mask_ensemble.cpython-311.pyc
+scripts/__pycache__/summarize_ablation_metrics.cpython-311.pyc
+scripts/__pycache__/summarize_aris_epiphysis_status.cpython-311.pyc
+scripts/__pycache__/train_anchor_pixel_residual.cpython-311.pyc
+scripts/__pycache__/train_boundary_band_refiner.cpython-311.pyc
+scripts/__pycache__/train_context_segmenter.cpython-311.pyc
+scripts/__pycache__/train_error_refiner.cpython-311.pyc
+scripts/__pycache__/train_error_refiner.cpython-312.pyc
+scripts/__pycache__/train_error_refiner.cpython-313.pyc
+scripts/__pycache__/train_instance_separation_segmenter.cpython-311.pyc
+scripts/__pycache__/train_mask_stack_fusion.cpython-311.pyc
+scripts/__pycache__/train_patch_disagreement_arbitrator.cpython-311.pyc
+scripts/__pycache__/train_r177_separation_arbitrator.cpython-311.pyc
+scripts/__pycache__/train_r184_r110_guarded_arbitrator.cpython-311.pyc
+scripts/__pycache__/train_radial_instance_segmenter.cpython-311.pyc
+scripts/__pycache__/train_roi_instance_segmenter.cpython-311.pyc
+scripts/__pycache__/train_sam.cpython-311.pyc
+scripts/__pycache__/train_set_instance_segmenter.cpython-311.pyc
+scripts/__pycache__/train_timm_aspp_segmenter.cpython-311.pyc
+scripts/__pycache__/train_timm_instance_separation_segmenter.cpython-311.pyc
+scripts/__pycache__/train_timm_set_instance_segmenter.cpython-311.pyc
+scripts/__pycache__/train_timm_unet_segmenter.cpython-311.pyc
+scripts/r144_mask2former_hf_smoke.py
+scripts/r147_mask2former_logits_threshold_diagnostic.py
+scripts/r148_mask2former_rank_diagnostic.py
+scripts/r149_mask2former_overfit_rescue.py
+scripts/r159_cuda_toolkit_env_probe.py
+scripts/r161_reannotated_variant_audit.py
+scripts/r187_external_env_reprobe.py
+scripts/render_mask_overlays.py
+scripts/retrieve_hard_case_trainval_candidates.py
+scripts/run_label_protocol_review_pipeline.py
+scripts/search_anchor_mask_refinement.py
+scripts/select_error_refiner_threshold.py
+scripts/select_mask_ensemble.py
+scripts/summarize_ablation_metrics.py
+scripts/summarize_aris_epiphysis_status.py
+scripts/train_anchor_pixel_residual.py
+scripts/train_anchor_pixel_residual.py.bak_apply_anchor_20260624_033231
+scripts/train_boundary_band_refiner.py
+scripts/train_context_segmenter.py
+scripts/train_error_refiner.py
+scripts/train_hf_segformer_segmenter.py
+scripts/train_instance_separation_segmenter.py
+scripts/train_mask_stack_fusion.py
+scripts/train_mask_stack_fusion.py.bak_r050_apply_candidates_20260624_015218
+scripts/train_medsam.py
+scripts/train_patch_disagreement_arbitrator.py
+scripts/train_r177_separation_arbitrator.py
+scripts/train_r184_r110_guarded_arbitrator.py
+scripts/train_radial_instance_segmenter.py
+scripts/train_roi_instance_segmenter.py
+scripts/train_sam.py
+scripts/train_set_instance_segmenter.py
+scripts/train_slot_layout_segmenter.py
+scripts/train_timm_aspp_segmenter.py
+scripts/train_timm_instance_separation_segmenter.py
+scripts/train_timm_set_instance_segmenter.py
+scripts/train_timm_unet_segmenter.py
+scripts/train_yolo.py
+scripts/validate_yolo_dataset.py
+scripts/visualize_yolo_boxes.py
+=== key file snippets ===
+--- README.md ---
+# YOLO + SAM 掌骨区域分割
+
+本项目采用两阶段方案完成掌骨区域分割：
+
+1. 用 YOLO 检测骨骺或关节面区域。
+2. 将 YOLO 检测框作为通用 SAM 的提示，生成最终分割 mask。
+
+当前本地版本已经支持将以下改进加入 SAM 提示与微调流程中：
+
+- 背景负提示点
+- 边界附近采样
+- 环状/结构化背景约束
+- 将 prompt 学习纳入微调，而不只是训练 `mask_decoder`
+- 提示点热图监督
+- 边界前景/背景对比约束
+
+这份 README 只描述本地代码当前支持的实验，不涉及服务器端是否已同步。
+
+## 项目结构
+
+```text
+YOLO+SAM/
+  checkpoints/                         # SAM 和 YOLO 权重
+  configs/                             # YOLO 数据集配置
+  data/
+    raw/                               # 原始 TSRS_RSNA 数据
+    yolo/                              # 转换后的 YOLO 检测数据
+  outputs/                             # 推理结果、评估结果、SAM 微调输出
+  runs/                                # Ultralytics 训练输出
+  scripts/                             # 数据准备、训练、推理、评估、汇总脚本
+  run_*.sh                             # Linux 批量实验脚本
+```
+
+## 环境安装
+
+如果你在 Linux 服务器上使用 `bash`：
+
+```bash
+source /home/anaconda3/etc/profile.d/conda.sh
+conda activate yolo-sam-gpu
+```
+
+如果你在 `/bin/sh` 下：
+
+```sh
+. /home/anaconda3/etc/profile.d/conda.sh
+conda activate yolo-sam-gpu
+```
+
+安装依赖：
+
+```bash
+pip install -r requirements.txt
+```
+
+验证 CUDA：
+
+```bash
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'no cuda')"
+```
+
+## 1. 生成 YOLO 检测数据
+
+骨骺数据：
+
+```bash
+python scripts/prepare_yolo_dataset.py --dataset TSRS_RSNA-Epiphysis --padding-ratio 0.08 --overwrite
+```
+
+关节面数据：
+
+```bash
+python scripts/prepare_yolo_dataset.py --dataset TSRS_RSNA-Articular-Surface --padding-ratio 0.08 --overwrite
+```
+
+## 2. 训练 YOLO
+
+训练骨骺 YOLO：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/train_yolo.py --data configs/TSRS_RSNA-Epiphysis.yaml --model yolov8l.pt --imgsz 1024 --epochs 100 --batch 4 --device 0 --name epiphysis_yolov8l_1024
+```
+
+训练关节面 YOLO：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/train_yolo.py --data configs/TSRS_RSNA-Articular-Surface.yaml --model yolov8l.pt --imgsz 1024 --epochs 100 --batch 4 --device 0 --name articular_surface_yolov8l_1024
+```
+
+YOLO 输出默认位于：
+
+```text
+runs/detect/outputs/yolo/
+```
+
+如果 Ultralytics 自动加后缀，例如：
+
+```text
+runs/detect/outputs/yolo/epiphysis_yolov8l_1024-2/weights/best.pt
+```
+
+后续推理时请使用真实存在的 `best.pt` 路径。
+
+## 3. 下载通用 SAM 权重
+
+```bash
+python scripts/download_sam_checkpoint.py
+```
+
+默认输出：
+
+```text
+checkpoints/sam_vit_b_01ec64.pth
+```
+
+## 4. 零微调推理
+
+### 4.1 仅使用 box prompt
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/infer_yolo_sam.py --dataset TSRS_RSNA-Epiphysis --split test --yolo-weights runs/detect/outputs/yolo/epiphysis_yolov8l_1024-2/weights/best.pt --sam-checkpoint checkpoints/sam_vit_b_01ec64.pth --imgsz 1024 --conf 0.20 --box-padding-ratio 0.05 --prompt-mode box --save-overlays
+```
+
+### 4.1.2 错误类型感知动态修正
+
+这组实验仍然使用通用 SAM，不微调模型。它会对同一张图尝试多个 `box-padding-ratio`，再根据候选 mask 的稳定性、mask/box 面积一致性和越框比例自动选择结果，用来同时缓解缺漏和过度分割：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/infer_yolo_sam.py --dataset TSRS_RSNA-Epiphysis --split test --yolo-weights runs/detect/outputs/yolo/epiphysis_yolov8l_1024-2/weights/best.pt --sam-checkpoint checkpoints/sam_vit_b_01ec64.pth --imgsz 1024 --conf 0.20 --prompt-mode box --dynamic-correction --dynamic-padding-ratios 0.00,0.03,0.05,0.08,0.10,0.15 --dynamic-base-padding-ratio 0.05 --save-overlays --out-root outputs/ablations/zero_shot_dynamic_box_consistency_conf020
+```
+
+评估：
+
+```bash
+python scripts/evaluate_masks.py --dataset TSRS_RSNA-Epiphysis --split test --pred-dir outputs/ablations/zero_shot_dynamic_box_consistency_conf020/TSRS_RSNA-Epiphysis/test/masks
+```
+
+### 4.1.3 Mask-to-Prompt 二次修正
+
+这组实验借鉴 SAMRefiner 的思路：先用 YOLO box 得到 SAM 初始 mask，再从初始 mask 自动生成二次 box、前景点、边界附近背景点，并把第一次 SAM 的低分辨率 mask logit 作为 `mask_input` 再送回 SAM。模型仍然使用通用 SAM，不做微调。
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/infer_yolo_sam.py --dataset TSRS_RSNA-Epiphysis --split test --yolo-weights runs/detect/outputs/yolo/epiphysis_yolov8l_1024-2/weights/best.pt --sam-checkpoint checkpoints/sam_vit_b_01ec64.pth --imgsz 1024 --conf 0.20 --box-padding-ratio 0.05 --prompt-mode box --mask-to-prompt-refine --refine-box-padding-ratio 0.03 --refine-num-positive-points 1 --refine-num-negative-points 4 --refine-negative-dilate-kernel 9 --save-overlays --out-root outputs/ablations/zero_shot_mask_to_prompt_refine_conf020_pad005
+```
+
+评估：
+
+```bash
+python scripts/evaluate_masks.py --dataset TSRS_RSNA-Epiphysis --split test --pred-dir outputs/ablations/zero_shot_mask_to_prompt_refine_conf020_pad005/TSRS_RSNA-Epiphysis/test/masks
+```
+
+如果要一次性跑完 mask-to-prompt refinement 的参数消融，直接执行：
+
+```bash
+./run_epiphysis_mask_to_prompt_ablation.sh
+```
+
+脚本会自动比较以下因素：
+
+- 二次 box 的 `refine-box-padding-ratio`
+- 边界附近负点数量 `refine-num-negative-points`
+- 负点环带大小 `refine-negative-dilate-kernel`
+- 是否使用第一次 SAM 的低分辨率 `mask_input`
+
+汇总结果默认输出到：
+
+```text
+outputs/ablations/TSRS_RSNA-Epiphysis_test_mask_to_prompt_refine_summary.md
+```
+
+跑完上述候选后，可以继续做候选 mask 融合消融。该步骤不重新运行 SAM，只融合已经生成的候选 mask：
+
+```bash
+./run_epiphysis_mask_fusion_ablation.sh
+```
+
+融合结果默认输出到：
+
+```text
+outputs/ablations/TSRS_RSNA-Epiphysis_test_mask_fusion_summary.md
+--- requirements.txt ---
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# PyTorch stack for RTX 4090 on the server
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# Detection and segmentation
+ultralytics>=8.2.0,<9
+segment-anything==1.0
+
+# Image and array processing
+opencv-python-headless>=4.8.0
+numpy>=1.24,<2.0
+Pillow>=10.0
+
+# Utilities
+tqdm>=4.66
+PyYAML>=6.0
+matplotlib>=3.8
+--- research-workflow/refine-logs/STEP_SYNC_LOG.md ---
+﻿# Step Sync Log
+
+- [2026-06-16 15:56] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 15:58] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 15:58] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 15:59] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 15:59] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:00] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:00] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:03] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:03] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:04] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:04] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:05] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:05] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:05] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:06] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:06] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:09] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:09] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:14] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 16:19] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-16 20:39] sync complete: R011 status=DONE, clean-test-v2 dice=0.909178
+- [2026-06-22 20:18] sync complete: R013 status=DONE, original-test dice=0.878543; added R014 recall-rescue bridge candidate
+- [2026-06-22 20:47] sync complete: R014 status=DONE, original-test dice=0.890988; failed original-test gate, clean-test-v2 skipped; added R015 selector direction
+- [2026-06-22 21:23] sync complete: R015 status=DONE, original-test dice=0.896905, clean-test-v2 dice=0.913497; exceeds ARAA clean-test-v2 target 0.911766, so R016 not launched
+- [2026-06-22 23:20] target revised: must exceed original ARAA clean-test-v2 Dice 0.9117660066557425 by +0.02, new target Dice > 0.9317660066557425.
+- [2026-06-22 23:20] sync complete: R016c oracle analysis found pixel-oracle Dice 0.963030 but per-image oracle Dice 0.916145, so whole-image selection is insufficient.
+- [2026-06-22 23:20] sync complete: R017d val-trained bit-pattern pixel fusion Dice 0.911063, below R015.
+- [2026-06-22 23:20] sync complete: R018b selector_refiner_v3 clean-test-v2 Dice 0.893487, rejected.
+- [2026-06-22 23:20] sync complete: R019 train-calibrated bit-pattern pixel fusion Dice 0.912425, below R015; non-spatial table fusion exhausted.
+- [2026-06-22 23:20] launch: R020 lightweight CNN mask-stack fusion started on remote GPU0, screen r020_mask_stack, metrics target outputs/analysis/r020_mask_stack_cnn_fusion_clean_test_v2_metrics.json.
+- [2026-06-22 23:38] launch: R021 R015-anchored CNN mask-stack fusion started on remote GPU1, screen r021_r015_anchor, metrics target outputs/analysis/r021_r015anchored_mask_stack_cnn_fusion_clean_test_v2_metrics.json.
+- [2026-06-22 23:41] launch: R022 R015-anchored train-calibrated bit-pattern pixel fusion started, screen r022_pixel_anchor, metrics target outputs/analysis/r022_r015anchored_train_calibrated_pixel_fusion_clean_test_v2_metrics.json.
+- [2026-06-22 23:42] result: R020 DONE, clean-test-v2 Dice 0.891170, IoU 0.804240, Precision 0.877281, Recall 0.906781, Boundary IoU 0.172539; rejected because it is below R015 and far below target 0.931766.
+- [2026-06-22 23:57] launch: R023 R015 conservative anchor add/remove rule search started, screen r023_anchor_rule, metrics target outputs/analysis/r023_r015_anchor_rule_refinement_clean_test_v2_metrics.json.
+- [2026-06-22 23:58] result: R021 DONE, clean-test-v2 Dice 0.889575, IoU 0.801641, Precision 0.874381, Recall 0.906580, Boundary IoU 0.168450; rejected because R015 anchoring inside CNN still degraded the strong anchor.
+- [2026-06-22 23:58] launch: R023b restarted conservative anchor rule search with fixed negative argparse syntax, screen r023b_anchor_rule, metrics target outputs/analysis/r023b_r015_anchor_rule_refinement_clean_test_v2_metrics.json.
+- [2026-06-23 00:04] stop/relaunch: R022 and R023b full boundary-grid searches were too slow; stopped them and launched R022b fast pixel fusion plus R023c fast anchor-rule search.
+- [2026-06-23 00:07] result: R022b DONE, fast clean-test-v2 Dice 0.914214, IoU 0.842524, Precision 0.902973, Recall 0.927005; slight improvement over R015 but far below target 0.931766.
+- [2026-06-23 00:08] launch: R024 R015-anchored selector_refiner_v3 training started on GPU0, screen r024_r015_refiner; will require clean-test-v2 inference/evaluation after checkpoint training.
+- [2026-06-23 00:10] stop: R023c fast anchor-rule search still too slow and low expected upside; stopped to focus compute/attention on R024 refiner path.
+- [2026-06-23 01:03] result: R024 training DONE, early stopped at epoch 51 with best epoch 43, best val Dice 0.896355 / selection score 0.810442; launched R024 val-threshold sweep and clean-test-v2 evaluation, screen r024_eval.
+- [2026-06-23 01:06] result: R024 DONE, clean-test-v2 Dice 0.902147, IoU 0.822134, Precision 0.895634, Recall 0.909911, Boundary IoU 0.201909; rejected because it is below R015/R022b and far below target 0.931766.
+- [2026-06-23 01:10] diagnosis: R025 fast clean-test-v2 diagnosis shows per-image oracle only 0.915987 but pixel oracle 0.957180; launched R025 anchor-local pixel residual MLP, screen r025_pixel_residual.
+- [2026-06-23 01:14] fix/relaunch: R025 failed because R022b has no train masks; launched R025b anchor-local pixel residual using only candidates with train/val masks, screen r025b_pixel_residual.
+- [2026-06-23 10:29] result: R025b DONE, clean-test-v2 Dice 0.914298, IoU 0.842663, Precision 0.900455, Recall 0.929894, Boundary IoU 0.242169; tiny improvement over R022b but still far below target 0.931766.
+- [2026-06-23 10:31] launch: R026 train+val calibrated bit-pattern pixel fusion started, screen r026_trainval_pixel, metrics target outputs/analysis/r026_trainval_calibrated_pixel_fusion_clean_test_v2_metrics.json.
+- [2026-06-23 10:34] result: R026 DONE, fast clean-test-v2 Dice 0.914293, IoU 0.842656, Precision 0.903484, Recall 0.926627; effectively tied with R025b and still far below target 0.931766.
+- [2026-06-23 10:39] launch: R027 MuGu-style gated SAM->HQ-SAM clean-test-v2 inference started on remote GPU0, screen r027_mugu_gated; R027b always-HQ branch started on GPU1 as a gated-logic control.
+- [2026-06-23 10:49] result: R027 DONE, clean-test-v2 Dice 0.890135; R027b DONE, clean-test-v2 Dice 0.890792. Both are far below R015/R025b, but R027-extended pixel oracle reached 0.941139, showing test-only pixel complementarity.
+- [2026-06-23 11:06] data prep: generated R027/R027b validation masks for supervised fusion. Val Dice was 0.873685 / 0.872669, confirming these branches are weak standalone candidates.
+- [2026-06-23 11:29] result: R028c fast R015+R027 bit-pattern pixel fusion DONE, clean-test-v2 Dice 0.913497; fusion learned to keep R015 and did not exploit R027's test oracle complementarity.
+- [2026-06-23 12:20] result: R029b val-trained anchor-local residual over R027/R027b DONE, clean-test-v2 Dice 0.913497; stronger local pixel editor also reverted to R015 under val selection.
+- [2026-06-23 12:23] diagnosis: R030 complete-candidate oracle using R015/R025b plus full train/val/test zero-shot/HQ candidates gave pixel oracle Dice 0.945106, but R030b val-calibrated pixel fusion again selected R015 and produced Dice 0.913497. Existing candidate-learning routes are exhausted; next step must generate genuinely better train/val/test candidate evidence or retrain/refine the main model, not keep tuning selectors.
+- [2026-06-23 12:53] result: R032 historical refiner bank quick eval produced `r032_bank_anatomy_roi` clean-test-v2 Dice 0.906640, IoU 0.829721, Precision 0.902861, Recall 0.911712, Boundary IoU 0.218090; rejected. The second bank candidate hit an old checkpoint input-channel mismatch, so the bank route is not a near-term target path.
+- [2026-06-23 13:17] result: R031 complete-candidate residual DONE, clean-test-v2 Dice 0.913497, IoU 0.841307, Precision 0.899351, Recall 0.929413, Boundary IoU 0.239514; below current best R025b Dice 0.914298 and far below target >0.931766. Val-selected edit config had val Dice only 0.894148, confirming that the complete-candidate residual did not learn a transferable improvement.
+- [2026-06-23 13:20] launch: R033 started on remote GPU0, screen `r033_r025b_refiner`. It first materializes R025b fixed-config train/val masks, then trains `r033_r025b_anchor_keepgap_v3_sam_hqsam` with R025b as the baseline anchor and evaluates clean-test-v2. This shifts from exhausted candidate selection to image-feature refiner training anchored on the current best.
+- [2026-06-23 14:30] literature-driven direction check: existing-candidate fusion/selector route is considered low-value unless R033 makes an unexpected jump. Added `ARIS_DIRECTION_SHIFT_20260623.md` recommending R034 medical SAM/refiner adaptation with boundary-aware and structure-aware supervision, informed by MedSAM/SAMed/Med-SA, boundary loss, clDice, and test-time adaptation literature.
+- [2026-06-23 15:09] monitor: R033 still running on remote GPU0, epoch 24 reached with best val selection score 0.811851 / val Dice 0.897795 and no clean-test-v2 metric yet; trajectory does not show a likely jump to the >0.931766 target.
+- [2026-06-23 15:09] launch: R034 `r034_r025b_boundary_structure_sam_hqsam` started on remote GPU1, screen `r034_boundary_structure`, via `outputs/bridge_logs/run_r034.sh`. It uses R025b as anchor, isolates checkpoint/history under `outputs/error_refiner/TSRS_RSNA-Epiphysis/r034_r025b_boundary_structure/`, and tests a two-stage boundary refiner with stronger clDice/stage2-boundary supervision before clean-test-v2 evaluation.
+- [2026-06-23 16:20] result: R033 DONE, clean-test-v2 Dice 0.910026, IoU 0.835372, Precision 0.899322, Recall 0.922223, Boundary IoU 0.224150; rejected because it regresses below R025b Dice 0.914298 and is far below target >0.931766.
+- [2026-06-23 16:20] result: R035 R033 threshold diagnostic completed 11 thresholds; best threshold 0.45 gave clean-test-v2 Dice 0.910075, so R033 failure is not a threshold-selection artifact.
+- [2026-06-23 16:20] monitor: R034 still running on GPU1 at epoch 22, best val remains epoch 17 with Dice 0.897360 / selection score 0.794309 and no clean-test-v2 metric yet; it remains worth finishing but does not currently show a likely jump toward >0.931766.
+- [2026-06-23 16:20] launch: R036 `r036_medsam_gbc_adapter` started on remote GPU0, screen `r036_medsam_gbc`, via `outputs/bridge_logs/run_r036_medsam_gbc.sh`. This opens a new medical-SAM-adaptation branch: MedSAM mask decoder + GBC adapter + prompt encoder fine-tuning, then val and clean-test-v2 evaluation under `outputs/analysis/r036_medsam_gbc_adapter_*_metrics.json`.
+- [2026-06-23 17:28] result: R034 DONE, clean-test-v2 Dice 0.909466, IoU 0.834428, Precision 0.905767, Recall 0.914428, Boundary IoU 0.224149; rejected because it is below R025b Dice 0.914298 and far below target >0.931766. Val threshold sweep selected 0.50 with val Dice 0.889281 / selection score 0.735202.
+- [2026-06-23 17:28] monitor: R036 MedSAM+GBC continues on remote GPU0; epoch 9 reached with val_loss 0.176855 after monotonic improvement from 0.318589 at epoch 1. Continue to full train/eval because this is the first new medical-SAM adaptation branch with clear learning signal.
+- [2026-06-23 19:31] result: R036 final metrics verified on remote: val Dice 0.804366 / Precision 0.729784 / Recall 0.904248 / Boundary IoU 0.090829; clean-test-v2 Dice 0.817558 / Precision 0.735378 / Recall 0.923293 / Boundary IoU 0.091994. It is not a standalone replacement for R025b, but it remains a high-recall complement candidate.
+- [2026-06-23 19:31] result: R037 R025b+R036 diagnostic completed. Pixel oracle on clean-test-v2 reached Dice 0.941744, above the revised target >0.931766 by +0.009978, confirming that R036 contains useful missing-pixel evidence. However per-image oracle was only Dice 0.914311, essentially tied with R025b Dice 0.914298, and simple boolean union collapsed to Dice 0.834294 because of severe precision loss. Val showed the same pattern: R025b Dice 0.894701, R036 Dice 0.804366, union Dice 0.822691, per-image oracle Dice 0.895231.
+- [2026-06-23 19:31] decision: do not continue naive mask fusion or per-image selection for R036. The only valuable next R038 path is a precision-gated pixel/local-patch learner that adds R036-only pixels to R025b while suppressing R036 false positives, trained on val/train supervision and evaluated against clean-test-v2. If that gate cannot recover a material fraction of the 0.941744 pixel-oracle upper bound, the MedSAM+GBC complement branch should be considered blocked and the workflow should pivot to a new literature-driven architecture/data direction.
+- [2026-06-23 20:22] result: R038 `r038_r025b_r036_precision_gate` completed enough to judge the branch. It generated missing R036 train masks (875/875), trained an anchor-local pixel MLP for 16 epochs (loss 0.7605 -> 0.4092), then the broad val grid was stopped because it was too slow after checkpointing. Conservative fixed configs all exactly reproduced R025b Dice 0.914298. Aggressive fixed configs showed the best clean-test-v2 Dice 0.914357 at radius=1/threshold=0.45/margin=0.0, with Precision 0.899054 and Recall 0.931483; this is only +0.000058 over R025b and still far below target >0.931766.
+- [2026-06-23 20:22] diagnosis: R038 probability diagnostic on R036-only pixels found GT prevalence about 16.0% on both val and clean-test-v2. The MLP ranking is weak: even at threshold 0.45, test selected 9,803 pixels with precision 0.5179 and only 1.93% recall of true R036-only positives; lower thresholds add recall but collapse precision. Pixel-level precision gating is therefore not sufficient to recover the R037 pixel oracle.
+- [2026-06-23 20:22] decision: proceed to R039 as the last MedSAM-complement salvage attempt, using connected-component/local-structure gating over R036-only additions instead of independent pixel gating. If component-level gating also cannot produce a material jump beyond R025b, mark the R036 complement path as exhausted and pivot away from same-candidate fusion/refinement.
+- [2026-06-23 21:31] result: R039 component-gate diagnosis completed. A GT-leaking component precision oracle reached clean-test-v2 Dice 0.917644, still far below target >0.931766, while the valid area/dist/aspect-only val-selected gate scored Dice 0.914267, slightly below R025b Dice 0.914298. This closes the R036 complement-as-gated-additions path as low-value.
+- [2026-06-23 21:37] launch: R040 `r040_r025b_r036_anatomy_keepgap_v3_sam_hqsam` started on remote GPU0, screen `r040_r025b_r036`, via `outputs/bridge_logs/run_r040.sh`. It uses R025b as anchor and R036 MedSAM+GBC as the second candidate inside the image-conditioned anatomy/keepgap-v3 refiner, with outputs isolated under `outputs/error_refiner/TSRS_RSNA-Epiphysis/r040_r025b_r036_anatomy_keepgap_v3/` and clean-test-v2 metric target `outputs/analysis/r040_r025b_r036_anatomy_keepgap_v3_clean_test_v2_metrics.json`.
+- [2026-06-23 21:40] launch: R041 `r041_r025b_r036_boundary_prefgate_sam_hqsam` started on remote GPU1, screen `r041_r025b_r036`, via `outputs/bridge_logs/run_r041.sh`. It keeps the same R025b+R036 inputs as R040 but uses the boundary-prefgate/trim-first target mode with higher precision weighting to test whether a more conservative image-conditioned refiner can exploit R036 recall without inheriting its false positives.
+- [2026-06-23 22:20] result: R040 DONE, clean-test-v2 Dice 0.909453, IoU 0.834397, Precision 0.902477, Recall 0.917806, Boundary IoU 0.223455. Although R040 reached a better val Dice 0.898094 at epoch 17, it regressed below R025b on clean-test-v2, so the R025b+R036 image-conditioned keepgap-v3 refiner is rejected.
+- [2026-06-23 22:20] result: R041 DONE, clean-test-v2 Dice 0.878443, IoU 0.784371, Precision 0.852774, Recall 0.908034, Boundary IoU 0.162248. The boundary-prefgate/trim-first control failed badly. Combined with R038/R039, this closes the current R036 MedSAM-complement branch; next ARIS step should pivot away from R036 candidate exploitation toward either data/annotation-quality isolation or a genuinely new medical-SAM/ROI adaptation branch.
+- [2026-06-23 22:25] launch: R043a/R043b reannotation-transfer experiments started. Both train on `TSRS_RSNA-Epiphysis_reannotated_flat_output_suffix_v1` using existing zero-shot/SAM/HQ-SAM candidates in `outputs/reannotation_quality_compare`, then transfer the checkpoint to `TSRS_RSNA-Epiphysis_clean_test_v2` using clean-test-v2 candidates in `outputs/ablations_variants`. R043a uses `allstack_anatomy_roi_keepbone_cutgap_refiner_v3` on GPU0, screen `r043a_reannot`; R043b uses `allstack_anatomy_roi_twostage_boundary_refiner` on GPU1, screen `r043b_reannot`. Metrics targets: `outputs/analysis/r043a_reannot_keepgap_v3_transfer_clean_test_v2_metrics.json` and `outputs/analysis/r043b_reannot_twostage_boundary_transfer_clean_test_v2_metrics.json`.
+- [2026-06-23 23:24] result: R043a/R043b DONE. R043a reannotated keepgap-v3 transfer scored clean-test-v2 Dice 0.898181, IoU 0.816738, Precision 0.890030, Recall 0.908891, Boundary IoU 0.207844. R043b reannotated twostage-boundary transfer scored Dice 0.894347, IoU 0.810526, Precision 0.895476, Recall 0.895637, Boundary IoU 0.201979. Both are far below R025b/R038, so direct training on the reannotated flat-output-suffix variant does not transfer to the clean-test-v2 target metric.
+- [2026-06-23 23:26] launch: R044a/R044b filtered-data transfer experiments started. R044a trains keepgap-v3 on `TSRS_RSNA-Epiphysis_badlabel_filtered_v1` on GPU0, screen `r044a_filtered`; R044b trains keepgap-v3 on `TSRS_RSNA-Epiphysis_trainval_filtered_v1` on GPU1, screen `r044b_filtered`. Both use existing filtered candidate masks under `outputs/ablations_variants` and transfer to clean-test-v2 for final metrics `outputs/analysis/r044a_badlabel_filtered_keepgap_transfer_clean_test_v2_metrics.json` and `outputs/analysis/r044b_trainval_filtered_keepgap_transfer_clean_test_v2_metrics.json`.
+- [2026-06-24 00:18] result: R044a DONE. `TSRS_RSNA-Epiphysis_badlabel_filtered_v1` keepgap-v3 transfer scored clean-test-v2 Dice 0.907743, IoU 0.831582, Precision 0.901985, Recall 0.914845, Boundary IoU 0.222838. This is below the current best R038/R025b line (~0.91436), so badlabel-filtered transfer is rejected. R044b is still running and remains the only active filtered-data candidate.
+- [2026-06-24 00:27] result: R044b DONE. `TSRS_RSNA-Epiphysis_trainval_filtered_v1` keepgap-v3 transfer scored clean-test-v2 Dice 0.907967, IoU 0.831966, Precision 0.899374, Recall 0.918050, Boundary IoU 0.221075. This is also below R038/R025b and far below the revised target >0.931766. Filtered-data transfer is closed as a low-value branch. Since candidate fusion, R036 complement exploitation, reannotated transfer, and filtered transfer are all negative, the next useful R045 step should be a failure-localization/ROI-boundary diagnostic that informs a new architecture/data direction rather than another same-family selector or threshold run.
+- [2026-06-24 00:30] diagnosis: R045 failure-localization report saved on remote at `outputs/analysis/r045_failure_localization_clean_test_v2.json`. It compared R038 best, R025b, R033, R044a, and R044b per image on clean-test-v2. Failed-branch per-image oracle over R038/R025b/R033/R044a/R044b reached only Dice 0.914775, just +0.000418 over R038 and still far below >0.931766. R044b improved over R038 on only 4/81 images and hurt by >0.01 Dice on 13/81. Current-best failure profile: 38/81 images have precision at least 0.04 below recall, 23/81 have Boundary IoU <0.18. This supports a precision/boundary/ROI-constrained branch, not more data-filtering or same-candidate fusion.
+- [2026-06-24 00:31] launch: R047/R048 started in parallel on the now-free GPUs. R047 `r047_r025b_uncertainty_refiner` runs `allstack_anatomy_roi_uncertainty_refiner` on GPU0, screen `r047_uncertainty`, log `outputs/bridge_logs/r047_uncertainty.log`, metric target `outputs/analysis/r047_r025b_uncertainty_refiner_clean_test_v2_metrics.json`. R048 `r048_r025b_precision_uncertainty_gate` runs `allstack_anatomy_roi_refiner_uncertainty_gate` on GPU1, screen `r048_precision_uncertainty`, log `outputs/bridge_logs/r048_precision_uncertainty.log`, metric target `outputs/analysis/r048_r025b_precision_uncertainty_gate_clean_test_v2_metrics.json`. Both anchor on R025b and test whether uncertainty/precision-gated boundary refinement can improve the R038/R025b plateau.
+- [2026-06-24 01:28] result: R047/R048 DONE. R047 `r047_r025b_uncertainty_refiner` early-stopped at epoch 32, selected threshold 0.60, and scored clean-test-v2 Dice 0.912138, IoU 0.838954, Precision 0.914972, Recall 0.910532, Boundary IoU 0.238979. R048 `r048_r025b_precision_uncertainty_gate` early-stopped at epoch 32, selected threshold 0.50, and scored Dice 0.911719, IoU 0.838275, Precision 0.922409, Recall 0.902451, Boundary IoU 0.243638. Both improve precision over R038 but lose too much recall, remain below current best R038 Dice 0.914357, and are far below target >0.931766. Next step is R049 oracle/diagnostic over R038+R047/R048 to determine whether high-precision uncertainty refiners contain useful complementary cases or whether this branch should be closed.
+- [2026-06-24 01:35] diagnosis: R049 oracle analysis over R038/R047/R048/R025b saved on remote at `outputs/analysis/r049_r038_r047_r048_oracle_clean_test_v2.json`. Single candidates remain below target: R038 Dice 0.914357, R047 0.912138, R048 0.911719, R025b 0.914298. Simple union/voting/intersection also fail (best vote_ge_2 Dice 0.914040). Per-image oracle reaches only 0.915841, but pixel oracle reaches Dice 0.933741, Precision 0.931730, Recall 0.936667, Boundary IoU 0.352949, exceeding the target >0.931766 by +0.001975. This reopens a narrowly scoped learnable pixel-arbitration branch: the useful signal exists only at local pixel level, not whole-image selection.
+- [2026-06-24 01:36] launch: R050 `r050_r038_r047_r048_stack_fusion` started on GPU0, screen `r050_stack_fusion`, log `outputs/bridge_logs/r050_stack_fusion.log`. It first materializes R047/R048 train/val masks at their selected thresholds (0.60/0.50), then trains `scripts/train_mask_stack_fusion.py` over R038/R047/R048/R025b and evaluates clean-test-v2 at `outputs/analysis/r050_r038_r047_r048_stack_fusion_clean_test_v2_metrics.json`. This attempts to learn part of the R049 pixel-oracle complementarity.
+- [2026-06-24 02:09] result: R050b repaired the R050 engineering failure by adding separate train/apply candidate lists to `scripts/train_mask_stack_fusion.py`. It trained with R025b as the train-time proxy for R038 and applied clean-test-v2 candidates R038/R047/R048/R025b. The run completed but scored clean-test-v2 Dice 0.889492, IoU 0.801479, Precision 0.877509, Recall 0.903062, Boundary IoU 0.168119, with best val Dice only 0.897834. This is far below current best R038 Dice 0.914357 and closes the current same-family stack-fusion/pixel-arbitration branch as low-value despite the R049 pixel oracle.
+- [2026-06-24 03:52] result: R051 `r051_medsam_last2_prompt` completed the first new MedSAM-adaptation branch after the fusion pivot. It fine-tuned MedSAM mask decoder + prompt encoder + last 2 image-encoder blocks for 24 epochs, with val loss improving monotonically from 0.21533 to 0.13926. However YOLO+MedSAM inference remained a high-recall/low-precision standalone branch: val Dice 0.814032 / Precision 0.742633 / Recall 0.908896 / Boundary IoU 0.097640; clean-test-v2 Dice 0.828681 / Precision 0.749983 / Recall 0.929221 / Boundary IoU 0.102400. It is far below R038 and cannot be promoted standalone. Next step R052 should measure whether R051's high recall adds useful pixel-level complementarity to R038/R025b before attempting any gated exploitation.
+- [2026-06-24 03:58] diagnosis: R052 oracle over R038/R025b/R051 showed R051 is not useful for per-image or simple voting selection. R038 Dice 0.914357, R025b Dice 0.914298, R051 Dice 0.828681. Union/vote_ge_1 collapses to Dice 0.842274 due to precision loss; vote_ge_2 gives 0.914302; per-image oracle only 0.914493. Pixel oracle reaches Dice 0.941163, Precision 0.916944, Recall 0.967445, Boundary IoU 0.398339, above target by +0.009397. This justifies one local gate/residual attempt with R051 as a high-recall candidate, but not naive fusion or selector reruns.
+- [2026-06-24 03:54] monitor: R053b `r053b_r038_r051_local_gate_proxyanchor` is still running on remote screen `r053b_r051_gate` and has not yet produced `outputs/analysis/r053b_r038_r051_local_gate_proxyanchor_clean_test_v2_metrics.json`. The log shows repeated `eval/TSRS_RSNA-Epiphysis/val` sweeps with no traceback, FileNotFound, RuntimeError, or CUDA OOM. Continue monitoring to final metrics, but treat this as the last reasonable R051 local-gate exploitation unless it produces a material jump beyond the current best R038 Dice 0.914357.
+- [2026-06-24 03:56] launch: R054 `r054_sam_structured_boundary_gbc` started on remote GPU0, screen `r054_sam_boundary`, via `outputs/bridge_logs/run_r054_sam_structured_boundary.sh`. This is a direction shift away from same-family mask fusion: it fine-tunes SAM mask decoder + GBC adapter + prompt encoder using `box+fgbg` structured prompts, prompt heatmap supervision, and boundary contrastive regularization, then evaluates val and clean-test-v2. Metric targets are `outputs/analysis/r054_sam_structured_boundary_gbc_val_metrics.json` and `outputs/analysis/r054_sam_structured_boundary_gbc_clean_test_v2_metrics.json`.
+- [2026-06-24 04:13] diagnosis: R053b fixed-config fast readout over the saved checkpoint was run while the original broad val grid continued. Best fixed clean-test-v2 result was `r053b_fast_r1_t050_m000` with Dice 0.913564, IoU 0.841409, Precision 0.891474, Recall 0.938071, Boundary IoU 0.244339. Other tested configs ranged from Dice 0.905133 to 0.913560. Since this remains below current best R038 Dice 0.914357, the R051 high-recall local-gate path is not showing transferable value; keep the original R053b screen only to capture the final grid-selected metric, but do not launch further R051-gate variants unless that final metric contradicts the fast readout.
+- [2026-06-24 04:16] monitor: R054 completed epoch 1 with train_loss 1.324737 and val_loss 1.263211, then continued into epoch 2. No traceback, runtime error, or CUDA OOM observed. Because this loss includes structured prompt heatmap and boundary contrastive terms, compare downstream mask metrics rather than directly comparing the absolute loss to R051 MedSAM losses.
+- [2026-06-24 04:18] launch: R055 `r055_sam_structured_boundary_last2` started on remote GPU1, screen `r055_sam_last2`, via `outputs/bridge_logs/run_r055_sam_structured_boundary_last2.sh`. It keeps the R054 structured `box+fgbg` prompt, prompt-heatmap, and boundary-contrastive setup, but disables embedding cache and fine-tunes the last 2 SAM image-encoder blocks with a small image-encoder LR to test whether image-feature adaptation is needed for epiphysis boundary/precision gains. Metric targets are `outputs/analysis/r055_sam_structured_boundary_last2_val_metrics.json` and `outputs/analysis/r055_sam_structured_boundary_last2_clean_test_v2_metrics.json`.
+- [2026-06-24 04:28] resource decision: stopped R053b broad grid screen `r053b_r051_gate` to free GPU1 for R055. R053b already had a fixed-config clean-test-v2 readout of Dice 0.913564, below current best R038 Dice 0.914357, so continuing the broad grid was lower value than removing GPU contention from the structured SAM image-adaptation branch.
+- [2026-06-24 04:30] continuation setup: created remote `outputs/bridge_logs/run_r056_medsam_structured_boundary_gbc.sh` and controller screen `r056_after_r054`. The controller waits for `outputs/analysis/r054_sam_structured_boundary_gbc_clean_test_v2_metrics.json`; if R054 exceeds target Dice >0.9317660066557425 it stops, otherwise it launches R056 on GPU0. R056 tests MedSAM checkpoint + structured `box+fgbg` prompt + GBC + prompt heatmap/boundary contrastive supervision, mirroring R054's structured SAM setup while changing the pretrained medical foundation.
+- [2026-06-24 04:33] continuation setup: created remote `outputs/bridge_logs/run_r057_medsam_structured_boundary_last2.sh` and controller screen `r057_after_r055`. The controller waits for `outputs/analysis/r055_sam_structured_boundary_last2_clean_test_v2_metrics.json`; if R055 exceeds target Dice >0.9317660066557425 it stops, otherwise it launches R057 on GPU1. R057 tests the same MedSAM+structured-boundary setup as R056 but also fine-tunes the last 2 image-encoder blocks, giving a clean paired continuation for the R055 image-adaptation branch.
+- [2026-06-24 04:34] monitor: R054 is still running and has completed epoch 2 with train_loss 1.032632 and val_loss 0.781448, down from epoch-1 val_loss 1.263211. No clean-test-v2 metric yet. R055 is still running on GPU1 but has not written history yet; no errors found in R054/R055/R056/R057 logs. R056/R057 controllers are waiting and have not launched, so they are not occupying GPUs.
+- [2026-06-24 04:38] diagnostic continuation setup: created remote controller screen `r058_struct_oracle` via `outputs/bridge_logs/run_r058_structured_oracle_controller.sh`. It waits until R054/R055/R056/R057 all have clean-test-v2 metrics, then symlinks their prediction masks into `outputs/ablations_variants` and runs `scripts/analyze_mask_oracle.py` with R038/R025b plus the four structured SAM/MedSAM branches. Output target: `outputs/analysis/r058_structured_sam_medsam_oracle_clean_test_v2.json`. This is a non-GPU diagnostic gate to decide whether the structured branch has enough pixel-oracle upper bound before attempting any R059 residual/fusion follow-up.
+- [2026-06-24 04:39] monitor: R054/R055 remain active on GPU0/GPU1 with no clean-test-v2 JSON yet. R054 history is still at 2 epochs, last train_loss 1.032632 / val_loss 0.781448; R055 has not written history yet but process/GPU state is active and no errors are present. R056, R057, and R058 controllers are healthy and waiting; no downstream branch has launched prematurely.
+- [2026-06-24 04:42] monitor: concise liveness check confirms R054/R055 are real active jobs, not stale screens. GPU compute apps show R054 PID 1254962 using ~5194 MiB on GPU0 and R055 PID 1258378 using ~6896 MiB on GPU1; train logs are still updating. R054 history remains at epoch 2 because epoch 3 is in progress; R055 has not completed epoch 1 yet, so no history/checkpoint exists. No new clean-test-v2 metrics have appeared. R056/R057/R058 controllers remain healthy and waiting.
+- [2026-06-24 04:43] monitor: no new clean-test-v2 metrics yet. R054 and R055 logs continue updating; GPU compute apps still show R054 PID 1254962 on GPU0 (~5194 MiB) and R055 PID 1258378 on GPU1 (~6896 MiB). R055 GPU utilization was observed at 78%, confirming active training. R054 history remains at epoch 2 while epoch 3 is in progress; R055 still has no epoch-1 history. R056/R057/R058 controllers continue waiting normally, and no errors/OOMs were found.
+- [2026-06-24 04:45] monitor: no R054/R055/R056/R057/R058 clean-test-v2 outputs yet. Screens remain active: `r054_sam_boundary`, `r055_sam_last2`, `r056_after_r054`, `r057_after_r055`, and `r058_struct_oracle`. GPU apps still show R054 PID 1254962 using ~5194 MiB on GPU0 and R055 PID 1258378 using ~6896 MiB on GPU1. R054/R055 log mtimes continue updating, while R054 history remains at epoch 2 and R055 has not completed epoch 1. Controllers are waiting normally; no errors/OOMs found.
+- [2026-06-24 10:57] monitor: R054/R055 are still active and healthy, with no clean-test-v2 metrics yet. R054 reached epoch 15 with train_loss 0.338802 / val_loss 0.350825; R055 reached epoch 14 with train_loss 0.324086 / val_loss 0.335717. R054 is slower because GPU0 also has another user's ~18GB process, but its log continues updating. R056/R057/R058 controllers are still waiting and have not launched downstream work. No traceback, RuntimeError, CUDA OOM, FileNotFound, or killed-process errors found. Decision gate remains: finish R054/R055, allow R056/R057 if needed, then use R058 oracle before deciding whether a structured-SAM follow-up is worth GPU time.
+- [2026-06-24 10:58] continuation setup: created remote non-GPU controller `r059_after_r058` via `outputs/bridge_logs/run_r059_after_structured_oracle_controller.sh`. It waits for `outputs/analysis/r058_structured_sam_medsam_oracle_clean_test_v2.json`, then writes `outputs/analysis/r059_structured_oracle_decision.json`. The controller does not launch GPU training automatically; it gates the next move as: verify/stop if any branch exceeds target Dice >0.931766, consider a supervised structured-branch refiner only if pixel oracle exceeds target with meaningful headroom, run a cheaper diagnostic if headroom is modest, or pivot to a literature-driven self-prompt/TTA/topology/layout direction if oracle headroom is insufficient.
+- [2026-06-24 11:00] liveness check: R054/R055 still have no metrics but both logs grew over a 20-second window, confirming active processes. Histories remain at R054 epoch 15 and R055 epoch 14 because the current epochs are still in progress. R056/R057/R058/R059 controllers remain waiting; no error signatures were found.
+- [2026-06-24 11:02] monitor: still no R054/R055/R056/R057 clean-test-v2 metrics and no R058/R059 decision output. Screens remain active for `r054_sam_boundary`, `r055_sam_last2`, `r056_after_r054`, `r057_after_r055`, `r058_struct_oracle`, and `r059_after_r058`. R054/R055 histories are unchanged at completed epochs 15/14 while current training continues; controllers are waiting normally and error scans remain clean.
+- [2026-06-24 11:03] progress parse: R054 is actively in train epoch 16 at about 368/875 steps (42%) after completing val epoch 15; R055 is actively in train epoch 15 at about 257/875 steps (29%) after completing val epoch 14. Continue monitoring; no restart or intervention indicated.
+- [2026-06-24 11:04] monitor: no new R054/R055/R056/R057 metrics and no R058/R059 output yet. R054 advanced to train epoch 16 step 388/875 (44%); R055 advanced to train epoch 15 step 281/875 (32%). Controllers continue waiting normally and error scans remain clean.
+- [2026-06-24 11:05] monitor: still no structured-branch metrics. R054 advanced to train epoch 16 step 419/875 (48%); R055 advanced to train epoch 15 step 313/875 (36%). Neither log shows final infer/evaluate markers yet. R056/R057/R058/R059 controllers remain healthy and waiting; no error signatures found.
+- [2026-06-24 11:06] liveness check: over a 15-second window R055 log grew, while R054 did not emit a new line but GPU0 remained busy with R054 plus another user's large process. This is not enough evidence for a stall; continue monitoring rather than restarting.
+- [2026-06-24 11:07] monitor: no new metrics yet. R054 advanced to train epoch 16 step 459/875 (52%); R055 advanced to train epoch 15 step 362/875 (41%). A 20-second liveness window showed R055 log growth; R054 did not emit a new line in that short window but GPU0 was active again at 79%, so there is still no evidence of a failed job. Controllers remain waiting and error scans are clean.
+- [2026-06-24 11:08] monitor: still no structured-branch clean-test-v2 metrics or R058/R059 outputs. R054 advanced to train epoch 16 step 499/875 (57%); R055 advanced to train epoch 15 step 402/875 (46%). R056/R057/R058/R059 controllers remain healthy and waiting; no error signatures found.
+- [2026-06-24 11:10] monitor: no new structured-branch metrics. R054 advanced to train epoch 16 step 527/875 (60%); R055 advanced to train epoch 15 step 430/875 (49%). Controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:11] monitor: still no R054/R055/R056/R057 clean-test-v2 metrics and no R058/R059 output. R054 advanced to train epoch 16 step 547/875 (63%); R055 advanced to train epoch 15 step 446/875 (51%). Controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:12] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 571/875 (65%); R055 advanced to train epoch 15 step 470/875 (54%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:13] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 596/875 (68%); R055 advanced to train epoch 15 step 494/875 (56%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:15] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 624/875 (71%); R055 advanced to train epoch 15 step 524/875 (60%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:16] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 648/875 (74%); R055 advanced to train epoch 15 step 548/875 (63%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:17] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 665/875 (76%); R055 advanced to train epoch 15 step 564/875 (64%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:18] monitor: no new clean-test-v2 metrics. R054 advanced to train epoch 16 step 696/875 (80%); R055 advanced to train epoch 15 step 598/875 (68%). GPU1 utilization was active again, confirming R055 training progress. R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:20] monitor: no new val or clean-test-v2 metrics. R054 advanced to train epoch 16 step 728/875 (83%); R055 advanced to train epoch 15 step 628/875 (72%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:21] monitor: no new val or clean-test-v2 metrics. R054 advanced to train epoch 16 step 761/875 (87%); R055 advanced to train epoch 15 step 660/875 (75%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:23] monitor: no new val or clean-test-v2 metrics. R054 advanced to train epoch 16 step 795/875 (91%); R055 advanced to train epoch 15 step 691/875 (79%). R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:24] monitor: no new val or clean-test-v2 metrics. R054 advanced to train epoch 16 step 819/875 (94%); R055 advanced to train epoch 15 step 718/875 (82%). GPU0/GPU1 are both active; R056/R057/R058/R059 controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 11:27] monitor: still no R054/R055/R056/R057 metrics or R058/R059 decision outputs. R054 completed train epoch 16 and entered val epoch 16 at 26/96; R055 advanced to train epoch 15 step 806/875 (92%). R056/R057 controllers continue waiting for R054/R055 clean-test-v2 metrics, R058 waits for all structured branch metrics, and R059 waits for R058 oracle. Error scans remain clean; no intervention indicated.
+- [2026-06-24 11:32] monitor: still no structured-branch final metrics. R054 completed epoch 16 with train_loss 0.333307 / val_loss 0.345103 and entered train epoch 17; R055 completed train epoch 15 and entered val epoch 15 at 42/96. R056/R057/R058/R059 controllers continue waiting normally; error scans remain clean.
+- [2026-06-24 11:33] monitor: no R054/R055/R056/R057 metric JSON yet. R054 is in train epoch 17 step 54/875 (6%) after epoch-16 val; R055 is in val epoch 15 step 66/96 (69%). All six screens remain active, controller logs continue updating, and error scans remain clean.
+- [2026-06-24 11:37] monitor: no structured-branch final metrics yet. R054 advanced to train epoch 17 step 136/875 (16%). R055 completed epoch 15 with train_loss 0.318160 / val_loss 0.331798 and entered train epoch 16. Controllers R056/R057/R058/R059 continue waiting normally; error scans remain clean.
+- [2026-06-24 11:38] monitor: no R054/R055/R056/R057 metrics or R058/R059 decisions yet. R054 advanced to train epoch 17 step 154/875 (18%); R055 advanced to train epoch 16 step 64/875 (7%). Both logs updated within seconds of the check, all controller screens remain active, and error scans remain clean.
+- [2026-06-24 11:43] monitor: no structured-branch final metrics yet. R054 advanced to train epoch 17 step 283/875 (32%); R055 advanced to train epoch 16 step 200/875 (23%). R056/R057/R058/R059 controllers continue waiting normally; error scans remain clean.
+- [2026-06-24 11:44] monitor: no final metric JSON yet. R054 advanced to train epoch 17 step 299/875 (34%); R055 advanced to train epoch 16 step 217/875 (25%). GPU1 utilization was 92%, confirming R055 active training; all controller screens remain healthy and error scans remain clean.
+- [2026-06-24 11:45] monitor: no structured-branch metrics yet. R054 advanced to train epoch 17 step 327/875 (37%); R055 advanced to train epoch 16 step 241/875 (28%). Controller logs continue updating normally and error scans remain clean.
+- [2026-06-24 11:53] monitor: no final metric JSON yet. R054 advanced to train epoch 17 step 506/875 (58%); R055 advanced to train epoch 16 step 417/875 (48%). All structured-branch/controller screens remain active, logs are fresh, and error scans remain clean.
+- [2026-06-24 11:58] monitor: no final metric JSON yet. R054 advanced to train epoch 17 step 607/875 (69%); R055 advanced to train epoch 16 step 529/875 (60%). R056/R057/R058/R059 controllers continue waiting on the correct upstream artifacts, and error scans remain clean.
+- [2026-06-24 12:04] monitor: no final metric JSON yet. R054 advanced to train epoch 17 step 736/875 (84%); R055 advanced to train epoch 16 step 672/875 (77%). R056/R057/R058/R059 controllers remain healthy and continue waiting on expected artifacts; error scans remain clean.
+- [2026-06-24 12:09] monitor: no final metric JSON yet. R054 advanced to train epoch 17 step 832/875 (95%); R055 advanced to train epoch 16 step 769/875 (88%). GPU0/GPU1 are active, controller logs continue updating, and error scans remain clean.
+- [2026-06-24 12:13] monitor: no final metric JSON yet. R054 completed train epoch 17 and entered val epoch 17 at 42/96 (44%); R055 advanced to train epoch 16 step 866/875 (99%). Controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 12:16] monitor: no final metric JSON yet. R054 completed epoch 17 with train_loss 0.328367 / val_loss 0.339546 and entered train epoch 18; R055 completed train epoch 16 and entered val epoch 16 at 66/96 (69%). Controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 12:20] monitor: no final metric JSON yet. R054 is in train epoch 18 step 114/875 (13%) after completing epoch 17; R055 completed epoch 16 with train_loss 0.313510 / val_loss 0.325205 and entered train epoch 17. Controllers remain healthy and waiting; error scans remain clean.
+- [2026-06-24 12:28] monitor: no final metric JSON yet. R054 advanced to train epoch 18 step 308/875 (35%); R055 advanced to train epoch 17 step 249/875 (28%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 12:35] monitor: no final metric JSON yet. R054 advanced to train epoch 18 step 451/875 (52%); R055 advanced to train epoch 17 step 388/875 (44%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 12:41] monitor: no final metric JSON yet. R054 advanced to train epoch 18 step 584/875 (67%); R055 advanced to train epoch 17 step 534/875 (61%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 12:47] monitor: no final metric JSON yet. R054 advanced to train epoch 18 step 734/875 (84%); R055 advanced to train epoch 17 step 685/875 (78%). GPU0/GPU1 are active, controllers remain healthy and waiting on expected upstream artifacts, and error scans remain clean.
+- [2026-06-24 12:52] monitor: no final metric JSON yet. R054 advanced to train epoch 18 step 830/875 (95%); R055 advanced to train epoch 17 step 796/875 (91%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 12:56] monitor: no final metric JSON yet. R054 completed train epoch 18 and entered val epoch 18 at 42/96 (44%); R055 completed train epoch 17 and entered val epoch 17 at 18/96 (19%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:01] monitor: no final metric JSON yet. R054 completed epoch 18 with train_loss 0.323572 / val_loss 0.339880 and entered train epoch 19; R055 completed epoch 17 with train_loss 0.309008 / val_loss 0.321015 and entered train epoch 18. Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:08] monitor: no final metric JSON yet. R054 advanced to train epoch 19 step 214/875 (24%); R055 advanced to train epoch 18 step 197/875 (23%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:16] monitor: no final metric JSON yet. R054 advanced to train epoch 19 step 381/875 (44%); R055 advanced to train epoch 18 step 376/875 (43%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:22] monitor: no final metric JSON yet. R054 advanced to train epoch 19 step 520/875 (59%); R055 advanced to train epoch 18 step 513/875 (59%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:25] monitor: no final metric JSON yet after interrupted local wait. R054 advanced to train epoch 19 step 606/875 (69%); R055 advanced to train epoch 18 step 593/875 (68%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:31] monitor: no final metric JSON yet. R054 advanced to train epoch 19 step 746/875 (85%); R055 advanced to train epoch 18 step 729/875 (83%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:35] monitor: no final metric JSON yet. R054 advanced to train epoch 19 step 826/875 (94%); R055 advanced to train epoch 18 step 817/875 (93%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:40] monitor: no final metric JSON yet. R054 completed train epoch 19 and entered val epoch 19 at 66/96 (69%); R055 completed train epoch 18 and entered val epoch 18 at 58/96 (60%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:44] monitor: no final metric JSON yet. R054 completed epoch 19 with train_loss 0.319615 / val_loss 0.333674 and entered train epoch 20; R055 completed epoch 18 with train_loss 0.304858 / val_loss 0.317340 and entered train epoch 19. Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:51] monitor: no final metric JSON yet. R054 advanced to train epoch 20 step 195/875 (22%); R055 advanced to train epoch 19 step 202/875 (23%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 13:58] monitor: no final metric JSON yet. R054 advanced to train epoch 20 step 353/875 (40%); R055 advanced to train epoch 19 step 364/875 (42%). GPU0/GPU1 are active, controllers remain healthy and waiting on expected upstream artifacts, and error scans remain clean.
+- [2026-06-24 14:04] monitor: no final metric JSON yet. R054 advanced to train epoch 20 step 493/875 (56%); R055 advanced to train epoch 19 step 503/875 (57%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 14:11] monitor: no final metric JSON yet. R054 advanced to train epoch 20 step 644/875 (74%); R055 advanced to train epoch 19 step 677/875 (77%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean. User updated monitoring cadence to about every 15 minutes during training-stage progress.
+- [2026-06-24 14:28] 15-min monitor: no final metric JSON yet. R054 completed epoch 20 with train_loss 0.315540 / val_loss 0.329215 and entered train epoch 21; R055 completed epoch 19 with train_loss 0.301648 / val_loss 0.314484 and entered train epoch 20. Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 14:47] 15-min monitor: no final metric JSON yet. R054 advanced to train epoch 21 step 437/875 (50%); R055 advanced to train epoch 20 step 512/875 (59%). Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 15:03] 15-min monitor: no final metric JSON yet. R054 advanced to train epoch 21 step 795/875 (91%); R055 completed train epoch 20 and remains before final metric generation. Controllers remain healthy and waiting on expected upstream artifacts; error scans remain clean.
+- [2026-06-24 15:15] resource diagnosis: slow training is mainly resource contention, not a stalled experiment. GPU0 is shared by R054 (~5.2GB) and another user's nnUNet job (~18.5GB), leaving R054 squeezed on memory/compute. GPU1 hosts R055 (~7.2GB) but showed intermittent low utilization at sample time. Server load is high (~34), swap is full (8GB/8GB), and another user's large git add is consuming CPU/I/O context; iowait itself is low, so storage is not the primary bottleneck. R054 history reached epoch 21 with train_loss 0.311553 / val_loss 0.326562 and entered epoch 22; R055 history reached epoch 20 with train_loss 0.298392 / val_loss 0.310915 and entered epoch 21. No final metric JSON yet and error scans remain clean.
+- [2026-06-24 15:21] scheduling policy update per user request: switched from two-GPU/parallel structured branch to single low-use GPU serial execution. Stopped high-contention GPU0 branch screens `r054_sam_boundary` and `r056_after_r054`; GPU0 remains occupied by another user's nnUNet process (~18.5GB) and will not be used for our continuation. Kept active GPU1 run `r055_sam_last2` and restarted `r057_after_r055` with a GPU1-free guard so R057 launches only after R055 produces its metric and GPU1 memory drops below 2500MiB. Rewrote R056 controller to exit disabled, and rewrote R058/R059 controllers to follow the serial GPU1 chain (`R055 -> R057`) instead of waiting forever for skipped R054/R056 metrics.
+- [2026-06-24 15:23] 15-min cadence status after serial switch: no R055/R057/R058/R059 clean-test-v2 JSON yet. Active screens are `r055_sam_last2`, `r057_after_r055`, `r058_struct_oracle`, and `r059_after_r058`. R055 history remains at completed epoch 20 with train_loss 0.298392 / val_loss 0.310915 and the live log shows train epoch 21 at about 382/875 steps (44%). R057 has not launched yet and is correctly waiting for R055's metric plus a free GPU1.
+- [2026-06-24 15:39] 15-min monitor: no R055/R057/R058/R059 metric JSON yet. R055 completed epoch 21 with train_loss 0.295536 / val_loss 0.308809 and is now in final train epoch 22 at about 136/875 steps (16%). R057 has not launched and remains correctly gated on R055's metric and GPU1 free memory. GPU0 is still occupied by another user's nnUNet process; our continuation remains GPU1-only.
+- [2026-06-24 15:48] cadence update: user changed training-stage monitoring interval from ~15 minutes to ~30 minutes. No R055/R057/R058/R059 metric JSON yet. R055 is in final train epoch 22 at about 526/875 steps (60%); R057 has not launched and remains gated on R055's metric plus GPU1 free memory. Continue single-GPU serial policy and avoid dense training checks.
+- [2026-06-24 16:19] 30-min monitor/result: R055 `r055_sam_structured_boundary_last2` completed. Val Dice 0.764382, IoU 0.621471, Precision 0.658951, Recall 0.919983, Boundary IoU 0.069009. Clean-test-v2 Dice 0.770978, IoU 0.628455, Precision 0.654595, Recall 0.941695, Boundary IoU 0.067283, far below target >0.931766 and far below current best R038 Dice 0.914357. The high-recall/low-precision MedSAM-like failure mode recurs even with structured prompts and last-2 image encoder tuning. R057 `r057_medsam_structured_boundary_last2` was auto-launched by the serial controller on GPU1 after R055 finished; at this check it is in train epoch 1 around 832/875 steps (95%). R058/R059 remain waiting for R057 final metrics before oracle/decision.
+- [2026-06-24 16:51] 30-min monitor: R057 is active and healthy on GPU1, with no final metric JSON yet. `history.json` shows 2 completed epochs, latest epoch 2 train_loss 0.694685 / val_loss 0.637214. GPU1 memory/use is about 7133MiB with active utilization at sample time. The standalone `outputs/bridge_logs/r057_medsam_structured_boundary_last2.log` file is absent because R057 was launched inside the serial controller; training output is appended to `r057_after_r055_controller.log`, while `history.json` is the cleaner progress source. R058/R059 continue waiting for R057 metrics.
+- [2026-06-24 16:52] resumed goal check: no R057/R058/R059 metric JSON yet. R057 remains active with no traceback/RuntimeError/CUDA OOM/FileNotFound/Killed signatures in the controller log; live progress is train epoch 3 at about 352/875 steps (40%). R058/R059 continue waiting for R057 metrics. Continue half-hour cadence.
+- [2026-06-24 17:24] 30-min monitor: no R057/R058/R059 metric JSON yet. R057 remains active and error-free; history shows 3 completed epochs with latest epoch 3 train_loss 0.593465 / val_loss 0.576316, and live progress is train epoch 4 around 835/875 steps (95%). R058/R059 continue waiting for R057 final metrics. Continue half-hour cadence.
+- [2026-06-24 17:25] quick resumed check: no R057/R058/R059 metric JSON yet. R057 has moved from epoch-4 training into val epoch 4, around 16/96 steps (17%), still with no error signatures. R058/R059 remain waiting. Resume half-hour cadence after this close-spaced check.
+- [2026-06-24 17:56] 30-min monitor: no R057/R058/R059 metric JSON yet. R057 remains active and error-free; history shows 5 completed epochs with latest epoch 5 train_loss 0.525566 / val_loss 0.524750, and live progress is train epoch 6 around 413/875 steps (47%). Loss is still decreasing from epoch 2 val_loss 0.637214 -> epoch 5 val_loss 0.524750, so continue the current run rather than intervening. R058/R059 remain waiting for R057 final metrics.
+- [2026-06-24 17:57] close-spaced resume check: no R057/R058/R059 metric JSON yet. R057 remains error-free and is in train epoch 6 around 458/875 steps (52%); history is unchanged at 5 completed epochs, latest val_loss 0.524750. Because this check was close to the previous half-hour monitor, resume the half-hour cadence before the next status pull.
+- [2026-06-24 18:28] 30-min monitor: no R057/R058/R059 metric JSON yet. R057 remains active and error-free; history shows 6 completed epochs with latest epoch 6 train_loss 0.507796 / val_loss 0.509084, and live progress is val epoch 7 around 79/96 steps (82%). GPU1 showed active utilization at sample time. Continue the current R057 run and keep R058/R059 waiting for final metrics.
+- [2026-06-24 18:30] close-spaced resume check: no R057/R058/R059 metric JSON yet. R057 completed epoch 7 with train_loss 0.494425 / val_loss 0.498652 and has entered train epoch 8 at about 52/875 steps (6%). No error signatures; continue R057 and resume half-hour cadence.
+- [2026-06-24 18:30] close-spaced follow-up: no R057/R058/R059 metric JSON yet. R057 remains error-free, still in train epoch 8 around 93/875 steps (11%); history remains at 7 completed epochs, latest val_loss 0.498652. Resume half-hour cadence before the next remote pull.
+- [2026-06-24 19:01] 30-min monitor: no R057/R058/R059 metric JSON yet. R057 remains active and error-free; history shows 8 completed epochs with latest epoch 8 train_loss 0.483655 / val_loss 0.493493, and live progress is train epoch 9 around 598/875 steps (68%). Validation loss continues to improve slowly, so keep the run active and wait for final metrics.
+--- research-workflow/refine-logs/ARIS_EPIPHYSIS_CURRENT_STATUS.md ---
+# ARIS Epiphysis Current Status
+
+- Target clean-test-v2 Dice: `0.9317660066557425`
+- Current valid best R110 Dice: `0.9177231563529792`
+- Reviewed CSV exists: `False`
+- R134 gate pass: `False`
+- Reviewed train: `0`
+- Confirmed train: `0`
+- Reviewed variant exists: `False`
+- R140 launcher check: `True`
+- R140 monitor status: `waiting_for_metrics`
+- Next action: `complete_human_review_in_html_and_export_reviewed_csv`
+
+## Evidence Files
+
+- Review HTML: `outputs\analysis\r134_label_protocol_review_manifest\review_package\R134_HUMAN_REVIEW_WORK_PACKAGE.html`
+- Reviewed CSV: `outputs\analysis\r134_label_protocol_review_manifest\review_package\r134_train_val_review_worklist_reviewed.csv`
+- Gate status: `outputs\analysis\r134_label_protocol_review_manifest\r134_review_gate_status.json`
+- R140 launcher: `outputs\bridge_logs\run_r140_reviewed_variant_instance_sep.sh`
+- R140 monitor summary: `outputs\analysis\r140_reviewed_variant_dinov3_instance_sep_result_summary.json`
+=== r199 current ===
+No Sockets found in /run/screen/S-shenzeyu.
+
+0, 15 MiB, 24564 MiB, 0 %
+1, 18573 MiB, 24564 MiB, 100 %
+metrics_exists True 3318665
+metrics_lines 801
+last_iteration 16000
+eta_minutes None
+total_loss None
+lr None
+r199_summary.json exists 1052
+r199_val_prediction_diagnostic.json exists 260220
+r199_val_constraint_metrics.json exists 105567
+maskdino_output/inference/coco_instances_results.json exists 3053875
+maskdino_output/model_final.pth exists 526380382
+log_exists True 10556847
+err_Traceback -1
+err_RuntimeError -1
+err_CUDA_out_of_memory -1
+err_Exception -1
